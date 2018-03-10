@@ -113,13 +113,6 @@ class GetCharactersCharacterIdOrders200OkTest extends \PHPUnit_Framework_TestCas
     }
 
     /**
-     * Test attribute "is_buy_order"
-     */
-    public function testPropertyIsBuyOrder()
-    {
-    }
-
-    /**
      * Test attribute "price"
      */
     public function testPropertyPrice()
@@ -148,9 +141,9 @@ class GetCharactersCharacterIdOrders200OkTest extends \PHPUnit_Framework_TestCas
     }
 
     /**
-     * Test attribute "state"
+     * Test attribute "is_buy_order"
      */
-    public function testPropertyState()
+    public function testPropertyIsBuyOrder()
     {
     }
 
@@ -162,9 +155,9 @@ class GetCharactersCharacterIdOrders200OkTest extends \PHPUnit_Framework_TestCas
     }
 
     /**
-     * Test attribute "account_id"
+     * Test attribute "escrow"
      */
-    public function testPropertyAccountId()
+    public function testPropertyEscrow()
     {
     }
 
@@ -176,16 +169,9 @@ class GetCharactersCharacterIdOrders200OkTest extends \PHPUnit_Framework_TestCas
     }
 
     /**
-     * Test attribute "is_corp"
+     * Test attribute "is_corporation"
      */
-    public function testPropertyIsCorp()
-    {
-    }
-
-    /**
-     * Test attribute "escrow"
-     */
-    public function testPropertyEscrow()
+    public function testPropertyIsCorporation()
     {
     }
 }

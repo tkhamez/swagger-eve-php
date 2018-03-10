@@ -59,12 +59,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
       */
     protected static $swaggerTypes = [
         'notification_id' => 'int',
-        'type' => 'string',
         'sender_id' => 'int',
         'sender_type' => 'string',
         'timestamp' => '\DateTime',
         'is_read' => 'bool',
-        'text' => 'string'
+        'text' => 'string',
+        'type' => 'string'
     ];
 
     /**
@@ -74,12 +74,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
       */
     protected static $swaggerFormats = [
         'notification_id' => 'int64',
-        'type' => null,
         'sender_id' => 'int32',
         'sender_type' => null,
         'timestamp' => 'date-time',
         'is_read' => null,
-        'text' => null
+        'text' => null,
+        'type' => null
     ];
 
     /**
@@ -110,12 +110,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
      */
     protected static $attributeMap = [
         'notification_id' => 'notification_id',
-        'type' => 'type',
         'sender_id' => 'sender_id',
         'sender_type' => 'sender_type',
         'timestamp' => 'timestamp',
         'is_read' => 'is_read',
-        'text' => 'text'
+        'text' => 'text',
+        'type' => 'type'
     ];
 
     /**
@@ -125,12 +125,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
      */
     protected static $setters = [
         'notification_id' => 'setNotificationId',
-        'type' => 'setType',
         'sender_id' => 'setSenderId',
         'sender_type' => 'setSenderType',
         'timestamp' => 'setTimestamp',
         'is_read' => 'setIsRead',
-        'text' => 'setText'
+        'text' => 'setText',
+        'type' => 'setType'
     ];
 
     /**
@@ -140,12 +140,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
      */
     protected static $getters = [
         'notification_id' => 'getNotificationId',
-        'type' => 'getType',
         'sender_id' => 'getSenderId',
         'sender_type' => 'getSenderType',
         'timestamp' => 'getTimestamp',
         'is_read' => 'getIsRead',
-        'text' => 'getText'
+        'text' => 'getText',
+        'type' => 'getType'
     ];
 
     /**
@@ -189,6 +189,11 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         return self::$swaggerModelName;
     }
 
+    const SENDER_TYPE_CHARACTER = 'character';
+    const SENDER_TYPE_CORPORATION = 'corporation';
+    const SENDER_TYPE_ALLIANCE = 'alliance';
+    const SENDER_TYPE_FACTION = 'faction';
+    const SENDER_TYPE_OTHER = 'other';
     const TYPE_ACCEPTED_ALLY = 'AcceptedAlly';
     const TYPE_ACCEPTED_SURRENDER = 'AcceptedSurrender';
     const TYPE_ALL_ANCHORING_MSG = 'AllAnchoringMsg';
@@ -365,13 +370,24 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_WAR_SURRENDER_DECLINED_MSG = 'WarSurrenderDeclinedMsg';
     const TYPE_WAR_SURRENDER_OFFER_MSG = 'WarSurrenderOfferMsg';
     const TYPE_NOTIFICATION_TYPE_MOONMINING_EXTRACTION_STARTED = 'notificationTypeMoonminingExtractionStarted';
-    const SENDER_TYPE_CHARACTER = 'character';
-    const SENDER_TYPE_CORPORATION = 'corporation';
-    const SENDER_TYPE_ALLIANCE = 'alliance';
-    const SENDER_TYPE_FACTION = 'faction';
-    const SENDER_TYPE_OTHER = 'other';
     
 
+    
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getSenderTypeAllowableValues()
+    {
+        return [
+            self::SENDER_TYPE_CHARACTER,
+            self::SENDER_TYPE_CORPORATION,
+            self::SENDER_TYPE_ALLIANCE,
+            self::SENDER_TYPE_FACTION,
+            self::SENDER_TYPE_OTHER,
+        ];
+    }
     
     /**
      * Gets allowable values of the enum
@@ -560,22 +576,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         ];
     }
     
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getSenderTypeAllowableValues()
-    {
-        return [
-            self::SENDER_TYPE_CHARACTER,
-            self::SENDER_TYPE_CORPORATION,
-            self::SENDER_TYPE_ALLIANCE,
-            self::SENDER_TYPE_FACTION,
-            self::SENDER_TYPE_OTHER,
-        ];
-    }
-    
 
     /**
      * Associative array for storing property values
@@ -593,12 +593,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     public function __construct(array $data = null)
     {
         $this->container['notification_id'] = isset($data['notification_id']) ? $data['notification_id'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['sender_id'] = isset($data['sender_id']) ? $data['sender_id'] : null;
         $this->container['sender_type'] = isset($data['sender_type']) ? $data['sender_type'] : null;
         $this->container['timestamp'] = isset($data['timestamp']) ? $data['timestamp'] : null;
         $this->container['is_read'] = isset($data['is_read']) ? $data['is_read'] : null;
         $this->container['text'] = isset($data['text']) ? $data['text'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
     }
 
     /**
@@ -613,17 +613,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if ($this->container['notification_id'] === null) {
             $invalidProperties[] = "'notification_id' can't be null";
         }
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($this->container['type'], $allowedValues)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'type', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
         if ($this->container['sender_id'] === null) {
             $invalidProperties[] = "'sender_id' can't be null";
         }
@@ -641,6 +630,17 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if ($this->container['timestamp'] === null) {
             $invalidProperties[] = "'timestamp' can't be null";
         }
+        if ($this->container['type'] === null) {
+            $invalidProperties[] = "'type' can't be null";
+        }
+        $allowedValues = $this->getTypeAllowableValues();
+        if (!in_array($this->container['type'], $allowedValues)) {
+            $invalidProperties[] = sprintf(
+                "invalid value for 'type', must be one of '%s'",
+                implode("', '", $allowedValues)
+            );
+        }
+
         return $invalidProperties;
     }
 
@@ -656,13 +656,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if ($this->container['notification_id'] === null) {
             return false;
         }
-        if ($this->container['type'] === null) {
-            return false;
-        }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($this->container['type'], $allowedValues)) {
-            return false;
-        }
         if ($this->container['sender_id'] === null) {
             return false;
         }
@@ -674,6 +667,13 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             return false;
         }
         if ($this->container['timestamp'] === null) {
+            return false;
+        }
+        if ($this->container['type'] === null) {
+            return false;
+        }
+        $allowedValues = $this->getTypeAllowableValues();
+        if (!in_array($this->container['type'], $allowedValues)) {
             return false;
         }
         return true;
@@ -700,39 +700,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     public function setNotificationId($notification_id)
     {
         $this->container['notification_id'] = $notification_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
-     *
-     * @return string
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param string $type type string
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'type', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
 
         return $this;
     }
@@ -862,6 +829,39 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     public function setText($text)
     {
         $this->container['text'] = $text;
+
+        return $this;
+    }
+
+    /**
+     * Gets type
+     *
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->container['type'];
+    }
+
+    /**
+     * Sets type
+     *
+     * @param string $type type string
+     *
+     * @return $this
+     */
+    public function setType($type)
+    {
+        $allowedValues = $this->getTypeAllowableValues();
+        if (!in_array($type, $allowedValues)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value for 'type', must be one of '%s'",
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['type'] = $type;
 
         return $this;
     }

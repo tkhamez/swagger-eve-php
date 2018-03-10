@@ -63,8 +63,8 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         'location_id' => 'int',
         'location_type' => 'string',
         'item_id' => 'int',
-        'location_flag' => 'string',
-        'is_singleton' => 'bool'
+        'is_singleton' => 'bool',
+        'location_flag' => 'string'
     ];
 
     /**
@@ -78,8 +78,8 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         'location_id' => 'int64',
         'location_type' => null,
         'item_id' => 'int64',
-        'location_flag' => null,
-        'is_singleton' => null
+        'is_singleton' => null,
+        'location_flag' => null
     ];
 
     /**
@@ -114,8 +114,8 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         'location_id' => 'location_id',
         'location_type' => 'location_type',
         'item_id' => 'item_id',
-        'location_flag' => 'location_flag',
-        'is_singleton' => 'is_singleton'
+        'is_singleton' => 'is_singleton',
+        'location_flag' => 'location_flag'
     ];
 
     /**
@@ -129,8 +129,8 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         'location_id' => 'setLocationId',
         'location_type' => 'setLocationType',
         'item_id' => 'setItemId',
-        'location_flag' => 'setLocationFlag',
-        'is_singleton' => 'setIsSingleton'
+        'is_singleton' => 'setIsSingleton',
+        'location_flag' => 'setLocationFlag'
     ];
 
     /**
@@ -144,8 +144,8 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         'location_id' => 'getLocationId',
         'location_type' => 'getLocationType',
         'item_id' => 'getItemId',
-        'location_flag' => 'getLocationFlag',
-        'is_singleton' => 'getIsSingleton'
+        'is_singleton' => 'getIsSingleton',
+        'location_flag' => 'getLocationFlag'
     ];
 
     /**
@@ -471,8 +471,8 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         $this->container['location_id'] = isset($data['location_id']) ? $data['location_id'] : null;
         $this->container['location_type'] = isset($data['location_type']) ? $data['location_type'] : null;
         $this->container['item_id'] = isset($data['item_id']) ? $data['item_id'] : null;
-        $this->container['location_flag'] = isset($data['location_flag']) ? $data['location_flag'] : null;
         $this->container['is_singleton'] = isset($data['is_singleton']) ? $data['is_singleton'] : null;
+        $this->container['location_flag'] = isset($data['location_flag']) ? $data['location_flag'] : null;
     }
 
     /**
@@ -507,6 +507,9 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         if ($this->container['item_id'] === null) {
             $invalidProperties[] = "'item_id' can't be null";
         }
+        if ($this->container['is_singleton'] === null) {
+            $invalidProperties[] = "'is_singleton' can't be null";
+        }
         if ($this->container['location_flag'] === null) {
             $invalidProperties[] = "'location_flag' can't be null";
         }
@@ -518,9 +521,6 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ($this->container['is_singleton'] === null) {
-            $invalidProperties[] = "'is_singleton' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -552,14 +552,14 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
         if ($this->container['item_id'] === null) {
             return false;
         }
+        if ($this->container['is_singleton'] === null) {
+            return false;
+        }
         if ($this->container['location_flag'] === null) {
             return false;
         }
         $allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($this->container['location_flag'], $allowedValues)) {
-            return false;
-        }
-        if ($this->container['is_singleton'] === null) {
             return false;
         }
         return true;
@@ -696,6 +696,30 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
     }
 
     /**
+     * Gets is_singleton
+     *
+     * @return bool
+     */
+    public function getIsSingleton()
+    {
+        return $this->container['is_singleton'];
+    }
+
+    /**
+     * Sets is_singleton
+     *
+     * @param bool $is_singleton is_singleton boolean
+     *
+     * @return $this
+     */
+    public function setIsSingleton($is_singleton)
+    {
+        $this->container['is_singleton'] = $is_singleton;
+
+        return $this;
+    }
+
+    /**
      * Gets location_flag
      *
      * @return string
@@ -724,30 +748,6 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
             );
         }
         $this->container['location_flag'] = $location_flag;
-
-        return $this;
-    }
-
-    /**
-     * Gets is_singleton
-     *
-     * @return bool
-     */
-    public function getIsSingleton()
-    {
-        return $this->container['is_singleton'];
-    }
-
-    /**
-     * Sets is_singleton
-     *
-     * @param bool $is_singleton is_singleton boolean
-     *
-     * @return $this
-     */
-    public function setIsSingleton($is_singleton)
-    {
-        $this->container['is_singleton'] = $is_singleton;
 
         return $this;
     }

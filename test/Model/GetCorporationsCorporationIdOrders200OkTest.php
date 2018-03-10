@@ -113,13 +113,6 @@ class GetCorporationsCorporationIdOrders200OkTest extends \PHPUnit_Framework_Tes
     }
 
     /**
-     * Test attribute "is_buy_order"
-     */
-    public function testPropertyIsBuyOrder()
-    {
-    }
-
-    /**
      * Test attribute "price"
      */
     public function testPropertyPrice()
@@ -148,9 +141,9 @@ class GetCorporationsCorporationIdOrders200OkTest extends \PHPUnit_Framework_Tes
     }
 
     /**
-     * Test attribute "state"
+     * Test attribute "is_buy_order"
      */
-    public function testPropertyState()
+    public function testPropertyIsBuyOrder()
     {
     }
 
@@ -162,9 +155,9 @@ class GetCorporationsCorporationIdOrders200OkTest extends \PHPUnit_Framework_Tes
     }
 
     /**
-     * Test attribute "wallet_division"
+     * Test attribute "escrow"
      */
-    public function testPropertyWalletDivision()
+    public function testPropertyEscrow()
     {
     }
 
@@ -176,9 +169,9 @@ class GetCorporationsCorporationIdOrders200OkTest extends \PHPUnit_Framework_Tes
     }
 
     /**
-     * Test attribute "escrow"
+     * Test attribute "wallet_division"
      */
-    public function testPropertyEscrow()
+    public function testPropertyWalletDivision()
     {
     }
 }

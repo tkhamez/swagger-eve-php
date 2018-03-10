@@ -63,13 +63,13 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         'container_type_id' => 'int',
         'character_id' => 'int',
         'location_id' => 'int',
-        'location_flag' => 'string',
         'action' => 'string',
         'password_type' => 'string',
         'type_id' => 'int',
         'quantity' => 'int',
         'old_config_bitmask' => 'int',
-        'new_config_bitmask' => 'int'
+        'new_config_bitmask' => 'int',
+        'location_flag' => 'string'
     ];
 
     /**
@@ -83,13 +83,13 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         'container_type_id' => 'int32',
         'character_id' => 'int32',
         'location_id' => 'int64',
-        'location_flag' => null,
         'action' => null,
         'password_type' => null,
         'type_id' => 'int32',
         'quantity' => 'int32',
         'old_config_bitmask' => 'int32',
-        'new_config_bitmask' => 'int32'
+        'new_config_bitmask' => 'int32',
+        'location_flag' => null
     ];
 
     /**
@@ -124,13 +124,13 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         'container_type_id' => 'container_type_id',
         'character_id' => 'character_id',
         'location_id' => 'location_id',
-        'location_flag' => 'location_flag',
         'action' => 'action',
         'password_type' => 'password_type',
         'type_id' => 'type_id',
         'quantity' => 'quantity',
         'old_config_bitmask' => 'old_config_bitmask',
-        'new_config_bitmask' => 'new_config_bitmask'
+        'new_config_bitmask' => 'new_config_bitmask',
+        'location_flag' => 'location_flag'
     ];
 
     /**
@@ -144,13 +144,13 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         'container_type_id' => 'setContainerTypeId',
         'character_id' => 'setCharacterId',
         'location_id' => 'setLocationId',
-        'location_flag' => 'setLocationFlag',
         'action' => 'setAction',
         'password_type' => 'setPasswordType',
         'type_id' => 'setTypeId',
         'quantity' => 'setQuantity',
         'old_config_bitmask' => 'setOldConfigBitmask',
-        'new_config_bitmask' => 'setNewConfigBitmask'
+        'new_config_bitmask' => 'setNewConfigBitmask',
+        'location_flag' => 'setLocationFlag'
     ];
 
     /**
@@ -164,13 +164,13 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         'container_type_id' => 'getContainerTypeId',
         'character_id' => 'getCharacterId',
         'location_id' => 'getLocationId',
-        'location_flag' => 'getLocationFlag',
         'action' => 'getAction',
         'password_type' => 'getPasswordType',
         'type_id' => 'getTypeId',
         'quantity' => 'getQuantity',
         'old_config_bitmask' => 'getOldConfigBitmask',
-        'new_config_bitmask' => 'getNewConfigBitmask'
+        'new_config_bitmask' => 'getNewConfigBitmask',
+        'location_flag' => 'getLocationFlag'
     ];
 
     /**
@@ -214,6 +214,18 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         return self::$swaggerModelName;
     }
 
+    const ACTION_ADD = 'add';
+    const ACTION_ASSEMBLE = 'assemble';
+    const ACTION_CONFIGURE = 'configure';
+    const ACTION_ENTER_PASSWORD = 'enter_password';
+    const ACTION_LOCK = 'lock';
+    const ACTION_MOVE = 'move';
+    const ACTION_REPACKAGE = 'repackage';
+    const ACTION_SET_NAME = 'set_name';
+    const ACTION_SET_PASSWORD = 'set_password';
+    const ACTION_UNLOCK = 'unlock';
+    const PASSWORD_TYPE_CONFIG = 'config';
+    const PASSWORD_TYPE_GENERAL = 'general';
     const LOCATION_FLAG_ASSET_SAFETY = 'AssetSafety';
     const LOCATION_FLAG_AUTO_FIT = 'AutoFit';
     const LOCATION_FLAG_BONUS = 'Bonus';
@@ -329,20 +341,42 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     const LOCATION_FLAG_UNLOCKED = 'Unlocked';
     const LOCATION_FLAG_WALLET = 'Wallet';
     const LOCATION_FLAG_WARDROBE = 'Wardrobe';
-    const ACTION_ADD = 'add';
-    const ACTION_ASSEMBLE = 'assemble';
-    const ACTION_CONFIGURE = 'configure';
-    const ACTION_ENTER_PASSWORD = 'enter_password';
-    const ACTION_LOCK = 'lock';
-    const ACTION_MOVE = 'move';
-    const ACTION_REPACKAGE = 'repackage';
-    const ACTION_SET_NAME = 'set_name';
-    const ACTION_SET_PASSWORD = 'set_password';
-    const ACTION_UNLOCK = 'unlock';
-    const PASSWORD_TYPE_CONFIG = 'config';
-    const PASSWORD_TYPE_GENERAL = 'general';
     
 
+    
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getActionAllowableValues()
+    {
+        return [
+            self::ACTION_ADD,
+            self::ACTION_ASSEMBLE,
+            self::ACTION_CONFIGURE,
+            self::ACTION_ENTER_PASSWORD,
+            self::ACTION_LOCK,
+            self::ACTION_MOVE,
+            self::ACTION_REPACKAGE,
+            self::ACTION_SET_NAME,
+            self::ACTION_SET_PASSWORD,
+            self::ACTION_UNLOCK,
+        ];
+    }
+    
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getPasswordTypeAllowableValues()
+    {
+        return [
+            self::PASSWORD_TYPE_CONFIG,
+            self::PASSWORD_TYPE_GENERAL,
+        ];
+    }
     
     /**
      * Gets allowable values of the enum
@@ -470,40 +504,6 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         ];
     }
     
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getActionAllowableValues()
-    {
-        return [
-            self::ACTION_ADD,
-            self::ACTION_ASSEMBLE,
-            self::ACTION_CONFIGURE,
-            self::ACTION_ENTER_PASSWORD,
-            self::ACTION_LOCK,
-            self::ACTION_MOVE,
-            self::ACTION_REPACKAGE,
-            self::ACTION_SET_NAME,
-            self::ACTION_SET_PASSWORD,
-            self::ACTION_UNLOCK,
-        ];
-    }
-    
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getPasswordTypeAllowableValues()
-    {
-        return [
-            self::PASSWORD_TYPE_CONFIG,
-            self::PASSWORD_TYPE_GENERAL,
-        ];
-    }
-    
 
     /**
      * Associative array for storing property values
@@ -525,13 +525,13 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         $this->container['container_type_id'] = isset($data['container_type_id']) ? $data['container_type_id'] : null;
         $this->container['character_id'] = isset($data['character_id']) ? $data['character_id'] : null;
         $this->container['location_id'] = isset($data['location_id']) ? $data['location_id'] : null;
-        $this->container['location_flag'] = isset($data['location_flag']) ? $data['location_flag'] : null;
         $this->container['action'] = isset($data['action']) ? $data['action'] : null;
         $this->container['password_type'] = isset($data['password_type']) ? $data['password_type'] : null;
         $this->container['type_id'] = isset($data['type_id']) ? $data['type_id'] : null;
         $this->container['quantity'] = isset($data['quantity']) ? $data['quantity'] : null;
         $this->container['old_config_bitmask'] = isset($data['old_config_bitmask']) ? $data['old_config_bitmask'] : null;
         $this->container['new_config_bitmask'] = isset($data['new_config_bitmask']) ? $data['new_config_bitmask'] : null;
+        $this->container['location_flag'] = isset($data['location_flag']) ? $data['location_flag'] : null;
     }
 
     /**
@@ -558,17 +558,6 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if ($this->container['location_id'] === null) {
             $invalidProperties[] = "'location_id' can't be null";
         }
-        if ($this->container['location_flag'] === null) {
-            $invalidProperties[] = "'location_flag' can't be null";
-        }
-        $allowedValues = $this->getLocationFlagAllowableValues();
-        if (!in_array($this->container['location_flag'], $allowedValues)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'location_flag', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
         if ($this->container['action'] === null) {
             $invalidProperties[] = "'action' can't be null";
         }
@@ -584,6 +573,17 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if (!in_array($this->container['password_type'], $allowedValues)) {
             $invalidProperties[] = sprintf(
                 "invalid value for 'password_type', must be one of '%s'",
+                implode("', '", $allowedValues)
+            );
+        }
+
+        if ($this->container['location_flag'] === null) {
+            $invalidProperties[] = "'location_flag' can't be null";
+        }
+        $allowedValues = $this->getLocationFlagAllowableValues();
+        if (!in_array($this->container['location_flag'], $allowedValues)) {
+            $invalidProperties[] = sprintf(
+                "invalid value for 'location_flag', must be one of '%s'",
                 implode("', '", $allowedValues)
             );
         }
@@ -615,13 +615,6 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if ($this->container['location_id'] === null) {
             return false;
         }
-        if ($this->container['location_flag'] === null) {
-            return false;
-        }
-        $allowedValues = $this->getLocationFlagAllowableValues();
-        if (!in_array($this->container['location_flag'], $allowedValues)) {
-            return false;
-        }
         if ($this->container['action'] === null) {
             return false;
         }
@@ -631,6 +624,13 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         }
         $allowedValues = $this->getPasswordTypeAllowableValues();
         if (!in_array($this->container['password_type'], $allowedValues)) {
+            return false;
+        }
+        if ($this->container['location_flag'] === null) {
+            return false;
+        }
+        $allowedValues = $this->getLocationFlagAllowableValues();
+        if (!in_array($this->container['location_flag'], $allowedValues)) {
             return false;
         }
         return true;
@@ -753,39 +753,6 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     public function setLocationId($location_id)
     {
         $this->container['location_id'] = $location_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets location_flag
-     *
-     * @return string
-     */
-    public function getLocationFlag()
-    {
-        return $this->container['location_flag'];
-    }
-
-    /**
-     * Sets location_flag
-     *
-     * @param string $location_flag location_flag string
-     *
-     * @return $this
-     */
-    public function setLocationFlag($location_flag)
-    {
-        $allowedValues = $this->getLocationFlagAllowableValues();
-        if (!in_array($location_flag, $allowedValues)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'location_flag', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['location_flag'] = $location_flag;
 
         return $this;
     }
@@ -948,6 +915,39 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     public function setNewConfigBitmask($new_config_bitmask)
     {
         $this->container['new_config_bitmask'] = $new_config_bitmask;
+
+        return $this;
+    }
+
+    /**
+     * Gets location_flag
+     *
+     * @return string
+     */
+    public function getLocationFlag()
+    {
+        return $this->container['location_flag'];
+    }
+
+    /**
+     * Sets location_flag
+     *
+     * @param string $location_flag location_flag string
+     *
+     * @return $this
+     */
+    public function setLocationFlag($location_flag)
+    {
+        $allowedValues = $this->getLocationFlagAllowableValues();
+        if (!in_array($location_flag, $allowedValues)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value for 'location_flag', must be one of '%s'",
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['location_flag'] = $location_flag;
 
         return $this;
     }

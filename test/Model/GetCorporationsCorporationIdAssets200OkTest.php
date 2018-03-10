@@ -113,16 +113,16 @@ class GetCorporationsCorporationIdAssets200OkTest extends \PHPUnit_Framework_Tes
     }
 
     /**
-     * Test attribute "location_flag"
+     * Test attribute "is_singleton"
      */
-    public function testPropertyLocationFlag()
+    public function testPropertyIsSingleton()
     {
     }
 
     /**
-     * Test attribute "is_singleton"
+     * Test attribute "location_flag"
      */
-    public function testPropertyIsSingleton()
+    public function testPropertyLocationFlag()
     {
     }
 }

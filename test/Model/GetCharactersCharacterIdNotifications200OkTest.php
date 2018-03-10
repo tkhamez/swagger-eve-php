@@ -85,13 +85,6 @@ class GetCharactersCharacterIdNotifications200OkTest extends \PHPUnit_Framework_
     }
 
     /**
-     * Test attribute "type"
-     */
-    public function testPropertyType()
-    {
-    }
-
-    /**
      * Test attribute "sender_id"
      */
     public function testPropertySenderId()
@@ -123,6 +116,13 @@ class GetCharactersCharacterIdNotifications200OkTest extends \PHPUnit_Framework_
      * Test attribute "text"
      */
     public function testPropertyText()
+    {
+    }
+
+    /**
+     * Test attribute "type"
+     */
+    public function testPropertyType()
     {
     }
 }

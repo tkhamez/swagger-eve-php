@@ -61,11 +61,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         'item_id' => 'int',
         'type_id' => 'int',
         'location_id' => 'int',
-        'location_flag' => 'string',
         'quantity' => 'int',
         'time_efficiency' => 'int',
         'material_efficiency' => 'int',
-        'runs' => 'int'
+        'runs' => 'int',
+        'location_flag' => 'string'
     ];
 
     /**
@@ -77,11 +77,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         'item_id' => 'int64',
         'type_id' => 'int32',
         'location_id' => 'int64',
-        'location_flag' => null,
         'quantity' => 'int32',
         'time_efficiency' => 'int32',
         'material_efficiency' => 'int32',
-        'runs' => 'int32'
+        'runs' => 'int32',
+        'location_flag' => null
     ];
 
     /**
@@ -114,11 +114,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         'item_id' => 'item_id',
         'type_id' => 'type_id',
         'location_id' => 'location_id',
-        'location_flag' => 'location_flag',
         'quantity' => 'quantity',
         'time_efficiency' => 'time_efficiency',
         'material_efficiency' => 'material_efficiency',
-        'runs' => 'runs'
+        'runs' => 'runs',
+        'location_flag' => 'location_flag'
     ];
 
     /**
@@ -130,11 +130,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         'item_id' => 'setItemId',
         'type_id' => 'setTypeId',
         'location_id' => 'setLocationId',
-        'location_flag' => 'setLocationFlag',
         'quantity' => 'setQuantity',
         'time_efficiency' => 'setTimeEfficiency',
         'material_efficiency' => 'setMaterialEfficiency',
-        'runs' => 'setRuns'
+        'runs' => 'setRuns',
+        'location_flag' => 'setLocationFlag'
     ];
 
     /**
@@ -146,11 +146,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         'item_id' => 'getItemId',
         'type_id' => 'getTypeId',
         'location_id' => 'getLocationId',
-        'location_flag' => 'getLocationFlag',
         'quantity' => 'getQuantity',
         'time_efficiency' => 'getTimeEfficiency',
         'material_efficiency' => 'getMaterialEfficiency',
-        'runs' => 'getRuns'
+        'runs' => 'getRuns',
+        'location_flag' => 'getLocationFlag'
     ];
 
     /**
@@ -457,11 +457,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         $this->container['item_id'] = isset($data['item_id']) ? $data['item_id'] : null;
         $this->container['type_id'] = isset($data['type_id']) ? $data['type_id'] : null;
         $this->container['location_id'] = isset($data['location_id']) ? $data['location_id'] : null;
-        $this->container['location_flag'] = isset($data['location_flag']) ? $data['location_flag'] : null;
         $this->container['quantity'] = isset($data['quantity']) ? $data['quantity'] : null;
         $this->container['time_efficiency'] = isset($data['time_efficiency']) ? $data['time_efficiency'] : null;
         $this->container['material_efficiency'] = isset($data['material_efficiency']) ? $data['material_efficiency'] : null;
         $this->container['runs'] = isset($data['runs']) ? $data['runs'] : null;
+        $this->container['location_flag'] = isset($data['location_flag']) ? $data['location_flag'] : null;
     }
 
     /**
@@ -482,17 +482,6 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         if ($this->container['location_id'] === null) {
             $invalidProperties[] = "'location_id' can't be null";
         }
-        if ($this->container['location_flag'] === null) {
-            $invalidProperties[] = "'location_flag' can't be null";
-        }
-        $allowedValues = $this->getLocationFlagAllowableValues();
-        if (!in_array($this->container['location_flag'], $allowedValues)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'location_flag', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
         if ($this->container['quantity'] === null) {
             $invalidProperties[] = "'quantity' can't be null";
         }
@@ -529,6 +518,17 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             $invalidProperties[] = "invalid value for 'runs', must be bigger than or equal to -1.";
         }
 
+        if ($this->container['location_flag'] === null) {
+            $invalidProperties[] = "'location_flag' can't be null";
+        }
+        $allowedValues = $this->getLocationFlagAllowableValues();
+        if (!in_array($this->container['location_flag'], $allowedValues)) {
+            $invalidProperties[] = sprintf(
+                "invalid value for 'location_flag', must be one of '%s'",
+                implode("', '", $allowedValues)
+            );
+        }
+
         return $invalidProperties;
     }
 
@@ -548,13 +548,6 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             return false;
         }
         if ($this->container['location_id'] === null) {
-            return false;
-        }
-        if ($this->container['location_flag'] === null) {
-            return false;
-        }
-        $allowedValues = $this->getLocationFlagAllowableValues();
-        if (!in_array($this->container['location_flag'], $allowedValues)) {
             return false;
         }
         if ($this->container['quantity'] === null) {
@@ -585,6 +578,13 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             return false;
         }
         if ($this->container['runs'] < -1) {
+            return false;
+        }
+        if ($this->container['location_flag'] === null) {
+            return false;
+        }
+        $allowedValues = $this->getLocationFlagAllowableValues();
+        if (!in_array($this->container['location_flag'], $allowedValues)) {
             return false;
         }
         return true;
@@ -659,39 +659,6 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     public function setLocationId($location_id)
     {
         $this->container['location_id'] = $location_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets location_flag
-     *
-     * @return string
-     */
-    public function getLocationFlag()
-    {
-        return $this->container['location_flag'];
-    }
-
-    /**
-     * Sets location_flag
-     *
-     * @param string $location_flag Type of the location_id
-     *
-     * @return $this
-     */
-    public function setLocationFlag($location_flag)
-    {
-        $allowedValues = $this->getLocationFlagAllowableValues();
-        if (!in_array($location_flag, $allowedValues)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'location_flag', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['location_flag'] = $location_flag;
 
         return $this;
     }
@@ -814,6 +781,39 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         }
 
         $this->container['runs'] = $runs;
+
+        return $this;
+    }
+
+    /**
+     * Gets location_flag
+     *
+     * @return string
+     */
+    public function getLocationFlag()
+    {
+        return $this->container['location_flag'];
+    }
+
+    /**
+     * Sets location_flag
+     *
+     * @param string $location_flag Type of the location_id
+     *
+     * @return $this
+     */
+    public function setLocationFlag($location_flag)
+    {
+        $allowedValues = $this->getLocationFlagAllowableValues();
+        if (!in_array($location_flag, $allowedValues)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value for 'location_flag', must be one of '%s'",
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['location_flag'] = $location_flag;
 
         return $this;
     }

@@ -99,13 +99,6 @@ class GetCorporationsCorporationIdBlueprints200OkTest extends \PHPUnit_Framework
     }
 
     /**
-     * Test attribute "location_flag"
-     */
-    public function testPropertyLocationFlag()
-    {
-    }
-
-    /**
      * Test attribute "quantity"
      */
     public function testPropertyQuantity()
@@ -130,6 +123,13 @@ class GetCorporationsCorporationIdBlueprints200OkTest extends \PHPUnit_Framework
      * Test attribute "runs"
      */
     public function testPropertyRuns()
+    {
+    }
+
+    /**
+     * Test attribute "location_flag"
+     */
+    public function testPropertyLocationFlag()
     {
     }
 }

@@ -63,16 +63,15 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         'region_id' => 'int',
         'location_id' => 'int',
         'range' => 'string',
-        'is_buy_order' => 'bool',
         'price' => 'double',
         'volume_total' => 'int',
         'volume_remain' => 'int',
         'issued' => '\DateTime',
-        'state' => 'string',
+        'is_buy_order' => 'bool',
         'min_volume' => 'int',
-        'wallet_division' => 'int',
+        'escrow' => 'double',
         'duration' => 'int',
-        'escrow' => 'double'
+        'wallet_division' => 'int'
     ];
 
     /**
@@ -86,16 +85,15 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         'region_id' => 'int32',
         'location_id' => 'int64',
         'range' => null,
-        'is_buy_order' => null,
         'price' => 'double',
         'volume_total' => 'int32',
         'volume_remain' => 'int32',
         'issued' => 'date-time',
-        'state' => null,
+        'is_buy_order' => null,
         'min_volume' => 'int32',
-        'wallet_division' => 'int32',
+        'escrow' => 'double',
         'duration' => 'int32',
-        'escrow' => 'double'
+        'wallet_division' => 'int32'
     ];
 
     /**
@@ -130,16 +128,15 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         'region_id' => 'region_id',
         'location_id' => 'location_id',
         'range' => 'range',
-        'is_buy_order' => 'is_buy_order',
         'price' => 'price',
         'volume_total' => 'volume_total',
         'volume_remain' => 'volume_remain',
         'issued' => 'issued',
-        'state' => 'state',
+        'is_buy_order' => 'is_buy_order',
         'min_volume' => 'min_volume',
-        'wallet_division' => 'wallet_division',
+        'escrow' => 'escrow',
         'duration' => 'duration',
-        'escrow' => 'escrow'
+        'wallet_division' => 'wallet_division'
     ];
 
     /**
@@ -153,16 +150,15 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         'region_id' => 'setRegionId',
         'location_id' => 'setLocationId',
         'range' => 'setRange',
-        'is_buy_order' => 'setIsBuyOrder',
         'price' => 'setPrice',
         'volume_total' => 'setVolumeTotal',
         'volume_remain' => 'setVolumeRemain',
         'issued' => 'setIssued',
-        'state' => 'setState',
+        'is_buy_order' => 'setIsBuyOrder',
         'min_volume' => 'setMinVolume',
-        'wallet_division' => 'setWalletDivision',
+        'escrow' => 'setEscrow',
         'duration' => 'setDuration',
-        'escrow' => 'setEscrow'
+        'wallet_division' => 'setWalletDivision'
     ];
 
     /**
@@ -176,16 +172,15 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         'region_id' => 'getRegionId',
         'location_id' => 'getLocationId',
         'range' => 'getRange',
-        'is_buy_order' => 'getIsBuyOrder',
         'price' => 'getPrice',
         'volume_total' => 'getVolumeTotal',
         'volume_remain' => 'getVolumeRemain',
         'issued' => 'getIssued',
-        'state' => 'getState',
+        'is_buy_order' => 'getIsBuyOrder',
         'min_volume' => 'getMinVolume',
-        'wallet_division' => 'getWalletDivision',
+        'escrow' => 'getEscrow',
         'duration' => 'getDuration',
-        'escrow' => 'getEscrow'
+        'wallet_division' => 'getWalletDivision'
     ];
 
     /**
@@ -241,12 +236,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
     const RANGE_REGION = 'region';
     const RANGE_SOLARSYSTEM = 'solarsystem';
     const RANGE_STATION = 'station';
-    const STATE_CANCELLED = 'cancelled';
-    const STATE_CHARACTER_DELETED = 'character_deleted';
-    const STATE_CLOSED = 'closed';
-    const STATE_EXPIRED = 'expired';
-    const STATE_OPEN = 'open';
-    const STATE_PENDING = 'pending';
     
 
     
@@ -273,23 +262,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         ];
     }
     
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getStateAllowableValues()
-    {
-        return [
-            self::STATE_CANCELLED,
-            self::STATE_CHARACTER_DELETED,
-            self::STATE_CLOSED,
-            self::STATE_EXPIRED,
-            self::STATE_OPEN,
-            self::STATE_PENDING,
-        ];
-    }
-    
 
     /**
      * Associative array for storing property values
@@ -311,16 +283,15 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         $this->container['region_id'] = isset($data['region_id']) ? $data['region_id'] : null;
         $this->container['location_id'] = isset($data['location_id']) ? $data['location_id'] : null;
         $this->container['range'] = isset($data['range']) ? $data['range'] : null;
-        $this->container['is_buy_order'] = isset($data['is_buy_order']) ? $data['is_buy_order'] : null;
         $this->container['price'] = isset($data['price']) ? $data['price'] : null;
         $this->container['volume_total'] = isset($data['volume_total']) ? $data['volume_total'] : null;
         $this->container['volume_remain'] = isset($data['volume_remain']) ? $data['volume_remain'] : null;
         $this->container['issued'] = isset($data['issued']) ? $data['issued'] : null;
-        $this->container['state'] = isset($data['state']) ? $data['state'] : null;
+        $this->container['is_buy_order'] = isset($data['is_buy_order']) ? $data['is_buy_order'] : null;
         $this->container['min_volume'] = isset($data['min_volume']) ? $data['min_volume'] : null;
-        $this->container['wallet_division'] = isset($data['wallet_division']) ? $data['wallet_division'] : null;
-        $this->container['duration'] = isset($data['duration']) ? $data['duration'] : null;
         $this->container['escrow'] = isset($data['escrow']) ? $data['escrow'] : null;
+        $this->container['duration'] = isset($data['duration']) ? $data['duration'] : null;
+        $this->container['wallet_division'] = isset($data['wallet_division']) ? $data['wallet_division'] : null;
     }
 
     /**
@@ -355,9 +326,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ($this->container['is_buy_order'] === null) {
-            $invalidProperties[] = "'is_buy_order' can't be null";
-        }
         if ($this->container['price'] === null) {
             $invalidProperties[] = "'price' can't be null";
         }
@@ -370,19 +338,8 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         if ($this->container['issued'] === null) {
             $invalidProperties[] = "'issued' can't be null";
         }
-        if ($this->container['state'] === null) {
-            $invalidProperties[] = "'state' can't be null";
-        }
-        $allowedValues = $this->getStateAllowableValues();
-        if (!in_array($this->container['state'], $allowedValues)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'state', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        if ($this->container['min_volume'] === null) {
-            $invalidProperties[] = "'min_volume' can't be null";
+        if ($this->container['duration'] === null) {
+            $invalidProperties[] = "'duration' can't be null";
         }
         if ($this->container['wallet_division'] === null) {
             $invalidProperties[] = "'wallet_division' can't be null";
@@ -395,12 +352,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
             $invalidProperties[] = "invalid value for 'wallet_division', must be bigger than or equal to 1.";
         }
 
-        if ($this->container['duration'] === null) {
-            $invalidProperties[] = "'duration' can't be null";
-        }
-        if ($this->container['escrow'] === null) {
-            $invalidProperties[] = "'escrow' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -432,9 +383,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         if (!in_array($this->container['range'], $allowedValues)) {
             return false;
         }
-        if ($this->container['is_buy_order'] === null) {
-            return false;
-        }
         if ($this->container['price'] === null) {
             return false;
         }
@@ -447,14 +395,7 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         if ($this->container['issued'] === null) {
             return false;
         }
-        if ($this->container['state'] === null) {
-            return false;
-        }
-        $allowedValues = $this->getStateAllowableValues();
-        if (!in_array($this->container['state'], $allowedValues)) {
-            return false;
-        }
-        if ($this->container['min_volume'] === null) {
+        if ($this->container['duration'] === null) {
             return false;
         }
         if ($this->container['wallet_division'] === null) {
@@ -464,12 +405,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
             return false;
         }
         if ($this->container['wallet_division'] < 1) {
-            return false;
-        }
-        if ($this->container['duration'] === null) {
-            return false;
-        }
-        if ($this->container['escrow'] === null) {
             return false;
         }
         return true;
@@ -606,30 +541,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
     }
 
     /**
-     * Gets is_buy_order
-     *
-     * @return bool
-     */
-    public function getIsBuyOrder()
-    {
-        return $this->container['is_buy_order'];
-    }
-
-    /**
-     * Sets is_buy_order
-     *
-     * @param bool $is_buy_order True for a bid (buy) order. False for an offer (sell) order
-     *
-     * @return $this
-     */
-    public function setIsBuyOrder($is_buy_order)
-    {
-        $this->container['is_buy_order'] = $is_buy_order;
-
-        return $this;
-    }
-
-    /**
      * Gets price
      *
      * @return double
@@ -726,34 +637,25 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
     }
 
     /**
-     * Gets state
+     * Gets is_buy_order
      *
-     * @return string
+     * @return bool
      */
-    public function getState()
+    public function getIsBuyOrder()
     {
-        return $this->container['state'];
+        return $this->container['is_buy_order'];
     }
 
     /**
-     * Sets state
+     * Sets is_buy_order
      *
-     * @param string $state Current order state
+     * @param bool $is_buy_order True if the order is a bid (buy) order
      *
      * @return $this
      */
-    public function setState($state)
+    public function setIsBuyOrder($is_buy_order)
     {
-        $allowedValues = $this->getStateAllowableValues();
-        if (!in_array($state, $allowedValues)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'state', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['state'] = $state;
+        $this->container['is_buy_order'] = $is_buy_order;
 
         return $this;
     }
@@ -771,13 +673,61 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
     /**
      * Sets min_volume
      *
-     * @param int $min_volume For bids (buy orders), the minimum quantity that will be accepted in a matching offer (sell order)
+     * @param int $min_volume For buy orders, the minimum quantity that will be accepted in a matching sell order
      *
      * @return $this
      */
     public function setMinVolume($min_volume)
     {
         $this->container['min_volume'] = $min_volume;
+
+        return $this;
+    }
+
+    /**
+     * Gets escrow
+     *
+     * @return double
+     */
+    public function getEscrow()
+    {
+        return $this->container['escrow'];
+    }
+
+    /**
+     * Sets escrow
+     *
+     * @param double $escrow For buy orders, the amount of ISK in escrow
+     *
+     * @return $this
+     */
+    public function setEscrow($escrow)
+    {
+        $this->container['escrow'] = $escrow;
+
+        return $this;
+    }
+
+    /**
+     * Gets duration
+     *
+     * @return int
+     */
+    public function getDuration()
+    {
+        return $this->container['duration'];
+    }
+
+    /**
+     * Sets duration
+     *
+     * @param int $duration Number of days for which order is valid (starting from the issued date). An order expires at time issued + duration
+     *
+     * @return $this
+     */
+    public function setDuration($duration)
+    {
+        $this->container['duration'] = $duration;
 
         return $this;
     }
@@ -810,54 +760,6 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         }
 
         $this->container['wallet_division'] = $wallet_division;
-
-        return $this;
-    }
-
-    /**
-     * Gets duration
-     *
-     * @return int
-     */
-    public function getDuration()
-    {
-        return $this->container['duration'];
-    }
-
-    /**
-     * Sets duration
-     *
-     * @param int $duration Number of days the order is valid for (starting from the issued date). An order expires at time issued + duration
-     *
-     * @return $this
-     */
-    public function setDuration($duration)
-    {
-        $this->container['duration'] = $duration;
-
-        return $this;
-    }
-
-    /**
-     * Gets escrow
-     *
-     * @return double
-     */
-    public function getEscrow()
-    {
-        return $this->container['escrow'];
-    }
-
-    /**
-     * Sets escrow
-     *
-     * @param double $escrow For buy orders, the amount of ISK in escrow
-     *
-     * @return $this
-     */
-    public function setEscrow($escrow)
-    {
-        $this->container['escrow'] = $escrow;
 
         return $this;
     }

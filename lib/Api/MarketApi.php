@@ -303,7 +303,7 @@ class MarketApi
         }
 
 
-        $resourcePath = '/v1/characters/{character_id}/orders/';
+        $resourcePath = '/v2/characters/{character_id}/orders/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -961,7 +961,7 @@ class MarketApi
         }
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/orders/';
+        $resourcePath = '/v2/corporations/{corporation_id}/orders/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

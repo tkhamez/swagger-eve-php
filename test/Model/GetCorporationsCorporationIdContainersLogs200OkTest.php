@@ -113,13 +113,6 @@ class GetCorporationsCorporationIdContainersLogs200OkTest extends \PHPUnit_Frame
     }
 
     /**
-     * Test attribute "location_flag"
-     */
-    public function testPropertyLocationFlag()
-    {
-    }
-
-    /**
      * Test attribute "action"
      */
     public function testPropertyAction()
@@ -158,6 +151,13 @@ class GetCorporationsCorporationIdContainersLogs200OkTest extends \PHPUnit_Frame
      * Test attribute "new_config_bitmask"
      */
     public function testPropertyNewConfigBitmask()
+    {
+    }
+
+    /**
+     * Test attribute "location_flag"
+     */
+    public function testPropertyLocationFlag()
     {
     }
 }
