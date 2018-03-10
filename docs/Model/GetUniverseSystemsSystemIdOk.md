@@ -6,11 +6,11 @@ Name | Type | Description | Notes
 **star_id** | **int** | star_id integer | 
 **system_id** | **int** | system_id integer | 
 **name** | **string** | name string | 
-**position** | [**\Swagger\Client\Model\GetUniverseSystemsSystemIdPosition**](GetUniverseSystemsSystemIdPosition.md) |  | 
+**position** | [**\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPosition**](GetUniverseSystemsSystemIdPosition.md) |  | 
 **security_status** | **float** | security_status number | 
 **security_class** | **string** | security_class string | [optional] 
 **constellation_id** | **int** | The constellation this solar system is in | 
-**planets** | [**\Swagger\Client\Model\GetUniverseSystemsSystemIdPlanet[]**](GetUniverseSystemsSystemIdPlanet.md) | planets array | 
+**planets** | [**\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPlanet[]**](GetUniverseSystemsSystemIdPlanet.md) | planets array | 
 **stargates** | **int[]** | stargates array | [optional] 
 **stations** | **int[]** | stations array | [optional] 
 

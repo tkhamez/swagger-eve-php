@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetIndustrySystems200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class GetIndustrySystems200Ok implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'solar_system_id' => 'int',
-        'cost_indices' => '\Swagger\Client\Model\GetIndustrySystemsCostIndice[]'
+        'cost_indices' => '\Swagger\Client\Eve\Model\GetIndustrySystemsCostIndice[]'
     ];
 
     /**
@@ -251,7 +251,7 @@ class GetIndustrySystems200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets cost_indices
      *
-     * @return \Swagger\Client\Model\GetIndustrySystemsCostIndice[]
+     * @return \Swagger\Client\Eve\Model\GetIndustrySystemsCostIndice[]
      */
     public function getCostIndices()
     {
@@ -261,7 +261,7 @@ class GetIndustrySystems200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets cost_indices
      *
-     * @param \Swagger\Client\Model\GetIndustrySystemsCostIndice[] $cost_indices cost_indices array
+     * @param \Swagger\Client\Eve\Model\GetIndustrySystemsCostIndice[] $cost_indices cost_indices array
      *
      * @return $this
      */

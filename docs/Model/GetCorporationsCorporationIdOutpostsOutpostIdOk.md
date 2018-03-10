@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **reprocessing_efficiency** | **float** | reprocessing_efficiency number | 
 **reprocessing_station_take** | **float** | reprocessing_station_take number | 
 **standing_owner_id** | **int** | The owner ID that sets the ability for someone to dock based on standings. | 
-**coordinates** | [**\Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates**](GetCorporationsCorporationIdOutpostsOutpostIdCoordinates.md) |  | 
-**services** | [**\Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[]**](GetCorporationsCorporationIdOutpostsOutpostIdService.md) | A list of services the given outpost provides | 
+**coordinates** | [**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates**](GetCorporationsCorporationIdOutpostsOutpostIdCoordinates.md) |  | 
+**services** | [**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[]**](GetCorporationsCorporationIdOutpostsOutpostIdService.md) | A list of services the given outpost provides | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

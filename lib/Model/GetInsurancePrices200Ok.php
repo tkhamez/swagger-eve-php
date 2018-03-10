@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetInsurancePrices200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class GetInsurancePrices200Ok implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'type_id' => 'int',
-        'levels' => '\Swagger\Client\Model\GetInsurancePricesLevel[]'
+        'levels' => '\Swagger\Client\Eve\Model\GetInsurancePricesLevel[]'
     ];
 
     /**
@@ -251,7 +251,7 @@ class GetInsurancePrices200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets levels
      *
-     * @return \Swagger\Client\Model\GetInsurancePricesLevel[]
+     * @return \Swagger\Client\Eve\Model\GetInsurancePricesLevel[]
      */
     public function getLevels()
     {
@@ -261,7 +261,7 @@ class GetInsurancePrices200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets levels
      *
-     * @param \Swagger\Client\Model\GetInsurancePricesLevel[] $levels A list of a available insurance levels for this ship type
+     * @param \Swagger\Client\Eve\Model\GetInsurancePricesLevel[] $levels A list of a available insurance levels for this ship type
      *
      * @return $this
      */

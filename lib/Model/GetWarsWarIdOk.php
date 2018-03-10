@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetWarsWarIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,9 +65,9 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
         'finished' => '\DateTime',
         'mutual' => 'bool',
         'open_for_allies' => 'bool',
-        'aggressor' => '\Swagger\Client\Model\GetWarsWarIdAggressor',
-        'defender' => '\Swagger\Client\Model\GetWarsWarIdDefender',
-        'allies' => '\Swagger\Client\Model\GetWarsWarIdAlly[]'
+        'aggressor' => '\Swagger\Client\Eve\Model\GetWarsWarIdAggressor',
+        'defender' => '\Swagger\Client\Eve\Model\GetWarsWarIdDefender',
+        'allies' => '\Swagger\Client\Eve\Model\GetWarsWarIdAlly[]'
     ];
 
     /**
@@ -467,7 +467,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets aggressor
      *
-     * @return \Swagger\Client\Model\GetWarsWarIdAggressor
+     * @return \Swagger\Client\Eve\Model\GetWarsWarIdAggressor
      */
     public function getAggressor()
     {
@@ -477,7 +477,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets aggressor
      *
-     * @param \Swagger\Client\Model\GetWarsWarIdAggressor $aggressor aggressor
+     * @param \Swagger\Client\Eve\Model\GetWarsWarIdAggressor $aggressor aggressor
      *
      * @return $this
      */
@@ -491,7 +491,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets defender
      *
-     * @return \Swagger\Client\Model\GetWarsWarIdDefender
+     * @return \Swagger\Client\Eve\Model\GetWarsWarIdDefender
      */
     public function getDefender()
     {
@@ -501,7 +501,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets defender
      *
-     * @param \Swagger\Client\Model\GetWarsWarIdDefender $defender defender
+     * @param \Swagger\Client\Eve\Model\GetWarsWarIdDefender $defender defender
      *
      * @return $this
      */
@@ -515,7 +515,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets allies
      *
-     * @return \Swagger\Client\Model\GetWarsWarIdAlly[]
+     * @return \Swagger\Client\Eve\Model\GetWarsWarIdAlly[]
      */
     public function getAllies()
     {
@@ -525,7 +525,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets allies
      *
-     * @param \Swagger\Client\Model\GetWarsWarIdAlly[] $allies allied corporations or alliances, each object contains either corporation_id or alliance_id
+     * @param \Swagger\Client\Eve\Model\GetWarsWarIdAlly[] $allies allied corporations or alliances, each object contains either corporation_id or alliance_id
      *
      * @return $this
      */

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **defender_id** | **int** | Defending alliance, only present in Defense Events | [optional] 
 **defender_score** | **float** | Score for the defending alliance, only present in Defense Events. | [optional] 
 **attackers_score** | **float** | Score for all attacking parties, only present in Defense Events. | [optional] 
-**participants** | [**\Swagger\Client\Model\GetSovereigntyCampaignsParticipant[]**](GetSovereigntyCampaignsParticipant.md) | Alliance participating and their respective scores, only present in Freeport Events. | [optional] 
+**participants** | [**\Swagger\Client\Eve\Model\GetSovereigntyCampaignsParticipant[]**](GetSovereigntyCampaignsParticipant.md) | Alliance participating and their respective scores, only present in Freeport Events. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

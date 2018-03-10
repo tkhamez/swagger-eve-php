@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **system_id** | **int** | The solar system the structure is in | 
 **profile_id** | **int** | The id of the ACL profile for this citadel | 
 **fuel_expires** | [**\DateTime**](\DateTime.md) | Date on which the structure will run out of fuel | [optional] 
-**services** | [**\Swagger\Client\Model\GetCorporationsCorporationIdStructuresService[]**](GetCorporationsCorporationIdStructuresService.md) | Contains a list of service upgrades, and their state | [optional] 
+**services** | [**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStructuresService[]**](GetCorporationsCorporationIdStructuresService.md) | Contains a list of service upgrades, and their state | [optional] 
 **state_timer_start** | [**\DateTime**](\DateTime.md) | Date at which the structure entered it&#39;s current state | [optional] 
 **state_timer_end** | [**\DateTime**](\DateTime.md) | Date at which the structure will move to it&#39;s next state | [optional] 
 **unanchors_at** | [**\DateTime**](\DateTime.md) | Date at which the structure will unanchor | [optional] 

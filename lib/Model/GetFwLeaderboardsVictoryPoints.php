@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsVictoryPoints Class Doc Comment
  *
  * @category Class
  * @description Top 4 rankings of factions by victory points from yesterday, last week and in total
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GetFwLeaderboardsVictoryPoints implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'yesterday' => '\Swagger\Client\Model\GetFwLeaderboardsYesterday1[]',
-        'last_week' => '\Swagger\Client\Model\GetFwLeaderboardsLastWeek1[]',
-        'active_total' => '\Swagger\Client\Model\GetFwLeaderboardsActiveTotal1[]'
+        'yesterday' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsYesterday1[]',
+        'last_week' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsLastWeek1[]',
+        'active_total' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsActiveTotal1[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GetFwLeaderboardsVictoryPoints implements ModelInterface, ArrayAccess
     /**
      * Gets yesterday
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsYesterday1[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsYesterday1[]
      */
     public function getYesterday()
     {
@@ -249,7 +249,7 @@ class GetFwLeaderboardsVictoryPoints implements ModelInterface, ArrayAccess
     /**
      * Sets yesterday
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsYesterday1[] $yesterday Top 4 ranking of factions by victory points in the past day
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsYesterday1[] $yesterday Top 4 ranking of factions by victory points in the past day
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class GetFwLeaderboardsVictoryPoints implements ModelInterface, ArrayAccess
     /**
      * Gets last_week
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsLastWeek1[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsLastWeek1[]
      */
     public function getLastWeek()
     {
@@ -273,7 +273,7 @@ class GetFwLeaderboardsVictoryPoints implements ModelInterface, ArrayAccess
     /**
      * Sets last_week
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsLastWeek1[] $last_week Top 4 ranking of factions by victory points in the past week
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsLastWeek1[] $last_week Top 4 ranking of factions by victory points in the past week
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class GetFwLeaderboardsVictoryPoints implements ModelInterface, ArrayAccess
     /**
      * Gets active_total
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsActiveTotal1[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsActiveTotal1[]
      */
     public function getActiveTotal()
     {
@@ -297,7 +297,7 @@ class GetFwLeaderboardsVictoryPoints implements ModelInterface, ArrayAccess
     /**
      * Sets active_total
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsActiveTotal1[] $active_total Top 4 ranking of factions active in faction warfare by total victory points. A faction is considered \"active\" if they have participated in faction warfare in the past 14 days.
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsActiveTotal1[] $active_total Top 4 ranking of factions active in faction warfare by total victory points. A faction is considered \"active\" if they have participated in faction warfare in the past 14 days.
      *
      * @return $this
      */

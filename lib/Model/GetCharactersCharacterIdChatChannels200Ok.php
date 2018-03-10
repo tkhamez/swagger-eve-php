@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdChatChannels200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,10 +64,10 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
         'comparison_key' => 'string',
         'has_password' => 'bool',
         'motd' => 'string',
-        'allowed' => '\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsAllowed[]',
-        'operators' => '\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsOperator[]',
-        'blocked' => '\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsBlocked[]',
-        'muted' => '\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsMuted[]'
+        'allowed' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsAllowed[]',
+        'operators' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsOperator[]',
+        'blocked' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsBlocked[]',
+        'muted' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsMuted[]'
     ];
 
     /**
@@ -467,7 +467,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Gets allowed
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsAllowed[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsAllowed[]
      */
     public function getAllowed()
     {
@@ -477,7 +477,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Sets allowed
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsAllowed[] $allowed allowed array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsAllowed[] $allowed allowed array
      *
      * @return $this
      */
@@ -491,7 +491,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Gets operators
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsOperator[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsOperator[]
      */
     public function getOperators()
     {
@@ -501,7 +501,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Sets operators
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsOperator[] $operators operators array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsOperator[] $operators operators array
      *
      * @return $this
      */
@@ -515,7 +515,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Gets blocked
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsBlocked[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsBlocked[]
      */
     public function getBlocked()
     {
@@ -525,7 +525,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Sets blocked
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsBlocked[] $blocked blocked array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsBlocked[] $blocked blocked array
      *
      * @return $this
      */
@@ -539,7 +539,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Gets muted
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsMuted[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsMuted[]
      */
     public function getMuted()
     {
@@ -549,7 +549,7 @@ class GetCharactersCharacterIdChatChannels200Ok implements ModelInterface, Array
     /**
      * Sets muted
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdChatChannelsMuted[] $muted muted array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsMuted[] $muted muted array
      *
      * @return $this
      */

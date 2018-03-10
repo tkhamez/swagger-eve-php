@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * PostCharactersCharacterIdAssetsLocations200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PostCharactersCharacterIdAssetsLocations200Ok implements ModelInterface, A
       */
     protected static $swaggerTypes = [
         'item_id' => 'int',
-        'position' => '\Swagger\Client\Model\PostCharactersCharacterIdAssetsLocationsPosition'
+        'position' => '\Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocationsPosition'
     ];
 
     /**
@@ -251,7 +251,7 @@ class PostCharactersCharacterIdAssetsLocations200Ok implements ModelInterface, A
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\PostCharactersCharacterIdAssetsLocationsPosition
+     * @return \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocationsPosition
      */
     public function getPosition()
     {
@@ -261,7 +261,7 @@ class PostCharactersCharacterIdAssetsLocations200Ok implements ModelInterface, A
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\PostCharactersCharacterIdAssetsLocationsPosition $position position
+     * @param \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocationsPosition $position position
      *
      * @return $this
      */

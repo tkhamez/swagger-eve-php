@@ -1,4 +1,4 @@
-# Swagger\Client\UniverseApi
+# Swagger\Client\Eve\UniverseApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -36,7 +36,7 @@ Method | HTTP request | Description
 
 
 # **getUniverseAncestries**
-> \Swagger\Client\Model\GetUniverseAncestries200Ok[] getUniverseAncestries($datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[] getUniverseAncestries($datasource, $language, $user_agent, $x_user_agent)
 
 Get ancestries
 
@@ -47,7 +47,7 @@ Get all character ancestries  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseAncestries200Ok[]**](../Model/GetUniverseAncestries200Ok.md)
+[**\Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]**](../Model/GetUniverseAncestries200Ok.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseBloodlines**
-> \Swagger\Client\Model\GetUniverseBloodlines200Ok[] getUniverseBloodlines($datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[] getUniverseBloodlines($datasource, $language, $user_agent, $x_user_agent)
 
 Get bloodlines
 
@@ -102,7 +102,7 @@ Get a list of bloodlines  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseBloodlines200Ok[]**](../Model/GetUniverseBloodlines200Ok.md)
+[**\Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]**](../Model/GetUniverseBloodlines200Ok.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ Get a list of item categories  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -199,7 +199,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseCategoriesCategoryId**
-> \Swagger\Client\Model\GetUniverseCategoriesCategoryIdOk getUniverseCategoriesCategoryId($category_id, $datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk getUniverseCategoriesCategoryId($category_id, $datasource, $language, $user_agent, $x_user_agent)
 
 Get item category information
 
@@ -210,7 +210,7 @@ Get information of an item category  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseCategoriesCategoryIdOk**](../Model/GetUniverseCategoriesCategoryIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk**](../Model/GetUniverseCategoriesCategoryIdOk.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ Get a list of constellations  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -309,7 +309,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseConstellationsConstellationId**
-> \Swagger\Client\Model\GetUniverseConstellationsConstellationIdOk getUniverseConstellationsConstellationId($constellation_id, $datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk getUniverseConstellationsConstellationId($constellation_id, $datasource, $language, $user_agent, $x_user_agent)
 
 Get constellation information
 
@@ -320,7 +320,7 @@ Get information on a constellation  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseConstellationsConstellationIdOk**](../Model/GetUniverseConstellationsConstellationIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk**](../Model/GetUniverseConstellationsConstellationIdOk.md)
 
 ### Authorization
 
@@ -366,7 +366,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseFactions**
-> \Swagger\Client\Model\GetUniverseFactions200Ok[] getUniverseFactions($datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseFactions200Ok[] getUniverseFactions($datasource, $language, $user_agent, $x_user_agent)
 
 Get factions
 
@@ -377,7 +377,7 @@ Get a list of factions  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseFactions200Ok[]**](../Model/GetUniverseFactions200Ok.md)
+[**\Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]**](../Model/GetUniverseFactions200Ok.md)
 
 ### Authorization
 
@@ -432,7 +432,7 @@ Get a list of graphics  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -474,7 +474,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseGraphicsGraphicId**
-> \Swagger\Client\Model\GetUniverseGraphicsGraphicIdOk getUniverseGraphicsGraphicId($graphic_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk getUniverseGraphicsGraphicId($graphic_id, $datasource, $user_agent, $x_user_agent)
 
 Get graphic information
 
@@ -485,7 +485,7 @@ Get information on a graphic  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -515,7 +515,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseGraphicsGraphicIdOk**](../Model/GetUniverseGraphicsGraphicIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk**](../Model/GetUniverseGraphicsGraphicIdOk.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ Get a list of item groups  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -584,7 +584,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseGroupsGroupId**
-> \Swagger\Client\Model\GetUniverseGroupsGroupIdOk getUniverseGroupsGroupId($group_id, $datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk getUniverseGroupsGroupId($group_id, $datasource, $language, $user_agent, $x_user_agent)
 
 Get item group information
 
@@ -595,7 +595,7 @@ Get information on an item group  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -627,7 +627,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseGroupsGroupIdOk**](../Model/GetUniverseGroupsGroupIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk**](../Model/GetUniverseGroupsGroupIdOk.md)
 
 ### Authorization
 
@@ -641,7 +641,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseMoonsMoonId**
-> \Swagger\Client\Model\GetUniverseMoonsMoonIdOk getUniverseMoonsMoonId($moon_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk getUniverseMoonsMoonId($moon_id, $datasource, $user_agent, $x_user_agent)
 
 Get moon information
 
@@ -652,7 +652,7 @@ Get information on a moon  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -682,7 +682,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseMoonsMoonIdOk**](../Model/GetUniverseMoonsMoonIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk**](../Model/GetUniverseMoonsMoonIdOk.md)
 
 ### Authorization
 
@@ -696,7 +696,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniversePlanetsPlanetId**
-> \Swagger\Client\Model\GetUniversePlanetsPlanetIdOk getUniversePlanetsPlanetId($planet_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk getUniversePlanetsPlanetId($planet_id, $datasource, $user_agent, $x_user_agent)
 
 Get planet information
 
@@ -707,7 +707,7 @@ Get information on a planet  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -737,7 +737,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniversePlanetsPlanetIdOk**](../Model/GetUniversePlanetsPlanetIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk**](../Model/GetUniversePlanetsPlanetIdOk.md)
 
 ### Authorization
 
@@ -751,7 +751,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseRaces**
-> \Swagger\Client\Model\GetUniverseRaces200Ok[] getUniverseRaces($datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseRaces200Ok[] getUniverseRaces($datasource, $language, $user_agent, $x_user_agent)
 
 Get character races
 
@@ -762,7 +762,7 @@ Get a list of character races  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -792,7 +792,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseRaces200Ok[]**](../Model/GetUniverseRaces200Ok.md)
+[**\Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]**](../Model/GetUniverseRaces200Ok.md)
 
 ### Authorization
 
@@ -817,7 +817,7 @@ Get a list of regions  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -859,7 +859,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseRegionsRegionId**
-> \Swagger\Client\Model\GetUniverseRegionsRegionIdOk getUniverseRegionsRegionId($region_id, $datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk getUniverseRegionsRegionId($region_id, $datasource, $language, $user_agent, $x_user_agent)
 
 Get region information
 
@@ -870,7 +870,7 @@ Get information on a region  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -902,7 +902,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseRegionsRegionIdOk**](../Model/GetUniverseRegionsRegionIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk**](../Model/GetUniverseRegionsRegionIdOk.md)
 
 ### Authorization
 
@@ -916,7 +916,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStargatesStargateId**
-> \Swagger\Client\Model\GetUniverseStargatesStargateIdOk getUniverseStargatesStargateId($stargate_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk getUniverseStargatesStargateId($stargate_id, $datasource, $user_agent, $x_user_agent)
 
 Get stargate information
 
@@ -927,7 +927,7 @@ Get information on a stargate  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -957,7 +957,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseStargatesStargateIdOk**](../Model/GetUniverseStargatesStargateIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk**](../Model/GetUniverseStargatesStargateIdOk.md)
 
 ### Authorization
 
@@ -971,7 +971,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStarsStarId**
-> \Swagger\Client\Model\GetUniverseStarsStarIdOk getUniverseStarsStarId($star_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk getUniverseStarsStarId($star_id, $datasource, $user_agent, $x_user_agent)
 
 Get star information
 
@@ -982,7 +982,7 @@ Get information on a star  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1012,7 +1012,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseStarsStarIdOk**](../Model/GetUniverseStarsStarIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk**](../Model/GetUniverseStarsStarIdOk.md)
 
 ### Authorization
 
@@ -1026,7 +1026,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStationsStationId**
-> \Swagger\Client\Model\GetUniverseStationsStationIdOk getUniverseStationsStationId($station_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk getUniverseStationsStationId($station_id, $datasource, $user_agent, $x_user_agent)
 
 Get station information
 
@@ -1037,7 +1037,7 @@ Get information on a station  ---  This route is cached for up to 300 seconds
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1067,7 +1067,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseStationsStationIdOk**](../Model/GetUniverseStationsStationIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk**](../Model/GetUniverseStationsStationIdOk.md)
 
 ### Authorization
 
@@ -1092,7 +1092,7 @@ List all public structures  ---  This route is cached for up to 3600 seconds
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1134,7 +1134,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStructuresStructureId**
-> \Swagger\Client\Model\GetUniverseStructuresStructureIdOk getUniverseStructuresStructureId($structure_id, $datasource, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk getUniverseStructuresStructureId($structure_id, $datasource, $token, $user_agent, $x_user_agent)
 
 Get structure information
 
@@ -1146,9 +1146,9 @@ Returns information on requested structure, if you are on the ACL. Otherwise, re
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1181,7 +1181,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseStructuresStructureIdOk**](../Model/GetUniverseStructuresStructureIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk**](../Model/GetUniverseStructuresStructureIdOk.md)
 
 ### Authorization
 
@@ -1195,7 +1195,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemJumps**
-> \Swagger\Client\Model\GetUniverseSystemJumps200Ok[] getUniverseSystemJumps($datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[] getUniverseSystemJumps($datasource, $user_agent, $x_user_agent)
 
 Get system jumps
 
@@ -1206,7 +1206,7 @@ Get the number of jumps in solar systems within the last hour ending at the time
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1234,7 +1234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseSystemJumps200Ok[]**](../Model/GetUniverseSystemJumps200Ok.md)
+[**\Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]**](../Model/GetUniverseSystemJumps200Ok.md)
 
 ### Authorization
 
@@ -1248,7 +1248,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemKills**
-> \Swagger\Client\Model\GetUniverseSystemKills200Ok[] getUniverseSystemKills($datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[] getUniverseSystemKills($datasource, $user_agent, $x_user_agent)
 
 Get system kills
 
@@ -1259,7 +1259,7 @@ Get the number of ship, pod and NPC kills per solar system within the last hour 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1287,7 +1287,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseSystemKills200Ok[]**](../Model/GetUniverseSystemKills200Ok.md)
+[**\Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]**](../Model/GetUniverseSystemKills200Ok.md)
 
 ### Authorization
 
@@ -1312,7 +1312,7 @@ Get a list of solar systems  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1354,7 +1354,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemsSystemId**
-> \Swagger\Client\Model\GetUniverseSystemsSystemIdOk getUniverseSystemsSystemId($system_id, $datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk getUniverseSystemsSystemId($system_id, $datasource, $language, $user_agent, $x_user_agent)
 
 Get solar system information
 
@@ -1365,7 +1365,7 @@ Get information on a solar system  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1397,7 +1397,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseSystemsSystemIdOk**](../Model/GetUniverseSystemsSystemIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk**](../Model/GetUniverseSystemsSystemIdOk.md)
 
 ### Authorization
 
@@ -1422,7 +1422,7 @@ Get a list of type ids  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1466,7 +1466,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseTypesTypeId**
-> \Swagger\Client\Model\GetUniverseTypesTypeIdOk getUniverseTypesTypeId($type_id, $datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk getUniverseTypesTypeId($type_id, $datasource, $language, $user_agent, $x_user_agent)
 
 Get type information
 
@@ -1477,7 +1477,7 @@ Get information on a type  ---  This route expires daily at 11:05
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1509,7 +1509,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetUniverseTypesTypeIdOk**](../Model/GetUniverseTypesTypeIdOk.md)
+[**\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk**](../Model/GetUniverseTypesTypeIdOk.md)
 
 ### Authorization
 
@@ -1523,7 +1523,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseIds**
-> \Swagger\Client\Model\PostUniverseIdsOk postUniverseIds($names, $datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\PostUniverseIdsOk postUniverseIds($names, $datasource, $language, $user_agent, $x_user_agent)
 
 Bulk names to IDs
 
@@ -1534,12 +1534,12 @@ Resolve a set of names to IDs in the following categories: agents, alliances, ch
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$names = array(new \Swagger\Client\Model\string[]()); // string[] | The names to resolve
+$names = array(new \Swagger\Client\Eve\Model\string[]()); // string[] | The names to resolve
 $datasource = "tranquility"; // string | The server name you would like data from
 $language = "en-us"; // string | Language to use in the response
 $user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
@@ -1566,7 +1566,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PostUniverseIdsOk**](../Model/PostUniverseIdsOk.md)
+[**\Swagger\Client\Eve\Model\PostUniverseIdsOk**](../Model/PostUniverseIdsOk.md)
 
 ### Authorization
 
@@ -1580,7 +1580,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseNames**
-> \Swagger\Client\Model\PostUniverseNames200Ok[] postUniverseNames($ids, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\PostUniverseNames200Ok[] postUniverseNames($ids, $datasource, $user_agent, $x_user_agent)
 
 Get names and categories for a set of ID's
 
@@ -1591,12 +1591,12 @@ Resolve a set of IDs to names and categories. Supported ID's for resolving are: 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UniverseApi(
+$apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$ids = array(new \Swagger\Client\Model\int[]()); // int[] | The ids to resolve
+$ids = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | The ids to resolve
 $datasource = "tranquility"; // string | The server name you would like data from
 $user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
 $x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
@@ -1621,7 +1621,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PostUniverseNames200Ok[]**](../Model/PostUniverseNames200Ok.md)
+[**\Swagger\Client\Eve\Model\PostUniverseNames200Ok[]**](../Model/PostUniverseNames200Ok.md)
 
 ### Authorization
 

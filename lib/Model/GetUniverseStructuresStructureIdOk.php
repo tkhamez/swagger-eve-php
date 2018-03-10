@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetUniverseStructuresStructureIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class GetUniverseStructuresStructureIdOk implements ModelInterface, ArrayAccess
         'name' => 'string',
         'solar_system_id' => 'int',
         'type_id' => 'int',
-        'position' => '\Swagger\Client\Model\GetUniverseStructuresStructureIdPosition'
+        'position' => '\Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdPosition'
     ];
 
     /**
@@ -311,7 +311,7 @@ class GetUniverseStructuresStructureIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\GetUniverseStructuresStructureIdPosition
+     * @return \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdPosition
      */
     public function getPosition()
     {
@@ -321,7 +321,7 @@ class GetUniverseStructuresStructureIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\GetUniverseStructuresStructureIdPosition $position position
+     * @param \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdPosition $position position
      *
      * @return $this
      */

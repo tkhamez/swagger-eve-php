@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * LocationApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class LocationApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdLocationOk
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk
      */
     public function getCharactersCharacterIdLocation($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -114,13 +114,13 @@ class LocationApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdLocationOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdLocationWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdLocationOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk';
         $request = $this->getCharactersCharacterIdLocationRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -172,7 +172,7 @@ class LocationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdLocationOk',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class LocationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class LocationApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class LocationApi
      */
     public function getCharactersCharacterIdLocationAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdLocationOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk';
         $request = $this->getCharactersCharacterIdLocationRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -415,9 +415,9 @@ class LocationApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdOnlineOk
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk
      */
     public function getCharactersCharacterIdOnline($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -436,13 +436,13 @@ class LocationApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdOnlineOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdOnlineWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOnlineOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk';
         $request = $this->getCharactersCharacterIdOnlineRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -494,7 +494,7 @@ class LocationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdOnlineOk',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class LocationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class LocationApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class LocationApi
      */
     public function getCharactersCharacterIdOnlineAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOnlineOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk';
         $request = $this->getCharactersCharacterIdOnlineRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -737,9 +737,9 @@ class LocationApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdShipOk
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk
      */
     public function getCharactersCharacterIdShip($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -758,13 +758,13 @@ class LocationApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdShipOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdShipWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdShipOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk';
         $request = $this->getCharactersCharacterIdShipRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -816,7 +816,7 @@ class LocationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdShipOk',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -824,7 +824,7 @@ class LocationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -832,7 +832,7 @@ class LocationApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -882,7 +882,7 @@ class LocationApi
      */
     public function getCharactersCharacterIdShipAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdShipOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk';
         $request = $this->getCharactersCharacterIdShipRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client

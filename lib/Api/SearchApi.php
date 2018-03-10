@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * SearchApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class SearchApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdSearchOk
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk
      */
     public function getCharactersCharacterIdSearch($categories, $character_id, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -122,13 +122,13 @@ class SearchApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdSearchOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdSearchWithHttpInfo($categories, $character_id, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdSearchOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk';
         $request = $this->getCharactersCharacterIdSearchRequest($categories, $character_id, $search, $datasource, $language, $strict, $token, $user_agent, $x_user_agent);
 
         try {
@@ -180,7 +180,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdSearchOk',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class SearchApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class SearchApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class SearchApi
      */
     public function getCharactersCharacterIdSearchAsyncWithHttpInfo($categories, $character_id, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdSearchOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk';
         $request = $this->getCharactersCharacterIdSearchRequest($categories, $character_id, $search, $datasource, $language, $strict, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -479,9 +479,9 @@ class SearchApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetSearchOk
+     * @return \Swagger\Client\Eve\Model\GetSearchOk
      */
     public function getSearch($categories, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $user_agent = null, $x_user_agent = null)
     {
@@ -502,13 +502,13 @@ class SearchApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetSearchOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetSearchOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSearchWithHttpInfo($categories, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSearchOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetSearchOk';
         $request = $this->getSearchRequest($categories, $search, $datasource, $language, $strict, $user_agent, $x_user_agent);
 
         try {
@@ -560,7 +560,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetSearchOk',
+                        '\Swagger\Client\Eve\Model\GetSearchOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -568,7 +568,7 @@ class SearchApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -622,7 +622,7 @@ class SearchApi
      */
     public function getSearchAsyncWithHttpInfo($categories, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSearchOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetSearchOk';
         $request = $this->getSearchRequest($categories, $search, $datasource, $language, $strict, $user_agent, $x_user_agent);
 
         return $this->client

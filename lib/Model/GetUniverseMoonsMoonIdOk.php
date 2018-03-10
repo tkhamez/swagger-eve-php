@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetUniverseMoonsMoonIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class GetUniverseMoonsMoonIdOk implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'moon_id' => 'int',
         'name' => 'string',
-        'position' => '\Swagger\Client\Model\GetUniverseMoonsMoonIdPosition',
+        'position' => '\Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdPosition',
         'system_id' => 'int'
     ];
 
@@ -299,7 +299,7 @@ class GetUniverseMoonsMoonIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\GetUniverseMoonsMoonIdPosition
+     * @return \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdPosition
      */
     public function getPosition()
     {
@@ -309,7 +309,7 @@ class GetUniverseMoonsMoonIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\GetUniverseMoonsMoonIdPosition $position position
+     * @param \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdPosition $position position
      *
      * @return $this
      */

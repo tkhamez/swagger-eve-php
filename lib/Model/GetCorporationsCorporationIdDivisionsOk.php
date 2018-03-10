@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdDivisionsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'hangar' => '\Swagger\Client\Model\GetCorporationsCorporationIdDivisionsHangar[]',
-        'wallet' => '\Swagger\Client\Model\GetCorporationsCorporationIdDivisionsWallet[]'
+        'hangar' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdDivisionsHangar[]',
+        'wallet' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdDivisionsWallet[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Gets hangar
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdDivisionsHangar[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdDivisionsHangar[]
      */
     public function getHangar()
     {
@@ -225,7 +225,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Sets hangar
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdDivisionsHangar[] $hangar hangar array
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdDivisionsHangar[] $hangar hangar array
      *
      * @return $this
      */
@@ -239,7 +239,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Gets wallet
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdDivisionsWallet[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdDivisionsWallet[]
      */
     public function getWallet()
     {
@@ -249,7 +249,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Sets wallet
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdDivisionsWallet[] $wallet wallet array
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdDivisionsWallet[] $wallet wallet array
      *
      * @return $this
      */

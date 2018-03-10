@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdStarbasesStarbaseIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -71,7 +71,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         'attack_security_status_threshold' => 'float',
         'attack_if_other_security_status_dropping' => 'bool',
         'attack_if_at_war' => 'bool',
-        'fuels' => '\Swagger\Client\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]'
+        'fuels' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]'
     ];
 
     /**
@@ -905,7 +905,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
     /**
      * Gets fuels
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]
      */
     public function getFuels()
     {
@@ -915,7 +915,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
     /**
      * Sets fuels
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[] $fuels Fuel blocks and other things that will be consumed when operating a starbase (POS)
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[] $fuels Fuel blocks and other things that will be consumed when operating a starbase (POS)
      *
      * @return $this
      */

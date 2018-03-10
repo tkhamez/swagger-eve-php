@@ -1,4 +1,4 @@
-# Swagger\Client\StatusApi
+# Swagger\Client\Eve\StatusApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getStatus**
-> \Swagger\Client\Model\GetStatusOk getStatus($datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetStatusOk getStatus($datasource, $user_agent, $x_user_agent)
 
 Retrieve the uptime and player counts
 
@@ -19,7 +19,7 @@ EVE Server status  ---  This route is cached for up to 30 seconds
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\StatusApi(
+$apiInstance = new Swagger\Client\Eve\Api\StatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetStatusOk**](../Model/GetStatusOk.md)
+[**\Swagger\Client\Eve\Model\GetStatusOk**](../Model/GetStatusOk.md)
 
 ### Authorization
 

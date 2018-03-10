@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * UserInterfaceApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -117,7 +117,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -169,7 +169,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -400,7 +400,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -420,7 +420,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -464,7 +464,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -472,7 +472,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -677,7 +677,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -697,7 +697,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -741,7 +741,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -749,7 +749,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -954,7 +954,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -974,7 +974,7 @@ class UserInterfaceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1018,7 +1018,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1026,7 +1026,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1225,13 +1225,13 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \Swagger\Client\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
+     * @param  \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1245,13 +1245,13 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \Swagger\Client\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
+     * @param  \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1295,7 +1295,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1303,7 +1303,7 @@ class UserInterfaceApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostUiOpenwindowNewmailUnprocessableEntity',
+                        '\Swagger\Client\Eve\Model\PostUiOpenwindowNewmailUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1311,7 +1311,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1326,7 +1326,7 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \Swagger\Client\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
+     * @param  \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -1350,7 +1350,7 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \Swagger\Client\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
+     * @param  \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -1390,7 +1390,7 @@ class UserInterfaceApi
     /**
      * Create request for operation 'postUiOpenwindowNewmail'
      *
-     * @param  \Swagger\Client\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
+     * @param  \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail $new_mail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)

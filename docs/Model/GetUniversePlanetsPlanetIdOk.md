@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **planet_id** | **int** | planet_id integer | 
 **name** | **string** | name string | 
 **type_id** | **int** | type_id integer | 
-**position** | [**\Swagger\Client\Model\GetUniversePlanetsPlanetIdPosition**](GetUniversePlanetsPlanetIdPosition.md) |  | 
+**position** | [**\Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdPosition**](GetUniversePlanetsPlanetIdPosition.md) |  | 
 **system_id** | **int** | The solar system this planet is in | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

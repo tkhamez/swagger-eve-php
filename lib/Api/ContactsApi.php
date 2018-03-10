@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * ContactsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -115,7 +115,7 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,7 +159,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -167,7 +167,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -404,9 +404,9 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetAlliancesAllianceIdContacts200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetAlliancesAllianceIdContacts200Ok[]
      */
     public function getAlliancesAllianceIdContacts($alliance_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -426,13 +426,13 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetAlliancesAllianceIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetAlliancesAllianceIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesAllianceIdContactsWithHttpInfo($alliance_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesAllianceIdContacts200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdContacts200Ok[]';
         $request = $this->getAlliancesAllianceIdContactsRequest($alliance_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -484,7 +484,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAlliancesAllianceIdContacts200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdContacts200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -492,7 +492,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -500,7 +500,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -552,7 +552,7 @@ class ContactsApi
      */
     public function getAlliancesAllianceIdContactsAsyncWithHttpInfo($alliance_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesAllianceIdContacts200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdContacts200Ok[]';
         $request = $this->getAlliancesAllianceIdContactsRequest($alliance_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -735,9 +735,9 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdContacts200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdContacts200Ok[]
      */
     public function getCharactersCharacterIdContacts($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -757,13 +757,13 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdContactsWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdContacts200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdContacts200Ok[]';
         $request = $this->getCharactersCharacterIdContactsRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -815,7 +815,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdContacts200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdContacts200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -823,7 +823,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -831,7 +831,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -883,7 +883,7 @@ class ContactsApi
      */
     public function getCharactersCharacterIdContactsAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdContacts200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdContacts200Ok[]';
         $request = $this->getCharactersCharacterIdContactsRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1065,9 +1065,9 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdContactsLabels200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdContactsLabels200Ok[]
      */
     public function getCharactersCharacterIdContactsLabels($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1086,13 +1086,13 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdContactsLabels200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdContactsLabels200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdContactsLabelsWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdContactsLabels200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdContactsLabels200Ok[]';
         $request = $this->getCharactersCharacterIdContactsLabelsRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1144,7 +1144,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdContactsLabels200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdContactsLabels200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1152,7 +1152,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1160,7 +1160,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1210,7 +1210,7 @@ class ContactsApi
      */
     public function getCharactersCharacterIdContactsLabelsAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdContactsLabels200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdContactsLabels200Ok[]';
         $request = $this->getCharactersCharacterIdContactsLabelsRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1388,9 +1388,9 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdContacts200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdContacts200Ok[]
      */
     public function getCorporationsCorporationIdContacts($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1410,13 +1410,13 @@ class ContactsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdContactsWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdContacts200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdContacts200Ok[]';
         $request = $this->getCorporationsCorporationIdContactsRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1468,7 +1468,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdContacts200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdContacts200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1476,7 +1476,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1484,7 +1484,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1536,7 +1536,7 @@ class ContactsApi
      */
     public function getCorporationsCorporationIdContactsAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdContacts200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdContacts200Ok[]';
         $request = $this->getCorporationsCorporationIdContactsRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1722,7 +1722,7 @@ class ContactsApi
      * @param  bool $watched Whether the new contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -1747,7 +1747,7 @@ class ContactsApi
      * @param  bool $watched Whether the new contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -1813,7 +1813,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1821,7 +1821,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2098,7 +2098,7 @@ class ContactsApi
      * @param  bool $watched Whether the contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2122,7 +2122,7 @@ class ContactsApi
      * @param  bool $watched Whether the contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2166,7 +2166,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2174,7 +2174,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

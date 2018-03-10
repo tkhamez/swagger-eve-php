@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdPlanetsPlanetIdPin Class Doc Comment
  *
  * @category Class
  * @description pin object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,9 +63,9 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
         'pin_id' => 'int',
         'type_id' => 'int',
         'schematic_id' => 'int',
-        'extractor_details' => '\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails',
-        'factory_details' => '\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails',
-        'contents' => '\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]',
+        'extractor_details' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails',
+        'factory_details' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails',
+        'contents' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]',
         'install_time' => '\DateTime',
         'expiry_time' => '\DateTime',
         'last_cycle_start' => '\DateTime'
@@ -413,7 +413,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Gets extractor_details
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
      */
     public function getExtractorDetails()
     {
@@ -423,7 +423,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Sets extractor_details
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails $extractor_details extractor_details
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails $extractor_details extractor_details
      *
      * @return $this
      */
@@ -437,7 +437,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Gets factory_details
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails
      */
     public function getFactoryDetails()
     {
@@ -447,7 +447,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Sets factory_details
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails $factory_details factory_details
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails $factory_details factory_details
      *
      * @return $this
      */
@@ -461,7 +461,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Gets contents
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]
      */
     public function getContents()
     {
@@ -471,7 +471,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Sets contents
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[] $contents contents array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[] $contents contents array
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetFleetsFleetIdWings200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class GetFleetsFleetIdWings200Ok implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'id' => 'int',
-        'squads' => '\Swagger\Client\Model\GetFleetsFleetIdWingsSquad[]'
+        'squads' => '\Swagger\Client\Eve\Model\GetFleetsFleetIdWingsSquad[]'
     ];
 
     /**
@@ -287,7 +287,7 @@ class GetFleetsFleetIdWings200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets squads
      *
-     * @return \Swagger\Client\Model\GetFleetsFleetIdWingsSquad[]
+     * @return \Swagger\Client\Eve\Model\GetFleetsFleetIdWingsSquad[]
      */
     public function getSquads()
     {
@@ -297,7 +297,7 @@ class GetFleetsFleetIdWings200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets squads
      *
-     * @param \Swagger\Client\Model\GetFleetsFleetIdWingsSquad[] $squads squads array
+     * @param \Swagger\Client\Eve\Model\GetFleetsFleetIdWingsSquad[] $squads squads array
      *
      * @return $this
      */

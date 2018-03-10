@@ -1,4 +1,4 @@
-# Swagger\Client\AllianceApi
+# Swagger\Client\Eve\AllianceApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -23,7 +23,7 @@ List all active player alliances  ---  This route is cached for up to 3600 secon
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AllianceApi(
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceId**
-> \Swagger\Client\Model\GetAlliancesAllianceIdOk getAlliancesAllianceId($alliance_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk getAlliancesAllianceId($alliance_id, $datasource, $user_agent, $x_user_agent)
 
 Get alliance information
 
@@ -76,7 +76,7 @@ Public information about an alliance  ---  This route is cached for up to 3600 s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AllianceApi(
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetAlliancesAllianceIdOk**](../Model/GetAlliancesAllianceIdOk.md)
+[**\Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk**](../Model/GetAlliancesAllianceIdOk.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ List all current member corporations of an alliance  ---  This route is cached f
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AllianceApi(
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -175,7 +175,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceIdIcons**
-> \Swagger\Client\Model\GetAlliancesAllianceIdIconsOk getAlliancesAllianceIdIcons($alliance_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk getAlliancesAllianceIdIcons($alliance_id, $datasource, $user_agent, $x_user_agent)
 
 Get alliance icon
 
@@ -186,7 +186,7 @@ Get the icon urls for a alliance  ---  This route is cached for up to 3600 secon
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AllianceApi(
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetAlliancesAllianceIdIconsOk**](../Model/GetAlliancesAllianceIdIconsOk.md)
+[**\Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk**](../Model/GetAlliancesAllianceIdIconsOk.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesNames**
-> \Swagger\Client\Model\GetAlliancesNames200Ok[] getAlliancesNames($alliance_ids, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetAlliancesNames200Ok[] getAlliancesNames($alliance_ids, $datasource, $user_agent, $x_user_agent)
 
 Get alliance names
 
@@ -241,7 +241,7 @@ Resolve a set of alliance IDs to alliance names  ---  This route is cached for u
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AllianceApi(
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetAlliancesNames200Ok[]**](../Model/GetAlliancesNames200Ok.md)
+[**\Swagger\Client\Eve\Model\GetAlliancesNames200Ok[]**](../Model/GetAlliancesNames200Ok.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsCorporationsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kills' => '\Swagger\Client\Model\GetFwLeaderboardsCorporationsKills',
-        'victory_points' => '\Swagger\Client\Model\GetFwLeaderboardsCorporationsVictoryPoints'
+        'kills' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsKills',
+        'victory_points' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsVictoryPoints'
     ];
 
     /**
@@ -227,7 +227,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Gets kills
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCorporationsKills
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsKills
      */
     public function getKills()
     {
@@ -237,7 +237,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Sets kills
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCorporationsKills $kills kills
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsKills $kills kills
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Gets victory_points
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCorporationsVictoryPoints
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -261,7 +261,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Sets victory_points
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCorporationsVictoryPoints $victory_points victory_points
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsVictoryPoints $victory_points victory_points
      *
      * @return $this
      */

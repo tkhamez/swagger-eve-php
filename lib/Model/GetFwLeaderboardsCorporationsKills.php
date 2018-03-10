@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsCorporationsKills Class Doc Comment
  *
  * @category Class
  * @description Top 10 rankings of corporations by number of kills from yesterday, last week and in total.
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'yesterday' => '\Swagger\Client\Model\GetFwLeaderboardsCorporationsYesterday[]',
-        'last_week' => '\Swagger\Client\Model\GetFwLeaderboardsCorporationsLastWeek[]',
-        'active_total' => '\Swagger\Client\Model\GetFwLeaderboardsCorporationsActiveTotal[]'
+        'yesterday' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsYesterday[]',
+        'last_week' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsLastWeek[]',
+        'active_total' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsActiveTotal[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Gets yesterday
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCorporationsYesterday[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsYesterday[]
      */
     public function getYesterday()
     {
@@ -249,7 +249,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Sets yesterday
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCorporationsYesterday[] $yesterday Top 10 ranking of corporations by kills in the past day
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsYesterday[] $yesterday Top 10 ranking of corporations by kills in the past day
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Gets last_week
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCorporationsLastWeek[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsLastWeek[]
      */
     public function getLastWeek()
     {
@@ -273,7 +273,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Sets last_week
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCorporationsLastWeek[] $last_week Top 10 ranking of corporations by kills in the past week
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsLastWeek[] $last_week Top 10 ranking of corporations by kills in the past week
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Gets active_total
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCorporationsActiveTotal[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsActiveTotal[]
      */
     public function getActiveTotal()
     {
@@ -297,7 +297,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Sets active_total
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCorporationsActiveTotal[] $active_total Top 10 ranking of corporations active in faction warfare by total kills. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days.
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsActiveTotal[] $active_total Top 10 ranking of corporations active in faction warfare by total kills. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days.
      *
      * @return $this
      */

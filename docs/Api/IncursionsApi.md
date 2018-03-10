@@ -1,4 +1,4 @@
-# Swagger\Client\IncursionsApi
+# Swagger\Client\Eve\IncursionsApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getIncursions**
-> \Swagger\Client\Model\GetIncursions200Ok[] getIncursions($datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetIncursions200Ok[] getIncursions($datasource, $user_agent, $x_user_agent)
 
 List incursions
 
@@ -19,7 +19,7 @@ Return a list of current incursions  ---  This route is cached for up to 300 sec
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IncursionsApi(
+$apiInstance = new Swagger\Client\Eve\Api\IncursionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetIncursions200Ok[]**](../Model/GetIncursions200Ok.md)
+[**\Swagger\Client\Eve\Model\GetIncursions200Ok[]**](../Model/GetIncursions200Ok.md)
 
 ### Authorization
 

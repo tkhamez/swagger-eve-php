@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * MarketApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdOrders200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[]
      */
     public function getCharactersCharacterIdOrders($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -114,13 +114,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdOrdersWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOrders200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[]';
         $request = $this->getCharactersCharacterIdOrdersRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -172,7 +172,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdOrders200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class MarketApi
      */
     public function getCharactersCharacterIdOrdersAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOrders200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[]';
         $request = $this->getCharactersCharacterIdOrdersRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -416,9 +416,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdOrdersHistory200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[]
      */
     public function getCharactersCharacterIdOrdersHistory($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -438,13 +438,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdOrdersHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdOrdersHistoryWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOrdersHistory200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[]';
         $request = $this->getCharactersCharacterIdOrdersHistoryRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -496,7 +496,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdOrdersHistory200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +564,7 @@ class MarketApi
      */
     public function getCharactersCharacterIdOrdersHistoryAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOrdersHistory200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[]';
         $request = $this->getCharactersCharacterIdOrdersHistoryRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -747,9 +747,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdOrders200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[]
      */
     public function getCorporationsCorporationIdOrders($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -769,13 +769,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdOrdersWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdOrders200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[]';
         $request = $this->getCorporationsCorporationIdOrdersRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -827,7 +827,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdOrders200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -835,7 +835,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -843,7 +843,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -895,7 +895,7 @@ class MarketApi
      */
     public function getCorporationsCorporationIdOrdersAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdOrders200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[]';
         $request = $this->getCorporationsCorporationIdOrdersRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1078,9 +1078,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]
      */
     public function getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1100,13 +1100,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdOrdersHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdOrdersHistoryWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]';
         $request = $this->getCorporationsCorporationIdOrdersHistoryRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1158,7 +1158,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1166,7 +1166,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1174,7 +1174,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1226,7 +1226,7 @@ class MarketApi
      */
     public function getCorporationsCorporationIdOrdersHistoryAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]';
         $request = $this->getCorporationsCorporationIdOrdersHistoryRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1406,7 +1406,7 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -1425,7 +1425,7 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -1491,7 +1491,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1686,9 +1686,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetMarketsGroupsMarketGroupIdOk
+     * @return \Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk
      */
     public function getMarketsGroupsMarketGroupId($market_group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -1707,13 +1707,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetMarketsGroupsMarketGroupIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsGroupsMarketGroupIdWithHttpInfo($market_group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsGroupsMarketGroupIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk';
         $request = $this->getMarketsGroupsMarketGroupIdRequest($market_group_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -1765,7 +1765,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsGroupsMarketGroupIdOk',
+                        '\Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1773,7 +1773,7 @@ class MarketApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsGroupsMarketGroupIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1781,7 +1781,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1831,7 +1831,7 @@ class MarketApi
      */
     public function getMarketsGroupsMarketGroupIdAsyncWithHttpInfo($market_group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsGroupsMarketGroupIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk';
         $request = $this->getMarketsGroupsMarketGroupIdRequest($market_group_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1998,9 +1998,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetMarketsPrices200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[]
      */
     public function getMarketsPrices($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -2017,13 +2017,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetMarketsPrices200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsPricesWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsPrices200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsPrices200Ok[]';
         $request = $this->getMarketsPricesRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -2075,7 +2075,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsPrices200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetMarketsPrices200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2083,7 +2083,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2129,7 +2129,7 @@ class MarketApi
      */
     public function getMarketsPricesAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsPrices200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsPrices200Ok[]';
         $request = $this->getMarketsPricesRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2278,9 +2278,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetMarketsRegionIdHistory200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[]
      */
     public function getMarketsRegionIdHistory($region_id, $type_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -2299,13 +2299,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetMarketsRegionIdHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsRegionIdHistoryWithHttpInfo($region_id, $type_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsRegionIdHistory200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[]';
         $request = $this->getMarketsRegionIdHistoryRequest($region_id, $type_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -2357,7 +2357,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsRegionIdHistory200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2365,7 +2365,7 @@ class MarketApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsRegionIdHistoryUnprocessableEntity',
+                        '\Swagger\Client\Eve\Model\GetMarketsRegionIdHistoryUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2373,7 +2373,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2423,7 +2423,7 @@ class MarketApi
      */
     public function getMarketsRegionIdHistoryAsyncWithHttpInfo($region_id, $type_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsRegionIdHistory200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[]';
         $request = $this->getMarketsRegionIdHistoryRequest($region_id, $type_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2600,9 +2600,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetMarketsRegionIdOrders200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[]
      */
     public function getMarketsRegionIdOrders($order_type, $region_id, $datasource = 'tranquility', $page = '1', $type_id = null, $user_agent = null, $x_user_agent = null)
     {
@@ -2623,13 +2623,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetMarketsRegionIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsRegionIdOrdersWithHttpInfo($order_type, $region_id, $datasource = 'tranquility', $page = '1', $type_id = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsRegionIdOrders200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[]';
         $request = $this->getMarketsRegionIdOrdersRequest($order_type, $region_id, $datasource, $page, $type_id, $user_agent, $x_user_agent);
 
         try {
@@ -2681,7 +2681,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsRegionIdOrders200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2689,7 +2689,7 @@ class MarketApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsRegionIdOrdersUnprocessableEntity',
+                        '\Swagger\Client\Eve\Model\GetMarketsRegionIdOrdersUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2697,7 +2697,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2751,7 +2751,7 @@ class MarketApi
      */
     public function getMarketsRegionIdOrdersAsyncWithHttpInfo($order_type, $region_id, $datasource = 'tranquility', $page = '1', $type_id = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsRegionIdOrders200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[]';
         $request = $this->getMarketsRegionIdOrdersRequest($order_type, $region_id, $datasource, $page, $type_id, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2936,7 +2936,7 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -2957,7 +2957,7 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -3023,7 +3023,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3243,9 +3243,9 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetMarketsStructuresStructureId200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[]
      */
     public function getMarketsStructuresStructureId($structure_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -3265,13 +3265,13 @@ class MarketApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetMarketsStructuresStructureId200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsStructuresStructureIdWithHttpInfo($structure_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsStructuresStructureId200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[]';
         $request = $this->getMarketsStructuresStructureIdRequest($structure_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -3323,7 +3323,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetMarketsStructuresStructureId200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3331,7 +3331,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3339,7 +3339,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3391,7 +3391,7 @@ class MarketApi
      */
     public function getMarketsStructuresStructureIdAsyncWithHttpInfo($structure_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetMarketsStructuresStructureId200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[]';
         $request = $this->getMarketsStructuresStructureIdRequest($structure_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client

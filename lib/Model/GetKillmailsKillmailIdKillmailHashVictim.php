@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetKillmailsKillmailIdKillmailHashVictim Class Doc Comment
  *
  * @category Class
  * @description victim object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,8 +64,8 @@ class GetKillmailsKillmailIdKillmailHashVictim implements ModelInterface, ArrayA
         'faction_id' => 'int',
         'damage_taken' => 'int',
         'ship_type_id' => 'int',
-        'items' => '\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashItem1[]',
-        'position' => '\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashPosition'
+        'items' => '\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashItem1[]',
+        'position' => '\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashPosition'
     ];
 
     /**
@@ -407,7 +407,7 @@ class GetKillmailsKillmailIdKillmailHashVictim implements ModelInterface, ArrayA
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashItem1[]
+     * @return \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashItem1[]
      */
     public function getItems()
     {
@@ -417,7 +417,7 @@ class GetKillmailsKillmailIdKillmailHashVictim implements ModelInterface, ArrayA
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashItem1[] $items items array
+     * @param \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashItem1[] $items items array
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class GetKillmailsKillmailIdKillmailHashVictim implements ModelInterface, ArrayA
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashPosition
+     * @return \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashPosition
      */
     public function getPosition()
     {
@@ -441,7 +441,7 @@ class GetKillmailsKillmailIdKillmailHashVictim implements ModelInterface, ArrayA
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashPosition $position position
+     * @param \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashPosition $position position
      *
      * @return $this
      */

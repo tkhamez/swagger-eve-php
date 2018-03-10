@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * LoyaltyApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class LoyaltyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]
      */
     public function getCharactersCharacterIdLoyaltyPoints($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -114,13 +114,13 @@ class LoyaltyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdLoyaltyPointsWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]';
         $request = $this->getCharactersCharacterIdLoyaltyPointsRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -172,7 +172,7 @@ class LoyaltyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class LoyaltyApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class LoyaltyApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class LoyaltyApi
      */
     public function getCharactersCharacterIdLoyaltyPointsAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[]';
         $request = $this->getCharactersCharacterIdLoyaltyPointsRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -414,9 +414,9 @@ class LoyaltyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]
      */
     public function getLoyaltyStoresCorporationIdOffers($corporation_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -434,13 +434,13 @@ class LoyaltyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffers200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffers200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getLoyaltyStoresCorporationIdOffersWithHttpInfo($corporation_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]';
         $request = $this->getLoyaltyStoresCorporationIdOffersRequest($corporation_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -492,7 +492,7 @@ class LoyaltyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -500,7 +500,7 @@ class LoyaltyApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffersNotFound',
+                        '\Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffersNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -508,7 +508,7 @@ class LoyaltyApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -556,7 +556,7 @@ class LoyaltyApi
      */
     public function getLoyaltyStoresCorporationIdOffersAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffers200Ok[]';
         $request = $this->getLoyaltyStoresCorporationIdOffersRequest($corporation_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client

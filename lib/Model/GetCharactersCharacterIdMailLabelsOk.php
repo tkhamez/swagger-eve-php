@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdMailLabelsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class GetCharactersCharacterIdMailLabelsOk implements ModelInterface, ArrayAcces
       */
     protected static $swaggerTypes = [
         'total_unread_count' => 'int',
-        'labels' => '\Swagger\Client\Model\GetCharactersCharacterIdMailLabelsLabel[]'
+        'labels' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLabelsLabel[]'
     ];
 
     /**
@@ -251,7 +251,7 @@ class GetCharactersCharacterIdMailLabelsOk implements ModelInterface, ArrayAcces
     /**
      * Gets labels
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdMailLabelsLabel[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLabelsLabel[]
      */
     public function getLabels()
     {
@@ -261,7 +261,7 @@ class GetCharactersCharacterIdMailLabelsOk implements ModelInterface, ArrayAcces
     /**
      * Sets labels
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdMailLabelsLabel[] $labels labels array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLabelsLabel[] $labels labels array
      *
      * @return $this
      */

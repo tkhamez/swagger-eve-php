@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetKillmailsKillmailIdKillmailHashItem1 Class Doc Comment
  *
  * @category Class
  * @description item object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class GetKillmailsKillmailIdKillmailHashItem1 implements ModelInterface, ArrayAc
         'quantity_dropped' => 'int',
         'singleton' => 'int',
         'flag' => 'int',
-        'items' => '\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashItem[]'
+        'items' => '\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashItem[]'
     ];
 
     /**
@@ -377,7 +377,7 @@ class GetKillmailsKillmailIdKillmailHashItem1 implements ModelInterface, ArrayAc
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashItem[]
+     * @return \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashItem[]
      */
     public function getItems()
     {
@@ -387,7 +387,7 @@ class GetKillmailsKillmailIdKillmailHashItem1 implements ModelInterface, ArrayAc
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashItem[] $items items array
+     * @param \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashItem[] $items items array
      *
      * @return $this
      */

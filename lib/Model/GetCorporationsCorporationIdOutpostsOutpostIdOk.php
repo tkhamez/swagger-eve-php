@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdOutpostsOutpostIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,8 +66,8 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
         'reprocessing_efficiency' => 'float',
         'reprocessing_station_take' => 'float',
         'standing_owner_id' => 'int',
-        'coordinates' => '\Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates',
-        'services' => '\Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[]'
+        'coordinates' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates',
+        'services' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[]'
     ];
 
     /**
@@ -515,7 +515,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Gets coordinates
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates
      */
     public function getCoordinates()
     {
@@ -525,7 +525,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Sets coordinates
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates $coordinates coordinates
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates $coordinates coordinates
      *
      * @return $this
      */
@@ -539,7 +539,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Gets services
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[]
      */
     public function getServices()
     {
@@ -549,7 +549,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Sets services
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[] $services A list of services the given outpost provides
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdService[] $services A list of services the given outpost provides
      *
      * @return $this
      */

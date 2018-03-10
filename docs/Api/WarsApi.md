@@ -1,4 +1,4 @@
-# Swagger\Client\WarsApi
+# Swagger\Client\Eve\WarsApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -21,7 +21,7 @@ Return a list of wars  ---  This route is cached for up to 3600 seconds
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WarsApi(
+$apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarId**
-> \Swagger\Client\Model\GetWarsWarIdOk getWarsWarId($war_id, $datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetWarsWarIdOk getWarsWarId($war_id, $datasource, $user_agent, $x_user_agent)
 
 Get war information
 
@@ -76,7 +76,7 @@ Return details about a war  ---  This route is cached for up to 3600 seconds
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WarsApi(
+$apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetWarsWarIdOk**](../Model/GetWarsWarIdOk.md)
+[**\Swagger\Client\Eve\Model\GetWarsWarIdOk**](../Model/GetWarsWarIdOk.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarIdKillmails**
-> \Swagger\Client\Model\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($war_id, $datasource, $page, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($war_id, $datasource, $page, $user_agent, $x_user_agent)
 
 List kills for a war
 
@@ -131,7 +131,7 @@ Return a list of kills related to a war  ---  This route is cached for up to 360
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WarsApi(
+$apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetWarsWarIdKillmails200Ok[]**](../Model/GetWarsWarIdKillmails200Ok.md)
+[**\Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[]**](../Model/GetWarsWarIdKillmails200Ok.md)
 
 ### Authorization
 

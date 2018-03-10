@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdStructures200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
         'system_id' => 'int',
         'profile_id' => 'int',
         'fuel_expires' => '\DateTime',
-        'services' => '\Swagger\Client\Model\GetCorporationsCorporationIdStructuresService[]',
+        'services' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStructuresService[]',
         'state_timer_start' => '\DateTime',
         'state_timer_end' => '\DateTime',
         'unanchors_at' => '\DateTime',
@@ -594,7 +594,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Gets services
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdStructuresService[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdStructuresService[]
      */
     public function getServices()
     {
@@ -604,7 +604,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Sets services
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdStructuresService[] $services Contains a list of service upgrades, and their state
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdStructuresService[] $services Contains a list of service upgrades, and their state
      *
      * @return $this
      */

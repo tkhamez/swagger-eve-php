@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetUniverseSystemsSystemIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,11 +61,11 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess
         'star_id' => 'int',
         'system_id' => 'int',
         'name' => 'string',
-        'position' => '\Swagger\Client\Model\GetUniverseSystemsSystemIdPosition',
+        'position' => '\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPosition',
         'security_status' => 'float',
         'security_class' => 'string',
         'constellation_id' => 'int',
-        'planets' => '\Swagger\Client\Model\GetUniverseSystemsSystemIdPlanet[]',
+        'planets' => '\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPlanet[]',
         'stargates' => 'int[]',
         'stations' => 'int[]'
     ];
@@ -377,7 +377,7 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\GetUniverseSystemsSystemIdPosition
+     * @return \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPosition
      */
     public function getPosition()
     {
@@ -387,7 +387,7 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\GetUniverseSystemsSystemIdPosition $position position
+     * @param \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPosition $position position
      *
      * @return $this
      */
@@ -473,7 +473,7 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets planets
      *
-     * @return \Swagger\Client\Model\GetUniverseSystemsSystemIdPlanet[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPlanet[]
      */
     public function getPlanets()
     {
@@ -483,7 +483,7 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets planets
      *
-     * @param \Swagger\Client\Model\GetUniverseSystemsSystemIdPlanet[] $planets planets array
+     * @param \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdPlanet[] $planets planets array
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * WalletApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return double
      */
@@ -114,7 +114,7 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of double, HTTP status code, HTTP response headers (array of strings)
      */
@@ -180,7 +180,7 @@ class WalletApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class WalletApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -416,9 +416,9 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdWalletJournal200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournal200Ok[]
      */
     public function getCharactersCharacterIdWalletJournal($character_id, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -438,13 +438,13 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdWalletJournal200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournal200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdWalletJournalWithHttpInfo($character_id, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdWalletJournal200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournal200Ok[]';
         $request = $this->getCharactersCharacterIdWalletJournalRequest($character_id, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         try {
@@ -496,7 +496,7 @@ class WalletApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdWalletJournal200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournal200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class WalletApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class WalletApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +564,7 @@ class WalletApi
      */
     public function getCharactersCharacterIdWalletJournalAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdWalletJournal200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournal200Ok[]';
         $request = $this->getCharactersCharacterIdWalletJournalRequest($character_id, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -747,9 +747,9 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdWalletTransactions200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletTransactions200Ok[]
      */
     public function getCharactersCharacterIdWalletTransactions($character_id, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -769,13 +769,13 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdWalletTransactions200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletTransactions200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdWalletTransactionsWithHttpInfo($character_id, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdWalletTransactions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletTransactions200Ok[]';
         $request = $this->getCharactersCharacterIdWalletTransactionsRequest($character_id, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         try {
@@ -827,7 +827,7 @@ class WalletApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdWalletTransactions200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletTransactions200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -835,7 +835,7 @@ class WalletApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -843,7 +843,7 @@ class WalletApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -895,7 +895,7 @@ class WalletApi
      */
     public function getCharactersCharacterIdWalletTransactionsAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdWalletTransactions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletTransactions200Ok[]';
         $request = $this->getCharactersCharacterIdWalletTransactionsRequest($character_id, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1077,9 +1077,9 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdWallets200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWallets200Ok[]
      */
     public function getCorporationsCorporationIdWallets($corporation_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1098,13 +1098,13 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdWallets200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWallets200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdWalletsWithHttpInfo($corporation_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdWallets200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWallets200Ok[]';
         $request = $this->getCorporationsCorporationIdWalletsRequest($corporation_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1156,7 +1156,7 @@ class WalletApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdWallets200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWallets200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1164,7 +1164,7 @@ class WalletApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1172,7 +1172,7 @@ class WalletApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1222,7 +1222,7 @@ class WalletApi
      */
     public function getCorporationsCorporationIdWalletsAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdWallets200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWallets200Ok[]';
         $request = $this->getCorporationsCorporationIdWalletsRequest($corporation_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1401,9 +1401,9 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]
      */
     public function getCorporationsCorporationIdWalletsDivisionJournal($corporation_id, $division, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1424,13 +1424,13 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdWalletsDivisionJournalWithHttpInfo($corporation_id, $division, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]';
         $request = $this->getCorporationsCorporationIdWalletsDivisionJournalRequest($corporation_id, $division, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1482,7 +1482,7 @@ class WalletApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1490,7 +1490,7 @@ class WalletApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1498,7 +1498,7 @@ class WalletApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1552,7 +1552,7 @@ class WalletApi
      */
     public function getCorporationsCorporationIdWalletsDivisionJournalAsyncWithHttpInfo($corporation_id, $division, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]';
         $request = $this->getCorporationsCorporationIdWalletsDivisionJournalRequest($corporation_id, $division, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1758,9 +1758,9 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]
      */
     public function getCorporationsCorporationIdWalletsDivisionTransactions($corporation_id, $division, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1781,13 +1781,13 @@ class WalletApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdWalletsDivisionTransactionsWithHttpInfo($corporation_id, $division, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]';
         $request = $this->getCorporationsCorporationIdWalletsDivisionTransactionsRequest($corporation_id, $division, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1839,7 +1839,7 @@ class WalletApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1847,7 +1847,7 @@ class WalletApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1855,7 +1855,7 @@ class WalletApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1909,7 +1909,7 @@ class WalletApi
      */
     public function getCorporationsCorporationIdWalletsDivisionTransactionsAsyncWithHttpInfo($corporation_id, $division, $datasource = 'tranquility', $from_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]';
         $request = $this->getCorporationsCorporationIdWalletsDivisionTransactionsRequest($corporation_id, $division, $datasource, $from_id, $token, $user_agent, $x_user_agent);
 
         return $this->client

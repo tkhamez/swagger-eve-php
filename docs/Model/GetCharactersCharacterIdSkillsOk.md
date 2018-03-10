@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**skills** | [**\Swagger\Client\Model\GetCharactersCharacterIdSkillsSkill[]**](GetCharactersCharacterIdSkillsSkill.md) | skills array | 
+**skills** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdSkillsSkill[]**](GetCharactersCharacterIdSkillsSkill.md) | skills array | 
 **total_sp** | **int** | total_sp integer | 
 **unallocated_sp** | **int** | Skill points available to be assigned | [optional] 
 

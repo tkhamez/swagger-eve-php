@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **label** | **string** | label string | 
 **notes** | **string** | notes string | 
 **location_id** | **int** | location_id integer | 
-**item** | [**\Swagger\Client\Model\GetCorporationsCorporationIdBookmarksItem**](GetCorporationsCorporationIdBookmarksItem.md) |  | [optional] 
-**coordinates** | [**\Swagger\Client\Model\GetCorporationsCorporationIdBookmarksCoordinates**](GetCorporationsCorporationIdBookmarksCoordinates.md) |  | [optional] 
+**item** | [**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksItem**](GetCorporationsCorporationIdBookmarksItem.md) |  | [optional] 
+**coordinates** | [**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksCoordinates**](GetCorporationsCorporationIdBookmarksCoordinates.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

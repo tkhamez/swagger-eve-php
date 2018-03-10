@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * FleetsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -115,7 +115,7 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,7 +159,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -167,7 +167,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeleteFleetsFleetIdMembersMemberIdNotFound',
+                        '\Swagger\Client\Eve\Model\DeleteFleetsFleetIdMembersMemberIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -175,7 +175,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -402,7 +402,7 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -423,7 +423,7 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -467,7 +467,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -475,7 +475,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeleteFleetsFleetIdSquadsSquadIdNotFound',
+                        '\Swagger\Client\Eve\Model\DeleteFleetsFleetIdSquadsSquadIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -483,7 +483,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -710,7 +710,7 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -731,7 +731,7 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -775,7 +775,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeleteFleetsFleetIdWingsWingIdNotFound',
+                        '\Swagger\Client\Eve\Model\DeleteFleetsFleetIdWingsWingIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -791,7 +791,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1017,9 +1017,9 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdFleetOk
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk
      */
     public function getCharactersCharacterIdFleet($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1038,13 +1038,13 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdFleetOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdFleetWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdFleetOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk';
         $request = $this->getCharactersCharacterIdFleetRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1096,7 +1096,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdFleetOk',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1104,7 +1104,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1112,7 +1112,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdFleetNotFound',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1120,7 +1120,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1170,7 +1170,7 @@ class FleetsApi
      */
     public function getCharactersCharacterIdFleetAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdFleetOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk';
         $request = $this->getCharactersCharacterIdFleetRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1347,9 +1347,9 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetFleetsFleetIdOk
+     * @return \Swagger\Client\Eve\Model\GetFleetsFleetIdOk
      */
     public function getFleetsFleetId($fleet_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1368,13 +1368,13 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetFleetsFleetIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetFleetsFleetIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFleetsFleetIdWithHttpInfo($fleet_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFleetsFleetIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetFleetsFleetIdOk';
         $request = $this->getFleetsFleetIdRequest($fleet_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1426,7 +1426,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFleetsFleetIdOk',
+                        '\Swagger\Client\Eve\Model\GetFleetsFleetIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1434,7 +1434,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1442,7 +1442,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFleetsFleetIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetFleetsFleetIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1450,7 +1450,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1500,7 +1500,7 @@ class FleetsApi
      */
     public function getFleetsFleetIdAsyncWithHttpInfo($fleet_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFleetsFleetIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetFleetsFleetIdOk';
         $request = $this->getFleetsFleetIdRequest($fleet_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1674,9 +1674,9 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetFleetsFleetIdMembers200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[]
      */
     public function getFleetsFleetIdMembers($fleet_id, $datasource = 'tranquility', $language = 'en-us', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1696,13 +1696,13 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetFleetsFleetIdMembers200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getFleetsFleetIdMembersWithHttpInfo($fleet_id, $datasource = 'tranquility', $language = 'en-us', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFleetsFleetIdMembers200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[]';
         $request = $this->getFleetsFleetIdMembersRequest($fleet_id, $datasource, $language, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1754,7 +1754,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFleetsFleetIdMembers200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1762,7 +1762,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1770,7 +1770,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFleetsFleetIdMembersNotFound',
+                        '\Swagger\Client\Eve\Model\GetFleetsFleetIdMembersNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1778,7 +1778,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1830,7 +1830,7 @@ class FleetsApi
      */
     public function getFleetsFleetIdMembersAsyncWithHttpInfo($fleet_id, $datasource = 'tranquility', $language = 'en-us', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFleetsFleetIdMembers200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[]';
         $request = $this->getFleetsFleetIdMembersRequest($fleet_id, $datasource, $language, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2009,9 +2009,9 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetFleetsFleetIdWings200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[]
      */
     public function getFleetsFleetIdWings($fleet_id, $datasource = 'tranquility', $language = 'en-us', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -2031,13 +2031,13 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetFleetsFleetIdWings200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getFleetsFleetIdWingsWithHttpInfo($fleet_id, $datasource = 'tranquility', $language = 'en-us', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFleetsFleetIdWings200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[]';
         $request = $this->getFleetsFleetIdWingsRequest($fleet_id, $datasource, $language, $token, $user_agent, $x_user_agent);
 
         try {
@@ -2089,7 +2089,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFleetsFleetIdWings200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2097,7 +2097,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2105,7 +2105,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFleetsFleetIdWingsNotFound',
+                        '\Swagger\Client\Eve\Model\GetFleetsFleetIdWingsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2113,7 +2113,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2165,7 +2165,7 @@ class FleetsApi
      */
     public function getFleetsFleetIdWingsAsyncWithHttpInfo($fleet_id, $datasource = 'tranquility', $language = 'en-us', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFleetsFleetIdWings200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[]';
         $request = $this->getFleetsFleetIdWingsRequest($fleet_id, $datasource, $language, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2338,13 +2338,13 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2359,13 +2359,13 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2409,7 +2409,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2417,7 +2417,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostFleetsFleetIdMembersNotFound',
+                        '\Swagger\Client\Eve\Model\PostFleetsFleetIdMembersNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2425,7 +2425,7 @@ class FleetsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostFleetsFleetIdMembersUnprocessableEntity',
+                        '\Swagger\Client\Eve\Model\PostFleetsFleetIdMembersUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2433,7 +2433,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2449,7 +2449,7 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -2474,7 +2474,7 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -2515,7 +2515,7 @@ class FleetsApi
      * Create request for operation 'postFleetsFleetIdMembers'
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -2654,9 +2654,9 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostFleetsFleetIdWingsCreated
+     * @return \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated
      */
     public function postFleetsFleetIdWings($fleet_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -2675,13 +2675,13 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostFleetsFleetIdWingsCreated, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated, HTTP status code, HTTP response headers (array of strings)
      */
     public function postFleetsFleetIdWingsWithHttpInfo($fleet_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostFleetsFleetIdWingsCreated';
+        $returnType = '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated';
         $request = $this->postFleetsFleetIdWingsRequest($fleet_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -2733,7 +2733,7 @@ class FleetsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostFleetsFleetIdWingsCreated',
+                        '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2741,7 +2741,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2749,7 +2749,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostFleetsFleetIdWingsNotFound',
+                        '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2757,7 +2757,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2807,7 +2807,7 @@ class FleetsApi
      */
     public function postFleetsFleetIdWingsAsyncWithHttpInfo($fleet_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostFleetsFleetIdWingsCreated';
+        $returnType = '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated';
         $request = $this->postFleetsFleetIdWingsRequest($fleet_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2981,9 +2981,9 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostFleetsFleetIdWingsWingIdSquadsCreated
+     * @return \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated
      */
     public function postFleetsFleetIdWingsWingIdSquads($fleet_id, $wing_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -3003,13 +3003,13 @@ class FleetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostFleetsFleetIdWingsWingIdSquadsCreated, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated, HTTP status code, HTTP response headers (array of strings)
      */
     public function postFleetsFleetIdWingsWingIdSquadsWithHttpInfo($fleet_id, $wing_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostFleetsFleetIdWingsWingIdSquadsCreated';
+        $returnType = '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated';
         $request = $this->postFleetsFleetIdWingsWingIdSquadsRequest($fleet_id, $wing_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -3061,7 +3061,7 @@ class FleetsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostFleetsFleetIdWingsWingIdSquadsCreated',
+                        '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3069,7 +3069,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3077,7 +3077,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostFleetsFleetIdWingsWingIdSquadsNotFound',
+                        '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3085,7 +3085,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3137,7 +3137,7 @@ class FleetsApi
      */
     public function postFleetsFleetIdWingsWingIdSquadsAsyncWithHttpInfo($fleet_id, $wing_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostFleetsFleetIdWingsWingIdSquadsCreated';
+        $returnType = '\Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated';
         $request = $this->postFleetsFleetIdWingsWingIdSquadsRequest($fleet_id, $wing_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -3320,13 +3320,13 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3341,13 +3341,13 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3391,7 +3391,7 @@ class FleetsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutFleetsFleetIdBadRequest',
+                        '\Swagger\Client\Eve\Model\PutFleetsFleetIdBadRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3399,7 +3399,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3407,7 +3407,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutFleetsFleetIdNotFound',
+                        '\Swagger\Client\Eve\Model\PutFleetsFleetIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3415,7 +3415,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3431,7 +3431,7 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -3456,7 +3456,7 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -3497,7 +3497,7 @@ class FleetsApi
      * Create request for operation 'putFleetsFleetId'
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings $new_settings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -3632,13 +3632,13 @@ class FleetsApi
      *
      * @param  int $fleet_id ID for a fleet (required)
      * @param  int $member_id The character ID of a member in this fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3654,13 +3654,13 @@ class FleetsApi
      *
      * @param  int $fleet_id ID for a fleet (required)
      * @param  int $member_id The character ID of a member in this fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3704,7 +3704,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3712,7 +3712,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutFleetsFleetIdMembersMemberIdNotFound',
+                        '\Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3720,7 +3720,7 @@ class FleetsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutFleetsFleetIdMembersMemberIdUnprocessableEntity',
+                        '\Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3728,7 +3728,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3745,7 +3745,7 @@ class FleetsApi
      *
      * @param  int $fleet_id ID for a fleet (required)
      * @param  int $member_id The character ID of a member in this fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -3771,7 +3771,7 @@ class FleetsApi
      *
      * @param  int $fleet_id ID for a fleet (required)
      * @param  int $member_id The character ID of a member in this fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -3813,7 +3813,7 @@ class FleetsApi
      *
      * @param  int $fleet_id ID for a fleet (required)
      * @param  int $member_id The character ID of a member in this fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -3961,14 +3961,14 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squad_id The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3983,14 +3983,14 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squad_id The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4034,7 +4034,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4042,7 +4042,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutFleetsFleetIdSquadsSquadIdNotFound',
+                        '\Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4050,7 +4050,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4066,7 +4066,7 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squad_id The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4092,7 +4092,7 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squad_id The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4134,7 +4134,7 @@ class FleetsApi
      * Create request for operation 'putFleetsFleetIdSquadsSquadId'
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squad_id The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4283,14 +4283,14 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wing_id The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4305,14 +4305,14 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wing_id The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4356,7 +4356,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4364,7 +4364,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutFleetsFleetIdWingsWingIdNotFound',
+                        '\Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4372,7 +4372,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4388,7 +4388,7 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wing_id The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4414,7 +4414,7 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wing_id The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4456,7 +4456,7 @@ class FleetsApi
      * Create request for operation 'putFleetsFleetIdWingsWingId'
      *
      * @param  int $fleet_id ID for a fleet (required)
-     * @param  \Swagger\Client\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wing_id The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)

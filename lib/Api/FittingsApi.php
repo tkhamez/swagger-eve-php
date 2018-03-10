@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * FittingsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class FittingsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -115,7 +115,7 @@ class FittingsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,7 +159,7 @@ class FittingsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -167,7 +167,7 @@ class FittingsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -397,9 +397,9 @@ class FittingsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdFittings200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[]
      */
     public function getCharactersCharacterIdFittings($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -418,13 +418,13 @@ class FittingsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdFittings200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdFittingsWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdFittings200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[]';
         $request = $this->getCharactersCharacterIdFittingsRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -476,7 +476,7 @@ class FittingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdFittings200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -484,7 +484,7 @@ class FittingsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -492,7 +492,7 @@ class FittingsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -542,7 +542,7 @@ class FittingsApi
      */
     public function getCharactersCharacterIdFittingsAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdFittings200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[]';
         $request = $this->getCharactersCharacterIdFittingsRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -714,15 +714,15 @@ class FittingsApi
      * Create fitting
      *
      * @param  int $character_id An EVE character ID (required)
-     * @param  \Swagger\Client\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
+     * @param  \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostCharactersCharacterIdFittingsCreated
+     * @return \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated
      */
     public function postCharactersCharacterIdFittings($character_id, $fitting, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -736,19 +736,19 @@ class FittingsApi
      * Create fitting
      *
      * @param  int $character_id An EVE character ID (required)
-     * @param  \Swagger\Client\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
+     * @param  \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostCharactersCharacterIdFittingsCreated, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCharactersCharacterIdFittingsWithHttpInfo($character_id, $fitting, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCharactersCharacterIdFittingsCreated';
+        $returnType = '\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated';
         $request = $this->postCharactersCharacterIdFittingsRequest($character_id, $fitting, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -800,7 +800,7 @@ class FittingsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostCharactersCharacterIdFittingsCreated',
+                        '\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -808,7 +808,7 @@ class FittingsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -816,7 +816,7 @@ class FittingsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -832,7 +832,7 @@ class FittingsApi
      * Create fitting
      *
      * @param  int $character_id An EVE character ID (required)
-     * @param  \Swagger\Client\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
+     * @param  \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -857,7 +857,7 @@ class FittingsApi
      * Create fitting
      *
      * @param  int $character_id An EVE character ID (required)
-     * @param  \Swagger\Client\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
+     * @param  \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
@@ -868,7 +868,7 @@ class FittingsApi
      */
     public function postCharactersCharacterIdFittingsAsyncWithHttpInfo($character_id, $fitting, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCharactersCharacterIdFittingsCreated';
+        $returnType = '\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated';
         $request = $this->postCharactersCharacterIdFittingsRequest($character_id, $fitting, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -912,7 +912,7 @@ class FittingsApi
      * Create request for operation 'postCharactersCharacterIdFittings'
      *
      * @param  int $character_id An EVE character ID (required)
-     * @param  \Swagger\Client\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
+     * @param  \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)

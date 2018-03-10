@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **notes** | **string** | notes string | 
 **location_id** | **int** | location_id integer | 
 **creator_id** | **int** | creator_id integer | 
-**item** | [**\Swagger\Client\Model\GetCharactersCharacterIdBookmarksItem**](GetCharactersCharacterIdBookmarksItem.md) |  | [optional] 
-**coordinates** | [**\Swagger\Client\Model\GetCharactersCharacterIdBookmarksCoordinates**](GetCharactersCharacterIdBookmarksCoordinates.md) |  | [optional] 
+**item** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksItem**](GetCharactersCharacterIdBookmarksItem.md) |  | [optional] 
+**coordinates** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksCoordinates**](GetCharactersCharacterIdBookmarksCoordinates.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdClonesOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'last_clone_jump_date' => '\DateTime',
-        'home_location' => '\Swagger\Client\Model\GetCharactersCharacterIdClonesHomeLocation',
+        'home_location' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesHomeLocation',
         'last_station_change_date' => '\DateTime',
-        'jump_clones' => '\Swagger\Client\Model\GetCharactersCharacterIdClonesJumpClone[]'
+        'jump_clones' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesJumpClone[]'
     ];
 
     /**
@@ -257,7 +257,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Gets home_location
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdClonesHomeLocation
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesHomeLocation
      */
     public function getHomeLocation()
     {
@@ -267,7 +267,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Sets home_location
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdClonesHomeLocation $home_location home_location
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesHomeLocation $home_location home_location
      *
      * @return $this
      */
@@ -305,7 +305,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Gets jump_clones
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdClonesJumpClone[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesJumpClone[]
      */
     public function getJumpClones()
     {
@@ -315,7 +315,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Sets jump_clones
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdClonesJumpClone[] $jump_clones jump_clones array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesJumpClone[] $jump_clones jump_clones array
      *
      * @return $this
      */

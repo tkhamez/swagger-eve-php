@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **pin_id** | **int** | pin_id integer | 
 **type_id** | **int** | type_id integer | 
 **schematic_id** | **int** | schematic_id integer | [optional] 
-**extractor_details** | [**\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails**](GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.md) |  | [optional] 
-**factory_details** | [**\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails**](GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails.md) |  | [optional] 
-**contents** | [**\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]**](GetCharactersCharacterIdPlanetsPlanetIdContent.md) | contents array | [optional] 
+**extractor_details** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails**](GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.md) |  | [optional] 
+**factory_details** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails**](GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails.md) |  | [optional] 
+**contents** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]**](GetCharactersCharacterIdPlanetsPlanetIdContent.md) | contents array | [optional] 
 **install_time** | [**\DateTime**](\DateTime.md) | install_time string | [optional] 
 **expiry_time** | [**\DateTime**](\DateTime.md) | expiry_time string | [optional] 
 **last_cycle_start** | [**\DateTime**](\DateTime.md) | last_cycle_start string | [optional] 

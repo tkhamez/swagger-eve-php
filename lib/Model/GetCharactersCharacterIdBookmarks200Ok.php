@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdBookmarks200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,8 +65,8 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
         'notes' => 'string',
         'location_id' => 'int',
         'creator_id' => 'int',
-        'item' => '\Swagger\Client\Model\GetCharactersCharacterIdBookmarksItem',
-        'coordinates' => '\Swagger\Client\Model\GetCharactersCharacterIdBookmarksCoordinates'
+        'item' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksItem',
+        'coordinates' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksCoordinates'
     ];
 
     /**
@@ -461,7 +461,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Gets item
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdBookmarksItem
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksItem
      */
     public function getItem()
     {
@@ -471,7 +471,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Sets item
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdBookmarksItem $item item
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksItem $item item
      *
      * @return $this
      */
@@ -485,7 +485,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Gets coordinates
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdBookmarksCoordinates
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksCoordinates
      */
     public function getCoordinates()
     {
@@ -495,7 +495,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Sets coordinates
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdBookmarksCoordinates $coordinates coordinates
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksCoordinates $coordinates coordinates
      *
      * @return $this
      */

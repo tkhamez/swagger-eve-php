@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Swagger\Client\Eve;
 
 /**
  * GetFwLeaderboardsCharactersVictoryPointsTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace Swagger\Client;
  * @category    Class */
 // * @description Top 100 rankings of pilots by victory points from yesterday, last week and in total
 /**
- * @package     Swagger\Client
+ * @package     Swagger\Client\Eve
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

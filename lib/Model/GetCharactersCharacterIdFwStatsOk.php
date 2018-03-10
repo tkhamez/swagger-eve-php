@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdFwStatsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,8 +62,8 @@ class GetCharactersCharacterIdFwStatsOk implements ModelInterface, ArrayAccess
         'enlisted_on' => '\DateTime',
         'current_rank' => 'int',
         'highest_rank' => 'int',
-        'kills' => '\Swagger\Client\Model\GetCharactersCharacterIdFwStatsKills',
-        'victory_points' => '\Swagger\Client\Model\GetCharactersCharacterIdFwStatsVictoryPoints'
+        'kills' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsKills',
+        'victory_points' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsVictoryPoints'
     ];
 
     /**
@@ -391,7 +391,7 @@ class GetCharactersCharacterIdFwStatsOk implements ModelInterface, ArrayAccess
     /**
      * Gets kills
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdFwStatsKills
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsKills
      */
     public function getKills()
     {
@@ -401,7 +401,7 @@ class GetCharactersCharacterIdFwStatsOk implements ModelInterface, ArrayAccess
     /**
      * Sets kills
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdFwStatsKills $kills kills
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsKills $kills kills
      *
      * @return $this
      */
@@ -415,7 +415,7 @@ class GetCharactersCharacterIdFwStatsOk implements ModelInterface, ArrayAccess
     /**
      * Gets victory_points
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdFwStatsVictoryPoints
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -425,7 +425,7 @@ class GetCharactersCharacterIdFwStatsOk implements ModelInterface, ArrayAccess
     /**
      * Sets victory_points
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdFwStatsVictoryPoints $victory_points victory_points
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsVictoryPoints $victory_points victory_points
      *
      * @return $this
      */

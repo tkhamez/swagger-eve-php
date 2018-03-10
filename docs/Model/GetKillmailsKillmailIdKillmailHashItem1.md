@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **quantity_dropped** | **int** | How many of the item were dropped if any | [optional] 
 **singleton** | **int** | singleton integer | 
 **flag** | **int** | Flag for the location of the item | 
-**items** | [**\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashItem[]**](GetKillmailsKillmailIdKillmailHashItem.md) | items array | [optional] 
+**items** | [**\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashItem[]**](GetKillmailsKillmailIdKillmailHashItem.md) | items array | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

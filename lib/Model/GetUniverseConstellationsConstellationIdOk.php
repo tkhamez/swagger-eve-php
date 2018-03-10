@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetUniverseConstellationsConstellationIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class GetUniverseConstellationsConstellationIdOk implements ModelInterface, Arra
     protected static $swaggerTypes = [
         'constellation_id' => 'int',
         'name' => 'string',
-        'position' => '\Swagger\Client\Model\GetUniverseConstellationsConstellationIdPosition',
+        'position' => '\Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdPosition',
         'region_id' => 'int',
         'systems' => 'int[]'
     ];
@@ -311,7 +311,7 @@ class GetUniverseConstellationsConstellationIdOk implements ModelInterface, Arra
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\GetUniverseConstellationsConstellationIdPosition
+     * @return \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdPosition
      */
     public function getPosition()
     {
@@ -321,7 +321,7 @@ class GetUniverseConstellationsConstellationIdOk implements ModelInterface, Arra
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\GetUniverseConstellationsConstellationIdPosition $position position
+     * @param \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdPosition $position position
      *
      * @return $this
      */

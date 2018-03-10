@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails Class Doc Comment
  *
  * @category Class
  * @description extractor_details object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails implements ModelIn
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'heads' => '\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdHead[]',
+        'heads' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdHead[]',
         'product_type_id' => 'int',
         'cycle_time' => 'int',
         'head_radius' => 'float',
@@ -239,7 +239,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails implements ModelIn
     /**
      * Gets heads
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdHead[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdHead[]
      */
     public function getHeads()
     {
@@ -249,7 +249,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails implements ModelIn
     /**
      * Sets heads
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdHead[] $heads heads array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdHead[] $heads heads array
      *
      * @return $this
      */

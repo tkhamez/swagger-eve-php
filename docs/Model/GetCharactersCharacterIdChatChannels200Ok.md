@@ -9,10 +9,10 @@ Name | Type | Description | Notes
 **comparison_key** | **string** | Normalized, unique string used to compare channel names | 
 **has_password** | **bool** | If this is a password protected channel | 
 **motd** | **string** | Message of the day for this channel | 
-**allowed** | [**\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsAllowed[]**](GetCharactersCharacterIdChatChannelsAllowed.md) | allowed array | 
-**operators** | [**\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsOperator[]**](GetCharactersCharacterIdChatChannelsOperator.md) | operators array | 
-**blocked** | [**\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsBlocked[]**](GetCharactersCharacterIdChatChannelsBlocked.md) | blocked array | 
-**muted** | [**\Swagger\Client\Model\GetCharactersCharacterIdChatChannelsMuted[]**](GetCharactersCharacterIdChatChannelsMuted.md) | muted array | 
+**allowed** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsAllowed[]**](GetCharactersCharacterIdChatChannelsAllowed.md) | allowed array | 
+**operators** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsOperator[]**](GetCharactersCharacterIdChatChannelsOperator.md) | operators array | 
+**blocked** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsBlocked[]**](GetCharactersCharacterIdChatChannelsBlocked.md) | blocked array | 
+**muted** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdChatChannelsMuted[]**](GetCharactersCharacterIdChatChannelsMuted.md) | muted array | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

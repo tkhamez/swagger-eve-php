@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * AssetsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdAssets200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[]
      */
     public function getCharactersCharacterIdAssets($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -116,13 +116,13 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdAssets200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdAssetsWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdAssets200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[]';
         $request = $this->getCharactersCharacterIdAssetsRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -174,7 +174,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdAssets200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class AssetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class AssetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class AssetsApi
      */
     public function getCharactersCharacterIdAssetsAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdAssets200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[]';
         $request = $this->getCharactersCharacterIdAssetsRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -425,9 +425,9 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdAssets200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[]
      */
     public function getCorporationsCorporationIdAssets($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -447,13 +447,13 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdAssets200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdAssetsWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdAssets200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[]';
         $request = $this->getCorporationsCorporationIdAssetsRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -505,7 +505,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdAssets200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -513,7 +513,7 @@ class AssetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class AssetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -573,7 +573,7 @@ class AssetsApi
      */
     public function getCorporationsCorporationIdAssetsAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdAssets200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[]';
         $request = $this->getCorporationsCorporationIdAssetsRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -756,9 +756,9 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostCharactersCharacterIdAssetsLocations200Ok[]
+     * @return \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[]
      */
     public function postCharactersCharacterIdAssetsLocations($character_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -778,13 +778,13 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostCharactersCharacterIdAssetsLocations200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function postCharactersCharacterIdAssetsLocationsWithHttpInfo($character_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCharactersCharacterIdAssetsLocations200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[]';
         $request = $this->postCharactersCharacterIdAssetsLocationsRequest($character_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -836,7 +836,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostCharactersCharacterIdAssetsLocations200Ok[]',
+                        '\Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -844,7 +844,7 @@ class AssetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -852,7 +852,7 @@ class AssetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -904,7 +904,7 @@ class AssetsApi
      */
     public function postCharactersCharacterIdAssetsLocationsAsyncWithHttpInfo($character_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCharactersCharacterIdAssetsLocations200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[]';
         $request = $this->postCharactersCharacterIdAssetsLocationsRequest($character_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1092,9 +1092,9 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostCharactersCharacterIdAssetsNames200Ok[]
+     * @return \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[]
      */
     public function postCharactersCharacterIdAssetsNames($character_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1114,13 +1114,13 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostCharactersCharacterIdAssetsNames200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function postCharactersCharacterIdAssetsNamesWithHttpInfo($character_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCharactersCharacterIdAssetsNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[]';
         $request = $this->postCharactersCharacterIdAssetsNamesRequest($character_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1172,7 +1172,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostCharactersCharacterIdAssetsNames200Ok[]',
+                        '\Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1180,7 +1180,7 @@ class AssetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1188,7 +1188,7 @@ class AssetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1240,7 +1240,7 @@ class AssetsApi
      */
     public function postCharactersCharacterIdAssetsNamesAsyncWithHttpInfo($character_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCharactersCharacterIdAssetsNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[]';
         $request = $this->postCharactersCharacterIdAssetsNamesRequest($character_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1428,9 +1428,9 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]
+     * @return \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]
      */
     public function postCorporationsCorporationIdAssetsLocations($corporation_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1450,13 +1450,13 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostCorporationsCorporationIdAssetsLocations200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function postCorporationsCorporationIdAssetsLocationsWithHttpInfo($corporation_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]';
         $request = $this->postCorporationsCorporationIdAssetsLocationsRequest($corporation_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1508,7 +1508,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]',
+                        '\Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1516,7 +1516,7 @@ class AssetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1524,7 +1524,7 @@ class AssetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1576,7 +1576,7 @@ class AssetsApi
      */
     public function postCorporationsCorporationIdAssetsLocationsAsyncWithHttpInfo($corporation_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]';
         $request = $this->postCorporationsCorporationIdAssetsLocationsRequest($corporation_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1764,9 +1764,9 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostCorporationsCorporationIdAssetsNames200Ok[]
+     * @return \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[]
      */
     public function postCorporationsCorporationIdAssetsNames($corporation_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1786,13 +1786,13 @@ class AssetsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostCorporationsCorporationIdAssetsNames200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function postCorporationsCorporationIdAssetsNamesWithHttpInfo($corporation_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCorporationsCorporationIdAssetsNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[]';
         $request = $this->postCorporationsCorporationIdAssetsNamesRequest($corporation_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1844,7 +1844,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostCorporationsCorporationIdAssetsNames200Ok[]',
+                        '\Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1852,7 +1852,7 @@ class AssetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1860,7 +1860,7 @@ class AssetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1912,7 +1912,7 @@ class AssetsApi
      */
     public function postCorporationsCorporationIdAssetsNamesAsyncWithHttpInfo($corporation_id, $item_ids, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostCorporationsCorporationIdAssetsNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[]';
         $request = $this->postCorporationsCorporationIdAssetsNamesRequest($corporation_id, $item_ids, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client

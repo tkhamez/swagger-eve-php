@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * UniverseApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseAncestries200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]
      */
     public function getUniverseAncestries($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -112,13 +112,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseAncestries200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseAncestriesWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseAncestries200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]';
         $request = $this->getUniverseAncestriesRequest($datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -170,7 +170,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseAncestries200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -178,7 +178,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -226,7 +226,7 @@ class UniverseApi
      */
     public function getUniverseAncestriesAsyncWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseAncestries200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]';
         $request = $this->getUniverseAncestriesRequest($datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -379,9 +379,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseBloodlines200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]
      */
     public function getUniverseBloodlines($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -399,13 +399,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseBloodlines200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseBloodlinesWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseBloodlines200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]';
         $request = $this->getUniverseBloodlinesRequest($datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -457,7 +457,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseBloodlines200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -465,7 +465,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -513,7 +513,7 @@ class UniverseApi
      */
     public function getUniverseBloodlinesAsyncWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseBloodlines200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]';
         $request = $this->getUniverseBloodlinesRequest($datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -665,7 +665,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -684,7 +684,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -750,7 +750,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -945,9 +945,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseCategoriesCategoryIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk
      */
     public function getUniverseCategoriesCategoryId($category_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -966,13 +966,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseCategoriesCategoryIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseCategoriesCategoryIdWithHttpInfo($category_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseCategoriesCategoryIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk';
         $request = $this->getUniverseCategoriesCategoryIdRequest($category_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -1024,7 +1024,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseCategoriesCategoryIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1032,7 +1032,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseCategoriesCategoryIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1040,7 +1040,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1090,7 +1090,7 @@ class UniverseApi
      */
     public function getUniverseCategoriesCategoryIdAsyncWithHttpInfo($category_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseCategoriesCategoryIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk';
         $request = $this->getUniverseCategoriesCategoryIdRequest($category_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1257,7 +1257,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -1276,7 +1276,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -1342,7 +1342,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1537,9 +1537,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseConstellationsConstellationIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk
      */
     public function getUniverseConstellationsConstellationId($constellation_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -1558,13 +1558,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseConstellationsConstellationIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseConstellationsConstellationIdWithHttpInfo($constellation_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseConstellationsConstellationIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk';
         $request = $this->getUniverseConstellationsConstellationIdRequest($constellation_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -1616,7 +1616,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseConstellationsConstellationIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1624,7 +1624,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseConstellationsConstellationIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1632,7 +1632,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1682,7 +1682,7 @@ class UniverseApi
      */
     public function getUniverseConstellationsConstellationIdAsyncWithHttpInfo($constellation_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseConstellationsConstellationIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk';
         $request = $this->getUniverseConstellationsConstellationIdRequest($constellation_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1850,9 +1850,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseFactions200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]
      */
     public function getUniverseFactions($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -1870,13 +1870,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseFactions200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseFactions200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseFactionsWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseFactions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]';
         $request = $this->getUniverseFactionsRequest($datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -1928,7 +1928,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseFactions200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1936,7 +1936,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1984,7 +1984,7 @@ class UniverseApi
      */
     public function getUniverseFactionsAsyncWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseFactions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]';
         $request = $this->getUniverseFactionsRequest($datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2136,7 +2136,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -2155,7 +2155,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -2221,7 +2221,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2415,9 +2415,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseGraphicsGraphicIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk
      */
     public function getUniverseGraphicsGraphicId($graphic_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -2435,13 +2435,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseGraphicsGraphicIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseGraphicsGraphicIdWithHttpInfo($graphic_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseGraphicsGraphicIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk';
         $request = $this->getUniverseGraphicsGraphicIdRequest($graphic_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -2493,7 +2493,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseGraphicsGraphicIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2501,7 +2501,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseGraphicsGraphicIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2509,7 +2509,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2557,7 +2557,7 @@ class UniverseApi
      */
     public function getUniverseGraphicsGraphicIdAsyncWithHttpInfo($graphic_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseGraphicsGraphicIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk';
         $request = $this->getUniverseGraphicsGraphicIdRequest($graphic_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2720,7 +2720,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -2740,7 +2740,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -2806,7 +2806,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3008,9 +3008,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseGroupsGroupIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk
      */
     public function getUniverseGroupsGroupId($group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -3029,13 +3029,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseGroupsGroupIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseGroupsGroupIdWithHttpInfo($group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseGroupsGroupIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk';
         $request = $this->getUniverseGroupsGroupIdRequest($group_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -3087,7 +3087,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseGroupsGroupIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3095,7 +3095,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseGroupsGroupIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3103,7 +3103,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3153,7 +3153,7 @@ class UniverseApi
      */
     public function getUniverseGroupsGroupIdAsyncWithHttpInfo($group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseGroupsGroupIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk';
         $request = $this->getUniverseGroupsGroupIdRequest($group_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -3321,9 +3321,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseMoonsMoonIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk
      */
     public function getUniverseMoonsMoonId($moon_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -3341,13 +3341,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseMoonsMoonIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseMoonsMoonIdWithHttpInfo($moon_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseMoonsMoonIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk';
         $request = $this->getUniverseMoonsMoonIdRequest($moon_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -3399,7 +3399,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseMoonsMoonIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3407,7 +3407,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseMoonsMoonIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3415,7 +3415,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3463,7 +3463,7 @@ class UniverseApi
      */
     public function getUniverseMoonsMoonIdAsyncWithHttpInfo($moon_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseMoonsMoonIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk';
         $request = $this->getUniverseMoonsMoonIdRequest($moon_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -3626,9 +3626,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniversePlanetsPlanetIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk
      */
     public function getUniversePlanetsPlanetId($planet_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -3646,13 +3646,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniversePlanetsPlanetIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniversePlanetsPlanetIdWithHttpInfo($planet_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniversePlanetsPlanetIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk';
         $request = $this->getUniversePlanetsPlanetIdRequest($planet_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -3704,7 +3704,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniversePlanetsPlanetIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3712,7 +3712,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniversePlanetsPlanetIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3720,7 +3720,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3768,7 +3768,7 @@ class UniverseApi
      */
     public function getUniversePlanetsPlanetIdAsyncWithHttpInfo($planet_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniversePlanetsPlanetIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk';
         $request = $this->getUniversePlanetsPlanetIdRequest($planet_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -3931,9 +3931,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseRaces200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]
      */
     public function getUniverseRaces($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -3951,13 +3951,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseRaces200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseRaces200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseRacesWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseRaces200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]';
         $request = $this->getUniverseRacesRequest($datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -4009,7 +4009,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseRaces200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4017,7 +4017,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4065,7 +4065,7 @@ class UniverseApi
      */
     public function getUniverseRacesAsyncWithHttpInfo($datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseRaces200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]';
         $request = $this->getUniverseRacesRequest($datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -4217,7 +4217,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -4236,7 +4236,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -4302,7 +4302,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4497,9 +4497,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseRegionsRegionIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk
      */
     public function getUniverseRegionsRegionId($region_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -4518,13 +4518,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseRegionsRegionIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseRegionsRegionIdWithHttpInfo($region_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseRegionsRegionIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk';
         $request = $this->getUniverseRegionsRegionIdRequest($region_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -4576,7 +4576,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseRegionsRegionIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4584,7 +4584,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseRegionsRegionIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4592,7 +4592,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4642,7 +4642,7 @@ class UniverseApi
      */
     public function getUniverseRegionsRegionIdAsyncWithHttpInfo($region_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseRegionsRegionIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk';
         $request = $this->getUniverseRegionsRegionIdRequest($region_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -4810,9 +4810,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseStargatesStargateIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk
      */
     public function getUniverseStargatesStargateId($stargate_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -4830,13 +4830,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseStargatesStargateIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseStargatesStargateIdWithHttpInfo($stargate_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStargatesStargateIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk';
         $request = $this->getUniverseStargatesStargateIdRequest($stargate_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -4888,7 +4888,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseStargatesStargateIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4896,7 +4896,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseStargatesStargateIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4904,7 +4904,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4952,7 +4952,7 @@ class UniverseApi
      */
     public function getUniverseStargatesStargateIdAsyncWithHttpInfo($stargate_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStargatesStargateIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk';
         $request = $this->getUniverseStargatesStargateIdRequest($stargate_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -5115,9 +5115,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseStarsStarIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk
      */
     public function getUniverseStarsStarId($star_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -5135,13 +5135,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseStarsStarIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseStarsStarIdWithHttpInfo($star_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStarsStarIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk';
         $request = $this->getUniverseStarsStarIdRequest($star_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -5193,7 +5193,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseStarsStarIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5201,7 +5201,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5249,7 +5249,7 @@ class UniverseApi
      */
     public function getUniverseStarsStarIdAsyncWithHttpInfo($star_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStarsStarIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk';
         $request = $this->getUniverseStarsStarIdRequest($star_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -5412,9 +5412,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseStationsStationIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk
      */
     public function getUniverseStationsStationId($station_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -5432,13 +5432,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseStationsStationIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseStationsStationIdWithHttpInfo($station_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStationsStationIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk';
         $request = $this->getUniverseStationsStationIdRequest($station_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -5490,7 +5490,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseStationsStationIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5498,7 +5498,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseStationsStationIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseStationsStationIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5506,7 +5506,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5554,7 +5554,7 @@ class UniverseApi
      */
     public function getUniverseStationsStationIdAsyncWithHttpInfo($station_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStationsStationIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk';
         $request = $this->getUniverseStationsStationIdRequest($station_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -5716,7 +5716,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -5735,7 +5735,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -5801,7 +5801,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5996,9 +5996,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseStructuresStructureIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk
      */
     public function getUniverseStructuresStructureId($structure_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -6017,13 +6017,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseStructuresStructureIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseStructuresStructureIdWithHttpInfo($structure_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStructuresStructureIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk';
         $request = $this->getUniverseStructuresStructureIdRequest($structure_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -6075,7 +6075,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseStructuresStructureIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6083,7 +6083,7 @@ class UniverseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6091,7 +6091,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseStructuresStructureIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6099,7 +6099,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6149,7 +6149,7 @@ class UniverseApi
      */
     public function getUniverseStructuresStructureIdAsyncWithHttpInfo($structure_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseStructuresStructureIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk';
         $request = $this->getUniverseStructuresStructureIdRequest($structure_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -6320,9 +6320,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseSystemJumps200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]
      */
     public function getUniverseSystemJumps($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -6339,13 +6339,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseSystemJumps200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseSystemJumpsWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseSystemJumps200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]';
         $request = $this->getUniverseSystemJumpsRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -6397,7 +6397,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseSystemJumps200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6405,7 +6405,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6451,7 +6451,7 @@ class UniverseApi
      */
     public function getUniverseSystemJumpsAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseSystemJumps200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]';
         $request = $this->getUniverseSystemJumpsRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -6598,9 +6598,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseSystemKills200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]
      */
     public function getUniverseSystemKills($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -6617,13 +6617,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseSystemKills200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseSystemKillsWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseSystemKills200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]';
         $request = $this->getUniverseSystemKillsRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -6675,7 +6675,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseSystemKills200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6683,7 +6683,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6729,7 +6729,7 @@ class UniverseApi
      */
     public function getUniverseSystemKillsAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseSystemKills200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]';
         $request = $this->getUniverseSystemKillsRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -6876,7 +6876,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -6895,7 +6895,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -6961,7 +6961,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7156,9 +7156,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseSystemsSystemIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk
      */
     public function getUniverseSystemsSystemId($system_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -7177,13 +7177,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseSystemsSystemIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseSystemsSystemIdWithHttpInfo($system_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseSystemsSystemIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk';
         $request = $this->getUniverseSystemsSystemIdRequest($system_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -7235,7 +7235,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseSystemsSystemIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7243,7 +7243,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseSystemsSystemIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7251,7 +7251,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7301,7 +7301,7 @@ class UniverseApi
      */
     public function getUniverseSystemsSystemIdAsyncWithHttpInfo($system_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseSystemsSystemIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk';
         $request = $this->getUniverseSystemsSystemIdRequest($system_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -7469,7 +7469,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -7489,7 +7489,7 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -7555,7 +7555,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7757,9 +7757,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetUniverseTypesTypeIdOk
+     * @return \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk
      */
     public function getUniverseTypesTypeId($type_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -7778,13 +7778,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetUniverseTypesTypeIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseTypesTypeIdWithHttpInfo($type_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseTypesTypeIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk';
         $request = $this->getUniverseTypesTypeIdRequest($type_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -7836,7 +7836,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseTypesTypeIdOk',
+                        '\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7844,7 +7844,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetUniverseTypesTypeIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7852,7 +7852,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7902,7 +7902,7 @@ class UniverseApi
      */
     public function getUniverseTypesTypeIdAsyncWithHttpInfo($type_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetUniverseTypesTypeIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk';
         $request = $this->getUniverseTypesTypeIdRequest($type_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -8071,9 +8071,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostUniverseIdsOk
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsOk
      */
     public function postUniverseIds($names, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -8092,13 +8092,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostUniverseIdsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostUniverseIdsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function postUniverseIdsWithHttpInfo($names, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostUniverseIdsOk';
+        $returnType = '\Swagger\Client\Eve\Model\PostUniverseIdsOk';
         $request = $this->postUniverseIdsRequest($names, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -8150,7 +8150,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostUniverseIdsOk',
+                        '\Swagger\Client\Eve\Model\PostUniverseIdsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8158,7 +8158,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8166,7 +8166,7 @@ class UniverseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostUniverseIdsServiceUnavailable',
+                        '\Swagger\Client\Eve\Model\PostUniverseIdsServiceUnavailable',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8216,7 +8216,7 @@ class UniverseApi
      */
     public function postUniverseIdsAsyncWithHttpInfo($names, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostUniverseIdsOk';
+        $returnType = '\Swagger\Client\Eve\Model\PostUniverseIdsOk';
         $request = $this->postUniverseIdsRequest($names, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -8379,9 +8379,9 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PostUniverseNames200Ok[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseNames200Ok[]
      */
     public function postUniverseNames($ids, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -8399,13 +8399,13 @@ class UniverseApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PostUniverseNames200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\PostUniverseNames200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function postUniverseNamesWithHttpInfo($ids, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostUniverseNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostUniverseNames200Ok[]';
         $request = $this->postUniverseNamesRequest($ids, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -8457,7 +8457,7 @@ class UniverseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostUniverseNames200Ok[]',
+                        '\Swagger\Client\Eve\Model\PostUniverseNames200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8465,7 +8465,7 @@ class UniverseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PostUniverseNamesNotFound',
+                        '\Swagger\Client\Eve\Model\PostUniverseNamesNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8473,7 +8473,7 @@ class UniverseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8521,7 +8521,7 @@ class UniverseApi
      */
     public function postUniverseNamesAsyncWithHttpInfo($ids, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\PostUniverseNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\PostUniverseNames200Ok[]';
         $request = $this->postUniverseNamesRequest($ids, $datasource, $user_agent, $x_user_agent);
 
         return $this->client

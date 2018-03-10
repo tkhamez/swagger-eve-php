@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsCharactersKills Class Doc Comment
  *
  * @category Class
  * @description Top 100 rankings of pilots by number of kills from yesterday, last week and in total.
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GetFwLeaderboardsCharactersKills implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'yesterday' => '\Swagger\Client\Model\GetFwLeaderboardsCharactersYesterday[]',
-        'last_week' => '\Swagger\Client\Model\GetFwLeaderboardsCharactersLastWeek[]',
-        'active_total' => '\Swagger\Client\Model\GetFwLeaderboardsCharactersActiveTotal[]'
+        'yesterday' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersYesterday[]',
+        'last_week' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersLastWeek[]',
+        'active_total' => '\Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersActiveTotal[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GetFwLeaderboardsCharactersKills implements ModelInterface, ArrayAccess
     /**
      * Gets yesterday
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCharactersYesterday[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersYesterday[]
      */
     public function getYesterday()
     {
@@ -249,7 +249,7 @@ class GetFwLeaderboardsCharactersKills implements ModelInterface, ArrayAccess
     /**
      * Sets yesterday
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCharactersYesterday[] $yesterday Top 100 ranking of pilots by kills in the past day
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersYesterday[] $yesterday Top 100 ranking of pilots by kills in the past day
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class GetFwLeaderboardsCharactersKills implements ModelInterface, ArrayAccess
     /**
      * Gets last_week
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCharactersLastWeek[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersLastWeek[]
      */
     public function getLastWeek()
     {
@@ -273,7 +273,7 @@ class GetFwLeaderboardsCharactersKills implements ModelInterface, ArrayAccess
     /**
      * Sets last_week
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCharactersLastWeek[] $last_week Top 100 ranking of pilots by kills in the past week
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersLastWeek[] $last_week Top 100 ranking of pilots by kills in the past week
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class GetFwLeaderboardsCharactersKills implements ModelInterface, ArrayAccess
     /**
      * Gets active_total
      *
-     * @return \Swagger\Client\Model\GetFwLeaderboardsCharactersActiveTotal[]
+     * @return \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersActiveTotal[]
      */
     public function getActiveTotal()
     {
@@ -297,7 +297,7 @@ class GetFwLeaderboardsCharactersKills implements ModelInterface, ArrayAccess
     /**
      * Sets active_total
      *
-     * @param \Swagger\Client\Model\GetFwLeaderboardsCharactersActiveTotal[] $active_total Top 100 ranking of pilots active in faction warfare by total kills. A pilot is considered \"active\" if they have participated in faction warfare in the past 14 days.
+     * @param \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersActiveTotal[] $active_total Top 100 ranking of pilots active in faction warfare by total kills. A pilot is considered \"active\" if they have participated in faction warfare in the past 14 days.
      *
      * @return $this
      */

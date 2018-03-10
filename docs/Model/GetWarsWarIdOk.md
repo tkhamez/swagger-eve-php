@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **finished** | [**\DateTime**](\DateTime.md) | Time the war ended and shooting was no longer allowed | [optional] 
 **mutual** | **bool** | Was the war declared mutual by both parties | 
 **open_for_allies** | **bool** | Is the war currently open for allies or not | 
-**aggressor** | [**\Swagger\Client\Model\GetWarsWarIdAggressor**](GetWarsWarIdAggressor.md) |  | 
-**defender** | [**\Swagger\Client\Model\GetWarsWarIdDefender**](GetWarsWarIdDefender.md) |  | 
-**allies** | [**\Swagger\Client\Model\GetWarsWarIdAlly[]**](GetWarsWarIdAlly.md) | allied corporations or alliances, each object contains either corporation_id or alliance_id | [optional] 
+**aggressor** | [**\Swagger\Client\Eve\Model\GetWarsWarIdAggressor**](GetWarsWarIdAggressor.md) |  | 
+**defender** | [**\Swagger\Client\Eve\Model\GetWarsWarIdDefender**](GetWarsWarIdDefender.md) |  | 
+**allies** | [**\Swagger\Client\Eve\Model\GetWarsWarIdAlly[]**](GetWarsWarIdAlly.md) | allied corporations or alliances, each object contains either corporation_id or alliance_id | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

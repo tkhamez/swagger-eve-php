@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdMail200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class GetCharactersCharacterIdMail200Ok implements ModelInterface, ArrayAccess
         'from' => 'int',
         'timestamp' => '\DateTime',
         'labels' => 'int[]',
-        'recipients' => '\Swagger\Client\Model\GetCharactersCharacterIdMailRecipient[]',
+        'recipients' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdMailRecipient[]',
         'is_read' => 'bool'
     ];
 
@@ -365,7 +365,7 @@ class GetCharactersCharacterIdMail200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets recipients
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdMailRecipient[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailRecipient[]
      */
     public function getRecipients()
     {
@@ -375,7 +375,7 @@ class GetCharactersCharacterIdMail200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets recipients
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdMailRecipient[] $recipients Recipients of the mail
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailRecipient[] $recipients Recipients of the mail
      *
      * @return $this
      */

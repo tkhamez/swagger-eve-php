@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetFwStats200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
         'faction_id' => 'int',
         'pilots' => 'int',
         'systems_controlled' => 'int',
-        'kills' => '\Swagger\Client\Model\GetFwStatsKills',
-        'victory_points' => '\Swagger\Client\Model\GetFwStatsVictoryPoints'
+        'kills' => '\Swagger\Client\Eve\Model\GetFwStatsKills',
+        'victory_points' => '\Swagger\Client\Eve\Model\GetFwStatsVictoryPoints'
     ];
 
     /**
@@ -335,7 +335,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets kills
      *
-     * @return \Swagger\Client\Model\GetFwStatsKills
+     * @return \Swagger\Client\Eve\Model\GetFwStatsKills
      */
     public function getKills()
     {
@@ -345,7 +345,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets kills
      *
-     * @param \Swagger\Client\Model\GetFwStatsKills $kills kills
+     * @param \Swagger\Client\Eve\Model\GetFwStatsKills $kills kills
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets victory_points
      *
-     * @return \Swagger\Client\Model\GetFwStatsVictoryPoints
+     * @return \Swagger\Client\Eve\Model\GetFwStatsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -369,7 +369,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets victory_points
      *
-     * @param \Swagger\Client\Model\GetFwStatsVictoryPoints $victory_points victory_points
+     * @param \Swagger\Client\Eve\Model\GetFwStatsVictoryPoints $victory_points victory_points
      *
      * @return $this
      */

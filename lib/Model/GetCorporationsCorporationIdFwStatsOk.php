@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdFwStatsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
         'faction_id' => 'int',
         'enlisted_on' => '\DateTime',
         'pilots' => 'int',
-        'kills' => '\Swagger\Client\Model\GetCorporationsCorporationIdFwStatsKills',
-        'victory_points' => '\Swagger\Client\Model\GetCorporationsCorporationIdFwStatsVictoryPoints'
+        'kills' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsKills',
+        'victory_points' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsVictoryPoints'
     ];
 
     /**
@@ -317,7 +317,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Gets kills
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdFwStatsKills
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsKills
      */
     public function getKills()
     {
@@ -327,7 +327,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Sets kills
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdFwStatsKills $kills kills
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsKills $kills kills
      *
      * @return $this
      */
@@ -341,7 +341,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Gets victory_points
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdFwStatsVictoryPoints
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -351,7 +351,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Sets victory_points
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdFwStatsVictoryPoints $victory_points victory_points
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsVictoryPoints $victory_points victory_points
      *
      * @return $this
      */

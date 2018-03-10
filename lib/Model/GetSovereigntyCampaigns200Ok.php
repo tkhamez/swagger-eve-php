@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetSovereigntyCampaigns200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,7 +67,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess
         'defender_id' => 'int',
         'defender_score' => 'float',
         'attackers_score' => 'float',
-        'participants' => '\Swagger\Client\Model\GetSovereigntyCampaignsParticipant[]'
+        'participants' => '\Swagger\Client\Eve\Model\GetSovereigntyCampaignsParticipant[]'
     ];
 
     /**
@@ -555,7 +555,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets participants
      *
-     * @return \Swagger\Client\Model\GetSovereigntyCampaignsParticipant[]
+     * @return \Swagger\Client\Eve\Model\GetSovereigntyCampaignsParticipant[]
      */
     public function getParticipants()
     {
@@ -565,7 +565,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets participants
      *
-     * @param \Swagger\Client\Model\GetSovereigntyCampaignsParticipant[] $participants Alliance participating and their respective scores, only present in Freeport Events.
+     * @param \Swagger\Client\Eve\Model\GetSovereigntyCampaignsParticipant[] $participants Alliance participating and their respective scores, only present in Freeport Events.
      *
      * @return $this
      */

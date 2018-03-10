@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetUniverseTypesTypeIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -72,8 +72,8 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
         'portion_size' => 'int',
         'mass' => 'float',
         'graphic_id' => 'int',
-        'dogma_attributes' => '\Swagger\Client\Model\GetUniverseTypesTypeIdDogmaAttribute[]',
-        'dogma_effects' => '\Swagger\Client\Model\GetUniverseTypesTypeIdDogmaEffect[]'
+        'dogma_attributes' => '\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdDogmaAttribute[]',
+        'dogma_effects' => '\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdDogmaEffect[]'
     ];
 
     /**
@@ -665,7 +665,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets dogma_attributes
      *
-     * @return \Swagger\Client\Model\GetUniverseTypesTypeIdDogmaAttribute[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdDogmaAttribute[]
      */
     public function getDogmaAttributes()
     {
@@ -675,7 +675,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets dogma_attributes
      *
-     * @param \Swagger\Client\Model\GetUniverseTypesTypeIdDogmaAttribute[] $dogma_attributes dogma_attributes array
+     * @param \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdDogmaAttribute[] $dogma_attributes dogma_attributes array
      *
      * @return $this
      */
@@ -689,7 +689,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets dogma_effects
      *
-     * @return \Swagger\Client\Model\GetUniverseTypesTypeIdDogmaEffect[]
+     * @return \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdDogmaEffect[]
      */
     public function getDogmaEffects()
     {
@@ -699,7 +699,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets dogma_effects
      *
-     * @param \Swagger\Client\Model\GetUniverseTypesTypeIdDogmaEffect[] $dogma_effects dogma_effects array
+     * @param \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdDogmaEffect[] $dogma_effects dogma_effects array
      *
      * @return $this
      */

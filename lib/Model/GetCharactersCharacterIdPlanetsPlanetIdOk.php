@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdPlanetsPlanetIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdLink[]',
-        'pins' => '\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdPin[]',
-        'routes' => '\Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdRoute[]'
+        'links' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdLink[]',
+        'pins' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdPin[]',
+        'routes' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdRoute[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdLink[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdLink[]
      */
     public function getLinks()
     {
@@ -249,7 +249,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdLink[] $links links array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdLink[] $links links array
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Gets pins
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdPin[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdPin[]
      */
     public function getPins()
     {
@@ -273,7 +273,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Sets pins
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdPin[] $pins pins array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdPin[] $pins pins array
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Gets routes
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdRoute[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdRoute[]
      */
     public function getRoutes()
     {
@@ -297,7 +297,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Sets routes
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdPlanetsPlanetIdRoute[] $routes routes array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdRoute[] $routes routes array
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdSkillsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GetCharactersCharacterIdSkillsOk implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'skills' => '\Swagger\Client\Model\GetCharactersCharacterIdSkillsSkill[]',
+        'skills' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdSkillsSkill[]',
         'total_sp' => 'int',
         'unallocated_sp' => 'int'
     ];
@@ -233,7 +233,7 @@ class GetCharactersCharacterIdSkillsOk implements ModelInterface, ArrayAccess
     /**
      * Gets skills
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdSkillsSkill[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdSkillsSkill[]
      */
     public function getSkills()
     {
@@ -243,7 +243,7 @@ class GetCharactersCharacterIdSkillsOk implements ModelInterface, ArrayAccess
     /**
      * Sets skills
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdSkillsSkill[] $skills skills array
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdSkillsSkill[] $skills skills array
      *
      * @return $this
      */

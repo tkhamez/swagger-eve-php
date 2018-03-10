@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdWalletJournal200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,7 +70,7 @@ class GetCharactersCharacterIdWalletJournal200Ok implements ModelInterface, Arra
         'reason' => 'string',
         'tax_receiver_id' => 'int',
         'tax' => 'double',
-        'extra_info' => '\Swagger\Client\Model\GetCharactersCharacterIdWalletJournalExtraInfo'
+        'extra_info' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournalExtraInfo'
     ];
 
     /**
@@ -937,7 +937,7 @@ class GetCharactersCharacterIdWalletJournal200Ok implements ModelInterface, Arra
     /**
      * Gets extra_info
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdWalletJournalExtraInfo
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournalExtraInfo
      */
     public function getExtraInfo()
     {
@@ -947,7 +947,7 @@ class GetCharactersCharacterIdWalletJournal200Ok implements ModelInterface, Arra
     /**
      * Sets extra_info
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdWalletJournalExtraInfo $extra_info extra_info
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournalExtraInfo $extra_info extra_info
      *
      * @return $this
      */

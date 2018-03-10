@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **date** | [**\DateTime**](\DateTime.md) | date string | 
 **reason** | **string** | reason string | 
 **status** | **string** | status string | 
-**graphics** | [**\Swagger\Client\Model\GetCharactersCharacterIdMedalsGraphic[]**](GetCharactersCharacterIdMedalsGraphic.md) | graphics array | 
+**graphics** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdMedalsGraphic[]**](GetCharactersCharacterIdMedalsGraphic.md) | graphics array | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

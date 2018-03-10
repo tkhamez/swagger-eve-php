@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**recipients** | [**\Swagger\Client\Model\PostCharactersCharacterIdMailRecipient[]**](PostCharactersCharacterIdMailRecipient.md) | recipients array | 
+**recipients** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdMailRecipient[]**](PostCharactersCharacterIdMailRecipient.md) | recipients array | 
 **subject** | **string** | subject string | 
 **body** | **string** | body string | 
 **approved_cost** | **int** | approved_cost integer | [optional] [default to 0]

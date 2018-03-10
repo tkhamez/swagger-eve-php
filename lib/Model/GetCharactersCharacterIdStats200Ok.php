@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdStats200Ok Class Doc Comment
  *
  * @category Class
  * @description Aggregate stats for a year
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,18 +59,18 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'year' => 'int',
-        'character' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsCharacter',
-        'combat' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsCombat',
-        'industry' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsIndustry',
-        'inventory' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsInventory',
-        'isk' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsIsk',
-        'market' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsMarket',
-        'mining' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsMining',
-        'module' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsModule',
-        'orbital' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsOrbital',
-        'pve' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsPve',
-        'social' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsSocial',
-        'travel' => '\Swagger\Client\Model\GetCharactersCharacterIdStatsTravel'
+        'character' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsCharacter',
+        'combat' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsCombat',
+        'industry' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsIndustry',
+        'inventory' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsInventory',
+        'isk' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsIsk',
+        'market' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsMarket',
+        'mining' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsMining',
+        'module' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsModule',
+        'orbital' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsOrbital',
+        'pve' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsPve',
+        'social' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsSocial',
+        'travel' => '\Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsTravel'
     ];
 
     /**
@@ -311,7 +311,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets character
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsCharacter
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsCharacter
      */
     public function getCharacter()
     {
@@ -321,7 +321,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets character
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsCharacter $character character
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsCharacter $character character
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets combat
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsCombat
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsCombat
      */
     public function getCombat()
     {
@@ -345,7 +345,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets combat
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsCombat $combat combat
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsCombat $combat combat
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets industry
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsIndustry
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsIndustry
      */
     public function getIndustry()
     {
@@ -369,7 +369,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets industry
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsIndustry $industry industry
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsIndustry $industry industry
      *
      * @return $this
      */
@@ -383,7 +383,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets inventory
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsInventory
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsInventory
      */
     public function getInventory()
     {
@@ -393,7 +393,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets inventory
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsInventory $inventory inventory
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsInventory $inventory inventory
      *
      * @return $this
      */
@@ -407,7 +407,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets isk
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsIsk
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsIsk
      */
     public function getIsk()
     {
@@ -417,7 +417,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets isk
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsIsk $isk isk
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsIsk $isk isk
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets market
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsMarket
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsMarket
      */
     public function getMarket()
     {
@@ -441,7 +441,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets market
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsMarket $market market
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsMarket $market market
      *
      * @return $this
      */
@@ -455,7 +455,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets mining
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsMining
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsMining
      */
     public function getMining()
     {
@@ -465,7 +465,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets mining
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsMining $mining mining
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsMining $mining mining
      *
      * @return $this
      */
@@ -479,7 +479,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets module
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsModule
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsModule
      */
     public function getModule()
     {
@@ -489,7 +489,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets module
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsModule $module module
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsModule $module module
      *
      * @return $this
      */
@@ -503,7 +503,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets orbital
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsOrbital
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsOrbital
      */
     public function getOrbital()
     {
@@ -513,7 +513,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets orbital
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsOrbital $orbital orbital
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsOrbital $orbital orbital
      *
      * @return $this
      */
@@ -527,7 +527,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets pve
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsPve
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsPve
      */
     public function getPve()
     {
@@ -537,7 +537,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets pve
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsPve $pve pve
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsPve $pve pve
      *
      * @return $this
      */
@@ -551,7 +551,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets social
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsSocial
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsSocial
      */
     public function getSocial()
     {
@@ -561,7 +561,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets social
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsSocial $social social
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsSocial $social social
      *
      * @return $this
      */
@@ -575,7 +575,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets travel
      *
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdStatsTravel
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsTravel
      */
     public function getTravel()
     {
@@ -585,7 +585,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets travel
      *
-     * @param \Swagger\Client\Model\GetCharactersCharacterIdStatsTravel $travel travel
+     * @param \Swagger\Client\Eve\Model\GetCharactersCharacterIdStatsTravel $travel travel
      *
      * @return $this
      */

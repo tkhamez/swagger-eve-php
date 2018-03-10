@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetLoyaltyStoresCorporationIdOffers200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class GetLoyaltyStoresCorporationIdOffers200Ok implements ModelInterface, ArrayA
         'lp_cost' => 'int',
         'isk_cost' => 'int',
         'ak_cost' => 'int',
-        'required_items' => '\Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffersRequiredItem[]'
+        'required_items' => '\Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffersRequiredItem[]'
     ];
 
     /**
@@ -425,7 +425,7 @@ class GetLoyaltyStoresCorporationIdOffers200Ok implements ModelInterface, ArrayA
     /**
      * Gets required_items
      *
-     * @return \Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffersRequiredItem[]
+     * @return \Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffersRequiredItem[]
      */
     public function getRequiredItems()
     {
@@ -435,7 +435,7 @@ class GetLoyaltyStoresCorporationIdOffers200Ok implements ModelInterface, ArrayA
     /**
      * Sets required_items
      *
-     * @param \Swagger\Client\Model\GetLoyaltyStoresCorporationIdOffersRequiredItem[] $required_items required_items array
+     * @param \Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffersRequiredItem[] $required_items required_items array
      *
      * @return $this
      */

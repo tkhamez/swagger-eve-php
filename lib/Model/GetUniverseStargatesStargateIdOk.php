@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetUniverseStargatesStargateIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,9 +61,9 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
         'stargate_id' => 'int',
         'name' => 'string',
         'type_id' => 'int',
-        'position' => '\Swagger\Client\Model\GetUniverseStargatesStargateIdPosition',
+        'position' => '\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdPosition',
         'system_id' => 'int',
-        'destination' => '\Swagger\Client\Model\GetUniverseStargatesStargateIdDestination'
+        'destination' => '\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdDestination'
     ];
 
     /**
@@ -347,7 +347,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\GetUniverseStargatesStargateIdPosition
+     * @return \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdPosition
      */
     public function getPosition()
     {
@@ -357,7 +357,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\GetUniverseStargatesStargateIdPosition $position position
+     * @param \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdPosition $position position
      *
      * @return $this
      */
@@ -395,7 +395,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets destination
      *
-     * @return \Swagger\Client\Model\GetUniverseStargatesStargateIdDestination
+     * @return \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdDestination
      */
     public function getDestination()
     {
@@ -405,7 +405,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets destination
      *
-     * @param \Swagger\Client\Model\GetUniverseStargatesStargateIdDestination $destination destination
+     * @param \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdDestination $destination destination
      *
      * @return $this
      */

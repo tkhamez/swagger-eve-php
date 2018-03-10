@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * IndustryApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdIndustryJobs200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[]
      */
     public function getCharactersCharacterIdIndustryJobs($character_id, $datasource = 'tranquility', $include_completed = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -116,13 +116,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdIndustryJobs200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdIndustryJobsWithHttpInfo($character_id, $datasource = 'tranquility', $include_completed = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdIndustryJobs200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[]';
         $request = $this->getCharactersCharacterIdIndustryJobsRequest($character_id, $datasource, $include_completed, $token, $user_agent, $x_user_agent);
 
         try {
@@ -174,7 +174,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdIndustryJobs200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class IndustryApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class IndustryApi
      */
     public function getCharactersCharacterIdIndustryJobsAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $include_completed = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdIndustryJobs200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[]';
         $request = $this->getCharactersCharacterIdIndustryJobsRequest($character_id, $datasource, $include_completed, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -425,9 +425,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdMining200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[]
      */
     public function getCharactersCharacterIdMining($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -447,13 +447,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdMining200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdMiningWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdMining200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[]';
         $request = $this->getCharactersCharacterIdMiningRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -505,7 +505,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdMining200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -513,7 +513,7 @@ class IndustryApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -573,7 +573,7 @@ class IndustryApi
      */
     public function getCharactersCharacterIdMiningAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdMining200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[]';
         $request = $this->getCharactersCharacterIdMiningRequest($character_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -755,9 +755,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationCorporationIdMiningExtractions200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[]
      */
     public function getCorporationCorporationIdMiningExtractions($corporation_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -776,13 +776,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationCorporationIdMiningExtractions200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationCorporationIdMiningExtractionsWithHttpInfo($corporation_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationCorporationIdMiningExtractions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[]';
         $request = $this->getCorporationCorporationIdMiningExtractionsRequest($corporation_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -834,7 +834,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationCorporationIdMiningExtractions200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -842,7 +842,7 @@ class IndustryApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -850,7 +850,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class IndustryApi
      */
     public function getCorporationCorporationIdMiningExtractionsAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationCorporationIdMiningExtractions200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[]';
         $request = $this->getCorporationCorporationIdMiningExtractionsRequest($corporation_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1078,9 +1078,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationCorporationIdMiningObservers200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[]
      */
     public function getCorporationCorporationIdMiningObservers($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1100,13 +1100,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationCorporationIdMiningObservers200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationCorporationIdMiningObserversWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationCorporationIdMiningObservers200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[]';
         $request = $this->getCorporationCorporationIdMiningObserversRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1158,7 +1158,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationCorporationIdMiningObservers200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1166,7 +1166,7 @@ class IndustryApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1174,7 +1174,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1226,7 +1226,7 @@ class IndustryApi
      */
     public function getCorporationCorporationIdMiningObserversAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationCorporationIdMiningObservers200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[]';
         $request = $this->getCorporationCorporationIdMiningObserversRequest($corporation_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1410,9 +1410,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]
      */
     public function getCorporationCorporationIdMiningObserversObserverId($corporation_id, $observer_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1433,13 +1433,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationCorporationIdMiningObserversObserverIdWithHttpInfo($corporation_id, $observer_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]';
         $request = $this->getCorporationCorporationIdMiningObserversObserverIdRequest($corporation_id, $observer_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1491,7 +1491,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1499,7 +1499,7 @@ class IndustryApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1507,7 +1507,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1561,7 +1561,7 @@ class IndustryApi
      */
     public function getCorporationCorporationIdMiningObserversObserverIdAsyncWithHttpInfo($corporation_id, $observer_id, $datasource = 'tranquility', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]';
         $request = $this->getCorporationCorporationIdMiningObserversObserverIdRequest($corporation_id, $observer_id, $datasource, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1760,9 +1760,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]
      */
     public function getCorporationsCorporationIdIndustryJobs($corporation_id, $datasource = 'tranquility', $include_completed = 'false', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -1783,13 +1783,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdIndustryJobs200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdIndustryJobsWithHttpInfo($corporation_id, $datasource = 'tranquility', $include_completed = 'false', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]';
         $request = $this->getCorporationsCorporationIdIndustryJobsRequest($corporation_id, $datasource, $include_completed, $page, $token, $user_agent, $x_user_agent);
 
         try {
@@ -1841,7 +1841,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1849,7 +1849,7 @@ class IndustryApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1857,7 +1857,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1911,7 +1911,7 @@ class IndustryApi
      */
     public function getCorporationsCorporationIdIndustryJobsAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $include_completed = 'false', $page = '1', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]';
         $request = $this->getCorporationsCorporationIdIndustryJobsRequest($corporation_id, $datasource, $include_completed, $page, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2096,9 +2096,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetIndustryFacilities200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[]
      */
     public function getIndustryFacilities($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -2115,13 +2115,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetIndustryFacilities200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getIndustryFacilitiesWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetIndustryFacilities200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[]';
         $request = $this->getIndustryFacilitiesRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -2173,7 +2173,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetIndustryFacilities200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2181,7 +2181,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2227,7 +2227,7 @@ class IndustryApi
      */
     public function getIndustryFacilitiesAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetIndustryFacilities200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[]';
         $request = $this->getIndustryFacilitiesRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -2374,9 +2374,9 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetIndustrySystems200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetIndustrySystems200Ok[]
      */
     public function getIndustrySystems($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -2393,13 +2393,13 @@ class IndustryApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetIndustrySystems200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetIndustrySystems200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getIndustrySystemsWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetIndustrySystems200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetIndustrySystems200Ok[]';
         $request = $this->getIndustrySystemsRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -2451,7 +2451,7 @@ class IndustryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetIndustrySystems200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetIndustrySystems200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2459,7 +2459,7 @@ class IndustryApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2505,7 +2505,7 @@ class IndustryApi
      */
     public function getIndustrySystemsAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetIndustrySystems200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetIndustrySystems200Ok[]';
         $request = $this->getIndustrySystemsRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client

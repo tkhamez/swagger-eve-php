@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * SovereigntyApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class SovereigntyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetSovereigntyCampaigns200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[]
      */
     public function getSovereigntyCampaigns($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -110,13 +110,13 @@ class SovereigntyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetSovereigntyCampaigns200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getSovereigntyCampaignsWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSovereigntyCampaigns200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[]';
         $request = $this->getSovereigntyCampaignsRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -168,7 +168,7 @@ class SovereigntyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetSovereigntyCampaigns200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class SovereigntyApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -222,7 +222,7 @@ class SovereigntyApi
      */
     public function getSovereigntyCampaignsAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSovereigntyCampaigns200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[]';
         $request = $this->getSovereigntyCampaignsRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -369,9 +369,9 @@ class SovereigntyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetSovereigntyMap200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[]
      */
     public function getSovereigntyMap($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -388,13 +388,13 @@ class SovereigntyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetSovereigntyMap200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getSovereigntyMapWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSovereigntyMap200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[]';
         $request = $this->getSovereigntyMapRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -446,7 +446,7 @@ class SovereigntyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetSovereigntyMap200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -454,7 +454,7 @@ class SovereigntyApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -500,7 +500,7 @@ class SovereigntyApi
      */
     public function getSovereigntyMapAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSovereigntyMap200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[]';
         $request = $this->getSovereigntyMapRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -647,9 +647,9 @@ class SovereigntyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetSovereigntyStructures200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[]
      */
     public function getSovereigntyStructures($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -666,13 +666,13 @@ class SovereigntyApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetSovereigntyStructures200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getSovereigntyStructuresWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSovereigntyStructures200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[]';
         $request = $this->getSovereigntyStructuresRequest($datasource, $user_agent, $x_user_agent);
 
         try {
@@ -724,7 +724,7 @@ class SovereigntyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetSovereigntyStructures200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -732,7 +732,7 @@ class SovereigntyApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -778,7 +778,7 @@ class SovereigntyApi
      */
     public function getSovereigntyStructuresAsyncWithHttpInfo($datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetSovereigntyStructures200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[]';
         $request = $this->getSovereigntyStructuresRequest($datasource, $user_agent, $x_user_agent);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetUniverseStationsStationIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess
         'owner' => 'int',
         'type_id' => 'int',
         'race_id' => 'int',
-        'position' => '\Swagger\Client\Model\GetUniverseStationsStationIdPosition',
+        'position' => '\Swagger\Client\Eve\Model\GetUniverseStationsStationIdPosition',
         'system_id' => 'int',
         'reprocessing_efficiency' => 'float',
         'reprocessing_stations_take' => 'float',
@@ -520,7 +520,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \Swagger\Client\Model\GetUniverseStationsStationIdPosition
+     * @return \Swagger\Client\Eve\Model\GetUniverseStationsStationIdPosition
      */
     public function getPosition()
     {
@@ -530,7 +530,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \Swagger\Client\Model\GetUniverseStationsStationIdPosition $position position
+     * @param \Swagger\Client\Eve\Model\GetUniverseStationsStationIdPosition $position position
      *
      * @return $this
      */

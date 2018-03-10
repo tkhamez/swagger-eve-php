@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * KillmailsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class KillmailsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]
      */
     public function getCharactersCharacterIdKillmailsRecent($character_id, $datasource = 'tranquility', $max_count = '50', $max_kill_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -118,13 +118,13 @@ class KillmailsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdKillmailsRecentWithHttpInfo($character_id, $datasource = 'tranquility', $max_count = '50', $max_kill_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]';
         $request = $this->getCharactersCharacterIdKillmailsRecentRequest($character_id, $datasource, $max_count, $max_kill_id, $token, $user_agent, $x_user_agent);
 
         try {
@@ -176,7 +176,7 @@ class KillmailsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class KillmailsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class KillmailsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -246,7 +246,7 @@ class KillmailsApi
      */
     public function getCharactersCharacterIdKillmailsRecentAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $max_count = '50', $max_kill_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdKillmailsRecent200Ok[]';
         $request = $this->getCharactersCharacterIdKillmailsRecentRequest($character_id, $datasource, $max_count, $max_kill_id, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -438,9 +438,9 @@ class KillmailsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]
      */
     public function getCorporationsCorporationIdKillmailsRecent($corporation_id, $datasource = 'tranquility', $max_kill_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -460,13 +460,13 @@ class KillmailsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdKillmailsRecentWithHttpInfo($corporation_id, $datasource = 'tranquility', $max_kill_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
         $request = $this->getCorporationsCorporationIdKillmailsRecentRequest($corporation_id, $datasource, $max_kill_id, $token, $user_agent, $x_user_agent);
 
         try {
@@ -518,7 +518,7 @@ class KillmailsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class KillmailsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -534,7 +534,7 @@ class KillmailsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -586,7 +586,7 @@ class KillmailsApi
      */
     public function getCorporationsCorporationIdKillmailsRecentAsyncWithHttpInfo($corporation_id, $datasource = 'tranquility', $max_kill_id = null, $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
         $request = $this->getCorporationsCorporationIdKillmailsRecentRequest($corporation_id, $datasource, $max_kill_id, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -768,9 +768,9 @@ class KillmailsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashOk
+     * @return \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashOk
      */
     public function getKillmailsKillmailIdKillmailHash($killmail_hash, $killmail_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -789,13 +789,13 @@ class KillmailsApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getKillmailsKillmailIdKillmailHashWithHttpInfo($killmail_hash, $killmail_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashOk';
         $request = $this->getKillmailsKillmailIdKillmailHashRequest($killmail_hash, $killmail_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -847,7 +847,7 @@ class KillmailsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashOk',
+                        '\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -855,7 +855,7 @@ class KillmailsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashUnprocessableEntity',
+                        '\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -863,7 +863,7 @@ class KillmailsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -913,7 +913,7 @@ class KillmailsApi
      */
     public function getKillmailsKillmailIdKillmailHashAsyncWithHttpInfo($killmail_hash, $killmail_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetKillmailsKillmailIdKillmailHashOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashOk';
         $request = $this->getKillmailsKillmailIdKillmailHashRequest($killmail_hash, $killmail_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client

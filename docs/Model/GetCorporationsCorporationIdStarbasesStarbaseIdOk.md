@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **attack_security_status_threshold** | **float** | Starbase (POS) will attack if target&#39;s security standing is lower than this value | [optional] 
 **attack_if_other_security_status_dropping** | **bool** | attack_if_other_security_status_dropping boolean | 
 **attack_if_at_war** | **bool** | attack_if_at_war boolean | 
-**fuels** | [**\Swagger\Client\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]**](GetCorporationsCorporationIdStarbasesStarbaseIdFuel.md) | Fuel blocks and other things that will be consumed when operating a starbase (POS) | [optional] 
+**fuels** | [**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]**](GetCorporationsCorporationIdStarbasesStarbaseIdFuel.md) | Fuel blocks and other things that will be consumed when operating a starbase (POS) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

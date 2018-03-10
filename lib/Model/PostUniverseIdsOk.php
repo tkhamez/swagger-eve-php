@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * PostUniverseIdsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'agents' => '\Swagger\Client\Model\PostUniverseIdsAgent[]',
-        'alliances' => '\Swagger\Client\Model\PostUniverseIdsAlliance[]',
-        'characters' => '\Swagger\Client\Model\PostUniverseIdsCharacter[]',
-        'constellations' => '\Swagger\Client\Model\PostUniverseIdsConstellation[]',
-        'corporations' => '\Swagger\Client\Model\PostUniverseIdsCorporation[]',
-        'factions' => '\Swagger\Client\Model\PostUniverseIdsFaction[]',
-        'inventory_types' => '\Swagger\Client\Model\PostUniverseIdsInventoryType[]',
-        'regions' => '\Swagger\Client\Model\PostUniverseIdsRegion[]',
-        'systems' => '\Swagger\Client\Model\PostUniverseIdsSystem[]',
-        'stations' => '\Swagger\Client\Model\PostUniverseIdsStation[]'
+        'agents' => '\Swagger\Client\Eve\Model\PostUniverseIdsAgent[]',
+        'alliances' => '\Swagger\Client\Eve\Model\PostUniverseIdsAlliance[]',
+        'characters' => '\Swagger\Client\Eve\Model\PostUniverseIdsCharacter[]',
+        'constellations' => '\Swagger\Client\Eve\Model\PostUniverseIdsConstellation[]',
+        'corporations' => '\Swagger\Client\Eve\Model\PostUniverseIdsCorporation[]',
+        'factions' => '\Swagger\Client\Eve\Model\PostUniverseIdsFaction[]',
+        'inventory_types' => '\Swagger\Client\Eve\Model\PostUniverseIdsInventoryType[]',
+        'regions' => '\Swagger\Client\Eve\Model\PostUniverseIdsRegion[]',
+        'systems' => '\Swagger\Client\Eve\Model\PostUniverseIdsSystem[]',
+        'stations' => '\Swagger\Client\Eve\Model\PostUniverseIdsStation[]'
     ];
 
     /**
@@ -263,7 +263,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets agents
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsAgent[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsAgent[]
      */
     public function getAgents()
     {
@@ -273,7 +273,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets agents
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsAgent[] $agents agents array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsAgent[] $agents agents array
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets alliances
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsAlliance[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsAlliance[]
      */
     public function getAlliances()
     {
@@ -297,7 +297,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets alliances
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsAlliance[] $alliances alliances array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsAlliance[] $alliances alliances array
      *
      * @return $this
      */
@@ -311,7 +311,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets characters
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsCharacter[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsCharacter[]
      */
     public function getCharacters()
     {
@@ -321,7 +321,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets characters
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsCharacter[] $characters characters array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsCharacter[] $characters characters array
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets constellations
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsConstellation[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsConstellation[]
      */
     public function getConstellations()
     {
@@ -345,7 +345,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets constellations
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsConstellation[] $constellations constellations array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsConstellation[] $constellations constellations array
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets corporations
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsCorporation[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsCorporation[]
      */
     public function getCorporations()
     {
@@ -369,7 +369,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets corporations
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsCorporation[] $corporations corporations array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsCorporation[] $corporations corporations array
      *
      * @return $this
      */
@@ -383,7 +383,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets factions
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsFaction[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsFaction[]
      */
     public function getFactions()
     {
@@ -393,7 +393,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets factions
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsFaction[] $factions factions array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsFaction[] $factions factions array
      *
      * @return $this
      */
@@ -407,7 +407,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets inventory_types
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsInventoryType[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsInventoryType[]
      */
     public function getInventoryTypes()
     {
@@ -417,7 +417,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets inventory_types
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsInventoryType[] $inventory_types inventory_types array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsInventoryType[] $inventory_types inventory_types array
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets regions
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsRegion[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsRegion[]
      */
     public function getRegions()
     {
@@ -441,7 +441,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets regions
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsRegion[] $regions regions array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsRegion[] $regions regions array
      *
      * @return $this
      */
@@ -455,7 +455,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets systems
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsSystem[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsSystem[]
      */
     public function getSystems()
     {
@@ -465,7 +465,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets systems
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsSystem[] $systems systems array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsSystem[] $systems systems array
      *
      * @return $this
      */
@@ -479,7 +479,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets stations
      *
-     * @return \Swagger\Client\Model\PostUniverseIdsStation[]
+     * @return \Swagger\Client\Eve\Model\PostUniverseIdsStation[]
      */
     public function getStations()
     {
@@ -489,7 +489,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets stations
      *
-     * @param \Swagger\Client\Model\PostUniverseIdsStation[] $stations stations array
+     * @param \Swagger\Client\Eve\Model\PostUniverseIdsStation[] $stations stations array
      *
      * @return $this
      */

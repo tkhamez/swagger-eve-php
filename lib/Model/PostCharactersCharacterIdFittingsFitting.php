@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * PostCharactersCharacterIdFittingsFitting Class Doc Comment
  *
  * @category Class
  * @description fitting object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
         'name' => 'string',
         'description' => 'string',
         'ship_type_id' => 'int',
-        'items' => '\Swagger\Client\Model\PostCharactersCharacterIdFittingsItem[]'
+        'items' => '\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsItem[]'
     ];
 
     /**
@@ -365,7 +365,7 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\PostCharactersCharacterIdFittingsItem[]
+     * @return \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsItem[]
      */
     public function getItems()
     {
@@ -375,7 +375,7 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\PostCharactersCharacterIdFittingsItem[] $items items array
+     * @param \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsItem[] $items items array
      *
      * @return $this
      */

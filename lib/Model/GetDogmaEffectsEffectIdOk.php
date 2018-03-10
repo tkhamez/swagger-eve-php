@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetDogmaEffectsEffectIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -78,7 +78,7 @@ class GetDogmaEffectsEffectIdOk implements ModelInterface, ArrayAccess
         'discharge_attribute_id' => 'int',
         'range_attribute_id' => 'int',
         'falloff_attribute_id' => 'int',
-        'modifiers' => '\Swagger\Client\Model\GetDogmaEffectsEffectIdModifier[]'
+        'modifiers' => '\Swagger\Client\Eve\Model\GetDogmaEffectsEffectIdModifier[]'
     ];
 
     /**
@@ -815,7 +815,7 @@ class GetDogmaEffectsEffectIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets modifiers
      *
-     * @return \Swagger\Client\Model\GetDogmaEffectsEffectIdModifier[]
+     * @return \Swagger\Client\Eve\Model\GetDogmaEffectsEffectIdModifier[]
      */
     public function getModifiers()
     {
@@ -825,7 +825,7 @@ class GetDogmaEffectsEffectIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets modifiers
      *
-     * @param \Swagger\Client\Model\GetDogmaEffectsEffectIdModifier[] $modifiers modifiers array
+     * @param \Swagger\Client\Eve\Model\GetDogmaEffectsEffectIdModifier[] $modifiers modifiers array
      *
      * @return $this
      */

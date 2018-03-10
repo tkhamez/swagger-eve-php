@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * AllianceApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -110,7 +110,7 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -176,7 +176,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -370,9 +370,9 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetAlliancesAllianceIdOk
+     * @return \Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk
      */
     public function getAlliancesAllianceId($alliance_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -390,13 +390,13 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetAlliancesAllianceIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesAllianceIdWithHttpInfo($alliance_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesAllianceIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk';
         $request = $this->getAlliancesAllianceIdRequest($alliance_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -448,7 +448,7 @@ class AllianceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAlliancesAllianceIdOk',
+                        '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -456,7 +456,7 @@ class AllianceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAlliancesAllianceIdNotFound',
+                        '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -464,7 +464,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class AllianceApi
      */
     public function getAlliancesAllianceIdAsyncWithHttpInfo($alliance_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesAllianceIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk';
         $request = $this->getAlliancesAllianceIdRequest($alliance_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -679,7 +679,7 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -699,7 +699,7 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -765,7 +765,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -980,9 +980,9 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetAlliancesAllianceIdIconsOk
+     * @return \Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk
      */
     public function getAlliancesAllianceIdIcons($alliance_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -1000,13 +1000,13 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetAlliancesAllianceIdIconsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesAllianceIdIconsWithHttpInfo($alliance_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesAllianceIdIconsOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk';
         $request = $this->getAlliancesAllianceIdIconsRequest($alliance_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -1058,7 +1058,7 @@ class AllianceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAlliancesAllianceIdIconsOk',
+                        '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1066,7 +1066,7 @@ class AllianceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAlliancesAllianceIdIconsNotFound',
+                        '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1074,7 +1074,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1122,7 +1122,7 @@ class AllianceApi
      */
     public function getAlliancesAllianceIdIconsAsyncWithHttpInfo($alliance_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesAllianceIdIconsOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk';
         $request = $this->getAlliancesAllianceIdIconsRequest($alliance_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client
@@ -1289,9 +1289,9 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetAlliancesNames200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetAlliancesNames200Ok[]
      */
     public function getAlliancesNames($alliance_ids, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -1309,13 +1309,13 @@ class AllianceApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetAlliancesNames200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetAlliancesNames200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesNamesWithHttpInfo($alliance_ids, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesNames200Ok[]';
         $request = $this->getAlliancesNamesRequest($alliance_ids, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -1367,7 +1367,7 @@ class AllianceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAlliancesNames200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetAlliancesNames200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1375,7 +1375,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1423,7 +1423,7 @@ class AllianceApi
      */
     public function getAlliancesNamesAsyncWithHttpInfo($alliance_ids, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAlliancesNames200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetAlliancesNames200Ok[]';
         $request = $this->getAlliancesNamesRequest($alliance_ids, $datasource, $user_agent, $x_user_agent);
 
         return $this->client

@@ -1,4 +1,4 @@
-# Swagger\Client\SovereigntyApi
+# Swagger\Client\Eve\SovereigntyApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getSovereigntyCampaigns**
-> \Swagger\Client\Model\GetSovereigntyCampaigns200Ok[] getSovereigntyCampaigns($datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[] getSovereigntyCampaigns($datasource, $user_agent, $x_user_agent)
 
 List sovereignty campaigns
 
@@ -21,7 +21,7 @@ Shows sovereignty data for campaigns.  ---  This route is cached for up to 5 sec
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SovereigntyApi(
+$apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetSovereigntyCampaigns200Ok[]**](../Model/GetSovereigntyCampaigns200Ok.md)
+[**\Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[]**](../Model/GetSovereigntyCampaigns200Ok.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSovereigntyMap**
-> \Swagger\Client\Model\GetSovereigntyMap200Ok[] getSovereigntyMap($datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[] getSovereigntyMap($datasource, $user_agent, $x_user_agent)
 
 List sovereignty of systems
 
@@ -74,7 +74,7 @@ Shows sovereignty information for solar systems  ---  This route is cached for u
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SovereigntyApi(
+$apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetSovereigntyMap200Ok[]**](../Model/GetSovereigntyMap200Ok.md)
+[**\Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[]**](../Model/GetSovereigntyMap200Ok.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSovereigntyStructures**
-> \Swagger\Client\Model\GetSovereigntyStructures200Ok[] getSovereigntyStructures($datasource, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[] getSovereigntyStructures($datasource, $user_agent, $x_user_agent)
 
 List sovereignty structures
 
@@ -127,7 +127,7 @@ Shows sovereignty data for structures.  ---  This route is cached for up to 120 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SovereigntyApi(
+$apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetSovereigntyStructures200Ok[]**](../Model/GetSovereigntyStructures200Ok.md)
+[**\Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[]**](../Model/GetSovereigntyStructures200Ok.md)
 
 ### Authorization
 

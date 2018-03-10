@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\Client\Eve\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Configuration;
+use Swagger\Client\Eve\HeaderSelector;
+use Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * OpportunitiesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetCharactersCharacterIdOpportunities200Ok[]
+     * @return \Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[]
      */
     public function getCharactersCharacterIdOpportunities($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
@@ -114,13 +114,13 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetCharactersCharacterIdOpportunities200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdOpportunitiesWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOpportunities200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[]';
         $request = $this->getCharactersCharacterIdOpportunitiesRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         try {
@@ -172,7 +172,7 @@ class OpportunitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetCharactersCharacterIdOpportunities200Ok[]',
+                        '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class OpportunitiesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Forbidden',
+                        '\Swagger\Client\Eve\Model\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class OpportunitiesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class OpportunitiesApi
      */
     public function getCharactersCharacterIdOpportunitiesAsyncWithHttpInfo($character_id, $datasource = 'tranquility', $token = null, $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetCharactersCharacterIdOpportunities200Ok[]';
+        $returnType = '\Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[]';
         $request = $this->getCharactersCharacterIdOpportunitiesRequest($character_id, $datasource, $token, $user_agent, $x_user_agent);
 
         return $this->client
@@ -413,7 +413,7 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -432,7 +432,7 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -498,7 +498,7 @@ class OpportunitiesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -693,9 +693,9 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOpportunitiesGroupsGroupIdOk
+     * @return \Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk
      */
     public function getOpportunitiesGroupsGroupId($group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
@@ -714,13 +714,13 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOpportunitiesGroupsGroupIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOpportunitiesGroupsGroupIdWithHttpInfo($group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOpportunitiesGroupsGroupIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk';
         $request = $this->getOpportunitiesGroupsGroupIdRequest($group_id, $datasource, $language, $user_agent, $x_user_agent);
 
         try {
@@ -772,7 +772,7 @@ class OpportunitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOpportunitiesGroupsGroupIdOk',
+                        '\Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -780,7 +780,7 @@ class OpportunitiesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -830,7 +830,7 @@ class OpportunitiesApi
      */
     public function getOpportunitiesGroupsGroupIdAsyncWithHttpInfo($group_id, $datasource = 'tranquility', $language = 'en-us', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOpportunitiesGroupsGroupIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk';
         $request = $this->getOpportunitiesGroupsGroupIdRequest($group_id, $datasource, $language, $user_agent, $x_user_agent);
 
         return $this->client
@@ -997,7 +997,7 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -1016,7 +1016,7 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -1082,7 +1082,7 @@ class OpportunitiesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1276,9 +1276,9 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOpportunitiesTasksTaskIdOk
+     * @return \Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk
      */
     public function getOpportunitiesTasksTaskId($task_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
@@ -1296,13 +1296,13 @@ class OpportunitiesApi
      * @param  string $user_agent Client identifier, takes precedence over headers (optional)
      * @param  string $x_user_agent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOpportunitiesTasksTaskIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOpportunitiesTasksTaskIdWithHttpInfo($task_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOpportunitiesTasksTaskIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk';
         $request = $this->getOpportunitiesTasksTaskIdRequest($task_id, $datasource, $user_agent, $x_user_agent);
 
         try {
@@ -1354,7 +1354,7 @@ class OpportunitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOpportunitiesTasksTaskIdOk',
+                        '\Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1362,7 +1362,7 @@ class OpportunitiesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerError',
+                        '\Swagger\Client\Eve\Model\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1410,7 +1410,7 @@ class OpportunitiesApi
      */
     public function getOpportunitiesTasksTaskIdAsyncWithHttpInfo($task_id, $datasource = 'tranquility', $user_agent = null, $x_user_agent = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOpportunitiesTasksTaskIdOk';
+        $returnType = '\Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk';
         $request = $this->getOpportunitiesTasksTaskIdRequest($task_id, $datasource, $user_agent, $x_user_agent);
 
         return $this->client

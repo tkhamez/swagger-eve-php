@@ -1,4 +1,4 @@
-# Swagger\Client\InsuranceApi
+# Swagger\Client\Eve\InsuranceApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getInsurancePrices**
-> \Swagger\Client\Model\GetInsurancePrices200Ok[] getInsurancePrices($datasource, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetInsurancePrices200Ok[] getInsurancePrices($datasource, $language, $user_agent, $x_user_agent)
 
 List insurance levels
 
@@ -19,7 +19,7 @@ Return available insurance levels for all ship types  ---  This route is cached 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\InsuranceApi(
+$apiInstance = new Swagger\Client\Eve\Api\InsuranceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetInsurancePrices200Ok[]**](../Model/GetInsurancePrices200Ok.md)
+[**\Swagger\Client\Eve\Model\GetInsurancePrices200Ok[]**](../Model/GetInsurancePrices200Ok.md)
 
 ### Authorization
 

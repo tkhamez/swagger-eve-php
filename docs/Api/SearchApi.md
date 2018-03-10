@@ -1,4 +1,4 @@
-# Swagger\Client\SearchApi
+# Swagger\Client\Eve\SearchApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdSearch**
-> \Swagger\Client\Model\GetCharactersCharacterIdSearchOk getCharactersCharacterIdSearch($categories, $character_id, $search, $datasource, $language, $strict, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk getCharactersCharacterIdSearch($categories, $character_id, $search, $datasource, $language, $strict, $token, $user_agent, $x_user_agent)
 
 Search on a string
 
@@ -21,9 +21,9 @@ Search for entities that match a given sub-string.  ---  This route is cached fo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Swagger\Client\Api\SearchApi(
+$apiInstance = new Swagger\Client\Eve\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetCharactersCharacterIdSearchOk**](../Model/GetCharactersCharacterIdSearchOk.md)
+[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk**](../Model/GetCharactersCharacterIdSearchOk.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSearch**
-> \Swagger\Client\Model\GetSearchOk getSearch($categories, $search, $datasource, $language, $strict, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetSearchOk getSearch($categories, $search, $datasource, $language, $strict, $user_agent, $x_user_agent)
 
 Search on a string
 
@@ -89,7 +89,7 @@ Search for entities that match a given sub-string.  ---  This route is cached fo
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SearchApi(
+$apiInstance = new Swagger\Client\Eve\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetSearchOk**](../Model/GetSearchOk.md)
+[**\Swagger\Client\Eve\Model\GetSearchOk**](../Model/GetSearchOk.md)
 
 ### Authorization
 

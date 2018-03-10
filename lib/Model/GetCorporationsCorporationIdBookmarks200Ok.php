@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\Client\Eve\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdBookmarks200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  Swagger\Client
+ * @package  Swagger\Client\Eve
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,8 +65,8 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
         'label' => 'string',
         'notes' => 'string',
         'location_id' => 'int',
-        'item' => '\Swagger\Client\Model\GetCorporationsCorporationIdBookmarksItem',
-        'coordinates' => '\Swagger\Client\Model\GetCorporationsCorporationIdBookmarksCoordinates'
+        'item' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksItem',
+        'coordinates' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksCoordinates'
     ];
 
     /**
@@ -461,7 +461,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Gets item
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdBookmarksItem
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksItem
      */
     public function getItem()
     {
@@ -471,7 +471,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Sets item
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdBookmarksItem $item item
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksItem $item item
      *
      * @return $this
      */
@@ -485,7 +485,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Gets coordinates
      *
-     * @return \Swagger\Client\Model\GetCorporationsCorporationIdBookmarksCoordinates
+     * @return \Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksCoordinates
      */
     public function getCoordinates()
     {
@@ -495,7 +495,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Sets coordinates
      *
-     * @param \Swagger\Client\Model\GetCorporationsCorporationIdBookmarksCoordinates $coordinates coordinates
+     * @param \Swagger\Client\Eve\Model\GetCorporationsCorporationIdBookmarksCoordinates $coordinates coordinates
      *
      * @return $this
      */

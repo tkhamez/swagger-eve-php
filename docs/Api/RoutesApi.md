@@ -1,4 +1,4 @@
-# Swagger\Client\RoutesApi
+# Swagger\Client\Eve\RoutesApi
 
 All URIs are relative to *https://esi.tech.ccp.is*
 
@@ -19,7 +19,7 @@ Get the systems between origin and destination  ---  This route is cached for up
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoutesApi(
+$apiInstance = new Swagger\Client\Eve\Api\RoutesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -27,7 +27,7 @@ $apiInstance = new Swagger\Client\Api\RoutesApi(
 $destination = 56; // int | destination solar system ID
 $origin = 56; // int | origin solar system ID
 $avoid = array(56); // int[] | avoid solar system ID(s)
-$connections = array(new \Swagger\Client\Model\int[]()); // int[][] | connected solar system pairs
+$connections = array(new \Swagger\Client\Eve\Model\int[]()); // int[][] | connected solar system pairs
 $datasource = "tranquility"; // string | The server name you would like data from
 $flag = "shortest"; // string | route security preference
 $user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers

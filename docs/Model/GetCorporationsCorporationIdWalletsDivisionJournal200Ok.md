@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **reason** | **string** | reason string | [optional] 
 **tax_receiver_id** | **int** | the corporation ID receiving any tax paid | [optional] 
 **tax** | **double** | Tax amount received for tax related transactions | [optional] 
-**extra_info** | [**\Swagger\Client\Model\GetCorporationsCorporationIdWalletsDivisionJournalExtraInfo**](GetCorporationsCorporationIdWalletsDivisionJournalExtraInfo.md) |  | [optional] 
+**extra_info** | [**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournalExtraInfo**](GetCorporationsCorporationIdWalletsDivisionJournalExtraInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
