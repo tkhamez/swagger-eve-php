@@ -263,7 +263,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     const LOCATION_FLAG_HI_SLOT5 = 'HiSlot5';
     const LOCATION_FLAG_HI_SLOT6 = 'HiSlot6';
     const LOCATION_FLAG_HI_SLOT7 = 'HiSlot7';
-    const LOCATION_FLAG_HIDDEN_MODIFERS = 'HiddenModifers';
+    const LOCATION_FLAG_HIDDEN_MODIFIERS = 'HiddenModifiers';
     const LOCATION_FLAG_IMPLANT = 'Implant';
     const LOCATION_FLAG_IMPOUNDED = 'Impounded';
     const LOCATION_FLAG_JUNKYARD_REPROCESSED = 'JunkyardReprocessed';
@@ -329,6 +329,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     const LOCATION_FLAG_STRUCTURE_FUEL = 'StructureFuel';
     const LOCATION_FLAG_STRUCTURE_INACTIVE = 'StructureInactive';
     const LOCATION_FLAG_STRUCTURE_OFFLINE = 'StructureOffline';
+    const LOCATION_FLAG_SUB_SYSTEM_BAY = 'SubSystemBay';
     const LOCATION_FLAG_SUB_SYSTEM_SLOT0 = 'SubSystemSlot0';
     const LOCATION_FLAG_SUB_SYSTEM_SLOT1 = 'SubSystemSlot1';
     const LOCATION_FLAG_SUB_SYSTEM_SLOT2 = 'SubSystemSlot2';
@@ -337,7 +338,6 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     const LOCATION_FLAG_SUB_SYSTEM_SLOT5 = 'SubSystemSlot5';
     const LOCATION_FLAG_SUB_SYSTEM_SLOT6 = 'SubSystemSlot6';
     const LOCATION_FLAG_SUB_SYSTEM_SLOT7 = 'SubSystemSlot7';
-    const LOCATION_FLAG_SUBSYSTEM_BAY = 'SubsystemBay';
     const LOCATION_FLAG_UNLOCKED = 'Unlocked';
     const LOCATION_FLAG_WALLET = 'Wallet';
     const LOCATION_FLAG_WARDROBE = 'Wardrobe';
@@ -423,7 +423,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
             self::LOCATION_FLAG_HI_SLOT5,
             self::LOCATION_FLAG_HI_SLOT6,
             self::LOCATION_FLAG_HI_SLOT7,
-            self::LOCATION_FLAG_HIDDEN_MODIFERS,
+            self::LOCATION_FLAG_HIDDEN_MODIFIERS,
             self::LOCATION_FLAG_IMPLANT,
             self::LOCATION_FLAG_IMPOUNDED,
             self::LOCATION_FLAG_JUNKYARD_REPROCESSED,
@@ -489,6 +489,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
             self::LOCATION_FLAG_STRUCTURE_FUEL,
             self::LOCATION_FLAG_STRUCTURE_INACTIVE,
             self::LOCATION_FLAG_STRUCTURE_OFFLINE,
+            self::LOCATION_FLAG_SUB_SYSTEM_BAY,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT0,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT1,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT2,
@@ -497,7 +498,6 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT5,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT6,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT7,
-            self::LOCATION_FLAG_SUBSYSTEM_BAY,
             self::LOCATION_FLAG_UNLOCKED,
             self::LOCATION_FLAG_WALLET,
             self::LOCATION_FLAG_WARDROBE,

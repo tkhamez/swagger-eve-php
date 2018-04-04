@@ -639,7 +639,7 @@ class AssetsApi
         }
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/assets/';
+        $resourcePath = '/v3/corporations/{corporation_id}/assets/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

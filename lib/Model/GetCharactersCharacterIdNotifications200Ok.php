@@ -315,6 +315,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_MOONMINING_AUTOMATIC_FRACTURE = 'MoonminingAutomaticFracture';
     const TYPE_MOONMINING_EXTRACTION_CANCELLED = 'MoonminingExtractionCancelled';
     const TYPE_MOONMINING_EXTRACTION_FINISHED = 'MoonminingExtractionFinished';
+    const TYPE_MOONMINING_EXTRACTION_STARTED = 'MoonminingExtractionStarted';
     const TYPE_MOONMINING_LASER_FIRED = 'MoonminingLaserFired';
     const TYPE_NPC_STANDINGS_GAINED = 'NPCStandingsGained';
     const TYPE_NPC_STANDINGS_LOST = 'NPCStandingsLost';
@@ -362,6 +363,9 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_STRUCTURE_SERVICES_OFFLINE = 'StructureServicesOffline';
     const TYPE_STRUCTURE_UNANCHORING = 'StructureUnanchoring';
     const TYPE_STRUCTURE_UNDER_ATTACK = 'StructureUnderAttack';
+    const TYPE_STRUCTURE_WENT_HIGH_POWER = 'StructureWentHighPower';
+    const TYPE_STRUCTURE_WENT_LOW_POWER = 'StructureWentLowPower';
+    const TYPE_STRUCTURES_REINFORCEMENT_CHANGED = 'StructuresReinforcementChanged';
     const TYPE_TOWER_ALERT_MSG = 'TowerAlertMsg';
     const TYPE_TOWER_RESOURCE_ALERT_MSG = 'TowerResourceAlertMsg';
     const TYPE_TRANSACTION_REVERSAL_MSG = 'TransactionReversalMsg';
@@ -369,7 +373,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_WAR_ALLY_OFFER_DECLINED_MSG = 'WarAllyOfferDeclinedMsg';
     const TYPE_WAR_SURRENDER_DECLINED_MSG = 'WarSurrenderDeclinedMsg';
     const TYPE_WAR_SURRENDER_OFFER_MSG = 'WarSurrenderOfferMsg';
-    const TYPE_NOTIFICATION_TYPE_MOONMINING_EXTRACTION_STARTED = 'notificationTypeMoonminingExtractionStarted';
     
 
     
@@ -518,6 +521,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_MOONMINING_AUTOMATIC_FRACTURE,
             self::TYPE_MOONMINING_EXTRACTION_CANCELLED,
             self::TYPE_MOONMINING_EXTRACTION_FINISHED,
+            self::TYPE_MOONMINING_EXTRACTION_STARTED,
             self::TYPE_MOONMINING_LASER_FIRED,
             self::TYPE_NPC_STANDINGS_GAINED,
             self::TYPE_NPC_STANDINGS_LOST,
@@ -565,6 +569,9 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_STRUCTURE_SERVICES_OFFLINE,
             self::TYPE_STRUCTURE_UNANCHORING,
             self::TYPE_STRUCTURE_UNDER_ATTACK,
+            self::TYPE_STRUCTURE_WENT_HIGH_POWER,
+            self::TYPE_STRUCTURE_WENT_LOW_POWER,
+            self::TYPE_STRUCTURES_REINFORCEMENT_CHANGED,
             self::TYPE_TOWER_ALERT_MSG,
             self::TYPE_TOWER_RESOURCE_ALERT_MSG,
             self::TYPE_TRANSACTION_REVERSAL_MSG,
@@ -572,7 +579,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_WAR_ALLY_OFFER_DECLINED_MSG,
             self::TYPE_WAR_SURRENDER_DECLINED_MSG,
             self::TYPE_WAR_SURRENDER_OFFER_MSG,
-            self::TYPE_NOTIFICATION_TYPE_MOONMINING_EXTRACTION_STARTED,
         ];
     }
     

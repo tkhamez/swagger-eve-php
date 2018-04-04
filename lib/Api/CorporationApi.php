@@ -918,7 +918,7 @@ class CorporationApi
         }
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/blueprints/';
+        $resourcePath = '/v2/corporations/{corporation_id}/blueprints/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1249,7 +1249,7 @@ class CorporationApi
         }
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/containers/logs/';
+        $resourcePath = '/v2/corporations/{corporation_id}/containers/logs/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
