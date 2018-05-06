@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **factions** | [**\Swagger\Client\Eve\Model\PostUniverseIdsFaction[]**](PostUniverseIdsFaction.md) | factions array | [optional] 
 **inventory_types** | [**\Swagger\Client\Eve\Model\PostUniverseIdsInventoryType[]**](PostUniverseIdsInventoryType.md) | inventory_types array | [optional] 
 **regions** | [**\Swagger\Client\Eve\Model\PostUniverseIdsRegion[]**](PostUniverseIdsRegion.md) | regions array | [optional] 
-**systems** | [**\Swagger\Client\Eve\Model\PostUniverseIdsSystem[]**](PostUniverseIdsSystem.md) | systems array | [optional] 
 **stations** | [**\Swagger\Client\Eve\Model\PostUniverseIdsStation[]**](PostUniverseIdsStation.md) | stations array | [optional] 
+**systems** | [**\Swagger\Client\Eve\Model\PostUniverseIdsSystem[]**](PostUniverseIdsSystem.md) | systems array | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
