@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdFwStats**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsOk getCharactersCharacterIdFwStats($character_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsOk getCharactersCharacterIdFwStats($character_id, $datasource, $if_none_match, $token)
 
 Overview of a character involved in faction warfare
 
@@ -39,11 +39,9 @@ $character_id = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getCharactersCharacterIdFwStats($character_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getCharactersCharacterIdFwStats($character_id, $datasource, $if_none_match, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getCharactersCharacterIdFwStats: ', $e->getMessage(), PHP_EOL;
@@ -59,8 +57,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -78,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdFwStats**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsOk getCorporationsCorporationIdFwStats($corporation_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsOk getCorporationsCorporationIdFwStats($corporation_id, $datasource, $if_none_match, $token)
 
 Overview of a corporation involved in faction warfare
 
@@ -102,11 +98,9 @@ $corporation_id = 56; // int | An EVE corporation ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getCorporationsCorporationIdFwStats($corporation_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getCorporationsCorporationIdFwStats($corporation_id, $datasource, $if_none_match, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getCorporationsCorporationIdFwStats: ', $e->getMessage(), PHP_EOL;
@@ -122,8 +116,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -141,7 +133,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwLeaderboards**
-> \Swagger\Client\Eve\Model\GetFwLeaderboardsOk getFwLeaderboards($datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetFwLeaderboardsOk getFwLeaderboards($datasource, $if_none_match)
 
 List of the top factions in faction warfare
 
@@ -159,11 +151,9 @@ $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getFwLeaderboards($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getFwLeaderboards($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwLeaderboards: ', $e->getMessage(), PHP_EOL;
@@ -177,8 +167,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -196,7 +184,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwLeaderboardsCharacters**
-> \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersOk getFwLeaderboardsCharacters($datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersOk getFwLeaderboardsCharacters($datasource, $if_none_match)
 
 List of the top pilots in faction warfare
 
@@ -214,11 +202,9 @@ $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getFwLeaderboardsCharacters($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getFwLeaderboardsCharacters($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwLeaderboardsCharacters: ', $e->getMessage(), PHP_EOL;
@@ -232,8 +218,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -251,7 +235,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwLeaderboardsCorporations**
-> \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsOk getFwLeaderboardsCorporations($datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsOk getFwLeaderboardsCorporations($datasource, $if_none_match)
 
 List of the top corporations in faction warfare
 
@@ -269,11 +253,9 @@ $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getFwLeaderboardsCorporations($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getFwLeaderboardsCorporations($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwLeaderboardsCorporations: ', $e->getMessage(), PHP_EOL;
@@ -287,8 +269,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -306,7 +286,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwStats**
-> \Swagger\Client\Eve\Model\GetFwStats200Ok[] getFwStats($datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetFwStats200Ok[] getFwStats($datasource, $if_none_match)
 
 An overview of statistics about factions involved in faction warfare
 
@@ -324,11 +304,9 @@ $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getFwStats($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getFwStats($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwStats: ', $e->getMessage(), PHP_EOL;
@@ -342,8 +320,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -361,11 +337,11 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwSystems**
-> \Swagger\Client\Eve\Model\GetFwSystems200Ok[] getFwSystems($datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetFwSystems200Ok[] getFwSystems($datasource, $if_none_match)
 
 Ownership of faction warfare systems
 
-An overview of the current ownership of faction warfare solar systems  ---  This route is cached for up to 1800 seconds
+An overview of the current ownership of faction warfare solar systems  ---  This route is cached for up to 1800 seconds  --- Warning: This route has an upgrade available.  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/fw/systems/)
 
 ### Example
 ```php
@@ -379,11 +355,9 @@ $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getFwSystems($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getFwSystems($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwSystems: ', $e->getMessage(), PHP_EOL;
@@ -397,8 +371,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -416,7 +388,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwWars**
-> \Swagger\Client\Eve\Model\GetFwWars200Ok[] getFwWars($datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetFwWars200Ok[] getFwWars($datasource, $if_none_match)
 
 Data about which NPC factions are at war
 
@@ -434,11 +406,9 @@ $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getFwWars($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getFwWars($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwWars: ', $e->getMessage(), PHP_EOL;
@@ -452,8 +422,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

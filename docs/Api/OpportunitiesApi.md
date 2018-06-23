@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdOpportunities**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[] getCharactersCharacterIdOpportunities($character_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[] getCharactersCharacterIdOpportunities($character_id, $datasource, $if_none_match, $token)
 
 Get a character's completed tasks
 
@@ -36,11 +36,9 @@ $character_id = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getCharactersCharacterIdOpportunities($character_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getCharactersCharacterIdOpportunities($character_id, $datasource, $if_none_match, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getCharactersCharacterIdOpportunities: ', $e->getMessage(), PHP_EOL;
@@ -56,8 +54,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -75,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOpportunitiesGroups**
-> int[] getOpportunitiesGroups($datasource, $if_none_match, $user_agent, $x_user_agent)
+> int[] getOpportunitiesGroups($datasource, $if_none_match)
 
 Get opportunities groups
 
@@ -93,11 +89,9 @@ $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getOpportunitiesGroups($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getOpportunitiesGroups($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesGroups: ', $e->getMessage(), PHP_EOL;
@@ -111,8 +105,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -130,7 +122,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOpportunitiesGroupsGroupId**
-> \Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk getOpportunitiesGroupsGroupId($group_id, $datasource, $if_none_match, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk getOpportunitiesGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get opportunities group
 
@@ -147,14 +139,13 @@ $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
     new GuzzleHttp\Client()
 );
 $group_id = 56; // int | ID of an opportunities group
+$accept_language = "en-us"; // string | Language to use in the response
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
+$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
-    $result = $apiInstance->getOpportunitiesGroupsGroupId($group_id, $datasource, $if_none_match, $language, $user_agent, $x_user_agent);
+    $result = $apiInstance->getOpportunitiesGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesGroupsGroupId: ', $e->getMessage(), PHP_EOL;
@@ -167,11 +158,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| ID of an opportunities group |
+ **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response | [optional] [default to en-us]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
 
 ### Return type
 
@@ -189,7 +179,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOpportunitiesTasks**
-> int[] getOpportunitiesTasks($datasource, $if_none_match, $user_agent, $x_user_agent)
+> int[] getOpportunitiesTasks($datasource, $if_none_match)
 
 Get opportunities tasks
 
@@ -207,11 +197,9 @@ $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getOpportunitiesTasks($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getOpportunitiesTasks($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesTasks: ', $e->getMessage(), PHP_EOL;
@@ -225,8 +213,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -244,7 +230,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOpportunitiesTasksTaskId**
-> \Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk getOpportunitiesTasksTaskId($task_id, $datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk getOpportunitiesTasksTaskId($task_id, $datasource, $if_none_match)
 
 Get opportunities task
 
@@ -263,11 +249,9 @@ $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
 $task_id = 56; // int | ID of an opportunities task
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getOpportunitiesTasksTaskId($task_id, $datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getOpportunitiesTasksTaskId($task_id, $datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesTasksTaskId: ', $e->getMessage(), PHP_EOL;
@@ -282,8 +266,6 @@ Name | Type | Description  | Notes
  **task_id** | **int**| ID of an opportunities task |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

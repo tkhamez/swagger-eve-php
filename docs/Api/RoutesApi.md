@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getRouteOriginDestination**
-> int[] getRouteOriginDestination($destination, $origin, $avoid, $connections, $datasource, $flag, $if_none_match, $user_agent, $x_user_agent)
+> int[] getRouteOriginDestination($destination, $origin, $avoid, $connections, $datasource, $flag, $if_none_match)
 
 Get route
 
@@ -31,11 +31,9 @@ $connections = array(new \Swagger\Client\Eve\Model\int[]()); // int[][] | connec
 $datasource = "tranquility"; // string | The server name you would like data from
 $flag = "shortest"; // string | route security preference
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getRouteOriginDestination($destination, $origin, $avoid, $connections, $datasource, $flag, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getRouteOriginDestination($destination, $origin, $avoid, $connections, $datasource, $flag, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling RoutesApi->getRouteOriginDestination: ', $e->getMessage(), PHP_EOL;
@@ -54,8 +52,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **flag** | **string**| route security preference | [optional] [default to shortest]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getWars**
-> int[] getWars($datasource, $if_none_match, $max_war_id, $user_agent, $x_user_agent)
+> int[] getWars($datasource, $if_none_match, $max_war_id)
 
 List wars
 
@@ -29,11 +29,9 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $max_war_id = 56; // int | Only return wars with ID smaller than this.
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getWars($datasource, $if_none_match, $max_war_id, $user_agent, $x_user_agent);
+    $result = $apiInstance->getWars($datasource, $if_none_match, $max_war_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWars: ', $e->getMessage(), PHP_EOL;
@@ -48,8 +46,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **max_war_id** | **int**| Only return wars with ID smaller than this. | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -67,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarId**
-> \Swagger\Client\Eve\Model\GetWarsWarIdOk getWarsWarId($war_id, $datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetWarsWarIdOk getWarsWarId($war_id, $datasource, $if_none_match)
 
 Get war information
 
@@ -86,11 +82,9 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
 $war_id = 56; // int | ID for a war
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getWarsWarId($war_id, $datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getWarsWarId($war_id, $datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWarsWarId: ', $e->getMessage(), PHP_EOL;
@@ -105,8 +99,6 @@ Name | Type | Description  | Notes
  **war_id** | **int**| ID for a war |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -124,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarIdKillmails**
-> \Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page)
 
 List kills for a war
 
@@ -144,11 +136,9 @@ $war_id = 56; // int | A valid war ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page, $user_agent, $x_user_agent);
+    $result = $apiInstance->getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWarsWarIdKillmails: ', $e->getMessage(), PHP_EOL;
@@ -164,8 +154,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

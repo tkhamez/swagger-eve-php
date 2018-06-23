@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdOrders**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[] getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[] getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token)
 
 List open orders from a character
 
@@ -42,11 +42,9 @@ $character_id = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCharactersCharacterIdOrders: ', $e->getMessage(), PHP_EOL;
@@ -62,8 +60,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -81,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdOrdersHistory**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[] getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[] getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token)
 
 List historical orders by a character
 
@@ -106,11 +102,9 @@ $datasource = "tranquility"; // string | The server name you would like data fro
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCharactersCharacterIdOrdersHistory: ', $e->getMessage(), PHP_EOL;
@@ -127,8 +121,6 @@ Name | Type | Description  | Notes
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -146,11 +138,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdOrders**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[] getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[] getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token)
 
 List open orders from a corporation
 
-List open market orders placed on behalf of a corporation  ---  This route is cached for up to 1200 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
+List open market orders placed on behalf of a corporation  ---  This route is cached for up to 1200 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader  --- Warning: This route has an upgrade available.  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/orders/)
 
 ### Example
 ```php
@@ -171,11 +163,9 @@ $datasource = "tranquility"; // string | The server name you would like data fro
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCorporationsCorporationIdOrders: ', $e->getMessage(), PHP_EOL;
@@ -192,8 +182,6 @@ Name | Type | Description  | Notes
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -211,11 +199,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdOrdersHistory**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[] getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[] getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token)
 
 List historical orders from a corporation
 
-List cancelled and expired market orders placed on behalf of a corporation up to 90 days in the past.  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
+List cancelled and expired market orders placed on behalf of a corporation up to 90 days in the past.  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader  --- Warning: This route has an upgrade available.  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/orders/history/)
 
 ### Example
 ```php
@@ -236,11 +224,9 @@ $datasource = "tranquility"; // string | The server name you would like data fro
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCorporationsCorporationIdOrdersHistory: ', $e->getMessage(), PHP_EOL;
@@ -257,8 +243,6 @@ Name | Type | Description  | Notes
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -276,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsGroups**
-> int[] getMarketsGroups($datasource, $if_none_match, $user_agent, $x_user_agent)
+> int[] getMarketsGroups($datasource, $if_none_match)
 
 Get item groups
 
@@ -294,11 +278,9 @@ $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getMarketsGroups($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getMarketsGroups($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsGroups: ', $e->getMessage(), PHP_EOL;
@@ -312,8 +294,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -331,7 +311,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsGroupsMarketGroupId**
-> \Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk getMarketsGroupsMarketGroupId($market_group_id, $datasource, $if_none_match, $language, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk getMarketsGroupsMarketGroupId($market_group_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get item group information
 
@@ -348,14 +328,13 @@ $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     new GuzzleHttp\Client()
 );
 $market_group_id = 56; // int | An Eve item group ID
+$accept_language = "en-us"; // string | Language to use in the response
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
+$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
-    $result = $apiInstance->getMarketsGroupsMarketGroupId($market_group_id, $datasource, $if_none_match, $language, $user_agent, $x_user_agent);
+    $result = $apiInstance->getMarketsGroupsMarketGroupId($market_group_id, $accept_language, $datasource, $if_none_match, $language);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsGroupsMarketGroupId: ', $e->getMessage(), PHP_EOL;
@@ -368,11 +347,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **market_group_id** | **int**| An Eve item group ID |
+ **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response | [optional] [default to en-us]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
 
 ### Return type
 
@@ -390,7 +368,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsPrices**
-> \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[] getMarketsPrices($datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[] getMarketsPrices($datasource, $if_none_match)
 
 List market prices
 
@@ -408,11 +386,9 @@ $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
 );
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getMarketsPrices($datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getMarketsPrices($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsPrices: ', $e->getMessage(), PHP_EOL;
@@ -426,8 +402,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -445,7 +419,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsRegionIdHistory**
-> \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[] getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[] getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match)
 
 List historical market statistics in a region
 
@@ -465,11 +439,9 @@ $region_id = 56; // int | Return statistics in this region
 $type_id = 56; // int | Return statistics for this type
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match, $user_agent, $x_user_agent);
+    $result = $apiInstance->getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsRegionIdHistory: ', $e->getMessage(), PHP_EOL;
@@ -485,8 +457,6 @@ Name | Type | Description  | Notes
  **type_id** | **int**| Return statistics for this type |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -504,7 +474,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsRegionIdOrders**
-> \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[] getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[] getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id)
 
 List orders in a region
 
@@ -526,11 +496,9 @@ $datasource = "tranquility"; // string | The server name you would like data fro
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
 $type_id = 56; // int | Return orders only for this type
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id, $user_agent, $x_user_agent);
+    $result = $apiInstance->getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsRegionIdOrders: ', $e->getMessage(), PHP_EOL;
@@ -548,8 +516,6 @@ Name | Type | Description  | Notes
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **type_id** | **int**| Return orders only for this type | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -567,7 +533,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsRegionIdTypes**
-> int[] getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page, $user_agent, $x_user_agent)
+> int[] getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page)
 
 List type IDs relevant to a market
 
@@ -587,11 +553,9 @@ $region_id = 56; // int | Return statistics in this region
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page, $user_agent, $x_user_agent);
+    $result = $apiInstance->getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsRegionIdTypes: ', $e->getMessage(), PHP_EOL;
@@ -607,8 +571,6 @@ Name | Type | Description  | Notes
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -626,7 +588,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsStructuresStructureId**
-> \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[] getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent)
+> \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[] getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token)
 
 List orders in a structure
 
@@ -651,11 +613,9 @@ $datasource = "tranquility"; // string | The server name you would like data fro
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
 $token = "token_example"; // string | Access token to use if unable to set a header
-$user_agent = "user_agent_example"; // string | Client identifier, takes precedence over headers
-$x_user_agent = "x_user_agent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $apiInstance->getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token, $user_agent, $x_user_agent);
+    $result = $apiInstance->getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsStructuresStructureId: ', $e->getMessage(), PHP_EOL;
@@ -672,8 +632,6 @@ Name | Type | Description  | Notes
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **user_agent** | **string**| Client identifier, takes precedence over headers | [optional]
- **x_user_agent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
