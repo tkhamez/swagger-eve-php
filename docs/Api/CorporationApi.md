@@ -17,8 +17,6 @@ Method | HTTP request | Description
 [**getCorporationsCorporationIdMembersLimit**](CorporationApi.md#getCorporationsCorporationIdMembersLimit) | **GET** /v1/corporations/{corporation_id}/members/limit/ | Get corporation member limit
 [**getCorporationsCorporationIdMembersTitles**](CorporationApi.md#getCorporationsCorporationIdMembersTitles) | **GET** /v1/corporations/{corporation_id}/members/titles/ | Get corporation&#39;s members&#39; titles
 [**getCorporationsCorporationIdMembertracking**](CorporationApi.md#getCorporationsCorporationIdMembertracking) | **GET** /v1/corporations/{corporation_id}/membertracking/ | Track corporation members
-[**getCorporationsCorporationIdOutposts**](CorporationApi.md#getCorporationsCorporationIdOutposts) | **GET** /v1/corporations/{corporation_id}/outposts/ | Get corporation outposts
-[**getCorporationsCorporationIdOutpostsOutpostId**](CorporationApi.md#getCorporationsCorporationIdOutpostsOutpostId) | **GET** /v1/corporations/{corporation_id}/outposts/{outpost_id}/ | Get corporation outpost details
 [**getCorporationsCorporationIdRoles**](CorporationApi.md#getCorporationsCorporationIdRoles) | **GET** /v1/corporations/{corporation_id}/roles/ | Get corporation member roles
 [**getCorporationsCorporationIdRolesHistory**](CorporationApi.md#getCorporationsCorporationIdRolesHistory) | **GET** /v1/corporations/{corporation_id}/roles/history/ | Get corporation member roles history
 [**getCorporationsCorporationIdShareholders**](CorporationApi.md#getCorporationsCorporationIdShareholders) | **GET** /v1/corporations/{corporation_id}/shareholders/ | Get corporation shareholders
@@ -787,128 +785,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **getCorporationsCorporationIdOutposts**
-> int[] getCorporationsCorporationIdOutposts($corporation_id, $datasource, $if_none_match, $page, $token)
-
-Get corporation outposts
-
-Get a list of corporation outpost IDs Note: This endpoint will be removed once outposts are migrated to Citadels as talked about in this blog: https://community.eveonline.com/news/dev-blogs/the-next-steps-in-structure-transition/  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- Warning: Outposts have been removed, this route will be deleted on 2018-07-08
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-// Configure OAuth2 access token for authorization: evesso
-$config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
-
-$apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
-
-try {
-    $result = $apiInstance->getCorporationsCorporationIdOutposts($corporation_id, $datasource, $if_none_match, $page, $token);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling CorporationApi->getCorporationsCorporationIdOutposts: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
-
-### Return type
-
-**int[]**
-
-### Authorization
-
-[evesso](../../README.md#evesso)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **getCorporationsCorporationIdOutpostsOutpostId**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdOk getCorporationsCorporationIdOutpostsOutpostId($corporation_id, $outpost_id, $datasource, $if_none_match, $token)
-
-Get corporation outpost details
-
-Get details about a given outpost. Note: This endpoint will be removed once outposts are migrated to Citadels as talked about in this blog: https://community.eveonline.com/news/dev-blogs/the-next-steps-in-structure-transition/  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- Warning: Outposts have been removed, this route will be deleted on 2018-07-08
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-// Configure OAuth2 access token for authorization: evesso
-$config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
-
-$apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$corporation_id = 56; // int | An EVE corporation ID
-$outpost_id = 56; // int | A station (outpost) ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
-
-try {
-    $result = $apiInstance->getCorporationsCorporationIdOutpostsOutpostId($corporation_id, $outpost_id, $datasource, $if_none_match, $token);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling CorporationApi->getCorporationsCorporationIdOutpostsOutpostId: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **outpost_id** | **int**| A station (outpost) ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
-
-### Return type
-
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOutpostsOutpostIdOk**](../Model/GetCorporationsCorporationIdOutpostsOutpostIdOk.md)
-
-### Authorization
-
-[evesso](../../README.md#evesso)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
 # **getCorporationsCorporationIdRoles**
 > \Swagger\Client\Eve\Model\GetCorporationsCorporationIdRoles200Ok[] getCorporationsCorporationIdRoles($corporation_id, $datasource, $if_none_match, $token)
 
@@ -1280,7 +1156,7 @@ Name | Type | Description  | Notes
 
 Get corporation structures
 
-Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): StationManager
+Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Station_Manager
 
 ### Example
 ```php

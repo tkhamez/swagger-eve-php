@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**getCharactersCharacterIdCorporationhistory**](CharacterApi.md#getCharactersCharacterIdCorporationhistory) | **GET** /v1/characters/{character_id}/corporationhistory/ | Get corporation history
 [**getCharactersCharacterIdFatigue**](CharacterApi.md#getCharactersCharacterIdFatigue) | **GET** /v1/characters/{character_id}/fatigue/ | Get jump fatigue
 [**getCharactersCharacterIdMedals**](CharacterApi.md#getCharactersCharacterIdMedals) | **GET** /v1/characters/{character_id}/medals/ | Get medals
-[**getCharactersCharacterIdNotifications**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /v2/characters/{character_id}/notifications/ | Get character notifications
+[**getCharactersCharacterIdNotifications**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /v3/characters/{character_id}/notifications/ | Get character notifications
 [**getCharactersCharacterIdNotificationsContacts**](CharacterApi.md#getCharactersCharacterIdNotificationsContacts) | **GET** /v1/characters/{character_id}/notifications/contacts/ | Get new contact notifications
 [**getCharactersCharacterIdPortrait**](CharacterApi.md#getCharactersCharacterIdPortrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits
 [**getCharactersCharacterIdRoles**](CharacterApi.md#getCharactersCharacterIdRoles) | **GET** /v2/characters/{character_id}/roles/ | Get character corporation roles
@@ -370,7 +370,7 @@ Name | Type | Description  | Notes
 
 Get character notifications
 
-Return character notifications  ---  This route is cached for up to 600 seconds
+Return character notifications  ---  This route is cached for up to 600 seconds  --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/notifications/)
 
 ### Example
 ```php
@@ -789,7 +789,7 @@ $apiInstance = new Swagger\Client\Eve\Api\CharacterApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$characters = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | The character IDs to fetch affiliations for. All characters must exist, or none will be returned.
+$characters = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | The character IDs to fetch affiliations for. All characters must exist, or none will be returned
 $datasource = "tranquility"; // string | The server name you would like data from
 
 try {
@@ -805,7 +805,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **characters** | **int[]**| The character IDs to fetch affiliations for. All characters must exist, or none will be returned. |
+ **characters** | **int[]**| The character IDs to fetch affiliations for. All characters must exist, or none will be returned |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
 
 ### Return type
