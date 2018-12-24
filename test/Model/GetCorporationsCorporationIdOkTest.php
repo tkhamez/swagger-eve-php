@@ -167,4 +167,11 @@ class GetCorporationsCorporationIdOkTest extends \PHPUnit_Framework_TestCase
     public function testPropertyUrl()
     {
     }
+
+    /**
+     * Test attribute "war_eligible"
+     */
+    public function testPropertyWarEligible()
+    {
+    }
 }

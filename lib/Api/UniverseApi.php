@@ -6554,15 +6554,16 @@ class UniverseApi
      * List all public structures
      *
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
+     * @param  string $filter Only list public structures that have this service online (optional)
      * @param  string $if_none_match ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
      *
      * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
-    public function getUniverseStructures($datasource = 'tranquility', $if_none_match = null)
+    public function getUniverseStructures($datasource = 'tranquility', $filter = null, $if_none_match = null)
     {
-        list($response) = $this->getUniverseStructuresWithHttpInfo($datasource, $if_none_match);
+        list($response) = $this->getUniverseStructuresWithHttpInfo($datasource, $filter, $if_none_match);
         return $response;
     }
 
@@ -6572,16 +6573,17 @@ class UniverseApi
      * List all public structures
      *
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
+     * @param  string $filter Only list public structures that have this service online (optional)
      * @param  string $if_none_match ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
      *
      * @throws \Swagger\Client\Eve\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function getUniverseStructuresWithHttpInfo($datasource = 'tranquility', $if_none_match = null)
+    public function getUniverseStructuresWithHttpInfo($datasource = 'tranquility', $filter = null, $if_none_match = null)
     {
         $returnType = 'int[]';
-        $request = $this->getUniverseStructuresRequest($datasource, $if_none_match);
+        $request = $this->getUniverseStructuresRequest($datasource, $filter, $if_none_match);
 
         try {
             $options = $this->createHttpClientOption();
@@ -6688,14 +6690,15 @@ class UniverseApi
      * List all public structures
      *
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
+     * @param  string $filter Only list public structures that have this service online (optional)
      * @param  string $if_none_match ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getUniverseStructuresAsync($datasource = 'tranquility', $if_none_match = null)
+    public function getUniverseStructuresAsync($datasource = 'tranquility', $filter = null, $if_none_match = null)
     {
-        return $this->getUniverseStructuresAsyncWithHttpInfo($datasource, $if_none_match)
+        return $this->getUniverseStructuresAsyncWithHttpInfo($datasource, $filter, $if_none_match)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -6709,15 +6712,16 @@ class UniverseApi
      * List all public structures
      *
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
+     * @param  string $filter Only list public structures that have this service online (optional)
      * @param  string $if_none_match ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getUniverseStructuresAsyncWithHttpInfo($datasource = 'tranquility', $if_none_match = null)
+    public function getUniverseStructuresAsyncWithHttpInfo($datasource = 'tranquility', $filter = null, $if_none_match = null)
     {
         $returnType = 'int[]';
-        $request = $this->getUniverseStructuresRequest($datasource, $if_none_match);
+        $request = $this->getUniverseStructuresRequest($datasource, $filter, $if_none_match);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -6760,12 +6764,13 @@ class UniverseApi
      * Create request for operation 'getUniverseStructures'
      *
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
+     * @param  string $filter Only list public structures that have this service online (optional)
      * @param  string $if_none_match ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function getUniverseStructuresRequest($datasource = 'tranquility', $if_none_match = null)
+    protected function getUniverseStructuresRequest($datasource = 'tranquility', $filter = null, $if_none_match = null)
     {
 
         $resourcePath = '/v1/universe/structures/';
@@ -6778,6 +6783,10 @@ class UniverseApi
         // query params
         if ($datasource !== null) {
             $queryParams['datasource'] = ObjectSerializer::toQueryValue($datasource);
+        }
+        // query params
+        if ($filter !== null) {
+            $queryParams['filter'] = ObjectSerializer::toQueryValue($filter);
         }
         // header params
         if ($if_none_match !== null) {

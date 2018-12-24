@@ -1113,7 +1113,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStructures**
-> int[] getUniverseStructures($datasource, $if_none_match)
+> int[] getUniverseStructures($datasource, $filter, $if_none_match)
 
 List all public structures
 
@@ -1130,10 +1130,11 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $datasource = "tranquility"; // string | The server name you would like data from
+$filter = "filter_example"; // string | Only list public structures that have this service online
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
-    $result = $apiInstance->getUniverseStructures($datasource, $if_none_match);
+    $result = $apiInstance->getUniverseStructures($datasource, $filter, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseStructures: ', $e->getMessage(), PHP_EOL;
@@ -1146,6 +1147,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **filter** | **string**| Only list public structures that have this service online | [optional]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type

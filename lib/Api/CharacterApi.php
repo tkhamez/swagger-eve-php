@@ -2419,7 +2419,7 @@ class CharacterApi
         }
 
 
-        $resourcePath = '/v3/characters/{character_id}/notifications/';
+        $resourcePath = '/v4/characters/{character_id}/notifications/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

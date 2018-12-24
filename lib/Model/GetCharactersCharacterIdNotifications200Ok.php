@@ -232,6 +232,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_CLONE_MOVED_MSG = 'CloneMovedMsg';
     const TYPE_CLONE_REVOKED_MSG1 = 'CloneRevokedMsg1';
     const TYPE_CLONE_REVOKED_MSG2 = 'CloneRevokedMsg2';
+    const TYPE_COMBAT_OPERATION_FINISHED = 'CombatOperationFinished';
     const TYPE_CONTACT_ADD = 'ContactAdd';
     const TYPE_CONTACT_EDIT = 'ContactEdit';
     const TYPE_CONTAINER_PASSWORD_MSG = 'ContainerPasswordMsg';
@@ -289,6 +290,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_GIFT_RECEIVED = 'GiftReceived';
     const TYPE_I_HUB_DESTROYED_BY_BILL_FAILURE = 'IHubDestroyedByBillFailure';
     const TYPE_INCURSION_COMPLETED_MSG = 'IncursionCompletedMsg';
+    const TYPE_INDUSTRY_OPERATION_FINISHED = 'IndustryOperationFinished';
     const TYPE_INDUSTRY_TEAM_AUCTION_LOST = 'IndustryTeamAuctionLost';
     const TYPE_INDUSTRY_TEAM_AUCTION_WON = 'IndustryTeamAuctionWon';
     const TYPE_INFRASTRUCTURE_HUB_BILL_ABOUT_TO_EXPIRE = 'InfrastructureHubBillAboutToExpire';
@@ -441,6 +443,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_CLONE_MOVED_MSG,
             self::TYPE_CLONE_REVOKED_MSG1,
             self::TYPE_CLONE_REVOKED_MSG2,
+            self::TYPE_COMBAT_OPERATION_FINISHED,
             self::TYPE_CONTACT_ADD,
             self::TYPE_CONTACT_EDIT,
             self::TYPE_CONTAINER_PASSWORD_MSG,
@@ -498,6 +501,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_GIFT_RECEIVED,
             self::TYPE_I_HUB_DESTROYED_BY_BILL_FAILURE,
             self::TYPE_INCURSION_COMPLETED_MSG,
+            self::TYPE_INDUSTRY_OPERATION_FINISHED,
             self::TYPE_INDUSTRY_TEAM_AUCTION_LOST,
             self::TYPE_INDUSTRY_TEAM_AUCTION_WON,
             self::TYPE_INFRASTRUCTURE_HUB_BILL_ABOUT_TO_EXPIRE,

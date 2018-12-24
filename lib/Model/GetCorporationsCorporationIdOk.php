@@ -70,7 +70,8 @@ class GetCorporationsCorporationIdOk implements ModelInterface, ArrayAccess
         'shares' => 'int',
         'tax_rate' => 'float',
         'ticker' => 'string',
-        'url' => 'string'
+        'url' => 'string',
+        'war_eligible' => 'bool'
     ];
 
     /**
@@ -91,7 +92,8 @@ class GetCorporationsCorporationIdOk implements ModelInterface, ArrayAccess
         'shares' => 'int64',
         'tax_rate' => 'float',
         'ticker' => null,
-        'url' => null
+        'url' => null,
+        'war_eligible' => null
     ];
 
     /**
@@ -133,7 +135,8 @@ class GetCorporationsCorporationIdOk implements ModelInterface, ArrayAccess
         'shares' => 'shares',
         'tax_rate' => 'tax_rate',
         'ticker' => 'ticker',
-        'url' => 'url'
+        'url' => 'url',
+        'war_eligible' => 'war_eligible'
     ];
 
     /**
@@ -154,7 +157,8 @@ class GetCorporationsCorporationIdOk implements ModelInterface, ArrayAccess
         'shares' => 'setShares',
         'tax_rate' => 'setTaxRate',
         'ticker' => 'setTicker',
-        'url' => 'setUrl'
+        'url' => 'setUrl',
+        'war_eligible' => 'setWarEligible'
     ];
 
     /**
@@ -175,7 +179,8 @@ class GetCorporationsCorporationIdOk implements ModelInterface, ArrayAccess
         'shares' => 'getShares',
         'tax_rate' => 'getTaxRate',
         'ticker' => 'getTicker',
-        'url' => 'getUrl'
+        'url' => 'getUrl',
+        'war_eligible' => 'getWarEligible'
     ];
 
     /**
@@ -251,6 +256,7 @@ class GetCorporationsCorporationIdOk implements ModelInterface, ArrayAccess
         $this->container['tax_rate'] = isset($data['tax_rate']) ? $data['tax_rate'] : null;
         $this->container['ticker'] = isset($data['ticker']) ? $data['ticker'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
+        $this->container['war_eligible'] = isset($data['war_eligible']) ? $data['war_eligible'] : null;
     }
 
     /**
@@ -644,6 +650,30 @@ class GetCorporationsCorporationIdOk implements ModelInterface, ArrayAccess
     public function setUrl($url)
     {
         $this->container['url'] = $url;
+
+        return $this;
+    }
+
+    /**
+     * Gets war_eligible
+     *
+     * @return bool
+     */
+    public function getWarEligible()
+    {
+        return $this->container['war_eligible'];
+    }
+
+    /**
+     * Sets war_eligible
+     *
+     * @param bool $war_eligible war_eligible boolean
+     *
+     * @return $this
+     */
+    public function setWarEligible($war_eligible)
+    {
+        $this->container['war_eligible'] = $war_eligible;
 
         return $this;
     }
