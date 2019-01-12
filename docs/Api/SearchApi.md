@@ -1,15 +1,14 @@
 # Swagger\Client\Eve\SearchApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to *https://esi.evetech.net/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getCharactersCharacterIdSearch**](SearchApi.md#getCharactersCharacterIdSearch) | **GET** /v3/characters/{character_id}/search/ | Search on a string
 [**getSearch**](SearchApi.md#getSearch) | **GET** /v2/search/ | Search on a string
 
-
 # **getCharactersCharacterIdSearch**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk getCharactersCharacterIdSearch($categories, $character_id, $search, $accept_language, $datasource, $if_none_match, $language, $strict, $token)
+> object getCharactersCharacterIdSearch($categories, $character_id, $search, $accept_language, $datasource, $if_none_match, $language, $strict, $token)
 
 Search on a string
 
@@ -32,11 +31,11 @@ $apiInstance = new Swagger\Client\Eve\Api\SearchApi(
 $categories = array("categories_example"); // string[] | Type of entities to search for
 $character_id = 56; // int | An EVE character ID
 $search = "search_example"; // string | The string to search on
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
-$strict = false; // bool | Whether the search should be a strict match
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
+$strict = True; // bool | Whether the search should be a strict match
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
@@ -53,18 +52,18 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **categories** | [**string[]**](../Model/string.md)| Type of entities to search for |
- **character_id** | **int**| An EVE character ID |
- **search** | **string**| The string to search on |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
- **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+ **character_id** | [**int**](../Model/.md)| An EVE character ID |
+ **search** | [**string**](../Model/.md)| The string to search on |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
+ **strict** | [**bool**](../Model/.md)| Whether the search should be a strict match | [optional]
+ **token** | [**string**](../Model/.md)| Access token to use if unable to set a header | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk**](../Model/GetCharactersCharacterIdSearchOk.md)
+**object**
 
 ### Authorization
 
@@ -72,13 +71,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSearch**
-> \Swagger\Client\Eve\Model\GetSearchOk getSearch($categories, $search, $accept_language, $datasource, $if_none_match, $language, $strict)
+> object getSearch($categories, $search, $accept_language, $datasource, $if_none_match, $language, $strict)
 
 Search on a string
 
@@ -96,11 +95,11 @@ $apiInstance = new Swagger\Client\Eve\Api\SearchApi(
 );
 $categories = array("categories_example"); // string[] | Type of entities to search for
 $search = "search_example"; // string | The string to search on
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
-$strict = false; // bool | Whether the search should be a strict match
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
+$strict = True; // bool | Whether the search should be a strict match
 
 try {
     $result = $apiInstance->getSearch($categories, $search, $accept_language, $datasource, $if_none_match, $language, $strict);
@@ -116,16 +115,16 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **categories** | [**string[]**](../Model/string.md)| Type of entities to search for |
- **search** | **string**| The string to search on |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
- **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
+ **search** | [**string**](../Model/.md)| The string to search on |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
+ **strict** | [**bool**](../Model/.md)| Whether the search should be a strict match | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetSearchOk**](../Model/GetSearchOk.md)
+**object**
 
 ### Authorization
 
@@ -133,7 +132,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

@@ -1,6 +1,6 @@
 # Swagger\Client\Eve\LocationApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to *https://esi.evetech.net/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,9 +8,8 @@ Method | HTTP request | Description
 [**getCharactersCharacterIdOnline**](LocationApi.md#getCharactersCharacterIdOnline) | **GET** /v2/characters/{character_id}/online/ | Get character online
 [**getCharactersCharacterIdShip**](LocationApi.md#getCharactersCharacterIdShip) | **GET** /v1/characters/{character_id}/ship/ | Get current ship
 
-
 # **getCharactersCharacterIdLocation**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk getCharactersCharacterIdLocation($character_id, $datasource, $if_none_match, $token)
+> object getCharactersCharacterIdLocation($character_id, $datasource, $if_none_match, $token)
 
 Get character location
 
@@ -31,7 +30,7 @@ $apiInstance = new Swagger\Client\Eve\Api\LocationApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
 
@@ -48,14 +47,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+ **character_id** | [**int**](../Model/.md)| An EVE character ID |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **token** | [**string**](../Model/.md)| Access token to use if unable to set a header | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk**](../Model/GetCharactersCharacterIdLocationOk.md)
+**object**
 
 ### Authorization
 
@@ -63,13 +62,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdOnline**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk getCharactersCharacterIdOnline($character_id, $datasource, $if_none_match, $token)
+> object getCharactersCharacterIdOnline($character_id, $datasource, $if_none_match, $token)
 
 Get character online
 
@@ -90,7 +89,7 @@ $apiInstance = new Swagger\Client\Eve\Api\LocationApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
 
@@ -107,14 +106,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+ **character_id** | [**int**](../Model/.md)| An EVE character ID |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **token** | [**string**](../Model/.md)| Access token to use if unable to set a header | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk**](../Model/GetCharactersCharacterIdOnlineOk.md)
+**object**
 
 ### Authorization
 
@@ -122,13 +121,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdShip**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk getCharactersCharacterIdShip($character_id, $datasource, $if_none_match, $token)
+> object getCharactersCharacterIdShip($character_id, $datasource, $if_none_match, $token)
 
 Get current ship
 
@@ -149,7 +148,7 @@ $apiInstance = new Swagger\Client\Eve\Api\LocationApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
 
@@ -166,14 +165,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+ **character_id** | [**int**](../Model/.md)| An EVE character ID |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **token** | [**string**](../Model/.md)| Access token to use if unable to set a header | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk**](../Model/GetCharactersCharacterIdShipOk.md)
+**object**
 
 ### Authorization
 
@@ -181,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

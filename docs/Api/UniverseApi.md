@@ -1,6 +1,6 @@
 # Swagger\Client\Eve\UniverseApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to *https://esi.evetech.net/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -33,11 +33,10 @@ Method | HTTP request | Description
 [**getUniverseTypes**](UniverseApi.md#getUniverseTypes) | **GET** /v1/universe/types/ | Get types
 [**getUniverseTypesTypeId**](UniverseApi.md#getUniverseTypesTypeId) | **GET** /v3/universe/types/{type_id}/ | Get type information
 [**postUniverseIds**](UniverseApi.md#postUniverseIds) | **POST** /v1/universe/ids/ | Bulk names to IDs
-[**postUniverseNames**](UniverseApi.md#postUniverseNames) | **POST** /v2/universe/names/ | Get names and categories for a set of ID&#39;s
-
+[**postUniverseNames**](UniverseApi.md#postUniverseNames) | **POST** /v2/universe/names/ | Get names and categories for a set of ID&#x27;s
 
 # **getUniverseAncestries**
-> \Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[] getUniverseAncestries($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseAncestries($accept_language, $datasource, $if_none_match, $language)
 
 Get ancestries
 
@@ -53,10 +52,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseAncestries($accept_language, $datasource, $if_none_match, $language);
@@ -71,14 +70,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]**](../Model/GetUniverseAncestries200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -86,13 +85,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseAsteroidBeltsAsteroidBeltId**
-> \Swagger\Client\Eve\Model\GetUniverseAsteroidBeltsAsteroidBeltIdOk getUniverseAsteroidBeltsAsteroidBeltId($asteroid_belt_id, $datasource, $if_none_match)
+> object getUniverseAsteroidBeltsAsteroidBeltId($asteroid_belt_id, $datasource, $if_none_match)
 
 Get asteroid belt information
 
@@ -109,7 +108,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $asteroid_belt_id = 56; // int | asteroid_belt_id integer
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -125,13 +124,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asteroid_belt_id** | **int**| asteroid_belt_id integer |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **asteroid_belt_id** | [**int**](../Model/.md)| asteroid_belt_id integer |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseAsteroidBeltsAsteroidBeltIdOk**](../Model/GetUniverseAsteroidBeltsAsteroidBeltIdOk.md)
+**object**
 
 ### Authorization
 
@@ -139,13 +138,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseBloodlines**
-> \Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[] getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language)
 
 Get bloodlines
 
@@ -161,10 +160,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language);
@@ -179,14 +178,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]**](../Model/GetUniverseBloodlines200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -194,7 +193,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -216,7 +215,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -232,8 +231,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
@@ -245,13 +244,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseCategoriesCategoryId**
-> \Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk getUniverseCategoriesCategoryId($category_id, $accept_language, $datasource, $if_none_match, $language)
+> object getUniverseCategoriesCategoryId($category_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get item category information
 
@@ -268,10 +267,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $category_id = 56; // int | An Eve item category ID
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseCategoriesCategoryId($category_id, $accept_language, $datasource, $if_none_match, $language);
@@ -286,15 +285,15 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **category_id** | **int**| An Eve item category ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **category_id** | [**int**](../Model/.md)| An Eve item category ID |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk**](../Model/GetUniverseCategoriesCategoryIdOk.md)
+**object**
 
 ### Authorization
 
@@ -302,7 +301,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -324,7 +323,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -340,8 +339,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
@@ -353,13 +352,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseConstellationsConstellationId**
-> \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk getUniverseConstellationsConstellationId($constellation_id, $accept_language, $datasource, $if_none_match, $language)
+> object getUniverseConstellationsConstellationId($constellation_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get constellation information
 
@@ -376,10 +375,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $constellation_id = 56; // int | constellation_id integer
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseConstellationsConstellationId($constellation_id, $accept_language, $datasource, $if_none_match, $language);
@@ -394,15 +393,15 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **constellation_id** | **int**| constellation_id integer |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **constellation_id** | [**int**](../Model/.md)| constellation_id integer |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk**](../Model/GetUniverseConstellationsConstellationIdOk.md)
+**object**
 
 ### Authorization
 
@@ -410,13 +409,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseFactions**
-> \Swagger\Client\Eve\Model\GetUniverseFactions200Ok[] getUniverseFactions($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseFactions($accept_language, $datasource, $if_none_match, $language)
 
 Get factions
 
@@ -432,10 +431,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseFactions($accept_language, $datasource, $if_none_match, $language);
@@ -450,14 +449,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]**](../Model/GetUniverseFactions200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -465,7 +464,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -487,7 +486,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -503,8 +502,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
@@ -516,13 +515,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseGraphicsGraphicId**
-> \Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk getUniverseGraphicsGraphicId($graphic_id, $datasource, $if_none_match)
+> object getUniverseGraphicsGraphicId($graphic_id, $datasource, $if_none_match)
 
 Get graphic information
 
@@ -539,7 +538,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $graphic_id = 56; // int | graphic_id integer
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -555,13 +554,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **graphic_id** | **int**| graphic_id integer |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **graphic_id** | [**int**](../Model/.md)| graphic_id integer |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk**](../Model/GetUniverseGraphicsGraphicIdOk.md)
+**object**
 
 ### Authorization
 
@@ -569,7 +568,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -591,9 +590,9 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$page = 1; // int | Which page of results to return
+$page = 56; // int | Which page of results to return
 
 try {
     $result = $apiInstance->getUniverseGroups($datasource, $if_none_match, $page);
@@ -608,9 +607,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **page** | [**int**](../Model/.md)| Which page of results to return | [optional]
 
 ### Return type
 
@@ -622,13 +621,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseGroupsGroupId**
-> \Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk getUniverseGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language)
+> object getUniverseGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get item group information
 
@@ -645,10 +644,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $group_id = 56; // int | An Eve item group ID
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language);
@@ -663,15 +662,15 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **group_id** | **int**| An Eve item group ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **group_id** | [**int**](../Model/.md)| An Eve item group ID |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk**](../Model/GetUniverseGroupsGroupIdOk.md)
+**object**
 
 ### Authorization
 
@@ -679,13 +678,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseMoonsMoonId**
-> \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk getUniverseMoonsMoonId($moon_id, $datasource, $if_none_match)
+> object getUniverseMoonsMoonId($moon_id, $datasource, $if_none_match)
 
 Get moon information
 
@@ -702,7 +701,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $moon_id = 56; // int | moon_id integer
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -718,13 +717,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **moon_id** | **int**| moon_id integer |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **moon_id** | [**int**](../Model/.md)| moon_id integer |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk**](../Model/GetUniverseMoonsMoonIdOk.md)
+**object**
 
 ### Authorization
 
@@ -732,13 +731,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniversePlanetsPlanetId**
-> \Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk getUniversePlanetsPlanetId($planet_id, $datasource, $if_none_match)
+> object getUniversePlanetsPlanetId($planet_id, $datasource, $if_none_match)
 
 Get planet information
 
@@ -755,7 +754,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $planet_id = 56; // int | planet_id integer
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -771,13 +770,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **planet_id** | **int**| planet_id integer |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **planet_id** | [**int**](../Model/.md)| planet_id integer |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk**](../Model/GetUniversePlanetsPlanetIdOk.md)
+**object**
 
 ### Authorization
 
@@ -785,13 +784,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseRaces**
-> \Swagger\Client\Eve\Model\GetUniverseRaces200Ok[] getUniverseRaces($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseRaces($accept_language, $datasource, $if_none_match, $language)
 
 Get character races
 
@@ -807,10 +806,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseRaces($accept_language, $datasource, $if_none_match, $language);
@@ -825,14 +824,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]**](../Model/GetUniverseRaces200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -840,7 +839,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -862,7 +861,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -878,8 +877,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
@@ -891,13 +890,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseRegionsRegionId**
-> \Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk getUniverseRegionsRegionId($region_id, $accept_language, $datasource, $if_none_match, $language)
+> object getUniverseRegionsRegionId($region_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get region information
 
@@ -914,10 +913,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $region_id = 56; // int | region_id integer
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseRegionsRegionId($region_id, $accept_language, $datasource, $if_none_match, $language);
@@ -932,15 +931,15 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **region_id** | **int**| region_id integer |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **region_id** | [**int**](../Model/.md)| region_id integer |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk**](../Model/GetUniverseRegionsRegionIdOk.md)
+**object**
 
 ### Authorization
 
@@ -948,13 +947,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStargatesStargateId**
-> \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk getUniverseStargatesStargateId($stargate_id, $datasource, $if_none_match)
+> object getUniverseStargatesStargateId($stargate_id, $datasource, $if_none_match)
 
 Get stargate information
 
@@ -971,7 +970,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $stargate_id = 56; // int | stargate_id integer
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -987,13 +986,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **stargate_id** | **int**| stargate_id integer |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **stargate_id** | [**int**](../Model/.md)| stargate_id integer |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk**](../Model/GetUniverseStargatesStargateIdOk.md)
+**object**
 
 ### Authorization
 
@@ -1001,13 +1000,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStarsStarId**
-> \Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk getUniverseStarsStarId($star_id, $datasource, $if_none_match)
+> object getUniverseStarsStarId($star_id, $datasource, $if_none_match)
 
 Get star information
 
@@ -1024,7 +1023,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $star_id = 56; // int | star_id integer
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -1040,13 +1039,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **star_id** | **int**| star_id integer |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **star_id** | [**int**](../Model/.md)| star_id integer |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk**](../Model/GetUniverseStarsStarIdOk.md)
+**object**
 
 ### Authorization
 
@@ -1054,13 +1053,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStationsStationId**
-> \Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk getUniverseStationsStationId($station_id, $datasource, $if_none_match)
+> object getUniverseStationsStationId($station_id, $datasource, $if_none_match)
 
 Get station information
 
@@ -1077,7 +1076,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $station_id = 56; // int | station_id integer
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -1093,13 +1092,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **station_id** | **int**| station_id integer |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **station_id** | [**int**](../Model/.md)| station_id integer |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk**](../Model/GetUniverseStationsStationIdOk.md)
+**object**
 
 ### Authorization
 
@@ -1107,7 +1106,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1129,7 +1128,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $filter = "filter_example"; // string | Only list public structures that have this service online
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
@@ -1146,9 +1145,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **filter** | **string**| Only list public structures that have this service online | [optional]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **filter** | [**string**](../Model/.md)| Only list public structures that have this service online | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
@@ -1160,13 +1159,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStructuresStructureId**
-> \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk getUniverseStructuresStructureId($structure_id, $datasource, $if_none_match, $token)
+> object getUniverseStructuresStructureId($structure_id, $datasource, $if_none_match, $token)
 
 Get structure information
 
@@ -1186,8 +1185,8 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client(),
     $config
 );
-$structure_id = 789; // int | An Eve structure ID
-$datasource = "tranquility"; // string | The server name you would like data from
+$structure_id = 56; // int | An Eve structure ID
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $token = "token_example"; // string | Access token to use if unable to set a header
 
@@ -1204,14 +1203,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **structure_id** | **int**| An Eve structure ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+ **structure_id** | [**int**](../Model/.md)| An Eve structure ID |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **token** | [**string**](../Model/.md)| Access token to use if unable to set a header | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk**](../Model/GetUniverseStructuresStructureIdOk.md)
+**object**
 
 ### Authorization
 
@@ -1219,13 +1218,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemJumps**
-> \Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[] getUniverseSystemJumps($datasource, $if_none_match)
+> object[] getUniverseSystemJumps($datasource, $if_none_match)
 
 Get system jumps
 
@@ -1241,7 +1240,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -1257,12 +1256,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]**](../Model/GetUniverseSystemJumps200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1270,13 +1269,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemKills**
-> \Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[] getUniverseSystemKills($datasource, $if_none_match)
+> object[] getUniverseSystemKills($datasource, $if_none_match)
 
 Get system kills
 
@@ -1292,7 +1291,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -1308,12 +1307,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]**](../Model/GetUniverseSystemKills200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1321,7 +1320,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1343,7 +1342,7 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -1359,8 +1358,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
@@ -1372,13 +1371,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemsSystemId**
-> \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk getUniverseSystemsSystemId($system_id, $accept_language, $datasource, $if_none_match, $language)
+> object getUniverseSystemsSystemId($system_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get solar system information
 
@@ -1395,10 +1394,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $system_id = 56; // int | system_id integer
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseSystemsSystemId($system_id, $accept_language, $datasource, $if_none_match, $language);
@@ -1413,15 +1412,15 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **system_id** | **int**| system_id integer |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **system_id** | [**int**](../Model/.md)| system_id integer |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk**](../Model/GetUniverseSystemsSystemIdOk.md)
+**object**
 
 ### Authorization
 
@@ -1429,7 +1428,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1451,9 +1450,9 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$page = 1; // int | Which page of results to return
+$page = 56; // int | Which page of results to return
 
 try {
     $result = $apiInstance->getUniverseTypes($datasource, $if_none_match, $page);
@@ -1468,9 +1467,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **page** | [**int**](../Model/.md)| Which page of results to return | [optional]
 
 ### Return type
 
@@ -1482,13 +1481,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseTypesTypeId**
-> \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk getUniverseTypesTypeId($type_id, $accept_language, $datasource, $if_none_match, $language)
+> object getUniverseTypesTypeId($type_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get type information
 
@@ -1505,10 +1504,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $type_id = 56; // int | An Eve item type ID
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseTypesTypeId($type_id, $accept_language, $datasource, $if_none_match, $language);
@@ -1523,15 +1522,15 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type_id** | **int**| An Eve item type ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **type_id** | [**int**](../Model/.md)| An Eve item type ID |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk**](../Model/GetUniverseTypesTypeIdOk.md)
+**object**
 
 ### Authorization
 
@@ -1539,13 +1538,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseIds**
-> \Swagger\Client\Eve\Model\PostUniverseIdsOk postUniverseIds($names, $accept_language, $datasource, $language)
+> object postUniverseIds($body$accept_language, $datasource, $language)
 
 Bulk names to IDs
 
@@ -1561,13 +1560,13 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$names = array(new \Swagger\Client\Eve\Model\string[]()); // string[] | The names to resolve
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$body = array("body_example"); // string[] | The names to resolve
+$accept_language = "accept_language_example"; // string | Language to use in the response
+$datasource = "datasource_example"; // string | The server name you would like data from
+$language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
-    $result = $apiInstance->postUniverseIds($names, $accept_language, $datasource, $language);
+    $result = $apiInstance->postUniverseIds($body$accept_language, $datasource, $language);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->postUniverseIds: ', $e->getMessage(), PHP_EOL;
@@ -1579,14 +1578,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **names** | **string[]**| The names to resolve |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **body** | [**string[]**](../Model/string.md)| The names to resolve |
+ **accept_language** | [**string**](../Model/.md)| Language to use in the response | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **language** | [**string**](../Model/.md)| Language to use in the response, takes precedence over Accept-Language | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\PostUniverseIdsOk**](../Model/PostUniverseIdsOk.md)
+**object**
 
 ### Authorization
 
@@ -1600,7 +1599,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseNames**
-> \Swagger\Client\Eve\Model\PostUniverseNames200Ok[] postUniverseNames($ids, $datasource)
+> object[] postUniverseNames($body$datasource)
 
 Get names and categories for a set of ID's
 
@@ -1616,11 +1615,11 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$ids = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | The ids to resolve
-$datasource = "tranquility"; // string | The server name you would like data from
+$body = array(56); // int[] | The ids to resolve
+$datasource = "datasource_example"; // string | The server name you would like data from
 
 try {
-    $result = $apiInstance->postUniverseNames($ids, $datasource);
+    $result = $apiInstance->postUniverseNames($body$datasource);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->postUniverseNames: ', $e->getMessage(), PHP_EOL;
@@ -1632,12 +1631,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ids** | **int[]**| The ids to resolve |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **body** | [**int[]**](../Model/int.md)| The ids to resolve |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\PostUniverseNames200Ok[]**](../Model/PostUniverseNames200Ok.md)
+**object[]**
 
 ### Authorization
 

@@ -1,13 +1,12 @@
 # Swagger\Client\Eve\WarsApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to *https://esi.evetech.net/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getWars**](WarsApi.md#getWars) | **GET** /v1/wars/ | List wars
 [**getWarsWarId**](WarsApi.md#getWarsWarId) | **GET** /v1/wars/{war_id}/ | Get war information
 [**getWarsWarIdKillmails**](WarsApi.md#getWarsWarIdKillmails) | **GET** /v1/wars/{war_id}/killmails/ | List kills for a war
-
 
 # **getWars**
 > int[] getWars($datasource, $if_none_match, $max_war_id)
@@ -26,7 +25,7 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $max_war_id = 56; // int | Only return wars with ID smaller than this
 
@@ -43,9 +42,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **max_war_id** | **int**| Only return wars with ID smaller than this | [optional]
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **max_war_id** | [**int**](../Model/.md)| Only return wars with ID smaller than this | [optional]
 
 ### Return type
 
@@ -57,13 +56,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarId**
-> \Swagger\Client\Eve\Model\GetWarsWarIdOk getWarsWarId($war_id, $datasource, $if_none_match)
+> object getWarsWarId($war_id, $datasource, $if_none_match)
 
 Get war information
 
@@ -80,7 +79,7 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     new GuzzleHttp\Client()
 );
 $war_id = 56; // int | ID for a war
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
@@ -96,13 +95,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **war_id** | **int**| ID for a war |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **war_id** | [**int**](../Model/.md)| ID for a war |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetWarsWarIdOk**](../Model/GetWarsWarIdOk.md)
+**object**
 
 ### Authorization
 
@@ -110,13 +109,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarIdKillmails**
-> \Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page)
+> object[] getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page)
 
 List kills for a war
 
@@ -133,9 +132,9 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     new GuzzleHttp\Client()
 );
 $war_id = 56; // int | A valid war ID
-$datasource = "tranquility"; // string | The server name you would like data from
+$datasource = "datasource_example"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$page = 1; // int | Which page of results to return
+$page = 56; // int | Which page of results to return
 
 try {
     $result = $apiInstance->getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page);
@@ -150,14 +149,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **war_id** | **int**| A valid war ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
+ **war_id** | [**int**](../Model/.md)| A valid war ID |
+ **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
+ **if_none_match** | [**string**](../Model/.md)| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+ **page** | [**int**](../Model/.md)| Which page of results to return | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[]**](../Model/GetWarsWarIdKillmails200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -165,7 +164,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
