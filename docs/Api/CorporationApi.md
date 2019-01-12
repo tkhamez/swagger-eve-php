@@ -82,7 +82,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdAlliancehistory**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdAlliancehistory200Ok[] getCorporationsCorporationIdAlliancehistory($corporation_id, $datasource, $if_none_match)
+> object[] getCorporationsCorporationIdAlliancehistory($corporation_id, $datasource, $if_none_match)
 
 Get alliance history
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdAlliancehistory200Ok[]**](../Model/GetCorporationsCorporationIdAlliancehistory200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -135,7 +135,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdBlueprints**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdBlueprints200Ok[] getCorporationsCorporationIdBlueprints($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdBlueprints($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation blueprints
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdBlueprints200Ok[]**](../Model/GetCorporationsCorporationIdBlueprints200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdContainersLogs**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdContainersLogs200Ok[] getCorporationsCorporationIdContainersLogs($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdContainersLogs($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get all corporation ALSC logs
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdContainersLogs200Ok[]**](../Model/GetCorporationsCorporationIdContainersLogs200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdFacilities**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFacilities200Ok[] getCorporationsCorporationIdFacilities($corporation_id, $datasource, $if_none_match, $token)
+> object[] getCorporationsCorporationIdFacilities($corporation_id, $datasource, $if_none_match, $token)
 
 Get corporation facilities
 
@@ -361,7 +361,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdFacilities200Ok[]**](../Model/GetCorporationsCorporationIdFacilities200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -428,7 +428,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdMedals**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdMedals200Ok[] getCorporationsCorporationIdMedals($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdMedals($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation medals
 
@@ -475,7 +475,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdMedals200Ok[]**](../Model/GetCorporationsCorporationIdMedals200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -489,7 +489,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdMedalsIssued**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdMedalsIssued200Ok[] getCorporationsCorporationIdMedalsIssued($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdMedalsIssued($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation issued medals
 
@@ -536,7 +536,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdMedalsIssued200Ok[]**](../Model/GetCorporationsCorporationIdMedalsIssued200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -668,7 +668,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdMembersTitles**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdMembersTitles200Ok[] getCorporationsCorporationIdMembersTitles($corporation_id, $datasource, $if_none_match, $token)
+> object[] getCorporationsCorporationIdMembersTitles($corporation_id, $datasource, $if_none_match, $token)
 
 Get corporation's members' titles
 
@@ -713,7 +713,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdMembersTitles200Ok[]**](../Model/GetCorporationsCorporationIdMembersTitles200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -727,7 +727,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdMembertracking**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdMembertracking200Ok[] getCorporationsCorporationIdMembertracking($corporation_id, $datasource, $if_none_match, $token)
+> object[] getCorporationsCorporationIdMembertracking($corporation_id, $datasource, $if_none_match, $token)
 
 Track corporation members
 
@@ -772,7 +772,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdMembertracking200Ok[]**](../Model/GetCorporationsCorporationIdMembertracking200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -786,7 +786,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdRoles**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdRoles200Ok[] getCorporationsCorporationIdRoles($corporation_id, $datasource, $if_none_match, $token)
+> object[] getCorporationsCorporationIdRoles($corporation_id, $datasource, $if_none_match, $token)
 
 Get corporation member roles
 
@@ -831,7 +831,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdRoles200Ok[]**](../Model/GetCorporationsCorporationIdRoles200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -845,7 +845,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdRolesHistory**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdRolesHistory200Ok[] getCorporationsCorporationIdRolesHistory($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdRolesHistory($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation member roles history
 
@@ -892,7 +892,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdRolesHistory200Ok[]**](../Model/GetCorporationsCorporationIdRolesHistory200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -906,7 +906,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdShareholders**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdShareholders200Ok[] getCorporationsCorporationIdShareholders($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdShareholders($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation shareholders
 
@@ -953,7 +953,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdShareholders200Ok[]**](../Model/GetCorporationsCorporationIdShareholders200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -967,7 +967,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdStandings**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdStandings200Ok[] getCorporationsCorporationIdStandings($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdStandings($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation standings
 
@@ -1014,7 +1014,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStandings200Ok[]**](../Model/GetCorporationsCorporationIdStandings200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1028,7 +1028,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdStarbases**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdStarbases200Ok[] getCorporationsCorporationIdStarbases($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdStarbases($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation starbases (POSes)
 
@@ -1075,7 +1075,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStarbases200Ok[]**](../Model/GetCorporationsCorporationIdStarbases200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1152,7 +1152,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdStructures**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdStructures200Ok[] getCorporationsCorporationIdStructures($corporation_id, $accept_language, $datasource, $if_none_match, $language, $page, $token)
+> object[] getCorporationsCorporationIdStructures($corporation_id, $accept_language, $datasource, $if_none_match, $language, $page, $token)
 
 Get corporation structures
 
@@ -1203,7 +1203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStructures200Ok[]**](../Model/GetCorporationsCorporationIdStructures200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1217,7 +1217,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdTitles**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdTitles200Ok[] getCorporationsCorporationIdTitles($corporation_id, $datasource, $if_none_match, $token)
+> object[] getCorporationsCorporationIdTitles($corporation_id, $datasource, $if_none_match, $token)
 
 Get corporation titles
 
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdTitles200Ok[]**](../Model/GetCorporationsCorporationIdTitles200Ok.md)
+**object[]**
 
 ### Authorization
 

@@ -74,7 +74,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceIdContacts**
-> \Swagger\Client\Eve\Model\GetAlliancesAllianceIdContacts200Ok[] getAlliancesAllianceIdContacts($alliance_id, $datasource, $if_none_match, $page, $token)
+> object[] getAlliancesAllianceIdContacts($alliance_id, $datasource, $if_none_match, $page, $token)
 
 Get alliance contacts
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetAlliancesAllianceIdContacts200Ok[]**](../Model/GetAlliancesAllianceIdContacts200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceIdContactsLabels**
-> \Swagger\Client\Eve\Model\GetAlliancesAllianceIdContactsLabels200Ok[] getAlliancesAllianceIdContactsLabels($alliance_id, $datasource, $if_none_match, $token)
+> object[] getAlliancesAllianceIdContactsLabels($alliance_id, $datasource, $if_none_match, $token)
 
 Get alliance contact labels
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetAlliancesAllianceIdContactsLabels200Ok[]**](../Model/GetAlliancesAllianceIdContactsLabels200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdContacts**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdContacts200Ok[] getCharactersCharacterIdContacts($character_id, $datasource, $if_none_match, $page, $token)
+> object[] getCharactersCharacterIdContacts($character_id, $datasource, $if_none_match, $page, $token)
 
 Get contacts
 
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdContacts200Ok[]**](../Model/GetCharactersCharacterIdContacts200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdContactsLabels**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdContactsLabels200Ok[] getCharactersCharacterIdContactsLabels($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdContactsLabels($character_id, $datasource, $if_none_match, $token)
 
 Get contact labels
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdContactsLabels200Ok[]**](../Model/GetCharactersCharacterIdContactsLabels200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdContacts**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdContacts200Ok[] getCorporationsCorporationIdContacts($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdContacts($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation contacts
 
@@ -361,7 +361,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdContacts200Ok[]**](../Model/GetCorporationsCorporationIdContacts200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -375,7 +375,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdContactsLabels**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdContactsLabels200Ok[] getCorporationsCorporationIdContactsLabels($corporation_id, $datasource, $if_none_match, $token)
+> object[] getCorporationsCorporationIdContactsLabels($corporation_id, $datasource, $if_none_match, $token)
 
 Get corporation contact labels
 
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdContactsLabels200Ok[]**](../Model/GetCorporationsCorporationIdContactsLabels200Ok.md)
+**object[]**
 
 ### Authorization
 

@@ -68,7 +68,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdFittings**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[] getCharactersCharacterIdFittings($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdFittings($character_id, $datasource, $if_none_match, $token)
 
 Get fittings
 
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[]**](../Model/GetCharactersCharacterIdFittings200Ok.md)
+**object[]**
 
 ### Authorization
 

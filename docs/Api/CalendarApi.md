@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdCalendar**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendar200Ok[] getCharactersCharacterIdCalendar($character_id, $datasource, $from_event, $if_none_match, $token)
+> object[] getCharactersCharacterIdCalendar($character_id, $datasource, $from_event, $if_none_match, $token)
 
 List calendar event summaries
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendar200Ok[]**](../Model/GetCharactersCharacterIdCalendar200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdCalendarEventIdAttendees**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[] getCharactersCharacterIdCalendarEventIdAttendees($character_id, $event_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdCalendarEventIdAttendees($character_id, $event_id, $datasource, $if_none_match, $token)
 
 Get attendees
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]**](../Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.md)
+**object[]**
 
 ### Authorization
 

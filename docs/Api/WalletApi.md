@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdWalletJournal**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournal200Ok[] getCharactersCharacterIdWalletJournal($character_id, $datasource, $if_none_match, $page, $token)
+> object[] getCharactersCharacterIdWalletJournal($character_id, $datasource, $if_none_match, $page, $token)
 
 Get character wallet journal
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletJournal200Ok[]**](../Model/GetCharactersCharacterIdWalletJournal200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdWalletTransactions**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletTransactions200Ok[] getCharactersCharacterIdWalletTransactions($character_id, $datasource, $from_id, $if_none_match, $token)
+> object[] getCharactersCharacterIdWalletTransactions($character_id, $datasource, $from_id, $if_none_match, $token)
 
 Get wallet transactions
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdWalletTransactions200Ok[]**](../Model/GetCharactersCharacterIdWalletTransactions200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdWallets**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWallets200Ok[] getCorporationsCorporationIdWallets($corporation_id, $datasource, $if_none_match, $token)
+> object[] getCorporationsCorporationIdWallets($corporation_id, $datasource, $if_none_match, $token)
 
 Returns a corporation's wallet balance
 
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWallets200Ok[]**](../Model/GetCorporationsCorporationIdWallets200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -253,7 +253,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdWalletsDivisionJournal**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[] getCorporationsCorporationIdWalletsDivisionJournal($corporation_id, $division, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdWalletsDivisionJournal($corporation_id, $division, $datasource, $if_none_match, $page, $token)
 
 Get corporation wallet journal
 
@@ -302,7 +302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]**](../Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdWalletsDivisionTransactions**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[] getCorporationsCorporationIdWalletsDivisionTransactions($corporation_id, $division, $datasource, $from_id, $if_none_match, $token)
+> object[] getCorporationsCorporationIdWalletsDivisionTransactions($corporation_id, $division, $datasource, $from_id, $if_none_match, $token)
 
 Get corporation wallet transactions
 
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]**](../Model/GetCorporationsCorporationIdWalletsDivisionTransactions200Ok.md)
+**object[]**
 
 ### Authorization
 

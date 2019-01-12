@@ -313,7 +313,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFleetsFleetIdMembers**
-> \Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[] getFleetsFleetIdMembers($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
+> object[] getFleetsFleetIdMembers($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
 
 Get fleet members
 
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[]**](../Model/GetFleetsFleetIdMembers200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -376,7 +376,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFleetsFleetIdWings**
-> \Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[] getFleetsFleetIdWings($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
+> object[] getFleetsFleetIdWings($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
 
 Get fleet wings
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[]**](../Model/GetFleetsFleetIdWings200Ok.md)
+**object[]**
 
 ### Authorization
 

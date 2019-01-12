@@ -286,7 +286,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwStats**
-> \Swagger\Client\Eve\Model\GetFwStats200Ok[] getFwStats($datasource, $if_none_match)
+> object[] getFwStats($datasource, $if_none_match)
 
 An overview of statistics about factions involved in faction warfare
 
@@ -323,7 +323,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetFwStats200Ok[]**](../Model/GetFwStats200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -337,7 +337,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwSystems**
-> \Swagger\Client\Eve\Model\GetFwSystems200Ok[] getFwSystems($datasource, $if_none_match)
+> object[] getFwSystems($datasource, $if_none_match)
 
 Ownership of faction warfare systems
 
@@ -374,7 +374,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetFwSystems200Ok[]**](../Model/GetFwSystems200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -388,7 +388,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFwWars**
-> \Swagger\Client\Eve\Model\GetFwWars200Ok[] getFwWars($datasource, $if_none_match)
+> object[] getFwWars($datasource, $if_none_match)
 
 Data about which NPC factions are at war
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetFwWars200Ok[]**](../Model/GetFwWars200Ok.md)
+**object[]**
 
 ### Authorization
 

@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdSkillqueue**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdSkillqueue200Ok[] getCharactersCharacterIdSkillqueue($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdSkillqueue($character_id, $datasource, $if_none_match, $token)
 
 Get character's skill queue
 
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdSkillqueue200Ok[]**](../Model/GetCharactersCharacterIdSkillqueue200Ok.md)
+**object[]**
 
 ### Authorization
 

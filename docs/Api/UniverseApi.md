@@ -37,7 +37,7 @@ Method | HTTP request | Description
 
 
 # **getUniverseAncestries**
-> \Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[] getUniverseAncestries($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseAncestries($accept_language, $datasource, $if_none_match, $language)
 
 Get ancestries
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]**](../Model/GetUniverseAncestries200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -145,7 +145,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseBloodlines**
-> \Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[] getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language)
 
 Get bloodlines
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]**](../Model/GetUniverseBloodlines200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -416,7 +416,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseFactions**
-> \Swagger\Client\Eve\Model\GetUniverseFactions200Ok[] getUniverseFactions($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseFactions($accept_language, $datasource, $if_none_match, $language)
 
 Get factions
 
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]**](../Model/GetUniverseFactions200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -791,7 +791,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseRaces**
-> \Swagger\Client\Eve\Model\GetUniverseRaces200Ok[] getUniverseRaces($accept_language, $datasource, $if_none_match, $language)
+> object[] getUniverseRaces($accept_language, $datasource, $if_none_match, $language)
 
 Get character races
 
@@ -832,7 +832,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]**](../Model/GetUniverseRaces200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1225,7 +1225,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemJumps**
-> \Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[] getUniverseSystemJumps($datasource, $if_none_match)
+> object[] getUniverseSystemJumps($datasource, $if_none_match)
 
 Get system jumps
 
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]**](../Model/GetUniverseSystemJumps200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1276,7 +1276,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemKills**
-> \Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[] getUniverseSystemKills($datasource, $if_none_match)
+> object[] getUniverseSystemKills($datasource, $if_none_match)
 
 Get system kills
 
@@ -1313,7 +1313,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]**](../Model/GetUniverseSystemKills200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -1600,7 +1600,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseNames**
-> \Swagger\Client\Eve\Model\PostUniverseNames200Ok[] postUniverseNames($ids, $datasource)
+> object[] postUniverseNames($ids, $datasource)
 
 Get names and categories for a set of ID's
 
@@ -1637,7 +1637,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\PostUniverseNames200Ok[]**](../Model/PostUniverseNames200Ok.md)
+**object[]**
 
 ### Authorization
 

@@ -75,7 +75,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdAgentsResearch**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdAgentsResearch200Ok[] getCharactersCharacterIdAgentsResearch($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdAgentsResearch($character_id, $datasource, $if_none_match, $token)
 
 Get agents research
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdAgentsResearch200Ok[]**](../Model/GetCharactersCharacterIdAgentsResearch200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdBlueprints**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdBlueprints200Ok[] getCharactersCharacterIdBlueprints($character_id, $datasource, $if_none_match, $page, $token)
+> object[] getCharactersCharacterIdBlueprints($character_id, $datasource, $if_none_match, $page, $token)
 
 Get blueprints
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdBlueprints200Ok[]**](../Model/GetCharactersCharacterIdBlueprints200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdCorporationhistory**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdCorporationhistory200Ok[] getCharactersCharacterIdCorporationhistory($character_id, $datasource, $if_none_match)
+> object[] getCharactersCharacterIdCorporationhistory($character_id, $datasource, $if_none_match)
 
 Get corporation history
 
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdCorporationhistory200Ok[]**](../Model/GetCharactersCharacterIdCorporationhistory200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -307,7 +307,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMedals**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMedals200Ok[] getCharactersCharacterIdMedals($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdMedals($character_id, $datasource, $if_none_match, $token)
 
 Get medals
 
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdMedals200Ok[]**](../Model/GetCharactersCharacterIdMedals200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -366,7 +366,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdNotifications**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdNotifications200Ok[] getCharactersCharacterIdNotifications($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdNotifications($character_id, $datasource, $if_none_match, $token)
 
 Get character notifications
 
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdNotifications200Ok[]**](../Model/GetCharactersCharacterIdNotifications200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdNotificationsContacts**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdNotificationsContacts200Ok[] getCharactersCharacterIdNotificationsContacts($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdNotificationsContacts($character_id, $datasource, $if_none_match, $token)
 
 Get new contact notifications
 
@@ -470,7 +470,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdNotificationsContacts200Ok[]**](../Model/GetCharactersCharacterIdNotificationsContacts200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -596,7 +596,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdStandings**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdStandings200Ok[] getCharactersCharacterIdStandings($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdStandings($character_id, $datasource, $if_none_match, $token)
 
 Get standings
 
@@ -641,7 +641,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdStandings200Ok[]**](../Model/GetCharactersCharacterIdStandings200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -655,7 +655,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdStats**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdStats200Ok[] getCharactersCharacterIdStats($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdStats($character_id, $datasource, $if_none_match, $token)
 
 Yearly aggregate stats
 
@@ -700,7 +700,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdStats200Ok[]**](../Model/GetCharactersCharacterIdStats200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -714,7 +714,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdTitles**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdTitles200Ok[] getCharactersCharacterIdTitles($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdTitles($character_id, $datasource, $if_none_match, $token)
 
 Get character corporation titles
 
@@ -759,7 +759,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdTitles200Ok[]**](../Model/GetCharactersCharacterIdTitles200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -773,7 +773,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersAffiliation**
-> \Swagger\Client\Eve\Model\PostCharactersAffiliation200Ok[] postCharactersAffiliation($characters, $datasource)
+> object[] postCharactersAffiliation($characters, $datasource)
 
 Character affiliation
 
@@ -810,7 +810,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\PostCharactersAffiliation200Ok[]**](../Model/PostCharactersAffiliation200Ok.md)
+**object[]**
 
 ### Authorization
 

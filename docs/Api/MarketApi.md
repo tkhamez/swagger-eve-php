@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdOrders**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[] getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token)
 
 List open orders from a character
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[]**](../Model/GetCharactersCharacterIdOrders200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdOrdersHistory**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[] getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token)
+> object[] getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token)
 
 List historical orders by a character
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[]**](../Model/GetCharactersCharacterIdOrdersHistory200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdOrders**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[] getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token)
 
 List open orders from a corporation
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[]**](../Model/GetCorporationsCorporationIdOrders200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdOrdersHistory**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[] getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token)
 
 List historical orders from a corporation
 
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]**](../Model/GetCorporationsCorporationIdOrdersHistory200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -368,7 +368,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsPrices**
-> \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[] getMarketsPrices($datasource, $if_none_match)
+> object[] getMarketsPrices($datasource, $if_none_match)
 
 List market prices
 
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetMarketsPrices200Ok[]**](../Model/GetMarketsPrices200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -419,7 +419,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsRegionIdHistory**
-> \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[] getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match)
+> object[] getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match)
 
 List historical market statistics in a region
 
@@ -460,7 +460,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[]**](../Model/GetMarketsRegionIdHistory200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -474,7 +474,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsRegionIdOrders**
-> \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[] getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id)
+> object[] getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id)
 
 List orders in a region
 
@@ -519,7 +519,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[]**](../Model/GetMarketsRegionIdOrders200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -588,7 +588,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsStructuresStructureId**
-> \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[] getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token)
+> object[] getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token)
 
 List orders in a structure
 
@@ -635,7 +635,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[]**](../Model/GetMarketsStructuresStructureId200Ok.md)
+**object[]**
 
 ### Authorization
 

@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdIndustryJobs**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[] getCharactersCharacterIdIndustryJobs($character_id, $datasource, $if_none_match, $include_completed, $token)
+> object[] getCharactersCharacterIdIndustryJobs($character_id, $datasource, $if_none_match, $include_completed, $token)
 
 List character industry jobs
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[]**](../Model/GetCharactersCharacterIdIndustryJobs200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMining**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[] getCharactersCharacterIdMining($character_id, $datasource, $if_none_match, $page, $token)
+> object[] getCharactersCharacterIdMining($character_id, $datasource, $if_none_match, $page, $token)
 
 Character mining ledger
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[]**](../Model/GetCharactersCharacterIdMining200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationCorporationIdMiningExtractions**
-> \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[] getCorporationCorporationIdMiningExtractions($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationCorporationIdMiningExtractions($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Moon extraction timers
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[]**](../Model/GetCorporationCorporationIdMiningExtractions200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationCorporationIdMiningObservers**
-> \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[] getCorporationCorporationIdMiningObservers($corporation_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationCorporationIdMiningObservers($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Corporation mining observers
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[]**](../Model/GetCorporationCorporationIdMiningObservers200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationCorporationIdMiningObserversObserverId**
-> \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[] getCorporationCorporationIdMiningObserversObserverId($corporation_id, $observer_id, $datasource, $if_none_match, $page, $token)
+> object[] getCorporationCorporationIdMiningObserversObserverId($corporation_id, $observer_id, $datasource, $if_none_match, $page, $token)
 
 Observed corporation mining
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]**](../Model/GetCorporationCorporationIdMiningObserversObserverId200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdIndustryJobs**
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[] getCorporationsCorporationIdIndustryJobs($corporation_id, $datasource, $if_none_match, $include_completed, $page, $token)
+> object[] getCorporationsCorporationIdIndustryJobs($corporation_id, $datasource, $if_none_match, $include_completed, $page, $token)
 
 List corporation industry jobs
 
@@ -371,7 +371,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]**](../Model/GetCorporationsCorporationIdIndustryJobs200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -385,7 +385,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIndustryFacilities**
-> \Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[] getIndustryFacilities($datasource, $if_none_match)
+> object[] getIndustryFacilities($datasource, $if_none_match)
 
 List industry facilities
 
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[]**](../Model/GetIndustryFacilities200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -436,7 +436,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIndustrySystems**
-> \Swagger\Client\Eve\Model\GetIndustrySystems200Ok[] getIndustrySystems($datasource, $if_none_match)
+> object[] getIndustrySystems($datasource, $if_none_match)
 
 List solar system cost indices
 
@@ -473,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetIndustrySystems200Ok[]**](../Model/GetIndustrySystems200Ok.md)
+**object[]**
 
 ### Authorization
 

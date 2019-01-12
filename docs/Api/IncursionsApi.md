@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getIncursions**
-> \Swagger\Client\Eve\Model\GetIncursions200Ok[] getIncursions($datasource, $if_none_match)
+> object[] getIncursions($datasource, $if_none_match)
 
 List incursions
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetIncursions200Ok[]**](../Model/GetIncursions200Ok.md)
+**object[]**
 
 ### Authorization
 

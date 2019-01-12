@@ -132,7 +132,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMail**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMail200Ok[] getCharactersCharacterIdMail($character_id, $datasource, $if_none_match, $labels, $last_mail_id, $token)
+> object[] getCharactersCharacterIdMail($character_id, $datasource, $if_none_match, $labels, $last_mail_id, $token)
 
 Return mail headers
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdMail200Ok[]**](../Model/GetCharactersCharacterIdMail200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMailLists**
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLists200Ok[] getCharactersCharacterIdMailLists($character_id, $datasource, $if_none_match, $token)
+> object[] getCharactersCharacterIdMailLists($character_id, $datasource, $if_none_match, $token)
 
 Return mailing list subscriptions
 
@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLists200Ok[]**](../Model/GetCharactersCharacterIdMailLists200Ok.md)
+**object[]**
 
 ### Authorization
 
