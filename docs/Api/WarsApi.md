@@ -26,8 +26,8 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $max_war_id = 56; // int | Only return wars with ID smaller than this
 
 try {
@@ -43,7 +43,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **max_war_id** | **int**| Only return wars with ID smaller than this | [optional]
 
@@ -57,7 +57,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -80,8 +80,8 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     new GuzzleHttp\Client()
 );
 $war_id = 56; // int | ID for a war
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
     $result = $apiInstance->getWarsWarId($war_id, $datasource, $if_none_match);
@@ -97,7 +97,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **war_id** | **int**| ID for a war |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
@@ -110,7 +110,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -133,8 +133,8 @@ $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
     new GuzzleHttp\Client()
 );
 $war_id = 56; // int | A valid war ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
 
 try {
@@ -151,7 +151,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **war_id** | **int**| A valid war ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
 
@@ -165,7 +165,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

@@ -46,8 +46,8 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     new GuzzleHttp\Client()
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
     $result = $apiInstance->getCorporationsCorporationId($corporation_id, $datasource, $if_none_match);
@@ -63,7 +63,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
@@ -76,7 +76,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -99,8 +99,8 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     new GuzzleHttp\Client()
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdAlliancehistory($corporation_id, $datasource, $if_none_match);
@@ -116,7 +116,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
@@ -129,7 +129,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -156,10 +156,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdBlueprints($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -175,7 +175,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -217,10 +217,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdContainersLogs($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -236,7 +236,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -278,9 +278,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdDivisions($corporation_id, $datasource, $if_none_match, $token);
@@ -296,7 +296,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -310,7 +310,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -337,9 +337,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdFacilities($corporation_id, $datasource, $if_none_match, $token);
@@ -355,7 +355,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -392,8 +392,8 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     new GuzzleHttp\Client()
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdIcons($corporation_id, $datasource, $if_none_match);
@@ -409,7 +409,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
@@ -422,7 +422,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -449,10 +449,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdMedals($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -468,7 +468,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -510,10 +510,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdMedalsIssued($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -529,7 +529,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -544,7 +544,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -571,9 +571,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdMembers($corporation_id, $datasource, $if_none_match, $token);
@@ -589,7 +589,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -603,7 +603,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -630,9 +630,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdMembersLimit($corporation_id, $datasource, $if_none_match, $token);
@@ -648,7 +648,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -662,7 +662,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -689,9 +689,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdMembersTitles($corporation_id, $datasource, $if_none_match, $token);
@@ -707,7 +707,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -721,7 +721,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -748,9 +748,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdMembertracking($corporation_id, $datasource, $if_none_match, $token);
@@ -766,7 +766,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -780,7 +780,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -807,9 +807,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdRoles($corporation_id, $datasource, $if_none_match, $token);
@@ -825,7 +825,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -839,7 +839,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -866,10 +866,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdRolesHistory($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -885,7 +885,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -900,7 +900,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -927,10 +927,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdShareholders($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -946,7 +946,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -961,7 +961,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -988,10 +988,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdStandings($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -1007,7 +1007,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -1022,7 +1022,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1049,10 +1049,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdStarbases($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -1068,7 +1068,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -1083,7 +1083,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1110,11 +1110,11 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$starbase_id = 789; // int | An EVE starbase (POS) ID
+$starbase_id = 56; // int | An EVE starbase (POS) ID
 $system_id = 56; // int | The solar system this starbase (POS) is located in,
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdStarbasesStarbaseId($corporation_id, $starbase_id, $system_id, $datasource, $if_none_match, $token);
@@ -1132,7 +1132,7 @@ Name | Type | Description  | Notes
  **corporation_id** | **int**| An EVE corporation ID |
  **starbase_id** | **int**| An EVE starbase (POS) ID |
  **system_id** | **int**| The solar system this starbase (POS) is located in, |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -1146,7 +1146,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1173,12 +1173,12 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$accept_language = 'en-us'; // string | Language to use in the response
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdStructures($corporation_id, $accept_language, $datasource, $if_none_match, $language, $page, $token);
@@ -1194,10 +1194,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -1211,7 +1211,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1238,9 +1238,9 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdTitles($corporation_id, $datasource, $if_none_match, $token);
@@ -1256,7 +1256,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -1270,7 +1270,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -1292,8 +1292,8 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
     $result = $apiInstance->getCorporationsNpccorps($datasource, $if_none_match);
@@ -1308,7 +1308,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
 
 ### Return type
@@ -1321,7 +1321,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

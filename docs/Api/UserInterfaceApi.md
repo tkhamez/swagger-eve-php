@@ -34,9 +34,9 @@ $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
 );
 $add_to_beginning = false; // bool | Whether this solar system should be added to the beginning of all waypoints
 $clear_other_waypoints = false; // bool | Whether clean other waypoints beforing adding this one
-$destination_id = 789; // int | The destination to travel to, can be solar system, station or structure's id
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$destination_id = 56; // int | The destination to travel to, can be solar system, station or structure's id
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $apiInstance->postUiAutopilotWaypoint($add_to_beginning, $clear_other_waypoints, $destination_id, $datasource, $token);
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
  **add_to_beginning** | **bool**| Whether this solar system should be added to the beginning of all waypoints | [default to false]
  **clear_other_waypoints** | **bool**| Whether clean other waypoints beforing adding this one | [default to false]
  **destination_id** | **int**| The destination to travel to, can be solar system, station or structure&#39;s id |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -66,7 +66,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -93,8 +93,8 @@ $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     $config
 );
 $contract_id = 56; // int | The contract to open
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $apiInstance->postUiOpenwindowContract($contract_id, $datasource, $token);
@@ -109,7 +109,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contract_id** | **int**| The contract to open |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -122,7 +122,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -149,8 +149,8 @@ $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     $config
 );
 $target_id = 56; // int | The target to open
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $apiInstance->postUiOpenwindowInformation($target_id, $datasource, $token);
@@ -165,7 +165,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **target_id** | **int**| The target to open |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -178,7 +178,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -205,8 +205,8 @@ $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     $config
 );
 $type_id = 56; // int | The item type to open in market window
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $apiInstance->postUiOpenwindowMarketdetails($type_id, $datasource, $token);
@@ -221,7 +221,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type_id** | **int**| The item type to open in market window |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -234,13 +234,13 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUiOpenwindowNewmail**
-> postUiOpenwindowNewmail($new_mail, $datasource, $token)
+> postUiOpenwindowNewmail($datasource, $token, $post_ui_openwindow_newmail_new_mail)
 
 Open New Mail Window
 
@@ -260,12 +260,12 @@ $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     new GuzzleHttp\Client(),
     $config
 );
-$new_mail = new \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail(); // \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail | The details of mail to create
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
+$post_ui_openwindow_newmail_new_mail = new \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail(); // \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail | 
 
 try {
-    $apiInstance->postUiOpenwindowNewmail($new_mail, $datasource, $token);
+    $apiInstance->postUiOpenwindowNewmail($datasource, $token, $post_ui_openwindow_newmail_new_mail);
 } catch (Exception $e) {
     echo 'Exception when calling UserInterfaceApi->postUiOpenwindowNewmail: ', $e->getMessage(), PHP_EOL;
 }
@@ -276,9 +276,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **new_mail** | [**\Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail**](../Model/PostUiOpenwindowNewmailNewMail.md)| The details of mail to create |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
+ **post_ui_openwindow_newmail_new_mail** | [**\Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail**](../Model/PostUiOpenwindowNewmailNewMail.md)|  | [optional]
 
 ### Return type
 
