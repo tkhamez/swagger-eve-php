@@ -1,6 +1,6 @@
 {
     "name": "tkhamez/swagger-eve-php",
-    "description": "",
+    "description": "EVE Online API (ESI) Client Library for PHP",
     "keywords": [
         "swagger",
         "php",
