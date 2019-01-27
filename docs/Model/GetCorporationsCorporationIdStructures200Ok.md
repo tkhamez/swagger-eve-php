@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **state_timer_start** | [**\DateTime**](\DateTime.md) | Date at which the structure entered it&#39;s current state | [optional] 
 **profile_id** | **int** | The id of the ACL profile for this citadel | 
 **next_reinforce_weekday** | **int** | The requested change to reinforce_weekday that will take effect at the time shown by next_reinforce_apply | [optional] 
-**reinforce_weekday** | **int** | The day of the week when the structure exits its final reinforcement period and becomes vulnerable to attack against its hull. Monday is 0 and Sunday is 6 | 
+**reinforce_weekday** | **int** | The day of the week when the structure exits its final reinforcement period and becomes vulnerable to attack against its hull. Monday is 0 and Sunday is 6 | [optional] 
 **state** | **string** | state string | 
 **unanchors_at** | [**\DateTime**](\DateTime.md) | Date at which the structure will unanchor | [optional] 
 **next_reinforce_apply** | [**\DateTime**](\DateTime.md) | The date and time when the structure&#39;s newly requested reinforcement times (e.g. next_reinforce_hour and next_reinforce_day) will take effect | [optional] 

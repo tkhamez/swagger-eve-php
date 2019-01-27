@@ -11666,7 +11666,7 @@ class UniverseApi
     /**
      * Operation postUniverseNames
      *
-     * Get names and categories for a set of ID's
+     * Get names and categories for a set of IDs
      *
      * @param  int[] $request_body The ids to resolve (required)
      * @param  string $datasource The server name you would like data from (optional, default to 'tranquility')
@@ -11684,7 +11684,7 @@ class UniverseApi
     /**
      * Operation postUniverseNamesWithHttpInfo
      *
-     * Get names and categories for a set of ID's
+     * Get names and categories for a set of IDs
      *
      * @param  int[] $request_body The ids to resolve (required)
      * @param  string $datasource The server name you would like data from (optional, default to 'tranquility')
@@ -11893,7 +11893,7 @@ class UniverseApi
     /**
      * Operation postUniverseNamesAsync
      *
-     * Get names and categories for a set of ID's
+     * Get names and categories for a set of IDs
      *
      * @param  int[] $request_body The ids to resolve (required)
      * @param  string $datasource The server name you would like data from (optional, default to 'tranquility')
@@ -11914,7 +11914,7 @@ class UniverseApi
     /**
      * Operation postUniverseNamesAsyncWithHttpInfo
      *
-     * Get names and categories for a set of ID's
+     * Get names and categories for a set of IDs
      *
      * @param  int[] $request_body The ids to resolve (required)
      * @param  string $datasource The server name you would like data from (optional, default to 'tranquility')
