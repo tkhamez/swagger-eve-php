@@ -1,6 +1,6 @@
 {
     "name": "tkhamez/swagger-eve-php",
-    "description": "An OpenAPI for EVE Online",
+    "description": "EVE Online API (ESI) Client Library for PHP",
     "keywords": [
         "openapitools",
         "openapi-generator",
@@ -10,7 +10,7 @@
         "api"
     ],
     "homepage": "http://openapi-generator.tech",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "OpenAPI-Generator contributors",
