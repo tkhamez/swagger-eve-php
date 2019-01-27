@@ -343,6 +343,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
     const REF_TYPE_SOVEREIGNITY_BILL = 'sovereignity_bill';
     const REF_TYPE_STORE_PURCHASE = 'store_purchase';
     const REF_TYPE_STORE_PURCHASE_REFUND = 'store_purchase_refund';
+    const REF_TYPE_STRUCTURE_GATE_JUMP = 'structure_gate_jump';
     const REF_TYPE_TRANSACTION_TAX = 'transaction_tax';
     const REF_TYPE_UPKEEP_ADJUSTMENT_FEE = 'upkeep_adjustment_fee';
     const REF_TYPE_WAR_ALLY_CONTRACT = 'war_ally_contract';
@@ -494,6 +495,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
             self::REF_TYPE_SOVEREIGNITY_BILL,
             self::REF_TYPE_STORE_PURCHASE,
             self::REF_TYPE_STORE_PURCHASE_REFUND,
+            self::REF_TYPE_STRUCTURE_GATE_JUMP,
             self::REF_TYPE_TRANSACTION_TAX,
             self::REF_TYPE_UPKEEP_ADJUSTMENT_FEE,
             self::REF_TYPE_WAR_ALLY_CONTRACT,

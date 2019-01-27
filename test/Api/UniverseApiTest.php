@@ -364,7 +364,7 @@ class UniverseApiTest extends \PHPUnit_Framework_TestCase
     /**
      * Test case for postUniverseNames
      *
-     * Get names and categories for a set of ID's.
+     * Get names and categories for a set of IDs.
      *
      */
     public function testPostUniverseNames()

@@ -7131,7 +7131,7 @@ class CorporationApi
         }
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/structures/';
+        $resourcePath = '/v3/corporations/{corporation_id}/structures/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

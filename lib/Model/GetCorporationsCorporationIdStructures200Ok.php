@@ -238,6 +238,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     const STATE_ANCHORING = 'anchoring';
     const STATE_ARMOR_REINFORCE = 'armor_reinforce';
     const STATE_ARMOR_VULNERABLE = 'armor_vulnerable';
+    const STATE_DEPLOY_VULNERABLE = 'deploy_vulnerable';
     const STATE_FITTING_INVULNERABLE = 'fitting_invulnerable';
     const STATE_HULL_REINFORCE = 'hull_reinforce';
     const STATE_HULL_VULNERABLE = 'hull_vulnerable';
@@ -261,6 +262,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
             self::STATE_ANCHORING,
             self::STATE_ARMOR_REINFORCE,
             self::STATE_ARMOR_VULNERABLE,
+            self::STATE_DEPLOY_VULNERABLE,
             self::STATE_FITTING_INVULNERABLE,
             self::STATE_HULL_REINFORCE,
             self::STATE_HULL_VULNERABLE,
@@ -348,14 +350,11 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
             $invalidProperties[] = "invalid value for 'reinforce_hour', must be bigger than or equal to 0.";
         }
 
-        if ($this->container['reinforce_weekday'] === null) {
-            $invalidProperties[] = "'reinforce_weekday' can't be null";
-        }
-        if (($this->container['reinforce_weekday'] > 6)) {
+        if (!is_null($this->container['reinforce_weekday']) && ($this->container['reinforce_weekday'] > 6)) {
             $invalidProperties[] = "invalid value for 'reinforce_weekday', must be smaller than or equal to 6.";
         }
 
-        if (($this->container['reinforce_weekday'] < 0)) {
+        if (!is_null($this->container['reinforce_weekday']) && ($this->container['reinforce_weekday'] < 0)) {
             $invalidProperties[] = "invalid value for 'reinforce_weekday', must be bigger than or equal to 0.";
         }
 
@@ -416,9 +415,6 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
             return false;
         }
         if ($this->container['reinforce_hour'] < 0) {
-            return false;
-        }
-        if ($this->container['reinforce_weekday'] === null) {
             return false;
         }
         if ($this->container['reinforce_weekday'] > 6) {
@@ -659,10 +655,10 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     public function setReinforceWeekday($reinforce_weekday)
     {
 
-        if (($reinforce_weekday > 6)) {
+        if (!is_null($reinforce_weekday) && ($reinforce_weekday > 6)) {
             throw new \InvalidArgumentException('invalid value for $reinforce_weekday when calling GetCorporationsCorporationIdStructures200Ok., must be smaller than or equal to 6.');
         }
-        if (($reinforce_weekday < 0)) {
+        if (!is_null($reinforce_weekday) && ($reinforce_weekday < 0)) {
             throw new \InvalidArgumentException('invalid value for $reinforce_weekday when calling GetCorporationsCorporationIdStructures200Ok., must be bigger than or equal to 0.');
         }
 
