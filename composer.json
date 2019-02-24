@@ -1,6 +1,6 @@
 {
     "name": "tkhamez/swagger-eve-php",
-    "description": "",
+    "description": "EVE Online API (ESI) Client Library for PHP",
     "keywords": [
         "swagger",
         "php",
@@ -8,7 +8,7 @@
         "api"
     ],
     "homepage": "http://swagger.io",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Swagger and contributors",

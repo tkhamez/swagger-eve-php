@@ -1,3 +1,8 @@
+### Versioning scheme since 1.0.0:
+* patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json), refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md) (note, however, that the date is not always correct there)
+* minor: switched to a new minor version of the generator library
+* major: switched to a new major version of the generator library or switched to another generator library
+
 # SwaggerClient-php
 An OpenAPI for EVE Online
 
@@ -17,12 +22,6 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 
 ```
 {
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/tkhamez/swagger-eve-php.git"
-    }
-  ],
   "require": {
     "tkhamez/swagger-eve-php": "*@dev"
   }
