@@ -72,7 +72,7 @@ void (empty response body)
 
 Get fittings
 
-Return fittings of a character  ---  This route is cached for up to 300 seconds
+Return fittings of a character  ---  This route is cached for up to 300 seconds  --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/fittings/)
 
 ### Example
 ```php
@@ -131,7 +131,7 @@ Name | Type | Description  | Notes
 
 Create fitting
 
-Save a new fitting for a character  ---
+Save a new fitting for a character  ---  Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#POST-/characters/{character_id}/fittings/)
 
 ### Example
 ```php
