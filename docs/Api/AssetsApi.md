@@ -34,10 +34,10 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCharactersCharacterIdAssets($character_id, $datasource, $if_none_match, $page, $token);
@@ -53,7 +53,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -95,10 +95,10 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCorporationsCorporationIdAssets($corporation_id, $datasource, $if_none_match, $page, $token);
@@ -114,7 +114,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -129,13 +129,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdAssetsLocations**
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[] postCharactersCharacterIdAssetsLocations($character_id, $item_ids, $datasource, $token)
+> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[] postCharactersCharacterIdAssetsLocations($character_id, $request_body, $datasource, $token)
 
 Get character asset locations
 
@@ -156,12 +156,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$item_ids = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | A list of item ids
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdAssetsLocations($character_id, $item_ids, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdAssetsLocations($character_id, $request_body, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
@@ -174,8 +174,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **item_ids** | **int[]**| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdAssetsNames**
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[] postCharactersCharacterIdAssetsNames($character_id, $item_ids, $datasource, $token)
+> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[] postCharactersCharacterIdAssetsNames($character_id, $request_body, $datasource, $token)
 
 Get character asset names
 
@@ -215,12 +215,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$item_ids = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | A list of item ids
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdAssetsNames($character_id, $item_ids, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdAssetsNames($character_id, $request_body, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsNames: ', $e->getMessage(), PHP_EOL;
@@ -233,8 +233,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **item_ids** | **int[]**| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -253,7 +253,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCorporationsCorporationIdAssetsLocations**
-> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[] postCorporationsCorporationIdAssetsLocations($corporation_id, $item_ids, $datasource, $token)
+> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[] postCorporationsCorporationIdAssetsLocations($corporation_id, $request_body, $datasource, $token)
 
 Get corporation asset locations
 
@@ -274,12 +274,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$item_ids = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | A list of item ids
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCorporationsCorporationIdAssetsLocations($corporation_id, $item_ids, $datasource, $token);
+    $result = $apiInstance->postCorporationsCorporationIdAssetsLocations($corporation_id, $request_body, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
@@ -292,8 +292,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **item_ids** | **int[]**| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCorporationsCorporationIdAssetsNames**
-> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[] postCorporationsCorporationIdAssetsNames($corporation_id, $item_ids, $datasource, $token)
+> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[] postCorporationsCorporationIdAssetsNames($corporation_id, $request_body, $datasource, $token)
 
 Get corporation asset names
 
@@ -333,12 +333,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$item_ids = array(new \Swagger\Client\Eve\Model\int[]()); // int[] | A list of item ids
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCorporationsCorporationIdAssetsNames($corporation_id, $item_ids, $datasource, $token);
+    $result = $apiInstance->postCorporationsCorporationIdAssetsNames($corporation_id, $request_body, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsNames: ', $e->getMessage(), PHP_EOL;
@@ -351,8 +351,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **item_ids** | **int[]**| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type

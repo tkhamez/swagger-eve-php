@@ -38,8 +38,8 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
 );
 $character_id = 56; // int | An EVE character ID
 $label_id = 56; // int | An EVE label id
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $apiInstance->deleteCharactersCharacterIdMailLabelsLabelId($character_id, $label_id, $datasource, $token);
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
  **label_id** | **int**| An EVE label id |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -68,7 +68,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -96,8 +96,8 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
 );
 $character_id = 56; // int | An EVE character ID
 $mail_id = 56; // int | An EVE mail ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $apiInstance->deleteCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $token);
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
  **mail_id** | **int**| An EVE mail ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -126,7 +126,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -153,11 +153,11 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $labels = array(56); // int[] | Fetch only mails that match one or more of the given labels
 $last_mail_id = 56; // int | List only mail with an ID lower than the given ID, if present
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCharactersCharacterIdMail($character_id, $datasource, $if_none_match, $labels, $last_mail_id, $token);
@@ -173,7 +173,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **labels** | [**int[]**](../Model/int.md)| Fetch only mails that match one or more of the given labels | [optional]
  **last_mail_id** | **int**| List only mail with an ID lower than the given ID, if present | [optional]
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -216,9 +216,9 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCharactersCharacterIdMailLabels($character_id, $datasource, $if_none_match, $token);
@@ -234,7 +234,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -275,9 +275,9 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCharactersCharacterIdMailLists($character_id, $datasource, $if_none_match, $token);
@@ -293,7 +293,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -307,7 +307,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -335,9 +335,9 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
 );
 $character_id = 56; // int | An EVE character ID
 $mail_id = 56; // int | An EVE mail ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $if_none_match, $token);
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
  **mail_id** | **int**| An EVE mail ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -368,13 +368,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdMail**
-> int postCharactersCharacterIdMail($character_id, $mail, $datasource, $token)
+> int postCharactersCharacterIdMail($character_id, $datasource, $token, $post_characters_character_id_mail_mail)
 
 Send a new mail
 
@@ -395,12 +395,12 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$mail = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail | The mail to send
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
+$post_characters_character_id_mail_mail = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail | 
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdMail($character_id, $mail, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdMail($character_id, $datasource, $token, $post_characters_character_id_mail_mail);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMail: ', $e->getMessage(), PHP_EOL;
@@ -413,9 +413,9 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **mail** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail**](../Model/PostCharactersCharacterIdMailMail.md)| The mail to send |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
+ **post_characters_character_id_mail_mail** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail**](../Model/PostCharactersCharacterIdMailMail.md)|  | [optional]
 
 ### Return type
 
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdMailLabels**
-> int postCharactersCharacterIdMailLabels($character_id, $label, $datasource, $token)
+> int postCharactersCharacterIdMailLabels($character_id, $datasource, $token, $post_characters_character_id_mail_labels_label)
 
 Create a mail label
 
@@ -454,12 +454,12 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$label = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel | Label to create
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
+$post_characters_character_id_mail_labels_label = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel | 
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdMailLabels($character_id, $label, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdMailLabels($character_id, $datasource, $token, $post_characters_character_id_mail_labels_label);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMailLabels: ', $e->getMessage(), PHP_EOL;
@@ -472,9 +472,9 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **label** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel**](../Model/PostCharactersCharacterIdMailLabelsLabel.md)| Label to create |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
+ **post_characters_character_id_mail_labels_label** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel**](../Model/PostCharactersCharacterIdMailLabelsLabel.md)|  | [optional]
 
 ### Return type
 
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putCharactersCharacterIdMailMailId**
-> putCharactersCharacterIdMailMailId($character_id, $contents, $mail_id, $datasource, $token)
+> putCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $token, $put_characters_character_id_mail_mail_id_contents)
 
 Update metadata about a mail
 
@@ -513,13 +513,13 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$contents = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents | Data used to update the mail
 $mail_id = 56; // int | An EVE mail ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
+$put_characters_character_id_mail_mail_id_contents = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents | 
 
 try {
-    $apiInstance->putCharactersCharacterIdMailMailId($character_id, $contents, $mail_id, $datasource, $token);
+    $apiInstance->putCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $token, $put_characters_character_id_mail_mail_id_contents);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->putCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
 }
@@ -531,10 +531,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **contents** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents**](../Model/PutCharactersCharacterIdMailMailIdContents.md)| Data used to update the mail |
  **mail_id** | **int**| An EVE mail ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
+ **put_characters_character_id_mail_mail_id_contents** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents**](../Model/PutCharactersCharacterIdMailMailIdContents.md)|  | [optional]
 
 ### Return type
 

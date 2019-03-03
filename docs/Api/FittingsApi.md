@@ -32,8 +32,8 @@ $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
 );
 $character_id = 56; // int | An EVE character ID
 $fitting_id = 56; // int | ID for a fitting of this character
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $apiInstance->deleteCharactersCharacterIdFittingsFittingId($character_id, $fitting_id, $datasource, $token);
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
  **fitting_id** | **int**| ID for a fitting of this character |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -62,7 +62,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -89,9 +89,9 @@ $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCharactersCharacterIdFittings($character_id, $datasource, $if_none_match, $token);
@@ -107,7 +107,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -121,13 +121,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdFittings**
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($character_id, $fitting, $datasource, $token)
+> \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($character_id, $datasource, $token, $post_characters_character_id_fittings_fitting)
 
 Create fitting
 
@@ -148,12 +148,12 @@ $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$fitting = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting | Details about the new fitting
-$datasource = "tranquility"; // string | The server name you would like data from
-$token = "token_example"; // string | Access token to use if unable to set a header
+$datasource = 'tranquility'; // string | The server name you would like data from
+$token = 'token_example'; // string | Access token to use if unable to set a header
+$post_characters_character_id_fittings_fitting = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting | 
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdFittings($character_id, $fitting, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdFittings($character_id, $datasource, $token, $post_characters_character_id_fittings_fitting);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->postCharactersCharacterIdFittings: ', $e->getMessage(), PHP_EOL;
@@ -166,9 +166,9 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **fitting** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting |
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
+ **post_characters_character_id_fittings_fitting** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)|  | [optional]
 
 ### Return type
 

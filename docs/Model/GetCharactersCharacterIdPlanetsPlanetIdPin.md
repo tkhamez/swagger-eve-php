@@ -3,17 +3,17 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contents** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]**](GetCharactersCharacterIdPlanetsPlanetIdContent.md) | contents array | [optional] 
-**expiry_time** | [**\DateTime**](\DateTime.md) | expiry_time string | [optional] 
-**extractor_details** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails**](GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.md) |  | [optional] 
-**factory_details** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails**](GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails.md) |  | [optional] 
 **install_time** | [**\DateTime**](\DateTime.md) | install_time string | [optional] 
+**factory_details** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails**](GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails.md) |  | [optional] 
 **last_cycle_start** | [**\DateTime**](\DateTime.md) | last_cycle_start string | [optional] 
-**latitude** | **float** | latitude number | 
-**longitude** | **float** | longitude number | 
-**pin_id** | **int** | pin_id integer | 
+**contents** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdContent[]**](GetCharactersCharacterIdPlanetsPlanetIdContent.md) | contents array | [optional] 
 **schematic_id** | **int** | schematic_id integer | [optional] 
 **type_id** | **int** | type_id integer | 
+**latitude** | **float** | latitude number | 
+**expiry_time** | [**\DateTime**](\DateTime.md) | expiry_time string | [optional] 
+**pin_id** | **int** | pin_id integer | 
+**extractor_details** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails**](GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.md) |  | [optional] 
+**longitude** | **float** | longitude number | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

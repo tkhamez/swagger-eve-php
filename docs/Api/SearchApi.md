@@ -29,15 +29,15 @@ $apiInstance = new Swagger\Client\Eve\Api\SearchApi(
     new GuzzleHttp\Client(),
     $config
 );
-$categories = array("categories_example"); // string[] | Type of entities to search for
+$categories = array('categories_example'); // string[] | Type of entities to search for
 $character_id = 56; // int | An EVE character ID
-$search = "search_example"; // string | The string to search on
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$search = 'search_example'; // string | The string to search on
+$accept_language = 'en-us'; // string | Language to use in the response
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
 $strict = false; // bool | Whether the search should be a strict match
-$token = "token_example"; // string | Access token to use if unable to set a header
+$token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
     $result = $apiInstance->getCharactersCharacterIdSearch($categories, $character_id, $search, $accept_language, $datasource, $if_none_match, $language, $strict, $token);
@@ -55,10 +55,10 @@ Name | Type | Description  | Notes
  **categories** | [**string[]**](../Model/string.md)| Type of entities to search for |
  **character_id** | **int**| An EVE character ID |
  **search** | **string**| The string to search on |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
  **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -94,12 +94,12 @@ $apiInstance = new Swagger\Client\Eve\Api\SearchApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$categories = array("categories_example"); // string[] | Type of entities to search for
-$search = "search_example"; // string | The string to search on
-$accept_language = "en-us"; // string | Language to use in the response
-$datasource = "tranquility"; // string | The server name you would like data from
-$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = "en-us"; // string | Language to use in the response, takes precedence over Accept-Language
+$categories = array('categories_example'); // string[] | Type of entities to search for
+$search = 'search_example'; // string | The string to search on
+$accept_language = 'en-us'; // string | Language to use in the response
+$datasource = 'tranquility'; // string | The server name you would like data from
+$if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
 $strict = false; // bool | Whether the search should be a strict match
 
 try {
@@ -117,10 +117,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **categories** | [**string[]**](../Model/string.md)| Type of entities to search for |
  **search** | **string**| The string to search on |
- **accept_language** | **string**| Language to use in the response | [optional] [default to en-us]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
  **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
 
 ### Return type
@@ -133,7 +133,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
