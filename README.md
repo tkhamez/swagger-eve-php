@@ -25,7 +25,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 ```
 {
   "require": {
-    "tkhamez/swagger-eve-php": "*@dev"
+    "tkhamez/swagger-eve-php": "~2.0.0"
   }
 }
 ```
