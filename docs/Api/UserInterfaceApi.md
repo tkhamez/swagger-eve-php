@@ -239,7 +239,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUiOpenwindowNewmail**
-> postUiOpenwindowNewmail($body$datasource, $token)
+> postUiOpenwindowNewmail($body, $datasource, $token)
 
 Open New Mail Window
 
@@ -264,7 +264,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->postUiOpenwindowNewmail($body$datasource, $token);
+    $apiInstance->postUiOpenwindowNewmail($body, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling UserInterfaceApi->postUiOpenwindowNewmail: ', $e->getMessage(), PHP_EOL;
 }

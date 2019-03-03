@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putCharactersCharacterIdCalendarEventId**
-> putCharactersCharacterIdCalendarEventId($body$character_id, $event_id, $datasource, $token)
+> putCharactersCharacterIdCalendarEventId($body, $character_id, $event_id, $datasource, $token)
 
 Respond to an event
 
@@ -220,7 +220,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->putCharactersCharacterIdCalendarEventId($body$character_id, $event_id, $datasource, $token);
+    $apiInstance->putCharactersCharacterIdCalendarEventId($body, $character_id, $event_id, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling CalendarApi->putCharactersCharacterIdCalendarEventId: ', $e->getMessage(), PHP_EOL;
 }

@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdContacts**
-> int[] postCharactersCharacterIdContacts($body$character_id, $standing, $datasource, $label_ids, $token, $watched)
+> int[] postCharactersCharacterIdContacts($body, $standing, $character_id, $datasource, $label_ids, $token, $watched)
 
 Add contacts
 
@@ -454,15 +454,15 @@ $apiInstance = new Swagger\Client\Eve\Api\ContactsApi(
     $config
 );
 $body = array(56); // int[] | A list of contacts
-$character_id = 56; // int | An EVE character ID
 $standing = 3.4; // float | Standing for the contact
+$character_id = 56; // int | An EVE character ID
 $datasource = "datasource_example"; // string | The server name you would like data from
 $label_ids = array(56); // int[] | Add custom labels to the new contact
 $token = "token_example"; // string | Access token to use if unable to set a header
 $watched = True; // bool | Whether the contact should be watched, note this is only effective on characters
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdContacts($body$character_id, $standing, $datasource, $label_ids, $token, $watched);
+    $result = $apiInstance->postCharactersCharacterIdContacts($body, $standing, $character_id, $datasource, $label_ids, $token, $watched);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ContactsApi->postCharactersCharacterIdContacts: ', $e->getMessage(), PHP_EOL;
@@ -475,8 +475,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**int[]**](../Model/int.md)| A list of contacts |
- **character_id** | [**int**](../Model/.md)| An EVE character ID |
  **standing** | [**float**](../Model/.md)| Standing for the contact |
+ **character_id** | [**int**](../Model/.md)| An EVE character ID |
  **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
  **label_ids** | [**int[]**](../Model/int.md)| Add custom labels to the new contact | [optional]
  **token** | [**string**](../Model/.md)| Access token to use if unable to set a header | [optional]
@@ -498,7 +498,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putCharactersCharacterIdContacts**
-> putCharactersCharacterIdContacts($body$character_id, $standing, $datasource, $label_ids, $token, $watched)
+> putCharactersCharacterIdContacts($body, $standing, $character_id, $datasource, $label_ids, $token, $watched)
 
 Edit contacts
 
@@ -519,15 +519,15 @@ $apiInstance = new Swagger\Client\Eve\Api\ContactsApi(
     $config
 );
 $body = array(56); // int[] | A list of contacts
-$character_id = 56; // int | An EVE character ID
 $standing = 3.4; // float | Standing for the contact
+$character_id = 56; // int | An EVE character ID
 $datasource = "datasource_example"; // string | The server name you would like data from
 $label_ids = array(56); // int[] | Add custom labels to the contact
 $token = "token_example"; // string | Access token to use if unable to set a header
 $watched = True; // bool | Whether the contact should be watched, note this is only effective on characters
 
 try {
-    $apiInstance->putCharactersCharacterIdContacts($body$character_id, $standing, $datasource, $label_ids, $token, $watched);
+    $apiInstance->putCharactersCharacterIdContacts($body, $standing, $character_id, $datasource, $label_ids, $token, $watched);
 } catch (Exception $e) {
     echo 'Exception when calling ContactsApi->putCharactersCharacterIdContacts: ', $e->getMessage(), PHP_EOL;
 }
@@ -539,8 +539,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**int[]**](../Model/int.md)| A list of contacts |
- **character_id** | [**int**](../Model/.md)| An EVE character ID |
  **standing** | [**float**](../Model/.md)| Standing for the contact |
+ **character_id** | [**int**](../Model/.md)| An EVE character ID |
  **datasource** | [**string**](../Model/.md)| The server name you would like data from | [optional]
  **label_ids** | [**int[]**](../Model/int.md)| Add custom labels to the contact | [optional]
  **token** | [**string**](../Model/.md)| Access token to use if unable to set a header | [optional]

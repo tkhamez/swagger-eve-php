@@ -71,7 +71,7 @@ void (empty response body)
 
 Get fittings
 
-Return fittings of a character  ---  This route is cached for up to 300 seconds
+Return fittings of a character  ---  This route is cached for up to 300 seconds  --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/fittings/)
 
 ### Example
 ```php
@@ -126,11 +126,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdFittings**
-> object postCharactersCharacterIdFittings($body$character_id, $datasource, $token)
+> object postCharactersCharacterIdFittings($body, $character_id, $datasource, $token)
 
 Create fitting
 
-Save a new fitting for a character  ---
+Save a new fitting for a character  ---  Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#POST-/characters/{character_id}/fittings/)
 
 ### Example
 ```php
@@ -152,7 +152,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdFittings($body$character_id, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdFittings($body, $character_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->postCharactersCharacterIdFittings: ', $e->getMessage(), PHP_EOL;

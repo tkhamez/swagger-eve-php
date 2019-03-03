@@ -438,7 +438,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postFleetsFleetIdMembers**
-> postFleetsFleetIdMembers($body$fleet_id, $datasource, $token)
+> postFleetsFleetIdMembers($body, $fleet_id, $datasource, $token)
 
 Create fleet invitation
 
@@ -464,7 +464,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->postFleetsFleetIdMembers($body$fleet_id, $datasource, $token);
+    $apiInstance->postFleetsFleetIdMembers($body, $fleet_id, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->postFleetsFleetIdMembers: ', $e->getMessage(), PHP_EOL;
 }
@@ -612,7 +612,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putFleetsFleetId**
-> putFleetsFleetId($body$fleet_id, $datasource, $token)
+> putFleetsFleetId($body, $fleet_id, $datasource, $token)
 
 Update fleet
 
@@ -638,7 +638,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->putFleetsFleetId($body$fleet_id, $datasource, $token);
+    $apiInstance->putFleetsFleetId($body, $fleet_id, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetId: ', $e->getMessage(), PHP_EOL;
 }
@@ -670,7 +670,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putFleetsFleetIdMembersMemberId**
-> putFleetsFleetIdMembersMemberId($body$fleet_id, $member_id, $datasource, $token)
+> putFleetsFleetIdMembersMemberId($body, $fleet_id, $member_id, $datasource, $token)
 
 Move fleet member
 
@@ -697,7 +697,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->putFleetsFleetIdMembersMemberId($body$fleet_id, $member_id, $datasource, $token);
+    $apiInstance->putFleetsFleetIdMembersMemberId($body, $fleet_id, $member_id, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdMembersMemberId: ', $e->getMessage(), PHP_EOL;
 }
@@ -730,7 +730,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putFleetsFleetIdSquadsSquadId**
-> putFleetsFleetIdSquadsSquadId($body$fleet_id, $squad_id, $datasource, $token)
+> putFleetsFleetIdSquadsSquadId($body, $fleet_id, $squad_id, $datasource, $token)
 
 Rename fleet squad
 
@@ -757,7 +757,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->putFleetsFleetIdSquadsSquadId($body$fleet_id, $squad_id, $datasource, $token);
+    $apiInstance->putFleetsFleetIdSquadsSquadId($body, $fleet_id, $squad_id, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdSquadsSquadId: ', $e->getMessage(), PHP_EOL;
 }
@@ -790,7 +790,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putFleetsFleetIdWingsWingId**
-> putFleetsFleetIdWingsWingId($body$fleet_id, $wing_id, $datasource, $token)
+> putFleetsFleetIdWingsWingId($body, $fleet_id, $wing_id, $datasource, $token)
 
 Rename fleet wing
 
@@ -817,7 +817,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->putFleetsFleetIdWingsWingId($body$fleet_id, $wing_id, $datasource, $token);
+    $apiInstance->putFleetsFleetIdWingsWingId($body, $fleet_id, $wing_id, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdWingsWingId: ', $e->getMessage(), PHP_EOL;
 }

@@ -33,7 +33,7 @@ Method | HTTP request | Description
 [**getUniverseTypes**](UniverseApi.md#getUniverseTypes) | **GET** /v1/universe/types/ | Get types
 [**getUniverseTypesTypeId**](UniverseApi.md#getUniverseTypesTypeId) | **GET** /v3/universe/types/{type_id}/ | Get type information
 [**postUniverseIds**](UniverseApi.md#postUniverseIds) | **POST** /v1/universe/ids/ | Bulk names to IDs
-[**postUniverseNames**](UniverseApi.md#postUniverseNames) | **POST** /v2/universe/names/ | Get names and categories for a set of ID&#x27;s
+[**postUniverseNames**](UniverseApi.md#postUniverseNames) | **POST** /v2/universe/names/ | Get names and categories for a set of IDs
 
 # **getUniverseAncestries**
 > object[] getUniverseAncestries($accept_language, $datasource, $if_none_match, $language)
@@ -1544,7 +1544,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseIds**
-> object postUniverseIds($body$accept_language, $datasource, $language)
+> object postUniverseIds($body, $accept_language, $datasource, $language)
 
 Bulk names to IDs
 
@@ -1566,7 +1566,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $language = "language_example"; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
-    $result = $apiInstance->postUniverseIds($body$accept_language, $datasource, $language);
+    $result = $apiInstance->postUniverseIds($body, $accept_language, $datasource, $language);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->postUniverseIds: ', $e->getMessage(), PHP_EOL;
@@ -1599,11 +1599,11 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseNames**
-> object[] postUniverseNames($body$datasource)
+> object[] postUniverseNames($body, $datasource)
 
-Get names and categories for a set of ID's
+Get names and categories for a set of IDs
 
-Resolve a set of IDs to names and categories. Supported ID's for resolving are: Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types  ---
+Resolve a set of IDs to names and categories. Supported ID's for resolving are: Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types  ---  Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#POST-/universe/names/)
 
 ### Example
 ```php
@@ -1619,7 +1619,7 @@ $body = array(56); // int[] | The ids to resolve
 $datasource = "datasource_example"; // string | The server name you would like data from
 
 try {
-    $result = $apiInstance->postUniverseNames($body$datasource);
+    $result = $apiInstance->postUniverseNames($body, $datasource);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->postUniverseNames: ', $e->getMessage(), PHP_EOL;

@@ -772,7 +772,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersAffiliation**
-> object[] postCharactersAffiliation($body$datasource)
+> object[] postCharactersAffiliation($body, $datasource)
 
 Character affiliation
 
@@ -792,7 +792,7 @@ $body = array(56); // int[] | The character IDs to fetch affiliations for. All c
 $datasource = "datasource_example"; // string | The server name you would like data from
 
 try {
-    $result = $apiInstance->postCharactersAffiliation($body$datasource);
+    $result = $apiInstance->postCharactersAffiliation($body, $datasource);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CharacterApi->postCharactersAffiliation: ', $e->getMessage(), PHP_EOL;
@@ -823,7 +823,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdCspa**
-> float postCharactersCharacterIdCspa($body$character_id, $datasource, $token)
+> float postCharactersCharacterIdCspa($body, $character_id, $datasource, $token)
 
 Calculate a CSPA charge cost
 
@@ -849,7 +849,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdCspa($body$character_id, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdCspa($body, $character_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CharacterApi->postCharactersCharacterIdCspa: ', $e->getMessage(), PHP_EOL;

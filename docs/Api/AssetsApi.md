@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdAssetsLocations**
-> object[] postCharactersCharacterIdAssetsLocations($body$character_id, $datasource, $token)
+> object[] postCharactersCharacterIdAssetsLocations($body, $character_id, $datasource, $token)
 
 Get character asset locations
 
@@ -160,7 +160,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdAssetsLocations($body$character_id, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdAssetsLocations($body, $character_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdAssetsNames**
-> object[] postCharactersCharacterIdAssetsNames($body$character_id, $datasource, $token)
+> object[] postCharactersCharacterIdAssetsNames($body, $character_id, $datasource, $token)
 
 Get character asset names
 
@@ -219,7 +219,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdAssetsNames($body$character_id, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdAssetsNames($body, $character_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsNames: ', $e->getMessage(), PHP_EOL;
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCorporationsCorporationIdAssetsLocations**
-> object[] postCorporationsCorporationIdAssetsLocations($body$corporation_id, $datasource, $token)
+> object[] postCorporationsCorporationIdAssetsLocations($body, $corporation_id, $datasource, $token)
 
 Get corporation asset locations
 
@@ -278,7 +278,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCorporationsCorporationIdAssetsLocations($body$corporation_id, $datasource, $token);
+    $result = $apiInstance->postCorporationsCorporationIdAssetsLocations($body, $corporation_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCorporationsCorporationIdAssetsNames**
-> object[] postCorporationsCorporationIdAssetsNames($body$corporation_id, $datasource, $token)
+> object[] postCorporationsCorporationIdAssetsNames($body, $corporation_id, $datasource, $token)
 
 Get corporation asset names
 
@@ -337,7 +337,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCorporationsCorporationIdAssetsNames($body$corporation_id, $datasource, $token);
+    $result = $apiInstance->postCorporationsCorporationIdAssetsNames($body, $corporation_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsNames: ', $e->getMessage(), PHP_EOL;

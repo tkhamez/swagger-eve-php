@@ -373,7 +373,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdMail**
-> int postCharactersCharacterIdMail($body$character_id, $datasource, $token)
+> int postCharactersCharacterIdMail($body, $character_id, $datasource, $token)
 
 Send a new mail
 
@@ -399,7 +399,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdMail($body$character_id, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdMail($body, $character_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMail: ', $e->getMessage(), PHP_EOL;
@@ -432,7 +432,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdMailLabels**
-> int postCharactersCharacterIdMailLabels($body$character_id, $datasource, $token)
+> int postCharactersCharacterIdMailLabels($body, $character_id, $datasource, $token)
 
 Create a mail label
 
@@ -458,7 +458,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdMailLabels($body$character_id, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdMailLabels($body, $character_id, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMailLabels: ', $e->getMessage(), PHP_EOL;
@@ -491,7 +491,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putCharactersCharacterIdMailMailId**
-> putCharactersCharacterIdMailMailId($body$character_id, $mail_id, $datasource, $token)
+> putCharactersCharacterIdMailMailId($body, $character_id, $mail_id, $datasource, $token)
 
 Update metadata about a mail
 
@@ -518,7 +518,7 @@ $datasource = "datasource_example"; // string | The server name you would like d
 $token = "token_example"; // string | Access token to use if unable to set a header
 
 try {
-    $apiInstance->putCharactersCharacterIdMailMailId($body$character_id, $mail_id, $datasource, $token);
+    $apiInstance->putCharactersCharacterIdMailMailId($body, $character_id, $mail_id, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->putCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
 }

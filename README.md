@@ -70,6 +70,54 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliances: ', $e->getMessage(), PHP_EOL;
 }
+
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$alliance_id = 56; // int | An EVE alliance ID
+$datasource = "datasource_example"; // string | The server name you would like data from
+$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+
+try {
+    $result = $apiInstance->getAlliancesAllianceId($alliance_id, $datasource, $if_none_match);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AllianceApi->getAlliancesAllianceId: ', $e->getMessage(), PHP_EOL;
+}
+
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$alliance_id = 56; // int | An EVE alliance ID
+$datasource = "datasource_example"; // string | The server name you would like data from
+$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+
+try {
+    $result = $apiInstance->getAlliancesAllianceIdCorporations($alliance_id, $datasource, $if_none_match);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AllianceApi->getAlliancesAllianceIdCorporations: ', $e->getMessage(), PHP_EOL;
+}
+
+$apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$alliance_id = 56; // int | An EVE alliance ID
+$datasource = "datasource_example"; // string | The server name you would like data from
+$if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
+
+try {
+    $result = $apiInstance->getAlliancesAllianceIdIcons($alliance_id, $datasource, $if_none_match);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AllianceApi->getAlliancesAllianceIdIcons: ', $e->getMessage(), PHP_EOL;
+}
 ?>
 ```
 
@@ -151,7 +199,7 @@ Class | Method | HTTP request | Description
 *CorporationApi* | [**getCorporationsCorporationIdStandings**](docs/Api/CorporationApi.md#getcorporationscorporationidstandings) | **GET** /v1/corporations/{corporation_id}/standings/ | Get corporation standings
 *CorporationApi* | [**getCorporationsCorporationIdStarbases**](docs/Api/CorporationApi.md#getcorporationscorporationidstarbases) | **GET** /v1/corporations/{corporation_id}/starbases/ | Get corporation starbases (POSes)
 *CorporationApi* | [**getCorporationsCorporationIdStarbasesStarbaseId**](docs/Api/CorporationApi.md#getcorporationscorporationidstarbasesstarbaseid) | **GET** /v1/corporations/{corporation_id}/starbases/{starbase_id}/ | Get starbase (POS) detail
-*CorporationApi* | [**getCorporationsCorporationIdStructures**](docs/Api/CorporationApi.md#getcorporationscorporationidstructures) | **GET** /v2/corporations/{corporation_id}/structures/ | Get corporation structures
+*CorporationApi* | [**getCorporationsCorporationIdStructures**](docs/Api/CorporationApi.md#getcorporationscorporationidstructures) | **GET** /v3/corporations/{corporation_id}/structures/ | Get corporation structures
 *CorporationApi* | [**getCorporationsCorporationIdTitles**](docs/Api/CorporationApi.md#getcorporationscorporationidtitles) | **GET** /v1/corporations/{corporation_id}/titles/ | Get corporation titles
 *CorporationApi* | [**getCorporationsNpccorps**](docs/Api/CorporationApi.md#getcorporationsnpccorps) | **GET** /v1/corporations/npccorps/ | Get npc corporations
 *DogmaApi* | [**getDogmaAttributes**](docs/Api/DogmaApi.md#getdogmaattributes) | **GET** /v1/dogma/attributes/ | Get attributes
@@ -270,17 +318,17 @@ Class | Method | HTTP request | Description
 *UniverseApi* | [**getUniverseTypes**](docs/Api/UniverseApi.md#getuniversetypes) | **GET** /v1/universe/types/ | Get types
 *UniverseApi* | [**getUniverseTypesTypeId**](docs/Api/UniverseApi.md#getuniversetypestypeid) | **GET** /v3/universe/types/{type_id}/ | Get type information
 *UniverseApi* | [**postUniverseIds**](docs/Api/UniverseApi.md#postuniverseids) | **POST** /v1/universe/ids/ | Bulk names to IDs
-*UniverseApi* | [**postUniverseNames**](docs/Api/UniverseApi.md#postuniversenames) | **POST** /v2/universe/names/ | Get names and categories for a set of ID&#x27;s
+*UniverseApi* | [**postUniverseNames**](docs/Api/UniverseApi.md#postuniversenames) | **POST** /v2/universe/names/ | Get names and categories for a set of IDs
 *UserInterfaceApi* | [**postUiAutopilotWaypoint**](docs/Api/UserInterfaceApi.md#postuiautopilotwaypoint) | **POST** /v2/ui/autopilot/waypoint/ | Set Autopilot Waypoint
 *UserInterfaceApi* | [**postUiOpenwindowContract**](docs/Api/UserInterfaceApi.md#postuiopenwindowcontract) | **POST** /v1/ui/openwindow/contract/ | Open Contract Window
 *UserInterfaceApi* | [**postUiOpenwindowInformation**](docs/Api/UserInterfaceApi.md#postuiopenwindowinformation) | **POST** /v1/ui/openwindow/information/ | Open Information Window
 *UserInterfaceApi* | [**postUiOpenwindowMarketdetails**](docs/Api/UserInterfaceApi.md#postuiopenwindowmarketdetails) | **POST** /v1/ui/openwindow/marketdetails/ | Open Market Details
 *UserInterfaceApi* | [**postUiOpenwindowNewmail**](docs/Api/UserInterfaceApi.md#postuiopenwindownewmail) | **POST** /v1/ui/openwindow/newmail/ | Open New Mail Window
 *WalletApi* | [**getCharactersCharacterIdWallet**](docs/Api/WalletApi.md#getcharacterscharacteridwallet) | **GET** /v1/characters/{character_id}/wallet/ | Get a character&#x27;s wallet balance
-*WalletApi* | [**getCharactersCharacterIdWalletJournal**](docs/Api/WalletApi.md#getcharacterscharacteridwalletjournal) | **GET** /v4/characters/{character_id}/wallet/journal/ | Get character wallet journal
+*WalletApi* | [**getCharactersCharacterIdWalletJournal**](docs/Api/WalletApi.md#getcharacterscharacteridwalletjournal) | **GET** /v5/characters/{character_id}/wallet/journal/ | Get character wallet journal
 *WalletApi* | [**getCharactersCharacterIdWalletTransactions**](docs/Api/WalletApi.md#getcharacterscharacteridwallettransactions) | **GET** /v1/characters/{character_id}/wallet/transactions/ | Get wallet transactions
 *WalletApi* | [**getCorporationsCorporationIdWallets**](docs/Api/WalletApi.md#getcorporationscorporationidwallets) | **GET** /v1/corporations/{corporation_id}/wallets/ | Returns a corporation&#x27;s wallet balance
-*WalletApi* | [**getCorporationsCorporationIdWalletsDivisionJournal**](docs/Api/WalletApi.md#getcorporationscorporationidwalletsdivisionjournal) | **GET** /v3/corporations/{corporation_id}/wallets/{division}/journal/ | Get corporation wallet journal
+*WalletApi* | [**getCorporationsCorporationIdWalletsDivisionJournal**](docs/Api/WalletApi.md#getcorporationscorporationidwalletsdivisionjournal) | **GET** /v4/corporations/{corporation_id}/wallets/{division}/journal/ | Get corporation wallet journal
 *WalletApi* | [**getCorporationsCorporationIdWalletsDivisionTransactions**](docs/Api/WalletApi.md#getcorporationscorporationidwalletsdivisiontransactions) | **GET** /v1/corporations/{corporation_id}/wallets/{division}/transactions/ | Get corporation wallet transactions
 *WarsApi* | [**getWars**](docs/Api/WarsApi.md#getwars) | **GET** /v1/wars/ | List wars
 *WarsApi* | [**getWarsWarId**](docs/Api/WarsApi.md#getwarswarid) | **GET** /v1/wars/{war_id}/ | Get war information
@@ -305,76 +353,10 @@ Class | Method | HTTP request | Description
 - **Flow**: implicit
 - **Authorization URL**: https://login.eveonline.com/v2/oauth/authorize
 - **Scopes**: 
-
- - **esi-alliances.read_contacts.v1**: EVE SSO scope esi-alliances.read_contacts.v1
- - **esi-assets.read_assets.v1**: EVE SSO scope esi-assets.read_assets.v1
- - **esi-assets.read_corporation_assets.v1**: EVE SSO scope esi-assets.read_corporation_assets.v1
- - **esi-bookmarks.read_character_bookmarks.v1**: EVE SSO scope esi-bookmarks.read_character_bookmarks.v1
- - **esi-bookmarks.read_corporation_bookmarks.v1**: EVE SSO scope esi-bookmarks.read_corporation_bookmarks.v1
- - **esi-calendar.read_calendar_events.v1**: EVE SSO scope esi-calendar.read_calendar_events.v1
- - **esi-calendar.respond_calendar_events.v1**: EVE SSO scope esi-calendar.respond_calendar_events.v1
- - **esi-characters.read_agents_research.v1**: EVE SSO scope esi-characters.read_agents_research.v1
- - **esi-characters.read_blueprints.v1**: EVE SSO scope esi-characters.read_blueprints.v1
- - **esi-characters.read_contacts.v1**: EVE SSO scope esi-characters.read_contacts.v1
- - **esi-characters.read_corporation_roles.v1**: EVE SSO scope esi-characters.read_corporation_roles.v1
- - **esi-characters.read_fatigue.v1**: EVE SSO scope esi-characters.read_fatigue.v1
- - **esi-characters.read_fw_stats.v1**: EVE SSO scope esi-characters.read_fw_stats.v1
- - **esi-characters.read_loyalty.v1**: EVE SSO scope esi-characters.read_loyalty.v1
- - **esi-characters.read_medals.v1**: EVE SSO scope esi-characters.read_medals.v1
- - **esi-characters.read_notifications.v1**: EVE SSO scope esi-characters.read_notifications.v1
- - **esi-characters.read_opportunities.v1**: EVE SSO scope esi-characters.read_opportunities.v1
- - **esi-characters.read_standings.v1**: EVE SSO scope esi-characters.read_standings.v1
- - **esi-characters.read_titles.v1**: EVE SSO scope esi-characters.read_titles.v1
- - **esi-characters.write_contacts.v1**: EVE SSO scope esi-characters.write_contacts.v1
- - **esi-characterstats.read.v1**: EVE SSO scope esi-characterstats.read.v1
- - **esi-clones.read_clones.v1**: EVE SSO scope esi-clones.read_clones.v1
- - **esi-clones.read_implants.v1**: EVE SSO scope esi-clones.read_implants.v1
- - **esi-contracts.read_character_contracts.v1**: EVE SSO scope esi-contracts.read_character_contracts.v1
- - **esi-contracts.read_corporation_contracts.v1**: EVE SSO scope esi-contracts.read_corporation_contracts.v1
- - **esi-corporations.read_blueprints.v1**: EVE SSO scope esi-corporations.read_blueprints.v1
- - **esi-corporations.read_contacts.v1**: EVE SSO scope esi-corporations.read_contacts.v1
- - **esi-corporations.read_container_logs.v1**: EVE SSO scope esi-corporations.read_container_logs.v1
- - **esi-corporations.read_corporation_membership.v1**: EVE SSO scope esi-corporations.read_corporation_membership.v1
- - **esi-corporations.read_divisions.v1**: EVE SSO scope esi-corporations.read_divisions.v1
- - **esi-corporations.read_facilities.v1**: EVE SSO scope esi-corporations.read_facilities.v1
- - **esi-corporations.read_fw_stats.v1**: EVE SSO scope esi-corporations.read_fw_stats.v1
- - **esi-corporations.read_medals.v1**: EVE SSO scope esi-corporations.read_medals.v1
- - **esi-corporations.read_standings.v1**: EVE SSO scope esi-corporations.read_standings.v1
- - **esi-corporations.read_starbases.v1**: EVE SSO scope esi-corporations.read_starbases.v1
- - **esi-corporations.read_structures.v1**: EVE SSO scope esi-corporations.read_structures.v1
- - **esi-corporations.read_titles.v1**: EVE SSO scope esi-corporations.read_titles.v1
- - **esi-corporations.track_members.v1**: EVE SSO scope esi-corporations.track_members.v1
- - **esi-fittings.read_fittings.v1**: EVE SSO scope esi-fittings.read_fittings.v1
- - **esi-fittings.write_fittings.v1**: EVE SSO scope esi-fittings.write_fittings.v1
- - **esi-fleets.read_fleet.v1**: EVE SSO scope esi-fleets.read_fleet.v1
- - **esi-fleets.write_fleet.v1**: EVE SSO scope esi-fleets.write_fleet.v1
- - **esi-industry.read_character_jobs.v1**: EVE SSO scope esi-industry.read_character_jobs.v1
- - **esi-industry.read_character_mining.v1**: EVE SSO scope esi-industry.read_character_mining.v1
- - **esi-industry.read_corporation_jobs.v1**: EVE SSO scope esi-industry.read_corporation_jobs.v1
- - **esi-industry.read_corporation_mining.v1**: EVE SSO scope esi-industry.read_corporation_mining.v1
- - **esi-killmails.read_corporation_killmails.v1**: EVE SSO scope esi-killmails.read_corporation_killmails.v1
- - **esi-killmails.read_killmails.v1**: EVE SSO scope esi-killmails.read_killmails.v1
- - **esi-location.read_location.v1**: EVE SSO scope esi-location.read_location.v1
- - **esi-location.read_online.v1**: EVE SSO scope esi-location.read_online.v1
- - **esi-location.read_ship_type.v1**: EVE SSO scope esi-location.read_ship_type.v1
- - **esi-mail.organize_mail.v1**: EVE SSO scope esi-mail.organize_mail.v1
- - **esi-mail.read_mail.v1**: EVE SSO scope esi-mail.read_mail.v1
- - **esi-mail.send_mail.v1**: EVE SSO scope esi-mail.send_mail.v1
- - **esi-markets.read_character_orders.v1**: EVE SSO scope esi-markets.read_character_orders.v1
- - **esi-markets.read_corporation_orders.v1**: EVE SSO scope esi-markets.read_corporation_orders.v1
- - **esi-markets.structure_markets.v1**: EVE SSO scope esi-markets.structure_markets.v1
- - **esi-planets.manage_planets.v1**: EVE SSO scope esi-planets.manage_planets.v1
- - **esi-planets.read_customs_offices.v1**: EVE SSO scope esi-planets.read_customs_offices.v1
- - **esi-search.search_structures.v1**: EVE SSO scope esi-search.search_structures.v1
- - **esi-skills.read_skillqueue.v1**: EVE SSO scope esi-skills.read_skillqueue.v1
- - **esi-skills.read_skills.v1**: EVE SSO scope esi-skills.read_skills.v1
- - **esi-ui.open_window.v1**: EVE SSO scope esi-ui.open_window.v1
- - **esi-ui.write_waypoint.v1**: EVE SSO scope esi-ui.write_waypoint.v1
- - **esi-universe.read_structures.v1**: EVE SSO scope esi-universe.read_structures.v1
- - **esi-wallet.read_character_wallet.v1**: EVE SSO scope esi-wallet.read_character_wallet.v1
- - **esi-wallet.read_corporation_wallets.v1**: EVE SSO scope esi-wallet.read_corporation_wallets.v1
+ - ****: 
 
 
 ## Author
+
 
 
