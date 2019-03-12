@@ -1,6 +1,6 @@
 {
     "invokerPackage" : "Swagger\\Client\\Eve",
-    "composerVendorName" : "tkhamez",
-    "composerProjectName" : "swagger-eve-php"
+    "gitUserId" : "tkhamez",
+    "gitRepoId" : "swagger-eve-php"
 }
 

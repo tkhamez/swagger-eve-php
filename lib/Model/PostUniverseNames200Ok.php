@@ -177,6 +177,7 @@ class PostUniverseNames200Ok implements ModelInterface, ArrayAccess
     const CATEGORY_REGION = 'region';
     const CATEGORY_SOLAR_SYSTEM = 'solar_system';
     const CATEGORY_STATION = 'station';
+    const CATEGORY_FACTION = 'faction';
     
 
     
@@ -196,6 +197,7 @@ class PostUniverseNames200Ok implements ModelInterface, ArrayAccess
             self::CATEGORY_REGION,
             self::CATEGORY_SOLAR_SYSTEM,
             self::CATEGORY_STATION,
+            self::CATEGORY_FACTION,
         ];
     }
     

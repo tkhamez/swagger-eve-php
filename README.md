@@ -1,10 +1,3 @@
-### Versioning scheme since 1.0.0:
-* patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json),
-  refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md)
-  (note, however, that the date is not always correct there)
-* minor: switched to a new minor version of the generator library
-* major: switched to a new major version of the generator library or switched to another generator library
-
 # OpenAPIClient-php
 An OpenAPI for EVE Online
 
@@ -24,8 +17,14 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 
 ```
 {
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/tkhamez/swagger-eve-php.git"
+    }
+  ],
   "require": {
-    "tkhamez/swagger-eve-php": "~2.0.0"
+    "tkhamez/swagger-eve-php": "*@dev"
   }
 }
 ```
@@ -272,7 +271,7 @@ Class | Method | HTTP request | Description
 *UniverseApi* | [**getUniverseTypes**](docs/Api/UniverseApi.md#getuniversetypes) | **GET** /v1/universe/types/ | Get types
 *UniverseApi* | [**getUniverseTypesTypeId**](docs/Api/UniverseApi.md#getuniversetypestypeid) | **GET** /v3/universe/types/{type_id}/ | Get type information
 *UniverseApi* | [**postUniverseIds**](docs/Api/UniverseApi.md#postuniverseids) | **POST** /v1/universe/ids/ | Bulk names to IDs
-*UniverseApi* | [**postUniverseNames**](docs/Api/UniverseApi.md#postuniversenames) | **POST** /v2/universe/names/ | Get names and categories for a set of IDs
+*UniverseApi* | [**postUniverseNames**](docs/Api/UniverseApi.md#postuniversenames) | **POST** /v3/universe/names/ | Get names and categories for a set of IDs
 *UserInterfaceApi* | [**postUiAutopilotWaypoint**](docs/Api/UserInterfaceApi.md#postuiautopilotwaypoint) | **POST** /v2/ui/autopilot/waypoint/ | Set Autopilot Waypoint
 *UserInterfaceApi* | [**postUiOpenwindowContract**](docs/Api/UserInterfaceApi.md#postuiopenwindowcontract) | **POST** /v1/ui/openwindow/contract/ | Open Contract Window
 *UserInterfaceApi* | [**postUiOpenwindowInformation**](docs/Api/UserInterfaceApi.md#postuiopenwindowinformation) | **POST** /v1/ui/openwindow/information/ | Open Information Window

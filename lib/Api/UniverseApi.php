@@ -11979,7 +11979,7 @@ class UniverseApi
             );
         }
 
-        $resourcePath = '/v2/universe/names/';
+        $resourcePath = '/v3/universe/names/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
