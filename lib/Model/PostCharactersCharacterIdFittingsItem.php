@@ -58,7 +58,7 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'flag' => 'int',
+        'flag' => 'string',
         'quantity' => 'int',
         'type_id' => 'int'
     ];
@@ -69,7 +69,7 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPIFormats = [
-        'flag' => 'int32',
+        'flag' => null,
         'quantity' => 'int32',
         'type_id' => 'int32'
     ];
@@ -169,8 +169,105 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
         return self::$openAPIModelName;
     }
 
+    const FLAG_CARGO = 'Cargo';
+    const FLAG_DRONE_BAY = 'DroneBay';
+    const FLAG_FIGHTER_BAY = 'FighterBay';
+    const FLAG_HI_SLOT0 = 'HiSlot0';
+    const FLAG_HI_SLOT1 = 'HiSlot1';
+    const FLAG_HI_SLOT2 = 'HiSlot2';
+    const FLAG_HI_SLOT3 = 'HiSlot3';
+    const FLAG_HI_SLOT4 = 'HiSlot4';
+    const FLAG_HI_SLOT5 = 'HiSlot5';
+    const FLAG_HI_SLOT6 = 'HiSlot6';
+    const FLAG_HI_SLOT7 = 'HiSlot7';
+    const FLAG_INVALID = 'Invalid';
+    const FLAG_LO_SLOT0 = 'LoSlot0';
+    const FLAG_LO_SLOT1 = 'LoSlot1';
+    const FLAG_LO_SLOT2 = 'LoSlot2';
+    const FLAG_LO_SLOT3 = 'LoSlot3';
+    const FLAG_LO_SLOT4 = 'LoSlot4';
+    const FLAG_LO_SLOT5 = 'LoSlot5';
+    const FLAG_LO_SLOT6 = 'LoSlot6';
+    const FLAG_LO_SLOT7 = 'LoSlot7';
+    const FLAG_MED_SLOT0 = 'MedSlot0';
+    const FLAG_MED_SLOT1 = 'MedSlot1';
+    const FLAG_MED_SLOT2 = 'MedSlot2';
+    const FLAG_MED_SLOT3 = 'MedSlot3';
+    const FLAG_MED_SLOT4 = 'MedSlot4';
+    const FLAG_MED_SLOT5 = 'MedSlot5';
+    const FLAG_MED_SLOT6 = 'MedSlot6';
+    const FLAG_MED_SLOT7 = 'MedSlot7';
+    const FLAG_RIG_SLOT0 = 'RigSlot0';
+    const FLAG_RIG_SLOT1 = 'RigSlot1';
+    const FLAG_RIG_SLOT2 = 'RigSlot2';
+    const FLAG_SERVICE_SLOT0 = 'ServiceSlot0';
+    const FLAG_SERVICE_SLOT1 = 'ServiceSlot1';
+    const FLAG_SERVICE_SLOT2 = 'ServiceSlot2';
+    const FLAG_SERVICE_SLOT3 = 'ServiceSlot3';
+    const FLAG_SERVICE_SLOT4 = 'ServiceSlot4';
+    const FLAG_SERVICE_SLOT5 = 'ServiceSlot5';
+    const FLAG_SERVICE_SLOT6 = 'ServiceSlot6';
+    const FLAG_SERVICE_SLOT7 = 'ServiceSlot7';
+    const FLAG_SUB_SYSTEM_SLOT0 = 'SubSystemSlot0';
+    const FLAG_SUB_SYSTEM_SLOT1 = 'SubSystemSlot1';
+    const FLAG_SUB_SYSTEM_SLOT2 = 'SubSystemSlot2';
+    const FLAG_SUB_SYSTEM_SLOT3 = 'SubSystemSlot3';
     
 
+    
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getFlagAllowableValues()
+    {
+        return [
+            self::FLAG_CARGO,
+            self::FLAG_DRONE_BAY,
+            self::FLAG_FIGHTER_BAY,
+            self::FLAG_HI_SLOT0,
+            self::FLAG_HI_SLOT1,
+            self::FLAG_HI_SLOT2,
+            self::FLAG_HI_SLOT3,
+            self::FLAG_HI_SLOT4,
+            self::FLAG_HI_SLOT5,
+            self::FLAG_HI_SLOT6,
+            self::FLAG_HI_SLOT7,
+            self::FLAG_INVALID,
+            self::FLAG_LO_SLOT0,
+            self::FLAG_LO_SLOT1,
+            self::FLAG_LO_SLOT2,
+            self::FLAG_LO_SLOT3,
+            self::FLAG_LO_SLOT4,
+            self::FLAG_LO_SLOT5,
+            self::FLAG_LO_SLOT6,
+            self::FLAG_LO_SLOT7,
+            self::FLAG_MED_SLOT0,
+            self::FLAG_MED_SLOT1,
+            self::FLAG_MED_SLOT2,
+            self::FLAG_MED_SLOT3,
+            self::FLAG_MED_SLOT4,
+            self::FLAG_MED_SLOT5,
+            self::FLAG_MED_SLOT6,
+            self::FLAG_MED_SLOT7,
+            self::FLAG_RIG_SLOT0,
+            self::FLAG_RIG_SLOT1,
+            self::FLAG_RIG_SLOT2,
+            self::FLAG_SERVICE_SLOT0,
+            self::FLAG_SERVICE_SLOT1,
+            self::FLAG_SERVICE_SLOT2,
+            self::FLAG_SERVICE_SLOT3,
+            self::FLAG_SERVICE_SLOT4,
+            self::FLAG_SERVICE_SLOT5,
+            self::FLAG_SERVICE_SLOT6,
+            self::FLAG_SERVICE_SLOT7,
+            self::FLAG_SUB_SYSTEM_SLOT0,
+            self::FLAG_SUB_SYSTEM_SLOT1,
+            self::FLAG_SUB_SYSTEM_SLOT2,
+            self::FLAG_SUB_SYSTEM_SLOT3,
+        ];
+    }
     
 
     /**
@@ -205,6 +302,14 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
         if ($this->container['flag'] === null) {
             $invalidProperties[] = "'flag' can't be null";
         }
+        $allowedValues = $this->getFlagAllowableValues();
+        if (!is_null($this->container['flag']) && !in_array($this->container['flag'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value for 'flag', must be one of '%s'",
+                implode("', '", $allowedValues)
+            );
+        }
+
         if ($this->container['quantity'] === null) {
             $invalidProperties[] = "'quantity' can't be null";
         }
@@ -229,7 +334,7 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
     /**
      * Gets flag
      *
-     * @return int
+     * @return string
      */
     public function getFlag()
     {
@@ -239,12 +344,21 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
     /**
      * Sets flag
      *
-     * @param int $flag flag integer
+     * @param string $flag Fitting location for the item. Entries placed in 'Invalid' will be discarded. If this leaves the fitting with nothing, it will cause an error.
      *
      * @return $this
      */
     public function setFlag($flag)
     {
+        $allowedValues = $this->getFlagAllowableValues();
+        if (!in_array($flag, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value for 'flag', must be one of '%s'",
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
         $this->container['flag'] = $flag;
 
         return $this;
