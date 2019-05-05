@@ -1,4 +1,4 @@
-This client is generated from the ["unserscore routes"](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes).
+This client is generated from the "[underscore routes](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes)".
 
 ##### Versioning scheme since 1.0.0:
 * patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json),
