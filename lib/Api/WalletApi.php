@@ -893,7 +893,7 @@ class WalletApi
         }
 
 
-        $resourcePath = '/v5/characters/{character_id}/wallet/journal/';
+        $resourcePath = '/v6/characters/{character_id}/wallet/journal/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

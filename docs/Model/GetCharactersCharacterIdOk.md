@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **name** | **string** | name string | 
 **description** | **string** | description string | [optional] 
 **faction_id** | **int** | ID of the faction the character is fighting for, if the character is enlisted in Factional Warfare | [optional] 
+**title** | **string** | The individual title of the character | [optional] 
 **bloodline_id** | **int** | bloodline_id integer | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

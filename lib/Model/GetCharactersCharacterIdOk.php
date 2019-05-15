@@ -68,6 +68,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
         'name' => 'string',
         'description' => 'string',
         'faction_id' => 'int',
+        'title' => 'string',
         'bloodline_id' => 'int'
     ];
 
@@ -87,6 +88,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
         'name' => null,
         'description' => null,
         'faction_id' => 'int32',
+        'title' => null,
         'bloodline_id' => 'int32'
     ];
 
@@ -127,6 +129,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
         'name' => 'name',
         'description' => 'description',
         'faction_id' => 'faction_id',
+        'title' => 'title',
         'bloodline_id' => 'bloodline_id'
     ];
 
@@ -146,6 +149,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
         'name' => 'setName',
         'description' => 'setDescription',
         'faction_id' => 'setFactionId',
+        'title' => 'setTitle',
         'bloodline_id' => 'setBloodlineId'
     ];
 
@@ -165,6 +169,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
         'name' => 'getName',
         'description' => 'getDescription',
         'faction_id' => 'getFactionId',
+        'title' => 'getTitle',
         'bloodline_id' => 'getBloodlineId'
     ];
 
@@ -253,6 +258,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['faction_id'] = isset($data['faction_id']) ? $data['faction_id'] : null;
+        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['bloodline_id'] = isset($data['bloodline_id']) ? $data['bloodline_id'] : null;
     }
 
@@ -567,6 +573,30 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
     public function setFactionId($faction_id)
     {
         $this->container['faction_id'] = $faction_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets title
+     *
+     * @return string|null
+     */
+    public function getTitle()
+    {
+        return $this->container['title'];
+    }
+
+    /**
+     * Sets title
+     *
+     * @param string|null $title The individual title of the character
+     *
+     * @return $this
+     */
+    public function setTitle($title)
+    {
+        $this->container['title'] = $title;
 
         return $this;
     }
