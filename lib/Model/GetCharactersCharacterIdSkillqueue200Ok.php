@@ -301,7 +301,7 @@ class GetCharactersCharacterIdSkillqueue200Ok implements ModelInterface, ArrayAc
     /**
      * Sets finish_date
      *
-     * @param \DateTime|null $finish_date finish_date string
+     * @param \DateTime|null $finish_date Date on which training of the skill will complete. Omitted if the skill queue is paused.
      *
      * @return $this
      */

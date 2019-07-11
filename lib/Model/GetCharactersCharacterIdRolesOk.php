@@ -221,8 +221,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
     const ROLES_AT_OTHER_STARBASE_DEFENSE_OPERATOR = 'Starbase_Defense_Operator';
     const ROLES_AT_OTHER_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     const ROLES_AT_OTHER_STATION_MANAGER = 'Station_Manager';
-    const ROLES_AT_OTHER_TERRESTRIAL_COMBAT_OFFICER = 'Terrestrial_Combat_Officer';
-    const ROLES_AT_OTHER_TERRESTRIAL_LOGISTICS_OFFICER = 'Terrestrial_Logistics_Officer';
     const ROLES_AT_OTHER_TRADER = 'Trader';
     const ROLES_AT_BASE_ACCOUNT_TAKE_1 = 'Account_Take_1';
     const ROLES_AT_BASE_ACCOUNT_TAKE_2 = 'Account_Take_2';
@@ -271,8 +269,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
     const ROLES_AT_BASE_STARBASE_DEFENSE_OPERATOR = 'Starbase_Defense_Operator';
     const ROLES_AT_BASE_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     const ROLES_AT_BASE_STATION_MANAGER = 'Station_Manager';
-    const ROLES_AT_BASE_TERRESTRIAL_COMBAT_OFFICER = 'Terrestrial_Combat_Officer';
-    const ROLES_AT_BASE_TERRESTRIAL_LOGISTICS_OFFICER = 'Terrestrial_Logistics_Officer';
     const ROLES_AT_BASE_TRADER = 'Trader';
     const ROLES_ACCOUNT_TAKE_1 = 'Account_Take_1';
     const ROLES_ACCOUNT_TAKE_2 = 'Account_Take_2';
@@ -321,8 +317,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
     const ROLES_STARBASE_DEFENSE_OPERATOR = 'Starbase_Defense_Operator';
     const ROLES_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     const ROLES_STATION_MANAGER = 'Station_Manager';
-    const ROLES_TERRESTRIAL_COMBAT_OFFICER = 'Terrestrial_Combat_Officer';
-    const ROLES_TERRESTRIAL_LOGISTICS_OFFICER = 'Terrestrial_Logistics_Officer';
     const ROLES_TRADER = 'Trader';
     const ROLES_AT_HQ_ACCOUNT_TAKE_1 = 'Account_Take_1';
     const ROLES_AT_HQ_ACCOUNT_TAKE_2 = 'Account_Take_2';
@@ -371,8 +365,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
     const ROLES_AT_HQ_STARBASE_DEFENSE_OPERATOR = 'Starbase_Defense_Operator';
     const ROLES_AT_HQ_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     const ROLES_AT_HQ_STATION_MANAGER = 'Station_Manager';
-    const ROLES_AT_HQ_TERRESTRIAL_COMBAT_OFFICER = 'Terrestrial_Combat_Officer';
-    const ROLES_AT_HQ_TERRESTRIAL_LOGISTICS_OFFICER = 'Terrestrial_Logistics_Officer';
     const ROLES_AT_HQ_TRADER = 'Trader';
     
 
@@ -432,8 +424,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
             self::ROLES_AT_OTHER_STARBASE_DEFENSE_OPERATOR,
             self::ROLES_AT_OTHER_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_AT_OTHER_STATION_MANAGER,
-            self::ROLES_AT_OTHER_TERRESTRIAL_COMBAT_OFFICER,
-            self::ROLES_AT_OTHER_TERRESTRIAL_LOGISTICS_OFFICER,
             self::ROLES_AT_OTHER_TRADER,
         ];
     }
@@ -493,8 +483,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
             self::ROLES_AT_BASE_STARBASE_DEFENSE_OPERATOR,
             self::ROLES_AT_BASE_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_AT_BASE_STATION_MANAGER,
-            self::ROLES_AT_BASE_TERRESTRIAL_COMBAT_OFFICER,
-            self::ROLES_AT_BASE_TERRESTRIAL_LOGISTICS_OFFICER,
             self::ROLES_AT_BASE_TRADER,
         ];
     }
@@ -554,8 +542,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
             self::ROLES_STARBASE_DEFENSE_OPERATOR,
             self::ROLES_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_STATION_MANAGER,
-            self::ROLES_TERRESTRIAL_COMBAT_OFFICER,
-            self::ROLES_TERRESTRIAL_LOGISTICS_OFFICER,
             self::ROLES_TRADER,
         ];
     }
@@ -615,8 +601,6 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess
             self::ROLES_AT_HQ_STARBASE_DEFENSE_OPERATOR,
             self::ROLES_AT_HQ_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_AT_HQ_STATION_MANAGER,
-            self::ROLES_AT_HQ_TERRESTRIAL_COMBAT_OFFICER,
-            self::ROLES_AT_HQ_TERRESTRIAL_LOGISTICS_OFFICER,
             self::ROLES_AT_HQ_TRADER,
         ];
     }

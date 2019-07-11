@@ -206,6 +206,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_ALL_WAR_RETRACTED_MSG = 'AllWarRetractedMsg';
     const TYPE_ALL_WAR_SURRENDER_MSG = 'AllWarSurrenderMsg';
     const TYPE_ALLIANCE_CAPITAL_CHANGED = 'AllianceCapitalChanged';
+    const TYPE_ALLIANCE_WAR_DECLARED_V2 = 'AllianceWarDeclaredV2';
     const TYPE_ALLY_CONTRACT_CANCELLED = 'AllyContractCancelled';
     const TYPE_ALLY_JOINED_WAR_AGGRESSOR_MSG = 'AllyJoinedWarAggressorMsg';
     const TYPE_ALLY_JOINED_WAR_ALLY_MSG = 'AllyJoinedWarAllyMsg';
@@ -242,6 +243,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_CORP_APP_NEW_MSG = 'CorpAppNewMsg';
     const TYPE_CORP_APP_REJECT_CUSTOM_MSG = 'CorpAppRejectCustomMsg';
     const TYPE_CORP_APP_REJECT_MSG = 'CorpAppRejectMsg';
+    const TYPE_CORP_BECAME_WAR_ELIGIBLE = 'CorpBecameWarEligible';
     const TYPE_CORP_DIVIDEND_MSG = 'CorpDividendMsg';
     const TYPE_CORP_FRIENDLY_FIRE_DISABLE_TIMER_COMPLETED = 'CorpFriendlyFireDisableTimerCompleted';
     const TYPE_CORP_FRIENDLY_FIRE_DISABLE_TIMER_STARTED = 'CorpFriendlyFireDisableTimerStarted';
@@ -251,12 +253,14 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_CORP_LIQUIDATION_MSG = 'CorpLiquidationMsg';
     const TYPE_CORP_NEW_CEO_MSG = 'CorpNewCEOMsg';
     const TYPE_CORP_NEWS_MSG = 'CorpNewsMsg';
+    const TYPE_CORP_NO_LONGER_WAR_ELIGIBLE = 'CorpNoLongerWarEligible';
     const TYPE_CORP_OFFICE_EXPIRATION_MSG = 'CorpOfficeExpirationMsg';
     const TYPE_CORP_STRUCT_LOST_MSG = 'CorpStructLostMsg';
     const TYPE_CORP_TAX_CHANGE_MSG = 'CorpTaxChangeMsg';
     const TYPE_CORP_VOTE_CEO_REVOKED_MSG = 'CorpVoteCEORevokedMsg';
     const TYPE_CORP_VOTE_MSG = 'CorpVoteMsg';
     const TYPE_CORP_WAR_DECLARED_MSG = 'CorpWarDeclaredMsg';
+    const TYPE_CORP_WAR_DECLARED_V2 = 'CorpWarDeclaredV2';
     const TYPE_CORP_WAR_FIGHTING_LEGAL_MSG = 'CorpWarFightingLegalMsg';
     const TYPE_CORP_WAR_INVALIDATED_MSG = 'CorpWarInvalidatedMsg';
     const TYPE_CORP_WAR_RETRACTED_MSG = 'CorpWarRetractedMsg';
@@ -299,6 +303,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_INSURANCE_INVALIDATED_MSG = 'InsuranceInvalidatedMsg';
     const TYPE_INSURANCE_ISSUED_MSG = 'InsuranceIssuedMsg';
     const TYPE_INSURANCE_PAYOUT_MSG = 'InsurancePayoutMsg';
+    const TYPE_INVASION_SYSTEM_LOGIN = 'InvasionSystemLogin';
     const TYPE_JUMP_CLONE_DELETED_MSG1 = 'JumpCloneDeletedMsg1';
     const TYPE_JUMP_CLONE_DELETED_MSG2 = 'JumpCloneDeletedMsg2';
     const TYPE_KILL_REPORT_FINAL_BLOW = 'KillReportFinalBlow';
@@ -319,6 +324,10 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_MOONMINING_EXTRACTION_FINISHED = 'MoonminingExtractionFinished';
     const TYPE_MOONMINING_EXTRACTION_STARTED = 'MoonminingExtractionStarted';
     const TYPE_MOONMINING_LASER_FIRED = 'MoonminingLaserFired';
+    const TYPE_MUTUAL_WAR_EXPIRED = 'MutualWarExpired';
+    const TYPE_MUTUAL_WAR_INVITE_ACCEPTED = 'MutualWarInviteAccepted';
+    const TYPE_MUTUAL_WAR_INVITE_REJECTED = 'MutualWarInviteRejected';
+    const TYPE_MUTUAL_WAR_INVITE_SENT = 'MutualWarInviteSent';
     const TYPE_NPC_STANDINGS_GAINED = 'NPCStandingsGained';
     const TYPE_NPC_STANDINGS_LOST = 'NPCStandingsLost';
     const TYPE_OFFERED_SURRENDER = 'OfferedSurrender';
@@ -375,7 +384,16 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_TOWER_RESOURCE_ALERT_MSG = 'TowerResourceAlertMsg';
     const TYPE_TRANSACTION_REVERSAL_MSG = 'TransactionReversalMsg';
     const TYPE_TUTORIAL_MSG = 'TutorialMsg';
+    const TYPE_WAR_ADOPTED = 'WarAdopted';
+    const TYPE_WAR_ALLY_INHERITED = 'WarAllyInherited';
     const TYPE_WAR_ALLY_OFFER_DECLINED_MSG = 'WarAllyOfferDeclinedMsg';
+    const TYPE_WAR_CONCORD_INVALIDATES = 'WarConcordInvalidates';
+    const TYPE_WAR_DECLARED = 'WarDeclared';
+    const TYPE_WAR_HQ_REMOVED_FROM_SPACE = 'WarHQRemovedFromSpace';
+    const TYPE_WAR_INHERITED = 'WarInherited';
+    const TYPE_WAR_INVALID = 'WarInvalid';
+    const TYPE_WAR_RETRACTED = 'WarRetracted';
+    const TYPE_WAR_RETRACTED_BY_CONCORD = 'WarRetractedByConcord';
     const TYPE_WAR_SURRENDER_DECLINED_MSG = 'WarSurrenderDeclinedMsg';
     const TYPE_WAR_SURRENDER_OFFER_MSG = 'WarSurrenderOfferMsg';
     
@@ -417,6 +435,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_ALL_WAR_RETRACTED_MSG,
             self::TYPE_ALL_WAR_SURRENDER_MSG,
             self::TYPE_ALLIANCE_CAPITAL_CHANGED,
+            self::TYPE_ALLIANCE_WAR_DECLARED_V2,
             self::TYPE_ALLY_CONTRACT_CANCELLED,
             self::TYPE_ALLY_JOINED_WAR_AGGRESSOR_MSG,
             self::TYPE_ALLY_JOINED_WAR_ALLY_MSG,
@@ -453,6 +472,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_CORP_APP_NEW_MSG,
             self::TYPE_CORP_APP_REJECT_CUSTOM_MSG,
             self::TYPE_CORP_APP_REJECT_MSG,
+            self::TYPE_CORP_BECAME_WAR_ELIGIBLE,
             self::TYPE_CORP_DIVIDEND_MSG,
             self::TYPE_CORP_FRIENDLY_FIRE_DISABLE_TIMER_COMPLETED,
             self::TYPE_CORP_FRIENDLY_FIRE_DISABLE_TIMER_STARTED,
@@ -462,12 +482,14 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_CORP_LIQUIDATION_MSG,
             self::TYPE_CORP_NEW_CEO_MSG,
             self::TYPE_CORP_NEWS_MSG,
+            self::TYPE_CORP_NO_LONGER_WAR_ELIGIBLE,
             self::TYPE_CORP_OFFICE_EXPIRATION_MSG,
             self::TYPE_CORP_STRUCT_LOST_MSG,
             self::TYPE_CORP_TAX_CHANGE_MSG,
             self::TYPE_CORP_VOTE_CEO_REVOKED_MSG,
             self::TYPE_CORP_VOTE_MSG,
             self::TYPE_CORP_WAR_DECLARED_MSG,
+            self::TYPE_CORP_WAR_DECLARED_V2,
             self::TYPE_CORP_WAR_FIGHTING_LEGAL_MSG,
             self::TYPE_CORP_WAR_INVALIDATED_MSG,
             self::TYPE_CORP_WAR_RETRACTED_MSG,
@@ -510,6 +532,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_INSURANCE_INVALIDATED_MSG,
             self::TYPE_INSURANCE_ISSUED_MSG,
             self::TYPE_INSURANCE_PAYOUT_MSG,
+            self::TYPE_INVASION_SYSTEM_LOGIN,
             self::TYPE_JUMP_CLONE_DELETED_MSG1,
             self::TYPE_JUMP_CLONE_DELETED_MSG2,
             self::TYPE_KILL_REPORT_FINAL_BLOW,
@@ -530,6 +553,10 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_MOONMINING_EXTRACTION_FINISHED,
             self::TYPE_MOONMINING_EXTRACTION_STARTED,
             self::TYPE_MOONMINING_LASER_FIRED,
+            self::TYPE_MUTUAL_WAR_EXPIRED,
+            self::TYPE_MUTUAL_WAR_INVITE_ACCEPTED,
+            self::TYPE_MUTUAL_WAR_INVITE_REJECTED,
+            self::TYPE_MUTUAL_WAR_INVITE_SENT,
             self::TYPE_NPC_STANDINGS_GAINED,
             self::TYPE_NPC_STANDINGS_LOST,
             self::TYPE_OFFERED_SURRENDER,
@@ -586,7 +613,16 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_TOWER_RESOURCE_ALERT_MSG,
             self::TYPE_TRANSACTION_REVERSAL_MSG,
             self::TYPE_TUTORIAL_MSG,
+            self::TYPE_WAR_ADOPTED,
+            self::TYPE_WAR_ALLY_INHERITED,
             self::TYPE_WAR_ALLY_OFFER_DECLINED_MSG,
+            self::TYPE_WAR_CONCORD_INVALIDATES,
+            self::TYPE_WAR_DECLARED,
+            self::TYPE_WAR_HQ_REMOVED_FROM_SPACE,
+            self::TYPE_WAR_INHERITED,
+            self::TYPE_WAR_INVALID,
+            self::TYPE_WAR_RETRACTED,
+            self::TYPE_WAR_RETRACTED_BY_CONCORD,
             self::TYPE_WAR_SURRENDER_DECLINED_MSG,
             self::TYPE_WAR_SURRENDER_OFFER_MSG,
         ];
