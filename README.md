@@ -1,9 +1,11 @@
-This client is generated from the "[underscore routes](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes)".
+This client is generated from the 
+"[underscore routes](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes)".
 
 ##### Versioning scheme since 1.0.0:
-* patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json),
+* patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json) file,
   refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md)
-  (note, however, that the date is not always correct there)
+  (note, however, that the date is not always correct there) or generated with a new patch version
+  of the generator library
 * minor: switched to a new minor version of the generator library
 * major: switched to a new major version of the generator library or switched to another generator library
 
