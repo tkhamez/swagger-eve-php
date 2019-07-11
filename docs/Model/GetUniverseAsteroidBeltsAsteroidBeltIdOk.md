@@ -1,12 +1,13 @@
-# GetUniverseAsteroidBeltsAsteroidBeltIdOk
+# # GetUniverseAsteroidBeltsAsteroidBeltIdOk
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**system_id** | **int** | The solar system this asteroid belt is in | 
 **name** | **string** | name string | 
 **position** | [**\Swagger\Client\Eve\Model\GetUniverseAsteroidBeltsAsteroidBeltIdPosition**](GetUniverseAsteroidBeltsAsteroidBeltIdPosition.md) |  | 
+**system_id** | **int** | The solar system this asteroid belt is in | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 

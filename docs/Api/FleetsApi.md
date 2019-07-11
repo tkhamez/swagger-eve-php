@@ -20,7 +20,9 @@ Method | HTTP request | Description
 [**putFleetsFleetIdWingsWingId**](FleetsApi.md#putFleetsFleetIdWingsWingId) | **PUT** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
 
 
-# **deleteFleetsFleetIdMembersMemberId**
+
+## deleteFleetsFleetIdMembersMemberId
+
 > deleteFleetsFleetIdMembersMemberId($fleet_id, $member_id, $datasource, $token)
 
 Kick fleet member
@@ -28,12 +30,15 @@ Kick fleet member
 Kick a fleet member  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -56,6 +61,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -73,12 +79,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **deleteFleetsFleetIdSquadsSquadId**
+
+## deleteFleetsFleetIdSquadsSquadId
+
 > deleteFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $datasource, $token)
 
 Delete fleet squad
@@ -86,12 +96,15 @@ Delete fleet squad
 Delete a fleet squad, only empty squads can be deleted  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -114,6 +127,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -131,12 +145,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **deleteFleetsFleetIdWingsWingId**
+
+## deleteFleetsFleetIdWingsWingId
+
 > deleteFleetsFleetIdWingsWingId($fleet_id, $wing_id, $datasource, $token)
 
 Delete fleet wing
@@ -144,12 +162,15 @@ Delete fleet wing
 Delete a fleet wing, only empty wings can be deleted. The wing may contain squads, but the squads must be empty  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -172,6 +193,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -189,12 +211,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCharactersCharacterIdFleet**
+
+## getCharactersCharacterIdFleet
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk getCharactersCharacterIdFleet($character_id, $datasource, $if_none_match, $token)
 
 Get character fleet info
@@ -202,12 +228,15 @@ Get character fleet info
 Return the fleet ID the character is in, if any.  ---  This route is cached for up to 60 seconds  --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/fleet/)
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -231,6 +260,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -248,12 +278,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getFleetsFleetId**
+
+## getFleetsFleetId
+
 > \Swagger\Client\Eve\Model\GetFleetsFleetIdOk getFleetsFleetId($fleet_id, $datasource, $if_none_match, $token)
 
 Get fleet information
@@ -261,12 +295,15 @@ Get fleet information
 Return details about a fleet  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -290,6 +327,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -307,12 +345,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getFleetsFleetIdMembers**
+
+## getFleetsFleetIdMembers
+
 > \Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[] getFleetsFleetIdMembers($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
 
 Get fleet members
@@ -320,12 +362,15 @@ Get fleet members
 Return information about fleet members  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -351,6 +396,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -370,12 +416,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getFleetsFleetIdWings**
+
+## getFleetsFleetIdWings
+
 > \Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[] getFleetsFleetIdWings($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
 
 Get fleet wings
@@ -383,12 +433,15 @@ Get fleet wings
 Return information about wings in a fleet  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -414,6 +467,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -433,25 +487,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postFleetsFleetIdMembers**
-> postFleetsFleetIdMembers($fleet_id, $datasource, $token, $post_fleets_fleet_id_members_invitation)
+
+## postFleetsFleetIdMembers
+
+> postFleetsFleetIdMembers($fleet_id, $invitation, $datasource, $token)
 
 Create fleet invitation
 
 Invite a character into the fleet. If a character has a CSPA charge set it is not possible to invite them to the fleet using ESI  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -460,12 +521,12 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
+$invitation = new \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation(); // \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$post_fleets_fleet_id_members_invitation = new \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation(); // \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation | 
 
 try {
-    $apiInstance->postFleetsFleetIdMembers($fleet_id, $datasource, $token, $post_fleets_fleet_id_members_invitation);
+    $apiInstance->postFleetsFleetIdMembers($fleet_id, $invitation, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->postFleetsFleetIdMembers: ', $e->getMessage(), PHP_EOL;
 }
@@ -474,12 +535,13 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
+ **invitation** | [**\Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation**](../Model/PostFleetsFleetIdMembersInvitation.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **post_fleets_fleet_id_members_invitation** | [**\Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation**](../Model/PostFleetsFleetIdMembersInvitation.md)|  | [optional]
 
 ### Return type
 
@@ -491,12 +553,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postFleetsFleetIdWings**
+
+## postFleetsFleetIdWings
+
 > \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated postFleetsFleetIdWings($fleet_id, $datasource, $token)
 
 Create fleet wing
@@ -504,12 +570,15 @@ Create fleet wing
 Create a new wing in a fleet  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -532,6 +601,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -548,12 +618,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postFleetsFleetIdWingsWingIdSquads**
+
+## postFleetsFleetIdWingsWingIdSquads
+
 > \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated postFleetsFleetIdWingsWingIdSquads($fleet_id, $wing_id, $datasource, $token)
 
 Create fleet squad
@@ -561,12 +635,15 @@ Create fleet squad
 Create a new squad in a fleet  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -590,6 +667,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
@@ -607,25 +685,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **putFleetsFleetId**
-> putFleetsFleetId($fleet_id, $datasource, $token, $put_fleets_fleet_id_new_settings)
+
+## putFleetsFleetId
+
+> putFleetsFleetId($fleet_id, $new_settings, $datasource, $token)
 
 Update fleet
 
 Update settings about a fleet  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -634,12 +719,12 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
+$new_settings = new \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$put_fleets_fleet_id_new_settings = new \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings | 
 
 try {
-    $apiInstance->putFleetsFleetId($fleet_id, $datasource, $token, $put_fleets_fleet_id_new_settings);
+    $apiInstance->putFleetsFleetId($fleet_id, $new_settings, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetId: ', $e->getMessage(), PHP_EOL;
 }
@@ -648,12 +733,13 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
+ **new_settings** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings**](../Model/PutFleetsFleetIdNewSettings.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **put_fleets_fleet_id_new_settings** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings**](../Model/PutFleetsFleetIdNewSettings.md)|  | [optional]
 
 ### Return type
 
@@ -665,25 +751,32 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **putFleetsFleetIdMembersMemberId**
-> putFleetsFleetIdMembersMemberId($fleet_id, $member_id, $datasource, $token, $put_fleets_fleet_id_members_member_id_movement)
+
+## putFleetsFleetIdMembersMemberId
+
+> putFleetsFleetIdMembersMemberId($fleet_id, $member_id, $movement, $datasource, $token)
 
 Move fleet member
 
 Move a fleet member around  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -693,12 +786,12 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $member_id = 56; // int | The character ID of a member in this fleet
+$movement = new \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$put_fleets_fleet_id_members_member_id_movement = new \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement | 
 
 try {
-    $apiInstance->putFleetsFleetIdMembersMemberId($fleet_id, $member_id, $datasource, $token, $put_fleets_fleet_id_members_member_id_movement);
+    $apiInstance->putFleetsFleetIdMembersMemberId($fleet_id, $member_id, $movement, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdMembersMemberId: ', $e->getMessage(), PHP_EOL;
 }
@@ -707,13 +800,14 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
  **member_id** | **int**| The character ID of a member in this fleet |
+ **movement** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement**](../Model/PutFleetsFleetIdMembersMemberIdMovement.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **put_fleets_fleet_id_members_member_id_movement** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement**](../Model/PutFleetsFleetIdMembersMemberIdMovement.md)|  | [optional]
 
 ### Return type
 
@@ -725,25 +819,32 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **putFleetsFleetIdSquadsSquadId**
-> putFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $datasource, $token, $put_fleets_fleet_id_squads_squad_id_naming)
+
+## putFleetsFleetIdSquadsSquadId
+
+> putFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $naming, $datasource, $token)
 
 Rename fleet squad
 
 Rename a fleet squad  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -753,12 +854,12 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $squad_id = 56; // int | The squad to rename
+$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$put_fleets_fleet_id_squads_squad_id_naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming | 
 
 try {
-    $apiInstance->putFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $datasource, $token, $put_fleets_fleet_id_squads_squad_id_naming);
+    $apiInstance->putFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $naming, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdSquadsSquadId: ', $e->getMessage(), PHP_EOL;
 }
@@ -767,13 +868,14 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
  **squad_id** | **int**| The squad to rename |
+ **naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming**](../Model/PutFleetsFleetIdSquadsSquadIdNaming.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **put_fleets_fleet_id_squads_squad_id_naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming**](../Model/PutFleetsFleetIdSquadsSquadIdNaming.md)|  | [optional]
 
 ### Return type
 
@@ -785,25 +887,32 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **putFleetsFleetIdWingsWingId**
-> putFleetsFleetIdWingsWingId($fleet_id, $wing_id, $datasource, $token, $put_fleets_fleet_id_wings_wing_id_naming)
+
+## putFleetsFleetIdWingsWingId
+
+> putFleetsFleetIdWingsWingId($fleet_id, $wing_id, $naming, $datasource, $token)
 
 Rename fleet wing
 
 Rename a fleet wing  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -813,12 +922,12 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $wing_id = 56; // int | The wing to rename
+$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$put_fleets_fleet_id_wings_wing_id_naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming | 
 
 try {
-    $apiInstance->putFleetsFleetIdWingsWingId($fleet_id, $wing_id, $datasource, $token, $put_fleets_fleet_id_wings_wing_id_naming);
+    $apiInstance->putFleetsFleetIdWingsWingId($fleet_id, $wing_id, $naming, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdWingsWingId: ', $e->getMessage(), PHP_EOL;
 }
@@ -827,13 +936,14 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
  **wing_id** | **int**| The wing to rename |
+ **naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming**](../Model/PutFleetsFleetIdWingsWingIdNaming.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **put_fleets_fleet_id_wings_wing_id_naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming**](../Model/PutFleetsFleetIdWingsWingIdNaming.md)|  | [optional]
 
 ### Return type
 
@@ -845,8 +955,10 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

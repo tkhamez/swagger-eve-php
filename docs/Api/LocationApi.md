@@ -9,7 +9,9 @@ Method | HTTP request | Description
 [**getCharactersCharacterIdShip**](LocationApi.md#getCharactersCharacterIdShip) | **GET** /v1/characters/{character_id}/ship/ | Get current ship
 
 
-# **getCharactersCharacterIdLocation**
+
+## getCharactersCharacterIdLocation
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdLocationOk getCharactersCharacterIdLocation($character_id, $datasource, $if_none_match, $token)
 
 Get character location
@@ -17,12 +19,15 @@ Get character location
 Information about the characters current location. Returns the current solar system id, and also the current station or structure ID if applicable  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\LocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -46,6 +51,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -63,12 +69,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCharactersCharacterIdOnline**
+
+## getCharactersCharacterIdOnline
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdOnlineOk getCharactersCharacterIdOnline($character_id, $datasource, $if_none_match, $token)
 
 Get character online
@@ -76,12 +86,15 @@ Get character online
 Checks if the character is currently online  ---  This route is cached for up to 60 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\LocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -105,6 +118,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -122,12 +136,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCharactersCharacterIdShip**
+
+## getCharactersCharacterIdShip
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdShipOk getCharactersCharacterIdShip($character_id, $datasource, $if_none_match, $token)
 
 Get current ship
@@ -135,12 +153,15 @@ Get current ship
 Get the current ship type, name and id  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\LocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -164,6 +185,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -181,8 +203,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

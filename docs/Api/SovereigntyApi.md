@@ -9,7 +9,9 @@ Method | HTTP request | Description
 [**getSovereigntyStructures**](SovereigntyApi.md#getSovereigntyStructures) | **GET** /v1/sovereignty/structures/ | List sovereignty structures
 
 
-# **getSovereigntyCampaigns**
+
+## getSovereigntyCampaigns
+
 > \Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[] getSovereigntyCampaigns($datasource, $if_none_match)
 
 List sovereignty campaigns
@@ -17,9 +19,11 @@ List sovereignty campaigns
 Shows sovereignty data for campaigns.  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -40,6 +44,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
@@ -55,12 +60,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getSovereigntyMap**
+
+## getSovereigntyMap
+
 > \Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[] getSovereigntyMap($datasource, $if_none_match)
 
 List sovereignty of systems
@@ -68,9 +77,11 @@ List sovereignty of systems
 Shows sovereignty information for solar systems  ---  This route is cached for up to 3600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -91,6 +102,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
@@ -106,12 +118,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getSovereigntyStructures**
+
+## getSovereigntyStructures
+
 > \Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[] getSovereigntyStructures($datasource, $if_none_match)
 
 List sovereignty structures
@@ -119,9 +135,11 @@ List sovereignty structures
 Shows sovereignty data for structures.  ---  This route is cached for up to 120 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -142,6 +160,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
@@ -157,8 +176,10 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

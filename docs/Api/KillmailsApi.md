@@ -9,7 +9,9 @@ Method | HTTP request | Description
 [**getKillmailsKillmailIdKillmailHash**](KillmailsApi.md#getKillmailsKillmailIdKillmailHash) | **GET** /v1/killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
 
 
-# **getCharactersCharacterIdKillmailsRecent**
+
+## getCharactersCharacterIdKillmailsRecent
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdKillmailsRecent200Ok[] getCharactersCharacterIdKillmailsRecent($character_id, $datasource, $if_none_match, $page, $token)
 
 Get a character's recent kills and losses
@@ -17,12 +19,15 @@ Get a character's recent kills and losses
 Return a list of a character's kills and losses going back 90 days  ---  This route is cached for up to 300 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\KillmailsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -47,6 +52,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -65,12 +71,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCorporationsCorporationIdKillmailsRecent**
+
+## getCorporationsCorporationIdKillmailsRecent
+
 > \Swagger\Client\Eve\Model\GetCorporationsCorporationIdKillmailsRecent200Ok[] getCorporationsCorporationIdKillmailsRecent($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get a corporation's recent kills and losses
@@ -78,12 +88,15 @@ Get a corporation's recent kills and losses
 Get a list of a corporation's kills and losses going back 90 days  ---  This route is cached for up to 300 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\KillmailsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -108,6 +121,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
@@ -126,12 +140,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getKillmailsKillmailIdKillmailHash**
+
+## getKillmailsKillmailIdKillmailHash
+
 > \Swagger\Client\Eve\Model\GetKillmailsKillmailIdKillmailHashOk getKillmailsKillmailIdKillmailHash($killmail_hash, $killmail_id, $datasource, $if_none_match)
 
 Get a single killmail
@@ -139,9 +157,11 @@ Get a single killmail
 Return a single killmail from its ID and hash  ---  This route is cached for up to 1209600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\KillmailsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -164,6 +184,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **killmail_hash** | **string**| The killmail hash for verification |
@@ -181,8 +202,10 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

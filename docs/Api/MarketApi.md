@@ -17,7 +17,9 @@ Method | HTTP request | Description
 [**getMarketsStructuresStructureId**](MarketApi.md#getMarketsStructuresStructureId) | **GET** /v1/markets/structures/{structure_id}/ | List orders in a structure
 
 
-# **getCharactersCharacterIdOrders**
+
+## getCharactersCharacterIdOrders
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[] getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token)
 
 List open orders from a character
@@ -25,12 +27,15 @@ List open orders from a character
 List open market orders placed by a character  ---  This route is cached for up to 1200 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -54,6 +59,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -71,12 +77,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCharactersCharacterIdOrdersHistory**
+
+## getCharactersCharacterIdOrdersHistory
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[] getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token)
 
 List historical orders by a character
@@ -84,12 +94,15 @@ List historical orders by a character
 List cancelled and expired market orders placed by a character up to 90 days in the past.  ---  This route is cached for up to 3600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -114,6 +127,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -132,12 +146,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCorporationsCorporationIdOrders**
+
+## getCorporationsCorporationIdOrders
+
 > \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[] getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token)
 
 List open orders from a corporation
@@ -145,12 +163,15 @@ List open orders from a corporation
 List open market orders placed on behalf of a corporation  ---  This route is cached for up to 1200 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -175,6 +196,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
@@ -193,12 +215,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCorporationsCorporationIdOrdersHistory**
+
+## getCorporationsCorporationIdOrdersHistory
+
 > \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[] getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token)
 
 List historical orders from a corporation
@@ -206,12 +232,15 @@ List historical orders from a corporation
 List cancelled and expired market orders placed on behalf of a corporation up to 90 days in the past.  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -236,6 +265,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
@@ -254,12 +284,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getMarketsGroups**
+
+## getMarketsGroups
+
 > int[] getMarketsGroups($datasource, $if_none_match)
 
 Get item groups
@@ -267,9 +301,11 @@ Get item groups
 Get a list of item groups  ---  This route expires daily at 11:05
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -290,6 +326,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
@@ -305,12 +342,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getMarketsGroupsMarketGroupId**
+
+## getMarketsGroupsMarketGroupId
+
 > \Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk getMarketsGroupsMarketGroupId($market_group_id, $accept_language, $datasource, $if_none_match, $language)
 
 Get item group information
@@ -318,9 +359,11 @@ Get item group information
 Get information on an item group  ---  This route expires daily at 11:05
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -344,6 +387,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **market_group_id** | **int**| An Eve item group ID |
@@ -362,12 +406,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getMarketsPrices**
+
+## getMarketsPrices
+
 > \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[] getMarketsPrices($datasource, $if_none_match)
 
 List market prices
@@ -375,9 +423,11 @@ List market prices
 Return a list of prices  ---  This route is cached for up to 3600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -398,6 +448,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
@@ -413,12 +464,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getMarketsRegionIdHistory**
+
+## getMarketsRegionIdHistory
+
 > \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[] getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match)
 
 List historical market statistics in a region
@@ -426,9 +481,11 @@ List historical market statistics in a region
 Return a list of historical market statistics for the specified type in a region  ---  This route expires daily at 11:05
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -451,6 +508,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **region_id** | **int**| Return statistics in this region |
@@ -468,12 +526,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getMarketsRegionIdOrders**
+
+## getMarketsRegionIdOrders
+
 > \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[] getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id)
 
 List orders in a region
@@ -481,9 +543,11 @@ List orders in a region
 Return a list of orders in a region  ---  This route is cached for up to 300 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -508,6 +572,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_type** | **string**| Filter buy/sell orders, return all orders by default. If you query without type_id, we always return both buy and sell orders | [default to &#39;all&#39;]
@@ -527,12 +592,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getMarketsRegionIdTypes**
+
+## getMarketsRegionIdTypes
+
 > int[] getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page)
 
 List type IDs relevant to a market
@@ -540,9 +609,11 @@ List type IDs relevant to a market
 Return a list of type IDs that have active orders in the region, for efficient market indexing.  ---  This route is cached for up to 600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -565,6 +636,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **region_id** | **int**| Return statistics in this region |
@@ -582,12 +654,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getMarketsStructuresStructureId**
+
+## getMarketsStructuresStructureId
+
 > \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[] getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token)
 
 List orders in a structure
@@ -595,12 +671,15 @@ List orders in a structure
 Return all orders in a structure  ---  This route is cached for up to 300 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -625,6 +704,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **structure_id** | **int**| Return orders in this structure |
@@ -643,8 +723,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

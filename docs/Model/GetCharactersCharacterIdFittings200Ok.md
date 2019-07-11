@@ -1,14 +1,15 @@
-# GetCharactersCharacterIdFittings200Ok
+# # GetCharactersCharacterIdFittings200Ok
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**fitting_id** | **int** | fitting_id integer | 
-**ship_type_id** | **int** | ship_type_id integer | 
-**name** | **string** | name string | 
 **description** | **string** | description string | 
+**fitting_id** | **int** | fitting_id integer | 
 **items** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdFittingsItem[]**](GetCharactersCharacterIdFittingsItem.md) | items array | 
+**name** | **string** | name string | 
+**ship_type_id** | **int** | ship_type_id integer | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 

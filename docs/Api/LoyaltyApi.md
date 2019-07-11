@@ -8,7 +8,9 @@ Method | HTTP request | Description
 [**getLoyaltyStoresCorporationIdOffers**](LoyaltyApi.md#getLoyaltyStoresCorporationIdOffers) | **GET** /v1/loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
 
 
-# **getCharactersCharacterIdLoyaltyPoints**
+
+## getCharactersCharacterIdLoyaltyPoints
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdLoyaltyPoints200Ok[] getCharactersCharacterIdLoyaltyPoints($character_id, $datasource, $if_none_match, $token)
 
 Get loyalty points
@@ -16,12 +18,15 @@ Get loyalty points
 Return a list of loyalty points for all corporations the character has worked for  ---  This route is cached for up to 3600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\LoyaltyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -45,6 +50,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -62,12 +68,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getLoyaltyStoresCorporationIdOffers**
+
+## getLoyaltyStoresCorporationIdOffers
+
 > \Swagger\Client\Eve\Model\GetLoyaltyStoresCorporationIdOffers200Ok[] getLoyaltyStoresCorporationIdOffers($corporation_id, $datasource, $if_none_match)
 
 List loyalty store offers
@@ -75,9 +85,11 @@ List loyalty store offers
 Return a list of offers from a specific corporation's loyalty store  ---  This route expires daily at 11:05
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\LoyaltyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -99,6 +111,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
@@ -115,8 +128,10 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
