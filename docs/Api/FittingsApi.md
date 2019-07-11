@@ -9,7 +9,9 @@ Method | HTTP request | Description
 [**postCharactersCharacterIdFittings**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v2/characters/{character_id}/fittings/ | Create fitting
 
 
-# **deleteCharactersCharacterIdFittingsFittingId**
+
+## deleteCharactersCharacterIdFittingsFittingId
+
 > deleteCharactersCharacterIdFittingsFittingId($character_id, $fitting_id, $datasource, $token)
 
 Delete fitting
@@ -17,12 +19,15 @@ Delete fitting
 Delete a fitting from a character  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -45,6 +50,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -62,12 +68,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCharactersCharacterIdFittings**
+
+## getCharactersCharacterIdFittings
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[] getCharactersCharacterIdFittings($character_id, $datasource, $if_none_match, $token)
 
 Get fittings
@@ -75,12 +85,15 @@ Get fittings
 Return fittings of a character  ---  This route is cached for up to 300 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -104,6 +117,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -121,25 +135,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postCharactersCharacterIdFittings**
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($character_id, $datasource, $token, $post_characters_character_id_fittings_fitting)
+
+## postCharactersCharacterIdFittings
+
+> \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($character_id, $fitting, $datasource, $token)
 
 Create fitting
 
 Save a new fitting for a character  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -148,12 +169,12 @@ $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
+$fitting = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$post_characters_character_id_fittings_fitting = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting | 
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdFittings($character_id, $datasource, $token, $post_characters_character_id_fittings_fitting);
+    $result = $apiInstance->postCharactersCharacterIdFittings($character_id, $fitting, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->postCharactersCharacterIdFittings: ', $e->getMessage(), PHP_EOL;
@@ -163,12 +184,13 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
+ **fitting** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **post_characters_character_id_fittings_fitting** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)|  | [optional]
 
 ### Return type
 
@@ -180,8 +202,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

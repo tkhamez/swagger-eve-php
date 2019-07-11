@@ -11,7 +11,9 @@ Method | HTTP request | Description
 [**postUiOpenwindowNewmail**](UserInterfaceApi.md#postUiOpenwindowNewmail) | **POST** /v1/ui/openwindow/newmail/ | Open New Mail Window
 
 
-# **postUiAutopilotWaypoint**
+
+## postUiAutopilotWaypoint
+
 > postUiAutopilotWaypoint($add_to_beginning, $clear_other_waypoints, $destination_id, $datasource, $token)
 
 Set Autopilot Waypoint
@@ -19,12 +21,15 @@ Set Autopilot Waypoint
 Set a solar system as autopilot waypoint  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -48,6 +53,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **add_to_beginning** | **bool**| Whether this solar system should be added to the beginning of all waypoints | [default to false]
@@ -66,12 +72,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postUiOpenwindowContract**
+
+## postUiOpenwindowContract
+
 > postUiOpenwindowContract($contract_id, $datasource, $token)
 
 Open Contract Window
@@ -79,12 +89,15 @@ Open Contract Window
 Open the contract window inside the client  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -106,6 +119,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contract_id** | **int**| The contract to open |
@@ -122,12 +136,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postUiOpenwindowInformation**
+
+## postUiOpenwindowInformation
+
 > postUiOpenwindowInformation($target_id, $datasource, $token)
 
 Open Information Window
@@ -135,12 +153,15 @@ Open Information Window
 Open the information window for a character, corporation or alliance inside the client  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -162,6 +183,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **target_id** | **int**| The target to open |
@@ -178,12 +200,16 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postUiOpenwindowMarketdetails**
+
+## postUiOpenwindowMarketdetails
+
 > postUiOpenwindowMarketdetails($type_id, $datasource, $token)
 
 Open Market Details
@@ -191,12 +217,15 @@ Open Market Details
 Open the market details window for a specific typeID inside the client  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -218,6 +247,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type_id** | **int**| The item type to open in market window |
@@ -234,25 +264,32 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postUiOpenwindowNewmail**
-> postUiOpenwindowNewmail($datasource, $token, $post_ui_openwindow_newmail_new_mail)
+
+## postUiOpenwindowNewmail
+
+> postUiOpenwindowNewmail($new_mail, $datasource, $token)
 
 Open New Mail Window
 
 Open the New Mail window, according to settings from the request if applicable  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -260,12 +297,12 @@ $apiInstance = new Swagger\Client\Eve\Api\UserInterfaceApi(
     new GuzzleHttp\Client(),
     $config
 );
+$new_mail = new \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail(); // \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$post_ui_openwindow_newmail_new_mail = new \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail(); // \Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail | 
 
 try {
-    $apiInstance->postUiOpenwindowNewmail($datasource, $token, $post_ui_openwindow_newmail_new_mail);
+    $apiInstance->postUiOpenwindowNewmail($new_mail, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling UserInterfaceApi->postUiOpenwindowNewmail: ', $e->getMessage(), PHP_EOL;
 }
@@ -274,11 +311,12 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **new_mail** | [**\Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail**](../Model/PostUiOpenwindowNewmailNewMail.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **post_ui_openwindow_newmail_new_mail** | [**\Swagger\Client\Eve\Model\PostUiOpenwindowNewmailNewMail**](../Model/PostUiOpenwindowNewmailNewMail.md)|  | [optional]
 
 ### Return type
 
@@ -290,8 +328,10 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

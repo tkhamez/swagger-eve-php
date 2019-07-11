@@ -1,6 +1,7 @@
-# PostFleetsFleetIdMembersInvitation
+# # PostFleetsFleetIdMembersInvitation
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **character_id** | **int** | The character you want to invite | 
@@ -8,6 +9,6 @@ Name | Type | Description | Notes
 **squad_id** | **int** | squad_id integer | [optional] 
 **wing_id** | **int** | wing_id integer | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 

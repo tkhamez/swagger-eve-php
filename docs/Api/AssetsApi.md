@@ -12,7 +12,9 @@ Method | HTTP request | Description
 [**postCorporationsCorporationIdAssetsNames**](AssetsApi.md#postCorporationsCorporationIdAssetsNames) | **POST** /v1/corporations/{corporation_id}/assets/names/ | Get corporation asset names
 
 
-# **getCharactersCharacterIdAssets**
+
+## getCharactersCharacterIdAssets
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[] getCharactersCharacterIdAssets($character_id, $datasource, $if_none_match, $page, $token)
 
 Get character assets
@@ -20,12 +22,15 @@ Get character assets
 Return a list of the characters assets  ---  This route is cached for up to 3600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -50,6 +55,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -68,12 +74,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCorporationsCorporationIdAssets**
+
+## getCorporationsCorporationIdAssets
+
 > \Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[] getCorporationsCorporationIdAssets($corporation_id, $datasource, $if_none_match, $page, $token)
 
 Get corporation assets
@@ -81,12 +91,15 @@ Get corporation assets
 Return a list of the corporation assets  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -111,6 +124,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
@@ -129,25 +143,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postCharactersCharacterIdAssetsLocations**
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[] postCharactersCharacterIdAssetsLocations($character_id, $request_body, $datasource, $token)
+
+## postCharactersCharacterIdAssetsLocations
+
+> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[] postCharactersCharacterIdAssetsLocations($character_id, $item_ids, $datasource, $token)
 
 Get character asset locations
 
 Return locations for a set of item ids, which you can get from character assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -156,12 +177,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$item_ids = array(56); // int[] | A list of item ids
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdAssetsLocations($character_id, $request_body, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdAssetsLocations($character_id, $item_ids, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
@@ -171,10 +192,11 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -188,25 +210,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postCharactersCharacterIdAssetsNames**
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[] postCharactersCharacterIdAssetsNames($character_id, $request_body, $datasource, $token)
+
+## postCharactersCharacterIdAssetsNames
+
+> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[] postCharactersCharacterIdAssetsNames($character_id, $item_ids, $datasource, $token)
 
 Get character asset names
 
 Return names for a set of item ids, which you can get from character assets endpoint. Typically used for items that can customize names, like containers or ships.  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -215,12 +244,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$item_ids = array(56); // int[] | A list of item ids
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCharactersCharacterIdAssetsNames($character_id, $request_body, $datasource, $token);
+    $result = $apiInstance->postCharactersCharacterIdAssetsNames($character_id, $item_ids, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsNames: ', $e->getMessage(), PHP_EOL;
@@ -230,10 +259,11 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
- **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -247,25 +277,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postCorporationsCorporationIdAssetsLocations**
-> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[] postCorporationsCorporationIdAssetsLocations($corporation_id, $request_body, $datasource, $token)
+
+## postCorporationsCorporationIdAssetsLocations
+
+> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[] postCorporationsCorporationIdAssetsLocations($corporation_id, $item_ids, $datasource, $token)
 
 Get corporation asset locations
 
 Return locations for a set of item ids, which you can get from corporation assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)  ---  Requires one of the following EVE corporation role(s): Director
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -274,12 +311,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$item_ids = array(56); // int[] | A list of item ids
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCorporationsCorporationIdAssetsLocations($corporation_id, $request_body, $datasource, $token);
+    $result = $apiInstance->postCorporationsCorporationIdAssetsLocations($corporation_id, $item_ids, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
@@ -289,10 +326,11 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -306,25 +344,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **postCorporationsCorporationIdAssetsNames**
-> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[] postCorporationsCorporationIdAssetsNames($corporation_id, $request_body, $datasource, $token)
+
+## postCorporationsCorporationIdAssetsNames
+
+> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[] postCorporationsCorporationIdAssetsNames($corporation_id, $item_ids, $datasource, $token)
 
 Get corporation asset names
 
 Return names for a set of item ids, which you can get from corporation assets endpoint. Only valid for items that can customize names, like containers or ships  ---  Requires one of the following EVE corporation role(s): Director
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -333,12 +378,12 @@ $apiInstance = new Swagger\Client\Eve\Api\AssetsApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$request_body = array(new \Swagger\Client\Eve\Model\array()); // int[] | A list of item ids
+$item_ids = array(56); // int[] | A list of item ids
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
-    $result = $apiInstance->postCorporationsCorporationIdAssetsNames($corporation_id, $request_body, $datasource, $token);
+    $result = $apiInstance->postCorporationsCorporationIdAssetsNames($corporation_id, $item_ids, $datasource, $token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsNames: ', $e->getMessage(), PHP_EOL;
@@ -348,10 +393,11 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **request_body** | [**int[]**](../Model/array.md)| A list of item ids |
+ **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -365,8 +411,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

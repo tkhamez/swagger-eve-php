@@ -7,7 +7,9 @@ Method | HTTP request | Description
 [**getInsurancePrices**](InsuranceApi.md#getInsurancePrices) | **GET** /v1/insurance/prices/ | List insurance levels
 
 
-# **getInsurancePrices**
+
+## getInsurancePrices
+
 > \Swagger\Client\Eve\Model\GetInsurancePrices200Ok[] getInsurancePrices($accept_language, $datasource, $if_none_match, $language)
 
 List insurance levels
@@ -15,9 +17,11 @@ List insurance levels
 Return available insurance levels for all ship types  ---  This route is cached for up to 3600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\InsuranceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -40,6 +44,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
@@ -57,8 +62,10 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

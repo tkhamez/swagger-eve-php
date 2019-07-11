@@ -10,7 +10,9 @@ Method | HTTP request | Description
 [**putCharactersCharacterIdCalendarEventId**](CalendarApi.md#putCharactersCharacterIdCalendarEventId) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event
 
 
-# **getCharactersCharacterIdCalendar**
+
+## getCharactersCharacterIdCalendar
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendar200Ok[] getCharactersCharacterIdCalendar($character_id, $datasource, $from_event, $if_none_match, $token)
 
 List calendar event summaries
@@ -18,12 +20,15 @@ List calendar event summaries
 Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now. If a from_event ID is specified, it will return the next 50 chronological event summaries from after that event  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -48,6 +53,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -66,12 +72,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCharactersCharacterIdCalendarEventId**
+
+## getCharactersCharacterIdCalendarEventId
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdOk getCharactersCharacterIdCalendarEventId($character_id, $event_id, $datasource, $if_none_match, $token)
 
 Get an event
@@ -79,12 +89,15 @@ Get an event
 Get all the information for a specific event  ---  This route is cached for up to 5 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -109,6 +122,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -127,12 +141,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **getCharactersCharacterIdCalendarEventIdAttendees**
+
+## getCharactersCharacterIdCalendarEventIdAttendees
+
 > \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[] getCharactersCharacterIdCalendarEventIdAttendees($character_id, $event_id, $datasource, $if_none_match, $token)
 
 Get attendees
@@ -140,12 +158,15 @@ Get attendees
 Get all invited attendees for a given event  ---  This route is cached for up to 600 seconds
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -170,6 +191,7 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
@@ -188,25 +210,32 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
-# **putCharactersCharacterIdCalendarEventId**
-> putCharactersCharacterIdCalendarEventId($character_id, $event_id, $datasource, $token, $put_characters_character_id_calendar_event_id_response)
+
+## putCharactersCharacterIdCalendarEventId
+
+> putCharactersCharacterIdCalendarEventId($character_id, $event_id, $response, $datasource, $token)
 
 Respond to an event
 
 Set your response status to an event  ---
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
 // Configure OAuth2 access token for authorization: evesso
 $config = Swagger\Client\Eve\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new Swagger\Client\Eve\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -216,12 +245,12 @@ $apiInstance = new Swagger\Client\Eve\Api\CalendarApi(
 );
 $character_id = 56; // int | An EVE character ID
 $event_id = 56; // int | The ID of the event requested
+$response = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse | 
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
-$put_characters_character_id_calendar_event_id_response = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse | 
 
 try {
-    $apiInstance->putCharactersCharacterIdCalendarEventId($character_id, $event_id, $datasource, $token, $put_characters_character_id_calendar_event_id_response);
+    $apiInstance->putCharactersCharacterIdCalendarEventId($character_id, $event_id, $response, $datasource, $token);
 } catch (Exception $e) {
     echo 'Exception when calling CalendarApi->putCharactersCharacterIdCalendarEventId: ', $e->getMessage(), PHP_EOL;
 }
@@ -230,13 +259,14 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
  **event_id** | **int**| The ID of the event requested |
+ **response** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)|  |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
- **put_characters_character_id_calendar_event_id_response** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)|  | [optional]
 
 ### Return type
 
@@ -248,8 +278,10 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 
