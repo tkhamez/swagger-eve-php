@@ -695,6 +695,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if ($this->container['type'] === null) {
             $invalidProperties[] = "'type' can't be null";
         }
+        /*
         $allowedValues = $this->getTypeAllowableValues();
         if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
             $invalidProperties[] = sprintf(
@@ -702,6 +703,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                 implode("', '", $allowedValues)
             );
         }
+        */
 
         return $invalidProperties;
     }
@@ -890,6 +892,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
      */
     public function setType($type)
     {
+        /*
         $allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
@@ -899,6 +902,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                 )
             );
         }
+        */
         $this->container['type'] = $type;
 
         return $this;

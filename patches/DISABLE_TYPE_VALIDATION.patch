@@ -1,0 +1,39 @@
+Index: lib/Model/GetCharactersCharacterIdNotifications200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(revision 2a6adf5fc07d86224746e8c63284898568b0f51e)
++++ lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(date 1576178790802)
+@@ -695,6 +695,7 @@
+         if ($this->container['type'] === null) {
+             $invalidProperties[] = "'type' can't be null";
+         }
++        /*
+         $allowedValues = $this->getTypeAllowableValues();
+         if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
+             $invalidProperties[] = sprintf(
+@@ -702,6 +703,7 @@
+                 implode("', '", $allowedValues)
+             );
+         }
++        */
+ 
+         return $invalidProperties;
+     }
+@@ -890,6 +892,7 @@
+      */
+     public function setType($type)
+     {
++        /*
+         $allowedValues = $this->getTypeAllowableValues();
+         if (!in_array($type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+@@ -899,6 +902,7 @@
+                 )
+             );
+         }
++        */
+         $this->container['type'] = $type;
+ 
+         return $this;
