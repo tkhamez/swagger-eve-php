@@ -224,7 +224,7 @@ Name | Type | Description  | Notes
 
 Respond to an event
 
-Set your response status to an event  ---
+Set your response status to an event  ---  [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#PUT-/characters/{character_id}/calendar/{event_id}/)
 
 ### Example
 
