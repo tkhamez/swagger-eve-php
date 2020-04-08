@@ -536,7 +536,7 @@ class GetCharactersCharacterIdBlueprints200Ok implements ModelInterface, ArrayAc
     /**
      * Sets location_id
      *
-     * @param int $location_id References a solar system, station or item_id if this blueprint is located within a container. If the return value is an item_id, then the Character AssetList API must be queried to find the container using the given item_id to determine the correct location of the Blueprint.
+     * @param int $location_id References a station, a ship or an item_id if this blueprint is located within a container. If the return value is an item_id, then the Character AssetList API must be queried to find the container using the given item_id to determine the correct location of the Blueprint.
      *
      * @return $this
      */

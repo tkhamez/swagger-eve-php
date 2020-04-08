@@ -221,6 +221,7 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
     const LOCATION_FLAG_FIGHTER_TUBE3 = 'FighterTube3';
     const LOCATION_FLAG_FIGHTER_TUBE4 = 'FighterTube4';
     const LOCATION_FLAG_FLEET_HANGAR = 'FleetHangar';
+    const LOCATION_FLAG_FRIGATE_ESCAPE_BAY = 'FrigateEscapeBay';
     const LOCATION_FLAG_HANGAR = 'Hangar';
     const LOCATION_FLAG_HANGAR_ALL = 'HangarAll';
     const LOCATION_FLAG_HI_SLOT0 = 'HiSlot0';
@@ -351,6 +352,7 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
             self::LOCATION_FLAG_FIGHTER_TUBE3,
             self::LOCATION_FLAG_FIGHTER_TUBE4,
             self::LOCATION_FLAG_FLEET_HANGAR,
+            self::LOCATION_FLAG_FRIGATE_ESCAPE_BAY,
             self::LOCATION_FLAG_HANGAR,
             self::LOCATION_FLAG_HANGAR_ALL,
             self::LOCATION_FLAG_HI_SLOT0,

@@ -221,6 +221,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     const LOCATION_FLAG_FIGHTER_TUBE3 = 'FighterTube3';
     const LOCATION_FLAG_FIGHTER_TUBE4 = 'FighterTube4';
     const LOCATION_FLAG_FLEET_HANGAR = 'FleetHangar';
+    const LOCATION_FLAG_FRIGATE_ESCAPE_BAY = 'FrigateEscapeBay';
     const LOCATION_FLAG_HANGAR = 'Hangar';
     const LOCATION_FLAG_HANGAR_ALL = 'HangarAll';
     const LOCATION_FLAG_HI_SLOT0 = 'HiSlot0';
@@ -347,6 +348,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             self::LOCATION_FLAG_FIGHTER_TUBE3,
             self::LOCATION_FLAG_FIGHTER_TUBE4,
             self::LOCATION_FLAG_FLEET_HANGAR,
+            self::LOCATION_FLAG_FRIGATE_ESCAPE_BAY,
             self::LOCATION_FLAG_HANGAR,
             self::LOCATION_FLAG_HANGAR_ALL,
             self::LOCATION_FLAG_HI_SLOT0,
@@ -614,7 +616,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     /**
      * Sets location_id
      *
-     * @param int $location_id References a solar system, station or item_id if this blueprint is located within a container.
+     * @param int $location_id References a station, a ship or an item_id if this blueprint is located within a container.
      *
      * @return $this
      */

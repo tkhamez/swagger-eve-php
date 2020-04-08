@@ -427,7 +427,7 @@ Name | Type | Description  | Notes
 
 Get corporation icon
 
-Get the icon urls for a corporation  ---  This route is cached for up to 3600 seconds
+Get the icon urls for a corporation  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/icons/)
 
 ### Example
 

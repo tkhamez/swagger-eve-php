@@ -474,7 +474,7 @@ class AssetsApi
         }
 
 
-        $resourcePath = '/v4/characters/{character_id}/assets/';
+        $resourcePath = '/v5/characters/{character_id}/assets/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -934,7 +934,7 @@ class AssetsApi
         }
 
 
-        $resourcePath = '/v4/corporations/{corporation_id}/assets/';
+        $resourcePath = '/v5/corporations/{corporation_id}/assets/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
