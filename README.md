@@ -39,7 +39,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 ```json
 {
   "require": {
-    "tkhamez/swagger-eve-php": "~3.2.0"
+    "tkhamez/swagger-eve-php": "~3.3.0"
   }
 }
 ```
