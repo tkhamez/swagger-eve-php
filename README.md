@@ -11,11 +11,7 @@ This client is generated from the
 
 ##### Changes
 
-- TYPE_WAR_ADOPTED2.patch: The notification type "WarAdopted " has a space at the end in the swagger_latest.json 
-  file and in the response from ESI. But the generated client somehow removes that, so the validation fails.
-  This patch adds "WarAdopted ".
-- DISABLE_TYPE_VALIDATION.patch: Disables validation of character notification type (CCP adds new types without 
-  increasing the endpoint version or mentioning it in the changelog).
+
 
 # OpenAPIClient-php
 

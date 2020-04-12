@@ -390,7 +390,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_TRANSACTION_REVERSAL_MSG = 'TransactionReversalMsg';
     const TYPE_TUTORIAL_MSG = 'TutorialMsg';
     const TYPE_WAR_ADOPTED = 'WarAdopted';
-    const TYPE_WAR_ADOPTED2 = 'WarAdopted ';
     const TYPE_WAR_ALLY_INHERITED = 'WarAllyInherited';
     const TYPE_WAR_ALLY_OFFER_DECLINED_MSG = 'WarAllyOfferDeclinedMsg';
     const TYPE_WAR_CONCORD_INVALIDATES = 'WarConcordInvalidates';
@@ -625,7 +624,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_TRANSACTION_REVERSAL_MSG,
             self::TYPE_TUTORIAL_MSG,
             self::TYPE_WAR_ADOPTED,
-            self::TYPE_WAR_ADOPTED2,
             self::TYPE_WAR_ALLY_INHERITED,
             self::TYPE_WAR_ALLY_OFFER_DECLINED_MSG,
             self::TYPE_WAR_CONCORD_INVALIDATES,
@@ -697,7 +695,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if ($this->container['type'] === null) {
             $invalidProperties[] = "'type' can't be null";
         }
-        /*
         $allowedValues = $this->getTypeAllowableValues();
         if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
             $invalidProperties[] = sprintf(
@@ -705,7 +702,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                 implode("', '", $allowedValues)
             );
         }
-        */
 
         return $invalidProperties;
     }
@@ -894,7 +890,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
      */
     public function setType($type)
     {
-        /*
         $allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
@@ -904,7 +899,6 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                 )
             );
         }
-        */
         $this->container['type'] = $type;
 
         return $this;
