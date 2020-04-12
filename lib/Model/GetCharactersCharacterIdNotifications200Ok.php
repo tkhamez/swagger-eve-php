@@ -809,7 +809,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
      */
     public function setSenderType($sender_type)
     {
-        $allowedValues = $this->getSenderTypeAllowableValues();
+        /*$allowedValues = $this->getSenderTypeAllowableValues();
         if (!in_array($sender_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -817,7 +817,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['sender_type'] = $sender_type;
 
         return $this;
@@ -890,7 +890,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
      */
     public function setType($type)
     {
-        $allowedValues = $this->getTypeAllowableValues();
+        /*$allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -898,7 +898,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['type'] = $type;
 
         return $this;

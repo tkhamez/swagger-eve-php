@@ -275,7 +275,7 @@ class GetIndustrySystemsCostIndice implements ModelInterface, ArrayAccess
      */
     public function setActivity($activity)
     {
-        $allowedValues = $this->getActivityAllowableValues();
+        /*$allowedValues = $this->getActivityAllowableValues();
         if (!in_array($activity, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -283,7 +283,7 @@ class GetIndustrySystemsCostIndice implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['activity'] = $activity;
 
         return $this;

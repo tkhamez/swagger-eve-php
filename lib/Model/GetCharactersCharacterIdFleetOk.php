@@ -305,7 +305,7 @@ class GetCharactersCharacterIdFleetOk implements ModelInterface, ArrayAccess
      */
     public function setRole($role)
     {
-        $allowedValues = $this->getRoleAllowableValues();
+        /*$allowedValues = $this->getRoleAllowableValues();
         if (!in_array($role, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -313,7 +313,7 @@ class GetCharactersCharacterIdFleetOk implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['role'] = $role;
 
         return $this;

@@ -507,7 +507,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
      */
     public function setGender($gender)
     {
-        $allowedValues = $this->getGenderAllowableValues();
+        /*$allowedValues = $this->getGenderAllowableValues();
         if (!in_array($gender, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -515,7 +515,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['gender'] = $gender;
 
         return $this;

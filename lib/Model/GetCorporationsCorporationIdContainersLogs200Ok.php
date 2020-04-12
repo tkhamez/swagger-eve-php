@@ -624,7 +624,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
      */
     public function setAction($action)
     {
-        $allowedValues = $this->getActionAllowableValues();
+        /*$allowedValues = $this->getActionAllowableValues();
         if (!in_array($action, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -632,7 +632,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['action'] = $action;
 
         return $this;
@@ -729,7 +729,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
      */
     public function setLocationFlag($location_flag)
     {
-        $allowedValues = $this->getLocationFlagAllowableValues();
+        /*$allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -737,7 +737,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['location_flag'] = $location_flag;
 
         return $this;
@@ -858,7 +858,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
      */
     public function setPasswordType($password_type)
     {
-        $allowedValues = $this->getPasswordTypeAllowableValues();
+        /*$allowedValues = $this->getPasswordTypeAllowableValues();
         if (!is_null($password_type) && !in_array($password_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -866,7 +866,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['password_type'] = $password_type;
 
         return $this;

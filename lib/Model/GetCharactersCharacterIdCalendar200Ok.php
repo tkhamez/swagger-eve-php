@@ -323,7 +323,7 @@ class GetCharactersCharacterIdCalendar200Ok implements ModelInterface, ArrayAcce
      */
     public function setEventResponse($event_response)
     {
-        $allowedValues = $this->getEventResponseAllowableValues();
+        /*$allowedValues = $this->getEventResponseAllowableValues();
         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -331,7 +331,7 @@ class GetCharactersCharacterIdCalendar200Ok implements ModelInterface, ArrayAcce
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['event_response'] = $event_response;
 
         return $this;

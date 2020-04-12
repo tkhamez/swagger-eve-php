@@ -287,7 +287,7 @@ class GetCharactersCharacterIdMailMailIdRecipient implements ModelInterface, Arr
      */
     public function setRecipientType($recipient_type)
     {
-        $allowedValues = $this->getRecipientTypeAllowableValues();
+        /*$allowedValues = $this->getRecipientTypeAllowableValues();
         if (!in_array($recipient_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -295,7 +295,7 @@ class GetCharactersCharacterIdMailMailIdRecipient implements ModelInterface, Arr
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['recipient_type'] = $recipient_type;
 
         return $this;

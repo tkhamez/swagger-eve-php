@@ -611,7 +611,7 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
      */
     public function setRange($range)
     {
-        $allowedValues = $this->getRangeAllowableValues();
+        /*$allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -619,7 +619,7 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['range'] = $range;
 
         return $this;

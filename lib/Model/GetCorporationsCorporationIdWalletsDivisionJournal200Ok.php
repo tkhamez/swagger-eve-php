@@ -678,7 +678,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
      */
     public function setContextIdType($context_id_type)
     {
-        $allowedValues = $this->getContextIdTypeAllowableValues();
+        /*$allowedValues = $this->getContextIdTypeAllowableValues();
         if (!is_null($context_id_type) && !in_array($context_id_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -686,7 +686,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['context_id_type'] = $context_id_type;
 
         return $this;
@@ -831,7 +831,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
      */
     public function setRefType($ref_type)
     {
-        $allowedValues = $this->getRefTypeAllowableValues();
+        /*$allowedValues = $this->getRefTypeAllowableValues();
         if (!in_array($ref_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -839,7 +839,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['ref_type'] = $ref_type;
 
         return $this;

@@ -645,7 +645,7 @@ class GetCorporationsCorporationIdCustomsOffices200Ok implements ModelInterface,
      */
     public function setStandingLevel($standing_level)
     {
-        $allowedValues = $this->getStandingLevelAllowableValues();
+        /*$allowedValues = $this->getStandingLevelAllowableValues();
         if (!is_null($standing_level) && !in_array($standing_level, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -653,7 +653,7 @@ class GetCorporationsCorporationIdCustomsOffices200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['standing_level'] = $standing_level;
 
         return $this;

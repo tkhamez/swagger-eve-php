@@ -11,7 +11,8 @@ This client is generated from the
 
 ##### Changes
 
-
+- Removed validation of enum attributes because CCP declared extending those to be no longer a breaking change
+  https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01
 
 # OpenAPIClient-php
 

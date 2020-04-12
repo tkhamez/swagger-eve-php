@@ -282,7 +282,7 @@ class PostUniverseNames200Ok implements ModelInterface, ArrayAccess
      */
     public function setCategory($category)
     {
-        $allowedValues = $this->getCategoryAllowableValues();
+        /*$allowedValues = $this->getCategoryAllowableValues();
         if (!in_array($category, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -290,7 +290,7 @@ class PostUniverseNames200Ok implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['category'] = $category;
 
         return $this;

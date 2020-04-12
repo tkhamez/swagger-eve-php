@@ -316,7 +316,7 @@ class GetCorporationsCorporationIdShareholders200Ok implements ModelInterface, A
      */
     public function setShareholderType($shareholder_type)
     {
-        $allowedValues = $this->getShareholderTypeAllowableValues();
+        /*$allowedValues = $this->getShareholderTypeAllowableValues();
         if (!in_array($shareholder_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -324,7 +324,7 @@ class GetCorporationsCorporationIdShareholders200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['shareholder_type'] = $shareholder_type;
 
         return $this;

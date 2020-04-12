@@ -589,7 +589,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
      */
     public function setLocationFlag($location_flag)
     {
-        $allowedValues = $this->getLocationFlagAllowableValues();
+        /*$allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -597,7 +597,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['location_flag'] = $location_flag;
 
         return $this;

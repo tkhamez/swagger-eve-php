@@ -350,7 +350,7 @@ class GetCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcces
      */
     public function setFlag($flag)
     {
-        $allowedValues = $this->getFlagAllowableValues();
+        /*$allowedValues = $this->getFlagAllowableValues();
         if (!in_array($flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -358,7 +358,7 @@ class GetCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcces
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['flag'] = $flag;
 
         return $this;

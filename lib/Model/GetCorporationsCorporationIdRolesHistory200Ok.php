@@ -659,7 +659,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
      */
     public function setRoleType($role_type)
     {
-        $allowedValues = $this->getRoleTypeAllowableValues();
+        /*$allowedValues = $this->getRoleTypeAllowableValues();
         if (!in_array($role_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -667,7 +667,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['role_type'] = $role_type;
 
         return $this;
