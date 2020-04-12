@@ -7,7 +7,8 @@ This client is generated from the
   (note, however, that the date is not always correct there) or generated with a new patch version
   of the generator library
 * minor: switched to a new minor version of the generator library
-* major: switched to a new major version of the generator library or switched to another generator library
+* major: switched to a new major version of the generator library, switched to another generator library 
+  or another breaking change.
 
 ##### Changes
 
@@ -36,7 +37,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 ```json
 {
   "require": {
-    "tkhamez/swagger-eve-php": "~3.3.0"
+    "tkhamez/swagger-eve-php": "~4.0.0"
   }
 }
 ```
