@@ -28,8 +28,11 @@
 
 namespace Swagger\Client\Eve;
 
+use GuzzleHttp\Psr7\Response;
+use Swagger\Client\Eve\Api\CharacterApi;
 use \Swagger\Client\Eve\Configuration;
 use \Swagger\Client\Eve\ApiException;
+use Swagger\Client\Eve\Model\GetCharactersCharacterIdNotifications200Ok;
 use \Swagger\Client\Eve\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
@@ -137,9 +140,13 @@ class CharacterApiTest extends TestCase
      *
      * Get character notifications.
      *
+     * @throws \Swagger\Client\Eve\ApiException
      */
     public function testGetCharactersCharacterIdNotifications()
     {
+        $api = new CharacterApi(new Client(new Response(200, [], '[{"type": "InvalidEnumValue"}]')));
+        $result = $api->getCharactersCharacterIdNotifications(96061222);
+        $this->assertInstanceOf(GetCharactersCharacterIdNotifications200Ok::class, $result[0]);
     }
 
     /**
