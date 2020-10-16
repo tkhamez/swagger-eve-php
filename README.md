@@ -12,6 +12,10 @@ This client is generated from the
 
 ##### Changes
 
+5.0.0
+
+- Added patch to allow Guzzle HTTP client ^7.2 together with ^6.2 (7.2 requires PHP ^7.2.5 || ^8.0).
+
 4.0.0
 - Removed previous patches.
 - Added patch to removed validation of all enum attributes because CCP declared extending those to be no longer a 
