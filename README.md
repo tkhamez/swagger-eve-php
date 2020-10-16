@@ -12,8 +12,19 @@ This client is generated from the
 
 ##### Changes
 
-- Removed validation of enum attributes because CCP declared extending those to be no longer a breaking change
-  https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01
+4.0.0
+- Removed previous patches.
+- Added patch to removed validation of all enum attributes because CCP declared extending those to be no longer a 
+  breaking change https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01.
+
+3.2.0
+- Added DISABLE_TYPE_VALIDATION.patch: Disables validation of character notification type (CCP adds new types 
+  without increasing the endpoint version or mentioning it in the changelog).
+
+3.1.0
+- Added TYPE_WAR_ADOPTED2.patch: The notification type "WarAdopted " has a space at the end in the swagger_latest.json 
+  file and in the response from ESI. But the generated client somehow removes that, so the validation fails. This 
+  patch adds "WarAdopted ".
 
 # OpenAPIClient-php
 
