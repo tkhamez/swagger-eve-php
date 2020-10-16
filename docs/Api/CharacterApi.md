@@ -552,7 +552,7 @@ Name | Type | Description  | Notes
 
 Get character portraits
 
-Get portrait urls for a character  ---  This route expires daily at 11:05  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/portrait/)
+Get portrait urls for a character  ---  This route expires daily at 11:05
 
 ### Example
 
@@ -880,7 +880,7 @@ Name | Type | Description  | Notes
 
 Character affiliation
 
-Bulk lookup of character IDs to corporation, alliance and faction  ---  This route is cached for up to 3600 seconds
+Bulk lookup of character IDs to corporation, alliance and faction  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#POST-/characters/affiliation/)
 
 ### Example
 
