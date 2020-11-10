@@ -196,6 +196,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const SENDER_TYPE_OTHER = 'other';
     const TYPE_ACCEPTED_ALLY = 'AcceptedAlly';
     const TYPE_ACCEPTED_SURRENDER = 'AcceptedSurrender';
+    const TYPE_AGENT_RETIRED_TRIGRAVIAN = 'AgentRetiredTrigravian';
     const TYPE_ALL_ANCHORING_MSG = 'AllAnchoringMsg';
     const TYPE_ALL_MAINTENANCE_BILL_MSG = 'AllMaintenanceBillMsg';
     const TYPE_ALL_STRUC_INVULNERABLE_MSG = 'AllStrucInvulnerableMsg';
@@ -237,6 +238,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_CONTACT_ADD = 'ContactAdd';
     const TYPE_CONTACT_EDIT = 'ContactEdit';
     const TYPE_CONTAINER_PASSWORD_MSG = 'ContainerPasswordMsg';
+    const TYPE_CONTRACT_REGION_CHANGED_TO_POCHVEN = 'ContractRegionChangedToPochven';
     const TYPE_CORP_ALL_BILL_MSG = 'CorpAllBillMsg';
     const TYPE_CORP_APP_ACCEPT_MSG = 'CorpAppAcceptMsg';
     const TYPE_CORP_APP_INVITED_MSG = 'CorpAppInvitedMsg';
@@ -269,6 +271,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_DECLARE_WAR = 'DeclareWar';
     const TYPE_DISTRICT_ATTACKED = 'DistrictAttacked';
     const TYPE_DUST_APP_ACCEPTED_MSG = 'DustAppAcceptedMsg';
+    const TYPE_ESS_MAIN_BANK_LINK = 'ESSMainBankLink';
     const TYPE_ENTOSIS_CAPTURE_STARTED = 'EntosisCaptureStarted';
     const TYPE_FW_ALLIANCE_KICK_MSG = 'FWAllianceKickMsg';
     const TYPE_FW_ALLIANCE_WARNING_MSG = 'FWAllianceWarningMsg';
@@ -303,7 +306,9 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_INSURANCE_INVALIDATED_MSG = 'InsuranceInvalidatedMsg';
     const TYPE_INSURANCE_ISSUED_MSG = 'InsuranceIssuedMsg';
     const TYPE_INSURANCE_PAYOUT_MSG = 'InsurancePayoutMsg';
+    const TYPE_INVASION_COMPLETED_MSG = 'InvasionCompletedMsg';
     const TYPE_INVASION_SYSTEM_LOGIN = 'InvasionSystemLogin';
+    const TYPE_INVASION_SYSTEM_START = 'InvasionSystemStart';
     const TYPE_JUMP_CLONE_DELETED_MSG1 = 'JumpCloneDeletedMsg1';
     const TYPE_JUMP_CLONE_DELETED_MSG2 = 'JumpCloneDeletedMsg2';
     const TYPE_KILL_REPORT_FINAL_BLOW = 'KillReportFinalBlow';
@@ -318,6 +323,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_MADE_WAR_MUTUAL = 'MadeWarMutual';
     const TYPE_MERC_OFFER_RETRACTED_MSG = 'MercOfferRetractedMsg';
     const TYPE_MERC_OFFERED_NEGOTIATION_MSG = 'MercOfferedNegotiationMsg';
+    const TYPE_MISSION_CANCELED_TRIGLAVIAN = 'MissionCanceledTriglavian';
     const TYPE_MISSION_OFFER_EXPIRATION_MSG = 'MissionOfferExpirationMsg';
     const TYPE_MISSION_TIMEOUT_MSG = 'MissionTimeoutMsg';
     const TYPE_MOONMINING_AUTOMATIC_FRACTURE = 'MoonminingAutomaticFracture';
@@ -334,6 +340,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     const TYPE_OFFER_TO_ALLY_RETRACTED = 'OfferToAllyRetracted';
     const TYPE_OFFERED_SURRENDER = 'OfferedSurrender';
     const TYPE_OFFERED_TO_ALLY = 'OfferedToAlly';
+    const TYPE_OFFICE_LEASE_CANCELED_INSUFFICIENT_STANDINGS = 'OfficeLeaseCanceledInsufficientStandings';
     const TYPE_OLD_LSC_MESSAGES = 'OldLscMessages';
     const TYPE_OPERATION_FINISHED = 'OperationFinished';
     const TYPE_ORBITAL_ATTACKED = 'OrbitalAttacked';
@@ -432,6 +439,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         return [
             self::TYPE_ACCEPTED_ALLY,
             self::TYPE_ACCEPTED_SURRENDER,
+            self::TYPE_AGENT_RETIRED_TRIGRAVIAN,
             self::TYPE_ALL_ANCHORING_MSG,
             self::TYPE_ALL_MAINTENANCE_BILL_MSG,
             self::TYPE_ALL_STRUC_INVULNERABLE_MSG,
@@ -473,6 +481,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_CONTACT_ADD,
             self::TYPE_CONTACT_EDIT,
             self::TYPE_CONTAINER_PASSWORD_MSG,
+            self::TYPE_CONTRACT_REGION_CHANGED_TO_POCHVEN,
             self::TYPE_CORP_ALL_BILL_MSG,
             self::TYPE_CORP_APP_ACCEPT_MSG,
             self::TYPE_CORP_APP_INVITED_MSG,
@@ -505,6 +514,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_DECLARE_WAR,
             self::TYPE_DISTRICT_ATTACKED,
             self::TYPE_DUST_APP_ACCEPTED_MSG,
+            self::TYPE_ESS_MAIN_BANK_LINK,
             self::TYPE_ENTOSIS_CAPTURE_STARTED,
             self::TYPE_FW_ALLIANCE_KICK_MSG,
             self::TYPE_FW_ALLIANCE_WARNING_MSG,
@@ -539,7 +549,9 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_INSURANCE_INVALIDATED_MSG,
             self::TYPE_INSURANCE_ISSUED_MSG,
             self::TYPE_INSURANCE_PAYOUT_MSG,
+            self::TYPE_INVASION_COMPLETED_MSG,
             self::TYPE_INVASION_SYSTEM_LOGIN,
+            self::TYPE_INVASION_SYSTEM_START,
             self::TYPE_JUMP_CLONE_DELETED_MSG1,
             self::TYPE_JUMP_CLONE_DELETED_MSG2,
             self::TYPE_KILL_REPORT_FINAL_BLOW,
@@ -554,6 +566,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_MADE_WAR_MUTUAL,
             self::TYPE_MERC_OFFER_RETRACTED_MSG,
             self::TYPE_MERC_OFFERED_NEGOTIATION_MSG,
+            self::TYPE_MISSION_CANCELED_TRIGLAVIAN,
             self::TYPE_MISSION_OFFER_EXPIRATION_MSG,
             self::TYPE_MISSION_TIMEOUT_MSG,
             self::TYPE_MOONMINING_AUTOMATIC_FRACTURE,
@@ -570,6 +583,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_OFFER_TO_ALLY_RETRACTED,
             self::TYPE_OFFERED_SURRENDER,
             self::TYPE_OFFERED_TO_ALLY,
+            self::TYPE_OFFICE_LEASE_CANCELED_INSUFFICIENT_STANDINGS,
             self::TYPE_OLD_LSC_MESSAGES,
             self::TYPE_OPERATION_FINISHED,
             self::TYPE_ORBITAL_ATTACKED,

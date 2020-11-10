@@ -299,6 +299,7 @@ class GetCharactersCharacterIdWalletJournal200Ok implements ModelInterface, Arra
     const REF_TYPE_DUEL_WAGER_ESCROW = 'duel_wager_escrow';
     const REF_TYPE_DUEL_WAGER_PAYMENT = 'duel_wager_payment';
     const REF_TYPE_DUEL_WAGER_REFUND = 'duel_wager_refund';
+    const REF_TYPE_ESS_ESCROW_TRANSFER = 'ess_escrow_transfer';
     const REF_TYPE_FACTORY_SLOT_RENTAL_FEE = 'factory_slot_rental_fee';
     const REF_TYPE_GM_CASH_TRANSFER = 'gm_cash_transfer';
     const REF_TYPE_INDUSTRY_JOB_TAX = 'industry_job_tax';
@@ -453,6 +454,7 @@ class GetCharactersCharacterIdWalletJournal200Ok implements ModelInterface, Arra
             self::REF_TYPE_DUEL_WAGER_ESCROW,
             self::REF_TYPE_DUEL_WAGER_PAYMENT,
             self::REF_TYPE_DUEL_WAGER_REFUND,
+            self::REF_TYPE_ESS_ESCROW_TRANSFER,
             self::REF_TYPE_FACTORY_SLOT_RENTAL_FEE,
             self::REF_TYPE_GM_CASH_TRANSFER,
             self::REF_TYPE_INDUSTRY_JOB_TAX,
