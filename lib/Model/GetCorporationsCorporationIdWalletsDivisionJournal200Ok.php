@@ -299,12 +299,14 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
     const REF_TYPE_DUEL_WAGER_ESCROW = 'duel_wager_escrow';
     const REF_TYPE_DUEL_WAGER_PAYMENT = 'duel_wager_payment';
     const REF_TYPE_DUEL_WAGER_REFUND = 'duel_wager_refund';
+    const REF_TYPE_ESS_ESCROW_TRANSFER = 'ess_escrow_transfer';
     const REF_TYPE_FACTORY_SLOT_RENTAL_FEE = 'factory_slot_rental_fee';
     const REF_TYPE_GM_CASH_TRANSFER = 'gm_cash_transfer';
     const REF_TYPE_INDUSTRY_JOB_TAX = 'industry_job_tax';
     const REF_TYPE_INFRASTRUCTURE_HUB_MAINTENANCE = 'infrastructure_hub_maintenance';
     const REF_TYPE_INHERITANCE = 'inheritance';
     const REF_TYPE_INSURANCE = 'insurance';
+    const REF_TYPE_ITEM_TRADER_PAYMENT = 'item_trader_payment';
     const REF_TYPE_JUMP_CLONE_ACTIVATION_FEE = 'jump_clone_activation_fee';
     const REF_TYPE_JUMP_CLONE_INSTALLATION_FEE = 'jump_clone_installation_fee';
     const REF_TYPE_KILL_RIGHT_FEE = 'kill_right_fee';
@@ -340,6 +342,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
     const REF_TYPE_REVERSE_ENGINEERING = 'reverse_engineering';
     const REF_TYPE_SECURITY_PROCESSING_FEE = 'security_processing_fee';
     const REF_TYPE_SHARES = 'shares';
+    const REF_TYPE_SKILL_PURCHASE = 'skill_purchase';
     const REF_TYPE_SOVEREIGNITY_BILL = 'sovereignity_bill';
     const REF_TYPE_STORE_PURCHASE = 'store_purchase';
     const REF_TYPE_STORE_PURCHASE_REFUND = 'store_purchase_refund';
@@ -451,12 +454,14 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
             self::REF_TYPE_DUEL_WAGER_ESCROW,
             self::REF_TYPE_DUEL_WAGER_PAYMENT,
             self::REF_TYPE_DUEL_WAGER_REFUND,
+            self::REF_TYPE_ESS_ESCROW_TRANSFER,
             self::REF_TYPE_FACTORY_SLOT_RENTAL_FEE,
             self::REF_TYPE_GM_CASH_TRANSFER,
             self::REF_TYPE_INDUSTRY_JOB_TAX,
             self::REF_TYPE_INFRASTRUCTURE_HUB_MAINTENANCE,
             self::REF_TYPE_INHERITANCE,
             self::REF_TYPE_INSURANCE,
+            self::REF_TYPE_ITEM_TRADER_PAYMENT,
             self::REF_TYPE_JUMP_CLONE_ACTIVATION_FEE,
             self::REF_TYPE_JUMP_CLONE_INSTALLATION_FEE,
             self::REF_TYPE_KILL_RIGHT_FEE,
@@ -492,6 +497,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
             self::REF_TYPE_REVERSE_ENGINEERING,
             self::REF_TYPE_SECURITY_PROCESSING_FEE,
             self::REF_TYPE_SHARES,
+            self::REF_TYPE_SKILL_PURCHASE,
             self::REF_TYPE_SOVEREIGNITY_BILL,
             self::REF_TYPE_STORE_PURCHASE,
             self::REF_TYPE_STORE_PURCHASE_REFUND,
