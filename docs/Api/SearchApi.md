@@ -37,10 +37,10 @@ $apiInstance = new Swagger\Client\Eve\Api\SearchApi(
 $categories = array('categories_example'); // string[] | Type of entities to search for
 $character_id = 56; // int | An EVE character ID
 $search = 'search_example'; // string | The string to search on
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 $strict = false; // bool | Whether the search should be a strict match
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -61,10 +61,10 @@ Name | Type | Description  | Notes
  **categories** | [**string[]**](../Model/string.md)| Type of entities to search for |
  **character_id** | **int**| An EVE character ID |
  **search** | **string**| The string to search on |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
  **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -108,10 +108,10 @@ $apiInstance = new Swagger\Client\Eve\Api\SearchApi(
 );
 $categories = array('categories_example'); // string[] | Type of entities to search for
 $search = 'search_example'; // string | The string to search on
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 $strict = false; // bool | Whether the search should be a strict match
 
 try {
@@ -130,10 +130,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **categories** | [**string[]**](../Model/string.md)| Type of entities to search for |
  **search** | **string**| The string to search on |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
  **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
 
 ### Return type

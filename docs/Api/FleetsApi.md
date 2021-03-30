@@ -379,10 +379,10 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
@@ -400,10 +400,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type
@@ -450,10 +450,10 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
 try {
@@ -471,10 +471,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
 ### Return type

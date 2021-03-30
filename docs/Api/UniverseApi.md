@@ -57,10 +57,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseAncestries($accept_language, $datasource, $if_none_match, $language);
@@ -76,10 +76,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -179,10 +179,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language);
@@ -198,10 +198,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -300,10 +300,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $category_id = 56; // int | An Eve item category ID
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseCategoriesCategoryId($category_id, $accept_language, $datasource, $if_none_match, $language);
@@ -320,10 +320,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **category_id** | **int**| An Eve item category ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -422,10 +422,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $constellation_id = 56; // int | constellation_id integer
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseConstellationsConstellationId($constellation_id, $accept_language, $datasource, $if_none_match, $language);
@@ -442,10 +442,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **constellation_id** | **int**| constellation_id integer |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -485,10 +485,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseFactions($accept_language, $datasource, $if_none_match, $language);
@@ -504,10 +504,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -726,10 +726,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $group_id = 56; // int | An Eve item group ID
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language);
@@ -746,10 +746,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| An Eve item group ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -909,10 +909,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseRaces($accept_language, $datasource, $if_none_match, $language);
@@ -928,10 +928,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -1030,10 +1030,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $region_id = 56; // int | region_id integer
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseRegionsRegionId($region_id, $accept_language, $datasource, $if_none_match, $language);
@@ -1050,10 +1050,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **region_id** | **int**| region_id integer |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -1575,10 +1575,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $system_id = 56; // int | system_id integer
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseSystemsSystemId($system_id, $accept_language, $datasource, $if_none_match, $language);
@@ -1595,10 +1595,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **system_id** | **int**| system_id integer |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -1699,10 +1699,10 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $type_id = 56; // int | An Eve item type ID
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->getUniverseTypesTypeId($type_id, $accept_language, $datasource, $if_none_match, $language);
@@ -1719,10 +1719,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type_id** | **int**| An Eve item type ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 
@@ -1763,9 +1763,9 @@ $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
     new GuzzleHttp\Client()
 );
 $names = array('names_example'); // string[] | The names to resolve
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 
 try {
     $result = $apiInstance->postUniverseIds($names, $accept_language, $datasource, $language);
@@ -1782,9 +1782,9 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **names** | [**string[]**](../Model/string.md)| The names to resolve |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
 
 ### Return type
 

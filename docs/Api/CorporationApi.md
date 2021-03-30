@@ -1167,7 +1167,7 @@ Name | Type | Description  | Notes
 
 Get corporation starbases (POSes)
 
-Returns list of corporation starbases (POSes)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns list of corporation starbases (POSes)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/starbases/)
 
 ### Example
 
@@ -1307,7 +1307,7 @@ Name | Type | Description  | Notes
 
 Get corporation structures
 
-Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Station_Manager
+Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Station_Manager  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/structures/)
 
 ### Example
 
@@ -1327,10 +1327,10 @@ $apiInstance = new Swagger\Client\Eve\Api\CorporationApi(
     $config
 );
 $corporation_id = 56; // int | An EVE corporation ID
-$accept_language = 'en-us'; // string | Language to use in the response
+$accept_language = 'en'; // string | Language to use in the response
 $datasource = 'tranquility'; // string | The server name you would like data from
 $if_none_match = 'if_none_match_example'; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$language = 'en-us'; // string | Language to use in the response, takes precedence over Accept-Language
+$language = 'en'; // string | Language to use in the response, takes precedence over Accept-Language
 $page = 1; // int | Which page of results to return
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -1349,10 +1349,10 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| An EVE corporation ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en-us&#39;]
+ **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en-us&#39;]
+ **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
  **page** | **int**| Which page of results to return | [optional] [default to 1]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
