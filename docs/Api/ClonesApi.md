@@ -1,17 +1,18 @@
 # Swagger\Client\Eve\ClonesApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdClones**](ClonesApi.md#getCharactersCharacterIdClones) | **GET** /v3/characters/{character_id}/clones/ | Get clones
-[**getCharactersCharacterIdImplants**](ClonesApi.md#getCharactersCharacterIdImplants) | **GET** /v1/characters/{character_id}/implants/ | Get active implants
+[**getCharactersCharacterIdClones()**](ClonesApi.md#getCharactersCharacterIdClones) | **GET** /v3/characters/{character_id}/clones/ | Get clones
+[**getCharactersCharacterIdImplants()**](ClonesApi.md#getCharactersCharacterIdImplants) | **GET** /v1/characters/{character_id}/implants/ | Get active implants
 
 
+## `getCharactersCharacterIdClones()`
 
-## getCharactersCharacterIdClones
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesOk getCharactersCharacterIdClones($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdClones($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdClonesOk
+```
 
 Get clones
 
@@ -45,11 +46,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ClonesApi->getCharactersCharacterIdClones: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -69,16 +68,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdImplants()`
 
-## getCharactersCharacterIdImplants
-
-> int[] getCharactersCharacterIdImplants($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdImplants($character_id, $datasource, $if_none_match, $token): int[]
+```
 
 Get active implants
 
@@ -112,11 +112,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ClonesApi->getCharactersCharacterIdImplants: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -136,9 +134,8 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

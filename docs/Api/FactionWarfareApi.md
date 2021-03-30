@@ -1,23 +1,24 @@
 # Swagger\Client\Eve\FactionWarfareApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdFwStats**](FactionWarfareApi.md#getCharactersCharacterIdFwStats) | **GET** /v1/characters/{character_id}/fw/stats/ | Overview of a character involved in faction warfare
-[**getCorporationsCorporationIdFwStats**](FactionWarfareApi.md#getCorporationsCorporationIdFwStats) | **GET** /v1/corporations/{corporation_id}/fw/stats/ | Overview of a corporation involved in faction warfare
-[**getFwLeaderboards**](FactionWarfareApi.md#getFwLeaderboards) | **GET** /v1/fw/leaderboards/ | List of the top factions in faction warfare
-[**getFwLeaderboardsCharacters**](FactionWarfareApi.md#getFwLeaderboardsCharacters) | **GET** /v1/fw/leaderboards/characters/ | List of the top pilots in faction warfare
-[**getFwLeaderboardsCorporations**](FactionWarfareApi.md#getFwLeaderboardsCorporations) | **GET** /v1/fw/leaderboards/corporations/ | List of the top corporations in faction warfare
-[**getFwStats**](FactionWarfareApi.md#getFwStats) | **GET** /v1/fw/stats/ | An overview of statistics about factions involved in faction warfare
-[**getFwSystems**](FactionWarfareApi.md#getFwSystems) | **GET** /v2/fw/systems/ | Ownership of faction warfare systems
-[**getFwWars**](FactionWarfareApi.md#getFwWars) | **GET** /v1/fw/wars/ | Data about which NPC factions are at war
+[**getCharactersCharacterIdFwStats()**](FactionWarfareApi.md#getCharactersCharacterIdFwStats) | **GET** /v1/characters/{character_id}/fw/stats/ | Overview of a character involved in faction warfare
+[**getCorporationsCorporationIdFwStats()**](FactionWarfareApi.md#getCorporationsCorporationIdFwStats) | **GET** /v1/corporations/{corporation_id}/fw/stats/ | Overview of a corporation involved in faction warfare
+[**getFwLeaderboards()**](FactionWarfareApi.md#getFwLeaderboards) | **GET** /v1/fw/leaderboards/ | List of the top factions in faction warfare
+[**getFwLeaderboardsCharacters()**](FactionWarfareApi.md#getFwLeaderboardsCharacters) | **GET** /v1/fw/leaderboards/characters/ | List of the top pilots in faction warfare
+[**getFwLeaderboardsCorporations()**](FactionWarfareApi.md#getFwLeaderboardsCorporations) | **GET** /v1/fw/leaderboards/corporations/ | List of the top corporations in faction warfare
+[**getFwStats()**](FactionWarfareApi.md#getFwStats) | **GET** /v1/fw/stats/ | An overview of statistics about factions involved in faction warfare
+[**getFwSystems()**](FactionWarfareApi.md#getFwSystems) | **GET** /v2/fw/systems/ | Ownership of faction warfare systems
+[**getFwWars()**](FactionWarfareApi.md#getFwWars) | **GET** /v1/fw/wars/ | Data about which NPC factions are at war
 
 
+## `getCharactersCharacterIdFwStats()`
 
-## getCharactersCharacterIdFwStats
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsOk getCharactersCharacterIdFwStats($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdFwStats($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdFwStatsOk
+```
 
 Overview of a character involved in faction warfare
 
@@ -51,11 +52,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getCharactersCharacterIdFwStats: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -75,16 +74,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationsCorporationIdFwStats()`
 
-## getCorporationsCorporationIdFwStats
-
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsOk getCorporationsCorporationIdFwStats($corporation_id, $datasource, $if_none_match, $token)
+```php
+getCorporationsCorporationIdFwStats($corporation_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCorporationsCorporationIdFwStatsOk
+```
 
 Overview of a corporation involved in faction warfare
 
@@ -118,11 +118,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getCorporationsCorporationIdFwStats: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -142,16 +140,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFwLeaderboards()`
 
-## getFwLeaderboards
-
-> \Swagger\Client\Eve\Model\GetFwLeaderboardsOk getFwLeaderboards($datasource, $if_none_match)
+```php
+getFwLeaderboards($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetFwLeaderboardsOk
+```
 
 List of the top factions in faction warfare
 
@@ -162,6 +161,7 @@ Top 4 leaderboard of factions for kills and victory points separated by total, l
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
@@ -178,11 +178,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwLeaderboards: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -200,16 +198,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFwLeaderboardsCharacters()`
 
-## getFwLeaderboardsCharacters
-
-> \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersOk getFwLeaderboardsCharacters($datasource, $if_none_match)
+```php
+getFwLeaderboardsCharacters($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetFwLeaderboardsCharactersOk
+```
 
 List of the top pilots in faction warfare
 
@@ -220,6 +219,7 @@ Top 100 leaderboard of pilots for kills and victory points separated by total, l
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
@@ -236,11 +236,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwLeaderboardsCharacters: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -258,16 +256,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFwLeaderboardsCorporations()`
 
-## getFwLeaderboardsCorporations
-
-> \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsOk getFwLeaderboardsCorporations($datasource, $if_none_match)
+```php
+getFwLeaderboardsCorporations($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetFwLeaderboardsCorporationsOk
+```
 
 List of the top corporations in faction warfare
 
@@ -278,6 +277,7 @@ Top 10 leaderboard of corporations for kills and victory points separated by tot
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
@@ -294,11 +294,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwLeaderboardsCorporations: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -316,16 +314,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFwStats()`
 
-## getFwStats
-
-> \Swagger\Client\Eve\Model\GetFwStats200Ok[] getFwStats($datasource, $if_none_match)
+```php
+getFwStats($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetFwStats200Ok[]
+```
 
 An overview of statistics about factions involved in faction warfare
 
@@ -336,6 +335,7 @@ Statistical overviews of factions involved in faction warfare  ---  This route e
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
@@ -352,11 +352,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwStats: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -374,16 +372,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFwSystems()`
 
-## getFwSystems
-
-> \Swagger\Client\Eve\Model\GetFwSystems200Ok[] getFwSystems($datasource, $if_none_match)
+```php
+getFwSystems($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetFwSystems200Ok[]
+```
 
 Ownership of faction warfare systems
 
@@ -394,6 +393,7 @@ An overview of the current ownership of faction warfare solar systems  ---  This
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
@@ -410,11 +410,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwSystems: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -432,16 +430,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFwWars()`
 
-## getFwWars
-
-> \Swagger\Client\Eve\Model\GetFwWars200Ok[] getFwWars($datasource, $if_none_match)
+```php
+getFwWars($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetFwWars200Ok[]
+```
 
 Data about which NPC factions are at war
 
@@ -452,6 +451,7 @@ Data about which NPC factions are at war  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\FactionWarfareApi(
@@ -468,11 +468,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FactionWarfareApi->getFwWars: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -490,9 +488,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

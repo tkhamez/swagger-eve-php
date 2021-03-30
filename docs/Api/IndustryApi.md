@@ -1,23 +1,24 @@
 # Swagger\Client\Eve\IndustryApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdIndustryJobs**](IndustryApi.md#getCharactersCharacterIdIndustryJobs) | **GET** /v1/characters/{character_id}/industry/jobs/ | List character industry jobs
-[**getCharactersCharacterIdMining**](IndustryApi.md#getCharactersCharacterIdMining) | **GET** /v1/characters/{character_id}/mining/ | Character mining ledger
-[**getCorporationCorporationIdMiningExtractions**](IndustryApi.md#getCorporationCorporationIdMiningExtractions) | **GET** /v1/corporation/{corporation_id}/mining/extractions/ | Moon extraction timers
-[**getCorporationCorporationIdMiningObservers**](IndustryApi.md#getCorporationCorporationIdMiningObservers) | **GET** /v1/corporation/{corporation_id}/mining/observers/ | Corporation mining observers
-[**getCorporationCorporationIdMiningObserversObserverId**](IndustryApi.md#getCorporationCorporationIdMiningObserversObserverId) | **GET** /v1/corporation/{corporation_id}/mining/observers/{observer_id}/ | Observed corporation mining
-[**getCorporationsCorporationIdIndustryJobs**](IndustryApi.md#getCorporationsCorporationIdIndustryJobs) | **GET** /v1/corporations/{corporation_id}/industry/jobs/ | List corporation industry jobs
-[**getIndustryFacilities**](IndustryApi.md#getIndustryFacilities) | **GET** /v1/industry/facilities/ | List industry facilities
-[**getIndustrySystems**](IndustryApi.md#getIndustrySystems) | **GET** /v1/industry/systems/ | List solar system cost indices
+[**getCharactersCharacterIdIndustryJobs()**](IndustryApi.md#getCharactersCharacterIdIndustryJobs) | **GET** /v1/characters/{character_id}/industry/jobs/ | List character industry jobs
+[**getCharactersCharacterIdMining()**](IndustryApi.md#getCharactersCharacterIdMining) | **GET** /v1/characters/{character_id}/mining/ | Character mining ledger
+[**getCorporationCorporationIdMiningExtractions()**](IndustryApi.md#getCorporationCorporationIdMiningExtractions) | **GET** /v1/corporation/{corporation_id}/mining/extractions/ | Moon extraction timers
+[**getCorporationCorporationIdMiningObservers()**](IndustryApi.md#getCorporationCorporationIdMiningObservers) | **GET** /v1/corporation/{corporation_id}/mining/observers/ | Corporation mining observers
+[**getCorporationCorporationIdMiningObserversObserverId()**](IndustryApi.md#getCorporationCorporationIdMiningObserversObserverId) | **GET** /v1/corporation/{corporation_id}/mining/observers/{observer_id}/ | Observed corporation mining
+[**getCorporationsCorporationIdIndustryJobs()**](IndustryApi.md#getCorporationsCorporationIdIndustryJobs) | **GET** /v1/corporations/{corporation_id}/industry/jobs/ | List corporation industry jobs
+[**getIndustryFacilities()**](IndustryApi.md#getIndustryFacilities) | **GET** /v1/industry/facilities/ | List industry facilities
+[**getIndustrySystems()**](IndustryApi.md#getIndustrySystems) | **GET** /v1/industry/systems/ | List solar system cost indices
 
 
+## `getCharactersCharacterIdIndustryJobs()`
 
-## getCharactersCharacterIdIndustryJobs
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[] getCharactersCharacterIdIndustryJobs($character_id, $datasource, $if_none_match, $include_completed, $token)
+```php
+getCharactersCharacterIdIndustryJobs($character_id, $datasource, $if_none_match, $include_completed, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdIndustryJobs200Ok[]
+```
 
 List character industry jobs
 
@@ -52,11 +53,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getCharactersCharacterIdIndustryJobs: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -77,16 +76,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdMining()`
 
-## getCharactersCharacterIdMining
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[] getCharactersCharacterIdMining($character_id, $datasource, $if_none_match, $page, $token)
+```php
+getCharactersCharacterIdMining($character_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdMining200Ok[]
+```
 
 Character mining ledger
 
@@ -121,11 +121,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getCharactersCharacterIdMining: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -146,16 +144,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationCorporationIdMiningExtractions()`
 
-## getCorporationCorporationIdMiningExtractions
-
-> \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[] getCorporationCorporationIdMiningExtractions($corporation_id, $datasource, $if_none_match, $page, $token)
+```php
+getCorporationCorporationIdMiningExtractions($corporation_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningExtractions200Ok[]
+```
 
 Moon extraction timers
 
@@ -190,11 +189,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getCorporationCorporationIdMiningExtractions: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -215,16 +212,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationCorporationIdMiningObservers()`
 
-## getCorporationCorporationIdMiningObservers
-
-> \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[] getCorporationCorporationIdMiningObservers($corporation_id, $datasource, $if_none_match, $page, $token)
+```php
+getCorporationCorporationIdMiningObservers($corporation_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObservers200Ok[]
+```
 
 Corporation mining observers
 
@@ -259,11 +257,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getCorporationCorporationIdMiningObservers: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -284,16 +280,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationCorporationIdMiningObserversObserverId()`
 
-## getCorporationCorporationIdMiningObserversObserverId
-
-> \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[] getCorporationCorporationIdMiningObserversObserverId($corporation_id, $observer_id, $datasource, $if_none_match, $page, $token)
+```php
+getCorporationCorporationIdMiningObserversObserverId($corporation_id, $observer_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCorporationCorporationIdMiningObserversObserverId200Ok[]
+```
 
 Observed corporation mining
 
@@ -329,11 +326,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getCorporationCorporationIdMiningObserversObserverId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -355,16 +350,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationsCorporationIdIndustryJobs()`
 
-## getCorporationsCorporationIdIndustryJobs
-
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[] getCorporationsCorporationIdIndustryJobs($corporation_id, $datasource, $if_none_match, $include_completed, $page, $token)
+```php
+getCorporationsCorporationIdIndustryJobs($corporation_id, $datasource, $if_none_match, $include_completed, $page, $token): \Swagger\Client\Eve\Model\GetCorporationsCorporationIdIndustryJobs200Ok[]
+```
 
 List corporation industry jobs
 
@@ -400,11 +396,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getCorporationsCorporationIdIndustryJobs: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -426,16 +420,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getIndustryFacilities()`
 
-## getIndustryFacilities
-
-> \Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[] getIndustryFacilities($datasource, $if_none_match)
+```php
+getIndustryFacilities($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetIndustryFacilities200Ok[]
+```
 
 List industry facilities
 
@@ -446,6 +441,7 @@ Return a list of industry facilities  ---  This route is cached for up to 3600 s
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\IndustryApi(
@@ -462,11 +458,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getIndustryFacilities: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -484,16 +478,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getIndustrySystems()`
 
-## getIndustrySystems
-
-> \Swagger\Client\Eve\Model\GetIndustrySystems200Ok[] getIndustrySystems($datasource, $if_none_match)
+```php
+getIndustrySystems($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetIndustrySystems200Ok[]
+```
 
 List solar system cost indices
 
@@ -504,6 +499,7 @@ Return cost indices for solar systems  ---  This route is cached for up to 3600 
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\IndustryApi(
@@ -520,11 +516,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling IndustryApi->getIndustrySystems: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -542,9 +536,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

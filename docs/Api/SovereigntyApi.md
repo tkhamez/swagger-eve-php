@@ -1,18 +1,19 @@
 # Swagger\Client\Eve\SovereigntyApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getSovereigntyCampaigns**](SovereigntyApi.md#getSovereigntyCampaigns) | **GET** /v1/sovereignty/campaigns/ | List sovereignty campaigns
-[**getSovereigntyMap**](SovereigntyApi.md#getSovereigntyMap) | **GET** /v1/sovereignty/map/ | List sovereignty of systems
-[**getSovereigntyStructures**](SovereigntyApi.md#getSovereigntyStructures) | **GET** /v1/sovereignty/structures/ | List sovereignty structures
+[**getSovereigntyCampaigns()**](SovereigntyApi.md#getSovereigntyCampaigns) | **GET** /v1/sovereignty/campaigns/ | List sovereignty campaigns
+[**getSovereigntyMap()**](SovereigntyApi.md#getSovereigntyMap) | **GET** /v1/sovereignty/map/ | List sovereignty of systems
+[**getSovereigntyStructures()**](SovereigntyApi.md#getSovereigntyStructures) | **GET** /v1/sovereignty/structures/ | List sovereignty structures
 
 
+## `getSovereigntyCampaigns()`
 
-## getSovereigntyCampaigns
-
-> \Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[] getSovereigntyCampaigns($datasource, $if_none_match)
+```php
+getSovereigntyCampaigns($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetSovereigntyCampaigns200Ok[]
+```
 
 List sovereignty campaigns
 
@@ -23,6 +24,7 @@ Shows sovereignty data for campaigns.  ---  This route is cached for up to 5 sec
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
@@ -39,11 +41,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling SovereigntyApi->getSovereigntyCampaigns: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -61,16 +61,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getSovereigntyMap()`
 
-## getSovereigntyMap
-
-> \Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[] getSovereigntyMap($datasource, $if_none_match)
+```php
+getSovereigntyMap($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetSovereigntyMap200Ok[]
+```
 
 List sovereignty of systems
 
@@ -81,6 +82,7 @@ Shows sovereignty information for solar systems  ---  This route is cached for u
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
@@ -97,11 +99,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling SovereigntyApi->getSovereigntyMap: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -119,16 +119,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getSovereigntyStructures()`
 
-## getSovereigntyStructures
-
-> \Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[] getSovereigntyStructures($datasource, $if_none_match)
+```php
+getSovereigntyStructures($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetSovereigntyStructures200Ok[]
+```
 
 List sovereignty structures
 
@@ -139,6 +140,7 @@ Shows sovereignty data for structures.  ---  This route is cached for up to 120 
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\SovereigntyApi(
@@ -155,11 +157,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling SovereigntyApi->getSovereigntyStructures: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -177,9 +177,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

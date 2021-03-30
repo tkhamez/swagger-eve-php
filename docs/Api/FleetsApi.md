@@ -1,29 +1,30 @@
 # Swagger\Client\Eve\FleetsApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteFleetsFleetIdMembersMemberId**](FleetsApi.md#deleteFleetsFleetIdMembersMemberId) | **DELETE** /v1/fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
-[**deleteFleetsFleetIdSquadsSquadId**](FleetsApi.md#deleteFleetsFleetIdSquadsSquadId) | **DELETE** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
-[**deleteFleetsFleetIdWingsWingId**](FleetsApi.md#deleteFleetsFleetIdWingsWingId) | **DELETE** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
-[**getCharactersCharacterIdFleet**](FleetsApi.md#getCharactersCharacterIdFleet) | **GET** /v1/characters/{character_id}/fleet/ | Get character fleet info
-[**getFleetsFleetId**](FleetsApi.md#getFleetsFleetId) | **GET** /v1/fleets/{fleet_id}/ | Get fleet information
-[**getFleetsFleetIdMembers**](FleetsApi.md#getFleetsFleetIdMembers) | **GET** /v1/fleets/{fleet_id}/members/ | Get fleet members
-[**getFleetsFleetIdWings**](FleetsApi.md#getFleetsFleetIdWings) | **GET** /v1/fleets/{fleet_id}/wings/ | Get fleet wings
-[**postFleetsFleetIdMembers**](FleetsApi.md#postFleetsFleetIdMembers) | **POST** /v1/fleets/{fleet_id}/members/ | Create fleet invitation
-[**postFleetsFleetIdWings**](FleetsApi.md#postFleetsFleetIdWings) | **POST** /v1/fleets/{fleet_id}/wings/ | Create fleet wing
-[**postFleetsFleetIdWingsWingIdSquads**](FleetsApi.md#postFleetsFleetIdWingsWingIdSquads) | **POST** /v1/fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
-[**putFleetsFleetId**](FleetsApi.md#putFleetsFleetId) | **PUT** /v1/fleets/{fleet_id}/ | Update fleet
-[**putFleetsFleetIdMembersMemberId**](FleetsApi.md#putFleetsFleetIdMembersMemberId) | **PUT** /v1/fleets/{fleet_id}/members/{member_id}/ | Move fleet member
-[**putFleetsFleetIdSquadsSquadId**](FleetsApi.md#putFleetsFleetIdSquadsSquadId) | **PUT** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
-[**putFleetsFleetIdWingsWingId**](FleetsApi.md#putFleetsFleetIdWingsWingId) | **PUT** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
+[**deleteFleetsFleetIdMembersMemberId()**](FleetsApi.md#deleteFleetsFleetIdMembersMemberId) | **DELETE** /v1/fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
+[**deleteFleetsFleetIdSquadsSquadId()**](FleetsApi.md#deleteFleetsFleetIdSquadsSquadId) | **DELETE** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
+[**deleteFleetsFleetIdWingsWingId()**](FleetsApi.md#deleteFleetsFleetIdWingsWingId) | **DELETE** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
+[**getCharactersCharacterIdFleet()**](FleetsApi.md#getCharactersCharacterIdFleet) | **GET** /v1/characters/{character_id}/fleet/ | Get character fleet info
+[**getFleetsFleetId()**](FleetsApi.md#getFleetsFleetId) | **GET** /v1/fleets/{fleet_id}/ | Get fleet information
+[**getFleetsFleetIdMembers()**](FleetsApi.md#getFleetsFleetIdMembers) | **GET** /v1/fleets/{fleet_id}/members/ | Get fleet members
+[**getFleetsFleetIdWings()**](FleetsApi.md#getFleetsFleetIdWings) | **GET** /v1/fleets/{fleet_id}/wings/ | Get fleet wings
+[**postFleetsFleetIdMembers()**](FleetsApi.md#postFleetsFleetIdMembers) | **POST** /v1/fleets/{fleet_id}/members/ | Create fleet invitation
+[**postFleetsFleetIdWings()**](FleetsApi.md#postFleetsFleetIdWings) | **POST** /v1/fleets/{fleet_id}/wings/ | Create fleet wing
+[**postFleetsFleetIdWingsWingIdSquads()**](FleetsApi.md#postFleetsFleetIdWingsWingIdSquads) | **POST** /v1/fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
+[**putFleetsFleetId()**](FleetsApi.md#putFleetsFleetId) | **PUT** /v1/fleets/{fleet_id}/ | Update fleet
+[**putFleetsFleetIdMembersMemberId()**](FleetsApi.md#putFleetsFleetIdMembersMemberId) | **PUT** /v1/fleets/{fleet_id}/members/{member_id}/ | Move fleet member
+[**putFleetsFleetIdSquadsSquadId()**](FleetsApi.md#putFleetsFleetIdSquadsSquadId) | **PUT** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
+[**putFleetsFleetIdWingsWingId()**](FleetsApi.md#putFleetsFleetIdWingsWingId) | **PUT** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
 
 
+## `deleteFleetsFleetIdMembersMemberId()`
 
-## deleteFleetsFleetIdMembersMemberId
-
-> deleteFleetsFleetIdMembersMemberId($fleet_id, $member_id, $datasource, $token)
+```php
+deleteFleetsFleetIdMembersMemberId($fleet_id, $member_id, $datasource, $token)
+```
 
 Kick fleet member
 
@@ -56,11 +57,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->deleteFleetsFleetIdMembersMemberId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -80,16 +79,17 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `deleteFleetsFleetIdSquadsSquadId()`
 
-## deleteFleetsFleetIdSquadsSquadId
-
-> deleteFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $datasource, $token)
+```php
+deleteFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $datasource, $token)
+```
 
 Delete fleet squad
 
@@ -122,11 +122,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->deleteFleetsFleetIdSquadsSquadId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -146,16 +144,17 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `deleteFleetsFleetIdWingsWingId()`
 
-## deleteFleetsFleetIdWingsWingId
-
-> deleteFleetsFleetIdWingsWingId($fleet_id, $wing_id, $datasource, $token)
+```php
+deleteFleetsFleetIdWingsWingId($fleet_id, $wing_id, $datasource, $token)
+```
 
 Delete fleet wing
 
@@ -188,11 +187,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->deleteFleetsFleetIdWingsWingId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -212,16 +209,17 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdFleet()`
 
-## getCharactersCharacterIdFleet
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk getCharactersCharacterIdFleet($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdFleet($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdFleetOk
+```
 
 Get character fleet info
 
@@ -255,11 +253,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->getCharactersCharacterIdFleet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -279,16 +275,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFleetsFleetId()`
 
-## getFleetsFleetId
-
-> \Swagger\Client\Eve\Model\GetFleetsFleetIdOk getFleetsFleetId($fleet_id, $datasource, $if_none_match, $token)
+```php
+getFleetsFleetId($fleet_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetFleetsFleetIdOk
+```
 
 Get fleet information
 
@@ -322,11 +319,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->getFleetsFleetId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -346,16 +341,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFleetsFleetIdMembers()`
 
-## getFleetsFleetIdMembers
-
-> \Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[] getFleetsFleetIdMembers($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
+```php
+getFleetsFleetIdMembers($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token): \Swagger\Client\Eve\Model\GetFleetsFleetIdMembers200Ok[]
+```
 
 Get fleet members
 
@@ -391,11 +387,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->getFleetsFleetIdMembers: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -417,16 +411,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getFleetsFleetIdWings()`
 
-## getFleetsFleetIdWings
-
-> \Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[] getFleetsFleetIdWings($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token)
+```php
+getFleetsFleetIdWings($fleet_id, $accept_language, $datasource, $if_none_match, $language, $token): \Swagger\Client\Eve\Model\GetFleetsFleetIdWings200Ok[]
+```
 
 Get fleet wings
 
@@ -462,11 +457,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->getFleetsFleetIdWings: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -488,16 +481,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postFleetsFleetIdMembers()`
 
-## postFleetsFleetIdMembers
-
-> postFleetsFleetIdMembers($fleet_id, $invitation, $datasource, $token)
+```php
+postFleetsFleetIdMembers($fleet_id, $invitation, $datasource, $token)
+```
 
 Create fleet invitation
 
@@ -521,7 +515,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
-$invitation = new \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation(); // \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation | 
+$invitation = new \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation(); // \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -530,11 +524,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->postFleetsFleetIdMembers: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -553,17 +545,18 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postFleetsFleetIdWings()`
 
-## postFleetsFleetIdWings
-
-> \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated postFleetsFleetIdWings($fleet_id, $datasource, $token)
+```php
+postFleetsFleetIdWings($fleet_id, $datasource, $token): \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsCreated
+```
 
 Create fleet wing
 
@@ -596,11 +589,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->postFleetsFleetIdWings: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -619,16 +610,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postFleetsFleetIdWingsWingIdSquads()`
 
-## postFleetsFleetIdWingsWingIdSquads
-
-> \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated postFleetsFleetIdWingsWingIdSquads($fleet_id, $wing_id, $datasource, $token)
+```php
+postFleetsFleetIdWingsWingIdSquads($fleet_id, $wing_id, $datasource, $token): \Swagger\Client\Eve\Model\PostFleetsFleetIdWingsWingIdSquadsCreated
+```
 
 Create fleet squad
 
@@ -662,11 +654,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->postFleetsFleetIdWingsWingIdSquads: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -686,16 +676,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `putFleetsFleetId()`
 
-## putFleetsFleetId
-
-> putFleetsFleetId($fleet_id, $new_settings, $datasource, $token)
+```php
+putFleetsFleetId($fleet_id, $new_settings, $datasource, $token)
+```
 
 Update fleet
 
@@ -719,7 +710,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
-$new_settings = new \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings | 
+$new_settings = new \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -728,11 +719,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -751,17 +740,18 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `putFleetsFleetIdMembersMemberId()`
 
-## putFleetsFleetIdMembersMemberId
-
-> putFleetsFleetIdMembersMemberId($fleet_id, $member_id, $movement, $datasource, $token)
+```php
+putFleetsFleetIdMembersMemberId($fleet_id, $member_id, $movement, $datasource, $token)
+```
 
 Move fleet member
 
@@ -786,7 +776,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $member_id = 56; // int | The character ID of a member in this fleet
-$movement = new \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement | 
+$movement = new \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -795,11 +785,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdMembersMemberId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -819,17 +807,18 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `putFleetsFleetIdSquadsSquadId()`
 
-## putFleetsFleetIdSquadsSquadId
-
-> putFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $naming, $datasource, $token)
+```php
+putFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $naming, $datasource, $token)
+```
 
 Rename fleet squad
 
@@ -854,7 +843,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $squad_id = 56; // int | The squad to rename
-$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming | 
+$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -863,11 +852,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdSquadsSquadId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -887,17 +874,18 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `putFleetsFleetIdWingsWingId()`
 
-## putFleetsFleetIdWingsWingId
-
-> putFleetsFleetIdWingsWingId($fleet_id, $wing_id, $naming, $datasource, $token)
+```php
+putFleetsFleetIdWingsWingId($fleet_id, $wing_id, $naming, $datasource, $token)
+```
 
 Rename fleet wing
 
@@ -922,7 +910,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $wing_id = 56; // int | The wing to rename
-$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming | 
+$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -931,11 +919,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FleetsApi->putFleetsFleetIdWingsWingId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -955,10 +941,9 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

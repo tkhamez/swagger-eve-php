@@ -4,10 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**px128x128** | **string** | px128x128 string | [optional] 
-**px256x256** | **string** | px256x256 string | [optional] 
-**px64x64** | **string** | px64x64 string | [optional] 
+**px128x128** | **string** | px128x128 string | [optional]
+**px256x256** | **string** | px256x256 string | [optional]
+**px64x64** | **string** | px64x64 string | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

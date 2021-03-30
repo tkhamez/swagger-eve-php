@@ -1,18 +1,19 @@
 # Swagger\Client\Eve\WarsApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getWars**](WarsApi.md#getWars) | **GET** /v1/wars/ | List wars
-[**getWarsWarId**](WarsApi.md#getWarsWarId) | **GET** /v1/wars/{war_id}/ | Get war information
-[**getWarsWarIdKillmails**](WarsApi.md#getWarsWarIdKillmails) | **GET** /v1/wars/{war_id}/killmails/ | List kills for a war
+[**getWars()**](WarsApi.md#getWars) | **GET** /v1/wars/ | List wars
+[**getWarsWarId()**](WarsApi.md#getWarsWarId) | **GET** /v1/wars/{war_id}/ | Get war information
+[**getWarsWarIdKillmails()**](WarsApi.md#getWarsWarIdKillmails) | **GET** /v1/wars/{war_id}/killmails/ | List kills for a war
 
 
+## `getWars()`
 
-## getWars
-
-> int[] getWars($datasource, $if_none_match, $max_war_id)
+```php
+getWars($datasource, $if_none_match, $max_war_id): int[]
+```
 
 List wars
 
@@ -23,6 +24,7 @@ Return a list of wars  ---  This route is cached for up to 3600 seconds
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
@@ -40,11 +42,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWars: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -63,16 +63,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getWarsWarId()`
 
-## getWarsWarId
-
-> \Swagger\Client\Eve\Model\GetWarsWarIdOk getWarsWarId($war_id, $datasource, $if_none_match)
+```php
+getWarsWarId($war_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetWarsWarIdOk
+```
 
 Get war information
 
@@ -83,6 +84,7 @@ Return details about a war  ---  This route is cached for up to 3600 seconds
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
@@ -100,11 +102,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWarsWarId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -123,16 +123,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getWarsWarIdKillmails()`
 
-## getWarsWarIdKillmails
-
-> \Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page)
+```php
+getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page): \Swagger\Client\Eve\Model\GetWarsWarIdKillmails200Ok[]
+```
 
 List kills for a war
 
@@ -143,6 +144,7 @@ Return a list of kills related to a war  ---  This route is cached for up to 360
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\WarsApi(
@@ -161,11 +163,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWarsWarIdKillmails: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -185,9 +185,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

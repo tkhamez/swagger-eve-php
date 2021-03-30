@@ -1,6 +1,6 @@
 <?php
 
-namespace Swagger\Client\Eve;
+namespace Swagger\Client\Eve\Test;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

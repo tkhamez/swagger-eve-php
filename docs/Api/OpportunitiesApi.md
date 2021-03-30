@@ -1,20 +1,21 @@
 # Swagger\Client\Eve\OpportunitiesApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdOpportunities**](OpportunitiesApi.md#getCharactersCharacterIdOpportunities) | **GET** /v1/characters/{character_id}/opportunities/ | Get a character&#39;s completed tasks
-[**getOpportunitiesGroups**](OpportunitiesApi.md#getOpportunitiesGroups) | **GET** /v1/opportunities/groups/ | Get opportunities groups
-[**getOpportunitiesGroupsGroupId**](OpportunitiesApi.md#getOpportunitiesGroupsGroupId) | **GET** /v1/opportunities/groups/{group_id}/ | Get opportunities group
-[**getOpportunitiesTasks**](OpportunitiesApi.md#getOpportunitiesTasks) | **GET** /v1/opportunities/tasks/ | Get opportunities tasks
-[**getOpportunitiesTasksTaskId**](OpportunitiesApi.md#getOpportunitiesTasksTaskId) | **GET** /v1/opportunities/tasks/{task_id}/ | Get opportunities task
+[**getCharactersCharacterIdOpportunities()**](OpportunitiesApi.md#getCharactersCharacterIdOpportunities) | **GET** /v1/characters/{character_id}/opportunities/ | Get a character&#39;s completed tasks
+[**getOpportunitiesGroups()**](OpportunitiesApi.md#getOpportunitiesGroups) | **GET** /v1/opportunities/groups/ | Get opportunities groups
+[**getOpportunitiesGroupsGroupId()**](OpportunitiesApi.md#getOpportunitiesGroupsGroupId) | **GET** /v1/opportunities/groups/{group_id}/ | Get opportunities group
+[**getOpportunitiesTasks()**](OpportunitiesApi.md#getOpportunitiesTasks) | **GET** /v1/opportunities/tasks/ | Get opportunities tasks
+[**getOpportunitiesTasksTaskId()**](OpportunitiesApi.md#getOpportunitiesTasksTaskId) | **GET** /v1/opportunities/tasks/{task_id}/ | Get opportunities task
 
 
+## `getCharactersCharacterIdOpportunities()`
 
-## getCharactersCharacterIdOpportunities
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[] getCharactersCharacterIdOpportunities($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdOpportunities($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdOpportunities200Ok[]
+```
 
 Get a character's completed tasks
 
@@ -48,11 +49,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getCharactersCharacterIdOpportunities: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -72,16 +71,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getOpportunitiesGroups()`
 
-## getOpportunitiesGroups
-
-> int[] getOpportunitiesGroups($datasource, $if_none_match)
+```php
+getOpportunitiesGroups($datasource, $if_none_match): int[]
+```
 
 Get opportunities groups
 
@@ -92,6 +92,7 @@ Return a list of opportunities groups  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
@@ -108,11 +109,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesGroups: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -130,16 +129,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getOpportunitiesGroupsGroupId()`
 
-## getOpportunitiesGroupsGroupId
-
-> \Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk getOpportunitiesGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getOpportunitiesGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetOpportunitiesGroupsGroupIdOk
+```
 
 Get opportunities group
 
@@ -150,6 +150,7 @@ Return information of an opportunities group  ---  This route expires daily at 1
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
@@ -169,11 +170,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesGroupsGroupId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -194,16 +193,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getOpportunitiesTasks()`
 
-## getOpportunitiesTasks
-
-> int[] getOpportunitiesTasks($datasource, $if_none_match)
+```php
+getOpportunitiesTasks($datasource, $if_none_match): int[]
+```
 
 Get opportunities tasks
 
@@ -214,6 +214,7 @@ Return a list of opportunities tasks  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
@@ -230,11 +231,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesTasks: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -252,16 +251,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getOpportunitiesTasksTaskId()`
 
-## getOpportunitiesTasksTaskId
-
-> \Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk getOpportunitiesTasksTaskId($task_id, $datasource, $if_none_match)
+```php
+getOpportunitiesTasksTaskId($task_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetOpportunitiesTasksTaskIdOk
+```
 
 Get opportunities task
 
@@ -272,6 +272,7 @@ Return information of an opportunities task  ---  This route expires daily at 11
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\OpportunitiesApi(
@@ -289,11 +290,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling OpportunitiesApi->getOpportunitiesTasksTaskId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -312,9 +311,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

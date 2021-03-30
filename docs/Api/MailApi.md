@@ -1,24 +1,25 @@
 # Swagger\Client\Eve\MailApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteCharactersCharacterIdMailLabelsLabelId**](MailApi.md#deleteCharactersCharacterIdMailLabelsLabelId) | **DELETE** /v1/characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
-[**deleteCharactersCharacterIdMailMailId**](MailApi.md#deleteCharactersCharacterIdMailMailId) | **DELETE** /v1/characters/{character_id}/mail/{mail_id}/ | Delete a mail
-[**getCharactersCharacterIdMail**](MailApi.md#getCharactersCharacterIdMail) | **GET** /v1/characters/{character_id}/mail/ | Return mail headers
-[**getCharactersCharacterIdMailLabels**](MailApi.md#getCharactersCharacterIdMailLabels) | **GET** /v3/characters/{character_id}/mail/labels/ | Get mail labels and unread counts
-[**getCharactersCharacterIdMailLists**](MailApi.md#getCharactersCharacterIdMailLists) | **GET** /v1/characters/{character_id}/mail/lists/ | Return mailing list subscriptions
-[**getCharactersCharacterIdMailMailId**](MailApi.md#getCharactersCharacterIdMailMailId) | **GET** /v1/characters/{character_id}/mail/{mail_id}/ | Return a mail
-[**postCharactersCharacterIdMail**](MailApi.md#postCharactersCharacterIdMail) | **POST** /v1/characters/{character_id}/mail/ | Send a new mail
-[**postCharactersCharacterIdMailLabels**](MailApi.md#postCharactersCharacterIdMailLabels) | **POST** /v2/characters/{character_id}/mail/labels/ | Create a mail label
-[**putCharactersCharacterIdMailMailId**](MailApi.md#putCharactersCharacterIdMailMailId) | **PUT** /v1/characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
+[**deleteCharactersCharacterIdMailLabelsLabelId()**](MailApi.md#deleteCharactersCharacterIdMailLabelsLabelId) | **DELETE** /v1/characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
+[**deleteCharactersCharacterIdMailMailId()**](MailApi.md#deleteCharactersCharacterIdMailMailId) | **DELETE** /v1/characters/{character_id}/mail/{mail_id}/ | Delete a mail
+[**getCharactersCharacterIdMail()**](MailApi.md#getCharactersCharacterIdMail) | **GET** /v1/characters/{character_id}/mail/ | Return mail headers
+[**getCharactersCharacterIdMailLabels()**](MailApi.md#getCharactersCharacterIdMailLabels) | **GET** /v3/characters/{character_id}/mail/labels/ | Get mail labels and unread counts
+[**getCharactersCharacterIdMailLists()**](MailApi.md#getCharactersCharacterIdMailLists) | **GET** /v1/characters/{character_id}/mail/lists/ | Return mailing list subscriptions
+[**getCharactersCharacterIdMailMailId()**](MailApi.md#getCharactersCharacterIdMailMailId) | **GET** /v1/characters/{character_id}/mail/{mail_id}/ | Return a mail
+[**postCharactersCharacterIdMail()**](MailApi.md#postCharactersCharacterIdMail) | **POST** /v1/characters/{character_id}/mail/ | Send a new mail
+[**postCharactersCharacterIdMailLabels()**](MailApi.md#postCharactersCharacterIdMailLabels) | **POST** /v2/characters/{character_id}/mail/labels/ | Create a mail label
+[**putCharactersCharacterIdMailMailId()**](MailApi.md#putCharactersCharacterIdMailMailId) | **PUT** /v1/characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
 
 
+## `deleteCharactersCharacterIdMailLabelsLabelId()`
 
-## deleteCharactersCharacterIdMailLabelsLabelId
-
-> deleteCharactersCharacterIdMailLabelsLabelId($character_id, $label_id, $datasource, $token)
+```php
+deleteCharactersCharacterIdMailLabelsLabelId($character_id, $label_id, $datasource, $token)
+```
 
 Delete a mail label
 
@@ -51,11 +52,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->deleteCharactersCharacterIdMailLabelsLabelId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -75,16 +74,17 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `deleteCharactersCharacterIdMailMailId()`
 
-## deleteCharactersCharacterIdMailMailId
-
-> deleteCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $token)
+```php
+deleteCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $token)
+```
 
 Delete a mail
 
@@ -117,11 +117,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->deleteCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -141,16 +139,17 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdMail()`
 
-## getCharactersCharacterIdMail
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMail200Ok[] getCharactersCharacterIdMail($character_id, $datasource, $if_none_match, $labels, $last_mail_id, $token)
+```php
+getCharactersCharacterIdMail($character_id, $datasource, $if_none_match, $labels, $last_mail_id, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdMail200Ok[]
+```
 
 Return mail headers
 
@@ -186,11 +185,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMail: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -212,16 +209,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdMailLabels()`
 
-## getCharactersCharacterIdMailLabels
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLabelsOk getCharactersCharacterIdMailLabels($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdMailLabels($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLabelsOk
+```
 
 Get mail labels and unread counts
 
@@ -255,11 +253,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMailLabels: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -279,16 +275,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdMailLists()`
 
-## getCharactersCharacterIdMailLists
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLists200Ok[] getCharactersCharacterIdMailLists($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdMailLists($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailLists200Ok[]
+```
 
 Return mailing list subscriptions
 
@@ -322,11 +319,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMailLists: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -346,16 +341,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdMailMailId()`
 
-## getCharactersCharacterIdMailMailId
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailMailIdOk getCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdMailMailId($character_id, $mail_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdMailMailIdOk
+```
 
 Return a mail
 
@@ -390,11 +386,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -415,16 +409,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postCharactersCharacterIdMail()`
 
-## postCharactersCharacterIdMail
-
-> int postCharactersCharacterIdMail($character_id, $mail, $datasource, $token)
+```php
+postCharactersCharacterIdMail($character_id, $mail, $datasource, $token): int
+```
 
 Send a new mail
 
@@ -448,7 +443,7 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$mail = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail | 
+$mail = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailMail
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -458,11 +453,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMail: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -481,17 +474,18 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postCharactersCharacterIdMailLabels()`
 
-## postCharactersCharacterIdMailLabels
-
-> int postCharactersCharacterIdMailLabels($character_id, $label, $datasource, $token)
+```php
+postCharactersCharacterIdMailLabels($character_id, $label, $datasource, $token): int
+```
 
 Create a mail label
 
@@ -515,7 +509,7 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$label = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel | 
+$label = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdMailLabelsLabel
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -525,11 +519,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMailLabels: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -548,17 +540,18 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `putCharactersCharacterIdMailMailId()`
 
-## putCharactersCharacterIdMailMailId
-
-> putCharactersCharacterIdMailMailId($character_id, $mail_id, $contents, $datasource, $token)
+```php
+putCharactersCharacterIdMailMailId($character_id, $mail_id, $contents, $datasource, $token)
+```
 
 Update metadata about a mail
 
@@ -583,7 +576,7 @@ $apiInstance = new Swagger\Client\Eve\Api\MailApi(
 );
 $character_id = 56; // int | An EVE character ID
 $mail_id = 56; // int | An EVE mail ID
-$contents = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents | 
+$contents = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdMailMailIdContents
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -592,11 +585,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->putCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -616,10 +607,9 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

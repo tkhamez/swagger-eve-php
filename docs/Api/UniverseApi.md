@@ -1,45 +1,46 @@
 # Swagger\Client\Eve\UniverseApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getUniverseAncestries**](UniverseApi.md#getUniverseAncestries) | **GET** /v1/universe/ancestries/ | Get ancestries
-[**getUniverseAsteroidBeltsAsteroidBeltId**](UniverseApi.md#getUniverseAsteroidBeltsAsteroidBeltId) | **GET** /v1/universe/asteroid_belts/{asteroid_belt_id}/ | Get asteroid belt information
-[**getUniverseBloodlines**](UniverseApi.md#getUniverseBloodlines) | **GET** /v1/universe/bloodlines/ | Get bloodlines
-[**getUniverseCategories**](UniverseApi.md#getUniverseCategories) | **GET** /v1/universe/categories/ | Get item categories
-[**getUniverseCategoriesCategoryId**](UniverseApi.md#getUniverseCategoriesCategoryId) | **GET** /v1/universe/categories/{category_id}/ | Get item category information
-[**getUniverseConstellations**](UniverseApi.md#getUniverseConstellations) | **GET** /v1/universe/constellations/ | Get constellations
-[**getUniverseConstellationsConstellationId**](UniverseApi.md#getUniverseConstellationsConstellationId) | **GET** /v1/universe/constellations/{constellation_id}/ | Get constellation information
-[**getUniverseFactions**](UniverseApi.md#getUniverseFactions) | **GET** /v2/universe/factions/ | Get factions
-[**getUniverseGraphics**](UniverseApi.md#getUniverseGraphics) | **GET** /v1/universe/graphics/ | Get graphics
-[**getUniverseGraphicsGraphicId**](UniverseApi.md#getUniverseGraphicsGraphicId) | **GET** /v1/universe/graphics/{graphic_id}/ | Get graphic information
-[**getUniverseGroups**](UniverseApi.md#getUniverseGroups) | **GET** /v1/universe/groups/ | Get item groups
-[**getUniverseGroupsGroupId**](UniverseApi.md#getUniverseGroupsGroupId) | **GET** /v1/universe/groups/{group_id}/ | Get item group information
-[**getUniverseMoonsMoonId**](UniverseApi.md#getUniverseMoonsMoonId) | **GET** /v1/universe/moons/{moon_id}/ | Get moon information
-[**getUniversePlanetsPlanetId**](UniverseApi.md#getUniversePlanetsPlanetId) | **GET** /v1/universe/planets/{planet_id}/ | Get planet information
-[**getUniverseRaces**](UniverseApi.md#getUniverseRaces) | **GET** /v1/universe/races/ | Get character races
-[**getUniverseRegions**](UniverseApi.md#getUniverseRegions) | **GET** /v1/universe/regions/ | Get regions
-[**getUniverseRegionsRegionId**](UniverseApi.md#getUniverseRegionsRegionId) | **GET** /v1/universe/regions/{region_id}/ | Get region information
-[**getUniverseStargatesStargateId**](UniverseApi.md#getUniverseStargatesStargateId) | **GET** /v1/universe/stargates/{stargate_id}/ | Get stargate information
-[**getUniverseStarsStarId**](UniverseApi.md#getUniverseStarsStarId) | **GET** /v1/universe/stars/{star_id}/ | Get star information
-[**getUniverseStationsStationId**](UniverseApi.md#getUniverseStationsStationId) | **GET** /v2/universe/stations/{station_id}/ | Get station information
-[**getUniverseStructures**](UniverseApi.md#getUniverseStructures) | **GET** /v1/universe/structures/ | List all public structures
-[**getUniverseStructuresStructureId**](UniverseApi.md#getUniverseStructuresStructureId) | **GET** /v2/universe/structures/{structure_id}/ | Get structure information
-[**getUniverseSystemJumps**](UniverseApi.md#getUniverseSystemJumps) | **GET** /v1/universe/system_jumps/ | Get system jumps
-[**getUniverseSystemKills**](UniverseApi.md#getUniverseSystemKills) | **GET** /v2/universe/system_kills/ | Get system kills
-[**getUniverseSystems**](UniverseApi.md#getUniverseSystems) | **GET** /v1/universe/systems/ | Get solar systems
-[**getUniverseSystemsSystemId**](UniverseApi.md#getUniverseSystemsSystemId) | **GET** /v4/universe/systems/{system_id}/ | Get solar system information
-[**getUniverseTypes**](UniverseApi.md#getUniverseTypes) | **GET** /v1/universe/types/ | Get types
-[**getUniverseTypesTypeId**](UniverseApi.md#getUniverseTypesTypeId) | **GET** /v3/universe/types/{type_id}/ | Get type information
-[**postUniverseIds**](UniverseApi.md#postUniverseIds) | **POST** /v1/universe/ids/ | Bulk names to IDs
-[**postUniverseNames**](UniverseApi.md#postUniverseNames) | **POST** /v3/universe/names/ | Get names and categories for a set of IDs
+[**getUniverseAncestries()**](UniverseApi.md#getUniverseAncestries) | **GET** /v1/universe/ancestries/ | Get ancestries
+[**getUniverseAsteroidBeltsAsteroidBeltId()**](UniverseApi.md#getUniverseAsteroidBeltsAsteroidBeltId) | **GET** /v1/universe/asteroid_belts/{asteroid_belt_id}/ | Get asteroid belt information
+[**getUniverseBloodlines()**](UniverseApi.md#getUniverseBloodlines) | **GET** /v1/universe/bloodlines/ | Get bloodlines
+[**getUniverseCategories()**](UniverseApi.md#getUniverseCategories) | **GET** /v1/universe/categories/ | Get item categories
+[**getUniverseCategoriesCategoryId()**](UniverseApi.md#getUniverseCategoriesCategoryId) | **GET** /v1/universe/categories/{category_id}/ | Get item category information
+[**getUniverseConstellations()**](UniverseApi.md#getUniverseConstellations) | **GET** /v1/universe/constellations/ | Get constellations
+[**getUniverseConstellationsConstellationId()**](UniverseApi.md#getUniverseConstellationsConstellationId) | **GET** /v1/universe/constellations/{constellation_id}/ | Get constellation information
+[**getUniverseFactions()**](UniverseApi.md#getUniverseFactions) | **GET** /v2/universe/factions/ | Get factions
+[**getUniverseGraphics()**](UniverseApi.md#getUniverseGraphics) | **GET** /v1/universe/graphics/ | Get graphics
+[**getUniverseGraphicsGraphicId()**](UniverseApi.md#getUniverseGraphicsGraphicId) | **GET** /v1/universe/graphics/{graphic_id}/ | Get graphic information
+[**getUniverseGroups()**](UniverseApi.md#getUniverseGroups) | **GET** /v1/universe/groups/ | Get item groups
+[**getUniverseGroupsGroupId()**](UniverseApi.md#getUniverseGroupsGroupId) | **GET** /v1/universe/groups/{group_id}/ | Get item group information
+[**getUniverseMoonsMoonId()**](UniverseApi.md#getUniverseMoonsMoonId) | **GET** /v1/universe/moons/{moon_id}/ | Get moon information
+[**getUniversePlanetsPlanetId()**](UniverseApi.md#getUniversePlanetsPlanetId) | **GET** /v1/universe/planets/{planet_id}/ | Get planet information
+[**getUniverseRaces()**](UniverseApi.md#getUniverseRaces) | **GET** /v1/universe/races/ | Get character races
+[**getUniverseRegions()**](UniverseApi.md#getUniverseRegions) | **GET** /v1/universe/regions/ | Get regions
+[**getUniverseRegionsRegionId()**](UniverseApi.md#getUniverseRegionsRegionId) | **GET** /v1/universe/regions/{region_id}/ | Get region information
+[**getUniverseStargatesStargateId()**](UniverseApi.md#getUniverseStargatesStargateId) | **GET** /v1/universe/stargates/{stargate_id}/ | Get stargate information
+[**getUniverseStarsStarId()**](UniverseApi.md#getUniverseStarsStarId) | **GET** /v1/universe/stars/{star_id}/ | Get star information
+[**getUniverseStationsStationId()**](UniverseApi.md#getUniverseStationsStationId) | **GET** /v2/universe/stations/{station_id}/ | Get station information
+[**getUniverseStructures()**](UniverseApi.md#getUniverseStructures) | **GET** /v1/universe/structures/ | List all public structures
+[**getUniverseStructuresStructureId()**](UniverseApi.md#getUniverseStructuresStructureId) | **GET** /v2/universe/structures/{structure_id}/ | Get structure information
+[**getUniverseSystemJumps()**](UniverseApi.md#getUniverseSystemJumps) | **GET** /v1/universe/system_jumps/ | Get system jumps
+[**getUniverseSystemKills()**](UniverseApi.md#getUniverseSystemKills) | **GET** /v2/universe/system_kills/ | Get system kills
+[**getUniverseSystems()**](UniverseApi.md#getUniverseSystems) | **GET** /v1/universe/systems/ | Get solar systems
+[**getUniverseSystemsSystemId()**](UniverseApi.md#getUniverseSystemsSystemId) | **GET** /v4/universe/systems/{system_id}/ | Get solar system information
+[**getUniverseTypes()**](UniverseApi.md#getUniverseTypes) | **GET** /v1/universe/types/ | Get types
+[**getUniverseTypesTypeId()**](UniverseApi.md#getUniverseTypesTypeId) | **GET** /v3/universe/types/{type_id}/ | Get type information
+[**postUniverseIds()**](UniverseApi.md#postUniverseIds) | **POST** /v1/universe/ids/ | Bulk names to IDs
+[**postUniverseNames()**](UniverseApi.md#postUniverseNames) | **POST** /v3/universe/names/ | Get names and categories for a set of IDs
 
 
+## `getUniverseAncestries()`
 
-## getUniverseAncestries
-
-> \Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[] getUniverseAncestries($accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseAncestries($accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseAncestries200Ok[]
+```
 
 Get ancestries
 
@@ -50,6 +51,7 @@ Get all character ancestries  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -68,11 +70,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseAncestries: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -92,16 +92,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseAsteroidBeltsAsteroidBeltId()`
 
-## getUniverseAsteroidBeltsAsteroidBeltId
-
-> \Swagger\Client\Eve\Model\GetUniverseAsteroidBeltsAsteroidBeltIdOk getUniverseAsteroidBeltsAsteroidBeltId($asteroid_belt_id, $datasource, $if_none_match)
+```php
+getUniverseAsteroidBeltsAsteroidBeltId($asteroid_belt_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseAsteroidBeltsAsteroidBeltIdOk
+```
 
 Get asteroid belt information
 
@@ -112,6 +113,7 @@ Get information on an asteroid belt  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -129,11 +131,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseAsteroidBeltsAsteroidBeltId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -152,16 +152,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseBloodlines()`
 
-## getUniverseBloodlines
-
-> \Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[] getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseBloodlines($accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseBloodlines200Ok[]
+```
 
 Get bloodlines
 
@@ -172,6 +173,7 @@ Get a list of bloodlines  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -190,11 +192,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseBloodlines: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -214,16 +214,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseCategories()`
 
-## getUniverseCategories
-
-> int[] getUniverseCategories($datasource, $if_none_match)
+```php
+getUniverseCategories($datasource, $if_none_match): int[]
+```
 
 Get item categories
 
@@ -234,6 +235,7 @@ Get a list of item categories  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -250,11 +252,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseCategories: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -272,16 +272,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseCategoriesCategoryId()`
 
-## getUniverseCategoriesCategoryId
-
-> \Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk getUniverseCategoriesCategoryId($category_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseCategoriesCategoryId($category_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseCategoriesCategoryIdOk
+```
 
 Get item category information
 
@@ -292,6 +293,7 @@ Get information of an item category  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -311,11 +313,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseCategoriesCategoryId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -336,16 +336,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseConstellations()`
 
-## getUniverseConstellations
-
-> int[] getUniverseConstellations($datasource, $if_none_match)
+```php
+getUniverseConstellations($datasource, $if_none_match): int[]
+```
 
 Get constellations
 
@@ -356,6 +357,7 @@ Get a list of constellations  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -372,11 +374,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseConstellations: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -394,16 +394,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseConstellationsConstellationId()`
 
-## getUniverseConstellationsConstellationId
-
-> \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk getUniverseConstellationsConstellationId($constellation_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseConstellationsConstellationId($constellation_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseConstellationsConstellationIdOk
+```
 
 Get constellation information
 
@@ -414,6 +415,7 @@ Get information on a constellation  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -433,11 +435,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseConstellationsConstellationId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -458,16 +458,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseFactions()`
 
-## getUniverseFactions
-
-> \Swagger\Client\Eve\Model\GetUniverseFactions200Ok[] getUniverseFactions($accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseFactions($accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseFactions200Ok[]
+```
 
 Get factions
 
@@ -478,6 +479,7 @@ Get a list of factions  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -496,11 +498,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseFactions: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -520,16 +520,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseGraphics()`
 
-## getUniverseGraphics
-
-> int[] getUniverseGraphics($datasource, $if_none_match)
+```php
+getUniverseGraphics($datasource, $if_none_match): int[]
+```
 
 Get graphics
 
@@ -540,6 +541,7 @@ Get a list of graphics  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -556,11 +558,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseGraphics: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -578,16 +578,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseGraphicsGraphicId()`
 
-## getUniverseGraphicsGraphicId
-
-> \Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk getUniverseGraphicsGraphicId($graphic_id, $datasource, $if_none_match)
+```php
+getUniverseGraphicsGraphicId($graphic_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseGraphicsGraphicIdOk
+```
 
 Get graphic information
 
@@ -598,6 +599,7 @@ Get information on a graphic  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -615,11 +617,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseGraphicsGraphicId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -638,16 +638,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseGroups()`
 
-## getUniverseGroups
-
-> int[] getUniverseGroups($datasource, $if_none_match, $page)
+```php
+getUniverseGroups($datasource, $if_none_match, $page): int[]
+```
 
 Get item groups
 
@@ -658,6 +659,7 @@ Get a list of item groups  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -675,11 +677,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseGroups: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -698,16 +698,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseGroupsGroupId()`
 
-## getUniverseGroupsGroupId
-
-> \Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk getUniverseGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseGroupsGroupId($group_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseGroupsGroupIdOk
+```
 
 Get item group information
 
@@ -718,6 +719,7 @@ Get information on an item group  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -737,11 +739,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseGroupsGroupId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -762,16 +762,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseMoonsMoonId()`
 
-## getUniverseMoonsMoonId
-
-> \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk getUniverseMoonsMoonId($moon_id, $datasource, $if_none_match)
+```php
+getUniverseMoonsMoonId($moon_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseMoonsMoonIdOk
+```
 
 Get moon information
 
@@ -782,6 +783,7 @@ Get information on a moon  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -799,11 +801,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseMoonsMoonId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -822,16 +822,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniversePlanetsPlanetId()`
 
-## getUniversePlanetsPlanetId
-
-> \Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk getUniversePlanetsPlanetId($planet_id, $datasource, $if_none_match)
+```php
+getUniversePlanetsPlanetId($planet_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniversePlanetsPlanetIdOk
+```
 
 Get planet information
 
@@ -842,6 +843,7 @@ Get information on a planet  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -859,11 +861,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniversePlanetsPlanetId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -882,16 +882,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseRaces()`
 
-## getUniverseRaces
-
-> \Swagger\Client\Eve\Model\GetUniverseRaces200Ok[] getUniverseRaces($accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseRaces($accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseRaces200Ok[]
+```
 
 Get character races
 
@@ -902,6 +903,7 @@ Get a list of character races  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -920,11 +922,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseRaces: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -944,16 +944,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseRegions()`
 
-## getUniverseRegions
-
-> int[] getUniverseRegions($datasource, $if_none_match)
+```php
+getUniverseRegions($datasource, $if_none_match): int[]
+```
 
 Get regions
 
@@ -964,6 +965,7 @@ Get a list of regions  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -980,11 +982,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseRegions: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1002,16 +1002,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseRegionsRegionId()`
 
-## getUniverseRegionsRegionId
-
-> \Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk getUniverseRegionsRegionId($region_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseRegionsRegionId($region_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseRegionsRegionIdOk
+```
 
 Get region information
 
@@ -1022,6 +1023,7 @@ Get information on a region  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1041,11 +1043,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseRegionsRegionId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1066,16 +1066,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseStargatesStargateId()`
 
-## getUniverseStargatesStargateId
-
-> \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk getUniverseStargatesStargateId($stargate_id, $datasource, $if_none_match)
+```php
+getUniverseStargatesStargateId($stargate_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseStargatesStargateIdOk
+```
 
 Get stargate information
 
@@ -1086,6 +1087,7 @@ Get information on a stargate  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1103,11 +1105,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseStargatesStargateId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1126,16 +1126,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseStarsStarId()`
 
-## getUniverseStarsStarId
-
-> \Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk getUniverseStarsStarId($star_id, $datasource, $if_none_match)
+```php
+getUniverseStarsStarId($star_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseStarsStarIdOk
+```
 
 Get star information
 
@@ -1146,6 +1147,7 @@ Get information on a star  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1163,11 +1165,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseStarsStarId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1186,16 +1186,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseStationsStationId()`
 
-## getUniverseStationsStationId
-
-> \Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk getUniverseStationsStationId($station_id, $datasource, $if_none_match)
+```php
+getUniverseStationsStationId($station_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseStationsStationIdOk
+```
 
 Get station information
 
@@ -1206,6 +1207,7 @@ Get information on a station  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1223,11 +1225,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseStationsStationId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1246,16 +1246,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseStructures()`
 
-## getUniverseStructures
-
-> int[] getUniverseStructures($datasource, $filter, $if_none_match)
+```php
+getUniverseStructures($datasource, $filter, $if_none_match): int[]
+```
 
 List all public structures
 
@@ -1266,6 +1267,7 @@ List all public structures  ---  This route is cached for up to 3600 seconds
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1283,11 +1285,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseStructures: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1306,16 +1306,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseStructuresStructureId()`
 
-## getUniverseStructuresStructureId
-
-> \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk getUniverseStructuresStructureId($structure_id, $datasource, $if_none_match, $token)
+```php
+getUniverseStructuresStructureId($structure_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetUniverseStructuresStructureIdOk
+```
 
 Get structure information
 
@@ -1349,11 +1350,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseStructuresStructureId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1373,16 +1372,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseSystemJumps()`
 
-## getUniverseSystemJumps
-
-> \Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[] getUniverseSystemJumps($datasource, $if_none_match)
+```php
+getUniverseSystemJumps($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseSystemJumps200Ok[]
+```
 
 Get system jumps
 
@@ -1393,6 +1393,7 @@ Get the number of jumps in solar systems within the last hour ending at the time
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1409,11 +1410,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseSystemJumps: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1431,16 +1430,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseSystemKills()`
 
-## getUniverseSystemKills
-
-> \Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[] getUniverseSystemKills($datasource, $if_none_match)
+```php
+getUniverseSystemKills($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetUniverseSystemKills200Ok[]
+```
 
 Get system kills
 
@@ -1451,6 +1451,7 @@ Get the number of ship, pod and NPC kills per solar system within the last hour 
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1467,11 +1468,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseSystemKills: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1489,16 +1488,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseSystems()`
 
-## getUniverseSystems
-
-> int[] getUniverseSystems($datasource, $if_none_match)
+```php
+getUniverseSystems($datasource, $if_none_match): int[]
+```
 
 Get solar systems
 
@@ -1509,6 +1509,7 @@ Get a list of solar systems  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1525,11 +1526,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseSystems: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1547,16 +1546,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseSystemsSystemId()`
 
-## getUniverseSystemsSystemId
-
-> \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk getUniverseSystemsSystemId($system_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseSystemsSystemId($system_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseSystemsSystemIdOk
+```
 
 Get solar system information
 
@@ -1567,6 +1567,7 @@ Get information on a solar system.  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1586,11 +1587,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseSystemsSystemId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1611,16 +1610,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseTypes()`
 
-## getUniverseTypes
-
-> int[] getUniverseTypes($datasource, $if_none_match, $page)
+```php
+getUniverseTypes($datasource, $if_none_match, $page): int[]
+```
 
 Get types
 
@@ -1631,6 +1631,7 @@ Get a list of type ids  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1648,11 +1649,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseTypes: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1671,16 +1670,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getUniverseTypesTypeId()`
 
-## getUniverseTypesTypeId
-
-> \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk getUniverseTypesTypeId($type_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getUniverseTypesTypeId($type_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetUniverseTypesTypeIdOk
+```
 
 Get type information
 
@@ -1691,6 +1691,7 @@ Get information on a type  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1710,11 +1711,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->getUniverseTypesTypeId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1735,16 +1734,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postUniverseIds()`
 
-## postUniverseIds
-
-> \Swagger\Client\Eve\Model\PostUniverseIdsOk postUniverseIds($names, $accept_language, $datasource, $language)
+```php
+postUniverseIds($names, $accept_language, $datasource, $language): \Swagger\Client\Eve\Model\PostUniverseIdsOk
+```
 
 Bulk names to IDs
 
@@ -1755,6 +1755,7 @@ Resolve a set of names to IDs in the following categories: agents, alliances, ch
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1773,11 +1774,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->postUniverseIds: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1796,17 +1795,18 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postUniverseNames()`
 
-## postUniverseNames
-
-> \Swagger\Client\Eve\Model\PostUniverseNames200Ok[] postUniverseNames($ids, $datasource)
+```php
+postUniverseNames($ids, $datasource): \Swagger\Client\Eve\Model\PostUniverseNames200Ok[]
+```
 
 Get names and categories for a set of IDs
 
@@ -1817,6 +1817,7 @@ Resolve a set of IDs to names and categories. Supported ID's for resolving are: 
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\UniverseApi(
@@ -1833,11 +1834,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling UniverseApi->postUniverseNames: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -1854,10 +1853,9 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

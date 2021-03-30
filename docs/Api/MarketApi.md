@@ -1,26 +1,27 @@
 # Swagger\Client\Eve\MarketApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdOrders**](MarketApi.md#getCharactersCharacterIdOrders) | **GET** /v2/characters/{character_id}/orders/ | List open orders from a character
-[**getCharactersCharacterIdOrdersHistory**](MarketApi.md#getCharactersCharacterIdOrdersHistory) | **GET** /v1/characters/{character_id}/orders/history/ | List historical orders by a character
-[**getCorporationsCorporationIdOrders**](MarketApi.md#getCorporationsCorporationIdOrders) | **GET** /v3/corporations/{corporation_id}/orders/ | List open orders from a corporation
-[**getCorporationsCorporationIdOrdersHistory**](MarketApi.md#getCorporationsCorporationIdOrdersHistory) | **GET** /v2/corporations/{corporation_id}/orders/history/ | List historical orders from a corporation
-[**getMarketsGroups**](MarketApi.md#getMarketsGroups) | **GET** /v1/markets/groups/ | Get item groups
-[**getMarketsGroupsMarketGroupId**](MarketApi.md#getMarketsGroupsMarketGroupId) | **GET** /v1/markets/groups/{market_group_id}/ | Get item group information
-[**getMarketsPrices**](MarketApi.md#getMarketsPrices) | **GET** /v1/markets/prices/ | List market prices
-[**getMarketsRegionIdHistory**](MarketApi.md#getMarketsRegionIdHistory) | **GET** /v1/markets/{region_id}/history/ | List historical market statistics in a region
-[**getMarketsRegionIdOrders**](MarketApi.md#getMarketsRegionIdOrders) | **GET** /v1/markets/{region_id}/orders/ | List orders in a region
-[**getMarketsRegionIdTypes**](MarketApi.md#getMarketsRegionIdTypes) | **GET** /v1/markets/{region_id}/types/ | List type IDs relevant to a market
-[**getMarketsStructuresStructureId**](MarketApi.md#getMarketsStructuresStructureId) | **GET** /v1/markets/structures/{structure_id}/ | List orders in a structure
+[**getCharactersCharacterIdOrders()**](MarketApi.md#getCharactersCharacterIdOrders) | **GET** /v2/characters/{character_id}/orders/ | List open orders from a character
+[**getCharactersCharacterIdOrdersHistory()**](MarketApi.md#getCharactersCharacterIdOrdersHistory) | **GET** /v1/characters/{character_id}/orders/history/ | List historical orders by a character
+[**getCorporationsCorporationIdOrders()**](MarketApi.md#getCorporationsCorporationIdOrders) | **GET** /v3/corporations/{corporation_id}/orders/ | List open orders from a corporation
+[**getCorporationsCorporationIdOrdersHistory()**](MarketApi.md#getCorporationsCorporationIdOrdersHistory) | **GET** /v2/corporations/{corporation_id}/orders/history/ | List historical orders from a corporation
+[**getMarketsGroups()**](MarketApi.md#getMarketsGroups) | **GET** /v1/markets/groups/ | Get item groups
+[**getMarketsGroupsMarketGroupId()**](MarketApi.md#getMarketsGroupsMarketGroupId) | **GET** /v1/markets/groups/{market_group_id}/ | Get item group information
+[**getMarketsPrices()**](MarketApi.md#getMarketsPrices) | **GET** /v1/markets/prices/ | List market prices
+[**getMarketsRegionIdHistory()**](MarketApi.md#getMarketsRegionIdHistory) | **GET** /v1/markets/{region_id}/history/ | List historical market statistics in a region
+[**getMarketsRegionIdOrders()**](MarketApi.md#getMarketsRegionIdOrders) | **GET** /v1/markets/{region_id}/orders/ | List orders in a region
+[**getMarketsRegionIdTypes()**](MarketApi.md#getMarketsRegionIdTypes) | **GET** /v1/markets/{region_id}/types/ | List type IDs relevant to a market
+[**getMarketsStructuresStructureId()**](MarketApi.md#getMarketsStructuresStructureId) | **GET** /v1/markets/structures/{structure_id}/ | List orders in a structure
 
 
+## `getCharactersCharacterIdOrders()`
 
-## getCharactersCharacterIdOrders
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[] getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrders200Ok[]
+```
 
 List open orders from a character
 
@@ -54,11 +55,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCharactersCharacterIdOrders: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -78,16 +77,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdOrdersHistory()`
 
-## getCharactersCharacterIdOrdersHistory
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[] getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token)
+```php
+getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdOrdersHistory200Ok[]
+```
 
 List historical orders by a character
 
@@ -122,11 +122,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCharactersCharacterIdOrdersHistory: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -147,16 +145,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationsCorporationIdOrders()`
 
-## getCorporationsCorporationIdOrders
-
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[] getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token)
+```php
+getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrders200Ok[]
+```
 
 List open orders from a corporation
 
@@ -191,11 +190,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCorporationsCorporationIdOrders: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -216,16 +213,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationsCorporationIdOrdersHistory()`
 
-## getCorporationsCorporationIdOrdersHistory
-
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[] getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token)
+```php
+getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCorporationsCorporationIdOrdersHistory200Ok[]
+```
 
 List historical orders from a corporation
 
@@ -260,11 +258,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getCorporationsCorporationIdOrdersHistory: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -285,16 +281,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getMarketsGroups()`
 
-## getMarketsGroups
-
-> int[] getMarketsGroups($datasource, $if_none_match)
+```php
+getMarketsGroups($datasource, $if_none_match): int[]
+```
 
 Get item groups
 
@@ -305,6 +302,7 @@ Get a list of item groups  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
@@ -321,11 +319,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsGroups: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -343,16 +339,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getMarketsGroupsMarketGroupId()`
 
-## getMarketsGroupsMarketGroupId
-
-> \Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk getMarketsGroupsMarketGroupId($market_group_id, $accept_language, $datasource, $if_none_match, $language)
+```php
+getMarketsGroupsMarketGroupId($market_group_id, $accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetMarketsGroupsMarketGroupIdOk
+```
 
 Get item group information
 
@@ -363,6 +360,7 @@ Get information on an item group  ---  This route expires daily at 11:05
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
@@ -382,11 +380,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsGroupsMarketGroupId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -407,16 +403,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getMarketsPrices()`
 
-## getMarketsPrices
-
-> \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[] getMarketsPrices($datasource, $if_none_match)
+```php
+getMarketsPrices($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetMarketsPrices200Ok[]
+```
 
 List market prices
 
@@ -427,6 +424,7 @@ Return a list of prices  ---  This route is cached for up to 3600 seconds
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
@@ -443,11 +441,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsPrices: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -465,16 +461,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getMarketsRegionIdHistory()`
 
-## getMarketsRegionIdHistory
-
-> \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[] getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match)
+```php
+getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetMarketsRegionIdHistory200Ok[]
+```
 
 List historical market statistics in a region
 
@@ -485,6 +482,7 @@ Return a list of historical market statistics for the specified type in a region
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
@@ -503,11 +501,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsRegionIdHistory: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -527,16 +523,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getMarketsRegionIdOrders()`
 
-## getMarketsRegionIdOrders
-
-> \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[] getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id)
+```php
+getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $page, $type_id): \Swagger\Client\Eve\Model\GetMarketsRegionIdOrders200Ok[]
+```
 
 List orders in a region
 
@@ -547,6 +544,7 @@ Return a list of orders in a region  ---  This route is cached for up to 300 sec
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
@@ -567,11 +565,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsRegionIdOrders: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -593,16 +589,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getMarketsRegionIdTypes()`
 
-## getMarketsRegionIdTypes
-
-> int[] getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page)
+```php
+getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page): int[]
+```
 
 List type IDs relevant to a market
 
@@ -613,6 +610,7 @@ Return a list of type IDs that have active orders in the region, for efficient m
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\MarketApi(
@@ -631,11 +629,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsRegionIdTypes: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -655,16 +651,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getMarketsStructuresStructureId()`
 
-## getMarketsStructuresStructureId
-
-> \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[] getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token)
+```php
+getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetMarketsStructuresStructureId200Ok[]
+```
 
 List orders in a structure
 
@@ -699,11 +696,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MarketApi->getMarketsStructuresStructureId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -724,9 +719,8 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

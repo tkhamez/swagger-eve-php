@@ -1,18 +1,19 @@
 # Swagger\Client\Eve\FittingsApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteCharactersCharacterIdFittingsFittingId**](FittingsApi.md#deleteCharactersCharacterIdFittingsFittingId) | **DELETE** /v1/characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
-[**getCharactersCharacterIdFittings**](FittingsApi.md#getCharactersCharacterIdFittings) | **GET** /v2/characters/{character_id}/fittings/ | Get fittings
-[**postCharactersCharacterIdFittings**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v2/characters/{character_id}/fittings/ | Create fitting
+[**deleteCharactersCharacterIdFittingsFittingId()**](FittingsApi.md#deleteCharactersCharacterIdFittingsFittingId) | **DELETE** /v1/characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
+[**getCharactersCharacterIdFittings()**](FittingsApi.md#getCharactersCharacterIdFittings) | **GET** /v2/characters/{character_id}/fittings/ | Get fittings
+[**postCharactersCharacterIdFittings()**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v2/characters/{character_id}/fittings/ | Create fitting
 
 
+## `deleteCharactersCharacterIdFittingsFittingId()`
 
-## deleteCharactersCharacterIdFittingsFittingId
-
-> deleteCharactersCharacterIdFittingsFittingId($character_id, $fitting_id, $datasource, $token)
+```php
+deleteCharactersCharacterIdFittingsFittingId($character_id, $fitting_id, $datasource, $token)
+```
 
 Delete fitting
 
@@ -45,11 +46,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->deleteCharactersCharacterIdFittingsFittingId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -69,16 +68,17 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdFittings()`
 
-## getCharactersCharacterIdFittings
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[] getCharactersCharacterIdFittings($character_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdFittings($character_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdFittings200Ok[]
+```
 
 Get fittings
 
@@ -112,11 +112,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->getCharactersCharacterIdFittings: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -136,16 +134,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postCharactersCharacterIdFittings()`
 
-## postCharactersCharacterIdFittings
-
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($character_id, $fitting, $datasource, $token)
+```php
+postCharactersCharacterIdFittings($character_id, $fitting, $datasource, $token): \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsCreated
+```
 
 Create fitting
 
@@ -169,7 +168,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FittingsApi(
     $config
 );
 $character_id = 56; // int | An EVE character ID
-$fitting = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting | 
+$fitting = new \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting(); // \Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -179,11 +178,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->postCharactersCharacterIdFittings: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -202,10 +199,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

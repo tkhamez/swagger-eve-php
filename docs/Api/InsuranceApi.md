@@ -1,16 +1,17 @@
 # Swagger\Client\Eve\InsuranceApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getInsurancePrices**](InsuranceApi.md#getInsurancePrices) | **GET** /v1/insurance/prices/ | List insurance levels
+[**getInsurancePrices()**](InsuranceApi.md#getInsurancePrices) | **GET** /v1/insurance/prices/ | List insurance levels
 
 
+## `getInsurancePrices()`
 
-## getInsurancePrices
-
-> \Swagger\Client\Eve\Model\GetInsurancePrices200Ok[] getInsurancePrices($accept_language, $datasource, $if_none_match, $language)
+```php
+getInsurancePrices($accept_language, $datasource, $if_none_match, $language): \Swagger\Client\Eve\Model\GetInsurancePrices200Ok[]
+```
 
 List insurance levels
 
@@ -21,6 +22,7 @@ Return available insurance levels for all ship types  ---  This route is cached 
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\InsuranceApi(
@@ -39,11 +41,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling InsuranceApi->getInsurancePrices: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -63,9 +63,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

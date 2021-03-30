@@ -1,19 +1,20 @@
 # Swagger\Client\Eve\CalendarApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdCalendar**](CalendarApi.md#getCharactersCharacterIdCalendar) | **GET** /v1/characters/{character_id}/calendar/ | List calendar event summaries
-[**getCharactersCharacterIdCalendarEventId**](CalendarApi.md#getCharactersCharacterIdCalendarEventId) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event
-[**getCharactersCharacterIdCalendarEventIdAttendees**](CalendarApi.md#getCharactersCharacterIdCalendarEventIdAttendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
-[**putCharactersCharacterIdCalendarEventId**](CalendarApi.md#putCharactersCharacterIdCalendarEventId) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event
+[**getCharactersCharacterIdCalendar()**](CalendarApi.md#getCharactersCharacterIdCalendar) | **GET** /v1/characters/{character_id}/calendar/ | List calendar event summaries
+[**getCharactersCharacterIdCalendarEventId()**](CalendarApi.md#getCharactersCharacterIdCalendarEventId) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event
+[**getCharactersCharacterIdCalendarEventIdAttendees()**](CalendarApi.md#getCharactersCharacterIdCalendarEventIdAttendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
+[**putCharactersCharacterIdCalendarEventId()**](CalendarApi.md#putCharactersCharacterIdCalendarEventId) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event
 
 
+## `getCharactersCharacterIdCalendar()`
 
-## getCharactersCharacterIdCalendar
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendar200Ok[] getCharactersCharacterIdCalendar($character_id, $datasource, $from_event, $if_none_match, $token)
+```php
+getCharactersCharacterIdCalendar($character_id, $datasource, $from_event, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendar200Ok[]
+```
 
 List calendar event summaries
 
@@ -48,11 +49,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling CalendarApi->getCharactersCharacterIdCalendar: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -73,16 +72,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdCalendarEventId()`
 
-## getCharactersCharacterIdCalendarEventId
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdOk getCharactersCharacterIdCalendarEventId($character_id, $event_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdCalendarEventId($character_id, $event_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdOk
+```
 
 Get an event
 
@@ -117,11 +117,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling CalendarApi->getCharactersCharacterIdCalendarEventId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -142,16 +140,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCharactersCharacterIdCalendarEventIdAttendees()`
 
-## getCharactersCharacterIdCalendarEventIdAttendees
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[] getCharactersCharacterIdCalendarEventIdAttendees($character_id, $event_id, $datasource, $if_none_match, $token)
+```php
+getCharactersCharacterIdCalendarEventIdAttendees($character_id, $event_id, $datasource, $if_none_match, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]
+```
 
 Get attendees
 
@@ -186,11 +185,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling CalendarApi->getCharactersCharacterIdCalendarEventIdAttendees: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -211,16 +208,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `putCharactersCharacterIdCalendarEventId()`
 
-## putCharactersCharacterIdCalendarEventId
-
-> putCharactersCharacterIdCalendarEventId($character_id, $event_id, $response, $datasource, $token)
+```php
+putCharactersCharacterIdCalendarEventId($character_id, $event_id, $response, $datasource, $token)
+```
 
 Respond to an event
 
@@ -245,7 +243,7 @@ $apiInstance = new Swagger\Client\Eve\Api\CalendarApi(
 );
 $character_id = 56; // int | An EVE character ID
 $event_id = 56; // int | The ID of the event requested
-$response = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse | 
+$response = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -254,11 +252,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling CalendarApi->putCharactersCharacterIdCalendarEventId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -278,10 +274,9 @@ void (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

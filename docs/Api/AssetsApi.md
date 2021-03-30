@@ -1,21 +1,22 @@
 # Swagger\Client\Eve\AssetsApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdAssets**](AssetsApi.md#getCharactersCharacterIdAssets) | **GET** /v5/characters/{character_id}/assets/ | Get character assets
-[**getCorporationsCorporationIdAssets**](AssetsApi.md#getCorporationsCorporationIdAssets) | **GET** /v5/corporations/{corporation_id}/assets/ | Get corporation assets
-[**postCharactersCharacterIdAssetsLocations**](AssetsApi.md#postCharactersCharacterIdAssetsLocations) | **POST** /v2/characters/{character_id}/assets/locations/ | Get character asset locations
-[**postCharactersCharacterIdAssetsNames**](AssetsApi.md#postCharactersCharacterIdAssetsNames) | **POST** /v1/characters/{character_id}/assets/names/ | Get character asset names
-[**postCorporationsCorporationIdAssetsLocations**](AssetsApi.md#postCorporationsCorporationIdAssetsLocations) | **POST** /v2/corporations/{corporation_id}/assets/locations/ | Get corporation asset locations
-[**postCorporationsCorporationIdAssetsNames**](AssetsApi.md#postCorporationsCorporationIdAssetsNames) | **POST** /v1/corporations/{corporation_id}/assets/names/ | Get corporation asset names
+[**getCharactersCharacterIdAssets()**](AssetsApi.md#getCharactersCharacterIdAssets) | **GET** /v5/characters/{character_id}/assets/ | Get character assets
+[**getCorporationsCorporationIdAssets()**](AssetsApi.md#getCorporationsCorporationIdAssets) | **GET** /v5/corporations/{corporation_id}/assets/ | Get corporation assets
+[**postCharactersCharacterIdAssetsLocations()**](AssetsApi.md#postCharactersCharacterIdAssetsLocations) | **POST** /v2/characters/{character_id}/assets/locations/ | Get character asset locations
+[**postCharactersCharacterIdAssetsNames()**](AssetsApi.md#postCharactersCharacterIdAssetsNames) | **POST** /v1/characters/{character_id}/assets/names/ | Get character asset names
+[**postCorporationsCorporationIdAssetsLocations()**](AssetsApi.md#postCorporationsCorporationIdAssetsLocations) | **POST** /v2/corporations/{corporation_id}/assets/locations/ | Get corporation asset locations
+[**postCorporationsCorporationIdAssetsNames()**](AssetsApi.md#postCorporationsCorporationIdAssetsNames) | **POST** /v1/corporations/{corporation_id}/assets/names/ | Get corporation asset names
 
 
+## `getCharactersCharacterIdAssets()`
 
-## getCharactersCharacterIdAssets
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[] getCharactersCharacterIdAssets($character_id, $datasource, $if_none_match, $page, $token)
+```php
+getCharactersCharacterIdAssets($character_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdAssets200Ok[]
+```
 
 Get character assets
 
@@ -50,11 +51,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->getCharactersCharacterIdAssets: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -75,16 +74,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getCorporationsCorporationIdAssets()`
 
-## getCorporationsCorporationIdAssets
-
-> \Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[] getCorporationsCorporationIdAssets($corporation_id, $datasource, $if_none_match, $page, $token)
+```php
+getCorporationsCorporationIdAssets($corporation_id, $datasource, $if_none_match, $page, $token): \Swagger\Client\Eve\Model\GetCorporationsCorporationIdAssets200Ok[]
+```
 
 Get corporation assets
 
@@ -119,11 +119,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->getCorporationsCorporationIdAssets: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -144,16 +142,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postCharactersCharacterIdAssetsLocations()`
 
-## postCharactersCharacterIdAssetsLocations
-
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[] postCharactersCharacterIdAssetsLocations($character_id, $item_ids, $datasource, $token)
+```php
+postCharactersCharacterIdAssetsLocations($character_id, $item_ids, $datasource, $token): \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsLocations200Ok[]
+```
 
 Get character asset locations
 
@@ -187,11 +186,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -210,17 +207,18 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postCharactersCharacterIdAssetsNames()`
 
-## postCharactersCharacterIdAssetsNames
-
-> \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[] postCharactersCharacterIdAssetsNames($character_id, $item_ids, $datasource, $token)
+```php
+postCharactersCharacterIdAssetsNames($character_id, $item_ids, $datasource, $token): \Swagger\Client\Eve\Model\PostCharactersCharacterIdAssetsNames200Ok[]
+```
 
 Get character asset names
 
@@ -254,11 +252,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCharactersCharacterIdAssetsNames: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -277,17 +273,18 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postCorporationsCorporationIdAssetsLocations()`
 
-## postCorporationsCorporationIdAssetsLocations
-
-> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[] postCorporationsCorporationIdAssetsLocations($corporation_id, $item_ids, $datasource, $token)
+```php
+postCorporationsCorporationIdAssetsLocations($corporation_id, $item_ids, $datasource, $token): \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsLocations200Ok[]
+```
 
 Get corporation asset locations
 
@@ -321,11 +318,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsLocations: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -344,17 +339,18 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `postCorporationsCorporationIdAssetsNames()`
 
-## postCorporationsCorporationIdAssetsNames
-
-> \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[] postCorporationsCorporationIdAssetsNames($corporation_id, $item_ids, $datasource, $token)
+```php
+postCorporationsCorporationIdAssetsNames($corporation_id, $item_ids, $datasource, $token): \Swagger\Client\Eve\Model\PostCorporationsCorporationIdAssetsNames200Ok[]
+```
 
 Get corporation asset names
 
@@ -388,11 +384,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->postCorporationsCorporationIdAssetsNames: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -411,10 +405,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

@@ -1,16 +1,17 @@
 # Swagger\Client\Eve\StatusApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getStatus**](StatusApi.md#getStatus) | **GET** /v1/status/ | Retrieve the uptime and player counts
+[**getStatus()**](StatusApi.md#getStatus) | **GET** /v1/status/ | Retrieve the uptime and player counts
 
 
+## `getStatus()`
 
-## getStatus
-
-> \Swagger\Client\Eve\Model\GetStatusOk getStatus($datasource, $if_none_match)
+```php
+getStatus($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetStatusOk
+```
 
 Retrieve the uptime and player counts
 
@@ -21,6 +22,7 @@ EVE Server status  ---  This route is cached for up to 30 seconds
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\StatusApi(
@@ -37,11 +39,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling StatusApi->getStatus: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -59,9 +59,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

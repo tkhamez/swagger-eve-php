@@ -1,19 +1,20 @@
 # Swagger\Client\Eve\AllianceApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAlliances**](AllianceApi.md#getAlliances) | **GET** /v1/alliances/ | List all alliances
-[**getAlliancesAllianceId**](AllianceApi.md#getAlliancesAllianceId) | **GET** /v3/alliances/{alliance_id}/ | Get alliance information
-[**getAlliancesAllianceIdCorporations**](AllianceApi.md#getAlliancesAllianceIdCorporations) | **GET** /v1/alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
-[**getAlliancesAllianceIdIcons**](AllianceApi.md#getAlliancesAllianceIdIcons) | **GET** /v1/alliances/{alliance_id}/icons/ | Get alliance icon
+[**getAlliances()**](AllianceApi.md#getAlliances) | **GET** /v1/alliances/ | List all alliances
+[**getAlliancesAllianceId()**](AllianceApi.md#getAlliancesAllianceId) | **GET** /v3/alliances/{alliance_id}/ | Get alliance information
+[**getAlliancesAllianceIdCorporations()**](AllianceApi.md#getAlliancesAllianceIdCorporations) | **GET** /v1/alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
+[**getAlliancesAllianceIdIcons()**](AllianceApi.md#getAlliancesAllianceIdIcons) | **GET** /v1/alliances/{alliance_id}/icons/ | Get alliance icon
 
 
+## `getAlliances()`
 
-## getAlliances
-
-> int[] getAlliances($datasource, $if_none_match)
+```php
+getAlliances($datasource, $if_none_match): int[]
+```
 
 List all alliances
 
@@ -24,6 +25,7 @@ List all active player alliances  ---  This route is cached for up to 3600 secon
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
@@ -40,11 +42,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliances: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -62,16 +62,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getAlliancesAllianceId()`
 
-## getAlliancesAllianceId
-
-> \Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk getAlliancesAllianceId($alliance_id, $datasource, $if_none_match)
+```php
+getAlliancesAllianceId($alliance_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetAlliancesAllianceIdOk
+```
 
 Get alliance information
 
@@ -82,6 +83,7 @@ Public information about an alliance  ---  This route is cached for up to 3600 s
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
@@ -99,11 +101,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliancesAllianceId: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -122,16 +122,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getAlliancesAllianceIdCorporations()`
 
-## getAlliancesAllianceIdCorporations
-
-> int[] getAlliancesAllianceIdCorporations($alliance_id, $datasource, $if_none_match)
+```php
+getAlliancesAllianceIdCorporations($alliance_id, $datasource, $if_none_match): int[]
+```
 
 List alliance's corporations
 
@@ -142,6 +143,7 @@ List all current member corporations of an alliance  ---  This route is cached f
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
@@ -159,11 +161,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliancesAllianceIdCorporations: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -182,16 +182,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getAlliancesAllianceIdIcons()`
 
-## getAlliancesAllianceIdIcons
-
-> \Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk getAlliancesAllianceIdIcons($alliance_id, $datasource, $if_none_match)
+```php
+getAlliancesAllianceIdIcons($alliance_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\GetAlliancesAllianceIdIconsOk
+```
 
 Get alliance icon
 
@@ -202,6 +203,7 @@ Get the icon urls for a alliance  ---  This route expires daily at 11:05  --- [D
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\AllianceApi(
@@ -219,11 +221,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliancesAllianceIdIcons: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -242,9 +242,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

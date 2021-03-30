@@ -1,17 +1,18 @@
 # Swagger\Client\Eve\SearchApi
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterIdSearch**](SearchApi.md#getCharactersCharacterIdSearch) | **GET** /v3/characters/{character_id}/search/ | Search on a string
-[**getSearch**](SearchApi.md#getSearch) | **GET** /v2/search/ | Search on a string
+[**getCharactersCharacterIdSearch()**](SearchApi.md#getCharactersCharacterIdSearch) | **GET** /v3/characters/{character_id}/search/ | Search on a string
+[**getSearch()**](SearchApi.md#getSearch) | **GET** /v2/search/ | Search on a string
 
 
+## `getCharactersCharacterIdSearch()`
 
-## getCharactersCharacterIdSearch
-
-> \Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk getCharactersCharacterIdSearch($categories, $character_id, $search, $accept_language, $datasource, $if_none_match, $language, $strict, $token)
+```php
+getCharactersCharacterIdSearch($categories, $character_id, $search, $accept_language, $datasource, $if_none_match, $language, $strict, $token): \Swagger\Client\Eve\Model\GetCharactersCharacterIdSearchOk
+```
 
 Search on a string
 
@@ -50,11 +51,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling SearchApi->getCharactersCharacterIdSearch: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -79,16 +78,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getSearch()`
 
-## getSearch
-
-> \Swagger\Client\Eve\Model\GetSearchOk getSearch($categories, $search, $accept_language, $datasource, $if_none_match, $language, $strict)
+```php
+getSearch($categories, $search, $accept_language, $datasource, $if_none_match, $language, $strict): \Swagger\Client\Eve\Model\GetSearchOk
+```
 
 Search on a string
 
@@ -99,6 +99,7 @@ Search for entities that match a given sub-string.  ---  This route is cached fo
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Swagger\Client\Eve\Api\SearchApi(
@@ -120,11 +121,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling SearchApi->getSearch: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -147,9 +146,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-
