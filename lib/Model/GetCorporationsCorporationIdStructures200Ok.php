@@ -63,12 +63,11 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     protected static $openAPITypes = [
         'corporation_id' => 'int',
         'fuel_expires' => '\DateTime',
+        'name' => 'string',
         'next_reinforce_apply' => '\DateTime',
         'next_reinforce_hour' => 'int',
-        'next_reinforce_weekday' => 'int',
         'profile_id' => 'int',
         'reinforce_hour' => 'int',
-        'reinforce_weekday' => 'int',
         'services' => '\Swagger\Client\Eve\Model\GetCorporationsCorporationIdStructuresService[]',
         'state' => 'string',
         'state_timer_end' => '\DateTime',
@@ -89,12 +88,11 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     protected static $openAPIFormats = [
         'corporation_id' => 'int32',
         'fuel_expires' => 'date-time',
+        'name' => null,
         'next_reinforce_apply' => 'date-time',
         'next_reinforce_hour' => 'int32',
-        'next_reinforce_weekday' => 'int32',
         'profile_id' => 'int32',
         'reinforce_hour' => 'int32',
-        'reinforce_weekday' => 'int32',
         'services' => null,
         'state' => null,
         'state_timer_end' => 'date-time',
@@ -134,12 +132,11 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     protected static $attributeMap = [
         'corporation_id' => 'corporation_id',
         'fuel_expires' => 'fuel_expires',
+        'name' => 'name',
         'next_reinforce_apply' => 'next_reinforce_apply',
         'next_reinforce_hour' => 'next_reinforce_hour',
-        'next_reinforce_weekday' => 'next_reinforce_weekday',
         'profile_id' => 'profile_id',
         'reinforce_hour' => 'reinforce_hour',
-        'reinforce_weekday' => 'reinforce_weekday',
         'services' => 'services',
         'state' => 'state',
         'state_timer_end' => 'state_timer_end',
@@ -158,12 +155,11 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     protected static $setters = [
         'corporation_id' => 'setCorporationId',
         'fuel_expires' => 'setFuelExpires',
+        'name' => 'setName',
         'next_reinforce_apply' => 'setNextReinforceApply',
         'next_reinforce_hour' => 'setNextReinforceHour',
-        'next_reinforce_weekday' => 'setNextReinforceWeekday',
         'profile_id' => 'setProfileId',
         'reinforce_hour' => 'setReinforceHour',
-        'reinforce_weekday' => 'setReinforceWeekday',
         'services' => 'setServices',
         'state' => 'setState',
         'state_timer_end' => 'setStateTimerEnd',
@@ -182,12 +178,11 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     protected static $getters = [
         'corporation_id' => 'getCorporationId',
         'fuel_expires' => 'getFuelExpires',
+        'name' => 'getName',
         'next_reinforce_apply' => 'getNextReinforceApply',
         'next_reinforce_hour' => 'getNextReinforceHour',
-        'next_reinforce_weekday' => 'getNextReinforceWeekday',
         'profile_id' => 'getProfileId',
         'reinforce_hour' => 'getReinforceHour',
-        'reinforce_weekday' => 'getReinforceWeekday',
         'services' => 'getServices',
         'state' => 'getState',
         'state_timer_end' => 'getStateTimerEnd',
@@ -297,12 +292,11 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     {
         $this->container['corporation_id'] = $data['corporation_id'] ?? null;
         $this->container['fuel_expires'] = $data['fuel_expires'] ?? null;
+        $this->container['name'] = $data['name'] ?? null;
         $this->container['next_reinforce_apply'] = $data['next_reinforce_apply'] ?? null;
         $this->container['next_reinforce_hour'] = $data['next_reinforce_hour'] ?? null;
-        $this->container['next_reinforce_weekday'] = $data['next_reinforce_weekday'] ?? null;
         $this->container['profile_id'] = $data['profile_id'] ?? null;
         $this->container['reinforce_hour'] = $data['reinforce_hour'] ?? null;
-        $this->container['reinforce_weekday'] = $data['reinforce_weekday'] ?? null;
         $this->container['services'] = $data['services'] ?? null;
         $this->container['state'] = $data['state'] ?? null;
         $this->container['state_timer_end'] = $data['state_timer_end'] ?? null;
@@ -333,34 +327,15 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
             $invalidProperties[] = "invalid value for 'next_reinforce_hour', must be bigger than or equal to 0.";
         }
 
-        if (!is_null($this->container['next_reinforce_weekday']) && ($this->container['next_reinforce_weekday'] > 6)) {
-            $invalidProperties[] = "invalid value for 'next_reinforce_weekday', must be smaller than or equal to 6.";
-        }
-
-        if (!is_null($this->container['next_reinforce_weekday']) && ($this->container['next_reinforce_weekday'] < 0)) {
-            $invalidProperties[] = "invalid value for 'next_reinforce_weekday', must be bigger than or equal to 0.";
-        }
-
         if ($this->container['profile_id'] === null) {
             $invalidProperties[] = "'profile_id' can't be null";
         }
-        if ($this->container['reinforce_hour'] === null) {
-            $invalidProperties[] = "'reinforce_hour' can't be null";
-        }
-        if (($this->container['reinforce_hour'] > 23)) {
+        if (!is_null($this->container['reinforce_hour']) && ($this->container['reinforce_hour'] > 23)) {
             $invalidProperties[] = "invalid value for 'reinforce_hour', must be smaller than or equal to 23.";
         }
 
-        if (($this->container['reinforce_hour'] < 0)) {
+        if (!is_null($this->container['reinforce_hour']) && ($this->container['reinforce_hour'] < 0)) {
             $invalidProperties[] = "invalid value for 'reinforce_hour', must be bigger than or equal to 0.";
-        }
-
-        if (!is_null($this->container['reinforce_weekday']) && ($this->container['reinforce_weekday'] > 6)) {
-            $invalidProperties[] = "invalid value for 'reinforce_weekday', must be smaller than or equal to 6.";
-        }
-
-        if (!is_null($this->container['reinforce_weekday']) && ($this->container['reinforce_weekday'] < 0)) {
-            $invalidProperties[] = "invalid value for 'reinforce_weekday', must be bigger than or equal to 0.";
         }
 
         if (!is_null($this->container['services']) && (count($this->container['services']) > 10)) {
@@ -452,6 +427,30 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     }
 
     /**
+     * Gets name
+     *
+     * @return string|null
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     *
+     * @param string|null $name The structure name
+     *
+     * @return self
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
      * Gets next_reinforce_apply
      *
      * @return \DateTime|null
@@ -508,38 +507,6 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     }
 
     /**
-     * Gets next_reinforce_weekday
-     *
-     * @return int|null
-     */
-    public function getNextReinforceWeekday()
-    {
-        return $this->container['next_reinforce_weekday'];
-    }
-
-    /**
-     * Sets next_reinforce_weekday
-     *
-     * @param int|null $next_reinforce_weekday The requested change to reinforce_weekday that will take effect at the time shown by next_reinforce_apply
-     *
-     * @return self
-     */
-    public function setNextReinforceWeekday($next_reinforce_weekday)
-    {
-
-        if (!is_null($next_reinforce_weekday) && ($next_reinforce_weekday > 6)) {
-            throw new \InvalidArgumentException('invalid value for $next_reinforce_weekday when calling GetCorporationsCorporationIdStructures200Ok., must be smaller than or equal to 6.');
-        }
-        if (!is_null($next_reinforce_weekday) && ($next_reinforce_weekday < 0)) {
-            throw new \InvalidArgumentException('invalid value for $next_reinforce_weekday when calling GetCorporationsCorporationIdStructures200Ok., must be bigger than or equal to 0.');
-        }
-
-        $this->container['next_reinforce_weekday'] = $next_reinforce_weekday;
-
-        return $this;
-    }
-
-    /**
      * Gets profile_id
      *
      * @return int
@@ -566,7 +533,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Gets reinforce_hour
      *
-     * @return int
+     * @return int|null
      */
     public function getReinforceHour()
     {
@@ -576,53 +543,21 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Sets reinforce_hour
      *
-     * @param int $reinforce_hour The hour of day that determines the four hour window when the structure will randomly exit its reinforcement periods and become vulnerable to attack against its armor and/or hull. The structure will become vulnerable at a random time that is +/- 2 hours centered on the value of this property
+     * @param int|null $reinforce_hour The hour of day that determines the four hour window when the structure will randomly exit its reinforcement periods and become vulnerable to attack against its armor and/or hull. The structure will become vulnerable at a random time that is +/- 2 hours centered on the value of this property
      *
      * @return self
      */
     public function setReinforceHour($reinforce_hour)
     {
 
-        if (($reinforce_hour > 23)) {
+        if (!is_null($reinforce_hour) && ($reinforce_hour > 23)) {
             throw new \InvalidArgumentException('invalid value for $reinforce_hour when calling GetCorporationsCorporationIdStructures200Ok., must be smaller than or equal to 23.');
         }
-        if (($reinforce_hour < 0)) {
+        if (!is_null($reinforce_hour) && ($reinforce_hour < 0)) {
             throw new \InvalidArgumentException('invalid value for $reinforce_hour when calling GetCorporationsCorporationIdStructures200Ok., must be bigger than or equal to 0.');
         }
 
         $this->container['reinforce_hour'] = $reinforce_hour;
-
-        return $this;
-    }
-
-    /**
-     * Gets reinforce_weekday
-     *
-     * @return int|null
-     */
-    public function getReinforceWeekday()
-    {
-        return $this->container['reinforce_weekday'];
-    }
-
-    /**
-     * Sets reinforce_weekday
-     *
-     * @param int|null $reinforce_weekday The day of the week when the structure exits its final reinforcement period and becomes vulnerable to attack against its hull. Monday is 0 and Sunday is 6
-     *
-     * @return self
-     */
-    public function setReinforceWeekday($reinforce_weekday)
-    {
-
-        if (!is_null($reinforce_weekday) && ($reinforce_weekday > 6)) {
-            throw new \InvalidArgumentException('invalid value for $reinforce_weekday when calling GetCorporationsCorporationIdStructures200Ok., must be smaller than or equal to 6.');
-        }
-        if (!is_null($reinforce_weekday) && ($reinforce_weekday < 0)) {
-            throw new \InvalidArgumentException('invalid value for $reinforce_weekday when calling GetCorporationsCorporationIdStructures200Ok., must be bigger than or equal to 0.');
-        }
-
-        $this->container['reinforce_weekday'] = $reinforce_weekday;
 
         return $this;
     }

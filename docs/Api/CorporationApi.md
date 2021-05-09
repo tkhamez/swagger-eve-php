@@ -4,28 +4,28 @@ All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCorporationsCorporationId()**](CorporationApi.md#getCorporationsCorporationId) | **GET** /v4/corporations/{corporation_id}/ | Get corporation information
-[**getCorporationsCorporationIdAlliancehistory()**](CorporationApi.md#getCorporationsCorporationIdAlliancehistory) | **GET** /v2/corporations/{corporation_id}/alliancehistory/ | Get alliance history
-[**getCorporationsCorporationIdBlueprints()**](CorporationApi.md#getCorporationsCorporationIdBlueprints) | **GET** /v2/corporations/{corporation_id}/blueprints/ | Get corporation blueprints
-[**getCorporationsCorporationIdContainersLogs()**](CorporationApi.md#getCorporationsCorporationIdContainersLogs) | **GET** /v2/corporations/{corporation_id}/containers/logs/ | Get all corporation ALSC logs
-[**getCorporationsCorporationIdDivisions()**](CorporationApi.md#getCorporationsCorporationIdDivisions) | **GET** /v1/corporations/{corporation_id}/divisions/ | Get corporation divisions
-[**getCorporationsCorporationIdFacilities()**](CorporationApi.md#getCorporationsCorporationIdFacilities) | **GET** /v1/corporations/{corporation_id}/facilities/ | Get corporation facilities
-[**getCorporationsCorporationIdIcons()**](CorporationApi.md#getCorporationsCorporationIdIcons) | **GET** /v1/corporations/{corporation_id}/icons/ | Get corporation icon
-[**getCorporationsCorporationIdMedals()**](CorporationApi.md#getCorporationsCorporationIdMedals) | **GET** /v1/corporations/{corporation_id}/medals/ | Get corporation medals
-[**getCorporationsCorporationIdMedalsIssued()**](CorporationApi.md#getCorporationsCorporationIdMedalsIssued) | **GET** /v1/corporations/{corporation_id}/medals/issued/ | Get corporation issued medals
-[**getCorporationsCorporationIdMembers()**](CorporationApi.md#getCorporationsCorporationIdMembers) | **GET** /v3/corporations/{corporation_id}/members/ | Get corporation members
-[**getCorporationsCorporationIdMembersLimit()**](CorporationApi.md#getCorporationsCorporationIdMembersLimit) | **GET** /v1/corporations/{corporation_id}/members/limit/ | Get corporation member limit
-[**getCorporationsCorporationIdMembersTitles()**](CorporationApi.md#getCorporationsCorporationIdMembersTitles) | **GET** /v1/corporations/{corporation_id}/members/titles/ | Get corporation&#39;s members&#39; titles
-[**getCorporationsCorporationIdMembertracking()**](CorporationApi.md#getCorporationsCorporationIdMembertracking) | **GET** /v1/corporations/{corporation_id}/membertracking/ | Track corporation members
-[**getCorporationsCorporationIdRoles()**](CorporationApi.md#getCorporationsCorporationIdRoles) | **GET** /v1/corporations/{corporation_id}/roles/ | Get corporation member roles
-[**getCorporationsCorporationIdRolesHistory()**](CorporationApi.md#getCorporationsCorporationIdRolesHistory) | **GET** /v1/corporations/{corporation_id}/roles/history/ | Get corporation member roles history
+[**getCorporationsCorporationId()**](CorporationApi.md#getCorporationsCorporationId) | **GET** /v5/corporations/{corporation_id}/ | Get corporation information
+[**getCorporationsCorporationIdAlliancehistory()**](CorporationApi.md#getCorporationsCorporationIdAlliancehistory) | **GET** /v3/corporations/{corporation_id}/alliancehistory/ | Get alliance history
+[**getCorporationsCorporationIdBlueprints()**](CorporationApi.md#getCorporationsCorporationIdBlueprints) | **GET** /v3/corporations/{corporation_id}/blueprints/ | Get corporation blueprints
+[**getCorporationsCorporationIdContainersLogs()**](CorporationApi.md#getCorporationsCorporationIdContainersLogs) | **GET** /v3/corporations/{corporation_id}/containers/logs/ | Get all corporation ALSC logs
+[**getCorporationsCorporationIdDivisions()**](CorporationApi.md#getCorporationsCorporationIdDivisions) | **GET** /v2/corporations/{corporation_id}/divisions/ | Get corporation divisions
+[**getCorporationsCorporationIdFacilities()**](CorporationApi.md#getCorporationsCorporationIdFacilities) | **GET** /v2/corporations/{corporation_id}/facilities/ | Get corporation facilities
+[**getCorporationsCorporationIdIcons()**](CorporationApi.md#getCorporationsCorporationIdIcons) | **GET** /v2/corporations/{corporation_id}/icons/ | Get corporation icon
+[**getCorporationsCorporationIdMedals()**](CorporationApi.md#getCorporationsCorporationIdMedals) | **GET** /v2/corporations/{corporation_id}/medals/ | Get corporation medals
+[**getCorporationsCorporationIdMedalsIssued()**](CorporationApi.md#getCorporationsCorporationIdMedalsIssued) | **GET** /v2/corporations/{corporation_id}/medals/issued/ | Get corporation issued medals
+[**getCorporationsCorporationIdMembers()**](CorporationApi.md#getCorporationsCorporationIdMembers) | **GET** /v4/corporations/{corporation_id}/members/ | Get corporation members
+[**getCorporationsCorporationIdMembersLimit()**](CorporationApi.md#getCorporationsCorporationIdMembersLimit) | **GET** /v2/corporations/{corporation_id}/members/limit/ | Get corporation member limit
+[**getCorporationsCorporationIdMembersTitles()**](CorporationApi.md#getCorporationsCorporationIdMembersTitles) | **GET** /v2/corporations/{corporation_id}/members/titles/ | Get corporation&#39;s members&#39; titles
+[**getCorporationsCorporationIdMembertracking()**](CorporationApi.md#getCorporationsCorporationIdMembertracking) | **GET** /v2/corporations/{corporation_id}/membertracking/ | Track corporation members
+[**getCorporationsCorporationIdRoles()**](CorporationApi.md#getCorporationsCorporationIdRoles) | **GET** /v2/corporations/{corporation_id}/roles/ | Get corporation member roles
+[**getCorporationsCorporationIdRolesHistory()**](CorporationApi.md#getCorporationsCorporationIdRolesHistory) | **GET** /v2/corporations/{corporation_id}/roles/history/ | Get corporation member roles history
 [**getCorporationsCorporationIdShareholders()**](CorporationApi.md#getCorporationsCorporationIdShareholders) | **GET** /v1/corporations/{corporation_id}/shareholders/ | Get corporation shareholders
-[**getCorporationsCorporationIdStandings()**](CorporationApi.md#getCorporationsCorporationIdStandings) | **GET** /v1/corporations/{corporation_id}/standings/ | Get corporation standings
-[**getCorporationsCorporationIdStarbases()**](CorporationApi.md#getCorporationsCorporationIdStarbases) | **GET** /v1/corporations/{corporation_id}/starbases/ | Get corporation starbases (POSes)
-[**getCorporationsCorporationIdStarbasesStarbaseId()**](CorporationApi.md#getCorporationsCorporationIdStarbasesStarbaseId) | **GET** /v1/corporations/{corporation_id}/starbases/{starbase_id}/ | Get starbase (POS) detail
-[**getCorporationsCorporationIdStructures()**](CorporationApi.md#getCorporationsCorporationIdStructures) | **GET** /v3/corporations/{corporation_id}/structures/ | Get corporation structures
-[**getCorporationsCorporationIdTitles()**](CorporationApi.md#getCorporationsCorporationIdTitles) | **GET** /v1/corporations/{corporation_id}/titles/ | Get corporation titles
-[**getCorporationsNpccorps()**](CorporationApi.md#getCorporationsNpccorps) | **GET** /v1/corporations/npccorps/ | Get npc corporations
+[**getCorporationsCorporationIdStandings()**](CorporationApi.md#getCorporationsCorporationIdStandings) | **GET** /v2/corporations/{corporation_id}/standings/ | Get corporation standings
+[**getCorporationsCorporationIdStarbases()**](CorporationApi.md#getCorporationsCorporationIdStarbases) | **GET** /v2/corporations/{corporation_id}/starbases/ | Get corporation starbases (POSes)
+[**getCorporationsCorporationIdStarbasesStarbaseId()**](CorporationApi.md#getCorporationsCorporationIdStarbasesStarbaseId) | **GET** /v2/corporations/{corporation_id}/starbases/{starbase_id}/ | Get starbase (POS) detail
+[**getCorporationsCorporationIdStructures()**](CorporationApi.md#getCorporationsCorporationIdStructures) | **GET** /v4/corporations/{corporation_id}/structures/ | Get corporation structures
+[**getCorporationsCorporationIdTitles()**](CorporationApi.md#getCorporationsCorporationIdTitles) | **GET** /v2/corporations/{corporation_id}/titles/ | Get corporation titles
+[**getCorporationsNpccorps()**](CorporationApi.md#getCorporationsNpccorps) | **GET** /v2/corporations/npccorps/ | Get npc corporations
 
 
 ## `getCorporationsCorporationId()`
@@ -36,7 +36,7 @@ getCorporationsCorporationId($corporation_id, $datasource, $if_none_match): \Swa
 
 Get corporation information
 
-Public information about a corporation  ---  This route is cached for up to 3600 seconds
+Public information about a corporation  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/)
 
 ### Example
 
@@ -96,7 +96,7 @@ getCorporationsCorporationIdAlliancehistory($corporation_id, $datasource, $if_no
 
 Get alliance history
 
-Get a list of all the alliances a corporation has been a member of  ---  This route is cached for up to 3600 seconds
+Get a list of all the alliances a corporation has been a member of  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/alliancehistory/)
 
 ### Example
 
@@ -156,7 +156,7 @@ getCorporationsCorporationIdBlueprints($corporation_id, $datasource, $if_none_ma
 
 Get corporation blueprints
 
-Returns a list of blueprints the corporation owns  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns a list of blueprints the corporation owns  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/blueprints/)
 
 ### Example
 
@@ -224,7 +224,7 @@ getCorporationsCorporationIdContainersLogs($corporation_id, $datasource, $if_non
 
 Get all corporation ALSC logs
 
-Returns logs recorded in the past seven days from all audit log secure containers (ALSC) owned by a given corporation  ---  This route is cached for up to 600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns logs recorded in the past seven days from all audit log secure containers (ALSC) owned by a given corporation  ---  This route is cached for up to 600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/containers/logs/)
 
 ### Example
 
@@ -292,7 +292,7 @@ getCorporationsCorporationIdDivisions($corporation_id, $datasource, $if_none_mat
 
 Get corporation divisions
 
-Return corporation hangar and wallet division names, only show if a division is not using the default name  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Return corporation hangar and wallet division names, only show if a division is not using the default name  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/divisions/)
 
 ### Example
 
@@ -358,7 +358,7 @@ getCorporationsCorporationIdFacilities($corporation_id, $datasource, $if_none_ma
 
 Get corporation facilities
 
-Return a corporation's facilities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Factory_Manager
+Return a corporation's facilities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Factory_Manager  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/facilities/)
 
 ### Example
 
@@ -484,7 +484,7 @@ getCorporationsCorporationIdMedals($corporation_id, $datasource, $if_none_match,
 
 Get corporation medals
 
-Returns a corporation's medals  ---  This route is cached for up to 3600 seconds
+Returns a corporation's medals  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/medals/)
 
 ### Example
 
@@ -552,7 +552,7 @@ getCorporationsCorporationIdMedalsIssued($corporation_id, $datasource, $if_none_
 
 Get corporation issued medals
 
-Returns medals issued by a corporation  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns medals issued by a corporation  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/medals/issued/)
 
 ### Example
 
@@ -620,7 +620,7 @@ getCorporationsCorporationIdMembers($corporation_id, $datasource, $if_none_match
 
 Get corporation members
 
-Return the current member list of a corporation, the token's character need to be a member of the corporation.  ---  This route is cached for up to 3600 seconds
+Return the current member list of a corporation, the token's character need to be a member of the corporation.  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/members/)
 
 ### Example
 
@@ -686,7 +686,7 @@ getCorporationsCorporationIdMembersLimit($corporation_id, $datasource, $if_none_
 
 Get corporation member limit
 
-Return a corporation's member limit, not including CEO himself  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Return a corporation's member limit, not including CEO himself  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/members/limit/)
 
 ### Example
 
@@ -752,7 +752,7 @@ getCorporationsCorporationIdMembersTitles($corporation_id, $datasource, $if_none
 
 Get corporation's members' titles
 
-Returns a corporation's members' titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns a corporation's members' titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/members/titles/)
 
 ### Example
 
@@ -818,7 +818,7 @@ getCorporationsCorporationIdMembertracking($corporation_id, $datasource, $if_non
 
 Track corporation members
 
-Returns additional information about a corporation's members which helps tracking their activities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns additional information about a corporation's members which helps tracking their activities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/membertracking/)
 
 ### Example
 
@@ -884,7 +884,7 @@ getCorporationsCorporationIdRoles($corporation_id, $datasource, $if_none_match, 
 
 Get corporation member roles
 
-Return the roles of all members if the character has the personnel manager role or any grantable role.  ---  This route is cached for up to 3600 seconds
+Return the roles of all members if the character has the personnel manager role or any grantable role.  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/roles/)
 
 ### Example
 
@@ -950,7 +950,7 @@ getCorporationsCorporationIdRolesHistory($corporation_id, $datasource, $if_none_
 
 Get corporation member roles history
 
-Return how roles have changed for a coporation's members, up to a month  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Return how roles have changed for a coporation's members, up to a month  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/roles/history/)
 
 ### Example
 
@@ -1086,7 +1086,7 @@ getCorporationsCorporationIdStandings($corporation_id, $datasource, $if_none_mat
 
 Get corporation standings
 
-Return corporation standings from agents, NPC corporations, and factions  ---  This route is cached for up to 3600 seconds
+Return corporation standings from agents, NPC corporations, and factions  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/standings/)
 
 ### Example
 
@@ -1222,7 +1222,7 @@ getCorporationsCorporationIdStarbasesStarbaseId($corporation_id, $starbase_id, $
 
 Get starbase (POS) detail
 
-Returns various settings and fuels of a starbase (POS)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns various settings and fuels of a starbase (POS)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/starbases/{starbase_id}/)
 
 ### Example
 
@@ -1364,7 +1364,7 @@ getCorporationsCorporationIdTitles($corporation_id, $datasource, $if_none_match,
 
 Get corporation titles
 
-Returns a corporation's titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+Returns a corporation's titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/titles/)
 
 ### Example
 
@@ -1430,7 +1430,7 @@ getCorporationsNpccorps($datasource, $if_none_match): int[]
 
 Get npc corporations
 
-Get a list of npc corporations  ---  This route expires daily at 11:05
+Get a list of npc corporations  ---  This route expires daily at 11:05  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/npccorps/)
 
 ### Example
 
