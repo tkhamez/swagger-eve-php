@@ -327,7 +327,6 @@ docs/Model/GetWarsWarIdOk.md
 docs/Model/GetWarsWarIdUnprocessableEntity.md
 docs/Model/InternalServerError.md
 docs/Model/PostCharactersAffiliation200Ok.md
-docs/Model/PostCharactersAffiliationNotFound.md
 docs/Model/PostCharactersCharacterIdAssetsLocations200Ok.md
 docs/Model/PostCharactersCharacterIdAssetsLocationsPosition.md
 docs/Model/PostCharactersCharacterIdAssetsNames200Ok.md
@@ -708,7 +707,6 @@ lib/Model/GetWarsWarIdUnprocessableEntity.php
 lib/Model/InternalServerError.php
 lib/Model/ModelInterface.php
 lib/Model/PostCharactersAffiliation200Ok.php
-lib/Model/PostCharactersAffiliationNotFound.php
 lib/Model/PostCharactersCharacterIdAssetsLocations200Ok.php
 lib/Model/PostCharactersCharacterIdAssetsLocationsPosition.php
 lib/Model/PostCharactersCharacterIdAssetsNames200Ok.php
@@ -1086,7 +1084,6 @@ test/Model/GetWarsWarIdOkTest.php
 test/Model/GetWarsWarIdUnprocessableEntityTest.php
 test/Model/InternalServerErrorTest.php
 test/Model/PostCharactersAffiliation200OkTest.php
-test/Model/PostCharactersAffiliationNotFoundTest.php
 test/Model/PostCharactersCharacterIdAssetsLocations200OkTest.php
 test/Model/PostCharactersCharacterIdAssetsLocationsPositionTest.php
 test/Model/PostCharactersCharacterIdAssetsNames200OkTest.php

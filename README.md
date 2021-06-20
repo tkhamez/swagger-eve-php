@@ -117,19 +117,19 @@ Class | Method | HTTP request | Description
 *CalendarApi* | [**getCharactersCharacterIdCalendarEventIdAttendees**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventidattendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
 *CalendarApi* | [**putCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#putcharacterscharacteridcalendareventid) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event
 *CharacterApi* | [**getCharactersCharacterId**](docs/Api/CharacterApi.md#getcharacterscharacterid) | **GET** /v4/characters/{character_id}/ | Get character&#39;s public information
-*CharacterApi* | [**getCharactersCharacterIdAgentsResearch**](docs/Api/CharacterApi.md#getcharacterscharacteridagentsresearch) | **GET** /v1/characters/{character_id}/agents_research/ | Get agents research
-*CharacterApi* | [**getCharactersCharacterIdBlueprints**](docs/Api/CharacterApi.md#getcharacterscharacteridblueprints) | **GET** /v2/characters/{character_id}/blueprints/ | Get blueprints
-*CharacterApi* | [**getCharactersCharacterIdCorporationhistory**](docs/Api/CharacterApi.md#getcharacterscharacteridcorporationhistory) | **GET** /v1/characters/{character_id}/corporationhistory/ | Get corporation history
-*CharacterApi* | [**getCharactersCharacterIdFatigue**](docs/Api/CharacterApi.md#getcharacterscharacteridfatigue) | **GET** /v1/characters/{character_id}/fatigue/ | Get jump fatigue
-*CharacterApi* | [**getCharactersCharacterIdMedals**](docs/Api/CharacterApi.md#getcharacterscharacteridmedals) | **GET** /v1/characters/{character_id}/medals/ | Get medals
+*CharacterApi* | [**getCharactersCharacterIdAgentsResearch**](docs/Api/CharacterApi.md#getcharacterscharacteridagentsresearch) | **GET** /v2/characters/{character_id}/agents_research/ | Get agents research
+*CharacterApi* | [**getCharactersCharacterIdBlueprints**](docs/Api/CharacterApi.md#getcharacterscharacteridblueprints) | **GET** /v3/characters/{character_id}/blueprints/ | Get blueprints
+*CharacterApi* | [**getCharactersCharacterIdCorporationhistory**](docs/Api/CharacterApi.md#getcharacterscharacteridcorporationhistory) | **GET** /v2/characters/{character_id}/corporationhistory/ | Get corporation history
+*CharacterApi* | [**getCharactersCharacterIdFatigue**](docs/Api/CharacterApi.md#getcharacterscharacteridfatigue) | **GET** /v2/characters/{character_id}/fatigue/ | Get jump fatigue
+*CharacterApi* | [**getCharactersCharacterIdMedals**](docs/Api/CharacterApi.md#getcharacterscharacteridmedals) | **GET** /v2/characters/{character_id}/medals/ | Get medals
 *CharacterApi* | [**getCharactersCharacterIdNotifications**](docs/Api/CharacterApi.md#getcharacterscharacteridnotifications) | **GET** /v5/characters/{character_id}/notifications/ | Get character notifications
-*CharacterApi* | [**getCharactersCharacterIdNotificationsContacts**](docs/Api/CharacterApi.md#getcharacterscharacteridnotificationscontacts) | **GET** /v1/characters/{character_id}/notifications/contacts/ | Get new contact notifications
+*CharacterApi* | [**getCharactersCharacterIdNotificationsContacts**](docs/Api/CharacterApi.md#getcharacterscharacteridnotificationscontacts) | **GET** /v2/characters/{character_id}/notifications/contacts/ | Get new contact notifications
 *CharacterApi* | [**getCharactersCharacterIdPortrait**](docs/Api/CharacterApi.md#getcharacterscharacteridportrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits
-*CharacterApi* | [**getCharactersCharacterIdRoles**](docs/Api/CharacterApi.md#getcharacterscharacteridroles) | **GET** /v2/characters/{character_id}/roles/ | Get character corporation roles
-*CharacterApi* | [**getCharactersCharacterIdStandings**](docs/Api/CharacterApi.md#getcharacterscharacteridstandings) | **GET** /v1/characters/{character_id}/standings/ | Get standings
-*CharacterApi* | [**getCharactersCharacterIdTitles**](docs/Api/CharacterApi.md#getcharacterscharacteridtitles) | **GET** /v1/characters/{character_id}/titles/ | Get character corporation titles
-*CharacterApi* | [**postCharactersAffiliation**](docs/Api/CharacterApi.md#postcharactersaffiliation) | **POST** /v1/characters/affiliation/ | Character affiliation
-*CharacterApi* | [**postCharactersCharacterIdCspa**](docs/Api/CharacterApi.md#postcharacterscharacteridcspa) | **POST** /v4/characters/{character_id}/cspa/ | Calculate a CSPA charge cost
+*CharacterApi* | [**getCharactersCharacterIdRoles**](docs/Api/CharacterApi.md#getcharacterscharacteridroles) | **GET** /v3/characters/{character_id}/roles/ | Get character corporation roles
+*CharacterApi* | [**getCharactersCharacterIdStandings**](docs/Api/CharacterApi.md#getcharacterscharacteridstandings) | **GET** /v2/characters/{character_id}/standings/ | Get standings
+*CharacterApi* | [**getCharactersCharacterIdTitles**](docs/Api/CharacterApi.md#getcharacterscharacteridtitles) | **GET** /v2/characters/{character_id}/titles/ | Get character corporation titles
+*CharacterApi* | [**postCharactersAffiliation**](docs/Api/CharacterApi.md#postcharactersaffiliation) | **POST** /v2/characters/affiliation/ | Character affiliation
+*CharacterApi* | [**postCharactersCharacterIdCspa**](docs/Api/CharacterApi.md#postcharacterscharacteridcspa) | **POST** /v5/characters/{character_id}/cspa/ | Calculate a CSPA charge cost
 *ClonesApi* | [**getCharactersCharacterIdClones**](docs/Api/ClonesApi.md#getcharacterscharacteridclones) | **GET** /v3/characters/{character_id}/clones/ | Get clones
 *ClonesApi* | [**getCharactersCharacterIdImplants**](docs/Api/ClonesApi.md#getcharacterscharacteridimplants) | **GET** /v1/characters/{character_id}/implants/ | Get active implants
 *ContactsApi* | [**deleteCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#deletecharacterscharacteridcontacts) | **DELETE** /v2/characters/{character_id}/contacts/ | Delete contacts
@@ -598,7 +598,6 @@ Class | Method | HTTP request | Description
 - [GetWarsWarIdUnprocessableEntity](docs/Model/GetWarsWarIdUnprocessableEntity.md)
 - [InternalServerError](docs/Model/InternalServerError.md)
 - [PostCharactersAffiliation200Ok](docs/Model/PostCharactersAffiliation200Ok.md)
-- [PostCharactersAffiliationNotFound](docs/Model/PostCharactersAffiliationNotFound.md)
 - [PostCharactersCharacterIdAssetsLocations200Ok](docs/Model/PostCharactersCharacterIdAssetsLocations200Ok.md)
 - [PostCharactersCharacterIdAssetsLocationsPosition](docs/Model/PostCharactersCharacterIdAssetsLocationsPosition.md)
 - [PostCharactersCharacterIdAssetsNames200Ok](docs/Model/PostCharactersCharacterIdAssetsNames200Ok.md)
@@ -743,5 +742,5 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `1.7.15`
+- API version: `1.8.2`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`
