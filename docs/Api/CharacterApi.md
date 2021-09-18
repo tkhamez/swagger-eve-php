@@ -4,7 +4,7 @@ All URIs are relative to https://esi.evetech.net.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCharactersCharacterId()**](CharacterApi.md#getCharactersCharacterId) | **GET** /v4/characters/{character_id}/ | Get character&#39;s public information
+[**getCharactersCharacterId()**](CharacterApi.md#getCharactersCharacterId) | **GET** /v5/characters/{character_id}/ | Get character&#39;s public information
 [**getCharactersCharacterIdAgentsResearch()**](CharacterApi.md#getCharactersCharacterIdAgentsResearch) | **GET** /v2/characters/{character_id}/agents_research/ | Get agents research
 [**getCharactersCharacterIdBlueprints()**](CharacterApi.md#getCharactersCharacterIdBlueprints) | **GET** /v3/characters/{character_id}/blueprints/ | Get blueprints
 [**getCharactersCharacterIdCorporationhistory()**](CharacterApi.md#getCharactersCharacterIdCorporationhistory) | **GET** /v2/characters/{character_id}/corporationhistory/ | Get corporation history

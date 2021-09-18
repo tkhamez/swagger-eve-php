@@ -4,7 +4,7 @@ This client is generated from the
 ##### Versioning scheme since 1.0.0:
 * patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json) file,
   refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md)
-  (note, however, that the date is not always correct there) or generated with a new patch version
+  (note, however, that the date is not always correct there) and/or generated with a new patch version
   of the generator library
 * minor: switched to a new minor version of the generator library
 * major: switched to a new major version of the generator library, switched to another generator library 
@@ -54,7 +54,7 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
 ```json
 {
   "require": {
-    "tkhamez/swagger-eve-php": "~6.0.0"
+    "tkhamez/swagger-eve-php": "^7.0"
   }
 }
 ```
@@ -122,7 +122,7 @@ Class | Method | HTTP request | Description
 *CalendarApi* | [**getCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventid) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event
 *CalendarApi* | [**getCharactersCharacterIdCalendarEventIdAttendees**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventidattendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
 *CalendarApi* | [**putCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#putcharacterscharacteridcalendareventid) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event
-*CharacterApi* | [**getCharactersCharacterId**](docs/Api/CharacterApi.md#getcharacterscharacterid) | **GET** /v4/characters/{character_id}/ | Get character&#39;s public information
+*CharacterApi* | [**getCharactersCharacterId**](docs/Api/CharacterApi.md#getcharacterscharacterid) | **GET** /v5/characters/{character_id}/ | Get character&#39;s public information
 *CharacterApi* | [**getCharactersCharacterIdAgentsResearch**](docs/Api/CharacterApi.md#getcharacterscharacteridagentsresearch) | **GET** /v2/characters/{character_id}/agents_research/ | Get agents research
 *CharacterApi* | [**getCharactersCharacterIdBlueprints**](docs/Api/CharacterApi.md#getcharacterscharacteridblueprints) | **GET** /v3/characters/{character_id}/blueprints/ | Get blueprints
 *CharacterApi* | [**getCharactersCharacterIdCorporationhistory**](docs/Api/CharacterApi.md#getcharacterscharacteridcorporationhistory) | **GET** /v2/characters/{character_id}/corporationhistory/ | Get corporation history

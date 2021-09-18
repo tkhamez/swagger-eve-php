@@ -61,7 +61,6 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPITypes = [
         'alliance_id' => 'int',
-        'ancestry_id' => 'int',
         'birthday' => '\DateTime',
         'bloodline_id' => 'int',
         'corporation_id' => 'int',
@@ -83,7 +82,6 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPIFormats = [
         'alliance_id' => 'int32',
-        'ancestry_id' => 'int32',
         'birthday' => 'date-time',
         'bloodline_id' => 'int32',
         'corporation_id' => 'int32',
@@ -124,7 +122,6 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
      */
     protected static $attributeMap = [
         'alliance_id' => 'alliance_id',
-        'ancestry_id' => 'ancestry_id',
         'birthday' => 'birthday',
         'bloodline_id' => 'bloodline_id',
         'corporation_id' => 'corporation_id',
@@ -144,7 +141,6 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
      */
     protected static $setters = [
         'alliance_id' => 'setAllianceId',
-        'ancestry_id' => 'setAncestryId',
         'birthday' => 'setBirthday',
         'bloodline_id' => 'setBloodlineId',
         'corporation_id' => 'setCorporationId',
@@ -164,7 +160,6 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
      */
     protected static $getters = [
         'alliance_id' => 'getAllianceId',
-        'ancestry_id' => 'getAncestryId',
         'birthday' => 'getBirthday',
         'bloodline_id' => 'getBloodlineId',
         'corporation_id' => 'getCorporationId',
@@ -250,7 +245,6 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
     public function __construct(array $data = null)
     {
         $this->container['alliance_id'] = $data['alliance_id'] ?? null;
-        $this->container['ancestry_id'] = $data['ancestry_id'] ?? null;
         $this->container['birthday'] = $data['birthday'] ?? null;
         $this->container['bloodline_id'] = $data['bloodline_id'] ?? null;
         $this->container['corporation_id'] = $data['corporation_id'] ?? null;
@@ -342,30 +336,6 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
     public function setAllianceId($alliance_id)
     {
         $this->container['alliance_id'] = $alliance_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets ancestry_id
-     *
-     * @return int|null
-     */
-    public function getAncestryId()
-    {
-        return $this->container['ancestry_id'];
-    }
-
-    /**
-     * Sets ancestry_id
-     *
-     * @param int|null $ancestry_id ancestry_id integer
-     *
-     * @return self
-     */
-    public function setAncestryId($ancestry_id)
-    {
-        $this->container['ancestry_id'] = $ancestry_id;
 
         return $this;
     }

@@ -436,7 +436,7 @@ class CharacterApi
         }
 
 
-        $resourcePath = '/v4/characters/{character_id}/';
+        $resourcePath = '/v5/characters/{character_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
