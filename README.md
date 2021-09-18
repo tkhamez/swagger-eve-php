@@ -12,12 +12,13 @@ This client is generated from the
 
 ##### Changes
 
-6.1.0
+7.0.0
+- Raised minimum PHP requirement to 7.3
 
+6.1.0
 - Require guzzlehttp/psr7 < version 2 (this library uses functions that were removed in 2.0).
 
 5.0.0
-
 - Added patch to allow Guzzle HTTP client ^7.2 together with ^6.2 (7.2 requires PHP ^7.2.5 || ^8.0).
 
 4.0.0
@@ -43,7 +44,8 @@ An OpenAPI for EVE Online
 
 ### Requirements
 
-PHP 7.2 and later.
+PHP 7.3 and later.
+Should also work with PHP 8.0 but has not been tested.
 
 ### Composer
 
