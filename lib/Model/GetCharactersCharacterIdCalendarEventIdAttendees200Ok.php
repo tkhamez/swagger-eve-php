@@ -283,7 +283,7 @@ class GetCharactersCharacterIdCalendarEventIdAttendees200Ok implements ModelInte
      */
     public function setEventResponse($event_response)
     {
-        $allowedValues = $this->getEventResponseAllowableValues();
+        /*$allowedValues = $this->getEventResponseAllowableValues();
         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -292,7 +292,7 @@ class GetCharactersCharacterIdCalendarEventIdAttendees200Ok implements ModelInte
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['event_response'] = $event_response;
 
         return $this;

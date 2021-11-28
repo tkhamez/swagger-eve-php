@@ -287,7 +287,7 @@ class GetCorporationsCorporationIdStructuresService implements ModelInterface, A
      */
     public function setState($state)
     {
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -296,7 +296,7 @@ class GetCorporationsCorporationIdStructuresService implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['state'] = $state;
 
         return $this;

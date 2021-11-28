@@ -296,7 +296,7 @@ class GetCorporationsCorporationIdStandings200Ok implements ModelInterface, Arra
      */
     public function setFromType($from_type)
     {
-        $allowedValues = $this->getFromTypeAllowableValues();
+        /*$allowedValues = $this->getFromTypeAllowableValues();
         if (!in_array($from_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -305,7 +305,7 @@ class GetCorporationsCorporationIdStandings200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['from_type'] = $from_type;
 
         return $this;

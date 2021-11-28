@@ -402,7 +402,7 @@ class GetCorporationsCorporationIdStarbases200Ok implements ModelInterface, Arra
      */
     public function setState($state)
     {
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!is_null($state) && !in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -411,7 +411,7 @@ class GetCorporationsCorporationIdStarbases200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['state'] = $state;
 
         return $this;

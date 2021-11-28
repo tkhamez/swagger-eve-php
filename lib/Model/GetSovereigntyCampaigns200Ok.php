@@ -449,7 +449,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
      */
     public function setEventType($event_type)
     {
-        $allowedValues = $this->getEventTypeAllowableValues();
+        /*$allowedValues = $this->getEventTypeAllowableValues();
         if (!in_array($event_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -458,7 +458,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['event_type'] = $event_type;
 
         return $this;

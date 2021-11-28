@@ -425,7 +425,7 @@ class GetCorporationsCorporationIdMedalsIssued200Ok implements ModelInterface, A
      */
     public function setStatus($status)
     {
-        $allowedValues = $this->getStatusAllowableValues();
+        /*$allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -434,7 +434,7 @@ class GetCorporationsCorporationIdMedalsIssued200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['status'] = $status;
 
         return $this;

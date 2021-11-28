@@ -483,7 +483,7 @@ class GetCharactersCharacterIdCalendarEventIdOk implements ModelInterface, Array
      */
     public function setOwnerType($owner_type)
     {
-        $allowedValues = $this->getOwnerTypeAllowableValues();
+        /*$allowedValues = $this->getOwnerTypeAllowableValues();
         if (!in_array($owner_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -492,7 +492,7 @@ class GetCharactersCharacterIdCalendarEventIdOk implements ModelInterface, Array
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['owner_type'] = $owner_type;
 
         return $this;

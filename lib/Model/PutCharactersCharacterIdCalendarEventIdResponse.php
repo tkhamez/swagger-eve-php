@@ -254,7 +254,7 @@ class PutCharactersCharacterIdCalendarEventIdResponse implements ModelInterface,
      */
     public function setResponse($response)
     {
-        $allowedValues = $this->getResponseAllowableValues();
+        /*$allowedValues = $this->getResponseAllowableValues();
         if (!in_array($response, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -263,7 +263,7 @@ class PutCharactersCharacterIdCalendarEventIdResponse implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['response'] = $response;
 
         return $this;

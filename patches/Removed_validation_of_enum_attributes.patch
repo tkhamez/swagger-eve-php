@@ -1,11 +1,177 @@
-Index: lib/Model/GetCharactersCharacterIdFittingsItem.php
+Index: test/Api/CharacterApiTest.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCharactersCharacterIdFittingsItem.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdFittingsItem.php	(date 1586706773486)
-@@ -350,7 +350,7 @@
+diff --git a/test/Api/CharacterApiTest.php b/test/Api/CharacterApiTest.php
+--- a/test/Api/CharacterApiTest.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/test/Api/CharacterApiTest.php	(date 1638108782740)
+@@ -27,10 +27,14 @@
+
+ namespace Swagger\Client\Eve\Test\Api;
+
++use GuzzleHttp\Psr7\Response;
++use Swagger\Client\Eve\Api\CharacterApi;
+ use \Swagger\Client\Eve\Configuration;
+ use \Swagger\Client\Eve\ApiException;
++use Swagger\Client\Eve\Model\GetCharactersCharacterIdNotifications200Ok;
+ use \Swagger\Client\Eve\ObjectSerializer;
+ use PHPUnit\Framework\TestCase;
++use Swagger\Client\Eve\Test\Client;
+
+ /**
+  * CharacterApiTest Class Doc Comment
+@@ -151,8 +155,9 @@
+      */
+     public function testGetCharactersCharacterIdNotifications()
+     {
+-        // TODO: implement
+-        $this->markTestIncomplete('Not implemented');
++        $api = new CharacterApi(new Client(new Response(200, [], '[{"type": "InvalidEnumValue"}]')));
++        $result = $api->getCharactersCharacterIdNotifications(96061222);
++        $this->assertInstanceOf(GetCharactersCharacterIdNotifications200Ok::class, $result[0]);
+     }
+
+     /**
+Index: lib/Model/GetCharactersCharacterIdMailRecipient.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdMailRecipient.php b/lib/Model/GetCharactersCharacterIdMailRecipient.php
+--- a/lib/Model/GetCharactersCharacterIdMailRecipient.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdMailRecipient.php	(date 1638108737884)
+@@ -289,7 +289,7 @@
+      */
+     public function setRecipientType($recipient_type)
+     {
+-        $allowedValues = $this->getRecipientTypeAllowableValues();
++        /*$allowedValues = $this->getRecipientTypeAllowableValues();
+         if (!in_array($recipient_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -298,7 +298,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['recipient_type'] = $recipient_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdPlanets200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdPlanets200Ok.php b/lib/Model/GetCharactersCharacterIdPlanets200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdPlanets200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdPlanets200Ok.php	(date 1638108737972)
+@@ -431,7 +431,7 @@
+      */
+     public function setPlanetType($planet_type)
+     {
+-        $allowedValues = $this->getPlanetTypeAllowableValues();
++        /*$allowedValues = $this->getPlanetTypeAllowableValues();
+         if (!in_array($planet_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -440,7 +440,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['planet_type'] = $planet_type;
+
+         return $this;
+Index: lib/Model/GetFleetsFleetIdMembers200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFleetsFleetIdMembers200Ok.php b/lib/Model/GetFleetsFleetIdMembers200Ok.php
+--- a/lib/Model/GetFleetsFleetIdMembers200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetFleetsFleetIdMembers200Ok.php	(date 1638108738256)
+@@ -382,7 +382,7 @@
+      */
+     public function setRole($role)
+     {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -391,7 +391,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['role'] = $role;
+
+         return $this;
+Index: lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php b/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php
+--- a/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php	(date 1638108738376)
+@@ -254,7 +254,7 @@
+      */
+     public function setResponse($response)
+     {
+-        $allowedValues = $this->getResponseAllowableValues();
++        /*$allowedValues = $this->getResponseAllowableValues();
+         if (!in_array($response, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -263,7 +263,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['response'] = $response;
+
+         return $this;
+Index: lib/Model/PostUniverseNames200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostUniverseNames200Ok.php b/lib/Model/PostUniverseNames200Ok.php
+--- a/lib/Model/PostUniverseNames200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/PostUniverseNames200Ok.php	(date 1638108738368)
+@@ -284,7 +284,7 @@
+      */
+     public function setCategory($category)
+     {
+-        $allowedValues = $this->getCategoryAllowableValues();
++        /*$allowedValues = $this->getCategoryAllowableValues();
+         if (!in_array($category, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -293,7 +293,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['category'] = $category;
+
+         return $this;
+Index: lib/Model/PostCharactersCharacterIdFittingsItem.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostCharactersCharacterIdFittingsItem.php b/lib/Model/PostCharactersCharacterIdFittingsItem.php
+--- a/lib/Model/PostCharactersCharacterIdFittingsItem.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/PostCharactersCharacterIdFittingsItem.php	(date 1638108738336)
+@@ -352,7 +352,7 @@
       */
      public function setFlag($flag)
      {
@@ -14,109 +180,146 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($flag, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -358,7 +358,7 @@
+@@ -361,7 +361,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['flag'] = $flag;
- 
+
          return $this;
-Index: lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
+Index: lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(date 1586706773402)
-@@ -659,7 +659,7 @@
+diff --git a/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php b/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php	(date 1638108738012)
+@@ -711,7 +711,7 @@
       */
-     public function setRoleType($role_type)
+     public function setContextIdType($context_id_type)
      {
--        $allowedValues = $this->getRoleTypeAllowableValues();
-+        /*$allowedValues = $this->getRoleTypeAllowableValues();
-         if (!in_array($role_type, $allowedValues, true)) {
+-        $allowedValues = $this->getContextIdTypeAllowableValues();
++        /*$allowedValues = $this->getContextIdTypeAllowableValues();
+         if (!is_null($context_id_type) && !in_array($context_id_type, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -667,7 +667,7 @@
+@@ -720,7 +720,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
-         $this->container['role_type'] = $role_type;
- 
+         $this->container['context_id_type'] = $context_id_type;
+
          return $this;
-Index: lib/Model/GetCharactersCharacterIdNotifications200Ok.php
+@@ -865,7 +865,7 @@
+      */
+     public function setRefType($ref_type)
+     {
+-        $allowedValues = $this->getRefTypeAllowableValues();
++        /*$allowedValues = $this->getRefTypeAllowableValues();
+         if (!in_array($ref_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -874,7 +874,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['ref_type'] = $ref_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(date 1586706337702)
-@@ -809,7 +809,7 @@
+diff --git a/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php b/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php
+--- a/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php	(date 1638108737868)
+@@ -289,7 +289,7 @@
       */
-     public function setSenderType($sender_type)
+     public function setRecipientType($recipient_type)
      {
--        $allowedValues = $this->getSenderTypeAllowableValues();
-+        /*$allowedValues = $this->getSenderTypeAllowableValues();
-         if (!in_array($sender_type, $allowedValues, true)) {
+-        $allowedValues = $this->getRecipientTypeAllowableValues();
++        /*$allowedValues = $this->getRecipientTypeAllowableValues();
+         if (!in_array($recipient_type, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -817,7 +817,7 @@
+@@ -298,7 +298,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
-         $this->container['sender_type'] = $sender_type;
- 
+         $this->container['recipient_type'] = $recipient_type;
+
          return $this;
-@@ -890,7 +890,7 @@
-      */
-     public function setType($type)
-     {
--        $allowedValues = $this->getTypeAllowableValues();
-+        /*$allowedValues = $this->getTypeAllowableValues();
-         if (!in_array($type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -898,7 +898,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['type'] = $type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php
+Index: lib/Model/GetIndustrySystemsCostIndice.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php	(date 1586706772090)
-@@ -640,7 +640,7 @@
+diff --git a/lib/Model/GetIndustrySystemsCostIndice.php b/lib/Model/GetIndustrySystemsCostIndice.php
+--- a/lib/Model/GetIndustrySystemsCostIndice.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetIndustrySystemsCostIndice.php	(date 1638108738288)
+@@ -277,7 +277,7 @@
       */
-     public function setRange($range)
+     public function setActivity($activity)
      {
--        $allowedValues = $this->getRangeAllowableValues();
-+        /*$allowedValues = $this->getRangeAllowableValues();
-         if (!in_array($range, $allowedValues, true)) {
+-        $allowedValues = $this->getActivityAllowableValues();
++        /*$allowedValues = $this->getActivityAllowableValues();
+         if (!in_array($activity, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -648,7 +648,7 @@
+@@ -286,7 +286,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
-         $this->container['range'] = $range;
- 
+         $this->container['activity'] = $activity;
+
          return $this;
-@@ -697,7 +697,7 @@
+Index: lib/Model/GetCharactersCharacterIdFittingsItem.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdFittingsItem.php b/lib/Model/GetCharactersCharacterIdFittingsItem.php
+--- a/lib/Model/GetCharactersCharacterIdFittingsItem.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdFittingsItem.php	(date 1638108737828)
+@@ -352,7 +352,7 @@
+      */
+     public function setFlag($flag)
+     {
+-        $allowedValues = $this->getFlagAllowableValues();
++        /*$allowedValues = $this->getFlagAllowableValues();
+         if (!in_array($flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -361,7 +361,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['flag'] = $flag;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdStructuresService.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStructuresService.php b/lib/Model/GetCorporationsCorporationIdStructuresService.php
+--- a/lib/Model/GetCorporationsCorporationIdStructuresService.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdStructuresService.php	(date 1638108738236)
+@@ -287,7 +287,7 @@
       */
      public function setState($state)
      {
@@ -125,23 +328,24 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($state, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -705,7 +705,7 @@
+@@ -296,7 +296,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['state'] = $state;
- 
+
          return $this;
-Index: lib/Model/GetCharactersCharacterIdBlueprints200Ok.php
+Index: lib/Model/GetCorporationsCorporationIdAssets200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCharactersCharacterIdBlueprints200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdBlueprints200Ok.php	(date 1586706337946)
-@@ -509,7 +509,7 @@
+diff --git a/lib/Model/GetCorporationsCorporationIdAssets200Ok.php b/lib/Model/GetCorporationsCorporationIdAssets200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdAssets200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdAssets200Ok.php	(date 1638108738056)
+@@ -642,7 +642,7 @@
       */
      public function setLocationFlag($location_flag)
      {
@@ -150,41 +354,16 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($location_flag, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -517,7 +517,7 @@
+@@ -651,7 +651,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['location_flag'] = $location_flag;
- 
+
          return $this;
-Index: lib/Model/GetCharactersCharacterIdAssets200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdAssets200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdAssets200Ok.php	(date 1586706337882)
-@@ -565,7 +565,7 @@
-      */
-     public function setLocationFlag($location_flag)
-     {
--        $allowedValues = $this->getLocationFlagAllowableValues();
-+        /*$allowedValues = $this->getLocationFlagAllowableValues();
-         if (!in_array($location_flag, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -573,7 +573,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['location_flag'] = $location_flag;
- 
-         return $this;
-@@ -622,7 +622,7 @@
+@@ -700,7 +700,7 @@
       */
      public function setLocationType($location_type)
      {
@@ -193,23 +372,1253 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($location_type, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -630,7 +630,7 @@
+@@ -709,7 +709,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['location_type'] = $location_type;
- 
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php b/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php
+--- a/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php	(date 1638108737780)
+@@ -483,7 +483,7 @@
+      */
+     public function setOwnerType($owner_type)
+     {
+-        $allowedValues = $this->getOwnerTypeAllowableValues();
++        /*$allowedValues = $this->getOwnerTypeAllowableValues();
+         if (!in_array($owner_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -492,7 +492,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['owner_type'] = $owner_type;
+
+         return $this;
+Index: lib/Model/GetContractsPublicRegionId200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetContractsPublicRegionId200Ok.php b/lib/Model/GetContractsPublicRegionId200Ok.php
+--- a/lib/Model/GetContractsPublicRegionId200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetContractsPublicRegionId200Ok.php	(date 1638108738028)
+@@ -699,7 +699,7 @@
+      */
+     public function setType($type)
+     {
+-        $allowedValues = $this->getTypeAllowableValues();
++        /*$allowedValues = $this->getTypeAllowableValues();
+         if (!in_array($type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -708,7 +708,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['type'] = $type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdAssets200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdAssets200Ok.php b/lib/Model/GetCharactersCharacterIdAssets200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdAssets200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdAssets200Ok.php	(date 1638108737736)
+@@ -568,7 +568,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -577,7 +577,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['location_flag'] = $location_flag;
+
+         return $this;
+@@ -626,7 +626,7 @@
+      */
+     public function setLocationType($location_type)
+     {
+-        $allowedValues = $this->getLocationTypeAllowableValues();
++        /*$allowedValues = $this->getLocationTypeAllowableValues();
+         if (!in_array($location_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -635,7 +635,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['location_type'] = $location_type;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php b/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php	(date 1638108738076)
+@@ -593,7 +593,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -602,7 +602,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['location_flag'] = $location_flag;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdStructures200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(date 1638108738228)
+@@ -605,7 +605,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -614,7 +614,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['state'] = $state;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdOrders200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdOrders200Ok.php b/lib/Model/GetCorporationsCorporationIdOrders200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdOrders200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdOrders200Ok.php	(date 1638108738168)
+@@ -613,7 +613,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -622,7 +622,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['range'] = $range;
+
+         return $this;
+Index: lib/Model/PostCharactersCharacterIdMailRecipient.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostCharactersCharacterIdMailRecipient.php b/lib/Model/PostCharactersCharacterIdMailRecipient.php
+--- a/lib/Model/PostCharactersCharacterIdMailRecipient.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/PostCharactersCharacterIdMailRecipient.php	(date 1638108738352)
+@@ -289,7 +289,7 @@
+      */
+     public function setRecipientType($recipient_type)
+     {
+-        $allowedValues = $this->getRecipientTypeAllowableValues();
++        /*$allowedValues = $this->getRecipientTypeAllowableValues();
+         if (!in_array($recipient_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -298,7 +298,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['recipient_type'] = $recipient_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdOk.php b/lib/Model/GetCharactersCharacterIdOk.php
+--- a/lib/Model/GetCharactersCharacterIdOk.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdOk.php	(date 1638108737928)
+@@ -479,7 +479,7 @@
+      */
+     public function setGender($gender)
+     {
+-        $allowedValues = $this->getGenderAllowableValues();
++        /*$allowedValues = $this->getGenderAllowableValues();
+         if (!in_array($gender, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -488,7 +488,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['gender'] = $gender;
+
+         return $this;
+Index: lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php b/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php
+--- a/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php	(date 1638108738040)
+@@ -316,7 +316,7 @@
+      */
+     public function setObserverType($observer_type)
+     {
+-        $allowedValues = $this->getObserverTypeAllowableValues();
++        /*$allowedValues = $this->getObserverTypeAllowableValues();
+         if (!in_array($observer_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -325,7 +325,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['observer_type'] = $observer_type;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdContacts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(date 1638108738084)
+@@ -314,7 +314,7 @@
+      */
+     public function setContactType($contact_type)
+     {
+-        $allowedValues = $this->getContactTypeAllowableValues();
++        /*$allowedValues = $this->getContactTypeAllowableValues();
+         if (!in_array($contact_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -323,7 +323,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['contact_type'] = $contact_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdContacts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdContacts200Ok.php b/lib/Model/GetCharactersCharacterIdContacts200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(date 1638108737808)
+@@ -320,7 +320,7 @@
+      */
+     public function setContactType($contact_type)
+     {
+-        $allowedValues = $this->getContactTypeAllowableValues();
++        /*$allowedValues = $this->getContactTypeAllowableValues();
+         if (!in_array($contact_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -329,7 +329,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['contact_type'] = $contact_type;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdStandings200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStandings200Ok.php b/lib/Model/GetCorporationsCorporationIdStandings200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdStandings200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdStandings200Ok.php	(date 1638108738200)
+@@ -296,7 +296,7 @@
+      */
+     public function setFromType($from_type)
+     {
+-        $allowedValues = $this->getFromTypeAllowableValues();
++        /*$allowedValues = $this->getFromTypeAllowableValues();
+         if (!in_array($from_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -305,7 +305,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['from_type'] = $from_type;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdStarbases200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php b/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php	(date 1638108738208)
+@@ -402,7 +402,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!is_null($state) && !in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -411,7 +411,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['state'] = $state;
+
+         return $this;
+Index: lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php b/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php
+--- a/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php	(date 1638108738384)
+@@ -276,7 +276,7 @@
+      */
+     public function setRole($role)
+     {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -285,7 +285,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['role'] = $role;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(date 1638108738188)
+@@ -677,7 +677,7 @@
+      */
+     public function setRoleType($role_type)
+     {
+-        $allowedValues = $this->getRoleTypeAllowableValues();
++        /*$allowedValues = $this->getRoleTypeAllowableValues();
+         if (!in_array($role_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -686,7 +686,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['role_type'] = $role_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdBlueprints200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php b/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php	(date 1638108737744)
+@@ -511,7 +511,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -520,7 +520,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['location_flag'] = $location_flag;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php b/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php	(date 1638108738100)
+@@ -630,7 +630,7 @@
+      */
+     public function setAction($action)
+     {
+-        $allowedValues = $this->getActionAllowableValues();
++        /*$allowedValues = $this->getActionAllowableValues();
+         if (!in_array($action, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -639,7 +639,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['action'] = $action;
+
+         return $this;
+@@ -736,7 +736,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -745,7 +745,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['location_flag'] = $location_flag;
+
+         return $this;
+@@ -866,7 +866,7 @@
+      */
+     public function setPasswordType($password_type)
+     {
+-        $allowedValues = $this->getPasswordTypeAllowableValues();
++        /*$allowedValues = $this->getPasswordTypeAllowableValues();
+         if (!is_null($password_type) && !in_array($password_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -875,7 +875,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['password_type'] = $password_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php b/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php	(date 1638108737964)
+@@ -629,7 +629,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -638,7 +638,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['range'] = $range;
+
+         return $this;
+@@ -687,7 +687,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -696,7 +696,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['state'] = $state;
+
+         return $this;
+Index: lib/Model/GetMarketsStructuresStructureId200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetMarketsStructuresStructureId200Ok.php b/lib/Model/GetMarketsStructuresStructureId200Ok.php
+--- a/lib/Model/GetMarketsStructuresStructureId200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetMarketsStructuresStructureId200Ok.php	(date 1638108738304)
+@@ -530,7 +530,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -539,7 +539,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['range'] = $range;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
+--- a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(date 1638108738220)
+@@ -556,7 +556,7 @@
+      */
+     public function setAnchor($anchor)
+     {
+-        $allowedValues = $this->getAnchorAllowableValues();
++        /*$allowedValues = $this->getAnchorAllowableValues();
+         if (!in_array($anchor, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -565,7 +565,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['anchor'] = $anchor;
+
+         return $this;
+@@ -686,7 +686,7 @@
+      */
+     public function setFuelBayTake($fuel_bay_take)
+     {
+-        $allowedValues = $this->getFuelBayTakeAllowableValues();
++        /*$allowedValues = $this->getFuelBayTakeAllowableValues();
+         if (!in_array($fuel_bay_take, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -695,7 +695,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['fuel_bay_take'] = $fuel_bay_take;
+
+         return $this;
+@@ -720,7 +720,7 @@
+      */
+     public function setFuelBayView($fuel_bay_view)
+     {
+-        $allowedValues = $this->getFuelBayViewAllowableValues();
++        /*$allowedValues = $this->getFuelBayViewAllowableValues();
+         if (!in_array($fuel_bay_view, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -729,7 +729,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['fuel_bay_view'] = $fuel_bay_view;
+
+         return $this;
+@@ -782,7 +782,7 @@
+      */
+     public function setOffline($offline)
+     {
+-        $allowedValues = $this->getOfflineAllowableValues();
++        /*$allowedValues = $this->getOfflineAllowableValues();
+         if (!in_array($offline, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -791,7 +791,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['offline'] = $offline;
+
+         return $this;
+@@ -816,7 +816,7 @@
+      */
+     public function setOnline($online)
+     {
+-        $allowedValues = $this->getOnlineAllowableValues();
++        /*$allowedValues = $this->getOnlineAllowableValues();
+         if (!in_array($online, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -825,7 +825,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['online'] = $online;
+
+         return $this;
+@@ -850,7 +850,7 @@
+      */
+     public function setUnanchor($unanchor)
+     {
+-        $allowedValues = $this->getUnanchorAllowableValues();
++        /*$allowedValues = $this->getUnanchorAllowableValues();
+         if (!in_array($unanchor, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -859,7 +859,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['unanchor'] = $unanchor;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php b/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php	(date 1638108738148)
+@@ -905,7 +905,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -914,7 +914,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['status'] = $status;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdClonesHomeLocation.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php b/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php
+--- a/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php	(date 1638108737788)
+@@ -279,7 +279,7 @@
+      */
+     public function setLocationType($location_type)
+     {
+-        $allowedValues = $this->getLocationTypeAllowableValues();
++        /*$allowedValues = $this->getLocationTypeAllowableValues();
+         if (!is_null($location_type) && !in_array($location_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -288,7 +288,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['location_type'] = $location_type;
+
+         return $this;
+Index: lib/Model/GetUniverseStarsStarIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseStarsStarIdOk.php b/lib/Model/GetUniverseStarsStarIdOk.php
+--- a/lib/Model/GetUniverseStarsStarIdOk.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetUniverseStarsStarIdOk.php	(date 1638108738328)
+@@ -609,7 +609,7 @@
+      */
+     public function setSpectralClass($spectral_class)
+     {
+-        $allowedValues = $this->getSpectralClassAllowableValues();
++        /*$allowedValues = $this->getSpectralClassAllowableValues();
+         if (!in_array($spectral_class, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -618,7 +618,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['spectral_class'] = $spectral_class;
+
+         return $this;
+Index: test/Client.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/Client.php b/test/Client.php
+new file mode 100644
+--- /dev/null	(date 1638108738400)
++++ b/test/Client.php	(date 1638108738400)
+@@ -0,0 +1,23 @@
++<?php
++
++namespace Swagger\Client\Eve\Test;
++
++use Psr\Http\Message\RequestInterface;
++use Psr\Http\Message\ResponseInterface;
++
++class Client extends \GuzzleHttp\Client
++{
++    private $responses = [];
++
++    public function __construct(ResponseInterface ...$responses)
++    {
++        parent::__construct([]);
++
++        $this->responses = $responses;
++    }
++
++    public function send(RequestInterface $request, array $options = []): ResponseInterface
++    {
++        return array_shift($this->responses);
++    }
++}
+Index: lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php b/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php	(date 1638108738176)
+@@ -643,7 +643,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -652,7 +652,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['range'] = $range;
+
+         return $this;
+@@ -701,7 +701,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -710,7 +710,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['state'] = $state;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php b/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php	(date 1638108738140)
+@@ -647,7 +647,7 @@
+      */
+     public function setStandingLevel($standing_level)
+     {
+-        $allowedValues = $this->getStandingLevelAllowableValues();
++        /*$allowedValues = $this->getStandingLevelAllowableValues();
+         if (!is_null($standing_level) && !in_array($standing_level, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -656,7 +656,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['standing_level'] = $standing_level;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php b/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php	(date 1638108737844)
+@@ -905,7 +905,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -914,7 +914,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['status'] = $status;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdClonesJumpClone.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php
+--- a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(date 1638108737796)
+@@ -365,7 +365,7 @@
+      */
+     public function setLocationType($location_type)
+     {
+-        $allowedValues = $this->getLocationTypeAllowableValues();
++        /*$allowedValues = $this->getLocationTypeAllowableValues();
+         if (!in_array($location_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -374,7 +374,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['location_type'] = $location_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdMedals200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdMedals200Ok.php b/lib/Model/GetCharactersCharacterIdMedals200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(date 1638108737896)
+@@ -507,7 +507,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -516,7 +516,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['status'] = $status;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdContracts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdContracts200Ok.php b/lib/Model/GetCharactersCharacterIdContracts200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdContracts200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdContracts200Ok.php	(date 1638108737820)
+@@ -530,7 +530,7 @@
+      */
+     public function setAvailability($availability)
+     {
+-        $allowedValues = $this->getAvailabilityAllowableValues();
++        /*$allowedValues = $this->getAvailabilityAllowableValues();
+         if (!in_array($availability, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -539,7 +539,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['availability'] = $availability;
+
+         return $this;
+@@ -924,7 +924,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -933,7 +933,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['status'] = $status;
+
+         return $this;
+@@ -982,7 +982,7 @@
+      */
+     public function setType($type)
+     {
+-        $allowedValues = $this->getTypeAllowableValues();
++        /*$allowedValues = $this->getTypeAllowableValues();
+         if (!in_array($type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -991,7 +991,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['type'] = $type;
+
+         return $this;
+Index: lib/Model/PostFleetsFleetIdMembersInvitation.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostFleetsFleetIdMembersInvitation.php b/lib/Model/PostFleetsFleetIdMembersInvitation.php
+--- a/lib/Model/PostFleetsFleetIdMembersInvitation.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/PostFleetsFleetIdMembersInvitation.php	(date 1638108738360)
+@@ -309,7 +309,7 @@
+      */
+     public function setRole($role)
+     {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -318,7 +318,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['role'] = $role;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdShareholders200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php b/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php	(date 1638108738196)
+@@ -318,7 +318,7 @@
+      */
+     public function setShareholderType($shareholder_type)
+     {
+-        $allowedValues = $this->getShareholderTypeAllowableValues();
++        /*$allowedValues = $this->getShareholderTypeAllowableValues();
+         if (!in_array($shareholder_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -327,7 +327,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['shareholder_type'] = $shareholder_type;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdStandings200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdStandings200Ok.php b/lib/Model/GetCharactersCharacterIdStandings200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdStandings200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdStandings200Ok.php	(date 1638108737992)
+@@ -296,7 +296,7 @@
+      */
+     public function setFromType($from_type)
+     {
+-        $allowedValues = $this->getFromTypeAllowableValues();
++        /*$allowedValues = $this->getFromTypeAllowableValues();
+         if (!in_array($from_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -305,7 +305,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['from_type'] = $from_type;
+
+         return $this;
+Index: lib/Model/GetSovereigntyCampaigns200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetSovereigntyCampaigns200Ok.php b/lib/Model/GetSovereigntyCampaigns200Ok.php
+--- a/lib/Model/GetSovereigntyCampaigns200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetSovereigntyCampaigns200Ok.php	(date 1638108738320)
+@@ -449,7 +449,7 @@
+      */
+     public function setEventType($event_type)
+     {
+-        $allowedValues = $this->getEventTypeAllowableValues();
++        /*$allowedValues = $this->getEventTypeAllowableValues();
+         if (!in_array($event_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -458,7 +458,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['event_type'] = $event_type;
+
+         return $this;
+Index: lib/Model/GetFwSystems200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwSystems200Ok.php b/lib/Model/GetFwSystems200Ok.php
+--- a/lib/Model/GetFwSystems200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetFwSystems200Ok.php	(date 1638108738264)
+@@ -301,7 +301,7 @@
+      */
+     public function setContested($contested)
+     {
+-        $allowedValues = $this->getContestedAllowableValues();
++        /*$allowedValues = $this->getContestedAllowableValues();
+         if (!in_array($contested, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -310,7 +310,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['contested'] = $contested;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php b/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php	(date 1638108738160)
+@@ -425,7 +425,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -434,7 +434,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['status'] = $status;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdCalendar200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdCalendar200Ok.php b/lib/Model/GetCharactersCharacterIdCalendar200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdCalendar200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdCalendar200Ok.php	(date 1638108737756)
+@@ -325,7 +325,7 @@
+      */
+     public function setEventResponse($event_response)
+     {
+-        $allowedValues = $this->getEventResponseAllowableValues();
++        /*$allowedValues = $this->getEventResponseAllowableValues();
+         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -334,7 +334,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['event_response'] = $event_response;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php b/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php	(date 1638108738248)
+@@ -711,7 +711,7 @@
+      */
+     public function setContextIdType($context_id_type)
+     {
+-        $allowedValues = $this->getContextIdTypeAllowableValues();
++        /*$allowedValues = $this->getContextIdTypeAllowableValues();
+         if (!is_null($context_id_type) && !in_array($context_id_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -720,7 +720,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['context_id_type'] = $context_id_type;
+
+         return $this;
+@@ -865,7 +865,7 @@
+      */
+     public function setRefType($ref_type)
+     {
+-        $allowedValues = $this->getRefTypeAllowableValues();
++        /*$allowedValues = $this->getRefTypeAllowableValues();
+         if (!in_array($ref_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -874,7 +874,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['ref_type'] = $ref_type;
+
          return $this;
 Index: lib/Model/GetCharactersCharacterIdMailLabelsLabel.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCharactersCharacterIdMailLabelsLabel.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdMailLabelsLabel.php	(date 1586706772478)
-@@ -309,7 +309,7 @@
+diff --git a/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php b/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php
+--- a/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php	(date 1638108737852)
+@@ -311,7 +311,7 @@
       */
      public function setColor($color)
      {
@@ -218,22 +1627,49 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!is_null($color) && !in_array($color, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -317,7 +317,7 @@
+@@ -320,7 +320,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['color'] = $color;
- 
+
          return $this;
-Index: lib/Model/GetCorporationsCorporationIdContacts200Ok.php
+Index: lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(date 1586706773166)
+diff --git a/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php b/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php	(date 1638108737768)
+@@ -283,7 +283,7 @@
+      */
+     public function setEventResponse($event_response)
+     {
+-        $allowedValues = $this->getEventResponseAllowableValues();
++        /*$allowedValues = $this->getEventResponseAllowableValues();
+         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -292,7 +292,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['event_response'] = $event_response;
+
+         return $this;
+Index: lib/Model/GetAlliancesAllianceIdContacts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetAlliancesAllianceIdContacts200Ok.php b/lib/Model/GetAlliancesAllianceIdContacts200Ok.php
+--- a/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(date 1638108737720)
 @@ -308,7 +308,7 @@
       */
      public function setContactType($contact_type)
@@ -243,23 +1679,76 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($contact_type, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -316,7 +316,7 @@
+@@ -317,7 +317,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['contact_type'] = $contact_type;
- 
+
+         return $this;
+Index: lib/Model/GetIncursions200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetIncursions200Ok.php b/lib/Model/GetIncursions200Ok.php
+--- a/lib/Model/GetIncursions200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetIncursions200Ok.php	(date 1638108738272)
+@@ -469,7 +469,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -478,7 +478,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['state'] = $state;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdOrders200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdOrders200Ok.php b/lib/Model/GetCharactersCharacterIdOrders200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdOrders200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdOrders200Ok.php	(date 1638108737948)
+@@ -596,7 +596,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -605,7 +605,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['range'] = $range;
+
          return $this;
 Index: lib/Model/GetCorporationsCorporationIdContracts200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCorporationsCorporationIdContracts200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdContracts200Ok.php	(date 1586706772450)
-@@ -526,7 +526,7 @@
+diff --git a/lib/Model/GetCorporationsCorporationIdContracts200Ok.php b/lib/Model/GetCorporationsCorporationIdContracts200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdContracts200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCorporationsCorporationIdContracts200Ok.php	(date 1638108738116)
+@@ -530,7 +530,7 @@
       */
      public function setAvailability($availability)
      {
@@ -268,16 +1757,16 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($availability, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -534,7 +534,7 @@
+@@ -539,7 +539,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['availability'] = $availability;
- 
+
          return $this;
-@@ -919,7 +919,7 @@
+@@ -924,7 +924,7 @@
       */
      public function setStatus($status)
      {
@@ -286,16 +1775,16 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($status, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -927,7 +927,7 @@
+@@ -933,7 +933,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['status'] = $status;
- 
+
          return $this;
-@@ -976,7 +976,7 @@
+@@ -982,7 +982,7 @@
       */
      public function setType($type)
      {
@@ -304,1321 +1793,24 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($type, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -984,7 +984,7 @@
+@@ -991,7 +991,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['type'] = $type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php	(date 1586706772186)
-@@ -645,7 +645,7 @@
-      */
-     public function setStandingLevel($standing_level)
-     {
--        $allowedValues = $this->getStandingLevelAllowableValues();
-+        /*$allowedValues = $this->getStandingLevelAllowableValues();
-         if (!is_null($standing_level) && !in_array($standing_level, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -653,7 +653,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['standing_level'] = $standing_level;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php	(date 1586706773302)
-@@ -626,7 +626,7 @@
-      */
-     public function setRange($range)
-     {
--        $allowedValues = $this->getRangeAllowableValues();
-+        /*$allowedValues = $this->getRangeAllowableValues();
-         if (!in_array($range, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -634,7 +634,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['range'] = $range;
- 
-         return $this;
-@@ -683,7 +683,7 @@
-      */
-     public function setState($state)
-     {
--        $allowedValues = $this->getStateAllowableValues();
-+        /*$allowedValues = $this->getStateAllowableValues();
-         if (!in_array($state, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -691,7 +691,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['state'] = $state;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdStructures200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(date 1586706773202)
-@@ -660,7 +660,7 @@
-      */
-     public function setState($state)
-     {
--        $allowedValues = $this->getStateAllowableValues();
-+        /*$allowedValues = $this->getStateAllowableValues();
-         if (!in_array($state, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -668,7 +668,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['state'] = $state;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdStructuresService.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdStructuresService.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdStructuresService.php	(date 1586706772270)
-@@ -285,7 +285,7 @@
-      */
-     public function setState($state)
-     {
--        $allowedValues = $this->getStateAllowableValues();
-+        /*$allowedValues = $this->getStateAllowableValues();
-         if (!in_array($state, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -293,7 +293,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['state'] = $state;
- 
-         return $this;
-Index: lib/Model/PostFleetsFleetIdMembersInvitation.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/PostFleetsFleetIdMembersInvitation.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/PostFleetsFleetIdMembersInvitation.php	(date 1586706772774)
-@@ -307,7 +307,7 @@
-      */
-     public function setRole($role)
-     {
--        $allowedValues = $this->getRoleAllowableValues();
-+        /*$allowedValues = $this->getRoleAllowableValues();
-         if (!in_array($role, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -315,7 +315,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['role'] = $role;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php	(date 1586706773006)
-@@ -903,7 +903,7 @@
-      */
-     public function setStatus($status)
-     {
--        $allowedValues = $this->getStatusAllowableValues();
-+        /*$allowedValues = $this->getStatusAllowableValues();
-         if (!in_array($status, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -911,7 +911,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['status'] = $status;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdOk.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdOk.php	(date 1586706772702)
-@@ -507,7 +507,7 @@
-      */
-     public function setGender($gender)
-     {
--        $allowedValues = $this->getGenderAllowableValues();
-+        /*$allowedValues = $this->getGenderAllowableValues();
-         if (!in_array($gender, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -515,7 +515,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['gender'] = $gender;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdOrders200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdOrders200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdOrders200Ok.php	(date 1586706773090)
-@@ -594,7 +594,7 @@
-      */
-     public function setRange($range)
-     {
--        $allowedValues = $this->getRangeAllowableValues();
-+        /*$allowedValues = $this->getRangeAllowableValues();
-         if (!in_array($range, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -602,7 +602,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['range'] = $range;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdClonesHomeLocation.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdClonesHomeLocation.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdClonesHomeLocation.php	(date 1586706337918)
-@@ -277,7 +277,7 @@
-      */
-     public function setLocationType($location_type)
-     {
--        $allowedValues = $this->getLocationTypeAllowableValues();
-+        /*$allowedValues = $this->getLocationTypeAllowableValues();
-         if (!is_null($location_type) && !in_array($location_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -285,7 +285,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['location_type'] = $location_type;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdMedals200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdMedals200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdMedals200Ok.php	(date 1586706772582)
-@@ -490,7 +490,7 @@
-      */
-     public function setStatus($status)
-     {
--        $allowedValues = $this->getStatusAllowableValues();
-+        /*$allowedValues = $this->getStatusAllowableValues();
-         if (!in_array($status, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -498,7 +498,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['status'] = $status;
- 
-         return $this;
-Index: lib/Model/GetAlliancesAllianceIdContacts200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(date 1586706337658)
-@@ -302,7 +302,7 @@
-      */
-     public function setContactType($contact_type)
-     {
--        $allowedValues = $this->getContactTypeAllowableValues();
-+        /*$allowedValues = $this->getContactTypeAllowableValues();
-         if (!in_array($contact_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -310,7 +310,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['contact_type'] = $contact_type;
- 
-         return $this;
-Index: lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php	(date 1586706772838)
-@@ -274,7 +274,7 @@
-      */
-     public function setRole($role)
-     {
--        $allowedValues = $this->getRoleAllowableValues();
-+        /*$allowedValues = $this->getRoleAllowableValues();
-         if (!in_array($role, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -282,7 +282,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['role'] = $role;
- 
-         return $this;
-Index: lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php	(date 1586706773538)
-@@ -314,7 +314,7 @@
-      */
-     public function setObserverType($observer_type)
-     {
--        $allowedValues = $this->getObserverTypeAllowableValues();
-+        /*$allowedValues = $this->getObserverTypeAllowableValues();
-         if (!in_array($observer_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -322,7 +322,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['observer_type'] = $observer_type;
- 
-         return $this;
-Index: lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php	(date 1586706773050)
-@@ -252,7 +252,7 @@
-      */
-     public function setResponse($response)
-     {
--        $allowedValues = $this->getResponseAllowableValues();
-+        /*$allowedValues = $this->getResponseAllowableValues();
-         if (!in_array($response, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -260,7 +260,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['response'] = $response;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdFleetOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdFleetOk.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdFleetOk.php	(date 1586706773130)
-@@ -305,7 +305,7 @@
-      */
-     public function setRole($role)
-     {
--        $allowedValues = $this->getRoleAllowableValues();
-+        /*$allowedValues = $this->getRoleAllowableValues();
-         if (!in_array($role, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -313,7 +313,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['role'] = $role;
- 
-         return $this;
-Index: lib/Model/PostUniverseNames200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/PostUniverseNames200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/PostUniverseNames200Ok.php	(date 1586706771834)
-@@ -282,7 +282,7 @@
-      */
-     public function setCategory($category)
-     {
--        $allowedValues = $this->getCategoryAllowableValues();
-+        /*$allowedValues = $this->getCategoryAllowableValues();
-         if (!in_array($category, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -290,7 +290,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['category'] = $category;
- 
-         return $this;
-Index: lib/Model/GetFwSystems200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetFwSystems200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetFwSystems200Ok.php	(date 1586706772618)
-@@ -299,7 +299,7 @@
-      */
-     public function setContested($contested)
-     {
--        $allowedValues = $this->getContestedAllowableValues();
-+        /*$allowedValues = $this->getContestedAllowableValues();
-         if (!in_array($contested, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -307,7 +307,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['contested'] = $contested;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdPlanets200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdPlanets200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdPlanets200Ok.php	(date 1586706771990)
-@@ -429,7 +429,7 @@
-      */
-     public function setPlanetType($planet_type)
-     {
--        $allowedValues = $this->getPlanetTypeAllowableValues();
-+        /*$allowedValues = $this->getPlanetTypeAllowableValues();
-         if (!in_array($planet_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -437,7 +437,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['planet_type'] = $planet_type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdShareholders200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdShareholders200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdShareholders200Ok.php	(date 1586706773266)
-@@ -316,7 +316,7 @@
-      */
-     public function setShareholderType($shareholder_type)
-     {
--        $allowedValues = $this->getShareholderTypeAllowableValues();
-+        /*$allowedValues = $this->getShareholderTypeAllowableValues();
-         if (!in_array($shareholder_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -324,7 +324,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['shareholder_type'] = $shareholder_type;
- 
-         return $this;
-Index: lib/Model/GetIncursions200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetIncursions200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetIncursions200Ok.php	(date 1586706773238)
-@@ -459,7 +459,7 @@
-      */
-     public function setState($state)
-     {
--        $allowedValues = $this->getStateAllowableValues();
-+        /*$allowedValues = $this->getStateAllowableValues();
-         if (!in_array($state, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -467,7 +467,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['state'] = $state;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php	(date 1586706772546)
-@@ -682,7 +682,7 @@
-      */
-     public function setContextIdType($context_id_type)
-     {
--        $allowedValues = $this->getContextIdTypeAllowableValues();
-+        /*$allowedValues = $this->getContextIdTypeAllowableValues();
-         if (!is_null($context_id_type) && !in_array($context_id_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -690,7 +690,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['context_id_type'] = $context_id_type;
- 
-         return $this;
-@@ -835,7 +835,7 @@
-      */
-     public function setRefType($ref_type)
-     {
--        $allowedValues = $this->getRefTypeAllowableValues();
-+        /*$allowedValues = $this->getRefTypeAllowableValues();
-         if (!in_array($ref_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -843,7 +843,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['ref_type'] = $ref_type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php	(date 1586706772410)
-@@ -423,7 +423,7 @@
-      */
-     public function setStatus($status)
-     {
--        $allowedValues = $this->getStatusAllowableValues();
-+        /*$allowedValues = $this->getStatusAllowableValues();
-         if (!in_array($status, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -431,7 +431,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['status'] = $status;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php	(date 1586706772870)
-@@ -903,7 +903,7 @@
-      */
-     public function setStatus($status)
-     {
--        $allowedValues = $this->getStatusAllowableValues();
-+        /*$allowedValues = $this->getStatusAllowableValues();
-         if (!in_array($status, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -911,7 +911,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['status'] = $status;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdStandings200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdStandings200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdStandings200Ok.php	(date 1586706771894)
-@@ -294,7 +294,7 @@
-      */
-     public function setFromType($from_type)
-     {
--        $allowedValues = $this->getFromTypeAllowableValues();
-+        /*$allowedValues = $this->getFromTypeAllowableValues();
-         if (!in_array($from_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -302,7 +302,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['from_type'] = $from_type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php	(date 1586706772662)
-@@ -678,7 +678,7 @@
-      */
-     public function setContextIdType($context_id_type)
-     {
--        $allowedValues = $this->getContextIdTypeAllowableValues();
-+        /*$allowedValues = $this->getContextIdTypeAllowableValues();
-         if (!is_null($context_id_type) && !in_array($context_id_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -686,7 +686,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['context_id_type'] = $context_id_type;
- 
-         return $this;
-@@ -831,7 +831,7 @@
-      */
-     public function setRefType($ref_type)
-     {
--        $allowedValues = $this->getRefTypeAllowableValues();
-+        /*$allowedValues = $this->getRefTypeAllowableValues();
-         if (!in_array($ref_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -839,7 +839,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['ref_type'] = $ref_type;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdContacts200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdContacts200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdContacts200Ok.php	(date 1586706337834)
-@@ -314,7 +314,7 @@
-      */
-     public function setContactType($contact_type)
-     {
--        $allowedValues = $this->getContactTypeAllowableValues();
-+        /*$allowedValues = $this->getContactTypeAllowableValues();
-         if (!in_array($contact_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -322,7 +322,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['contact_type'] = $contact_type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdAssets200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdAssets200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdAssets200Ok.php	(date 1586706773370)
-@@ -637,7 +637,7 @@
-      */
-     public function setLocationFlag($location_flag)
-     {
--        $allowedValues = $this->getLocationFlagAllowableValues();
-+        /*$allowedValues = $this->getLocationFlagAllowableValues();
-         if (!in_array($location_flag, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -645,7 +645,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['location_flag'] = $location_flag;
- 
-         return $this;
-@@ -694,7 +694,7 @@
-      */
-     public function setLocationType($location_type)
-     {
--        $allowedValues = $this->getLocationTypeAllowableValues();
-+        /*$allowedValues = $this->getLocationTypeAllowableValues();
-         if (!in_array($location_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -702,7 +702,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['location_type'] = $location_type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(date 1586706773574)
-@@ -545,7 +545,7 @@
-      */
-     public function setAnchor($anchor)
-     {
--        $allowedValues = $this->getAnchorAllowableValues();
-+        /*$allowedValues = $this->getAnchorAllowableValues();
-         if (!in_array($anchor, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -553,7 +553,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['anchor'] = $anchor;
- 
-         return $this;
-@@ -674,7 +674,7 @@
-      */
-     public function setFuelBayTake($fuel_bay_take)
-     {
--        $allowedValues = $this->getFuelBayTakeAllowableValues();
-+        /*$allowedValues = $this->getFuelBayTakeAllowableValues();
-         if (!in_array($fuel_bay_take, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -682,7 +682,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['fuel_bay_take'] = $fuel_bay_take;
- 
-         return $this;
-@@ -707,7 +707,7 @@
-      */
-     public function setFuelBayView($fuel_bay_view)
-     {
--        $allowedValues = $this->getFuelBayViewAllowableValues();
-+        /*$allowedValues = $this->getFuelBayViewAllowableValues();
-         if (!in_array($fuel_bay_view, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -715,7 +715,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['fuel_bay_view'] = $fuel_bay_view;
- 
-         return $this;
-@@ -764,7 +764,7 @@
-      */
-     public function setOffline($offline)
-     {
--        $allowedValues = $this->getOfflineAllowableValues();
-+        /*$allowedValues = $this->getOfflineAllowableValues();
-         if (!in_array($offline, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -772,7 +772,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['offline'] = $offline;
- 
-         return $this;
-@@ -797,7 +797,7 @@
-      */
-     public function setOnline($online)
-     {
--        $allowedValues = $this->getOnlineAllowableValues();
-+        /*$allowedValues = $this->getOnlineAllowableValues();
-         if (!in_array($online, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -805,7 +805,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['online'] = $online;
- 
-         return $this;
-@@ -830,7 +830,7 @@
-      */
-     public function setUnanchor($unanchor)
-     {
--        $allowedValues = $this->getUnanchorAllowableValues();
-+        /*$allowedValues = $this->getUnanchorAllowableValues();
-         if (!in_array($unanchor, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -838,7 +838,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['unanchor'] = $unanchor;
- 
-         return $this;
-Index: lib/Model/GetMarketsRegionIdOrders200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetMarketsRegionIdOrders200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetMarketsRegionIdOrders200Ok.php	(date 1586706772970)
-@@ -537,7 +537,7 @@
-      */
-     public function setRange($range)
-     {
--        $allowedValues = $this->getRangeAllowableValues();
-+        /*$allowedValues = $this->getRangeAllowableValues();
-         if (!in_array($range, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -545,7 +545,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['range'] = $range;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php	(date 1586706772138)
-@@ -589,7 +589,7 @@
-      */
-     public function setLocationFlag($location_flag)
-     {
--        $allowedValues = $this->getLocationFlagAllowableValues();
-+        /*$allowedValues = $this->getLocationFlagAllowableValues();
-         if (!in_array($location_flag, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -597,7 +597,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['location_flag'] = $location_flag;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdMailRecipient.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdMailRecipient.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdMailRecipient.php	(date 1586706773342)
-@@ -287,7 +287,7 @@
-      */
-     public function setRecipientType($recipient_type)
-     {
--        $allowedValues = $this->getRecipientTypeAllowableValues();
-+        /*$allowedValues = $this->getRecipientTypeAllowableValues();
-         if (!in_array($recipient_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -295,7 +295,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['recipient_type'] = $recipient_type;
- 
-         return $this;
-Index: lib/Model/GetContractsPublicRegionId200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetContractsPublicRegionId200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetContractsPublicRegionId200Ok.php	(date 1586706772746)
-@@ -697,7 +697,7 @@
-      */
-     public function setType($type)
-     {
--        $allowedValues = $this->getTypeAllowableValues();
-+        /*$allowedValues = $this->getTypeAllowableValues();
-         if (!in_array($type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -705,7 +705,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['type'] = $type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdOrders200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdOrders200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdOrders200Ok.php	(date 1586706772294)
-@@ -611,7 +611,7 @@
-      */
-     public function setRange($range)
-     {
--        $allowedValues = $this->getRangeAllowableValues();
-+        /*$allowedValues = $this->getRangeAllowableValues();
-         if (!in_array($range, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -619,7 +619,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['range'] = $range;
- 
-         return $this;
-Index: lib/Model/GetUniverseStarsStarIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetUniverseStarsStarIdOk.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetUniverseStarsStarIdOk.php	(date 1586706772906)
-@@ -607,7 +607,7 @@
-      */
-     public function setSpectralClass($spectral_class)
-     {
--        $allowedValues = $this->getSpectralClassAllowableValues();
-+        /*$allowedValues = $this->getSpectralClassAllowableValues();
-         if (!in_array($spectral_class, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -615,7 +615,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['spectral_class'] = $spectral_class;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php	(date 1586706773458)
-@@ -287,7 +287,7 @@
-      */
-     public function setRecipientType($recipient_type)
-     {
--        $allowedValues = $this->getRecipientTypeAllowableValues();
-+        /*$allowedValues = $this->getRecipientTypeAllowableValues();
-         if (!in_array($recipient_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -295,7 +295,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['recipient_type'] = $recipient_type;
- 
-         return $this;
-Index: lib/Model/GetIndustrySystemsCostIndice.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetIndustrySystemsCostIndice.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetIndustrySystemsCostIndice.php	(date 1586706771942)
-@@ -275,7 +275,7 @@
-      */
-     public function setActivity($activity)
-     {
--        $allowedValues = $this->getActivityAllowableValues();
-+        /*$allowedValues = $this->getActivityAllowableValues();
-         if (!in_array($activity, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -283,7 +283,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['activity'] = $activity;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php	(date 1586706337610)
-@@ -281,7 +281,7 @@
-      */
-     public function setEventResponse($event_response)
-     {
--        $allowedValues = $this->getEventResponseAllowableValues();
-+        /*$allowedValues = $this->getEventResponseAllowableValues();
-         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -289,7 +289,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['event_response'] = $event_response;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdClonesJumpClone.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(date 1586706337738)
-@@ -355,7 +355,7 @@
-      */
-     public function setLocationType($location_type)
-     {
--        $allowedValues = $this->getLocationTypeAllowableValues();
-+        /*$allowedValues = $this->getLocationTypeAllowableValues();
-         if (!in_array($location_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -363,7 +363,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['location_type'] = $location_type;
- 
-         return $this;
-Index: lib/Model/GetFleetsFleetIdMembers200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetFleetsFleetIdMembers200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetFleetsFleetIdMembers200Ok.php	(date 1586706773426)
-@@ -380,7 +380,7 @@
-      */
-     public function setRole($role)
-     {
--        $allowedValues = $this->getRoleAllowableValues();
-+        /*$allowedValues = $this->getRoleAllowableValues();
-         if (!in_array($role, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -388,7 +388,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['role'] = $role;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php	(date 1586706772938)
-@@ -624,7 +624,7 @@
-      */
-     public function setAction($action)
-     {
--        $allowedValues = $this->getActionAllowableValues();
-+        /*$allowedValues = $this->getActionAllowableValues();
-         if (!in_array($action, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -632,7 +632,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['action'] = $action;
- 
-         return $this;
-@@ -729,7 +729,7 @@
-      */
-     public function setLocationFlag($location_flag)
-     {
--        $allowedValues = $this->getLocationFlagAllowableValues();
-+        /*$allowedValues = $this->getLocationFlagAllowableValues();
-         if (!in_array($location_flag, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -737,7 +737,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['location_flag'] = $location_flag;
- 
-         return $this;
-@@ -858,7 +858,7 @@
-      */
-     public function setPasswordType($password_type)
-     {
--        $allowedValues = $this->getPasswordTypeAllowableValues();
-+        /*$allowedValues = $this->getPasswordTypeAllowableValues();
-         if (!is_null($password_type) && !in_array($password_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -866,7 +866,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['password_type'] = $password_type;
- 
-         return $this;
-Index: lib/Model/GetSovereigntyCampaigns200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetSovereigntyCampaigns200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetSovereigntyCampaigns200Ok.php	(date 1586706772030)
-@@ -443,7 +443,7 @@
-      */
-     public function setEventType($event_type)
-     {
--        $allowedValues = $this->getEventTypeAllowableValues();
-+        /*$allowedValues = $this->getEventTypeAllowableValues();
-         if (!in_array($event_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -451,7 +451,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['event_type'] = $event_type;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdCalendar200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdCalendar200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdCalendar200Ok.php	(date 1586706337802)
-@@ -323,7 +323,7 @@
-      */
-     public function setEventResponse($event_response)
-     {
--        $allowedValues = $this->getEventResponseAllowableValues();
-+        /*$allowedValues = $this->getEventResponseAllowableValues();
-         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -331,7 +331,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['event_response'] = $event_response;
- 
-         return $this;
-Index: lib/Model/PostCharactersCharacterIdMailRecipient.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/PostCharactersCharacterIdMailRecipient.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/PostCharactersCharacterIdMailRecipient.php	(date 1586706772058)
-@@ -287,7 +287,7 @@
-      */
-     public function setRecipientType($recipient_type)
-     {
--        $allowedValues = $this->getRecipientTypeAllowableValues();
-+        /*$allowedValues = $this->getRecipientTypeAllowableValues();
-         if (!in_array($recipient_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -295,7 +295,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['recipient_type'] = $recipient_type;
- 
-         return $this;
-Index: lib/Model/GetMarketsStructuresStructureId200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetMarketsStructuresStructureId200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetMarketsStructuresStructureId200Ok.php	(date 1586706772226)
-@@ -528,7 +528,7 @@
-      */
-     public function setRange($range)
-     {
--        $allowedValues = $this->getRangeAllowableValues();
-+        /*$allowedValues = $this->getRangeAllowableValues();
-         if (!in_array($range, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -536,7 +536,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['range'] = $range;
- 
+
          return $this;
 Index: lib/Model/PostCharactersCharacterIdMailLabelsLabel.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/PostCharactersCharacterIdMailLabelsLabel.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/PostCharactersCharacterIdMailLabelsLabel.php	(date 1586706772506)
-@@ -296,7 +296,7 @@
+diff --git a/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php b/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php
+--- a/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php	(date 1638108738344)
+@@ -298,7 +298,7 @@
       */
      public function setColor($color)
      {
@@ -1627,59 +1819,94 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!is_null($color) && !in_array($color, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -304,7 +304,7 @@
+@@ -307,7 +307,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['color'] = $color;
- 
+
          return $this;
-Index: lib/Model/GetCharactersCharacterIdContracts200Ok.php
+Index: lib/Model/GetMarketsRegionIdOrders200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- lib/Model/GetCharactersCharacterIdContracts200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdContracts200Ok.php	(date 1586706772370)
-@@ -526,7 +526,7 @@
+diff --git a/lib/Model/GetMarketsRegionIdOrders200Ok.php b/lib/Model/GetMarketsRegionIdOrders200Ok.php
+--- a/lib/Model/GetMarketsRegionIdOrders200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetMarketsRegionIdOrders200Ok.php	(date 1638108738296)
+@@ -539,7 +539,7 @@
       */
-     public function setAvailability($availability)
+     public function setRange($range)
      {
--        $allowedValues = $this->getAvailabilityAllowableValues();
-+        /*$allowedValues = $this->getAvailabilityAllowableValues();
-         if (!in_array($availability, $allowedValues, true)) {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -534,7 +534,7 @@
+@@ -548,7 +548,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
-         $this->container['availability'] = $availability;
- 
+         $this->container['range'] = $range;
+
          return $this;
-@@ -919,7 +919,7 @@
+Index: lib/Model/GetCharactersCharacterIdFleetOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdFleetOk.php b/lib/Model/GetCharactersCharacterIdFleetOk.php
+--- a/lib/Model/GetCharactersCharacterIdFleetOk.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdFleetOk.php	(date 1638108737836)
+@@ -307,7 +307,7 @@
       */
-     public function setStatus($status)
+     public function setRole($role)
      {
--        $allowedValues = $this->getStatusAllowableValues();
-+        /*$allowedValues = $this->getStatusAllowableValues();
-         if (!in_array($status, $allowedValues, true)) {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -927,7 +927,7 @@
+@@ -316,7 +316,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
-         $this->container['status'] = $status;
- 
+         $this->container['role'] = $role;
+
          return $this;
-@@ -976,7 +976,7 @@
+Index: lib/Model/GetCharactersCharacterIdNotifications200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdNotifications200Ok.php b/lib/Model/GetCharactersCharacterIdNotifications200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(revision e0a4c3c3ef8c0383828690e222578a9728f7f9be)
++++ b/lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(date 1638108737912)
+@@ -834,7 +834,7 @@
+      */
+     public function setSenderType($sender_type)
+     {
+-        $allowedValues = $this->getSenderTypeAllowableValues();
++        /*$allowedValues = $this->getSenderTypeAllowableValues();
+         if (!in_array($sender_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -843,7 +843,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+         $this->container['sender_type'] = $sender_type;
+
+         return $this;
+@@ -916,7 +916,7 @@
       */
      public function setType($type)
      {
@@ -1688,112 +1915,12 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
          if (!in_array($type, $allowedValues, true)) {
              throw new \InvalidArgumentException(
                  sprintf(
-@@ -984,7 +984,7 @@
+@@ -925,7 +925,7 @@
                      implode("', '", $allowedValues)
                  )
              );
 -        }
 +        }*/
          $this->container['type'] = $type;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdStarbases200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdStarbases200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdStarbases200Ok.php	(date 1586706772322)
-@@ -400,7 +400,7 @@
-      */
-     public function setState($state)
-     {
--        $allowedValues = $this->getStateAllowableValues();
-+        /*$allowedValues = $this->getStateAllowableValues();
-         if (!is_null($state) && !in_array($state, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -408,7 +408,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['state'] = $state;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php	(date 1586706337982)
-@@ -481,7 +481,7 @@
-      */
-     public function setOwnerType($owner_type)
-     {
--        $allowedValues = $this->getOwnerTypeAllowableValues();
-+        /*$allowedValues = $this->getOwnerTypeAllowableValues();
-         if (!in_array($owner_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -489,7 +489,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['owner_type'] = $owner_type;
- 
-         return $this;
-Index: lib/Model/PostCharactersCharacterIdFittingsItem.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/PostCharactersCharacterIdFittingsItem.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/PostCharactersCharacterIdFittingsItem.php	(date 1586706773510)
-@@ -350,7 +350,7 @@
-      */
-     public function setFlag($flag)
-     {
--        $allowedValues = $this->getFlagAllowableValues();
-+        /*$allowedValues = $this->getFlagAllowableValues();
-         if (!in_array($flag, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -358,7 +358,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['flag'] = $flag;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdStandings200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- lib/Model/GetCorporationsCorporationIdStandings200Ok.php	(revision 21b7f0ace5adfc6c8e036af881db48c2cc9595c0)
-+++ lib/Model/GetCorporationsCorporationIdStandings200Ok.php	(date 1586706772798)
-@@ -294,7 +294,7 @@
-      */
-     public function setFromType($from_type)
-     {
--        $allowedValues = $this->getFromTypeAllowableValues();
-+        /*$allowedValues = $this->getFromTypeAllowableValues();
-         if (!in_array($from_type, $allowedValues, true)) {
-             throw new \InvalidArgumentException(
-                 sprintf(
-@@ -302,7 +302,7 @@
-                     implode("', '", $allowedValues)
-                 )
-             );
--        }
-+        }*/
-         $this->container['from_type'] = $from_type;
  
          return $this;

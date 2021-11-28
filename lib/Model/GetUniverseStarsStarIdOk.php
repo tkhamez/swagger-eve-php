@@ -609,7 +609,7 @@ class GetUniverseStarsStarIdOk implements ModelInterface, ArrayAccess, \JsonSeri
      */
     public function setSpectralClass($spectral_class)
     {
-        $allowedValues = $this->getSpectralClassAllowableValues();
+        /*$allowedValues = $this->getSpectralClassAllowableValues();
         if (!in_array($spectral_class, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -618,7 +618,7 @@ class GetUniverseStarsStarIdOk implements ModelInterface, ArrayAccess, \JsonSeri
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['spectral_class'] = $spectral_class;
 
         return $this;

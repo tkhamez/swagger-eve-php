@@ -301,7 +301,7 @@ class GetFwSystems200Ok implements ModelInterface, ArrayAccess, \JsonSerializabl
      */
     public function setContested($contested)
     {
-        $allowedValues = $this->getContestedAllowableValues();
+        /*$allowedValues = $this->getContestedAllowableValues();
         if (!in_array($contested, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -310,7 +310,7 @@ class GetFwSystems200Ok implements ModelInterface, ArrayAccess, \JsonSerializabl
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['contested'] = $contested;
 
         return $this;

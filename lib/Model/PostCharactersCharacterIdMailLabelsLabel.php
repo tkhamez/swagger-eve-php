@@ -298,7 +298,7 @@ class PostCharactersCharacterIdMailLabelsLabel implements ModelInterface, ArrayA
      */
     public function setColor($color)
     {
-        $allowedValues = $this->getColorAllowableValues();
+        /*$allowedValues = $this->getColorAllowableValues();
         if (!is_null($color) && !in_array($color, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -307,7 +307,7 @@ class PostCharactersCharacterIdMailLabelsLabel implements ModelInterface, ArrayA
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['color'] = $color;
 
         return $this;

@@ -469,7 +469,7 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setState($state)
     {
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -478,7 +478,7 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['state'] = $state;
 
         return $this;

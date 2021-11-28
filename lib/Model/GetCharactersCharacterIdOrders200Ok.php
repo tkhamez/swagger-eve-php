@@ -596,7 +596,7 @@ class GetCharactersCharacterIdOrders200Ok implements ModelInterface, ArrayAccess
      */
     public function setRange($range)
     {
-        $allowedValues = $this->getRangeAllowableValues();
+        /*$allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -605,7 +605,7 @@ class GetCharactersCharacterIdOrders200Ok implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['range'] = $range;
 
         return $this;

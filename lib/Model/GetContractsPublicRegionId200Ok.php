@@ -699,7 +699,7 @@ class GetContractsPublicRegionId200Ok implements ModelInterface, ArrayAccess, \J
      */
     public function setType($type)
     {
-        $allowedValues = $this->getTypeAllowableValues();
+        /*$allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -708,7 +708,7 @@ class GetContractsPublicRegionId200Ok implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['type'] = $type;
 
         return $this;

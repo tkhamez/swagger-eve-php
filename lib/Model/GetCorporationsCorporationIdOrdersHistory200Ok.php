@@ -643,7 +643,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
      */
     public function setRange($range)
     {
-        $allowedValues = $this->getRangeAllowableValues();
+        /*$allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -652,7 +652,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['range'] = $range;
 
         return $this;
@@ -701,7 +701,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
      */
     public function setState($state)
     {
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -710,7 +710,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['state'] = $state;
 
         return $this;

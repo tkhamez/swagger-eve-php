@@ -530,7 +530,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
      */
     public function setAvailability($availability)
     {
-        $allowedValues = $this->getAvailabilityAllowableValues();
+        /*$allowedValues = $this->getAvailabilityAllowableValues();
         if (!in_array($availability, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -539,7 +539,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['availability'] = $availability;
 
         return $this;
@@ -924,7 +924,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
      */
     public function setStatus($status)
     {
-        $allowedValues = $this->getStatusAllowableValues();
+        /*$allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -933,7 +933,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['status'] = $status;
 
         return $this;
@@ -982,7 +982,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
      */
     public function setType($type)
     {
-        $allowedValues = $this->getTypeAllowableValues();
+        /*$allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -991,7 +991,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['type'] = $type;
 
         return $this;

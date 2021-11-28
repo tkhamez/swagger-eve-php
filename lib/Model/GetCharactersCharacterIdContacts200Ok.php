@@ -320,7 +320,7 @@ class GetCharactersCharacterIdContacts200Ok implements ModelInterface, ArrayAcce
      */
     public function setContactType($contact_type)
     {
-        $allowedValues = $this->getContactTypeAllowableValues();
+        /*$allowedValues = $this->getContactTypeAllowableValues();
         if (!in_array($contact_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -329,7 +329,7 @@ class GetCharactersCharacterIdContacts200Ok implements ModelInterface, ArrayAcce
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['contact_type'] = $contact_type;
 
         return $this;
