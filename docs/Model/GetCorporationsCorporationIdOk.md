@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **alliance_id** | **int** | ID of the alliance that corporation is a member of, if any | [optional]
 **ceo_id** | **int** | ceo_id integer |
 **creator_id** | **int** | creator_id integer |
-**date_founded** | [**\DateTime**](\DateTime.md) | date_founded string | [optional]
+**date_founded** | **\DateTime** | date_founded string | [optional]
 **description** | **string** | description string | [optional]
 **faction_id** | **int** | faction_id integer | [optional]
 **home_station_id** | **int** | home_station_id integer | [optional]

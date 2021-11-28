@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **character_id** | **int** | character_id integer |
-**join_time** | [**\DateTime**](\DateTime.md) | join_time string |
+**join_time** | **\DateTime** | join_time string |
 **role** | **string** | Member’s role in fleet |
 **role_name** | **string** | Localized role names |
 **ship_type_id** | **int** | ship_type_id integer |

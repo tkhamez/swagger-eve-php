@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **corporation_id** | **int** | corporation_id integer |
-**date** | [**\DateTime**](\DateTime.md) | date string |
+**date** | **\DateTime** | date string |
 **description** | **string** | description string |
 **graphics** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdMedalsGraphic[]**](GetCharactersCharacterIdMedalsGraphic.md) | graphics array |
 **issuer_id** | **int** | issuer_id integer |

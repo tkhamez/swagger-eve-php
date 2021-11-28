@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**created_at** | [**\DateTime**](\DateTime.md) | created_at string |
+**created_at** | **\DateTime** | created_at string |
 **creator_id** | **int** | ID of the character who created this medal |
 **description** | **string** | description string |
 **medal_id** | **int** | medal_id integer |

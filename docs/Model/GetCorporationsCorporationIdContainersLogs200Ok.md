@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **container_type_id** | **int** | Type ID of the container |
 **location_flag** | **string** | location_flag string |
 **location_id** | **int** | location_id integer |
-**logged_at** | [**\DateTime**](\DateTime.md) | Timestamp when this log was created |
+**logged_at** | **\DateTime** | Timestamp when this log was created |
 **new_config_bitmask** | **int** | new_config_bitmask integer | [optional]
 **old_config_bitmask** | **int** | old_config_bitmask integer | [optional]
 **password_type** | **string** | Type of password set if action is of type SetPassword or EnterPassword | [optional]

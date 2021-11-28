@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **bookmark_id** | **int** | bookmark_id integer |
 **coordinates** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksCoordinates**](GetCharactersCharacterIdBookmarksCoordinates.md) |  | [optional]
-**created** | [**\DateTime**](\DateTime.md) | created string |
+**created** | **\DateTime** | created string |
 **creator_id** | **int** | creator_id integer |
 **folder_id** | **int** | folder_id integer | [optional]
 **item** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdBookmarksItem**](GetCharactersCharacterIdBookmarksItem.md) |  | [optional]

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **balance** | **double** | Wallet balance after transaction occurred | [optional]
 **context_id** | **int** | An ID that gives extra context to the particular transaction. Because of legacy reasons the context is completely different per ref_type and means different things. It is also possible to not have a context_id | [optional]
 **context_id_type** | **string** | The type of the given context_id if present | [optional]
-**date** | [**\DateTime**](\DateTime.md) | Date and time of transaction |
+**date** | **\DateTime** | Date and time of transaction |
 **description** | **string** | The reason for the transaction, mirrors what is seen in the client |
 **first_party_id** | **int** | The id of the first party involved in the transaction. This attribute has no consistency and is different or non existant for particular ref_types. The description attribute will help make sense of what this attribute means. For more info about the given ID it can be dropped into the /universe/names/ ESI route to determine its type and name | [optional]
 **id** | **int** | Unique journal reference ID |

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**last_update** | [**\DateTime**](\DateTime.md) | last_update string |
+**last_update** | **\DateTime** | last_update string |
 **num_pins** | **int** | num_pins integer |
 **owner_id** | **int** | owner_id integer |
 **planet_id** | **int** | planet_id integer |

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**changed_at** | [**\DateTime**](\DateTime.md) | changed_at string |
+**changed_at** | **\DateTime** | changed_at string |
 **character_id** | **int** | The character whose roles are changed |
 **issuer_id** | **int** | ID of the character who issued this change |
 **new_roles** | **string[]** | new_roles array |

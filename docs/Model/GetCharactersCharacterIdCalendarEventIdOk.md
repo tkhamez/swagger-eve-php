@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**date** | [**\DateTime**](\DateTime.md) | date string |
+**date** | **\DateTime** | date string |
 **duration** | **int** | Length in minutes |
 **event_id** | **int** | event_id integer |
 **importance** | **int** | importance integer |

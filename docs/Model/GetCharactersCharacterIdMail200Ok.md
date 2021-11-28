@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **mail_id** | **int** | mail_id integer | [optional]
 **recipients** | [**\Swagger\Client\Eve\Model\GetCharactersCharacterIdMailRecipient[]**](GetCharactersCharacterIdMailRecipient.md) | Recipients of the mail | [optional]
 **subject** | **string** | Mail subject | [optional]
-**timestamp** | [**\DateTime**](\DateTime.md) | When the mail was sent | [optional]
+**timestamp** | **\DateTime** | When the mail was sent | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

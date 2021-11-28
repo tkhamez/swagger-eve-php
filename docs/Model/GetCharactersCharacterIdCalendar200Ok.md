@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**event_date** | [**\DateTime**](\DateTime.md) | event_date string | [optional]
+**event_date** | **\DateTime** | event_date string | [optional]
 **event_id** | **int** | event_id integer | [optional]
 **event_response** | **string** | event_response string | [optional]
 **importance** | **int** | importance integer | [optional]

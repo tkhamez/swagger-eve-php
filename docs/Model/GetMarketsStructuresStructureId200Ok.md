@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **duration** | **int** | duration integer |
 **is_buy_order** | **bool** | is_buy_order boolean |
-**issued** | [**\DateTime**](\DateTime.md) | issued string |
+**issued** | **\DateTime** | issued string |
 **location_id** | **int** | location_id integer |
 **min_volume** | **int** | min_volume integer |
 **order_id** | **int** | order_id integer |

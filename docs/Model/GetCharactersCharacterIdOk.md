@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **alliance_id** | **int** | The character&#39;s alliance ID | [optional]
-**birthday** | [**\DateTime**](\DateTime.md) | Creation date of the character |
+**birthday** | **\DateTime** | Creation date of the character |
 **bloodline_id** | **int** | bloodline_id integer |
 **corporation_id** | **int** | The character&#39;s corporation ID |
 **description** | **string** | description string | [optional]

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**color** | **string** | color string | [optional] [default to COLOR_FFFFFF]
+**color** | **string** | color string | [optional] [default to '#ffffff']
 **label_id** | **int** | label_id integer | [optional]
 **name** | **string** | name string | [optional]
 **unread_count** | **int** | unread_count integer | [optional]

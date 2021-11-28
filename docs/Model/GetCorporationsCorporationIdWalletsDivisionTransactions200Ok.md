@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **client_id** | **int** | client_id integer |
-**date** | [**\DateTime**](\DateTime.md) | Date and time of transaction |
+**date** | **\DateTime** | Date and time of transaction |
 **is_buy** | **bool** | is_buy boolean |
 **journal_ref_id** | **int** | -1 if there is no corresponding wallet journal entry |
 **location_id** | **int** | location_id integer |
