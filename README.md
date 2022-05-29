@@ -1,7 +1,12 @@
+# OpenAPIClient-php
+
+An OpenAPI for EVE Online
+
 This client is generated from the 
 "[underscore routes](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes)".
 
-##### Versioning scheme since 1.0.0:
+##### Versioning scheme since 1.0.0
+
 * patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json) file,
   refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md)
   (note, however, that the date is not always correct there) and/or generated with a new patch version
@@ -10,7 +15,7 @@ This client is generated from the
 * major: switched to a new major version of the generator library, switched to another generator library 
   or another breaking change.
 
-##### Changes
+##### Notable changes other than API updates
 
 7.1.0
 - Require Guzzle HTTP client ^7.3.
@@ -38,17 +43,12 @@ This client is generated from the
   file and in the response from ESI. But the generated client somehow removes that, so the validation fails. This 
   patch adds "WarAdopted ".
 
-# OpenAPIClient-php
-
-An OpenAPI for EVE Online
-
 
 ## Installation & Usage
 
 ### Requirements
 
 PHP 7.3 and later.
-Should also work with PHP 8.0 but has not been tested.
 
 ### Composer
 
