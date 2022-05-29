@@ -515,7 +515,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
-$invitation = new \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation(); // \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation
+$invitation = new \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation(); // \Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation | Details of the invitation
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -531,7 +531,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
- **invitation** | [**\Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation**](../Model/PostFleetsFleetIdMembersInvitation.md)|  |
+ **invitation** | [**\Swagger\Client\Eve\Model\PostFleetsFleetIdMembersInvitation**](../Model/PostFleetsFleetIdMembersInvitation.md)| Details of the invitation |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -710,7 +710,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
     $config
 );
 $fleet_id = 56; // int | ID for a fleet
-$new_settings = new \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings
+$new_settings = new \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings | What to update for this fleet
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -726,7 +726,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
- **new_settings** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings**](../Model/PutFleetsFleetIdNewSettings.md)|  |
+ **new_settings** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdNewSettings**](../Model/PutFleetsFleetIdNewSettings.md)| What to update for this fleet |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -776,7 +776,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $member_id = 56; // int | The character ID of a member in this fleet
-$movement = new \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement
+$movement = new \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement | Details of the invitation
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -793,7 +793,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
  **member_id** | **int**| The character ID of a member in this fleet |
- **movement** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement**](../Model/PutFleetsFleetIdMembersMemberIdMovement.md)|  |
+ **movement** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdMembersMemberIdMovement**](../Model/PutFleetsFleetIdMembersMemberIdMovement.md)| Details of the invitation |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -843,7 +843,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $squad_id = 56; // int | The squad to rename
-$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming
+$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming | New name of the squad
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -860,7 +860,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
  **squad_id** | **int**| The squad to rename |
- **naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming**](../Model/PutFleetsFleetIdSquadsSquadIdNaming.md)|  |
+ **naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdSquadsSquadIdNaming**](../Model/PutFleetsFleetIdSquadsSquadIdNaming.md)| New name of the squad |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 
@@ -910,7 +910,7 @@ $apiInstance = new Swagger\Client\Eve\Api\FleetsApi(
 );
 $fleet_id = 56; // int | ID for a fleet
 $wing_id = 56; // int | The wing to rename
-$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming
+$naming = new \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming(); // \Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming | New name of the wing
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -927,7 +927,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet |
  **wing_id** | **int**| The wing to rename |
- **naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming**](../Model/PutFleetsFleetIdWingsWingIdNaming.md)|  |
+ **naming** | [**\Swagger\Client\Eve\Model\PutFleetsFleetIdWingsWingIdNaming**](../Model/PutFleetsFleetIdWingsWingIdNaming.md)| New name of the wing |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 

@@ -243,7 +243,7 @@ $apiInstance = new Swagger\Client\Eve\Api\CalendarApi(
 );
 $character_id = 56; // int | An EVE character ID
 $event_id = 56; // int | The ID of the event requested
-$response = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse
+$response = new \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse(); // \Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value
 $datasource = 'tranquility'; // string | The server name you would like data from
 $token = 'token_example'; // string | Access token to use if unable to set a header
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| An EVE character ID |
  **event_id** | **int**| The ID of the event requested |
- **response** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)|  |
+ **response** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)| The response value to set, overriding current value |
  **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
  **token** | **string**| Access token to use if unable to set a header | [optional]
 

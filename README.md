@@ -17,6 +17,9 @@ This client is generated from the
 
 ##### Notable changes other than API updates
 
+8.0.0
+- Raised minimum PHP requirement to 7.4
+
 7.1.0
 - Require Guzzle HTTP client ^7.3.
 
@@ -48,7 +51,8 @@ This client is generated from the
 
 ### Requirements
 
-PHP 7.3 and later.
+PHP 7.4 and later.
+Should also work with PHP 8.0.
 
 ### Composer
 
@@ -57,7 +61,7 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
 ```json
 {
   "require": {
-    "tkhamez/swagger-eve-php": "^7.2"
+    "tkhamez/swagger-eve-php": "^8.0"
   }
 }
 ```
