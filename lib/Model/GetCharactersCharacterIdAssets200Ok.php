@@ -254,9 +254,11 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
     public const LOCATION_FLAG_SHIP_HANGAR = 'ShipHangar';
     public const LOCATION_FLAG_SKILL = 'Skill';
     public const LOCATION_FLAG_SPECIALIZED_AMMO_HOLD = 'SpecializedAmmoHold';
+    public const LOCATION_FLAG_SPECIALIZED_ASTEROID_HOLD = 'SpecializedAsteroidHold';
     public const LOCATION_FLAG_SPECIALIZED_COMMAND_CENTER_HOLD = 'SpecializedCommandCenterHold';
     public const LOCATION_FLAG_SPECIALIZED_FUEL_BAY = 'SpecializedFuelBay';
     public const LOCATION_FLAG_SPECIALIZED_GAS_HOLD = 'SpecializedGasHold';
+    public const LOCATION_FLAG_SPECIALIZED_ICE_HOLD = 'SpecializedIceHold';
     public const LOCATION_FLAG_SPECIALIZED_INDUSTRIAL_SHIP_HOLD = 'SpecializedIndustrialShipHold';
     public const LOCATION_FLAG_SPECIALIZED_LARGE_SHIP_HOLD = 'SpecializedLargeShipHold';
     public const LOCATION_FLAG_SPECIALIZED_MATERIAL_BAY = 'SpecializedMaterialBay';
@@ -267,6 +269,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
     public const LOCATION_FLAG_SPECIALIZED_SALVAGE_HOLD = 'SpecializedSalvageHold';
     public const LOCATION_FLAG_SPECIALIZED_SHIP_HOLD = 'SpecializedShipHold';
     public const LOCATION_FLAG_SPECIALIZED_SMALL_SHIP_HOLD = 'SpecializedSmallShipHold';
+    public const LOCATION_FLAG_STRUCTURE_DEED_BAY = 'StructureDeedBay';
     public const LOCATION_FLAG_SUB_SYSTEM_BAY = 'SubSystemBay';
     public const LOCATION_FLAG_SUB_SYSTEM_SLOT0 = 'SubSystemSlot0';
     public const LOCATION_FLAG_SUB_SYSTEM_SLOT1 = 'SubSystemSlot1';
@@ -347,9 +350,11 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
             self::LOCATION_FLAG_SHIP_HANGAR,
             self::LOCATION_FLAG_SKILL,
             self::LOCATION_FLAG_SPECIALIZED_AMMO_HOLD,
+            self::LOCATION_FLAG_SPECIALIZED_ASTEROID_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_COMMAND_CENTER_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_FUEL_BAY,
             self::LOCATION_FLAG_SPECIALIZED_GAS_HOLD,
+            self::LOCATION_FLAG_SPECIALIZED_ICE_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_INDUSTRIAL_SHIP_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_LARGE_SHIP_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_MATERIAL_BAY,
@@ -360,6 +365,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
             self::LOCATION_FLAG_SPECIALIZED_SALVAGE_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_SHIP_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_SMALL_SHIP_HOLD,
+            self::LOCATION_FLAG_STRUCTURE_DEED_BAY,
             self::LOCATION_FLAG_SUB_SYSTEM_BAY,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT0,
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT1,
