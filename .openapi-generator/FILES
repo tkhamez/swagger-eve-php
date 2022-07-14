@@ -265,7 +265,6 @@ docs/Model/GetMarketsStructuresStructureId200Ok.md
 docs/Model/GetOpportunitiesGroupsGroupIdOk.md
 docs/Model/GetOpportunitiesTasksTaskIdOk.md
 docs/Model/GetRouteOriginDestinationNotFound.md
-docs/Model/GetSearchOk.md
 docs/Model/GetSovereigntyCampaigns200Ok.md
 docs/Model/GetSovereigntyCampaignsParticipant.md
 docs/Model/GetSovereigntyMap200Ok.md
@@ -644,7 +643,6 @@ lib/Model/GetMarketsStructuresStructureId200Ok.php
 lib/Model/GetOpportunitiesGroupsGroupIdOk.php
 lib/Model/GetOpportunitiesTasksTaskIdOk.php
 lib/Model/GetRouteOriginDestinationNotFound.php
-lib/Model/GetSearchOk.php
 lib/Model/GetSovereigntyCampaigns200Ok.php
 lib/Model/GetSovereigntyCampaignsParticipant.php
 lib/Model/GetSovereigntyMap200Ok.php
@@ -1022,7 +1020,6 @@ test/Model/GetMarketsStructuresStructureId200OkTest.php
 test/Model/GetOpportunitiesGroupsGroupIdOkTest.php
 test/Model/GetOpportunitiesTasksTaskIdOkTest.php
 test/Model/GetRouteOriginDestinationNotFoundTest.php
-test/Model/GetSearchOkTest.php
 test/Model/GetSovereigntyCampaigns200OkTest.php
 test/Model/GetSovereigntyCampaignsParticipantTest.php
 test/Model/GetSovereigntyMap200OkTest.php
