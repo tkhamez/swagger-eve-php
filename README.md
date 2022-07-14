@@ -7,13 +7,15 @@ This client is generated from the
 
 ##### Versioning scheme since 1.0.0
 
-* patch: generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json) file,
+* Patch: Generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json) file,
   refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md)
   (note, however, that the date is not always correct there) and/or generated with a new patch version
   of the generator library
-* minor: switched to a new minor version of the generator library
-* major: switched to a new major version of the generator library, switched to another generator library 
+* Minor: Switched to a new minor version of the generator library
+* Major: Switched to a new major version of the generator library, switched to another generator library 
   or another breaking change.
+
+See https://github.com/OpenAPITools/openapi-generator/releases for generator library changes.
 
 ##### Notable changes other than API updates
 
