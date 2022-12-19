@@ -1285,7 +1285,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setGrantableRoles($grantable_roles)
     {
-        $allowedValues = $this->getGrantableRolesAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAllowableValues();
         if (!is_null($grantable_roles) && array_diff($grantable_roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1293,7 +1293,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($grantable_roles) && (count($grantable_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
@@ -1327,7 +1327,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setGrantableRolesAtBase($grantable_roles_at_base)
     {
-        $allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
         if (!is_null($grantable_roles_at_base) && array_diff($grantable_roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1335,7 +1335,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($grantable_roles_at_base) && (count($grantable_roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
@@ -1369,7 +1369,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setGrantableRolesAtHq($grantable_roles_at_hq)
     {
-        $allowedValues = $this->getGrantableRolesAtHqAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAtHqAllowableValues();
         if (!is_null($grantable_roles_at_hq) && array_diff($grantable_roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1377,7 +1377,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($grantable_roles_at_hq) && (count($grantable_roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
@@ -1411,7 +1411,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setGrantableRolesAtOther($grantable_roles_at_other)
     {
-        $allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
         if (!is_null($grantable_roles_at_other) && array_diff($grantable_roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1419,7 +1419,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($grantable_roles_at_other) && (count($grantable_roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
@@ -1453,7 +1453,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setRoles($roles)
     {
-        $allowedValues = $this->getRolesAllowableValues();
+        /*$allowedValues = $this->getRolesAllowableValues();
         if (!is_null($roles) && array_diff($roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1461,7 +1461,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles) && (count($roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
@@ -1495,7 +1495,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setRolesAtBase($roles_at_base)
     {
-        $allowedValues = $this->getRolesAtBaseAllowableValues();
+        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
         if (!is_null($roles_at_base) && array_diff($roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1503,7 +1503,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles_at_base) && (count($roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
@@ -1537,7 +1537,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setRolesAtHq($roles_at_hq)
     {
-        $allowedValues = $this->getRolesAtHqAllowableValues();
+        /*$allowedValues = $this->getRolesAtHqAllowableValues();
         if (!is_null($roles_at_hq) && array_diff($roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1545,7 +1545,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles_at_hq) && (count($roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
@@ -1579,7 +1579,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
      */
     public function setRolesAtOther($roles_at_other)
     {
-        $allowedValues = $this->getRolesAtOtherAllowableValues();
+        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
         if (!is_null($roles_at_other) && array_diff($roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1587,7 +1587,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles_at_other) && (count($roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');

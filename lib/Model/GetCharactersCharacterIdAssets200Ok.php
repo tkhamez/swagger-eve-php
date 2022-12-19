@@ -680,7 +680,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
      */
     public function setLocationFlag($location_flag)
     {
-        $allowedValues = $this->getLocationFlagAllowableValues();
+        /*$allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -689,7 +689,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
@@ -748,7 +748,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
      */
     public function setLocationType($location_type)
     {
-        $allowedValues = $this->getLocationTypeAllowableValues();
+        /*$allowedValues = $this->getLocationTypeAllowableValues();
         if (!in_array($location_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -757,7 +757,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($location_type)) {
             throw new \InvalidArgumentException('non-nullable location_type cannot be null');

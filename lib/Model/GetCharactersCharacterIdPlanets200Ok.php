@@ -541,7 +541,7 @@ class GetCharactersCharacterIdPlanets200Ok implements ModelInterface, ArrayAcces
      */
     public function setPlanetType($planet_type)
     {
-        $allowedValues = $this->getPlanetTypeAllowableValues();
+        /*$allowedValues = $this->getPlanetTypeAllowableValues();
         if (!in_array($planet_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -550,7 +550,7 @@ class GetCharactersCharacterIdPlanets200Ok implements ModelInterface, ArrayAcces
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($planet_type)) {
             throw new \InvalidArgumentException('non-nullable planet_type cannot be null');

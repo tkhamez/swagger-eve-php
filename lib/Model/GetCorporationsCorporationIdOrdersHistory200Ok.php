@@ -787,7 +787,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
      */
     public function setRange($range)
     {
-        $allowedValues = $this->getRangeAllowableValues();
+        /*$allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -796,7 +796,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($range)) {
             throw new \InvalidArgumentException('non-nullable range cannot be null');
@@ -855,7 +855,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
      */
     public function setState($state)
     {
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -864,7 +864,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');

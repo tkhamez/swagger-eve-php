@@ -362,7 +362,7 @@ class GetIndustrySystemsCostIndice implements ModelInterface, ArrayAccess, \Json
      */
     public function setActivity($activity)
     {
-        $allowedValues = $this->getActivityAllowableValues();
+        /*$allowedValues = $this->getActivityAllowableValues();
         if (!in_array($activity, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -371,7 +371,7 @@ class GetIndustrySystemsCostIndice implements ModelInterface, ArrayAccess, \Json
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($activity)) {
             throw new \InvalidArgumentException('non-nullable activity cannot be null');

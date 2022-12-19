@@ -645,7 +645,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
      */
     public function setAvailability($availability)
     {
-        $allowedValues = $this->getAvailabilityAllowableValues();
+        /*$allowedValues = $this->getAvailabilityAllowableValues();
         if (!in_array($availability, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -654,7 +654,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($availability)) {
             throw new \InvalidArgumentException('non-nullable availability cannot be null');
@@ -1119,7 +1119,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
      */
     public function setStatus($status)
     {
-        $allowedValues = $this->getStatusAllowableValues();
+        /*$allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1128,7 +1128,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -1187,7 +1187,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
      */
     public function setType($type)
     {
-        $allowedValues = $this->getTypeAllowableValues();
+        /*$allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1196,7 +1196,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

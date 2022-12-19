@@ -752,7 +752,7 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
      */
     public function setLocationFlag($location_flag)
     {
-        $allowedValues = $this->getLocationFlagAllowableValues();
+        /*$allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -761,7 +761,7 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
@@ -820,7 +820,7 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
      */
     public function setLocationType($location_type)
     {
-        $allowedValues = $this->getLocationTypeAllowableValues();
+        /*$allowedValues = $this->getLocationTypeAllowableValues();
         if (!in_array($location_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -829,7 +829,7 @@ class GetCorporationsCorporationIdAssets200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($location_type)) {
             throw new \InvalidArgumentException('non-nullable location_type cannot be null');

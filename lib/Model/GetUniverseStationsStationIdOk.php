@@ -717,7 +717,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess, \Js
      */
     public function setServices($services)
     {
-        $allowedValues = $this->getServicesAllowableValues();
+        /*$allowedValues = $this->getServicesAllowableValues();
         if (array_diff($services, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -725,7 +725,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess, \Js
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($services) > 30)) {
             throw new \InvalidArgumentException('invalid value for $services when calling GetUniverseStationsStationIdOk., number of items must be less than or equal to 30.');

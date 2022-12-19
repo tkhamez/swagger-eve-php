@@ -412,7 +412,7 @@ class GetCorporationCorporationIdMiningObservers200Ok implements ModelInterface,
      */
     public function setObserverType($observer_type)
     {
-        $allowedValues = $this->getObserverTypeAllowableValues();
+        /*$allowedValues = $this->getObserverTypeAllowableValues();
         if (!in_array($observer_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -421,7 +421,7 @@ class GetCorporationCorporationIdMiningObservers200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($observer_type)) {
             throw new \InvalidArgumentException('non-nullable observer_type cannot be null');

@@ -414,7 +414,7 @@ class GetCorporationsCorporationIdShareholders200Ok implements ModelInterface, A
      */
     public function setShareholderType($shareholder_type)
     {
-        $allowedValues = $this->getShareholderTypeAllowableValues();
+        /*$allowedValues = $this->getShareholderTypeAllowableValues();
         if (!in_array($shareholder_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -423,7 +423,7 @@ class GetCorporationsCorporationIdShareholders200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($shareholder_type)) {
             throw new \InvalidArgumentException('non-nullable shareholder_type cannot be null');

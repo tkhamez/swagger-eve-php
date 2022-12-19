@@ -603,7 +603,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
      */
     public function setGender($gender)
     {
-        $allowedValues = $this->getGenderAllowableValues();
+        /*$allowedValues = $this->getGenderAllowableValues();
         if (!in_array($gender, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -612,7 +612,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($gender)) {
             throw new \InvalidArgumentException('non-nullable gender cannot be null');

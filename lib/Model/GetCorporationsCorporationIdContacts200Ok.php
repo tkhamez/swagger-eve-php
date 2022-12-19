@@ -407,7 +407,7 @@ class GetCorporationsCorporationIdContacts200Ok implements ModelInterface, Array
      */
     public function setContactType($contact_type)
     {
-        $allowedValues = $this->getContactTypeAllowableValues();
+        /*$allowedValues = $this->getContactTypeAllowableValues();
         if (!in_array($contact_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -416,7 +416,7 @@ class GetCorporationsCorporationIdContacts200Ok implements ModelInterface, Array
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($contact_type)) {
             throw new \InvalidArgumentException('non-nullable contact_type cannot be null');

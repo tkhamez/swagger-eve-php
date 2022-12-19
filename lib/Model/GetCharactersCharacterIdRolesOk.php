@@ -774,7 +774,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
      */
     public function setRoles($roles)
     {
-        $allowedValues = $this->getRolesAllowableValues();
+        /*$allowedValues = $this->getRolesAllowableValues();
         if (!is_null($roles) && array_diff($roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -782,7 +782,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles) && (count($roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
@@ -816,7 +816,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
      */
     public function setRolesAtBase($roles_at_base)
     {
-        $allowedValues = $this->getRolesAtBaseAllowableValues();
+        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
         if (!is_null($roles_at_base) && array_diff($roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -824,7 +824,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles_at_base) && (count($roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
@@ -858,7 +858,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
      */
     public function setRolesAtHq($roles_at_hq)
     {
-        $allowedValues = $this->getRolesAtHqAllowableValues();
+        /*$allowedValues = $this->getRolesAtHqAllowableValues();
         if (!is_null($roles_at_hq) && array_diff($roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -866,7 +866,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles_at_hq) && (count($roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
@@ -900,7 +900,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
      */
     public function setRolesAtOther($roles_at_other)
     {
-        $allowedValues = $this->getRolesAtOtherAllowableValues();
+        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
         if (!is_null($roles_at_other) && array_diff($roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -908,7 +908,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (!is_null($roles_at_other) && (count($roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');

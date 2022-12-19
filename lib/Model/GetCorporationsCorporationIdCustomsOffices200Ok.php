@@ -799,7 +799,7 @@ class GetCorporationsCorporationIdCustomsOffices200Ok implements ModelInterface,
      */
     public function setStandingLevel($standing_level)
     {
-        $allowedValues = $this->getStandingLevelAllowableValues();
+        /*$allowedValues = $this->getStandingLevelAllowableValues();
         if (!is_null($standing_level) && !in_array($standing_level, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -808,7 +808,7 @@ class GetCorporationsCorporationIdCustomsOffices200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($standing_level)) {
             throw new \InvalidArgumentException('non-nullable standing_level cannot be null');

@@ -663,7 +663,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
      */
     public function setAnchor($anchor)
     {
-        $allowedValues = $this->getAnchorAllowableValues();
+        /*$allowedValues = $this->getAnchorAllowableValues();
         if (!in_array($anchor, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -672,7 +672,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($anchor)) {
             throw new \InvalidArgumentException('non-nullable anchor cannot be null');
@@ -818,7 +818,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
      */
     public function setFuelBayTake($fuel_bay_take)
     {
-        $allowedValues = $this->getFuelBayTakeAllowableValues();
+        /*$allowedValues = $this->getFuelBayTakeAllowableValues();
         if (!in_array($fuel_bay_take, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -827,7 +827,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($fuel_bay_take)) {
             throw new \InvalidArgumentException('non-nullable fuel_bay_take cannot be null');
@@ -857,7 +857,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
      */
     public function setFuelBayView($fuel_bay_view)
     {
-        $allowedValues = $this->getFuelBayViewAllowableValues();
+        /*$allowedValues = $this->getFuelBayViewAllowableValues();
         if (!in_array($fuel_bay_view, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -866,7 +866,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($fuel_bay_view)) {
             throw new \InvalidArgumentException('non-nullable fuel_bay_view cannot be null');
@@ -929,7 +929,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
      */
     public function setOffline($offline)
     {
-        $allowedValues = $this->getOfflineAllowableValues();
+        /*$allowedValues = $this->getOfflineAllowableValues();
         if (!in_array($offline, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -938,7 +938,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($offline)) {
             throw new \InvalidArgumentException('non-nullable offline cannot be null');
@@ -968,7 +968,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
      */
     public function setOnline($online)
     {
-        $allowedValues = $this->getOnlineAllowableValues();
+        /*$allowedValues = $this->getOnlineAllowableValues();
         if (!in_array($online, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -977,7 +977,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($online)) {
             throw new \InvalidArgumentException('non-nullable online cannot be null');
@@ -1007,7 +1007,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
      */
     public function setUnanchor($unanchor)
     {
-        $allowedValues = $this->getUnanchorAllowableValues();
+        /*$allowedValues = $this->getUnanchorAllowableValues();
         if (!in_array($unanchor, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1016,7 +1016,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($unanchor)) {
             throw new \InvalidArgumentException('non-nullable unanchor cannot be null');

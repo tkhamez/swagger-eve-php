@@ -398,7 +398,7 @@ class GetCharactersCharacterIdMailLabelsLabel implements ModelInterface, ArrayAc
      */
     public function setColor($color)
     {
-        $allowedValues = $this->getColorAllowableValues();
+        /*$allowedValues = $this->getColorAllowableValues();
         if (!is_null($color) && !in_array($color, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -407,7 +407,7 @@ class GetCharactersCharacterIdMailLabelsLabel implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($color)) {
             throw new \InvalidArgumentException('non-nullable color cannot be null');

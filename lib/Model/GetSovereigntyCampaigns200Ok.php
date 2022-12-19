@@ -567,7 +567,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
      */
     public function setEventType($event_type)
     {
-        $allowedValues = $this->getEventTypeAllowableValues();
+        /*$allowedValues = $this->getEventTypeAllowableValues();
         if (!in_array($event_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -576,7 +576,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($event_type)) {
             throw new \InvalidArgumentException('non-nullable event_type cannot be null');

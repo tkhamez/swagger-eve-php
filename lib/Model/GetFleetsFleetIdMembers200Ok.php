@@ -485,7 +485,7 @@ class GetFleetsFleetIdMembers200Ok implements ModelInterface, ArrayAccess, \Json
      */
     public function setRole($role)
     {
-        $allowedValues = $this->getRoleAllowableValues();
+        /*$allowedValues = $this->getRoleAllowableValues();
         if (!in_array($role, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -494,7 +494,7 @@ class GetFleetsFleetIdMembers200Ok implements ModelInterface, ArrayAccess, \Json
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($role)) {
             throw new \InvalidArgumentException('non-nullable role cannot be null');

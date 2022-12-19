@@ -743,7 +743,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
      */
     public function setState($state)
     {
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -752,7 +752,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');

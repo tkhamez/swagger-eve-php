@@ -379,7 +379,7 @@ class PostCharactersCharacterIdMailRecipient implements ModelInterface, ArrayAcc
      */
     public function setRecipientType($recipient_type)
     {
-        $allowedValues = $this->getRecipientTypeAllowableValues();
+        /*$allowedValues = $this->getRecipientTypeAllowableValues();
         if (!in_array($recipient_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -388,7 +388,7 @@ class PostCharactersCharacterIdMailRecipient implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($recipient_type)) {
             throw new \InvalidArgumentException('non-nullable recipient_type cannot be null');

@@ -1,0 +1,2372 @@
+Index: lib/Model/GetUniverseStarsStarIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseStarsStarIdOk.php b/lib/Model/GetUniverseStarsStarIdOk.php
+--- a/lib/Model/GetUniverseStarsStarIdOk.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetUniverseStarsStarIdOk.php	(date 1671456492445)
+@@ -725,7 +725,7 @@
+      */
+     public function setSpectralClass($spectral_class)
+     {
+-        $allowedValues = $this->getSpectralClassAllowableValues();
++        /*$allowedValues = $this->getSpectralClassAllowableValues();
+         if (!in_array($spectral_class, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -734,7 +734,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($spectral_class)) {
+             throw new \InvalidArgumentException('non-nullable spectral_class cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php b/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdOrdersHistory200Ok.php	(date 1671456492261)
+@@ -787,7 +787,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -796,7 +796,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($range)) {
+             throw new \InvalidArgumentException('non-nullable range cannot be null');
+@@ -855,7 +855,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -864,7 +864,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($state)) {
+             throw new \InvalidArgumentException('non-nullable state cannot be null');
+Index: lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php b/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php	(date 1671456492085)
+@@ -772,7 +772,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -781,7 +781,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($range)) {
+             throw new \InvalidArgumentException('non-nullable range cannot be null');
+@@ -840,7 +840,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -849,7 +849,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($state)) {
+             throw new \InvalidArgumentException('non-nullable state cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php b/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php	(date 1671456492197)
+@@ -725,7 +725,7 @@
+      */
+     public function setAction($action)
+     {
+-        $allowedValues = $this->getActionAllowableValues();
++        /*$allowedValues = $this->getActionAllowableValues();
+         if (!in_array($action, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -734,7 +734,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($action)) {
+             throw new \InvalidArgumentException('non-nullable action cannot be null');
+@@ -851,7 +851,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -860,7 +860,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_flag)) {
+             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
+@@ -1006,7 +1006,7 @@
+      */
+     public function setPasswordType($password_type)
+     {
+-        $allowedValues = $this->getPasswordTypeAllowableValues();
++        /*$allowedValues = $this->getPasswordTypeAllowableValues();
+         if (!is_null($password_type) && !in_array($password_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1015,7 +1015,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($password_type)) {
+             throw new \InvalidArgumentException('non-nullable password_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdNotifications200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdNotifications200Ok.php b/lib/Model/GetCharactersCharacterIdNotifications200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdNotifications200Ok.php	(date 1671456492029)
+@@ -939,7 +939,7 @@
+      */
+     public function setSenderType($sender_type)
+     {
+-        $allowedValues = $this->getSenderTypeAllowableValues();
++        /*$allowedValues = $this->getSenderTypeAllowableValues();
+         if (!in_array($sender_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -948,7 +948,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($sender_type)) {
+             throw new \InvalidArgumentException('non-nullable sender_type cannot be null');
+@@ -1036,7 +1036,7 @@
+      */
+     public function setType($type)
+     {
+-        $allowedValues = $this->getTypeAllowableValues();
++        /*$allowedValues = $this->getTypeAllowableValues();
+         if (!in_array($type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1045,7 +1045,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($type)) {
+             throw new \InvalidArgumentException('non-nullable type cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
+--- a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(date 1671456492309)
+@@ -663,7 +663,7 @@
+      */
+     public function setAnchor($anchor)
+     {
+-        $allowedValues = $this->getAnchorAllowableValues();
++        /*$allowedValues = $this->getAnchorAllowableValues();
+         if (!in_array($anchor, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -672,7 +672,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($anchor)) {
+             throw new \InvalidArgumentException('non-nullable anchor cannot be null');
+@@ -818,7 +818,7 @@
+      */
+     public function setFuelBayTake($fuel_bay_take)
+     {
+-        $allowedValues = $this->getFuelBayTakeAllowableValues();
++        /*$allowedValues = $this->getFuelBayTakeAllowableValues();
+         if (!in_array($fuel_bay_take, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -827,7 +827,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($fuel_bay_take)) {
+             throw new \InvalidArgumentException('non-nullable fuel_bay_take cannot be null');
+@@ -857,7 +857,7 @@
+      */
+     public function setFuelBayView($fuel_bay_view)
+     {
+-        $allowedValues = $this->getFuelBayViewAllowableValues();
++        /*$allowedValues = $this->getFuelBayViewAllowableValues();
+         if (!in_array($fuel_bay_view, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -866,7 +866,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($fuel_bay_view)) {
+             throw new \InvalidArgumentException('non-nullable fuel_bay_view cannot be null');
+@@ -929,7 +929,7 @@
+      */
+     public function setOffline($offline)
+     {
+-        $allowedValues = $this->getOfflineAllowableValues();
++        /*$allowedValues = $this->getOfflineAllowableValues();
+         if (!in_array($offline, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -938,7 +938,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($offline)) {
+             throw new \InvalidArgumentException('non-nullable offline cannot be null');
+@@ -968,7 +968,7 @@
+      */
+     public function setOnline($online)
+     {
+-        $allowedValues = $this->getOnlineAllowableValues();
++        /*$allowedValues = $this->getOnlineAllowableValues();
+         if (!in_array($online, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -977,7 +977,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($online)) {
+             throw new \InvalidArgumentException('non-nullable online cannot be null');
+@@ -1007,7 +1007,7 @@
+      */
+     public function setUnanchor($unanchor)
+     {
+-        $allowedValues = $this->getUnanchorAllowableValues();
++        /*$allowedValues = $this->getUnanchorAllowableValues();
+         if (!in_array($unanchor, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1016,7 +1016,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($unanchor)) {
+             throw new \InvalidArgumentException('non-nullable unanchor cannot be null');
+Index: lib/Model/GetMarketsStructuresStructureId200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetMarketsStructuresStructureId200Ok.php b/lib/Model/GetMarketsStructuresStructureId200Ok.php
+--- a/lib/Model/GetMarketsStructuresStructureId200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetMarketsStructuresStructureId200Ok.php	(date 1671456492413)
+@@ -659,7 +659,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -668,7 +668,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($range)) {
+             throw new \InvalidArgumentException('non-nullable range cannot be null');
+Index: lib/Model/GetCharactersCharacterIdClonesHomeLocation.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php b/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php
+--- a/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdClonesHomeLocation.php	(date 1671456491893)
+@@ -369,7 +369,7 @@
+      */
+     public function setLocationType($location_type)
+     {
+-        $allowedValues = $this->getLocationTypeAllowableValues();
++        /*$allowedValues = $this->getLocationTypeAllowableValues();
+         if (!is_null($location_type) && !in_array($location_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -378,7 +378,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_type)) {
+             throw new \InvalidArgumentException('non-nullable location_type cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php b/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdIndustryJobs200Ok.php	(date 1671456492233)
+@@ -1110,7 +1110,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1119,7 +1119,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($status)) {
+             throw new \InvalidArgumentException('non-nullable status cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdStarbases200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php b/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdStarbases200Ok.php	(date 1671456492297)
+@@ -513,7 +513,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!is_null($state) && !in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -522,7 +522,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($state)) {
+             throw new \InvalidArgumentException('non-nullable state cannot be null');
+Index: lib/Model/GetCharactersCharacterIdBlueprints200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php b/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdBlueprints200Ok.php	(date 1671456491841)
+@@ -607,7 +607,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -616,7 +616,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_flag)) {
+             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(date 1671456679277)
+@@ -707,7 +707,7 @@
+      */
+     public function setNewRoles($new_roles)
+     {
+-        $allowedValues = $this->getNewRolesAllowableValues();
++        /*$allowedValues = $this->getNewRolesAllowableValues();
+         if (array_diff($new_roles, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -715,7 +715,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if ((count($new_roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $new_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
+@@ -749,7 +749,7 @@
+      */
+     public function setOldRoles($old_roles)
+     {
+-        $allowedValues = $this->getOldRolesAllowableValues();
++        /*$allowedValues = $this->getOldRolesAllowableValues();
+         if (array_diff($old_roles, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -757,7 +757,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if ((count($old_roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $old_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
+@@ -791,7 +791,7 @@
+      */
+     public function setRoleType($role_type)
+     {
+-        $allowedValues = $this->getRoleTypeAllowableValues();
++        /*$allowedValues = $this->getRoleTypeAllowableValues();
+         if (!in_array($role_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -800,7 +800,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($role_type)) {
+             throw new \InvalidArgumentException('non-nullable role_type cannot be null');
+Index: lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php b/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php
+--- a/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationCorporationIdMiningObservers200Ok.php	(date 1671456492141)
+@@ -412,7 +412,7 @@
+      */
+     public function setObserverType($observer_type)
+     {
+-        $allowedValues = $this->getObserverTypeAllowableValues();
++        /*$allowedValues = $this->getObserverTypeAllowableValues();
+         if (!in_array($observer_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -421,7 +421,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($observer_type)) {
+             throw new \InvalidArgumentException('non-nullable observer_type cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdContacts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(date 1671456492185)
+@@ -407,7 +407,7 @@
+      */
+     public function setContactType($contact_type)
+     {
+-        $allowedValues = $this->getContactTypeAllowableValues();
++        /*$allowedValues = $this->getContactTypeAllowableValues();
+         if (!in_array($contact_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -416,7 +416,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($contact_type)) {
+             throw new \InvalidArgumentException('non-nullable contact_type cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdStandings200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStandings200Ok.php b/lib/Model/GetCorporationsCorporationIdStandings200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdStandings200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdStandings200Ok.php	(date 1671456492289)
+@@ -387,7 +387,7 @@
+      */
+     public function setFromType($from_type)
+     {
+-        $allowedValues = $this->getFromTypeAllowableValues();
++        /*$allowedValues = $this->getFromTypeAllowableValues();
+         if (!in_array($from_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -396,7 +396,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($from_type)) {
+             throw new \InvalidArgumentException('non-nullable from_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdAssets200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdAssets200Ok.php b/lib/Model/GetCharactersCharacterIdAssets200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdAssets200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdAssets200Ok.php	(date 1671456491829)
+@@ -680,7 +680,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -689,7 +689,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_flag)) {
+             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
+@@ -748,7 +748,7 @@
+      */
+     public function setLocationType($location_type)
+     {
+-        $allowedValues = $this->getLocationTypeAllowableValues();
++        /*$allowedValues = $this->getLocationTypeAllowableValues();
+         if (!in_array($location_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -757,7 +757,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_type)) {
+             throw new \InvalidArgumentException('non-nullable location_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdContacts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdContacts200Ok.php b/lib/Model/GetCharactersCharacterIdContacts200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(date 1671456491921)
+@@ -414,7 +414,7 @@
+      */
+     public function setContactType($contact_type)
+     {
+-        $allowedValues = $this->getContactTypeAllowableValues();
++        /*$allowedValues = $this->getContactTypeAllowableValues();
+         if (!in_array($contact_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -423,7 +423,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($contact_type)) {
+             throw new \InvalidArgumentException('non-nullable contact_type cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdTitles200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdTitles200Ok.php b/lib/Model/GetCorporationsCorporationIdTitles200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdTitles200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdTitles200Ok.php	(date 1671456935736)
+@@ -1260,7 +1260,7 @@
+      */
+     public function setGrantableRoles($grantable_roles)
+     {
+-        $allowedValues = $this->getGrantableRolesAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAllowableValues();
+         if (!is_null($grantable_roles) && array_diff($grantable_roles, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1268,7 +1268,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles) && (count($grantable_roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+@@ -1302,7 +1302,7 @@
+      */
+     public function setGrantableRolesAtBase($grantable_roles_at_base)
+     {
+-        $allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
+         if (!is_null($grantable_roles_at_base) && array_diff($grantable_roles_at_base, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1310,7 +1310,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles_at_base) && (count($grantable_roles_at_base) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+@@ -1344,7 +1344,7 @@
+      */
+     public function setGrantableRolesAtHq($grantable_roles_at_hq)
+     {
+-        $allowedValues = $this->getGrantableRolesAtHqAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAtHqAllowableValues();
+         if (!is_null($grantable_roles_at_hq) && array_diff($grantable_roles_at_hq, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1352,7 +1352,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles_at_hq) && (count($grantable_roles_at_hq) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+@@ -1386,7 +1386,7 @@
+      */
+     public function setGrantableRolesAtOther($grantable_roles_at_other)
+     {
+-        $allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
+         if (!is_null($grantable_roles_at_other) && array_diff($grantable_roles_at_other, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1394,7 +1394,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles_at_other) && (count($grantable_roles_at_other) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+@@ -1457,7 +1457,7 @@
+      */
+     public function setRoles($roles)
+     {
+-        $allowedValues = $this->getRolesAllowableValues();
++        /*$allowedValues = $this->getRolesAllowableValues();
+         if (!is_null($roles) && array_diff($roles, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1465,7 +1465,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles) && (count($roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+@@ -1499,7 +1499,7 @@
+      */
+     public function setRolesAtBase($roles_at_base)
+     {
+-        $allowedValues = $this->getRolesAtBaseAllowableValues();
++        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
+         if (!is_null($roles_at_base) && array_diff($roles_at_base, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1507,7 +1507,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_base) && (count($roles_at_base) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+@@ -1541,7 +1541,7 @@
+      */
+     public function setRolesAtHq($roles_at_hq)
+     {
+-        $allowedValues = $this->getRolesAtHqAllowableValues();
++        /*$allowedValues = $this->getRolesAtHqAllowableValues();
+         if (!is_null($roles_at_hq) && array_diff($roles_at_hq, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1549,7 +1549,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_hq) && (count($roles_at_hq) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+@@ -1583,7 +1583,7 @@
+      */
+     public function setRolesAtOther($roles_at_other)
+     {
+-        $allowedValues = $this->getRolesAtOtherAllowableValues();
++        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
+         if (!is_null($roles_at_other) && array_diff($roles_at_other, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1591,7 +1591,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_other) && (count($roles_at_other) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+Index: lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php b/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php	(date 1671456492177)
+@@ -689,7 +689,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -698,7 +698,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_flag)) {
+             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
+Index: lib/Model/GetUniverseStationsStationIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseStationsStationIdOk.php b/lib/Model/GetUniverseStationsStationIdOk.php
+--- a/lib/Model/GetUniverseStationsStationIdOk.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetUniverseStationsStationIdOk.php	(date 1671456935752)
+@@ -717,7 +717,7 @@
+      */
+     public function setServices($services)
+     {
+-        $allowedValues = $this->getServicesAllowableValues();
++        /*$allowedValues = $this->getServicesAllowableValues();
+         if (array_diff($services, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -725,7 +725,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if ((count($services) > 30)) {
+             throw new \InvalidArgumentException('invalid value for $services when calling GetUniverseStationsStationIdOk., number of items must be less than or equal to 30.');
+Index: lib/Model/GetCorporationsCorporationIdStructures200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(date 1671456492321)
+@@ -743,7 +743,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -752,7 +752,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($state)) {
+             throw new \InvalidArgumentException('non-nullable state cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdOrders200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdOrders200Ok.php b/lib/Model/GetCorporationsCorporationIdOrders200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdOrders200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdOrders200Ok.php	(date 1671456492253)
+@@ -756,7 +756,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -765,7 +765,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($range)) {
+             throw new \InvalidArgumentException('non-nullable range cannot be null');
+Index: lib/Model/GetCharactersCharacterIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdOk.php b/lib/Model/GetCharactersCharacterIdOk.php
+--- a/lib/Model/GetCharactersCharacterIdOk.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdOk.php	(date 1671456492045)
+@@ -603,7 +603,7 @@
+      */
+     public function setGender($gender)
+     {
+-        $allowedValues = $this->getGenderAllowableValues();
++        /*$allowedValues = $this->getGenderAllowableValues();
+         if (!in_array($gender, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -612,7 +612,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($gender)) {
+             throw new \InvalidArgumentException('non-nullable gender cannot be null');
+Index: lib/Model/PostCharactersCharacterIdMailRecipient.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostCharactersCharacterIdMailRecipient.php b/lib/Model/PostCharactersCharacterIdMailRecipient.php
+--- a/lib/Model/PostCharactersCharacterIdMailRecipient.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/PostCharactersCharacterIdMailRecipient.php	(date 1671456492473)
+@@ -379,7 +379,7 @@
+      */
+     public function setRecipientType($recipient_type)
+     {
+-        $allowedValues = $this->getRecipientTypeAllowableValues();
++        /*$allowedValues = $this->getRecipientTypeAllowableValues();
+         if (!in_array($recipient_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -388,7 +388,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($recipient_type)) {
+             throw new \InvalidArgumentException('non-nullable recipient_type cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdAssets200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdAssets200Ok.php b/lib/Model/GetCorporationsCorporationIdAssets200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdAssets200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdAssets200Ok.php	(date 1671456492161)
+@@ -752,7 +752,7 @@
+      */
+     public function setLocationFlag($location_flag)
+     {
+-        $allowedValues = $this->getLocationFlagAllowableValues();
++        /*$allowedValues = $this->getLocationFlagAllowableValues();
+         if (!in_array($location_flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -761,7 +761,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_flag)) {
+             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
+@@ -820,7 +820,7 @@
+      */
+     public function setLocationType($location_type)
+     {
+-        $allowedValues = $this->getLocationTypeAllowableValues();
++        /*$allowedValues = $this->getLocationTypeAllowableValues();
+         if (!in_array($location_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -829,7 +829,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_type)) {
+             throw new \InvalidArgumentException('non-nullable location_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php b/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php
+--- a/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdCalendarEventIdOk.php	(date 1671456491885)
+@@ -606,7 +606,7 @@
+      */
+     public function setOwnerType($owner_type)
+     {
+-        $allowedValues = $this->getOwnerTypeAllowableValues();
++        /*$allowedValues = $this->getOwnerTypeAllowableValues();
+         if (!in_array($owner_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -615,7 +615,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($owner_type)) {
+             throw new \InvalidArgumentException('non-nullable owner_type cannot be null');
+Index: lib/Model/GetContractsPublicRegionId200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetContractsPublicRegionId200Ok.php b/lib/Model/GetContractsPublicRegionId200Ok.php
+--- a/lib/Model/GetContractsPublicRegionId200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetContractsPublicRegionId200Ok.php	(date 1671456492133)
+@@ -868,7 +868,7 @@
+      */
+     public function setType($type)
+     {
+-        $allowedValues = $this->getTypeAllowableValues();
++        /*$allowedValues = $this->getTypeAllowableValues();
+         if (!in_array($type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -877,7 +877,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($type)) {
+             throw new \InvalidArgumentException('non-nullable type cannot be null');
+Index: test/Client.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/Client.php b/test/Client.php
+new file mode 100644
+--- /dev/null	(date 1671457127456)
++++ b/test/Client.php	(date 1671457127456)
+@@ -0,0 +1,23 @@
++<?php
++
++namespace Swagger\Client\Eve\Test;
++
++use Psr\Http\Message\RequestInterface;
++use Psr\Http\Message\ResponseInterface;
++
++class Client extends \GuzzleHttp\Client
++{
++    private array $responses;
++
++    public function __construct(ResponseInterface ...$responses)
++    {
++        parent::__construct([]);
++
++        $this->responses = $responses;
++    }
++
++    public function send(RequestInterface $request, array $options = []): ResponseInterface
++    {
++        return array_shift($this->responses);
++    }
++}
+Index: lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php b/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php
+--- a/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdMailMailIdRecipient.php	(date 1671456491997)
+@@ -379,7 +379,7 @@
+      */
+     public function setRecipientType($recipient_type)
+     {
+-        $allowedValues = $this->getRecipientTypeAllowableValues();
++        /*$allowedValues = $this->getRecipientTypeAllowableValues();
+         if (!in_array($recipient_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -388,7 +388,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($recipient_type)) {
+             throw new \InvalidArgumentException('non-nullable recipient_type cannot be null');
+Index: lib/Model/GetIndustrySystemsCostIndice.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetIndustrySystemsCostIndice.php b/lib/Model/GetIndustrySystemsCostIndice.php
+--- a/lib/Model/GetIndustrySystemsCostIndice.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetIndustrySystemsCostIndice.php	(date 1671456492389)
+@@ -362,7 +362,7 @@
+      */
+     public function setActivity($activity)
+     {
+-        $allowedValues = $this->getActivityAllowableValues();
++        /*$allowedValues = $this->getActivityAllowableValues();
+         if (!in_array($activity, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -371,7 +371,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($activity)) {
+             throw new \InvalidArgumentException('non-nullable activity cannot be null');
+Index: test/Api/CharacterApiTest.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/Api/CharacterApiTest.php b/test/Api/CharacterApiTest.php
+--- a/test/Api/CharacterApiTest.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/test/Api/CharacterApiTest.php	(date 1671457039456)
+@@ -27,10 +27,14 @@
+ 
+ namespace Swagger\Client\Eve\Test\Api;
+ 
++use GuzzleHttp\Psr7\Response;
++use Swagger\Client\Eve\Api\CharacterApi;
+ use \Swagger\Client\Eve\Configuration;
+ use \Swagger\Client\Eve\ApiException;
++use Swagger\Client\Eve\Model\GetCharactersCharacterIdNotifications200Ok;
+ use \Swagger\Client\Eve\ObjectSerializer;
+ use PHPUnit\Framework\TestCase;
++use Swagger\Client\Eve\Test\Client;
+ 
+ /**
+  * CharacterApiTest Class Doc Comment
+@@ -151,8 +155,9 @@
+      */
+     public function testGetCharactersCharacterIdNotifications()
+     {
+-        // TODO: implement
+-        $this->markTestIncomplete('Not implemented');
++        $api = new CharacterApi(new Client(new Response(200, [], '[{"type": "InvalidEnumValue"}]')));
++        $result = $api->getCharactersCharacterIdNotifications(96061222);
++        $this->assertInstanceOf(GetCharactersCharacterIdNotifications200Ok::class, $result[0]);
+     }
+ 
+     /**
+Index: lib/Model/GetCorporationsCorporationIdStructuresService.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStructuresService.php b/lib/Model/GetCorporationsCorporationIdStructuresService.php
+--- a/lib/Model/GetCorporationsCorporationIdStructuresService.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdStructuresService.php	(date 1671456492333)
+@@ -377,7 +377,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -386,7 +386,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($state)) {
+             throw new \InvalidArgumentException('non-nullable state cannot be null');
+Index: lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php b/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php
+--- a/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/PutCharactersCharacterIdCalendarEventIdResponse.php	(date 1671456492501)
+@@ -338,7 +338,7 @@
+      */
+     public function setResponse($response)
+     {
+-        $allowedValues = $this->getResponseAllowableValues();
++        /*$allowedValues = $this->getResponseAllowableValues();
+         if (!in_array($response, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -347,7 +347,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($response)) {
+             throw new \InvalidArgumentException('non-nullable response cannot be null');
+Index: lib/Model/GetFleetsFleetIdMembers200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFleetsFleetIdMembers200Ok.php b/lib/Model/GetFleetsFleetIdMembers200Ok.php
+--- a/lib/Model/GetFleetsFleetIdMembers200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetFleetsFleetIdMembers200Ok.php	(date 1671456492361)
+@@ -485,7 +485,7 @@
+      */
+     public function setRole($role)
+     {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -494,7 +494,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($role)) {
+             throw new \InvalidArgumentException('non-nullable role cannot be null');
+Index: lib/Model/PostCharactersCharacterIdFittingsItem.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostCharactersCharacterIdFittingsItem.php b/lib/Model/PostCharactersCharacterIdFittingsItem.php
+--- a/lib/Model/PostCharactersCharacterIdFittingsItem.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/PostCharactersCharacterIdFittingsItem.php	(date 1671456492453)
+@@ -438,7 +438,7 @@
+      */
+     public function setFlag($flag)
+     {
+-        $allowedValues = $this->getFlagAllowableValues();
++        /*$allowedValues = $this->getFlagAllowableValues();
+         if (!in_array($flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -447,7 +447,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($flag)) {
+             throw new \InvalidArgumentException('non-nullable flag cannot be null');
+Index: lib/Model/PostUniverseNames200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostUniverseNames200Ok.php b/lib/Model/PostUniverseNames200Ok.php
+--- a/lib/Model/PostUniverseNames200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/PostUniverseNames200Ok.php	(date 1671456492489)
+@@ -370,7 +370,7 @@
+      */
+     public function setCategory($category)
+     {
+-        $allowedValues = $this->getCategoryAllowableValues();
++        /*$allowedValues = $this->getCategoryAllowableValues();
+         if (!in_array($category, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -379,7 +379,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($category)) {
+             throw new \InvalidArgumentException('non-nullable category cannot be null');
+Index: lib/Model/GetCharactersCharacterIdRolesOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdRolesOk.php b/lib/Model/GetCharactersCharacterIdRolesOk.php
+--- a/lib/Model/GetCharactersCharacterIdRolesOk.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdRolesOk.php	(date 1671456935772)
+@@ -774,7 +774,7 @@
+      */
+     public function setRoles($roles)
+     {
+-        $allowedValues = $this->getRolesAllowableValues();
++        /*$allowedValues = $this->getRolesAllowableValues();
+         if (!is_null($roles) && array_diff($roles, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -782,7 +782,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles) && (count($roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
+@@ -816,7 +816,7 @@
+      */
+     public function setRolesAtBase($roles_at_base)
+     {
+-        $allowedValues = $this->getRolesAtBaseAllowableValues();
++        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
+         if (!is_null($roles_at_base) && array_diff($roles_at_base, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -824,7 +824,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_base) && (count($roles_at_base) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
+@@ -858,7 +858,7 @@
+      */
+     public function setRolesAtHq($roles_at_hq)
+     {
+-        $allowedValues = $this->getRolesAtHqAllowableValues();
++        /*$allowedValues = $this->getRolesAtHqAllowableValues();
+         if (!is_null($roles_at_hq) && array_diff($roles_at_hq, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -866,7 +866,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_hq) && (count($roles_at_hq) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
+@@ -900,7 +900,7 @@
+      */
+     public function setRolesAtOther($roles_at_other)
+     {
+-        $allowedValues = $this->getRolesAtOtherAllowableValues();
++        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
+         if (!is_null($roles_at_other) && array_diff($roles_at_other, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -908,7 +908,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_other) && (count($roles_at_other) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
+Index: lib/Model/GetCharactersCharacterIdPlanets200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdPlanets200Ok.php b/lib/Model/GetCharactersCharacterIdPlanets200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdPlanets200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdPlanets200Ok.php	(date 1671456492093)
+@@ -541,7 +541,7 @@
+      */
+     public function setPlanetType($planet_type)
+     {
+-        $allowedValues = $this->getPlanetTypeAllowableValues();
++        /*$allowedValues = $this->getPlanetTypeAllowableValues();
+         if (!in_array($planet_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -550,7 +550,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($planet_type)) {
+             throw new \InvalidArgumentException('non-nullable planet_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdMailRecipient.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdMailRecipient.php b/lib/Model/GetCharactersCharacterIdMailRecipient.php
+--- a/lib/Model/GetCharactersCharacterIdMailRecipient.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdMailRecipient.php	(date 1671456492009)
+@@ -379,7 +379,7 @@
+      */
+     public function setRecipientType($recipient_type)
+     {
+-        $allowedValues = $this->getRecipientTypeAllowableValues();
++        /*$allowedValues = $this->getRecipientTypeAllowableValues();
+         if (!in_array($recipient_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -388,7 +388,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($recipient_type)) {
+             throw new \InvalidArgumentException('non-nullable recipient_type cannot be null');
+Index: lib/Model/GetMarketsRegionIdOrders200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetMarketsRegionIdOrders200Ok.php b/lib/Model/GetMarketsRegionIdOrders200Ok.php
+--- a/lib/Model/GetMarketsRegionIdOrders200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetMarketsRegionIdOrders200Ok.php	(date 1671456492397)
+@@ -669,7 +669,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -678,7 +678,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($range)) {
+             throw new \InvalidArgumentException('non-nullable range cannot be null');
+Index: lib/Model/GetCharactersCharacterIdFleetOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdFleetOk.php b/lib/Model/GetCharactersCharacterIdFleetOk.php
+--- a/lib/Model/GetCharactersCharacterIdFleetOk.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdFleetOk.php	(date 1671456491957)
+@@ -399,7 +399,7 @@
+      */
+     public function setRole($role)
+     {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -408,7 +408,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($role)) {
+             throw new \InvalidArgumentException('non-nullable role cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdShareholders200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php b/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdShareholders200Ok.php	(date 1671456492281)
+@@ -414,7 +414,7 @@
+      */
+     public function setShareholderType($shareholder_type)
+     {
+-        $allowedValues = $this->getShareholderTypeAllowableValues();
++        /*$allowedValues = $this->getShareholderTypeAllowableValues();
+         if (!in_array($shareholder_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -423,7 +423,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($shareholder_type)) {
+             throw new \InvalidArgumentException('non-nullable shareholder_type cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php b/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdMedalsIssued200Ok.php	(date 1671456492241)
+@@ -539,7 +539,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -548,7 +548,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($status)) {
+             throw new \InvalidArgumentException('non-nullable status cannot be null');
+Index: lib/Model/GetSovereigntyCampaigns200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetSovereigntyCampaigns200Ok.php b/lib/Model/GetSovereigntyCampaigns200Ok.php
+--- a/lib/Model/GetSovereigntyCampaigns200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetSovereigntyCampaigns200Ok.php	(date 1671456492433)
+@@ -567,7 +567,7 @@
+      */
+     public function setEventType($event_type)
+     {
+-        $allowedValues = $this->getEventTypeAllowableValues();
++        /*$allowedValues = $this->getEventTypeAllowableValues();
+         if (!in_array($event_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -576,7 +576,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($event_type)) {
+             throw new \InvalidArgumentException('non-nullable event_type cannot be null');
+Index: lib/Model/GetFwSystems200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwSystems200Ok.php b/lib/Model/GetFwSystems200Ok.php
+--- a/lib/Model/GetFwSystems200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetFwSystems200Ok.php	(date 1671456492369)
+@@ -390,7 +390,7 @@
+      */
+     public function setContested($contested)
+     {
+-        $allowedValues = $this->getContestedAllowableValues();
++        /*$allowedValues = $this->getContestedAllowableValues();
+         if (!in_array($contested, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -399,7 +399,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($contested)) {
+             throw new \InvalidArgumentException('non-nullable contested cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php b/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.php	(date 1671456492353)
+@@ -822,7 +822,7 @@
+      */
+     public function setContextIdType($context_id_type)
+     {
+-        $allowedValues = $this->getContextIdTypeAllowableValues();
++        /*$allowedValues = $this->getContextIdTypeAllowableValues();
+         if (!is_null($context_id_type) && !in_array($context_id_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -831,7 +831,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($context_id_type)) {
+             throw new \InvalidArgumentException('non-nullable context_id_type cannot be null');
+@@ -1006,7 +1006,7 @@
+      */
+     public function setRefType($ref_type)
+     {
+-        $allowedValues = $this->getRefTypeAllowableValues();
++        /*$allowedValues = $this->getRefTypeAllowableValues();
+         if (!in_array($ref_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1015,7 +1015,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($ref_type)) {
+             throw new \InvalidArgumentException('non-nullable ref_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdStandings200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdStandings200Ok.php b/lib/Model/GetCharactersCharacterIdStandings200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdStandings200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdStandings200Ok.php	(date 1671456492105)
+@@ -387,7 +387,7 @@
+      */
+     public function setFromType($from_type)
+     {
+-        $allowedValues = $this->getFromTypeAllowableValues();
++        /*$allowedValues = $this->getFromTypeAllowableValues();
+         if (!in_array($from_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -396,7 +396,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($from_type)) {
+             throw new \InvalidArgumentException('non-nullable from_type cannot be null');
+Index: lib/Model/GetIncursions200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetIncursions200Ok.php b/lib/Model/GetIncursions200Ok.php
+--- a/lib/Model/GetIncursions200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetIncursions200Ok.php	(date 1671456492381)
+@@ -590,7 +590,7 @@
+      */
+     public function setState($state)
+     {
+-        $allowedValues = $this->getStateAllowableValues();
++        /*$allowedValues = $this->getStateAllowableValues();
+         if (!in_array($state, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -599,7 +599,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($state)) {
+             throw new \InvalidArgumentException('non-nullable state cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdContracts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdContracts200Ok.php b/lib/Model/GetCorporationsCorporationIdContracts200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdContracts200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdContracts200Ok.php	(date 1671456492209)
+@@ -645,7 +645,7 @@
+      */
+     public function setAvailability($availability)
+     {
+-        $allowedValues = $this->getAvailabilityAllowableValues();
++        /*$allowedValues = $this->getAvailabilityAllowableValues();
+         if (!in_array($availability, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -654,7 +654,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($availability)) {
+             throw new \InvalidArgumentException('non-nullable availability cannot be null');
+@@ -1119,7 +1119,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1128,7 +1128,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($status)) {
+             throw new \InvalidArgumentException('non-nullable status cannot be null');
+@@ -1187,7 +1187,7 @@
+      */
+     public function setType($type)
+     {
+-        $allowedValues = $this->getTypeAllowableValues();
++        /*$allowedValues = $this->getTypeAllowableValues();
+         if (!in_array($type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1196,7 +1196,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($type)) {
+             throw new \InvalidArgumentException('non-nullable type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdFittingsItem.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdFittingsItem.php b/lib/Model/GetCharactersCharacterIdFittingsItem.php
+--- a/lib/Model/GetCharactersCharacterIdFittingsItem.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdFittingsItem.php	(date 1671456491949)
+@@ -438,7 +438,7 @@
+      */
+     public function setFlag($flag)
+     {
+-        $allowedValues = $this->getFlagAllowableValues();
++        /*$allowedValues = $this->getFlagAllowableValues();
+         if (!in_array($flag, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -447,7 +447,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($flag)) {
+             throw new \InvalidArgumentException('non-nullable flag cannot be null');
+Index: lib/Model/GetCharactersCharacterIdCalendar200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdCalendar200Ok.php b/lib/Model/GetCharactersCharacterIdCalendar200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdCalendar200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdCalendar200Ok.php	(date 1671456491857)
+@@ -423,7 +423,7 @@
+      */
+     public function setEventResponse($event_response)
+     {
+-        $allowedValues = $this->getEventResponseAllowableValues();
++        /*$allowedValues = $this->getEventResponseAllowableValues();
+         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -432,7 +432,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($event_response)) {
+             throw new \InvalidArgumentException('non-nullable event_response cannot be null');
+Index: lib/Model/GetAlliancesAllianceIdContacts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetAlliancesAllianceIdContacts200Ok.php b/lib/Model/GetAlliancesAllianceIdContacts200Ok.php
+--- a/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(date 1671456491817)
+@@ -400,7 +400,7 @@
+      */
+     public function setContactType($contact_type)
+     {
+-        $allowedValues = $this->getContactTypeAllowableValues();
++        /*$allowedValues = $this->getContactTypeAllowableValues();
+         if (!in_array($contact_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -409,7 +409,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($contact_type)) {
+             throw new \InvalidArgumentException('non-nullable contact_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdOrders200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdOrders200Ok.php b/lib/Model/GetCharactersCharacterIdOrders200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdOrders200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdOrders200Ok.php	(date 1671456492069)
+@@ -738,7 +738,7 @@
+      */
+     public function setRange($range)
+     {
+-        $allowedValues = $this->getRangeAllowableValues();
++        /*$allowedValues = $this->getRangeAllowableValues();
+         if (!in_array($range, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -747,7 +747,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($range)) {
+             throw new \InvalidArgumentException('non-nullable range cannot be null');
+Index: lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php b/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php	(date 1671456491869)
+@@ -373,7 +373,7 @@
+      */
+     public function setEventResponse($event_response)
+     {
+-        $allowedValues = $this->getEventResponseAllowableValues();
++        /*$allowedValues = $this->getEventResponseAllowableValues();
+         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -382,7 +382,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($event_response)) {
+             throw new \InvalidArgumentException('non-nullable event_response cannot be null');
+Index: lib/Model/GetCharactersCharacterIdContracts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdContracts200Ok.php b/lib/Model/GetCharactersCharacterIdContracts200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdContracts200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdContracts200Ok.php	(date 1671456491929)
+@@ -645,7 +645,7 @@
+      */
+     public function setAvailability($availability)
+     {
+-        $allowedValues = $this->getAvailabilityAllowableValues();
++        /*$allowedValues = $this->getAvailabilityAllowableValues();
+         if (!in_array($availability, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -654,7 +654,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($availability)) {
+             throw new \InvalidArgumentException('non-nullable availability cannot be null');
+@@ -1119,7 +1119,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1128,7 +1128,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($status)) {
+             throw new \InvalidArgumentException('non-nullable status cannot be null');
+@@ -1187,7 +1187,7 @@
+      */
+     public function setType($type)
+     {
+-        $allowedValues = $this->getTypeAllowableValues();
++        /*$allowedValues = $this->getTypeAllowableValues();
+         if (!in_array($type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1196,7 +1196,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($type)) {
+             throw new \InvalidArgumentException('non-nullable type cannot be null');
+Index: lib/Model/PostFleetsFleetIdMembersInvitation.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostFleetsFleetIdMembersInvitation.php b/lib/Model/PostFleetsFleetIdMembersInvitation.php
+--- a/lib/Model/PostFleetsFleetIdMembersInvitation.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/PostFleetsFleetIdMembersInvitation.php	(date 1671456492481)
+@@ -401,7 +401,7 @@
+      */
+     public function setRole($role)
+     {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -410,7 +410,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($role)) {
+             throw new \InvalidArgumentException('non-nullable role cannot be null');
+Index: lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php b/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdWalletJournal200Ok.php	(date 1671456492121)
+@@ -822,7 +822,7 @@
+      */
+     public function setContextIdType($context_id_type)
+     {
+-        $allowedValues = $this->getContextIdTypeAllowableValues();
++        /*$allowedValues = $this->getContextIdTypeAllowableValues();
+         if (!is_null($context_id_type) && !in_array($context_id_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -831,7 +831,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($context_id_type)) {
+             throw new \InvalidArgumentException('non-nullable context_id_type cannot be null');
+@@ -1006,7 +1006,7 @@
+      */
+     public function setRefType($ref_type)
+     {
+-        $allowedValues = $this->getRefTypeAllowableValues();
++        /*$allowedValues = $this->getRefTypeAllowableValues();
+         if (!in_array($ref_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1015,7 +1015,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($ref_type)) {
+             throw new \InvalidArgumentException('non-nullable ref_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdMedals200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdMedals200Ok.php b/lib/Model/GetCharactersCharacterIdMedals200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(date 1671456492021)
+@@ -634,7 +634,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -643,7 +643,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($status)) {
+             throw new \InvalidArgumentException('non-nullable status cannot be null');
+Index: lib/Model/PostCharactersCharacterIdMailLabelsLabel.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php b/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php
+--- a/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/PostCharactersCharacterIdMailLabelsLabel.php	(date 1671456492461)
+@@ -383,7 +383,7 @@
+      */
+     public function setColor($color)
+     {
+-        $allowedValues = $this->getColorAllowableValues();
++        /*$allowedValues = $this->getColorAllowableValues();
+         if (!is_null($color) && !in_array($color, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -392,7 +392,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($color)) {
+             throw new \InvalidArgumentException('non-nullable color cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php b/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdCustomsOffices200Ok.php	(date 1671456492221)
+@@ -799,7 +799,7 @@
+      */
+     public function setStandingLevel($standing_level)
+     {
+-        $allowedValues = $this->getStandingLevelAllowableValues();
++        /*$allowedValues = $this->getStandingLevelAllowableValues();
+         if (!is_null($standing_level) && !in_array($standing_level, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -808,7 +808,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($standing_level)) {
+             throw new \InvalidArgumentException('non-nullable standing_level cannot be null');
+Index: lib/Model/GetCharactersCharacterIdClonesJumpClone.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php
+--- a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(date 1671456491905)
+@@ -468,7 +468,7 @@
+      */
+     public function setLocationType($location_type)
+     {
+-        $allowedValues = $this->getLocationTypeAllowableValues();
++        /*$allowedValues = $this->getLocationTypeAllowableValues();
+         if (!in_array($location_type, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -477,7 +477,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($location_type)) {
+             throw new \InvalidArgumentException('non-nullable location_type cannot be null');
+Index: lib/Model/GetCharactersCharacterIdMailLabelsLabel.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php b/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php
+--- a/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdMailLabelsLabel.php	(date 1671456491989)
+@@ -398,7 +398,7 @@
+      */
+     public function setColor($color)
+     {
+-        $allowedValues = $this->getColorAllowableValues();
++        /*$allowedValues = $this->getColorAllowableValues();
+         if (!is_null($color) && !in_array($color, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -407,7 +407,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($color)) {
+             throw new \InvalidArgumentException('non-nullable color cannot be null');
+Index: lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php b/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCharactersCharacterIdIndustryJobs200Ok.php	(date 1671456491977)
+@@ -1110,7 +1110,7 @@
+      */
+     public function setStatus($status)
+     {
+-        $allowedValues = $this->getStatusAllowableValues();
++        /*$allowedValues = $this->getStatusAllowableValues();
+         if (!in_array($status, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1119,7 +1119,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($status)) {
+             throw new \InvalidArgumentException('non-nullable status cannot be null');
+Index: lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php b/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php
+--- a/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/PutFleetsFleetIdMembersMemberIdMovement.php	(date 1671456492509)
+@@ -362,7 +362,7 @@
+      */
+     public function setRole($role)
+     {
+-        $allowedValues = $this->getRoleAllowableValues();
++        /*$allowedValues = $this->getRoleAllowableValues();
+         if (!in_array($role, $allowedValues, true)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -371,7 +371,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (is_null($role)) {
+             throw new \InvalidArgumentException('non-nullable role cannot be null');
+Index: lib/Model/GetCorporationsCorporationIdRoles200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdRoles200Ok.php b/lib/Model/GetCorporationsCorporationIdRoles200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdRoles200Ok.php	(revision 7355b5d3ba122c2bc0eec573e87517a8ee232631)
++++ b/lib/Model/GetCorporationsCorporationIdRoles200Ok.php	(date 1671456935716)
+@@ -1285,7 +1285,7 @@
+      */
+     public function setGrantableRoles($grantable_roles)
+     {
+-        $allowedValues = $this->getGrantableRolesAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAllowableValues();
+         if (!is_null($grantable_roles) && array_diff($grantable_roles, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1293,7 +1293,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles) && (count($grantable_roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
+@@ -1327,7 +1327,7 @@
+      */
+     public function setGrantableRolesAtBase($grantable_roles_at_base)
+     {
+-        $allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
+         if (!is_null($grantable_roles_at_base) && array_diff($grantable_roles_at_base, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1335,7 +1335,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles_at_base) && (count($grantable_roles_at_base) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
+@@ -1369,7 +1369,7 @@
+      */
+     public function setGrantableRolesAtHq($grantable_roles_at_hq)
+     {
+-        $allowedValues = $this->getGrantableRolesAtHqAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAtHqAllowableValues();
+         if (!is_null($grantable_roles_at_hq) && array_diff($grantable_roles_at_hq, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1377,7 +1377,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles_at_hq) && (count($grantable_roles_at_hq) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
+@@ -1411,7 +1411,7 @@
+      */
+     public function setGrantableRolesAtOther($grantable_roles_at_other)
+     {
+-        $allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
++        /*$allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
+         if (!is_null($grantable_roles_at_other) && array_diff($grantable_roles_at_other, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1419,7 +1419,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($grantable_roles_at_other) && (count($grantable_roles_at_other) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
+@@ -1453,7 +1453,7 @@
+      */
+     public function setRoles($roles)
+     {
+-        $allowedValues = $this->getRolesAllowableValues();
++        /*$allowedValues = $this->getRolesAllowableValues();
+         if (!is_null($roles) && array_diff($roles, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1461,7 +1461,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles) && (count($roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
+@@ -1495,7 +1495,7 @@
+      */
+     public function setRolesAtBase($roles_at_base)
+     {
+-        $allowedValues = $this->getRolesAtBaseAllowableValues();
++        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
+         if (!is_null($roles_at_base) && array_diff($roles_at_base, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1503,7 +1503,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_base) && (count($roles_at_base) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
+@@ -1537,7 +1537,7 @@
+      */
+     public function setRolesAtHq($roles_at_hq)
+     {
+-        $allowedValues = $this->getRolesAtHqAllowableValues();
++        /*$allowedValues = $this->getRolesAtHqAllowableValues();
+         if (!is_null($roles_at_hq) && array_diff($roles_at_hq, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1545,7 +1545,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_hq) && (count($roles_at_hq) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');
+@@ -1579,7 +1579,7 @@
+      */
+     public function setRolesAtOther($roles_at_other)
+     {
+-        $allowedValues = $this->getRolesAtOtherAllowableValues();
++        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
+         if (!is_null($roles_at_other) && array_diff($roles_at_other, $allowedValues)) {
+             throw new \InvalidArgumentException(
+                 sprintf(
+@@ -1587,7 +1587,7 @@
+                     implode("', '", $allowedValues)
+                 )
+             );
+-        }
++        }*/
+ 
+         if (!is_null($roles_at_other) && (count($roles_at_other) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 50.');

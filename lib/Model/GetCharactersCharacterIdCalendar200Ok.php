@@ -423,7 +423,7 @@ class GetCharactersCharacterIdCalendar200Ok implements ModelInterface, ArrayAcce
      */
     public function setEventResponse($event_response)
     {
-        $allowedValues = $this->getEventResponseAllowableValues();
+        /*$allowedValues = $this->getEventResponseAllowableValues();
         if (!is_null($event_response) && !in_array($event_response, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -432,7 +432,7 @@ class GetCharactersCharacterIdCalendar200Ok implements ModelInterface, ArrayAcce
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($event_response)) {
             throw new \InvalidArgumentException('non-nullable event_response cannot be null');

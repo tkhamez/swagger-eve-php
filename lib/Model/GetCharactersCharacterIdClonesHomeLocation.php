@@ -369,7 +369,7 @@ class GetCharactersCharacterIdClonesHomeLocation implements ModelInterface, Arra
      */
     public function setLocationType($location_type)
     {
-        $allowedValues = $this->getLocationTypeAllowableValues();
+        /*$allowedValues = $this->getLocationTypeAllowableValues();
         if (!is_null($location_type) && !in_array($location_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -378,7 +378,7 @@ class GetCharactersCharacterIdClonesHomeLocation implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($location_type)) {
             throw new \InvalidArgumentException('non-nullable location_type cannot be null');

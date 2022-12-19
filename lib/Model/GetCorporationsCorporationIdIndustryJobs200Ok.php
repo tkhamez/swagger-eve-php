@@ -1110,7 +1110,7 @@ class GetCorporationsCorporationIdIndustryJobs200Ok implements ModelInterface, A
      */
     public function setStatus($status)
     {
-        $allowedValues = $this->getStatusAllowableValues();
+        /*$allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1119,7 +1119,7 @@ class GetCorporationsCorporationIdIndustryJobs200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');

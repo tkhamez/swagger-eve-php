@@ -387,7 +387,7 @@ class GetCorporationsCorporationIdStandings200Ok implements ModelInterface, Arra
      */
     public function setFromType($from_type)
     {
-        $allowedValues = $this->getFromTypeAllowableValues();
+        /*$allowedValues = $this->getFromTypeAllowableValues();
         if (!in_array($from_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -396,7 +396,7 @@ class GetCorporationsCorporationIdStandings200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($from_type)) {
             throw new \InvalidArgumentException('non-nullable from_type cannot be null');

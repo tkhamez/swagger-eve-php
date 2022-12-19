@@ -659,7 +659,7 @@ class GetMarketsStructuresStructureId200Ok implements ModelInterface, ArrayAcces
      */
     public function setRange($range)
     {
-        $allowedValues = $this->getRangeAllowableValues();
+        /*$allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -668,7 +668,7 @@ class GetMarketsStructuresStructureId200Ok implements ModelInterface, ArrayAcces
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($range)) {
             throw new \InvalidArgumentException('non-nullable range cannot be null');

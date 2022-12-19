@@ -669,7 +669,7 @@ class GetMarketsRegionIdOrders200Ok implements ModelInterface, ArrayAccess, \Jso
      */
     public function setRange($range)
     {
-        $allowedValues = $this->getRangeAllowableValues();
+        /*$allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -678,7 +678,7 @@ class GetMarketsRegionIdOrders200Ok implements ModelInterface, ArrayAccess, \Jso
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($range)) {
             throw new \InvalidArgumentException('non-nullable range cannot be null');

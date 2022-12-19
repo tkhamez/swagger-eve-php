@@ -725,7 +725,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
      */
     public function setAction($action)
     {
-        $allowedValues = $this->getActionAllowableValues();
+        /*$allowedValues = $this->getActionAllowableValues();
         if (!in_array($action, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -734,7 +734,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($action)) {
             throw new \InvalidArgumentException('non-nullable action cannot be null');
@@ -851,7 +851,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
      */
     public function setLocationFlag($location_flag)
     {
-        $allowedValues = $this->getLocationFlagAllowableValues();
+        /*$allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -860,7 +860,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
@@ -1006,7 +1006,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
      */
     public function setPasswordType($password_type)
     {
-        $allowedValues = $this->getPasswordTypeAllowableValues();
+        /*$allowedValues = $this->getPasswordTypeAllowableValues();
         if (!is_null($password_type) && !in_array($password_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1015,7 +1015,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if (is_null($password_type)) {
             throw new \InvalidArgumentException('non-nullable password_type cannot be null');
