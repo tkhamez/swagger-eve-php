@@ -1,15 +1,15 @@
 # Swagger\Client\Eve\AssetsApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCharactersCharacterIdAssets()**](AssetsApi.md#getCharactersCharacterIdAssets) | **GET** /v5/characters/{character_id}/assets/ | Get character assets
-[**getCorporationsCorporationIdAssets()**](AssetsApi.md#getCorporationsCorporationIdAssets) | **GET** /v5/corporations/{corporation_id}/assets/ | Get corporation assets
-[**postCharactersCharacterIdAssetsLocations()**](AssetsApi.md#postCharactersCharacterIdAssetsLocations) | **POST** /v2/characters/{character_id}/assets/locations/ | Get character asset locations
-[**postCharactersCharacterIdAssetsNames()**](AssetsApi.md#postCharactersCharacterIdAssetsNames) | **POST** /v1/characters/{character_id}/assets/names/ | Get character asset names
-[**postCorporationsCorporationIdAssetsLocations()**](AssetsApi.md#postCorporationsCorporationIdAssetsLocations) | **POST** /v2/corporations/{corporation_id}/assets/locations/ | Get corporation asset locations
-[**postCorporationsCorporationIdAssetsNames()**](AssetsApi.md#postCorporationsCorporationIdAssetsNames) | **POST** /v1/corporations/{corporation_id}/assets/names/ | Get corporation asset names
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCharactersCharacterIdAssets()**](AssetsApi.md#getCharactersCharacterIdAssets) | **GET** /v5/characters/{character_id}/assets/ | Get character assets |
+| [**getCorporationsCorporationIdAssets()**](AssetsApi.md#getCorporationsCorporationIdAssets) | **GET** /v5/corporations/{corporation_id}/assets/ | Get corporation assets |
+| [**postCharactersCharacterIdAssetsLocations()**](AssetsApi.md#postCharactersCharacterIdAssetsLocations) | **POST** /v2/characters/{character_id}/assets/locations/ | Get character asset locations |
+| [**postCharactersCharacterIdAssetsNames()**](AssetsApi.md#postCharactersCharacterIdAssetsNames) | **POST** /v1/characters/{character_id}/assets/names/ | Get character asset names |
+| [**postCorporationsCorporationIdAssetsLocations()**](AssetsApi.md#postCorporationsCorporationIdAssetsLocations) | **POST** /v2/corporations/{corporation_id}/assets/locations/ | Get corporation asset locations |
+| [**postCorporationsCorporationIdAssetsNames()**](AssetsApi.md#postCorporationsCorporationIdAssetsNames) | **POST** /v1/corporations/{corporation_id}/assets/names/ | Get corporation asset names |
 
 
 ## `getCharactersCharacterIdAssets()`
@@ -55,13 +55,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -123,13 +123,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -190,12 +190,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **item_ids** | [**int[]**](../Model/int.md)| A list of item ids | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -256,12 +256,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **item_ids** | [**int[]**](../Model/int.md)| A list of item ids | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -322,12 +322,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **item_ids** | [**int[]**](../Model/int.md)| A list of item ids | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -388,12 +388,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **item_ids** | [**int[]**](../Model/int.md)| A list of item ids |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **item_ids** | [**int[]**](../Model/int.md)| A list of item ids | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 

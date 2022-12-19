@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**average** | **double** | average number |
+**average** | **float** | average number |
 **date** | **\DateTime** | The date of this historical statistic entry |
-**highest** | **double** | highest number |
-**lowest** | **double** | lowest number |
+**highest** | **float** | highest number |
+**lowest** | **float** | lowest number |
 **order_count** | **int** | Total number of orders happened that day |
 **volume** | **int** | Total |
 

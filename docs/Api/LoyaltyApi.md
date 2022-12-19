@@ -1,11 +1,11 @@
 # Swagger\Client\Eve\LoyaltyApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCharactersCharacterIdLoyaltyPoints()**](LoyaltyApi.md#getCharactersCharacterIdLoyaltyPoints) | **GET** /v1/characters/{character_id}/loyalty/points/ | Get loyalty points
-[**getLoyaltyStoresCorporationIdOffers()**](LoyaltyApi.md#getLoyaltyStoresCorporationIdOffers) | **GET** /v1/loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCharactersCharacterIdLoyaltyPoints()**](LoyaltyApi.md#getCharactersCharacterIdLoyaltyPoints) | **GET** /v1/characters/{character_id}/loyalty/points/ | Get loyalty points |
+| [**getLoyaltyStoresCorporationIdOffers()**](LoyaltyApi.md#getLoyaltyStoresCorporationIdOffers) | **GET** /v1/loyalty/stores/{corporation_id}/offers/ | List loyalty store offers |
 
 
 ## `getCharactersCharacterIdLoyaltyPoints()`
@@ -50,12 +50,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -111,11 +111,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 

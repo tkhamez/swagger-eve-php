@@ -1,23 +1,23 @@
 # Swagger\Client\Eve\CharacterApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCharactersCharacterId()**](CharacterApi.md#getCharactersCharacterId) | **GET** /v5/characters/{character_id}/ | Get character&#39;s public information
-[**getCharactersCharacterIdAgentsResearch()**](CharacterApi.md#getCharactersCharacterIdAgentsResearch) | **GET** /v2/characters/{character_id}/agents_research/ | Get agents research
-[**getCharactersCharacterIdBlueprints()**](CharacterApi.md#getCharactersCharacterIdBlueprints) | **GET** /v3/characters/{character_id}/blueprints/ | Get blueprints
-[**getCharactersCharacterIdCorporationhistory()**](CharacterApi.md#getCharactersCharacterIdCorporationhistory) | **GET** /v2/characters/{character_id}/corporationhistory/ | Get corporation history
-[**getCharactersCharacterIdFatigue()**](CharacterApi.md#getCharactersCharacterIdFatigue) | **GET** /v2/characters/{character_id}/fatigue/ | Get jump fatigue
-[**getCharactersCharacterIdMedals()**](CharacterApi.md#getCharactersCharacterIdMedals) | **GET** /v2/characters/{character_id}/medals/ | Get medals
-[**getCharactersCharacterIdNotifications()**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /v5/characters/{character_id}/notifications/ | Get character notifications
-[**getCharactersCharacterIdNotificationsContacts()**](CharacterApi.md#getCharactersCharacterIdNotificationsContacts) | **GET** /v2/characters/{character_id}/notifications/contacts/ | Get new contact notifications
-[**getCharactersCharacterIdPortrait()**](CharacterApi.md#getCharactersCharacterIdPortrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits
-[**getCharactersCharacterIdRoles()**](CharacterApi.md#getCharactersCharacterIdRoles) | **GET** /v3/characters/{character_id}/roles/ | Get character corporation roles
-[**getCharactersCharacterIdStandings()**](CharacterApi.md#getCharactersCharacterIdStandings) | **GET** /v2/characters/{character_id}/standings/ | Get standings
-[**getCharactersCharacterIdTitles()**](CharacterApi.md#getCharactersCharacterIdTitles) | **GET** /v2/characters/{character_id}/titles/ | Get character corporation titles
-[**postCharactersAffiliation()**](CharacterApi.md#postCharactersAffiliation) | **POST** /v2/characters/affiliation/ | Character affiliation
-[**postCharactersCharacterIdCspa()**](CharacterApi.md#postCharactersCharacterIdCspa) | **POST** /v5/characters/{character_id}/cspa/ | Calculate a CSPA charge cost
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCharactersCharacterId()**](CharacterApi.md#getCharactersCharacterId) | **GET** /v5/characters/{character_id}/ | Get character&#39;s public information |
+| [**getCharactersCharacterIdAgentsResearch()**](CharacterApi.md#getCharactersCharacterIdAgentsResearch) | **GET** /v2/characters/{character_id}/agents_research/ | Get agents research |
+| [**getCharactersCharacterIdBlueprints()**](CharacterApi.md#getCharactersCharacterIdBlueprints) | **GET** /v3/characters/{character_id}/blueprints/ | Get blueprints |
+| [**getCharactersCharacterIdCorporationhistory()**](CharacterApi.md#getCharactersCharacterIdCorporationhistory) | **GET** /v2/characters/{character_id}/corporationhistory/ | Get corporation history |
+| [**getCharactersCharacterIdFatigue()**](CharacterApi.md#getCharactersCharacterIdFatigue) | **GET** /v2/characters/{character_id}/fatigue/ | Get jump fatigue |
+| [**getCharactersCharacterIdMedals()**](CharacterApi.md#getCharactersCharacterIdMedals) | **GET** /v2/characters/{character_id}/medals/ | Get medals |
+| [**getCharactersCharacterIdNotifications()**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /v5/characters/{character_id}/notifications/ | Get character notifications |
+| [**getCharactersCharacterIdNotificationsContacts()**](CharacterApi.md#getCharactersCharacterIdNotificationsContacts) | **GET** /v2/characters/{character_id}/notifications/contacts/ | Get new contact notifications |
+| [**getCharactersCharacterIdPortrait()**](CharacterApi.md#getCharactersCharacterIdPortrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits |
+| [**getCharactersCharacterIdRoles()**](CharacterApi.md#getCharactersCharacterIdRoles) | **GET** /v3/characters/{character_id}/roles/ | Get character corporation roles |
+| [**getCharactersCharacterIdStandings()**](CharacterApi.md#getCharactersCharacterIdStandings) | **GET** /v2/characters/{character_id}/standings/ | Get standings |
+| [**getCharactersCharacterIdTitles()**](CharacterApi.md#getCharactersCharacterIdTitles) | **GET** /v2/characters/{character_id}/titles/ | Get character corporation titles |
+| [**postCharactersAffiliation()**](CharacterApi.md#postCharactersAffiliation) | **POST** /v2/characters/affiliation/ | Character affiliation |
+| [**postCharactersCharacterIdCspa()**](CharacterApi.md#postCharactersCharacterIdCspa) | **POST** /v5/characters/{character_id}/cspa/ | Calculate a CSPA charge cost |
 
 
 ## `getCharactersCharacterId()`
@@ -57,11 +57,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 
@@ -122,12 +122,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -189,13 +189,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -251,11 +251,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 
@@ -316,12 +316,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -382,12 +382,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -448,12 +448,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -514,12 +514,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -575,11 +575,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 
@@ -640,12 +640,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -706,12 +706,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -772,12 +772,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -832,10 +832,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **characters** | [**int[]**](../Model/int.md)| The character IDs to fetch affiliations for. All characters must exist, or none will be returned |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **characters** | [**int[]**](../Model/int.md)| The character IDs to fetch affiliations for. All characters must exist, or none will be returned | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
 
 ### Return type
 
@@ -896,12 +896,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **characters** | [**int[]**](../Model/int.md)| The target characters to calculate the charge for |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **characters** | [**int[]**](../Model/int.md)| The target characters to calculate the charge for | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 

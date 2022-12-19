@@ -1,13 +1,13 @@
 # Swagger\Client\Eve\CalendarApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCharactersCharacterIdCalendar()**](CalendarApi.md#getCharactersCharacterIdCalendar) | **GET** /v1/characters/{character_id}/calendar/ | List calendar event summaries
-[**getCharactersCharacterIdCalendarEventId()**](CalendarApi.md#getCharactersCharacterIdCalendarEventId) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event
-[**getCharactersCharacterIdCalendarEventIdAttendees()**](CalendarApi.md#getCharactersCharacterIdCalendarEventIdAttendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
-[**putCharactersCharacterIdCalendarEventId()**](CalendarApi.md#putCharactersCharacterIdCalendarEventId) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCharactersCharacterIdCalendar()**](CalendarApi.md#getCharactersCharacterIdCalendar) | **GET** /v1/characters/{character_id}/calendar/ | List calendar event summaries |
+| [**getCharactersCharacterIdCalendarEventId()**](CalendarApi.md#getCharactersCharacterIdCalendarEventId) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event |
+| [**getCharactersCharacterIdCalendarEventIdAttendees()**](CalendarApi.md#getCharactersCharacterIdCalendarEventIdAttendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees |
+| [**putCharactersCharacterIdCalendarEventId()**](CalendarApi.md#putCharactersCharacterIdCalendarEventId) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event |
 
 
 ## `getCharactersCharacterIdCalendar()`
@@ -53,13 +53,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **from_event** | **int**| The event ID to retrieve events from | [optional]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **from_event** | **int**| The event ID to retrieve events from | [optional] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -121,13 +121,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **event_id** | **int**| The id of the event requested |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **event_id** | **int**| The id of the event requested | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -189,13 +189,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **event_id** | **int**| The id of the event requested |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **event_id** | **int**| The id of the event requested | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -256,13 +256,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **event_id** | **int**| The ID of the event requested |
- **response** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)| The response value to set, overriding current value |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **event_id** | **int**| The ID of the event requested | |
+| **response** | [**\Swagger\Client\Eve\Model\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)| The response value to set, overriding current value | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 

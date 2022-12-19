@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\KillmailsApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCharactersCharacterIdKillmailsRecent()**](KillmailsApi.md#getCharactersCharacterIdKillmailsRecent) | **GET** /v1/characters/{character_id}/killmails/recent/ | Get a character&#39;s recent kills and losses
-[**getCorporationsCorporationIdKillmailsRecent()**](KillmailsApi.md#getCorporationsCorporationIdKillmailsRecent) | **GET** /v1/corporations/{corporation_id}/killmails/recent/ | Get a corporation&#39;s recent kills and losses
-[**getKillmailsKillmailIdKillmailHash()**](KillmailsApi.md#getKillmailsKillmailIdKillmailHash) | **GET** /v1/killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCharactersCharacterIdKillmailsRecent()**](KillmailsApi.md#getCharactersCharacterIdKillmailsRecent) | **GET** /v1/characters/{character_id}/killmails/recent/ | Get a character&#39;s recent kills and losses |
+| [**getCorporationsCorporationIdKillmailsRecent()**](KillmailsApi.md#getCorporationsCorporationIdKillmailsRecent) | **GET** /v1/corporations/{corporation_id}/killmails/recent/ | Get a corporation&#39;s recent kills and losses |
+| [**getKillmailsKillmailIdKillmailHash()**](KillmailsApi.md#getKillmailsKillmailIdKillmailHash) | **GET** /v1/killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail |
 
 
 ## `getCharactersCharacterIdKillmailsRecent()`
@@ -52,13 +52,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -120,13 +120,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -183,12 +183,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **killmail_hash** | **string**| The killmail hash for verification |
- **killmail_id** | **int**| The killmail ID to be queried |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **killmail_hash** | **string**| The killmail hash for verification | |
+| **killmail_id** | **int**| The killmail ID to be queried | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 

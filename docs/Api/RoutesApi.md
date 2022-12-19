@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\RoutesApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getRouteOriginDestination()**](RoutesApi.md#getRouteOriginDestination) | **GET** /v1/route/{origin}/{destination}/ | Get route
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getRouteOriginDestination()**](RoutesApi.md#getRouteOriginDestination) | **GET** /v1/route/{origin}/{destination}/ | Get route |
 
 
 ## `getRouteOriginDestination()`
@@ -48,15 +48,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **destination** | **int**| destination solar system ID |
- **origin** | **int**| origin solar system ID |
- **avoid** | [**int[]**](../Model/int.md)| avoid solar system ID(s) | [optional]
- **connections** | [**int[][]**](../Model/int[].md)| connected solar system pairs | [optional]
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **flag** | **string**| route security preference | [optional] [default to &#39;shortest&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **destination** | **int**| destination solar system ID | |
+| **origin** | **int**| origin solar system ID | |
+| **avoid** | [**int[]**](../Model/int.md)| avoid solar system ID(s) | [optional] |
+| **connections** | [**int[][]**](../Model/int[].md)| connected solar system pairs | [optional] |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **flag** | **string**| route security preference | [optional] [default to &#39;shortest&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 

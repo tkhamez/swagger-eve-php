@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\WarsApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getWars()**](WarsApi.md#getWars) | **GET** /v1/wars/ | List wars
-[**getWarsWarId()**](WarsApi.md#getWarsWarId) | **GET** /v1/wars/{war_id}/ | Get war information
-[**getWarsWarIdKillmails()**](WarsApi.md#getWarsWarIdKillmails) | **GET** /v1/wars/{war_id}/killmails/ | List kills for a war
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getWars()**](WarsApi.md#getWars) | **GET** /v1/wars/ | List wars |
+| [**getWarsWarId()**](WarsApi.md#getWarsWarId) | **GET** /v1/wars/{war_id}/ | Get war information |
+| [**getWarsWarIdKillmails()**](WarsApi.md#getWarsWarIdKillmails) | **GET** /v1/wars/{war_id}/killmails/ | List kills for a war |
 
 
 ## `getWars()`
@@ -46,11 +46,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **max_war_id** | **int**| Only return wars with ID smaller than this | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **max_war_id** | **int**| Only return wars with ID smaller than this | [optional] |
 
 ### Return type
 
@@ -106,11 +106,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **war_id** | **int**| ID for a war |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **war_id** | **int**| ID for a war | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 
@@ -167,12 +167,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **war_id** | **int**| A valid war ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **war_id** | **int**| A valid war ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
 
 ### Return type
 

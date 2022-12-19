@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\FittingsApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteCharactersCharacterIdFittingsFittingId()**](FittingsApi.md#deleteCharactersCharacterIdFittingsFittingId) | **DELETE** /v1/characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
-[**getCharactersCharacterIdFittings()**](FittingsApi.md#getCharactersCharacterIdFittings) | **GET** /v2/characters/{character_id}/fittings/ | Get fittings
-[**postCharactersCharacterIdFittings()**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v2/characters/{character_id}/fittings/ | Create fitting
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**deleteCharactersCharacterIdFittingsFittingId()**](FittingsApi.md#deleteCharactersCharacterIdFittingsFittingId) | **DELETE** /v1/characters/{character_id}/fittings/{fitting_id}/ | Delete fitting |
+| [**getCharactersCharacterIdFittings()**](FittingsApi.md#getCharactersCharacterIdFittings) | **GET** /v2/characters/{character_id}/fittings/ | Get fittings |
+| [**postCharactersCharacterIdFittings()**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v2/characters/{character_id}/fittings/ | Create fitting |
 
 
 ## `deleteCharactersCharacterIdFittingsFittingId()`
@@ -50,12 +50,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **fitting_id** | **int**| ID for a fitting of this character |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **fitting_id** | **int**| ID for a fitting of this character | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -116,12 +116,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -182,12 +182,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **fitting** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **fitting** | [**\Swagger\Client\Eve\Model\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 

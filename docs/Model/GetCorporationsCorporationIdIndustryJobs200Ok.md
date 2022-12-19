@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **blueprint_type_id** | **int** | blueprint_type_id integer |
 **completed_character_id** | **int** | ID of the character which completed this job | [optional]
 **completed_date** | **\DateTime** | Date and time when this job was completed | [optional]
-**cost** | **double** | The sume of job installation fee and industry facility tax | [optional]
+**cost** | **float** | The sume of job installation fee and industry facility tax | [optional]
 **duration** | **int** | Job duration in seconds |
 **end_date** | **\DateTime** | Date and time when this job finished |
 **facility_id** | **int** | ID of the facility where this job is running |

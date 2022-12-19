@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\IncursionsApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getIncursions()**](IncursionsApi.md#getIncursions) | **GET** /v1/incursions/ | List incursions
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getIncursions()**](IncursionsApi.md#getIncursions) | **GET** /v1/incursions/ | List incursions |
 
 
 ## `getIncursions()`
@@ -43,10 +43,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 

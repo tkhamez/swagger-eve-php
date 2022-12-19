@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\SearchApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCharactersCharacterIdSearch()**](SearchApi.md#getCharactersCharacterIdSearch) | **GET** /v3/characters/{character_id}/search/ | Search on a string
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCharactersCharacterIdSearch()**](SearchApi.md#getCharactersCharacterIdSearch) | **GET** /v3/characters/{character_id}/search/ | Search on a string |
 
 
 ## `getCharactersCharacterIdSearch()`
@@ -54,17 +54,17 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **categories** | [**string[]**](../Model/string.md)| Type of entities to search for |
- **character_id** | **int**| An EVE character ID |
- **search** | **string**| The string to search on |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
- **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **categories** | [**string[]**](../Model/string.md)| Type of entities to search for | |
+| **character_id** | **int**| An EVE character ID | |
+| **search** | **string**| The string to search on | |
+| **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;] |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;] |
+| **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 

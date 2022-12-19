@@ -1,18 +1,18 @@
 # Swagger\Client\Eve\ContactsApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteCharactersCharacterIdContacts()**](ContactsApi.md#deleteCharactersCharacterIdContacts) | **DELETE** /v2/characters/{character_id}/contacts/ | Delete contacts
-[**getAlliancesAllianceIdContacts()**](ContactsApi.md#getAlliancesAllianceIdContacts) | **GET** /v2/alliances/{alliance_id}/contacts/ | Get alliance contacts
-[**getAlliancesAllianceIdContactsLabels()**](ContactsApi.md#getAlliancesAllianceIdContactsLabels) | **GET** /v1/alliances/{alliance_id}/contacts/labels/ | Get alliance contact labels
-[**getCharactersCharacterIdContacts()**](ContactsApi.md#getCharactersCharacterIdContacts) | **GET** /v2/characters/{character_id}/contacts/ | Get contacts
-[**getCharactersCharacterIdContactsLabels()**](ContactsApi.md#getCharactersCharacterIdContactsLabels) | **GET** /v1/characters/{character_id}/contacts/labels/ | Get contact labels
-[**getCorporationsCorporationIdContacts()**](ContactsApi.md#getCorporationsCorporationIdContacts) | **GET** /v2/corporations/{corporation_id}/contacts/ | Get corporation contacts
-[**getCorporationsCorporationIdContactsLabels()**](ContactsApi.md#getCorporationsCorporationIdContactsLabels) | **GET** /v1/corporations/{corporation_id}/contacts/labels/ | Get corporation contact labels
-[**postCharactersCharacterIdContacts()**](ContactsApi.md#postCharactersCharacterIdContacts) | **POST** /v2/characters/{character_id}/contacts/ | Add contacts
-[**putCharactersCharacterIdContacts()**](ContactsApi.md#putCharactersCharacterIdContacts) | **PUT** /v2/characters/{character_id}/contacts/ | Edit contacts
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**deleteCharactersCharacterIdContacts()**](ContactsApi.md#deleteCharactersCharacterIdContacts) | **DELETE** /v2/characters/{character_id}/contacts/ | Delete contacts |
+| [**getAlliancesAllianceIdContacts()**](ContactsApi.md#getAlliancesAllianceIdContacts) | **GET** /v2/alliances/{alliance_id}/contacts/ | Get alliance contacts |
+| [**getAlliancesAllianceIdContactsLabels()**](ContactsApi.md#getAlliancesAllianceIdContactsLabels) | **GET** /v1/alliances/{alliance_id}/contacts/labels/ | Get alliance contact labels |
+| [**getCharactersCharacterIdContacts()**](ContactsApi.md#getCharactersCharacterIdContacts) | **GET** /v2/characters/{character_id}/contacts/ | Get contacts |
+| [**getCharactersCharacterIdContactsLabels()**](ContactsApi.md#getCharactersCharacterIdContactsLabels) | **GET** /v1/characters/{character_id}/contacts/labels/ | Get contact labels |
+| [**getCorporationsCorporationIdContacts()**](ContactsApi.md#getCorporationsCorporationIdContacts) | **GET** /v2/corporations/{corporation_id}/contacts/ | Get corporation contacts |
+| [**getCorporationsCorporationIdContactsLabels()**](ContactsApi.md#getCorporationsCorporationIdContactsLabels) | **GET** /v1/corporations/{corporation_id}/contacts/labels/ | Get corporation contact labels |
+| [**postCharactersCharacterIdContacts()**](ContactsApi.md#postCharactersCharacterIdContacts) | **POST** /v2/characters/{character_id}/contacts/ | Add contacts |
+| [**putCharactersCharacterIdContacts()**](ContactsApi.md#putCharactersCharacterIdContacts) | **PUT** /v2/characters/{character_id}/contacts/ | Edit contacts |
 
 
 ## `deleteCharactersCharacterIdContacts()`
@@ -56,12 +56,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **contact_ids** | [**int[]**](../Model/int.md)| A list of contacts to delete |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **contact_ids** | [**int[]**](../Model/int.md)| A list of contacts to delete | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -123,13 +123,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **alliance_id** | **int**| An EVE alliance ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **alliance_id** | **int**| An EVE alliance ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -190,12 +190,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **alliance_id** | **int**| An EVE alliance ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **alliance_id** | **int**| An EVE alliance ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -257,13 +257,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -324,12 +324,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -391,13 +391,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -458,12 +458,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -527,15 +527,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **standing** | **float**| Standing for the contact |
- **contact_ids** | [**int[]**](../Model/int.md)| A list of contacts |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **label_ids** | [**int[]**](../Model/int.md)| Add custom labels to the new contact | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
- **watched** | **bool**| Whether the contact should be watched, note this is only effective on characters | [optional] [default to false]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **standing** | **float**| Standing for the contact | |
+| **contact_ids** | [**int[]**](../Model/int.md)| A list of contacts | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **label_ids** | [**int[]**](../Model/int.md)| Add custom labels to the new contact | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
+| **watched** | **bool**| Whether the contact should be watched, note this is only effective on characters | [optional] [default to false] |
 
 ### Return type
 
@@ -598,15 +598,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID |
- **standing** | **float**| Standing for the contact |
- **contact_ids** | [**int[]**](../Model/int.md)| A list of contacts |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **label_ids** | [**int[]**](../Model/int.md)| Add custom labels to the contact | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
- **watched** | **bool**| Whether the contact should be watched, note this is only effective on characters | [optional] [default to false]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **character_id** | **int**| An EVE character ID | |
+| **standing** | **float**| Standing for the contact | |
+| **contact_ids** | [**int[]**](../Model/int.md)| A list of contacts | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **label_ids** | [**int[]**](../Model/int.md)| Add custom labels to the contact | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
+| **watched** | **bool**| Whether the contact should be watched, note this is only effective on characters | [optional] [default to false] |
 
 ### Return type
 

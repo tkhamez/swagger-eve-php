@@ -1,31 +1,31 @@
 # Swagger\Client\Eve\CorporationApi
 
-All URIs are relative to https://esi.evetech.net.
+All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCorporationsCorporationId()**](CorporationApi.md#getCorporationsCorporationId) | **GET** /v5/corporations/{corporation_id}/ | Get corporation information
-[**getCorporationsCorporationIdAlliancehistory()**](CorporationApi.md#getCorporationsCorporationIdAlliancehistory) | **GET** /v3/corporations/{corporation_id}/alliancehistory/ | Get alliance history
-[**getCorporationsCorporationIdBlueprints()**](CorporationApi.md#getCorporationsCorporationIdBlueprints) | **GET** /v3/corporations/{corporation_id}/blueprints/ | Get corporation blueprints
-[**getCorporationsCorporationIdContainersLogs()**](CorporationApi.md#getCorporationsCorporationIdContainersLogs) | **GET** /v3/corporations/{corporation_id}/containers/logs/ | Get all corporation ALSC logs
-[**getCorporationsCorporationIdDivisions()**](CorporationApi.md#getCorporationsCorporationIdDivisions) | **GET** /v2/corporations/{corporation_id}/divisions/ | Get corporation divisions
-[**getCorporationsCorporationIdFacilities()**](CorporationApi.md#getCorporationsCorporationIdFacilities) | **GET** /v2/corporations/{corporation_id}/facilities/ | Get corporation facilities
-[**getCorporationsCorporationIdIcons()**](CorporationApi.md#getCorporationsCorporationIdIcons) | **GET** /v2/corporations/{corporation_id}/icons/ | Get corporation icon
-[**getCorporationsCorporationIdMedals()**](CorporationApi.md#getCorporationsCorporationIdMedals) | **GET** /v2/corporations/{corporation_id}/medals/ | Get corporation medals
-[**getCorporationsCorporationIdMedalsIssued()**](CorporationApi.md#getCorporationsCorporationIdMedalsIssued) | **GET** /v2/corporations/{corporation_id}/medals/issued/ | Get corporation issued medals
-[**getCorporationsCorporationIdMembers()**](CorporationApi.md#getCorporationsCorporationIdMembers) | **GET** /v4/corporations/{corporation_id}/members/ | Get corporation members
-[**getCorporationsCorporationIdMembersLimit()**](CorporationApi.md#getCorporationsCorporationIdMembersLimit) | **GET** /v2/corporations/{corporation_id}/members/limit/ | Get corporation member limit
-[**getCorporationsCorporationIdMembersTitles()**](CorporationApi.md#getCorporationsCorporationIdMembersTitles) | **GET** /v2/corporations/{corporation_id}/members/titles/ | Get corporation&#39;s members&#39; titles
-[**getCorporationsCorporationIdMembertracking()**](CorporationApi.md#getCorporationsCorporationIdMembertracking) | **GET** /v2/corporations/{corporation_id}/membertracking/ | Track corporation members
-[**getCorporationsCorporationIdRoles()**](CorporationApi.md#getCorporationsCorporationIdRoles) | **GET** /v2/corporations/{corporation_id}/roles/ | Get corporation member roles
-[**getCorporationsCorporationIdRolesHistory()**](CorporationApi.md#getCorporationsCorporationIdRolesHistory) | **GET** /v2/corporations/{corporation_id}/roles/history/ | Get corporation member roles history
-[**getCorporationsCorporationIdShareholders()**](CorporationApi.md#getCorporationsCorporationIdShareholders) | **GET** /v1/corporations/{corporation_id}/shareholders/ | Get corporation shareholders
-[**getCorporationsCorporationIdStandings()**](CorporationApi.md#getCorporationsCorporationIdStandings) | **GET** /v2/corporations/{corporation_id}/standings/ | Get corporation standings
-[**getCorporationsCorporationIdStarbases()**](CorporationApi.md#getCorporationsCorporationIdStarbases) | **GET** /v2/corporations/{corporation_id}/starbases/ | Get corporation starbases (POSes)
-[**getCorporationsCorporationIdStarbasesStarbaseId()**](CorporationApi.md#getCorporationsCorporationIdStarbasesStarbaseId) | **GET** /v2/corporations/{corporation_id}/starbases/{starbase_id}/ | Get starbase (POS) detail
-[**getCorporationsCorporationIdStructures()**](CorporationApi.md#getCorporationsCorporationIdStructures) | **GET** /v4/corporations/{corporation_id}/structures/ | Get corporation structures
-[**getCorporationsCorporationIdTitles()**](CorporationApi.md#getCorporationsCorporationIdTitles) | **GET** /v2/corporations/{corporation_id}/titles/ | Get corporation titles
-[**getCorporationsNpccorps()**](CorporationApi.md#getCorporationsNpccorps) | **GET** /v2/corporations/npccorps/ | Get npc corporations
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCorporationsCorporationId()**](CorporationApi.md#getCorporationsCorporationId) | **GET** /v5/corporations/{corporation_id}/ | Get corporation information |
+| [**getCorporationsCorporationIdAlliancehistory()**](CorporationApi.md#getCorporationsCorporationIdAlliancehistory) | **GET** /v3/corporations/{corporation_id}/alliancehistory/ | Get alliance history |
+| [**getCorporationsCorporationIdBlueprints()**](CorporationApi.md#getCorporationsCorporationIdBlueprints) | **GET** /v3/corporations/{corporation_id}/blueprints/ | Get corporation blueprints |
+| [**getCorporationsCorporationIdContainersLogs()**](CorporationApi.md#getCorporationsCorporationIdContainersLogs) | **GET** /v3/corporations/{corporation_id}/containers/logs/ | Get all corporation ALSC logs |
+| [**getCorporationsCorporationIdDivisions()**](CorporationApi.md#getCorporationsCorporationIdDivisions) | **GET** /v2/corporations/{corporation_id}/divisions/ | Get corporation divisions |
+| [**getCorporationsCorporationIdFacilities()**](CorporationApi.md#getCorporationsCorporationIdFacilities) | **GET** /v2/corporations/{corporation_id}/facilities/ | Get corporation facilities |
+| [**getCorporationsCorporationIdIcons()**](CorporationApi.md#getCorporationsCorporationIdIcons) | **GET** /v2/corporations/{corporation_id}/icons/ | Get corporation icon |
+| [**getCorporationsCorporationIdMedals()**](CorporationApi.md#getCorporationsCorporationIdMedals) | **GET** /v2/corporations/{corporation_id}/medals/ | Get corporation medals |
+| [**getCorporationsCorporationIdMedalsIssued()**](CorporationApi.md#getCorporationsCorporationIdMedalsIssued) | **GET** /v2/corporations/{corporation_id}/medals/issued/ | Get corporation issued medals |
+| [**getCorporationsCorporationIdMembers()**](CorporationApi.md#getCorporationsCorporationIdMembers) | **GET** /v4/corporations/{corporation_id}/members/ | Get corporation members |
+| [**getCorporationsCorporationIdMembersLimit()**](CorporationApi.md#getCorporationsCorporationIdMembersLimit) | **GET** /v2/corporations/{corporation_id}/members/limit/ | Get corporation member limit |
+| [**getCorporationsCorporationIdMembersTitles()**](CorporationApi.md#getCorporationsCorporationIdMembersTitles) | **GET** /v2/corporations/{corporation_id}/members/titles/ | Get corporation&#39;s members&#39; titles |
+| [**getCorporationsCorporationIdMembertracking()**](CorporationApi.md#getCorporationsCorporationIdMembertracking) | **GET** /v2/corporations/{corporation_id}/membertracking/ | Track corporation members |
+| [**getCorporationsCorporationIdRoles()**](CorporationApi.md#getCorporationsCorporationIdRoles) | **GET** /v2/corporations/{corporation_id}/roles/ | Get corporation member roles |
+| [**getCorporationsCorporationIdRolesHistory()**](CorporationApi.md#getCorporationsCorporationIdRolesHistory) | **GET** /v2/corporations/{corporation_id}/roles/history/ | Get corporation member roles history |
+| [**getCorporationsCorporationIdShareholders()**](CorporationApi.md#getCorporationsCorporationIdShareholders) | **GET** /v1/corporations/{corporation_id}/shareholders/ | Get corporation shareholders |
+| [**getCorporationsCorporationIdStandings()**](CorporationApi.md#getCorporationsCorporationIdStandings) | **GET** /v2/corporations/{corporation_id}/standings/ | Get corporation standings |
+| [**getCorporationsCorporationIdStarbases()**](CorporationApi.md#getCorporationsCorporationIdStarbases) | **GET** /v2/corporations/{corporation_id}/starbases/ | Get corporation starbases (POSes) |
+| [**getCorporationsCorporationIdStarbasesStarbaseId()**](CorporationApi.md#getCorporationsCorporationIdStarbasesStarbaseId) | **GET** /v2/corporations/{corporation_id}/starbases/{starbase_id}/ | Get starbase (POS) detail |
+| [**getCorporationsCorporationIdStructures()**](CorporationApi.md#getCorporationsCorporationIdStructures) | **GET** /v4/corporations/{corporation_id}/structures/ | Get corporation structures |
+| [**getCorporationsCorporationIdTitles()**](CorporationApi.md#getCorporationsCorporationIdTitles) | **GET** /v2/corporations/{corporation_id}/titles/ | Get corporation titles |
+| [**getCorporationsNpccorps()**](CorporationApi.md#getCorporationsNpccorps) | **GET** /v2/corporations/npccorps/ | Get npc corporations |
 
 
 ## `getCorporationsCorporationId()`
@@ -65,11 +65,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 
@@ -125,11 +125,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 
@@ -191,13 +191,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -259,13 +259,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -326,12 +326,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -392,12 +392,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -453,11 +453,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 
@@ -519,13 +519,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -587,13 +587,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -654,12 +654,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -720,12 +720,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -786,12 +786,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -852,12 +852,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -918,12 +918,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -985,13 +985,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -1053,13 +1053,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -1121,13 +1121,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -1189,13 +1189,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -1258,14 +1258,14 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **starbase_id** | **int**| An EVE starbase (POS) ID |
- **system_id** | **int**| The solar system this starbase (POS) is located in, |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **starbase_id** | **int**| An EVE starbase (POS) ID | |
+| **system_id** | **int**| The solar system this starbase (POS) is located in, | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -1329,15 +1329,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;]
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;]
- **page** | **int**| Which page of results to return | [optional] [default to 1]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **accept_language** | **string**| Language to use in the response | [optional] [default to &#39;en&#39;] |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **language** | **string**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to &#39;en&#39;] |
+| **page** | **int**| Which page of results to return | [optional] [default to 1] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -1398,12 +1398,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **corporation_id** | **int**| An EVE corporation ID |
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **token** | **string**| Access token to use if unable to set a header | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **corporation_id** | **int**| An EVE corporation ID | |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
+| **token** | **string**| Access token to use if unable to set a header | [optional] |
 
 ### Return type
 
@@ -1458,10 +1458,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;]
- **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **datasource** | **string**| The server name you would like data from | [optional] [default to &#39;tranquility&#39;] |
+| **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] |
 
 ### Return type
 

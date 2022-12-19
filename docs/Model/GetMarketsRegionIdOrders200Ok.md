@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **location_id** | **int** | location_id integer |
 **min_volume** | **int** | min_volume integer |
 **order_id** | **int** | order_id integer |
-**price** | **double** | price number |
+**price** | **float** | price number |
 **range** | **string** | range string |
 **system_id** | **int** | The solar system this order was placed |
 **type_id** | **int** | type_id integer |
