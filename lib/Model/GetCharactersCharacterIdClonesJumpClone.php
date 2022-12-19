@@ -321,8 +321,8 @@ class GetCharactersCharacterIdClonesJumpClone implements ModelInterface, ArrayAc
         if ($this->container['implants'] === null) {
             $invalidProperties[] = "'implants' can't be null";
         }
-        if ((count($this->container['implants']) > 11)) {
-            $invalidProperties[] = "invalid value for 'implants', number of items must be less than or equal to 11.";
+        if ((count($this->container['implants']) > 64)) {
+            $invalidProperties[] = "invalid value for 'implants', number of items must be less than or equal to 64.";
         }
 
         if ($this->container['jump_clone_id'] === null) {
@@ -378,8 +378,8 @@ class GetCharactersCharacterIdClonesJumpClone implements ModelInterface, ArrayAc
     public function setImplants($implants)
     {
 
-        if ((count($implants) > 11)) {
-            throw new \InvalidArgumentException('invalid value for $implants when calling GetCharactersCharacterIdClonesJumpClone., number of items must be less than or equal to 11.');
+        if ((count($implants) > 64)) {
+            throw new \InvalidArgumentException('invalid value for $implants when calling GetCharactersCharacterIdClonesJumpClone., number of items must be less than or equal to 64.');
         }
 
         if (is_null($implants)) {

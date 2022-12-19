@@ -310,8 +310,8 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
         if ($this->container['items'] === null) {
             $invalidProperties[] = "'items' can't be null";
         }
-        if ((count($this->container['items']) > 255)) {
-            $invalidProperties[] = "invalid value for 'items', number of items must be less than or equal to 255.";
+        if ((count($this->container['items']) > 512)) {
+            $invalidProperties[] = "invalid value for 'items', number of items must be less than or equal to 512.";
         }
 
         if ((count($this->container['items']) < 1)) {
@@ -403,8 +403,8 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
     public function setItems($items)
     {
 
-        if ((count($items) > 255)) {
-            throw new \InvalidArgumentException('invalid value for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be less than or equal to 255.');
+        if ((count($items) > 512)) {
+            throw new \InvalidArgumentException('invalid value for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be less than or equal to 512.');
         }
         if ((count($items) < 1)) {
             throw new \InvalidArgumentException('invalid length for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be greater than or equal to 1.');

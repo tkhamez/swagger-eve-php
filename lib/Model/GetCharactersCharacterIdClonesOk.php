@@ -299,8 +299,8 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess, \
         if ($this->container['jump_clones'] === null) {
             $invalidProperties[] = "'jump_clones' can't be null";
         }
-        if ((count($this->container['jump_clones']) > 10)) {
-            $invalidProperties[] = "invalid value for 'jump_clones', number of items must be less than or equal to 10.";
+        if ((count($this->container['jump_clones']) > 64)) {
+            $invalidProperties[] = "invalid value for 'jump_clones', number of items must be less than or equal to 64.";
         }
 
         return $invalidProperties;
@@ -367,8 +367,8 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess, \
     public function setJumpClones($jump_clones)
     {
 
-        if ((count($jump_clones) > 10)) {
-            throw new \InvalidArgumentException('invalid value for $jump_clones when calling GetCharactersCharacterIdClonesOk., number of items must be less than or equal to 10.');
+        if ((count($jump_clones) > 64)) {
+            throw new \InvalidArgumentException('invalid value for $jump_clones when calling GetCharactersCharacterIdClonesOk., number of items must be less than or equal to 64.');
         }
 
         if (is_null($jump_clones)) {

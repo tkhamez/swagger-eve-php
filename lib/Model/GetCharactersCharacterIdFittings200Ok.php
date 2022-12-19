@@ -312,8 +312,8 @@ class GetCharactersCharacterIdFittings200Ok implements ModelInterface, ArrayAcce
         if ($this->container['items'] === null) {
             $invalidProperties[] = "'items' can't be null";
         }
-        if ((count($this->container['items']) > 255)) {
-            $invalidProperties[] = "invalid value for 'items', number of items must be less than or equal to 255.";
+        if ((count($this->container['items']) > 512)) {
+            $invalidProperties[] = "invalid value for 'items', number of items must be less than or equal to 512.";
         }
 
         if ($this->container['name'] === null) {
@@ -415,8 +415,8 @@ class GetCharactersCharacterIdFittings200Ok implements ModelInterface, ArrayAcce
     public function setItems($items)
     {
 
-        if ((count($items) > 255)) {
-            throw new \InvalidArgumentException('invalid value for $items when calling GetCharactersCharacterIdFittings200Ok., number of items must be less than or equal to 255.');
+        if ((count($items) > 512)) {
+            throw new \InvalidArgumentException('invalid value for $items when calling GetCharactersCharacterIdFittings200Ok., number of items must be less than or equal to 512.');
         }
 
         if (is_null($items)) {
