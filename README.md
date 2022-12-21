@@ -1,17 +1,21 @@
 # OpenAPIClient-php
 
-An OpenAPI for EVE Online
+An OpenAPI for EVE Online.
 
 This client is generated from the 
 "[underscore routes](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes)".
+
+It contains one patch that removes validation of all enum attributes because CCP declared extending those to be no 
+longer a breaking change, see [ESI changelog](https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01). 
+This patch might be incomplete if I missed something after an API update.
 
 ##### Versioning scheme since 1.0.0
 
 * Patch: Generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json) file,
   refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md)
   (note, however, that the date is not always correct there) and/or generated with a new patch version
-  of the generator library
-* Minor: Switched to a new minor version of the generator library
+  of the generator library.
+* Minor: Switched to a new minor version of the generator library.
 * Major: Switched to a new major version of the generator library, switched to another generator library 
   or another breaking change.
 
@@ -36,8 +40,7 @@ See https://github.com/OpenAPITools/openapi-generator/releases for generator lib
 
 4.0.0
 - Removed previous patches.
-- Added patch to removed validation of all enum attributes because CCP declared extending those to be no longer a 
-  breaking change https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01.
+- Added patch to removed validation of all enum attributes.
 
 3.2.0
 - Added DISABLE_TYPE_VALIDATION.patch: Disables validation of character notification type (CCP adds new types 
