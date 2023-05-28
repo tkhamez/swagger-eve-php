@@ -668,6 +668,7 @@ Class | Method | HTTP request | Description
 
 ## Authorization
 
+Authentication schemes defined for the API:
 ### evesso
 
 - **Type**: `OAuth`
