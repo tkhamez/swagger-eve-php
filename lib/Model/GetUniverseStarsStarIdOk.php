@@ -718,7 +718,7 @@ class GetUniverseStarsStarIdOk implements ModelInterface, ArrayAccess, \JsonSeri
         if (is_null($spectral_class)) {
             throw new \InvalidArgumentException('non-nullable spectral_class cannot be null');
         }
-        $allowedValues = $this->getSpectralClassAllowableValues();
+        /*$allowedValues = $this->getSpectralClassAllowableValues();
         if (!in_array($spectral_class, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -727,7 +727,7 @@ class GetUniverseStarsStarIdOk implements ModelInterface, ArrayAccess, \JsonSeri
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['spectral_class'] = $spectral_class;
 
         return $this;

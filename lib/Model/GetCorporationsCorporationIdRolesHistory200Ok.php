@@ -704,7 +704,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
         if (is_null($new_roles)) {
             throw new \InvalidArgumentException('non-nullable new_roles cannot be null');
         }
-        $allowedValues = $this->getNewRolesAllowableValues();
+        /*$allowedValues = $this->getNewRolesAllowableValues();
         if (array_diff($new_roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -712,7 +712,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($new_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $new_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
@@ -744,7 +744,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
         if (is_null($old_roles)) {
             throw new \InvalidArgumentException('non-nullable old_roles cannot be null');
         }
-        $allowedValues = $this->getOldRolesAllowableValues();
+        /*$allowedValues = $this->getOldRolesAllowableValues();
         if (array_diff($old_roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -752,7 +752,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($old_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $old_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
@@ -784,7 +784,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
         if (is_null($role_type)) {
             throw new \InvalidArgumentException('non-nullable role_type cannot be null');
         }
-        $allowedValues = $this->getRoleTypeAllowableValues();
+        /*$allowedValues = $this->getRoleTypeAllowableValues();
         if (!in_array($role_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -793,7 +793,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['role_type'] = $role_type;
 
         return $this;

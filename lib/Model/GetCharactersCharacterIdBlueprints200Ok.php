@@ -608,7 +608,7 @@ class GetCharactersCharacterIdBlueprints200Ok implements ModelInterface, ArrayAc
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
         }
-        $allowedValues = $this->getLocationFlagAllowableValues();
+        /*$allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -617,7 +617,7 @@ class GetCharactersCharacterIdBlueprints200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['location_flag'] = $location_flag;
 
         return $this;

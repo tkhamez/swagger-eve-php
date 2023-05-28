@@ -843,7 +843,7 @@ class GetContractsPublicRegionId200Ok implements ModelInterface, ArrayAccess, \J
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
         }
-        $allowedValues = $this->getTypeAllowableValues();
+        /*$allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -852,7 +852,7 @@ class GetContractsPublicRegionId200Ok implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['type'] = $type;
 
         return $this;

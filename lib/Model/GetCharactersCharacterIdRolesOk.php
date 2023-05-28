@@ -777,7 +777,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
         }
-        $allowedValues = $this->getRolesAllowableValues();
+        /*$allowedValues = $this->getRolesAllowableValues();
         if (array_diff($roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -785,7 +785,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
@@ -817,7 +817,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
         if (is_null($roles_at_base)) {
             throw new \InvalidArgumentException('non-nullable roles_at_base cannot be null');
         }
-        $allowedValues = $this->getRolesAtBaseAllowableValues();
+        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
         if (array_diff($roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -825,7 +825,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
@@ -857,7 +857,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
         if (is_null($roles_at_hq)) {
             throw new \InvalidArgumentException('non-nullable roles_at_hq cannot be null');
         }
-        $allowedValues = $this->getRolesAtHqAllowableValues();
+        /*$allowedValues = $this->getRolesAtHqAllowableValues();
         if (array_diff($roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -865,7 +865,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');
@@ -897,7 +897,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
         if (is_null($roles_at_other)) {
             throw new \InvalidArgumentException('non-nullable roles_at_other cannot be null');
         }
-        $allowedValues = $this->getRolesAtOtherAllowableValues();
+        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
         if (array_diff($roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -905,7 +905,7 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 50.');

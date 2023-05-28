@@ -1263,7 +1263,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($grantable_roles)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles cannot be null');
         }
-        $allowedValues = $this->getGrantableRolesAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAllowableValues();
         if (array_diff($grantable_roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1271,7 +1271,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($grantable_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
@@ -1303,7 +1303,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($grantable_roles_at_base)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles_at_base cannot be null');
         }
-        $allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
         if (array_diff($grantable_roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1311,7 +1311,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($grantable_roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
@@ -1343,7 +1343,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($grantable_roles_at_hq)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles_at_hq cannot be null');
         }
-        $allowedValues = $this->getGrantableRolesAtHqAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAtHqAllowableValues();
         if (array_diff($grantable_roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1351,7 +1351,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($grantable_roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
@@ -1383,7 +1383,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($grantable_roles_at_other)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles_at_other cannot be null');
         }
-        $allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
+        /*$allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
         if (array_diff($grantable_roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1391,7 +1391,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($grantable_roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
@@ -1450,7 +1450,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
         }
-        $allowedValues = $this->getRolesAllowableValues();
+        /*$allowedValues = $this->getRolesAllowableValues();
         if (array_diff($roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1458,7 +1458,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
@@ -1490,7 +1490,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($roles_at_base)) {
             throw new \InvalidArgumentException('non-nullable roles_at_base cannot be null');
         }
-        $allowedValues = $this->getRolesAtBaseAllowableValues();
+        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
         if (array_diff($roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1498,7 +1498,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
@@ -1530,7 +1530,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($roles_at_hq)) {
             throw new \InvalidArgumentException('non-nullable roles_at_hq cannot be null');
         }
-        $allowedValues = $this->getRolesAtHqAllowableValues();
+        /*$allowedValues = $this->getRolesAtHqAllowableValues();
         if (array_diff($roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1538,7 +1538,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
@@ -1570,7 +1570,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
         if (is_null($roles_at_other)) {
             throw new \InvalidArgumentException('non-nullable roles_at_other cannot be null');
         }
-        $allowedValues = $this->getRolesAtOtherAllowableValues();
+        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
         if (array_diff($roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1578,7 +1578,7 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
 
         if ((count($roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');

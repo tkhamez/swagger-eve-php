@@ -581,7 +581,7 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
         }
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -590,7 +590,7 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['state'] = $state;
 
         return $this;

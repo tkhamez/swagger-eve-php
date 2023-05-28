@@ -819,7 +819,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
         if (is_null($context_id_type)) {
             throw new \InvalidArgumentException('non-nullable context_id_type cannot be null');
         }
-        $allowedValues = $this->getContextIdTypeAllowableValues();
+        /*$allowedValues = $this->getContextIdTypeAllowableValues();
         if (!in_array($context_id_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -828,7 +828,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['context_id_type'] = $context_id_type;
 
         return $this;
@@ -991,7 +991,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
         if (is_null($ref_type)) {
             throw new \InvalidArgumentException('non-nullable ref_type cannot be null');
         }
-        $allowedValues = $this->getRefTypeAllowableValues();
+        /*$allowedValues = $this->getRefTypeAllowableValues();
         if (!in_array($ref_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1000,7 +1000,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['ref_type'] = $ref_type;
 
         return $this;

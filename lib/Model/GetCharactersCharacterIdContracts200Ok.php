@@ -644,7 +644,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
         if (is_null($availability)) {
             throw new \InvalidArgumentException('non-nullable availability cannot be null');
         }
-        $allowedValues = $this->getAvailabilityAllowableValues();
+        /*$allowedValues = $this->getAvailabilityAllowableValues();
         if (!in_array($availability, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -653,7 +653,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['availability'] = $availability;
 
         return $this;
@@ -1086,7 +1086,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
         }
-        $allowedValues = $this->getStatusAllowableValues();
+        /*$allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1095,7 +1095,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['status'] = $status;
 
         return $this;
@@ -1150,7 +1150,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
         }
-        $allowedValues = $this->getTypeAllowableValues();
+        /*$allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1159,7 +1159,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['type'] = $type;
 
         return $this;
