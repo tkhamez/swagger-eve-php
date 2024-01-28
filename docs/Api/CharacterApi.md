@@ -28,7 +28,7 @@ getCharactersCharacterId($character_id, $datasource, $if_none_match): \Swagger\C
 
 Get character's public information
 
-Public information about a character  ---  This route is cached for up to 86400 seconds
+Public information about a character  ---  This route is cached for up to 604800 seconds
 
 ### Example
 
