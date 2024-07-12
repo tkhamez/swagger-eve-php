@@ -261,6 +261,7 @@ docs/Model/GetMarketsRegionIdHistoryUnprocessableEntity.md
 docs/Model/GetMarketsRegionIdOrders200Ok.md
 docs/Model/GetMarketsRegionIdOrdersNotFound.md
 docs/Model/GetMarketsRegionIdOrdersUnprocessableEntity.md
+docs/Model/GetMarketsRegionIdTypesNotFound.md
 docs/Model/GetMarketsStructuresStructureId200Ok.md
 docs/Model/GetOpportunitiesGroupsGroupIdOk.md
 docs/Model/GetOpportunitiesTasksTaskIdOk.md
@@ -639,6 +640,7 @@ lib/Model/GetMarketsRegionIdHistoryUnprocessableEntity.php
 lib/Model/GetMarketsRegionIdOrders200Ok.php
 lib/Model/GetMarketsRegionIdOrdersNotFound.php
 lib/Model/GetMarketsRegionIdOrdersUnprocessableEntity.php
+lib/Model/GetMarketsRegionIdTypesNotFound.php
 lib/Model/GetMarketsStructuresStructureId200Ok.php
 lib/Model/GetOpportunitiesGroupsGroupIdOk.php
 lib/Model/GetOpportunitiesTasksTaskIdOk.php

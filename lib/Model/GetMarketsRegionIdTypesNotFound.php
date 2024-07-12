@@ -1,6 +1,6 @@
 <?php
 /**
- * GetUniversePlanetsPlanetIdPosition
+ * GetMarketsRegionIdTypesNotFound
  *
  * PHP version 7.4
  *
@@ -32,16 +32,16 @@ use \ArrayAccess;
 use \Swagger\Client\Eve\ObjectSerializer;
 
 /**
- * GetUniversePlanetsPlanetIdPosition Class Doc Comment
+ * GetMarketsRegionIdTypesNotFound Class Doc Comment
  *
  * @category Class
- * @description position object
+ * @description Not found
  * @package  Swagger\Client\Eve
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess, \JsonSerializable
+class GetMarketsRegionIdTypesNotFound implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_universe_planets_planet_id_position';
+    protected static $openAPIModelName = 'get_markets_region_id_types_not_found';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'x' => 'float',
-        'y' => 'float',
-        'z' => 'float'
+        'error' => 'string'
     ];
 
     /**
@@ -71,9 +69,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'x' => 'double',
-        'y' => 'double',
-        'z' => 'double'
+        'error' => null
     ];
 
     /**
@@ -82,9 +78,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'x' => false,
-        'y' => false,
-        'z' => false
+        'error' => false
     ];
 
     /**
@@ -173,9 +167,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $attributeMap = [
-        'x' => 'x',
-        'y' => 'y',
-        'z' => 'z'
+        'error' => 'error'
     ];
 
     /**
@@ -184,9 +176,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'x' => 'setX',
-        'y' => 'setY',
-        'z' => 'setZ'
+        'error' => 'setError'
     ];
 
     /**
@@ -195,9 +185,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'x' => 'getX',
-        'y' => 'getY',
-        'z' => 'getZ'
+        'error' => 'getError'
     ];
 
     /**
@@ -257,9 +245,7 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('x', $data ?? [], null);
-        $this->setIfExists('y', $data ?? [], null);
-        $this->setIfExists('z', $data ?? [], null);
+        $this->setIfExists('error', $data ?? [], null);
     }
 
     /**
@@ -289,15 +275,6 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
     {
         $invalidProperties = [];
 
-        if ($this->container['x'] === null) {
-            $invalidProperties[] = "'x' can't be null";
-        }
-        if ($this->container['y'] === null) {
-            $invalidProperties[] = "'y' can't be null";
-        }
-        if ($this->container['z'] === null) {
-            $invalidProperties[] = "'z' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -314,82 +291,28 @@ class GetUniversePlanetsPlanetIdPosition implements ModelInterface, ArrayAccess,
 
 
     /**
-     * Gets x
+     * Gets error
      *
-     * @return float
+     * @return string|null
      */
-    public function getX()
+    public function getError()
     {
-        return $this->container['x'];
+        return $this->container['error'];
     }
 
     /**
-     * Sets x
+     * Sets error
      *
-     * @param float $x x number
+     * @param string|null $error Not found message
      *
      * @return self
      */
-    public function setX($x)
+    public function setError($error)
     {
-        if (is_null($x)) {
-            throw new \InvalidArgumentException('non-nullable x cannot be null');
+        if (is_null($error)) {
+            throw new \InvalidArgumentException('non-nullable error cannot be null');
         }
-        $this->container['x'] = $x;
-
-        return $this;
-    }
-
-    /**
-     * Gets y
-     *
-     * @return float
-     */
-    public function getY()
-    {
-        return $this->container['y'];
-    }
-
-    /**
-     * Sets y
-     *
-     * @param float $y y number
-     *
-     * @return self
-     */
-    public function setY($y)
-    {
-        if (is_null($y)) {
-            throw new \InvalidArgumentException('non-nullable y cannot be null');
-        }
-        $this->container['y'] = $y;
-
-        return $this;
-    }
-
-    /**
-     * Gets z
-     *
-     * @return float
-     */
-    public function getZ()
-    {
-        return $this->container['z'];
-    }
-
-    /**
-     * Sets z
-     *
-     * @param float $z z number
-     *
-     * @return self
-     */
-    public function setZ($z)
-    {
-        if (is_null($z)) {
-            throw new \InvalidArgumentException('non-nullable z cannot be null');
-        }
-        $this->container['z'] = $z;
+        $this->container['error'] = $error;
 
         return $this;
     }
