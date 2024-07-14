@@ -23,6 +23,9 @@ See https://github.com/OpenAPITools/openapi-generator/releases for generator lib
 
 ##### Notable changes other than API updates
 
+10.0.0
+- Added patch that removes the exception if a response contains more elements than declared.
+
 8.0.0
 - Raised minimum PHP requirement to 7.4
 
