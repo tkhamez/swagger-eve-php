@@ -374,9 +374,9 @@ class GetOpportunitiesGroupsGroupIdOk implements ModelInterface, ArrayAccess, \J
             throw new \InvalidArgumentException('non-nullable connected_groups cannot be null');
         }
 
-        if ((count($connected_groups) > 50)) {
+        /*if ((count($connected_groups) > 50)) {
             throw new \InvalidArgumentException('invalid value for $connected_groups when calling GetOpportunitiesGroupsGroupIdOk., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['connected_groups'] = $connected_groups;
 
         return $this;
@@ -513,9 +513,9 @@ class GetOpportunitiesGroupsGroupIdOk implements ModelInterface, ArrayAccess, \J
             throw new \InvalidArgumentException('non-nullable required_tasks cannot be null');
         }
 
-        if ((count($required_tasks) > 100)) {
+        /*if ((count($required_tasks) > 100)) {
             throw new \InvalidArgumentException('invalid value for $required_tasks when calling GetOpportunitiesGroupsGroupIdOk., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['required_tasks'] = $required_tasks;
 
         return $this;

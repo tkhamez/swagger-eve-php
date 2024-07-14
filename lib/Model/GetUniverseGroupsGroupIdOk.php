@@ -468,9 +468,9 @@ class GetUniverseGroupsGroupIdOk implements ModelInterface, ArrayAccess, \JsonSe
             throw new \InvalidArgumentException('non-nullable types cannot be null');
         }
 
-        if ((count($types) > 10000)) {
+        /*if ((count($types) > 10000)) {
             throw new \InvalidArgumentException('invalid value for $types when calling GetUniverseGroupsGroupIdOk., number of items must be less than or equal to 10000.');
-        }
+        }*/
         $this->container['types'] = $types;
 
         return $this;

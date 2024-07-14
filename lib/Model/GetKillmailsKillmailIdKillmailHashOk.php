@@ -374,9 +374,9 @@ class GetKillmailsKillmailIdKillmailHashOk implements ModelInterface, ArrayAcces
             throw new \InvalidArgumentException('non-nullable attackers cannot be null');
         }
 
-        if ((count($attackers) > 10000)) {
+        /*if ((count($attackers) > 10000)) {
             throw new \InvalidArgumentException('invalid value for $attackers when calling GetKillmailsKillmailIdKillmailHashOk., number of items must be less than or equal to 10000.');
-        }
+        }*/
         $this->container['attackers'] = $attackers;
 
         return $this;

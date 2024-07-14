@@ -357,9 +357,9 @@ class GetCorporationsCorporationIdMembersTitles200Ok implements ModelInterface, 
             throw new \InvalidArgumentException('non-nullable titles cannot be null');
         }
 
-        if ((count($titles) > 16)) {
+        /*if ((count($titles) > 16)) {
             throw new \InvalidArgumentException('invalid value for $titles when calling GetCorporationsCorporationIdMembersTitles200Ok., number of items must be less than or equal to 16.');
-        }
+        }*/
         $this->container['titles'] = $titles;
 
         return $this;

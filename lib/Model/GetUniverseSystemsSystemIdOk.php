@@ -457,9 +457,9 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess, \Json
             throw new \InvalidArgumentException('non-nullable planets cannot be null');
         }
 
-        if ((count($planets) > 1000)) {
+        /*if ((count($planets) > 1000)) {
             throw new \InvalidArgumentException('invalid value for $planets when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 1000.');
-        }
+        }*/
         $this->container['planets'] = $planets;
 
         return $this;
@@ -596,9 +596,9 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess, \Json
             throw new \InvalidArgumentException('non-nullable stargates cannot be null');
         }
 
-        if ((count($stargates) > 25)) {
+        /*if ((count($stargates) > 25)) {
             throw new \InvalidArgumentException('invalid value for $stargates when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 25.');
-        }
+        }*/
         $this->container['stargates'] = $stargates;
 
         return $this;
@@ -627,9 +627,9 @@ class GetUniverseSystemsSystemIdOk implements ModelInterface, ArrayAccess, \Json
             throw new \InvalidArgumentException('non-nullable stations cannot be null');
         }
 
-        if ((count($stations) > 25)) {
+        /*if ((count($stations) > 25)) {
             throw new \InvalidArgumentException('invalid value for $stations when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 25.');
-        }
+        }*/
         $this->container['stations'] = $stations;
 
         return $this;

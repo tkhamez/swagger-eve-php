@@ -394,9 +394,9 @@ class GetFleetsFleetIdWings200Ok implements ModelInterface, ArrayAccess, \JsonSe
             throw new \InvalidArgumentException('non-nullable squads cannot be null');
         }
 
-        if ((count($squads) > 25)) {
+        /*if ((count($squads) > 25)) {
             throw new \InvalidArgumentException('invalid value for $squads when calling GetFleetsFleetIdWings200Ok., number of items must be less than or equal to 25.');
-        }
+        }*/
         $this->container['squads'] = $squads;
 
         return $this;
