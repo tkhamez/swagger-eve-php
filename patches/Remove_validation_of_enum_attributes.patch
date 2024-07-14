@@ -1,4 +1,4 @@
-Subject: [PATCH] Remove ....
+Subject: [PATCH] Remove validation of enum attributes
 ---
 Index: lib/Model/GetCorporationsCorporationIdRoles200Ok.php
 IDEA additional info:
