@@ -5,9 +5,10 @@ An OpenAPI for EVE Online.
 This client is generated from the 
 "[underscore routes](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes)".
 
-It contains one patch that removes validation of all enum attributes because CCP declared extending those to be no 
-longer a breaking change, see [ESI changelog](https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01). 
-This patch might be incomplete if I missed something after an API update.
+It contains two patches that remove validation of enum attributes and max items. CCP stated that the 
+extension of enum attributes is no longer a breaking change, see 
+[ESI changelog](https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01),
+and they also change max items without increasing the endpoint version number. 
 
 ##### Versioning scheme since 1.0.0
 
