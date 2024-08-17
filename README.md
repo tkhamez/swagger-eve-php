@@ -1,3 +1,5 @@
+[![Packagist Downloads](https://img.shields.io/packagist/dt/tkhamez/swagger-eve-php)](https://packagist.org/packages/tkhamez/swagger-eve-php)
+
 # OpenAPIClient-php
 
 An OpenAPI for EVE Online.
