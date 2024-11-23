@@ -26,6 +26,11 @@ See https://github.com/OpenAPITools/openapi-generator/releases for generator lib
 
 ##### Notable changes other than API updates
 
+10.1.0
+
+- With OpenAPI Generator v7.9.0 error handling changed (in some cases, an error object is returned 
+  instead of an exception being thrown), see https://github.com/OpenAPITools/openapi-generator/pull/19483.
+
 10.0.0
 - Added patch that removes the exception if a response contains more elements than declared.
 
