@@ -347,9 +347,9 @@ class GetUniverseRegionsRegionIdOk implements ModelInterface, ArrayAccess, \Json
             throw new \InvalidArgumentException('non-nullable constellations cannot be null');
         }
 
-        if ((count($constellations) > 1000)) {
+        /*if ((count($constellations) > 1000)) {
             throw new \InvalidArgumentException('invalid value for $constellations when calling GetUniverseRegionsRegionIdOk., number of items must be less than or equal to 1000.');
-        }
+        }*/
         $this->container['constellations'] = $constellations;
 
         return $this;

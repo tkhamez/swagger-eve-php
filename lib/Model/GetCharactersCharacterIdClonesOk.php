@@ -368,9 +368,9 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable jump_clones cannot be null');
         }
 
-        if ((count($jump_clones) > 64)) {
+        /*if ((count($jump_clones) > 64)) {
             throw new \InvalidArgumentException('invalid value for $jump_clones when calling GetCharactersCharacterIdClonesOk., number of items must be less than or equal to 64.');
-        }
+        }*/
         $this->container['jump_clones'] = $jump_clones;
 
         return $this;

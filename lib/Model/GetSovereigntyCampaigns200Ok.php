@@ -598,9 +598,9 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
             throw new \InvalidArgumentException('non-nullable participants cannot be null');
         }
 
-        if ((count($participants) > 5000)) {
+        /*if ((count($participants) > 5000)) {
             throw new \InvalidArgumentException('invalid value for $participants when calling GetSovereigntyCampaigns200Ok., number of items must be less than or equal to 5000.');
-        }
+        }*/
         $this->container['participants'] = $participants;
 
         return $this;

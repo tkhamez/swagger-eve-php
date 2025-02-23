@@ -348,9 +348,9 @@ class GetFwLeaderboardsCharactersVictoryPoints implements ModelInterface, ArrayA
             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
         }
 
-        if ((count($active_total) > 100)) {
+        /*if ((count($active_total) > 100)) {
             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['active_total'] = $active_total;
 
         return $this;
@@ -379,9 +379,9 @@ class GetFwLeaderboardsCharactersVictoryPoints implements ModelInterface, ArrayA
             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
         }
 
-        if ((count($last_week) > 100)) {
+        /*if ((count($last_week) > 100)) {
             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['last_week'] = $last_week;
 
         return $this;
@@ -410,9 +410,9 @@ class GetFwLeaderboardsCharactersVictoryPoints implements ModelInterface, ArrayA
             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
         }
 
-        if ((count($yesterday) > 100)) {
+        /*if ((count($yesterday) > 100)) {
             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['yesterday'] = $yesterday;
 
         return $this;

@@ -882,9 +882,9 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             throw new \InvalidArgumentException('non-nullable fuels cannot be null');
         }
 
-        if ((count($fuels) > 20)) {
+        /*if ((count($fuels) > 20)) {
             throw new \InvalidArgumentException('invalid value for $fuels when calling GetCorporationsCorporationIdStarbasesStarbaseIdOk., number of items must be less than or equal to 20.');
-        }
+        }*/
         $this->container['fuels'] = $fuels;
 
         return $this;

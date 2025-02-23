@@ -427,9 +427,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable agent cannot be null');
         }
 
-        if ((count($agent) > 500)) {
+        /*if ((count($agent) > 500)) {
             throw new \InvalidArgumentException('invalid value for $agent when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['agent'] = $agent;
 
         return $this;
@@ -458,9 +458,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable alliance cannot be null');
         }
 
-        if ((count($alliance) > 500)) {
+        /*if ((count($alliance) > 500)) {
             throw new \InvalidArgumentException('invalid value for $alliance when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['alliance'] = $alliance;
 
         return $this;
@@ -489,9 +489,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable character cannot be null');
         }
 
-        if ((count($character) > 500)) {
+        /*if ((count($character) > 500)) {
             throw new \InvalidArgumentException('invalid value for $character when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['character'] = $character;
 
         return $this;
@@ -520,9 +520,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable constellation cannot be null');
         }
 
-        if ((count($constellation) > 500)) {
+        /*if ((count($constellation) > 500)) {
             throw new \InvalidArgumentException('invalid value for $constellation when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['constellation'] = $constellation;
 
         return $this;
@@ -551,9 +551,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable corporation cannot be null');
         }
 
-        if ((count($corporation) > 500)) {
+        /*if ((count($corporation) > 500)) {
             throw new \InvalidArgumentException('invalid value for $corporation when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['corporation'] = $corporation;
 
         return $this;
@@ -582,9 +582,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable faction cannot be null');
         }
 
-        if ((count($faction) > 500)) {
+        /*if ((count($faction) > 500)) {
             throw new \InvalidArgumentException('invalid value for $faction when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['faction'] = $faction;
 
         return $this;
@@ -613,9 +613,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable inventory_type cannot be null');
         }
 
-        if ((count($inventory_type) > 500)) {
+        /*if ((count($inventory_type) > 500)) {
             throw new \InvalidArgumentException('invalid value for $inventory_type when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['inventory_type'] = $inventory_type;
 
         return $this;
@@ -644,9 +644,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable region cannot be null');
         }
 
-        if ((count($region) > 500)) {
+        /*if ((count($region) > 500)) {
             throw new \InvalidArgumentException('invalid value for $region when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['region'] = $region;
 
         return $this;
@@ -675,9 +675,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable solar_system cannot be null');
         }
 
-        if ((count($solar_system) > 500)) {
+        /*if ((count($solar_system) > 500)) {
             throw new \InvalidArgumentException('invalid value for $solar_system when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['solar_system'] = $solar_system;
 
         return $this;
@@ -706,9 +706,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable station cannot be null');
         }
 
-        if ((count($station) > 500)) {
+        /*if ((count($station) > 500)) {
             throw new \InvalidArgumentException('invalid value for $station when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['station'] = $station;
 
         return $this;
@@ -737,9 +737,9 @@ class GetCharactersCharacterIdSearchOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable structure cannot be null');
         }
 
-        if ((count($structure) > 500)) {
+        /*if ((count($structure) > 500)) {
             throw new \InvalidArgumentException('invalid value for $structure when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
-        }
+        }*/
         $this->container['structure'] = $structure;
 
         return $this;

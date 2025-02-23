@@ -417,9 +417,9 @@ class PostCharactersCharacterIdMailMail implements ModelInterface, ArrayAccess, 
             throw new \InvalidArgumentException('non-nullable recipients cannot be null');
         }
 
-        if ((count($recipients) > 50)) {
+        /*if ((count($recipients) > 50)) {
             throw new \InvalidArgumentException('invalid value for $recipients when calling PostCharactersCharacterIdMailMail., number of items must be less than or equal to 50.');
-        }
+        }*/
         if ((count($recipients) < 1)) {
             throw new \InvalidArgumentException('invalid length for $recipients when calling PostCharactersCharacterIdMailMail., number of items must be greater than or equal to 1.');
         }

@@ -509,9 +509,9 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
             throw new \InvalidArgumentException('non-nullable graphics cannot be null');
         }
 
-        if ((count($graphics) > 9)) {
+        /*if ((count($graphics) > 9)) {
             throw new \InvalidArgumentException('invalid value for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be less than or equal to 9.');
-        }
+        }*/
         if ((count($graphics) < 3)) {
             throw new \InvalidArgumentException('invalid length for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be greater than or equal to 3.');
         }

@@ -425,9 +425,9 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess, \JsonSerializable
             throw new \InvalidArgumentException('non-nullable allies cannot be null');
         }
 
-        if ((count($allies) > 10000)) {
+        /*if ((count($allies) > 10000)) {
             throw new \InvalidArgumentException('invalid value for $allies when calling GetWarsWarIdOk., number of items must be less than or equal to 10000.');
-        }
+        }*/
         $this->container['allies'] = $allies;
 
         return $this;

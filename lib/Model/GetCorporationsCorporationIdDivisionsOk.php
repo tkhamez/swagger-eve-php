@@ -328,9 +328,9 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
             throw new \InvalidArgumentException('non-nullable hangar cannot be null');
         }
 
-        if ((count($hangar) > 7)) {
+        /*if ((count($hangar) > 7)) {
             throw new \InvalidArgumentException('invalid value for $hangar when calling GetCorporationsCorporationIdDivisionsOk., number of items must be less than or equal to 7.');
-        }
+        }*/
         $this->container['hangar'] = $hangar;
 
         return $this;
@@ -359,9 +359,9 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
             throw new \InvalidArgumentException('non-nullable wallet cannot be null');
         }
 
-        if ((count($wallet) > 7)) {
+        /*if ((count($wallet) > 7)) {
             throw new \InvalidArgumentException('invalid value for $wallet when calling GetCorporationsCorporationIdDivisionsOk., number of items must be less than or equal to 7.');
-        }
+        }*/
         $this->container['wallet'] = $wallet;
 
         return $this;

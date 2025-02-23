@@ -377,9 +377,9 @@ class GetUniverseCategoriesCategoryIdOk implements ModelInterface, ArrayAccess, 
             throw new \InvalidArgumentException('non-nullable groups cannot be null');
         }
 
-        if ((count($groups) > 10000)) {
+        /*if ((count($groups) > 10000)) {
             throw new \InvalidArgumentException('invalid value for $groups when calling GetUniverseCategoriesCategoryIdOk., number of items must be less than or equal to 10000.');
-        }
+        }*/
         $this->container['groups'] = $groups;
 
         return $this;

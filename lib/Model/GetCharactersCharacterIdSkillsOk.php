@@ -337,9 +337,9 @@ class GetCharactersCharacterIdSkillsOk implements ModelInterface, ArrayAccess, \
             throw new \InvalidArgumentException('non-nullable skills cannot be null');
         }
 
-        if ((count($skills) > 1000)) {
+        /*if ((count($skills) > 1000)) {
             throw new \InvalidArgumentException('invalid value for $skills when calling GetCharactersCharacterIdSkillsOk., number of items must be less than or equal to 1000.');
-        }
+        }*/
         $this->container['skills'] = $skills;
 
         return $this;
