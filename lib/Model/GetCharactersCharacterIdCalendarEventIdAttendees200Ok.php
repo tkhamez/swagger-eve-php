@@ -374,7 +374,7 @@ class GetCharactersCharacterIdCalendarEventIdAttendees200Ok implements ModelInte
         if (is_null($event_response)) {
             throw new \InvalidArgumentException('non-nullable event_response cannot be null');
         }
-        $allowedValues = $this->getEventResponseAllowableValues();
+        /*$allowedValues = $this->getEventResponseAllowableValues();
         if (!in_array($event_response, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -383,7 +383,7 @@ class GetCharactersCharacterIdCalendarEventIdAttendees200Ok implements ModelInte
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['event_response'] = $event_response;
 
         return $this;

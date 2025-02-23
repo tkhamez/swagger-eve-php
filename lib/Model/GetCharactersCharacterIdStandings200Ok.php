@@ -388,7 +388,7 @@ class GetCharactersCharacterIdStandings200Ok implements ModelInterface, ArrayAcc
         if (is_null($from_type)) {
             throw new \InvalidArgumentException('non-nullable from_type cannot be null');
         }
-        $allowedValues = $this->getFromTypeAllowableValues();
+        /*$allowedValues = $this->getFromTypeAllowableValues();
         if (!in_array($from_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -397,7 +397,7 @@ class GetCharactersCharacterIdStandings200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['from_type'] = $from_type;
 
         return $this;
