@@ -5,7 +5,6 @@ README.md
 composer.json
 docs/Api/AllianceApi.md
 docs/Api/AssetsApi.md
-docs/Api/BookmarksApi.md
 docs/Api/CalendarApi.md
 docs/Api/CharacterApi.md
 docs/Api/ClonesApi.md
@@ -54,10 +53,6 @@ docs/Model/GetCharactersCharacterIdAssets200Ok.md
 docs/Model/GetCharactersCharacterIdAssetsNotFound.md
 docs/Model/GetCharactersCharacterIdAttributesOk.md
 docs/Model/GetCharactersCharacterIdBlueprints200Ok.md
-docs/Model/GetCharactersCharacterIdBookmarks200Ok.md
-docs/Model/GetCharactersCharacterIdBookmarksCoordinates.md
-docs/Model/GetCharactersCharacterIdBookmarksFolders200Ok.md
-docs/Model/GetCharactersCharacterIdBookmarksItem.md
 docs/Model/GetCharactersCharacterIdCalendar200Ok.md
 docs/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.md
 docs/Model/GetCharactersCharacterIdCalendarEventIdAttendeesNotFound.md
@@ -141,10 +136,6 @@ docs/Model/GetCorporationCorporationIdMiningObserversObserverId200Ok.md
 docs/Model/GetCorporationsCorporationIdAlliancehistory200Ok.md
 docs/Model/GetCorporationsCorporationIdAssets200Ok.md
 docs/Model/GetCorporationsCorporationIdBlueprints200Ok.md
-docs/Model/GetCorporationsCorporationIdBookmarks200Ok.md
-docs/Model/GetCorporationsCorporationIdBookmarksCoordinates.md
-docs/Model/GetCorporationsCorporationIdBookmarksFolders200Ok.md
-docs/Model/GetCorporationsCorporationIdBookmarksItem.md
 docs/Model/GetCorporationsCorporationIdContacts200Ok.md
 docs/Model/GetCorporationsCorporationIdContactsLabels200Ok.md
 docs/Model/GetCorporationsCorporationIdContainersLogs200Ok.md
@@ -381,7 +372,6 @@ docs/Model/Unauthorized.md
 git_push.sh
 lib/Api/AllianceApi.php
 lib/Api/AssetsApi.php
-lib/Api/BookmarksApi.php
 lib/Api/CalendarApi.php
 lib/Api/CharacterApi.php
 lib/Api/ClonesApi.php
@@ -433,10 +423,6 @@ lib/Model/GetCharactersCharacterIdAssets200Ok.php
 lib/Model/GetCharactersCharacterIdAssetsNotFound.php
 lib/Model/GetCharactersCharacterIdAttributesOk.php
 lib/Model/GetCharactersCharacterIdBlueprints200Ok.php
-lib/Model/GetCharactersCharacterIdBookmarks200Ok.php
-lib/Model/GetCharactersCharacterIdBookmarksCoordinates.php
-lib/Model/GetCharactersCharacterIdBookmarksFolders200Ok.php
-lib/Model/GetCharactersCharacterIdBookmarksItem.php
 lib/Model/GetCharactersCharacterIdCalendar200Ok.php
 lib/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.php
 lib/Model/GetCharactersCharacterIdCalendarEventIdAttendeesNotFound.php
@@ -520,10 +506,6 @@ lib/Model/GetCorporationCorporationIdMiningObserversObserverId200Ok.php
 lib/Model/GetCorporationsCorporationIdAlliancehistory200Ok.php
 lib/Model/GetCorporationsCorporationIdAssets200Ok.php
 lib/Model/GetCorporationsCorporationIdBlueprints200Ok.php
-lib/Model/GetCorporationsCorporationIdBookmarks200Ok.php
-lib/Model/GetCorporationsCorporationIdBookmarksCoordinates.php
-lib/Model/GetCorporationsCorporationIdBookmarksFolders200Ok.php
-lib/Model/GetCorporationsCorporationIdBookmarksItem.php
 lib/Model/GetCorporationsCorporationIdContacts200Ok.php
 lib/Model/GetCorporationsCorporationIdContactsLabels200Ok.php
 lib/Model/GetCorporationsCorporationIdContainersLogs200Ok.php

@@ -77,7 +77,7 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
 ```json
 {
   "require": {
-    "tkhamez/swagger-eve-php": "10.1.0"
+    "tkhamez/swagger-eve-php": "~10.1.0"
   }
 }
 ```
@@ -137,10 +137,6 @@ Class | Method | HTTP request | Description
 *AssetsApi* | [**postCharactersCharacterIdAssetsNames**](docs/Api/AssetsApi.md#postcharacterscharacteridassetsnames) | **POST** /v1/characters/{character_id}/assets/names/ | Get character asset names
 *AssetsApi* | [**postCorporationsCorporationIdAssetsLocations**](docs/Api/AssetsApi.md#postcorporationscorporationidassetslocations) | **POST** /v2/corporations/{corporation_id}/assets/locations/ | Get corporation asset locations
 *AssetsApi* | [**postCorporationsCorporationIdAssetsNames**](docs/Api/AssetsApi.md#postcorporationscorporationidassetsnames) | **POST** /v1/corporations/{corporation_id}/assets/names/ | Get corporation asset names
-*BookmarksApi* | [**getCharactersCharacterIdBookmarks**](docs/Api/BookmarksApi.md#getcharacterscharacteridbookmarks) | **GET** /v2/characters/{character_id}/bookmarks/ | List bookmarks
-*BookmarksApi* | [**getCharactersCharacterIdBookmarksFolders**](docs/Api/BookmarksApi.md#getcharacterscharacteridbookmarksfolders) | **GET** /v2/characters/{character_id}/bookmarks/folders/ | List bookmark folders
-*BookmarksApi* | [**getCorporationsCorporationIdBookmarks**](docs/Api/BookmarksApi.md#getcorporationscorporationidbookmarks) | **GET** /v1/corporations/{corporation_id}/bookmarks/ | List corporation bookmarks
-*BookmarksApi* | [**getCorporationsCorporationIdBookmarksFolders**](docs/Api/BookmarksApi.md#getcorporationscorporationidbookmarksfolders) | **GET** /v1/corporations/{corporation_id}/bookmarks/folders/ | List corporation bookmark folders
 *CalendarApi* | [**getCharactersCharacterIdCalendar**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendar) | **GET** /v1/characters/{character_id}/calendar/ | List calendar event summaries
 *CalendarApi* | [**getCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventid) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event
 *CalendarApi* | [**getCharactersCharacterIdCalendarEventIdAttendees**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventidattendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
@@ -353,10 +349,6 @@ Class | Method | HTTP request | Description
 - [GetCharactersCharacterIdAssetsNotFound](docs/Model/GetCharactersCharacterIdAssetsNotFound.md)
 - [GetCharactersCharacterIdAttributesOk](docs/Model/GetCharactersCharacterIdAttributesOk.md)
 - [GetCharactersCharacterIdBlueprints200Ok](docs/Model/GetCharactersCharacterIdBlueprints200Ok.md)
-- [GetCharactersCharacterIdBookmarks200Ok](docs/Model/GetCharactersCharacterIdBookmarks200Ok.md)
-- [GetCharactersCharacterIdBookmarksCoordinates](docs/Model/GetCharactersCharacterIdBookmarksCoordinates.md)
-- [GetCharactersCharacterIdBookmarksFolders200Ok](docs/Model/GetCharactersCharacterIdBookmarksFolders200Ok.md)
-- [GetCharactersCharacterIdBookmarksItem](docs/Model/GetCharactersCharacterIdBookmarksItem.md)
 - [GetCharactersCharacterIdCalendar200Ok](docs/Model/GetCharactersCharacterIdCalendar200Ok.md)
 - [GetCharactersCharacterIdCalendarEventIdAttendees200Ok](docs/Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.md)
 - [GetCharactersCharacterIdCalendarEventIdAttendeesNotFound](docs/Model/GetCharactersCharacterIdCalendarEventIdAttendeesNotFound.md)
@@ -440,10 +432,6 @@ Class | Method | HTTP request | Description
 - [GetCorporationsCorporationIdAlliancehistory200Ok](docs/Model/GetCorporationsCorporationIdAlliancehistory200Ok.md)
 - [GetCorporationsCorporationIdAssets200Ok](docs/Model/GetCorporationsCorporationIdAssets200Ok.md)
 - [GetCorporationsCorporationIdBlueprints200Ok](docs/Model/GetCorporationsCorporationIdBlueprints200Ok.md)
-- [GetCorporationsCorporationIdBookmarks200Ok](docs/Model/GetCorporationsCorporationIdBookmarks200Ok.md)
-- [GetCorporationsCorporationIdBookmarksCoordinates](docs/Model/GetCorporationsCorporationIdBookmarksCoordinates.md)
-- [GetCorporationsCorporationIdBookmarksFolders200Ok](docs/Model/GetCorporationsCorporationIdBookmarksFolders200Ok.md)
-- [GetCorporationsCorporationIdBookmarksItem](docs/Model/GetCorporationsCorporationIdBookmarksItem.md)
 - [GetCorporationsCorporationIdContacts200Ok](docs/Model/GetCorporationsCorporationIdContacts200Ok.md)
 - [GetCorporationsCorporationIdContactsLabels200Ok](docs/Model/GetCorporationsCorporationIdContactsLabels200Ok.md)
 - [GetCorporationsCorporationIdContainersLogs200Ok](docs/Model/GetCorporationsCorporationIdContainersLogs200Ok.md)
@@ -690,8 +678,6 @@ Authentication schemes defined for the API:
     - **esi-alliances.read_contacts.v1**: EVE SSO scope esi-alliances.read_contacts.v1
     - **esi-assets.read_assets.v1**: EVE SSO scope esi-assets.read_assets.v1
     - **esi-assets.read_corporation_assets.v1**: EVE SSO scope esi-assets.read_corporation_assets.v1
-    - **esi-bookmarks.read_character_bookmarks.v1**: EVE SSO scope esi-bookmarks.read_character_bookmarks.v1
-    - **esi-bookmarks.read_corporation_bookmarks.v1**: EVE SSO scope esi-bookmarks.read_corporation_bookmarks.v1
     - **esi-calendar.read_calendar_events.v1**: EVE SSO scope esi-calendar.read_calendar_events.v1
     - **esi-calendar.respond_calendar_events.v1**: EVE SSO scope esi-calendar.respond_calendar_events.v1
     - **esi-characters.read_agents_research.v1**: EVE SSO scope esi-characters.read_agents_research.v1
@@ -771,6 +757,6 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `1.28`
+- API version: `1.30`
     - Generator version: `7.10.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`
