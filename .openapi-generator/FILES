@@ -23,7 +23,6 @@ docs/Api/LocationApi.md
 docs/Api/LoyaltyApi.md
 docs/Api/MailApi.md
 docs/Api/MarketApi.md
-docs/Api/OpportunitiesApi.md
 docs/Api/PlanetaryInteractionApi.md
 docs/Api/RoutesApi.md
 docs/Api/SearchApi.md
@@ -97,7 +96,6 @@ docs/Model/GetCharactersCharacterIdNotifications200Ok.md
 docs/Model/GetCharactersCharacterIdNotificationsContacts200Ok.md
 docs/Model/GetCharactersCharacterIdOk.md
 docs/Model/GetCharactersCharacterIdOnlineOk.md
-docs/Model/GetCharactersCharacterIdOpportunities200Ok.md
 docs/Model/GetCharactersCharacterIdOrders200Ok.md
 docs/Model/GetCharactersCharacterIdOrdersHistory200Ok.md
 docs/Model/GetCharactersCharacterIdPlanets200Ok.md
@@ -254,8 +252,6 @@ docs/Model/GetMarketsRegionIdOrdersNotFound.md
 docs/Model/GetMarketsRegionIdOrdersUnprocessableEntity.md
 docs/Model/GetMarketsRegionIdTypesNotFound.md
 docs/Model/GetMarketsStructuresStructureId200Ok.md
-docs/Model/GetOpportunitiesGroupsGroupIdOk.md
-docs/Model/GetOpportunitiesTasksTaskIdOk.md
 docs/Model/GetRouteOriginDestinationNotFound.md
 docs/Model/GetSovereigntyCampaigns200Ok.md
 docs/Model/GetSovereigntyCampaignsParticipant.md
@@ -390,7 +386,6 @@ lib/Api/LocationApi.php
 lib/Api/LoyaltyApi.php
 lib/Api/MailApi.php
 lib/Api/MarketApi.php
-lib/Api/OpportunitiesApi.php
 lib/Api/PlanetaryInteractionApi.php
 lib/Api/RoutesApi.php
 lib/Api/SearchApi.php
@@ -467,7 +462,6 @@ lib/Model/GetCharactersCharacterIdNotifications200Ok.php
 lib/Model/GetCharactersCharacterIdNotificationsContacts200Ok.php
 lib/Model/GetCharactersCharacterIdOk.php
 lib/Model/GetCharactersCharacterIdOnlineOk.php
-lib/Model/GetCharactersCharacterIdOpportunities200Ok.php
 lib/Model/GetCharactersCharacterIdOrders200Ok.php
 lib/Model/GetCharactersCharacterIdOrdersHistory200Ok.php
 lib/Model/GetCharactersCharacterIdPlanets200Ok.php
@@ -624,8 +618,6 @@ lib/Model/GetMarketsRegionIdOrdersNotFound.php
 lib/Model/GetMarketsRegionIdOrdersUnprocessableEntity.php
 lib/Model/GetMarketsRegionIdTypesNotFound.php
 lib/Model/GetMarketsStructuresStructureId200Ok.php
-lib/Model/GetOpportunitiesGroupsGroupIdOk.php
-lib/Model/GetOpportunitiesTasksTaskIdOk.php
 lib/Model/GetRouteOriginDestinationNotFound.php
 lib/Model/GetSovereigntyCampaigns200Ok.php
 lib/Model/GetSovereigntyCampaignsParticipant.php

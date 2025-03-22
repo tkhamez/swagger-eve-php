@@ -265,11 +265,6 @@ Class | Method | HTTP request | Description
 *MarketApi* | [**getMarketsRegionIdOrders**](docs/Api/MarketApi.md#getmarketsregionidorders) | **GET** /v1/markets/{region_id}/orders/ | List orders in a region
 *MarketApi* | [**getMarketsRegionIdTypes**](docs/Api/MarketApi.md#getmarketsregionidtypes) | **GET** /v1/markets/{region_id}/types/ | List type IDs relevant to a market
 *MarketApi* | [**getMarketsStructuresStructureId**](docs/Api/MarketApi.md#getmarketsstructuresstructureid) | **GET** /v1/markets/structures/{structure_id}/ | List orders in a structure
-*OpportunitiesApi* | [**getCharactersCharacterIdOpportunities**](docs/Api/OpportunitiesApi.md#getcharacterscharacteridopportunities) | **GET** /v1/characters/{character_id}/opportunities/ | Get a character&#39;s completed tasks
-*OpportunitiesApi* | [**getOpportunitiesGroups**](docs/Api/OpportunitiesApi.md#getopportunitiesgroups) | **GET** /v1/opportunities/groups/ | Get opportunities groups
-*OpportunitiesApi* | [**getOpportunitiesGroupsGroupId**](docs/Api/OpportunitiesApi.md#getopportunitiesgroupsgroupid) | **GET** /v1/opportunities/groups/{group_id}/ | Get opportunities group
-*OpportunitiesApi* | [**getOpportunitiesTasks**](docs/Api/OpportunitiesApi.md#getopportunitiestasks) | **GET** /v1/opportunities/tasks/ | Get opportunities tasks
-*OpportunitiesApi* | [**getOpportunitiesTasksTaskId**](docs/Api/OpportunitiesApi.md#getopportunitiestaskstaskid) | **GET** /v1/opportunities/tasks/{task_id}/ | Get opportunities task
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanets**](docs/Api/PlanetaryInteractionApi.md#getcharacterscharacteridplanets) | **GET** /v1/characters/{character_id}/planets/ | Get colonies
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanetsPlanetId**](docs/Api/PlanetaryInteractionApi.md#getcharacterscharacteridplanetsplanetid) | **GET** /v3/characters/{character_id}/planets/{planet_id}/ | Get colony layout
 *PlanetaryInteractionApi* | [**getCorporationsCorporationIdCustomsOffices**](docs/Api/PlanetaryInteractionApi.md#getcorporationscorporationidcustomsoffices) | **GET** /v1/corporations/{corporation_id}/customs_offices/ | List corporation customs offices
@@ -393,7 +388,6 @@ Class | Method | HTTP request | Description
 - [GetCharactersCharacterIdNotificationsContacts200Ok](docs/Model/GetCharactersCharacterIdNotificationsContacts200Ok.md)
 - [GetCharactersCharacterIdOk](docs/Model/GetCharactersCharacterIdOk.md)
 - [GetCharactersCharacterIdOnlineOk](docs/Model/GetCharactersCharacterIdOnlineOk.md)
-- [GetCharactersCharacterIdOpportunities200Ok](docs/Model/GetCharactersCharacterIdOpportunities200Ok.md)
 - [GetCharactersCharacterIdOrders200Ok](docs/Model/GetCharactersCharacterIdOrders200Ok.md)
 - [GetCharactersCharacterIdOrdersHistory200Ok](docs/Model/GetCharactersCharacterIdOrdersHistory200Ok.md)
 - [GetCharactersCharacterIdPlanets200Ok](docs/Model/GetCharactersCharacterIdPlanets200Ok.md)
@@ -550,8 +544,6 @@ Class | Method | HTTP request | Description
 - [GetMarketsRegionIdOrdersUnprocessableEntity](docs/Model/GetMarketsRegionIdOrdersUnprocessableEntity.md)
 - [GetMarketsRegionIdTypesNotFound](docs/Model/GetMarketsRegionIdTypesNotFound.md)
 - [GetMarketsStructuresStructureId200Ok](docs/Model/GetMarketsStructuresStructureId200Ok.md)
-- [GetOpportunitiesGroupsGroupIdOk](docs/Model/GetOpportunitiesGroupsGroupIdOk.md)
-- [GetOpportunitiesTasksTaskIdOk](docs/Model/GetOpportunitiesTasksTaskIdOk.md)
 - [GetRouteOriginDestinationNotFound](docs/Model/GetRouteOriginDestinationNotFound.md)
 - [GetSovereigntyCampaigns200Ok](docs/Model/GetSovereigntyCampaigns200Ok.md)
 - [GetSovereigntyCampaignsParticipant](docs/Model/GetSovereigntyCampaignsParticipant.md)
@@ -689,7 +681,6 @@ Authentication schemes defined for the API:
     - **esi-characters.read_loyalty.v1**: EVE SSO scope esi-characters.read_loyalty.v1
     - **esi-characters.read_medals.v1**: EVE SSO scope esi-characters.read_medals.v1
     - **esi-characters.read_notifications.v1**: EVE SSO scope esi-characters.read_notifications.v1
-    - **esi-characters.read_opportunities.v1**: EVE SSO scope esi-characters.read_opportunities.v1
     - **esi-characters.read_standings.v1**: EVE SSO scope esi-characters.read_standings.v1
     - **esi-characters.read_titles.v1**: EVE SSO scope esi-characters.read_titles.v1
     - **esi-characters.write_contacts.v1**: EVE SSO scope esi-characters.write_contacts.v1
