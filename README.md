@@ -1,3 +1,4 @@
+
 [![Packagist Downloads](https://img.shields.io/packagist/dt/tkhamez/swagger-eve-php)](https://packagist.org/packages/tkhamez/swagger-eve-php)
 
 # OpenAPIClient-php
@@ -5,7 +6,7 @@
 An OpenAPI for EVE Online.
 
 This client is generated from the 
-"[underscore routes](https://developers.eveonline.com/blog/article/esi-best-practices-using-underscore-routes)".
+"[underscore routes](https://developers.eveonline.com/blog/esi-best-practices-generating-code-with-underscore-routes)".
 
 It contains two patches that remove validation of enum attributes and max items. CCP stated that the 
 extension of enum attributes is no longer a breaking change, see 
