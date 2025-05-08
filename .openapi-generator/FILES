@@ -398,6 +398,7 @@ lib/Api/WalletApi.php
 lib/Api/WarsApi.php
 lib/ApiException.php
 lib/Configuration.php
+lib/FormDataProcessor.php
 lib/HeaderSelector.php
 lib/Model/BadRequest.php
 lib/Model/DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity.php
