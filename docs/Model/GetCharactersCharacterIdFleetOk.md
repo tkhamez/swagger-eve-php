@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**fleet_boss_id** | **int** | Character ID of the current fleet boss |
 **fleet_id** | **int** | The character&#39;s current fleet ID |
 **role** | **string** | Member’s role in fleet |
 **squad_id** | **int** | ID of the squad the member is in. If not applicable, will be set to -1 |

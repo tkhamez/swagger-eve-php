@@ -10,7 +10,7 @@ All URIs are relative to https://esi.evetech.net, except if the operation define
 | [**getCorporationsCorporationIdContainersLogs()**](CorporationApi.md#getCorporationsCorporationIdContainersLogs) | **GET** /v3/corporations/{corporation_id}/containers/logs/ | Get all corporation ALSC logs |
 | [**getCorporationsCorporationIdDivisions()**](CorporationApi.md#getCorporationsCorporationIdDivisions) | **GET** /v2/corporations/{corporation_id}/divisions/ | Get corporation divisions |
 | [**getCorporationsCorporationIdFacilities()**](CorporationApi.md#getCorporationsCorporationIdFacilities) | **GET** /v2/corporations/{corporation_id}/facilities/ | Get corporation facilities |
-| [**getCorporationsCorporationIdIcons()**](CorporationApi.md#getCorporationsCorporationIdIcons) | **GET** /v2/corporations/{corporation_id}/icons/ | Get corporation icon |
+| [**getCorporationsCorporationIdIcons()**](CorporationApi.md#getCorporationsCorporationIdIcons) | **GET** /v1/corporations/{corporation_id}/icons/ | Get corporation icon |
 | [**getCorporationsCorporationIdMedals()**](CorporationApi.md#getCorporationsCorporationIdMedals) | **GET** /v2/corporations/{corporation_id}/medals/ | Get corporation medals |
 | [**getCorporationsCorporationIdMedalsIssued()**](CorporationApi.md#getCorporationsCorporationIdMedalsIssued) | **GET** /v2/corporations/{corporation_id}/medals/issued/ | Get corporation issued medals |
 | [**getCorporationsCorporationIdMembers()**](CorporationApi.md#getCorporationsCorporationIdMembers) | **GET** /v4/corporations/{corporation_id}/members/ | Get corporation members |

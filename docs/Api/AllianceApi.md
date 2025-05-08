@@ -196,7 +196,7 @@ getAlliancesAllianceIdIcons($alliance_id, $datasource, $if_none_match): \Swagger
 
 Get alliance icon
 
-Get the icon urls for a alliance  ---  This route expires daily at 11:05  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/alliances/{alliance_id}/icons/)
+Get the icon urls for a alliance  ---  This route expires daily at 11:05
 
 ### Example
 

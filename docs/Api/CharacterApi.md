@@ -10,13 +10,13 @@ All URIs are relative to https://esi.evetech.net, except if the operation define
 | [**getCharactersCharacterIdCorporationhistory()**](CharacterApi.md#getCharactersCharacterIdCorporationhistory) | **GET** /v2/characters/{character_id}/corporationhistory/ | Get corporation history |
 | [**getCharactersCharacterIdFatigue()**](CharacterApi.md#getCharactersCharacterIdFatigue) | **GET** /v2/characters/{character_id}/fatigue/ | Get jump fatigue |
 | [**getCharactersCharacterIdMedals()**](CharacterApi.md#getCharactersCharacterIdMedals) | **GET** /v2/characters/{character_id}/medals/ | Get medals |
-| [**getCharactersCharacterIdNotifications()**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /v5/characters/{character_id}/notifications/ | Get character notifications |
+| [**getCharactersCharacterIdNotifications()**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /v4/characters/{character_id}/notifications/ | Get character notifications |
 | [**getCharactersCharacterIdNotificationsContacts()**](CharacterApi.md#getCharactersCharacterIdNotificationsContacts) | **GET** /v2/characters/{character_id}/notifications/contacts/ | Get new contact notifications |
 | [**getCharactersCharacterIdPortrait()**](CharacterApi.md#getCharactersCharacterIdPortrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits |
 | [**getCharactersCharacterIdRoles()**](CharacterApi.md#getCharactersCharacterIdRoles) | **GET** /v3/characters/{character_id}/roles/ | Get character corporation roles |
 | [**getCharactersCharacterIdStandings()**](CharacterApi.md#getCharactersCharacterIdStandings) | **GET** /v2/characters/{character_id}/standings/ | Get standings |
 | [**getCharactersCharacterIdTitles()**](CharacterApi.md#getCharactersCharacterIdTitles) | **GET** /v2/characters/{character_id}/titles/ | Get character corporation titles |
-| [**postCharactersAffiliation()**](CharacterApi.md#postCharactersAffiliation) | **POST** /v2/characters/affiliation/ | Character affiliation |
+| [**postCharactersAffiliation()**](CharacterApi.md#postCharactersAffiliation) | **POST** /v1/characters/affiliation/ | Character affiliation |
 | [**postCharactersCharacterIdCspa()**](CharacterApi.md#postCharactersCharacterIdCspa) | **POST** /v5/characters/{character_id}/cspa/ | Calculate a CSPA charge cost |
 
 

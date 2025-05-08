@@ -6,7 +6,7 @@ All URIs are relative to https://esi.evetech.net, except if the operation define
 | ------------- | ------------- | ------------- |
 | [**deleteCharactersCharacterIdFittingsFittingId()**](FittingsApi.md#deleteCharactersCharacterIdFittingsFittingId) | **DELETE** /v1/characters/{character_id}/fittings/{fitting_id}/ | Delete fitting |
 | [**getCharactersCharacterIdFittings()**](FittingsApi.md#getCharactersCharacterIdFittings) | **GET** /v2/characters/{character_id}/fittings/ | Get fittings |
-| [**postCharactersCharacterIdFittings()**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v2/characters/{character_id}/fittings/ | Create fitting |
+| [**postCharactersCharacterIdFittings()**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v1/characters/{character_id}/fittings/ | Create fitting |
 
 
 ## `deleteCharactersCharacterIdFittingsFittingId()`

@@ -25,15 +25,15 @@ All URIs are relative to https://esi.evetech.net, except if the operation define
 | [**getUniverseStarsStarId()**](UniverseApi.md#getUniverseStarsStarId) | **GET** /v1/universe/stars/{star_id}/ | Get star information |
 | [**getUniverseStationsStationId()**](UniverseApi.md#getUniverseStationsStationId) | **GET** /v2/universe/stations/{station_id}/ | Get station information |
 | [**getUniverseStructures()**](UniverseApi.md#getUniverseStructures) | **GET** /v1/universe/structures/ | List all public structures |
-| [**getUniverseStructuresStructureId()**](UniverseApi.md#getUniverseStructuresStructureId) | **GET** /v2/universe/structures/{structure_id}/ | Get structure information |
+| [**getUniverseStructuresStructureId()**](UniverseApi.md#getUniverseStructuresStructureId) | **GET** /v1/universe/structures/{structure_id}/ | Get structure information |
 | [**getUniverseSystemJumps()**](UniverseApi.md#getUniverseSystemJumps) | **GET** /v1/universe/system_jumps/ | Get system jumps |
 | [**getUniverseSystemKills()**](UniverseApi.md#getUniverseSystemKills) | **GET** /v2/universe/system_kills/ | Get system kills |
 | [**getUniverseSystems()**](UniverseApi.md#getUniverseSystems) | **GET** /v1/universe/systems/ | Get solar systems |
 | [**getUniverseSystemsSystemId()**](UniverseApi.md#getUniverseSystemsSystemId) | **GET** /v4/universe/systems/{system_id}/ | Get solar system information |
 | [**getUniverseTypes()**](UniverseApi.md#getUniverseTypes) | **GET** /v1/universe/types/ | Get types |
-| [**getUniverseTypesTypeId()**](UniverseApi.md#getUniverseTypesTypeId) | **GET** /v3/universe/types/{type_id}/ | Get type information |
+| [**getUniverseTypesTypeId()**](UniverseApi.md#getUniverseTypesTypeId) | **GET** /v2/universe/types/{type_id}/ | Get type information |
 | [**postUniverseIds()**](UniverseApi.md#postUniverseIds) | **POST** /v1/universe/ids/ | Bulk names to IDs |
-| [**postUniverseNames()**](UniverseApi.md#postUniverseNames) | **POST** /v3/universe/names/ | Get names and categories for a set of IDs |
+| [**postUniverseNames()**](UniverseApi.md#postUniverseNames) | **POST** /v2/universe/names/ | Get names and categories for a set of IDs |
 
 
 ## `getUniverseAncestries()`

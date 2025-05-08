@@ -6,8 +6,8 @@ All URIs are relative to https://esi.evetech.net, except if the operation define
 | ------------- | ------------- | ------------- |
 | [**getCharactersCharacterIdOrders()**](MarketApi.md#getCharactersCharacterIdOrders) | **GET** /v2/characters/{character_id}/orders/ | List open orders from a character |
 | [**getCharactersCharacterIdOrdersHistory()**](MarketApi.md#getCharactersCharacterIdOrdersHistory) | **GET** /v1/characters/{character_id}/orders/history/ | List historical orders by a character |
-| [**getCorporationsCorporationIdOrders()**](MarketApi.md#getCorporationsCorporationIdOrders) | **GET** /v3/corporations/{corporation_id}/orders/ | List open orders from a corporation |
-| [**getCorporationsCorporationIdOrdersHistory()**](MarketApi.md#getCorporationsCorporationIdOrdersHistory) | **GET** /v2/corporations/{corporation_id}/orders/history/ | List historical orders from a corporation |
+| [**getCorporationsCorporationIdOrders()**](MarketApi.md#getCorporationsCorporationIdOrders) | **GET** /v2/corporations/{corporation_id}/orders/ | List open orders from a corporation |
+| [**getCorporationsCorporationIdOrdersHistory()**](MarketApi.md#getCorporationsCorporationIdOrdersHistory) | **GET** /v1/corporations/{corporation_id}/orders/history/ | List historical orders from a corporation |
 | [**getMarketsGroups()**](MarketApi.md#getMarketsGroups) | **GET** /v1/markets/groups/ | Get item groups |
 | [**getMarketsGroupsMarketGroupId()**](MarketApi.md#getMarketsGroupsMarketGroupId) | **GET** /v1/markets/groups/{market_group_id}/ | Get item group information |
 | [**getMarketsPrices()**](MarketApi.md#getMarketsPrices) | **GET** /v1/markets/prices/ | List market prices |

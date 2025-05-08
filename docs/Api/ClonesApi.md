@@ -4,7 +4,7 @@ All URIs are relative to https://esi.evetech.net, except if the operation define
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdClones()**](ClonesApi.md#getCharactersCharacterIdClones) | **GET** /v3/characters/{character_id}/clones/ | Get clones |
+| [**getCharactersCharacterIdClones()**](ClonesApi.md#getCharactersCharacterIdClones) | **GET** /v2/characters/{character_id}/clones/ | Get clones |
 | [**getCharactersCharacterIdImplants()**](ClonesApi.md#getCharactersCharacterIdImplants) | **GET** /v1/characters/{character_id}/implants/ | Get active implants |
 
 
