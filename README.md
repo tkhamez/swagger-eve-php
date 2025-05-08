@@ -26,6 +26,12 @@ See https://github.com/OpenAPITools/openapi-generator/releases for generator lib
 
 ##### Notable changes other than API updates
 
+10.3.0
+
+- For some endpoints the version number was _decreased_. According to CCP (on Discord), all versions 
+  are now identical. This is probably related to
+  https://developers.eveonline.com/blog/removal-of-deprecated-versions-of-several-routes.
+
 10.1.0
 
 - With OpenAPI Generator v7.9.0 error handling changed (in some cases, an error object is returned 
