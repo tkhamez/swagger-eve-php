@@ -29,8 +29,10 @@ See https://github.com/OpenAPITools/openapi-generator/releases for generator lib
 
 10.3.0
 
-- For some endpoints the version number was _decreased_. According to CCP (on Discord), all versions 
-  are now identical. This is probably related to
+- For some endpoints the version number was _decreased_. According to CCP (on
+ [Discord](https://discord.gg/eveonline), 
+  [here](https://discord.com/channels/940573867192221696/972841377798946896/1370110391677620425)), 
+  all versions are now identical. This is probably related to
   https://developers.eveonline.com/blog/removal-of-deprecated-versions-of-several-routes.
 
 10.1.0
