@@ -286,6 +286,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     public const LOCATION_FLAG_CORP_SAG5 = 'CorpSAG5';
     public const LOCATION_FLAG_CORP_SAG6 = 'CorpSAG6';
     public const LOCATION_FLAG_CORP_SAG7 = 'CorpSAG7';
+    public const LOCATION_FLAG_CORPORATION_GOAL_DELIVERIES = 'CorporationGoalDeliveries';
     public const LOCATION_FLAG_CRATE_LOOT = 'CrateLoot';
     public const LOCATION_FLAG_DELIVERIES = 'Deliveries';
     public const LOCATION_FLAG_DRONE_BAY = 'DroneBay';
@@ -312,6 +313,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     public const LOCATION_FLAG_HIDDEN_MODIFIERS = 'HiddenModifiers';
     public const LOCATION_FLAG_IMPLANT = 'Implant';
     public const LOCATION_FLAG_IMPOUNDED = 'Impounded';
+    public const LOCATION_FLAG_INFRASTRUCTURE_HANGAR = 'InfrastructureHangar';
     public const LOCATION_FLAG_JUNKYARD_REPROCESSED = 'JunkyardReprocessed';
     public const LOCATION_FLAG_JUNKYARD_TRASHED = 'JunkyardTrashed';
     public const LOCATION_FLAG_LO_SLOT0 = 'LoSlot0';
@@ -331,6 +333,8 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     public const LOCATION_FLAG_MED_SLOT5 = 'MedSlot5';
     public const LOCATION_FLAG_MED_SLOT6 = 'MedSlot6';
     public const LOCATION_FLAG_MED_SLOT7 = 'MedSlot7';
+    public const LOCATION_FLAG_MOBILE_DEPOT_HOLD = 'MobileDepotHold';
+    public const LOCATION_FLAG_MOON_MATERIAL_BAY = 'MoonMaterialBay';
     public const LOCATION_FLAG_OFFICE_FOLDER = 'OfficeFolder';
     public const LOCATION_FLAG_PILOT = 'Pilot';
     public const LOCATION_FLAG_PLANET_SURFACE = 'PlanetSurface';
@@ -359,9 +363,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     public const LOCATION_FLAG_SKILL = 'Skill';
     public const LOCATION_FLAG_SKILL_IN_TRAINING = 'SkillInTraining';
     public const LOCATION_FLAG_SPECIALIZED_AMMO_HOLD = 'SpecializedAmmoHold';
+    public const LOCATION_FLAG_SPECIALIZED_ASTEROID_HOLD = 'SpecializedAsteroidHold';
     public const LOCATION_FLAG_SPECIALIZED_COMMAND_CENTER_HOLD = 'SpecializedCommandCenterHold';
     public const LOCATION_FLAG_SPECIALIZED_FUEL_BAY = 'SpecializedFuelBay';
     public const LOCATION_FLAG_SPECIALIZED_GAS_HOLD = 'SpecializedGasHold';
+    public const LOCATION_FLAG_SPECIALIZED_ICE_HOLD = 'SpecializedIceHold';
     public const LOCATION_FLAG_SPECIALIZED_INDUSTRIAL_SHIP_HOLD = 'SpecializedIndustrialShipHold';
     public const LOCATION_FLAG_SPECIALIZED_LARGE_SHIP_HOLD = 'SpecializedLargeShipHold';
     public const LOCATION_FLAG_SPECIALIZED_MATERIAL_BAY = 'SpecializedMaterialBay';
@@ -412,6 +418,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             self::LOCATION_FLAG_CORP_SAG5,
             self::LOCATION_FLAG_CORP_SAG6,
             self::LOCATION_FLAG_CORP_SAG7,
+            self::LOCATION_FLAG_CORPORATION_GOAL_DELIVERIES,
             self::LOCATION_FLAG_CRATE_LOOT,
             self::LOCATION_FLAG_DELIVERIES,
             self::LOCATION_FLAG_DRONE_BAY,
@@ -438,6 +445,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             self::LOCATION_FLAG_HIDDEN_MODIFIERS,
             self::LOCATION_FLAG_IMPLANT,
             self::LOCATION_FLAG_IMPOUNDED,
+            self::LOCATION_FLAG_INFRASTRUCTURE_HANGAR,
             self::LOCATION_FLAG_JUNKYARD_REPROCESSED,
             self::LOCATION_FLAG_JUNKYARD_TRASHED,
             self::LOCATION_FLAG_LO_SLOT0,
@@ -457,6 +465,8 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             self::LOCATION_FLAG_MED_SLOT5,
             self::LOCATION_FLAG_MED_SLOT6,
             self::LOCATION_FLAG_MED_SLOT7,
+            self::LOCATION_FLAG_MOBILE_DEPOT_HOLD,
+            self::LOCATION_FLAG_MOON_MATERIAL_BAY,
             self::LOCATION_FLAG_OFFICE_FOLDER,
             self::LOCATION_FLAG_PILOT,
             self::LOCATION_FLAG_PLANET_SURFACE,
@@ -485,9 +495,11 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             self::LOCATION_FLAG_SKILL,
             self::LOCATION_FLAG_SKILL_IN_TRAINING,
             self::LOCATION_FLAG_SPECIALIZED_AMMO_HOLD,
+            self::LOCATION_FLAG_SPECIALIZED_ASTEROID_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_COMMAND_CENTER_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_FUEL_BAY,
             self::LOCATION_FLAG_SPECIALIZED_GAS_HOLD,
+            self::LOCATION_FLAG_SPECIALIZED_ICE_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_INDUSTRIAL_SHIP_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_LARGE_SHIP_HOLD,
             self::LOCATION_FLAG_SPECIALIZED_MATERIAL_BAY,

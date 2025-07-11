@@ -377,6 +377,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     public const TYPE_FAC_WAR_LP_DISQUALIFIED_KILL = 'FacWarLPDisqualifiedKill';
     public const TYPE_FAC_WAR_LP_PAYOUT_EVENT = 'FacWarLPPayoutEvent';
     public const TYPE_FAC_WAR_LP_PAYOUT_KILL = 'FacWarLPPayoutKill';
+    public const TYPE_FREELANCE_PROJECT_CLOSED = 'FreelanceProjectClosed';
+    public const TYPE_FREELANCE_PROJECT_COMPLETED = 'FreelanceProjectCompleted';
+    public const TYPE_FREELANCE_PROJECT_CREATED = 'FreelanceProjectCreated';
+    public const TYPE_FREELANCE_PROJECT_EXPIRED = 'FreelanceProjectExpired';
+    public const TYPE_FREELANCE_PROJECT_LIMIT_REACHED = 'FreelanceProjectLimitReached';
+    public const TYPE_FREELANCE_PROJECT_PARTICIPANT_KICKED = 'FreelanceProjectParticipantKicked';
     public const TYPE_GAME_TIME_ADDED = 'GameTimeAdded';
     public const TYPE_GAME_TIME_RECEIVED = 'GameTimeReceived';
     public const TYPE_GAME_TIME_SENT = 'GameTimeSent';
@@ -642,6 +648,12 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_FAC_WAR_LP_DISQUALIFIED_KILL,
             self::TYPE_FAC_WAR_LP_PAYOUT_EVENT,
             self::TYPE_FAC_WAR_LP_PAYOUT_KILL,
+            self::TYPE_FREELANCE_PROJECT_CLOSED,
+            self::TYPE_FREELANCE_PROJECT_COMPLETED,
+            self::TYPE_FREELANCE_PROJECT_CREATED,
+            self::TYPE_FREELANCE_PROJECT_EXPIRED,
+            self::TYPE_FREELANCE_PROJECT_LIMIT_REACHED,
+            self::TYPE_FREELANCE_PROJECT_PARTICIPANT_KICKED,
             self::TYPE_GAME_TIME_ADDED,
             self::TYPE_GAME_TIME_RECEIVED,
             self::TYPE_GAME_TIME_SENT,

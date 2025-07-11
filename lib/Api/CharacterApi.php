@@ -859,7 +859,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/agents_research/';
+        $resourcePath = '/v1/characters/{character_id}/agents_research/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1281,7 +1281,7 @@ class CharacterApi
         
 
 
-        $resourcePath = '/v3/characters/{character_id}/blueprints/';
+        $resourcePath = '/v2/characters/{character_id}/blueprints/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1669,7 +1669,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/corporationhistory/';
+        $resourcePath = '/v1/characters/{character_id}/corporationhistory/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2069,7 +2069,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/fatigue/';
+        $resourcePath = '/v1/characters/{character_id}/fatigue/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2482,7 +2482,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/medals/';
+        $resourcePath = '/v1/characters/{character_id}/medals/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3308,7 +3308,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/notifications/contacts/';
+        $resourcePath = '/v1/characters/{character_id}/notifications/contacts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4101,7 +4101,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v3/characters/{character_id}/roles/';
+        $resourcePath = '/v2/characters/{character_id}/roles/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4514,7 +4514,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/standings/';
+        $resourcePath = '/v1/characters/{character_id}/standings/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4927,7 +4927,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/titles/';
+        $resourcePath = '/v1/characters/{character_id}/titles/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -5710,7 +5710,7 @@ class CharacterApi
 
 
 
-        $resourcePath = '/v5/characters/{character_id}/cspa/';
+        $resourcePath = '/v4/characters/{character_id}/cspa/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
