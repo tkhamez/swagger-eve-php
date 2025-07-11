@@ -1,389 +1,129 @@
-Subject: [PATCH] Remove max items exceeded exception
+Subject: [PATCH] Apply 02-Remove_max_items_exceeded_exception.patch.
 ---
-Index: lib/Model/GetOpportunitiesGroupsGroupIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetOpportunitiesGroupsGroupIdOk.php b/lib/Model/GetOpportunitiesGroupsGroupIdOk.php
---- a/lib/Model/GetOpportunitiesGroupsGroupIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetOpportunitiesGroupsGroupIdOk.php	(date 1720983316318)
-@@ -374,9 +374,9 @@
-             throw new \InvalidArgumentException('non-nullable connected_groups cannot be null');
-         }
- 
--        if ((count($connected_groups) > 50)) {
-+        /*if ((count($connected_groups) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $connected_groups when calling GetOpportunitiesGroupsGroupIdOk., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['connected_groups'] = $connected_groups;
- 
-         return $this;
-@@ -513,9 +513,9 @@
-             throw new \InvalidArgumentException('non-nullable required_tasks cannot be null');
-         }
- 
--        if ((count($required_tasks) > 100)) {
-+        /*if ((count($required_tasks) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $required_tasks when calling GetOpportunitiesGroupsGroupIdOk., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['required_tasks'] = $required_tasks;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php
---- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php	(date 1720983316506)
-@@ -502,9 +502,9 @@
-             throw new \InvalidArgumentException('non-nullable waypoints cannot be null');
-         }
- 
--        if ((count($waypoints) > 5)) {
-+        /*if ((count($waypoints) > 5)) {
-             throw new \InvalidArgumentException('invalid value for $waypoints when calling GetCharactersCharacterIdPlanetsPlanetIdRoute., number of items must be less than or equal to 5.');
--        }
-+        }*/
-         $this->container['waypoints'] = $waypoints;
- 
-         return $this;
-Index: lib/Model/GetKillmailsKillmailIdKillmailHashItem.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php b/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php
---- a/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php	(date 1720983316306)
-@@ -415,9 +415,9 @@
-             throw new \InvalidArgumentException('non-nullable items cannot be null');
-         }
- 
--        if ((count($items) > 10000)) {
-+        /*if ((count($items) > 10000)) {
-             throw new \InvalidArgumentException('invalid value for $items when calling GetKillmailsKillmailIdKillmailHashItem., number of items must be less than or equal to 10000.');
--        }
-+        }*/
-         $this->container['items'] = $items;
- 
-         return $this;
-Index: lib/Model/GetUniverseGroupsGroupIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetUniverseGroupsGroupIdOk.php b/lib/Model/GetUniverseGroupsGroupIdOk.php
---- a/lib/Model/GetUniverseGroupsGroupIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseGroupsGroupIdOk.php	(date 1720983316266)
-@@ -468,9 +468,9 @@
-             throw new \InvalidArgumentException('non-nullable types cannot be null');
-         }
- 
--        if ((count($types) > 10000)) {
-+        /*if ((count($types) > 10000)) {
-             throw new \InvalidArgumentException('invalid value for $types when calling GetUniverseGroupsGroupIdOk., number of items must be less than or equal to 10000.');
--        }
-+        }*/
-         $this->container['types'] = $types;
- 
-         return $this;
-Index: lib/Model/GetInsurancePrices200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetInsurancePrices200Ok.php b/lib/Model/GetInsurancePrices200Ok.php
---- a/lib/Model/GetInsurancePrices200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetInsurancePrices200Ok.php	(date 1720983316382)
-@@ -330,9 +330,9 @@
-             throw new \InvalidArgumentException('non-nullable levels cannot be null');
-         }
- 
--        if ((count($levels) > 6)) {
-+        /*if ((count($levels) > 6)) {
-             throw new \InvalidArgumentException('invalid value for $levels when calling GetInsurancePrices200Ok., number of items must be less than or equal to 6.');
--        }
-+        }*/
-         $this->container['levels'] = $levels;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdMailLabelsOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdMailLabelsOk.php b/lib/Model/GetCharactersCharacterIdMailLabelsOk.php
---- a/lib/Model/GetCharactersCharacterIdMailLabelsOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdMailLabelsOk.php	(date 1720982187105)
-@@ -328,9 +328,9 @@
-             throw new \InvalidArgumentException('non-nullable labels cannot be null');
-         }
- 
--        if ((count($labels) > 30)) {
-+        /*if ((count($labels) > 30)) {
-             throw new \InvalidArgumentException('invalid value for $labels when calling GetCharactersCharacterIdMailLabelsOk., number of items must be less than or equal to 30.');
--        }
-+        }*/
-         $this->container['labels'] = $labels;
- 
-         return $this;
 Index: lib/Model/GetAlliancesAllianceIdContacts200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/lib/Model/GetAlliancesAllianceIdContacts200Ok.php b/lib/Model/GetAlliancesAllianceIdContacts200Ok.php
---- a/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(date 1720982187149)
+--- a/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetAlliancesAllianceIdContacts200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
 @@ -439,9 +439,9 @@
              throw new \InvalidArgumentException('non-nullable label_ids cannot be null');
          }
- 
+
 -        if ((count($label_ids) > 63)) {
 +        /*if ((count($label_ids) > 63)) {
              throw new \InvalidArgumentException('invalid value for $label_ids when calling GetAlliancesAllianceIdContacts200Ok., number of items must be less than or equal to 63.');
 -        }
 +        }*/
          $this->container['label_ids'] = $label_ids;
- 
+
          return $this;
-Index: lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php
+Index: lib/Model/GetCharactersCharacterIdClonesJumpClone.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php b/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php
---- a/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php	(date 1720983316374)
-@@ -357,9 +357,9 @@
-             throw new \InvalidArgumentException('non-nullable titles cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php
+--- a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -381,9 +381,9 @@
+             throw new \InvalidArgumentException('non-nullable implants cannot be null');
          }
- 
--        if ((count($titles) > 16)) {
-+        /*if ((count($titles) > 16)) {
-             throw new \InvalidArgumentException('invalid value for $titles when calling GetCorporationsCorporationIdMembersTitles200Ok., number of items must be less than or equal to 16.');
+
+-        if ((count($implants) > 64)) {
++        /*if ((count($implants) > 64)) {
+             throw new \InvalidArgumentException('invalid value for $implants when calling GetCharactersCharacterIdClonesJumpClone., number of items must be less than or equal to 64.');
 -        }
 +        }*/
-         $this->container['titles'] = $titles;
- 
+         $this->container['implants'] = $implants;
+
          return $this;
-Index: lib/Model/GetIncursions200Ok.php
+Index: lib/Model/GetCharactersCharacterIdClonesOk.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetIncursions200Ok.php b/lib/Model/GetIncursions200Ok.php
---- a/lib/Model/GetIncursions200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetIncursions200Ok.php	(date 1720983316834)
-@@ -497,9 +497,9 @@
-             throw new \InvalidArgumentException('non-nullable infested_solar_systems cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdClonesOk.php b/lib/Model/GetCharactersCharacterIdClonesOk.php
+--- a/lib/Model/GetCharactersCharacterIdClonesOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdClonesOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -368,9 +368,9 @@
+             throw new \InvalidArgumentException('non-nullable jump_clones cannot be null');
          }
- 
--        if ((count($infested_solar_systems) > 100)) {
-+        /*if ((count($infested_solar_systems) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $infested_solar_systems when calling GetIncursions200Ok., number of items must be less than or equal to 100.');
+
+-        if ((count($jump_clones) > 64)) {
++        /*if ((count($jump_clones) > 64)) {
+             throw new \InvalidArgumentException('invalid value for $jump_clones when calling GetCharactersCharacterIdClonesOk., number of items must be less than or equal to 64.');
 -        }
 +        }*/
-         $this->container['infested_solar_systems'] = $infested_solar_systems;
- 
+         $this->container['jump_clones'] = $jump_clones;
+
          return $this;
-Index: lib/Model/PostUniverseIdsOk.php
+Index: lib/Model/GetCharactersCharacterIdContacts200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/PostUniverseIdsOk.php b/lib/Model/PostUniverseIdsOk.php
---- a/lib/Model/PostUniverseIdsOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/PostUniverseIdsOk.php	(date 1720983316354)
-@@ -416,9 +416,9 @@
-             throw new \InvalidArgumentException('non-nullable agents cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdContacts200Ok.php b/lib/Model/GetCharactersCharacterIdContacts200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -507,9 +507,9 @@
+             throw new \InvalidArgumentException('non-nullable label_ids cannot be null');
          }
- 
--        if ((count($agents) > 500)) {
-+        /*if ((count($agents) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $agents when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+
+-        if ((count($label_ids) > 63)) {
++        /*if ((count($label_ids) > 63)) {
+             throw new \InvalidArgumentException('invalid value for $label_ids when calling GetCharactersCharacterIdContacts200Ok., number of items must be less than or equal to 63.');
 -        }
 +        }*/
-         $this->container['agents'] = $agents;
- 
+         $this->container['label_ids'] = $label_ids;
+
          return $this;
-@@ -447,9 +447,9 @@
-             throw new \InvalidArgumentException('non-nullable alliances cannot be null');
-         }
- 
--        if ((count($alliances) > 500)) {
-+        /*if ((count($alliances) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $alliances when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['alliances'] = $alliances;
- 
-         return $this;
-@@ -478,9 +478,9 @@
-             throw new \InvalidArgumentException('non-nullable characters cannot be null');
-         }
- 
--        if ((count($characters) > 500)) {
-+        /*if ((count($characters) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $characters when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['characters'] = $characters;
- 
-         return $this;
-@@ -509,9 +509,9 @@
-             throw new \InvalidArgumentException('non-nullable constellations cannot be null');
-         }
- 
--        if ((count($constellations) > 500)) {
-+        /*if ((count($constellations) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $constellations when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['constellations'] = $constellations;
- 
-         return $this;
-@@ -540,9 +540,9 @@
-             throw new \InvalidArgumentException('non-nullable corporations cannot be null');
-         }
- 
--        if ((count($corporations) > 500)) {
-+        /*if ((count($corporations) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $corporations when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['corporations'] = $corporations;
- 
-         return $this;
-@@ -571,9 +571,9 @@
-             throw new \InvalidArgumentException('non-nullable factions cannot be null');
-         }
- 
--        if ((count($factions) > 500)) {
-+        /*if ((count($factions) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $factions when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['factions'] = $factions;
- 
-         return $this;
-@@ -602,9 +602,9 @@
-             throw new \InvalidArgumentException('non-nullable inventory_types cannot be null');
-         }
- 
--        if ((count($inventory_types) > 500)) {
-+        /*if ((count($inventory_types) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $inventory_types when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['inventory_types'] = $inventory_types;
- 
-         return $this;
-@@ -633,9 +633,9 @@
-             throw new \InvalidArgumentException('non-nullable regions cannot be null');
-         }
- 
--        if ((count($regions) > 500)) {
-+        /*if ((count($regions) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $regions when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['regions'] = $regions;
- 
-         return $this;
-@@ -664,9 +664,9 @@
-             throw new \InvalidArgumentException('non-nullable stations cannot be null');
-         }
- 
--        if ((count($stations) > 500)) {
-+        /*if ((count($stations) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $stations when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['stations'] = $stations;
- 
-         return $this;
-@@ -695,9 +695,9 @@
-             throw new \InvalidArgumentException('non-nullable systems cannot be null');
-         }
- 
--        if ((count($systems) > 500)) {
-+        /*if ((count($systems) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $systems when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['systems'] = $systems;
- 
-         return $this;
-Index: lib/Model/GetSovereigntyCampaigns200Ok.php
+Index: lib/Model/GetCharactersCharacterIdFittings200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetSovereigntyCampaigns200Ok.php b/lib/Model/GetSovereigntyCampaigns200Ok.php
---- a/lib/Model/GetSovereigntyCampaigns200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetSovereigntyCampaigns200Ok.php	(date 1720983316550)
-@@ -598,9 +598,9 @@
-             throw new \InvalidArgumentException('non-nullable participants cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdFittings200Ok.php b/lib/Model/GetCharactersCharacterIdFittings200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdFittings200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdFittings200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -414,9 +414,9 @@
+             throw new \InvalidArgumentException('non-nullable items cannot be null');
          }
- 
--        if ((count($participants) > 5000)) {
-+        /*if ((count($participants) > 5000)) {
-             throw new \InvalidArgumentException('invalid value for $participants when calling GetSovereigntyCampaigns200Ok., number of items must be less than or equal to 5000.');
+
+-        if ((count($items) > 512)) {
++        /*if ((count($items) > 512)) {
+             throw new \InvalidArgumentException('invalid value for $items when calling GetCharactersCharacterIdFittings200Ok., number of items must be less than or equal to 512.');
 -        }
 +        }*/
-         $this->container['participants'] = $participants;
- 
+         $this->container['items'] = $items;
+
          return $this;
-Index: lib/Model/PostCharactersCharacterIdMailMail.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/PostCharactersCharacterIdMailMail.php b/lib/Model/PostCharactersCharacterIdMailMail.php
---- a/lib/Model/PostCharactersCharacterIdMailMail.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/PostCharactersCharacterIdMailMail.php	(date 1720983316734)
-@@ -417,9 +417,9 @@
-             throw new \InvalidArgumentException('non-nullable recipients cannot be null');
-         }
- 
--        if ((count($recipients) > 50)) {
-+        /*if ((count($recipients) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $recipients when calling PostCharactersCharacterIdMailMail., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         if ((count($recipients) < 1)) {
-             throw new \InvalidArgumentException('invalid length for $recipients when calling PostCharactersCharacterIdMailMail., number of items must be greater than or equal to 1.');
-         }
 Index: lib/Model/GetCharactersCharacterIdMail200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/lib/Model/GetCharactersCharacterIdMail200Ok.php b/lib/Model/GetCharactersCharacterIdMail200Ok.php
---- a/lib/Model/GetCharactersCharacterIdMail200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdMail200Ok.php	(date 1720982187169)
+--- a/lib/Model/GetCharactersCharacterIdMail200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdMail200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
 @@ -421,9 +421,9 @@
              throw new \InvalidArgumentException('non-nullable labels cannot be null');
          }
- 
+
 -        if ((count($labels) > 25)) {
 +        /*if ((count($labels) > 25)) {
              throw new \InvalidArgumentException('invalid value for $labels when calling GetCharactersCharacterIdMail200Ok., number of items must be less than or equal to 25.');
 -        }
 +        }*/
          $this->container['labels'] = $labels;
- 
+
          return $this;
 @@ -479,9 +479,9 @@
              throw new \InvalidArgumentException('non-nullable recipients cannot be null');
          }
- 
+
 -        if ((count($recipients) > 52)) {
 +        /*if ((count($recipients) > 52)) {
              throw new \InvalidArgumentException('invalid value for $recipients when calling GetCharactersCharacterIdMail200Ok., number of items must be less than or equal to 52.');
@@ -392,621 +132,25 @@ diff --git a/lib/Model/GetCharactersCharacterIdMail200Ok.php b/lib/Model/GetChar
          if ((count($recipients) < 0)) {
              throw new \InvalidArgumentException('invalid length for $recipients when calling GetCharactersCharacterIdMail200Ok., number of items must be greater than or equal to 0.');
          }
-Index: lib/Model/GetUniverseCategoriesCategoryIdOk.php
+Index: lib/Model/GetCharactersCharacterIdMailLabelsOk.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetUniverseCategoriesCategoryIdOk.php b/lib/Model/GetUniverseCategoriesCategoryIdOk.php
---- a/lib/Model/GetUniverseCategoriesCategoryIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseCategoriesCategoryIdOk.php	(date 1720983316810)
-@@ -377,9 +377,9 @@
-             throw new \InvalidArgumentException('non-nullable groups cannot be null');
-         }
- 
--        if ((count($groups) > 10000)) {
-+        /*if ((count($groups) > 10000)) {
-             throw new \InvalidArgumentException('invalid value for $groups when calling GetUniverseCategoriesCategoryIdOk., number of items must be less than or equal to 10000.');
--        }
-+        }*/
-         $this->container['groups'] = $groups;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdSkillsOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdSkillsOk.php b/lib/Model/GetCharactersCharacterIdSkillsOk.php
---- a/lib/Model/GetCharactersCharacterIdSkillsOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdSkillsOk.php	(date 1720983316746)
-@@ -337,9 +337,9 @@
-             throw new \InvalidArgumentException('non-nullable skills cannot be null');
-         }
- 
--        if ((count($skills) > 1000)) {
-+        /*if ((count($skills) > 1000)) {
-             throw new \InvalidArgumentException('invalid value for $skills when calling GetCharactersCharacterIdSkillsOk., number of items must be less than or equal to 1000.');
--        }
-+        }*/
-         $this->container['skills'] = $skills;
- 
-         return $this;
-Index: lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php b/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php
---- a/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php	(date 1720983316762)
-@@ -507,9 +507,9 @@
-             throw new \InvalidArgumentException('non-nullable items cannot be null');
-         }
- 
--        if ((count($items) > 10000)) {
-+        /*if ((count($items) > 10000)) {
-             throw new \InvalidArgumentException('invalid value for $items when calling GetKillmailsKillmailIdKillmailHashVictim., number of items must be less than or equal to 10000.');
--        }
-+        }*/
-         $this->container['items'] = $items;
- 
-         return $this;
-Index: lib/Model/GetFwLeaderboardsCorporationsKills.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetFwLeaderboardsCorporationsKills.php b/lib/Model/GetFwLeaderboardsCorporationsKills.php
---- a/lib/Model/GetFwLeaderboardsCorporationsKills.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetFwLeaderboardsCorporationsKills.php	(date 1720983316406)
-@@ -348,9 +348,9 @@
-             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
-         }
- 
--        if ((count($active_total) > 10)) {
-+        /*if ((count($active_total) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCorporationsKills., number of items must be less than or equal to 10.');
--        }
-+        }*/
-         $this->container['active_total'] = $active_total;
- 
-         return $this;
-@@ -379,9 +379,9 @@
-             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
-         }
- 
--        if ((count($last_week) > 10)) {
-+        /*if ((count($last_week) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCorporationsKills., number of items must be less than or equal to 10.');
--        }
-+        }*/
-         $this->container['last_week'] = $last_week;
- 
-         return $this;
-@@ -410,9 +410,9 @@
-             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
-         }
- 
--        if ((count($yesterday) > 10)) {
-+        /*if ((count($yesterday) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCorporationsKills., number of items must be less than or equal to 10.');
--        }
-+        }*/
-         $this->container['yesterday'] = $yesterday;
- 
-         return $this;
-Index: lib/Model/GetUniverseTypesTypeIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetUniverseTypesTypeIdOk.php b/lib/Model/GetUniverseTypesTypeIdOk.php
---- a/lib/Model/GetUniverseTypesTypeIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseTypesTypeIdOk.php	(date 1720983316718)
-@@ -495,9 +495,9 @@
-             throw new \InvalidArgumentException('non-nullable dogma_attributes cannot be null');
-         }
- 
--        if ((count($dogma_attributes) > 1000)) {
-+        /*if ((count($dogma_attributes) > 1000)) {
-             throw new \InvalidArgumentException('invalid value for $dogma_attributes when calling GetUniverseTypesTypeIdOk., number of items must be less than or equal to 1000.');
--        }
-+        }*/
-         $this->container['dogma_attributes'] = $dogma_attributes;
- 
-         return $this;
-@@ -526,9 +526,9 @@
-             throw new \InvalidArgumentException('non-nullable dogma_effects cannot be null');
-         }
- 
--        if ((count($dogma_effects) > 1000)) {
-+        /*if ((count($dogma_effects) > 1000)) {
-             throw new \InvalidArgumentException('invalid value for $dogma_effects when calling GetUniverseTypesTypeIdOk., number of items must be less than or equal to 1000.');
--        }
-+        }*/
-         $this->container['dogma_effects'] = $dogma_effects;
- 
-         return $this;
-Index: lib/Model/PostCharactersCharacterIdFittingsFitting.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/PostCharactersCharacterIdFittingsFitting.php b/lib/Model/PostCharactersCharacterIdFittingsFitting.php
---- a/lib/Model/PostCharactersCharacterIdFittingsFitting.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/PostCharactersCharacterIdFittingsFitting.php	(date 1720983316362)
-@@ -404,9 +404,9 @@
-             throw new \InvalidArgumentException('non-nullable items cannot be null');
-         }
- 
--        if ((count($items) > 512)) {
-+        /*if ((count($items) > 512)) {
-             throw new \InvalidArgumentException('invalid value for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be less than or equal to 512.');
--        }
-+        }*/
-         if ((count($items) < 1)) {
-             throw new \InvalidArgumentException('invalid length for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be greater than or equal to 1.');
-         }
-Index: lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
---- a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(date 1720983316786)
-@@ -738,9 +738,9 @@
-             );
-         }*/
- 
--        if ((count($new_roles) > 50)) {
-+        /*if ((count($new_roles) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $new_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['new_roles'] = $new_roles;
- 
-         return $this;
-@@ -778,9 +778,9 @@
-             );
-         }*/
- 
--        if ((count($old_roles) > 50)) {
-+        /*if ((count($old_roles) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $old_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['old_roles'] = $old_roles;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdRolesOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdRolesOk.php b/lib/Model/GetCharactersCharacterIdRolesOk.php
---- a/lib/Model/GetCharactersCharacterIdRolesOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdRolesOk.php	(date 1720983316778)
-@@ -835,9 +835,9 @@
-             );
-         }*/
- 
--        if ((count($roles) > 100)) {
-+        /*if ((count($roles) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles'] = $roles;
- 
-         return $this;
-@@ -875,9 +875,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_base) > 100)) {
-+        /*if ((count($roles_at_base) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles_at_base'] = $roles_at_base;
- 
-         return $this;
-@@ -915,9 +915,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_hq) > 100)) {
-+        /*if ((count($roles_at_hq) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles_at_hq'] = $roles_at_hq;
- 
-         return $this;
-@@ -955,9 +955,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_other) > 100)) {
-+        /*if ((count($roles_at_other) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles_at_other'] = $roles_at_other;
- 
-         return $this;
-Index: lib/Model/GetFwLeaderboardsVictoryPoints.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetFwLeaderboardsVictoryPoints.php b/lib/Model/GetFwLeaderboardsVictoryPoints.php
---- a/lib/Model/GetFwLeaderboardsVictoryPoints.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetFwLeaderboardsVictoryPoints.php	(date 1720983316454)
-@@ -348,9 +348,9 @@
-             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
-         }
- 
--        if ((count($active_total) > 4)) {
-+        /*if ((count($active_total) > 4)) {
-             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsVictoryPoints., number of items must be less than or equal to 4.');
--        }
-+        }*/
-         $this->container['active_total'] = $active_total;
- 
-         return $this;
-@@ -379,9 +379,9 @@
-             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
-         }
- 
--        if ((count($last_week) > 4)) {
-+        /*if ((count($last_week) > 4)) {
-             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsVictoryPoints., number of items must be less than or equal to 4.');
--        }
-+        }*/
-         $this->container['last_week'] = $last_week;
- 
-         return $this;
-@@ -410,9 +410,9 @@
-             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
-         }
- 
--        if ((count($yesterday) > 4)) {
-+        /*if ((count($yesterday) > 4)) {
-             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsVictoryPoints., number of items must be less than or equal to 4.');
--        }
-+        }*/
-         $this->container['yesterday'] = $yesterday;
- 
-         return $this;
-Index: lib/Model/PutCharactersCharacterIdMailMailIdContents.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/PutCharactersCharacterIdMailMailIdContents.php b/lib/Model/PutCharactersCharacterIdMailMailIdContents.php
---- a/lib/Model/PutCharactersCharacterIdMailMailIdContents.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/PutCharactersCharacterIdMailMailIdContents.php	(date 1720983316702)
-@@ -324,9 +324,9 @@
+diff --git a/lib/Model/GetCharactersCharacterIdMailLabelsOk.php b/lib/Model/GetCharactersCharacterIdMailLabelsOk.php
+--- a/lib/Model/GetCharactersCharacterIdMailLabelsOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdMailLabelsOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -328,9 +328,9 @@
              throw new \InvalidArgumentException('non-nullable labels cannot be null');
          }
- 
--        if ((count($labels) > 25)) {
-+        /*if ((count($labels) > 25)) {
-             throw new \InvalidArgumentException('invalid value for $labels when calling PutCharactersCharacterIdMailMailIdContents., number of items must be less than or equal to 25.');
+
+-        if ((count($labels) > 30)) {
++        /*if ((count($labels) > 30)) {
+             throw new \InvalidArgumentException('invalid value for $labels when calling GetCharactersCharacterIdMailLabelsOk., number of items must be less than or equal to 30.');
 -        }
 +        }*/
          $this->container['labels'] = $labels;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdMedals200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdMedals200Ok.php b/lib/Model/GetCharactersCharacterIdMedals200Ok.php
---- a/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(date 1720983316694)
-@@ -509,9 +509,9 @@
-             throw new \InvalidArgumentException('non-nullable graphics cannot be null');
-         }
- 
--        if ((count($graphics) > 9)) {
-+        /*if ((count($graphics) > 9)) {
-             throw new \InvalidArgumentException('invalid value for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be less than or equal to 9.');
--        }
-+        }*/
-         if ((count($graphics) < 3)) {
-             throw new \InvalidArgumentException('invalid length for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be greater than or equal to 3.');
-         }
-Index: lib/Model/GetCorporationsCorporationIdRoles200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdRoles200Ok.php b/lib/Model/GetCorporationsCorporationIdRoles200Ok.php
---- a/lib/Model/GetCorporationsCorporationIdRoles200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdRoles200Ok.php	(date 1720983316610)
-@@ -1392,9 +1392,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles) > 100)) {
-+        /*if ((count($grantable_roles) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['grantable_roles'] = $grantable_roles;
- 
-         return $this;
-@@ -1432,9 +1432,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles_at_base) > 100)) {
-+        /*if ((count($grantable_roles_at_base) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['grantable_roles_at_base'] = $grantable_roles_at_base;
- 
-         return $this;
-@@ -1472,9 +1472,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles_at_hq) > 100)) {
-+        /*if ((count($grantable_roles_at_hq) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['grantable_roles_at_hq'] = $grantable_roles_at_hq;
- 
-         return $this;
-@@ -1512,9 +1512,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles_at_other) > 100)) {
-+        /*if ((count($grantable_roles_at_other) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['grantable_roles_at_other'] = $grantable_roles_at_other;
- 
-         return $this;
-@@ -1552,9 +1552,9 @@
-             );
-         }*/
- 
--        if ((count($roles) > 100)) {
-+        /*if ((count($roles) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles'] = $roles;
- 
-         return $this;
-@@ -1592,9 +1592,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_base) > 100)) {
-+        /*if ((count($roles_at_base) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles_at_base'] = $roles_at_base;
- 
-         return $this;
-@@ -1632,9 +1632,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_hq) > 100)) {
-+        /*if ((count($roles_at_hq) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles_at_hq'] = $roles_at_hq;
- 
-         return $this;
-@@ -1672,9 +1672,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_other) > 100)) {
-+        /*if ((count($roles_at_other) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['roles_at_other'] = $roles_at_other;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php
---- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php	(date 1720983316430)
-@@ -402,9 +402,9 @@
-             throw new \InvalidArgumentException('non-nullable heads cannot be null');
-         }
- 
--        if ((count($heads) > 10)) {
-+        /*if ((count($heads) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $heads when calling GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails., number of items must be less than or equal to 10.');
--        }
-+        }*/
-         $this->container['heads'] = $heads;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdClonesJumpClone.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php
---- a/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdClonesJumpClone.php	(date 1720982187113)
-@@ -381,9 +381,9 @@
-             throw new \InvalidArgumentException('non-nullable implants cannot be null');
-         }
- 
--        if ((count($implants) > 64)) {
-+        /*if ((count($implants) > 64)) {
-             throw new \InvalidArgumentException('invalid value for $implants when calling GetCharactersCharacterIdClonesJumpClone., number of items must be less than or equal to 64.');
--        }
-+        }*/
-         $this->container['implants'] = $implants;
- 
-         return $this;
-Index: lib/Model/GetMarketsGroupsMarketGroupIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetMarketsGroupsMarketGroupIdOk.php b/lib/Model/GetMarketsGroupsMarketGroupIdOk.php
---- a/lib/Model/GetMarketsGroupsMarketGroupIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetMarketsGroupsMarketGroupIdOk.php	(date 1720983316478)
-@@ -465,9 +465,9 @@
-             throw new \InvalidArgumentException('non-nullable types cannot be null');
-         }
- 
--        if ((count($types) > 5000)) {
-+        /*if ((count($types) > 5000)) {
-             throw new \InvalidArgumentException('invalid value for $types when calling GetMarketsGroupsMarketGroupIdOk., number of items must be less than or equal to 5000.');
--        }
-+        }*/
-         $this->container['types'] = $types;
- 
-         return $this;
-Index: lib/Model/GetFwLeaderboardsKills.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetFwLeaderboardsKills.php b/lib/Model/GetFwLeaderboardsKills.php
---- a/lib/Model/GetFwLeaderboardsKills.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetFwLeaderboardsKills.php	(date 1720983316538)
-@@ -348,9 +348,9 @@
-             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
-         }
- 
--        if ((count($active_total) > 4)) {
-+        /*if ((count($active_total) > 4)) {
-             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsKills., number of items must be less than or equal to 4.');
--        }
-+        }*/
-         $this->container['active_total'] = $active_total;
- 
-         return $this;
-@@ -379,9 +379,9 @@
-             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
-         }
- 
--        if ((count($last_week) > 4)) {
-+        /*if ((count($last_week) > 4)) {
-             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsKills., number of items must be less than or equal to 4.');
--        }
-+        }*/
-         $this->container['last_week'] = $last_week;
- 
-         return $this;
-@@ -410,9 +410,9 @@
-             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
-         }
- 
--        if ((count($yesterday) > 4)) {
-+        /*if ((count($yesterday) > 4)) {
-             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsKills., number of items must be less than or equal to 4.');
--        }
-+        }*/
-         $this->container['yesterday'] = $yesterday;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
---- a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(date 1720983316634)
-@@ -882,9 +882,9 @@
-             throw new \InvalidArgumentException('non-nullable fuels cannot be null');
-         }
- 
--        if ((count($fuels) > 20)) {
-+        /*if ((count($fuels) > 20)) {
-             throw new \InvalidArgumentException('invalid value for $fuels when calling GetCorporationsCorporationIdStarbasesStarbaseIdOk., number of items must be less than or equal to 20.');
--        }
-+        }*/
-         $this->container['fuels'] = $fuels;
- 
-         return $this;
-Index: lib/Model/PostUiOpenwindowNewmailNewMail.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/PostUiOpenwindowNewmailNewMail.php b/lib/Model/PostUiOpenwindowNewmailNewMail.php
---- a/lib/Model/PostUiOpenwindowNewmailNewMail.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/PostUiOpenwindowNewmailNewMail.php	(date 1720983316570)
-@@ -397,9 +397,9 @@
-             throw new \InvalidArgumentException('non-nullable recipients cannot be null');
-         }
- 
--        if ((count($recipients) > 50)) {
-+        /*if ((count($recipients) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $recipients when calling PostUiOpenwindowNewmailNewMail., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         if ((count($recipients) < 1)) {
-             throw new \InvalidArgumentException('invalid length for $recipients when calling PostUiOpenwindowNewmailNewMail., number of items must be greater than or equal to 1.');
-         }
-Index: lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php b/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php
---- a/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php	(date 1720983316586)
-@@ -512,9 +512,9 @@
-             throw new \InvalidArgumentException('non-nullable required_items cannot be null');
-         }
- 
--        if ((count($required_items) > 100)) {
-+        /*if ((count($required_items) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $required_items when calling GetLoyaltyStoresCorporationIdOffers200Ok., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['required_items'] = $required_items;
- 
-         return $this;
-Index: lib/Model/GetUniverseConstellationsConstellationIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetUniverseConstellationsConstellationIdOk.php b/lib/Model/GetUniverseConstellationsConstellationIdOk.php
---- a/lib/Model/GetUniverseConstellationsConstellationIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseConstellationsConstellationIdOk.php	(date 1720983316562)
-@@ -468,9 +468,9 @@
-             throw new \InvalidArgumentException('non-nullable systems cannot be null');
-         }
- 
--        if ((count($systems) > 10000)) {
-+        /*if ((count($systems) > 10000)) {
-             throw new \InvalidArgumentException('invalid value for $systems when calling GetUniverseConstellationsConstellationIdOk., number of items must be less than or equal to 10000.');
--        }
-+        }*/
-         $this->container['systems'] = $systems;
- 
+
          return $this;
 Index: lib/Model/GetCharactersCharacterIdMailMailIdOk.php
 IDEA additional info:
@@ -1014,24 +158,24 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/lib/Model/GetCharactersCharacterIdMailMailIdOk.php b/lib/Model/GetCharactersCharacterIdMailMailIdOk.php
---- a/lib/Model/GetCharactersCharacterIdMailMailIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdMailMailIdOk.php	(date 1720982187217)
+--- a/lib/Model/GetCharactersCharacterIdMailMailIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdMailMailIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
 @@ -421,9 +421,9 @@
              throw new \InvalidArgumentException('non-nullable labels cannot be null');
          }
- 
+
 -        if ((count($labels) > 25)) {
 +        /*if ((count($labels) > 25)) {
              throw new \InvalidArgumentException('invalid value for $labels when calling GetCharactersCharacterIdMailMailIdOk., number of items must be less than or equal to 25.');
 -        }
 +        }*/
          $this->container['labels'] = $labels;
- 
+
          return $this;
 @@ -479,9 +479,9 @@
              throw new \InvalidArgumentException('non-nullable recipients cannot be null');
          }
- 
+
 -        if ((count($recipients) > 52)) {
 +        /*if ((count($recipients) > 52)) {
              throw new \InvalidArgumentException('invalid value for $recipients when calling GetCharactersCharacterIdMailMailIdOk., number of items must be less than or equal to 52.');
@@ -1040,613 +184,45 @@ diff --git a/lib/Model/GetCharactersCharacterIdMailMailIdOk.php b/lib/Model/GetC
          if ((count($recipients) < 0)) {
              throw new \InvalidArgumentException('invalid length for $recipients when calling GetCharactersCharacterIdMailMailIdOk., number of items must be greater than or equal to 0.');
          }
-Index: lib/Model/GetDogmaEffectsEffectIdOk.php
+Index: lib/Model/GetCharactersCharacterIdMedals200Ok.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetDogmaEffectsEffectIdOk.php b/lib/Model/GetDogmaEffectsEffectIdOk.php
---- a/lib/Model/GetDogmaEffectsEffectIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetDogmaEffectsEffectIdOk.php	(date 1720983316498)
-@@ -811,9 +811,9 @@
-             throw new \InvalidArgumentException('non-nullable modifiers cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdMedals200Ok.php b/lib/Model/GetCharactersCharacterIdMedals200Ok.php
+--- a/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdMedals200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -509,9 +509,9 @@
+             throw new \InvalidArgumentException('non-nullable graphics cannot be null');
          }
- 
--        if ((count($modifiers) > 100)) {
-+        /*if ((count($modifiers) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $modifiers when calling GetDogmaEffectsEffectIdOk., number of items must be less than or equal to 100.');
+
+-        if ((count($graphics) > 9)) {
++        /*if ((count($graphics) > 9)) {
+             throw new \InvalidArgumentException('invalid value for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be less than or equal to 9.');
 -        }
 +        }*/
-         $this->container['modifiers'] = $modifiers;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdFittings200Ok.php
+         if ((count($graphics) < 3)) {
+             throw new \InvalidArgumentException('invalid length for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be greater than or equal to 3.');
+         }
+Index: lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdFittings200Ok.php b/lib/Model/GetCharactersCharacterIdFittings200Ok.php
---- a/lib/Model/GetCharactersCharacterIdFittings200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdFittings200Ok.php	(date 1720982187197)
-@@ -414,9 +414,9 @@
-             throw new \InvalidArgumentException('non-nullable items cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php
+--- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -402,9 +402,9 @@
+             throw new \InvalidArgumentException('non-nullable heads cannot be null');
          }
- 
--        if ((count($items) > 512)) {
-+        /*if ((count($items) > 512)) {
-             throw new \InvalidArgumentException('invalid value for $items when calling GetCharactersCharacterIdFittings200Ok., number of items must be less than or equal to 512.');
+
+-        if ((count($heads) > 10)) {
++        /*if ((count($heads) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $heads when calling GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails., number of items must be less than or equal to 10.');
 -        }
 +        }*/
-         $this->container['items'] = $items;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdDivisionsOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdDivisionsOk.php b/lib/Model/GetCorporationsCorporationIdDivisionsOk.php
---- a/lib/Model/GetCorporationsCorporationIdDivisionsOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdDivisionsOk.php	(date 1720983316818)
-@@ -328,9 +328,9 @@
-             throw new \InvalidArgumentException('non-nullable hangar cannot be null');
-         }
- 
--        if ((count($hangar) > 7)) {
-+        /*if ((count($hangar) > 7)) {
-             throw new \InvalidArgumentException('invalid value for $hangar when calling GetCorporationsCorporationIdDivisionsOk., number of items must be less than or equal to 7.');
--        }
-+        }*/
-         $this->container['hangar'] = $hangar;
- 
-         return $this;
-@@ -359,9 +359,9 @@
-             throw new \InvalidArgumentException('non-nullable wallet cannot be null');
-         }
- 
--        if ((count($wallet) > 7)) {
-+        /*if ((count($wallet) > 7)) {
-             throw new \InvalidArgumentException('invalid value for $wallet when calling GetCorporationsCorporationIdDivisionsOk., number of items must be less than or equal to 7.');
--        }
-+        }*/
-         $this->container['wallet'] = $wallet;
- 
-         return $this;
-Index: lib/Model/GetWarsWarIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetWarsWarIdOk.php b/lib/Model/GetWarsWarIdOk.php
---- a/lib/Model/GetWarsWarIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetWarsWarIdOk.php	(date 1720983316598)
-@@ -425,9 +425,9 @@
-             throw new \InvalidArgumentException('non-nullable allies cannot be null');
-         }
- 
--        if ((count($allies) > 10000)) {
-+        /*if ((count($allies) > 10000)) {
-             throw new \InvalidArgumentException('invalid value for $allies when calling GetWarsWarIdOk., number of items must be less than or equal to 10000.');
--        }
-+        }*/
-         $this->container['allies'] = $allies;
- 
-         return $this;
-Index: lib/Model/GetUniverseSystemsSystemIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetUniverseSystemsSystemIdOk.php b/lib/Model/GetUniverseSystemsSystemIdOk.php
---- a/lib/Model/GetUniverseSystemsSystemIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseSystemsSystemIdOk.php	(date 1720983316518)
-@@ -457,9 +457,9 @@
-             throw new \InvalidArgumentException('non-nullable planets cannot be null');
-         }
- 
--        if ((count($planets) > 1000)) {
-+        /*if ((count($planets) > 1000)) {
-             throw new \InvalidArgumentException('invalid value for $planets when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 1000.');
--        }
-+        }*/
-         $this->container['planets'] = $planets;
- 
-         return $this;
-@@ -596,9 +596,9 @@
-             throw new \InvalidArgumentException('non-nullable stargates cannot be null');
-         }
- 
--        if ((count($stargates) > 25)) {
-+        /*if ((count($stargates) > 25)) {
-             throw new \InvalidArgumentException('invalid value for $stargates when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 25.');
--        }
-+        }*/
-         $this->container['stargates'] = $stargates;
- 
-         return $this;
-@@ -627,9 +627,9 @@
-             throw new \InvalidArgumentException('non-nullable stations cannot be null');
-         }
- 
--        if ((count($stations) > 25)) {
-+        /*if ((count($stations) > 25)) {
-             throw new \InvalidArgumentException('invalid value for $stations when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 25.');
--        }
-+        }*/
-         $this->container['stations'] = $stations;
- 
-         return $this;
-Index: lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php b/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php
---- a/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php	(date 1720983316646)
-@@ -348,9 +348,9 @@
-             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
-         }
- 
--        if ((count($active_total) > 100)) {
-+        /*if ((count($active_total) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['active_total'] = $active_total;
- 
-         return $this;
-@@ -379,9 +379,9 @@
-             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
-         }
- 
--        if ((count($last_week) > 100)) {
-+        /*if ((count($last_week) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['last_week'] = $last_week;
- 
-         return $this;
-@@ -410,9 +410,9 @@
-             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
-         }
- 
--        if ((count($yesterday) > 100)) {
-+        /*if ((count($yesterday) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['yesterday'] = $yesterday;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdContacts200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php
---- a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(date 1720983316398)
-@@ -473,9 +473,9 @@
-             throw new \InvalidArgumentException('non-nullable label_ids cannot be null');
-         }
- 
--        if ((count($label_ids) > 63)) {
-+        /*if ((count($label_ids) > 63)) {
-             throw new \InvalidArgumentException('invalid value for $label_ids when calling GetCorporationsCorporationIdContacts200Ok., number of items must be less than or equal to 63.');
--        }
-+        }*/
-         $this->container['label_ids'] = $label_ids;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdContacts200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdContacts200Ok.php b/lib/Model/GetCharactersCharacterIdContacts200Ok.php
---- a/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdContacts200Ok.php	(date 1720982187089)
-@@ -507,9 +507,9 @@
-             throw new \InvalidArgumentException('non-nullable label_ids cannot be null');
-         }
- 
--        if ((count($label_ids) > 63)) {
-+        /*if ((count($label_ids) > 63)) {
-             throw new \InvalidArgumentException('invalid value for $label_ids when calling GetCharactersCharacterIdContacts200Ok., number of items must be less than or equal to 63.');
--        }
-+        }*/
-         $this->container['label_ids'] = $label_ids;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdClonesOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdClonesOk.php b/lib/Model/GetCharactersCharacterIdClonesOk.php
---- a/lib/Model/GetCharactersCharacterIdClonesOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdClonesOk.php	(date 1720982187133)
-@@ -368,9 +368,9 @@
-             throw new \InvalidArgumentException('non-nullable jump_clones cannot be null');
-         }
- 
--        if ((count($jump_clones) > 64)) {
-+        /*if ((count($jump_clones) > 64)) {
-             throw new \InvalidArgumentException('invalid value for $jump_clones when calling GetCharactersCharacterIdClonesOk., number of items must be less than or equal to 64.');
--        }
-+        }*/
-         $this->container['jump_clones'] = $jump_clones;
- 
-         return $this;
-Index: lib/Model/GetUniverseStationsStationIdOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetUniverseStationsStationIdOk.php b/lib/Model/GetUniverseStationsStationIdOk.php
---- a/lib/Model/GetUniverseStationsStationIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseStationsStationIdOk.php	(date 1720983316846)
-@@ -714,9 +714,9 @@
-             );
-         }*/
- 
--        if ((count($services) > 30)) {
-+        /*if ((count($services) > 30)) {
-             throw new \InvalidArgumentException('invalid value for $services when calling GetUniverseStationsStationIdOk., number of items must be less than or equal to 30.');
--        }
-+        }*/
-         $this->container['services'] = $services;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdStructures200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php
---- a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(date 1720983316294)
-@@ -700,9 +700,9 @@
-             throw new \InvalidArgumentException('non-nullable services cannot be null');
-         }
- 
--        if ((count($services) > 10)) {
-+        /*if ((count($services) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $services when calling GetCorporationsCorporationIdStructures200Ok., number of items must be less than or equal to 10.');
--        }
-+        }*/
-         $this->container['services'] = $services;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php
---- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php	(date 1720983316334)
-@@ -399,9 +399,9 @@
-             throw new \InvalidArgumentException('non-nullable contents cannot be null');
-         }
- 
--        if ((count($contents) > 90)) {
-+        /*if ((count($contents) > 90)) {
-             throw new \InvalidArgumentException('invalid value for $contents when calling GetCharactersCharacterIdPlanetsPlanetIdPin., number of items must be less than or equal to 90.');
--        }
-+        }*/
-         $this->container['contents'] = $contents;
- 
-         return $this;
-Index: lib/Model/GetCorporationsCorporationIdTitles200Ok.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCorporationsCorporationIdTitles200Ok.php b/lib/Model/GetCorporationsCorporationIdTitles200Ok.php
---- a/lib/Model/GetCorporationsCorporationIdTitles200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCorporationsCorporationIdTitles200Ok.php	(date 1720983316446)
-@@ -1369,9 +1369,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles) > 50)) {
-+        /*if ((count($grantable_roles) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['grantable_roles'] = $grantable_roles;
- 
-         return $this;
-@@ -1409,9 +1409,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles_at_base) > 50)) {
-+        /*if ((count($grantable_roles_at_base) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['grantable_roles_at_base'] = $grantable_roles_at_base;
- 
-         return $this;
-@@ -1449,9 +1449,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles_at_hq) > 50)) {
-+        /*if ((count($grantable_roles_at_hq) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['grantable_roles_at_hq'] = $grantable_roles_at_hq;
- 
-         return $this;
-@@ -1489,9 +1489,9 @@
-             );
-         }*/
- 
--        if ((count($grantable_roles_at_other) > 50)) {
-+        /*if ((count($grantable_roles_at_other) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['grantable_roles_at_other'] = $grantable_roles_at_other;
- 
-         return $this;
-@@ -1556,9 +1556,9 @@
-             );
-         }*/
- 
--        if ((count($roles) > 50)) {
-+        /*if ((count($roles) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['roles'] = $roles;
- 
-         return $this;
-@@ -1596,9 +1596,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_base) > 50)) {
-+        /*if ((count($roles_at_base) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['roles_at_base'] = $roles_at_base;
- 
-         return $this;
-@@ -1636,9 +1636,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_hq) > 50)) {
-+        /*if ((count($roles_at_hq) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['roles_at_hq'] = $roles_at_hq;
- 
-         return $this;
-@@ -1676,9 +1676,9 @@
-             );
-         }*/
- 
--        if ((count($roles_at_other) > 50)) {
-+        /*if ((count($roles_at_other) > 50)) {
-             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
--        }
-+        }*/
-         $this->container['roles_at_other'] = $roles_at_other;
- 
-         return $this;
-Index: lib/Model/GetCharactersCharacterIdSearchOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetCharactersCharacterIdSearchOk.php b/lib/Model/GetCharactersCharacterIdSearchOk.php
---- a/lib/Model/GetCharactersCharacterIdSearchOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdSearchOk.php	(date 1720983316470)
-@@ -427,9 +427,9 @@
-             throw new \InvalidArgumentException('non-nullable agent cannot be null');
-         }
- 
--        if ((count($agent) > 500)) {
-+        /*if ((count($agent) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $agent when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['agent'] = $agent;
- 
-         return $this;
-@@ -458,9 +458,9 @@
-             throw new \InvalidArgumentException('non-nullable alliance cannot be null');
-         }
- 
--        if ((count($alliance) > 500)) {
-+        /*if ((count($alliance) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $alliance when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['alliance'] = $alliance;
- 
-         return $this;
-@@ -489,9 +489,9 @@
-             throw new \InvalidArgumentException('non-nullable character cannot be null');
-         }
- 
--        if ((count($character) > 500)) {
-+        /*if ((count($character) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $character when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['character'] = $character;
- 
-         return $this;
-@@ -520,9 +520,9 @@
-             throw new \InvalidArgumentException('non-nullable constellation cannot be null');
-         }
- 
--        if ((count($constellation) > 500)) {
-+        /*if ((count($constellation) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $constellation when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['constellation'] = $constellation;
- 
-         return $this;
-@@ -551,9 +551,9 @@
-             throw new \InvalidArgumentException('non-nullable corporation cannot be null');
-         }
- 
--        if ((count($corporation) > 500)) {
-+        /*if ((count($corporation) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $corporation when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['corporation'] = $corporation;
- 
-         return $this;
-@@ -582,9 +582,9 @@
-             throw new \InvalidArgumentException('non-nullable faction cannot be null');
-         }
- 
--        if ((count($faction) > 500)) {
-+        /*if ((count($faction) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $faction when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['faction'] = $faction;
- 
-         return $this;
-@@ -613,9 +613,9 @@
-             throw new \InvalidArgumentException('non-nullable inventory_type cannot be null');
-         }
- 
--        if ((count($inventory_type) > 500)) {
-+        /*if ((count($inventory_type) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $inventory_type when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['inventory_type'] = $inventory_type;
- 
-         return $this;
-@@ -644,9 +644,9 @@
-             throw new \InvalidArgumentException('non-nullable region cannot be null');
-         }
- 
--        if ((count($region) > 500)) {
-+        /*if ((count($region) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $region when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['region'] = $region;
- 
-         return $this;
-@@ -675,9 +675,9 @@
-             throw new \InvalidArgumentException('non-nullable solar_system cannot be null');
-         }
- 
--        if ((count($solar_system) > 500)) {
-+        /*if ((count($solar_system) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $solar_system when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['solar_system'] = $solar_system;
- 
-         return $this;
-@@ -706,9 +706,9 @@
-             throw new \InvalidArgumentException('non-nullable station cannot be null');
-         }
- 
--        if ((count($station) > 500)) {
-+        /*if ((count($station) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $station when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['station'] = $station;
- 
-         return $this;
-@@ -737,9 +737,9 @@
-             throw new \InvalidArgumentException('non-nullable structure cannot be null');
-         }
- 
--        if ((count($structure) > 500)) {
-+        /*if ((count($structure) > 500)) {
-             throw new \InvalidArgumentException('invalid value for $structure when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
--        }
-+        }*/
-         $this->container['structure'] = $structure;
- 
-         return $this;
-Index: lib/Model/GetFwLeaderboardsCharactersKills.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetFwLeaderboardsCharactersKills.php b/lib/Model/GetFwLeaderboardsCharactersKills.php
---- a/lib/Model/GetFwLeaderboardsCharactersKills.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetFwLeaderboardsCharactersKills.php	(date 1720983316578)
-@@ -348,9 +348,9 @@
-             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
-         }
- 
--        if ((count($active_total) > 100)) {
-+        /*if ((count($active_total) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCharactersKills., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['active_total'] = $active_total;
- 
-         return $this;
-@@ -379,9 +379,9 @@
-             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
-         }
- 
--        if ((count($last_week) > 100)) {
-+        /*if ((count($last_week) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCharactersKills., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['last_week'] = $last_week;
- 
-         return $this;
-@@ -410,9 +410,9 @@
-             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
-         }
- 
--        if ((count($yesterday) > 100)) {
-+        /*if ((count($yesterday) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCharactersKills., number of items must be less than or equal to 100.');
--        }
-+        }*/
-         $this->container['yesterday'] = $yesterday;
- 
-         return $this;
-Index: lib/Model/GetKillmailsKillmailIdKillmailHashOk.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php b/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php
---- a/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php	(date 1720983316422)
-@@ -374,9 +374,9 @@
-             throw new \InvalidArgumentException('non-nullable attackers cannot be null');
-         }
- 
--        if ((count($attackers) > 10000)) {
-+        /*if ((count($attackers) > 10000)) {
-             throw new \InvalidArgumentException('invalid value for $attackers when calling GetKillmailsKillmailIdKillmailHashOk., number of items must be less than or equal to 10000.');
--        }
-+        }*/
-         $this->container['attackers'] = $attackers;
- 
+         $this->container['heads'] = $heads;
+
          return $this;
 Index: lib/Model/GetCharactersCharacterIdPlanetsPlanetIdOk.php
 IDEA additional info:
@@ -1654,127 +230,651 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdOk.php b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdOk.php
---- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdOk.php	(date 1720983316826)
+--- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
 @@ -348,9 +348,9 @@
              throw new \InvalidArgumentException('non-nullable links cannot be null');
          }
- 
+
 -        if ((count($links) > 500)) {
 +        /*if ((count($links) > 500)) {
              throw new \InvalidArgumentException('invalid value for $links when calling GetCharactersCharacterIdPlanetsPlanetIdOk., number of items must be less than or equal to 500.');
 -        }
 +        }*/
          $this->container['links'] = $links;
- 
+
          return $this;
 @@ -379,9 +379,9 @@
              throw new \InvalidArgumentException('non-nullable pins cannot be null');
          }
- 
+
 -        if ((count($pins) > 100)) {
 +        /*if ((count($pins) > 100)) {
              throw new \InvalidArgumentException('invalid value for $pins when calling GetCharactersCharacterIdPlanetsPlanetIdOk., number of items must be less than or equal to 100.');
 -        }
 +        }*/
          $this->container['pins'] = $pins;
- 
+
          return $this;
 @@ -410,9 +410,9 @@
              throw new \InvalidArgumentException('non-nullable routes cannot be null');
          }
- 
+
 -        if ((count($routes) > 1000)) {
 +        /*if ((count($routes) > 1000)) {
              throw new \InvalidArgumentException('invalid value for $routes when calling GetCharactersCharacterIdPlanetsPlanetIdOk., number of items must be less than or equal to 1000.');
 -        }
 +        }*/
          $this->container['routes'] = $routes;
- 
+
          return $this;
-Index: lib/Model/GetUniverseRegionsRegionIdOk.php
+Index: lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetUniverseRegionsRegionIdOk.php b/lib/Model/GetUniverseRegionsRegionIdOk.php
---- a/lib/Model/GetUniverseRegionsRegionIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseRegionsRegionIdOk.php	(date 1720983316526)
-@@ -347,9 +347,9 @@
-             throw new \InvalidArgumentException('non-nullable constellations cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php
+--- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdPin.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -399,9 +399,9 @@
+             throw new \InvalidArgumentException('non-nullable contents cannot be null');
          }
- 
--        if ((count($constellations) > 1000)) {
-+        /*if ((count($constellations) > 1000)) {
-             throw new \InvalidArgumentException('invalid value for $constellations when calling GetUniverseRegionsRegionIdOk., number of items must be less than or equal to 1000.');
+
+-        if ((count($contents) > 90)) {
++        /*if ((count($contents) > 90)) {
+             throw new \InvalidArgumentException('invalid value for $contents when calling GetCharactersCharacterIdPlanetsPlanetIdPin., number of items must be less than or equal to 90.');
 -        }
 +        }*/
-         $this->container['constellations'] = $constellations;
- 
+         $this->container['contents'] = $contents;
+
          return $this;
-Index: lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php
+Index: lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php b/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php
---- a/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php	(date 1720983316282)
-@@ -348,9 +348,9 @@
-             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
+diff --git a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php
+--- a/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdPlanetsPlanetIdRoute.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -502,9 +502,9 @@
+             throw new \InvalidArgumentException('non-nullable waypoints cannot be null');
          }
- 
--        if ((count($active_total) > 10)) {
-+        /*if ((count($active_total) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCorporationsVictoryPoints., number of items must be less than or equal to 10.');
+
+-        if ((count($waypoints) > 5)) {
++        /*if ((count($waypoints) > 5)) {
+             throw new \InvalidArgumentException('invalid value for $waypoints when calling GetCharactersCharacterIdPlanetsPlanetIdRoute., number of items must be less than or equal to 5.');
 -        }
 +        }*/
-         $this->container['active_total'] = $active_total;
- 
+         $this->container['waypoints'] = $waypoints;
+
          return $this;
-@@ -379,9 +379,9 @@
-             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
-         }
- 
--        if ((count($last_week) > 10)) {
-+        /*if ((count($last_week) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCorporationsVictoryPoints., number of items must be less than or equal to 10.');
--        }
-+        }*/
-         $this->container['last_week'] = $last_week;
- 
-         return $this;
-@@ -410,9 +410,9 @@
-             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
-         }
- 
--        if ((count($yesterday) > 10)) {
-+        /*if ((count($yesterday) > 10)) {
-             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCorporationsVictoryPoints., number of items must be less than or equal to 10.');
--        }
-+        }*/
-         $this->container['yesterday'] = $yesterday;
- 
-         return $this;
-Index: lib/Model/GetFleetsFleetIdWings200Ok.php
+Index: lib/Model/GetCharactersCharacterIdRolesOk.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetFleetsFleetIdWings200Ok.php b/lib/Model/GetFleetsFleetIdWings200Ok.php
---- a/lib/Model/GetFleetsFleetIdWings200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetFleetsFleetIdWings200Ok.php	(date 1720983316686)
-@@ -394,9 +394,9 @@
-             throw new \InvalidArgumentException('non-nullable squads cannot be null');
-         }
- 
--        if ((count($squads) > 25)) {
-+        /*if ((count($squads) > 25)) {
-             throw new \InvalidArgumentException('invalid value for $squads when calling GetFleetsFleetIdWings200Ok., number of items must be less than or equal to 25.');
+diff --git a/lib/Model/GetCharactersCharacterIdRolesOk.php b/lib/Model/GetCharactersCharacterIdRolesOk.php
+--- a/lib/Model/GetCharactersCharacterIdRolesOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdRolesOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -835,9 +835,9 @@
+             );
+         }*/
+
+-        if ((count($roles) > 100)) {
++        /*if ((count($roles) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
 -        }
 +        }*/
-         $this->container['squads'] = $squads;
- 
+         $this->container['roles'] = $roles;
+
+         return $this;
+@@ -875,9 +875,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_base) > 100)) {
++        /*if ((count($roles_at_base) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['roles_at_base'] = $roles_at_base;
+
+         return $this;
+@@ -915,9 +915,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_hq) > 100)) {
++        /*if ((count($roles_at_hq) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['roles_at_hq'] = $roles_at_hq;
+
+         return $this;
+@@ -955,9 +955,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_other) > 100)) {
++        /*if ((count($roles_at_other) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['roles_at_other'] = $roles_at_other;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdSearchOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdSearchOk.php b/lib/Model/GetCharactersCharacterIdSearchOk.php
+--- a/lib/Model/GetCharactersCharacterIdSearchOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdSearchOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -427,9 +427,9 @@
+             throw new \InvalidArgumentException('non-nullable agent cannot be null');
+         }
+
+-        if ((count($agent) > 500)) {
++        /*if ((count($agent) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $agent when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['agent'] = $agent;
+
+         return $this;
+@@ -458,9 +458,9 @@
+             throw new \InvalidArgumentException('non-nullable alliance cannot be null');
+         }
+
+-        if ((count($alliance) > 500)) {
++        /*if ((count($alliance) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $alliance when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['alliance'] = $alliance;
+
+         return $this;
+@@ -489,9 +489,9 @@
+             throw new \InvalidArgumentException('non-nullable character cannot be null');
+         }
+
+-        if ((count($character) > 500)) {
++        /*if ((count($character) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $character when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['character'] = $character;
+
+         return $this;
+@@ -520,9 +520,9 @@
+             throw new \InvalidArgumentException('non-nullable constellation cannot be null');
+         }
+
+-        if ((count($constellation) > 500)) {
++        /*if ((count($constellation) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $constellation when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['constellation'] = $constellation;
+
+         return $this;
+@@ -551,9 +551,9 @@
+             throw new \InvalidArgumentException('non-nullable corporation cannot be null');
+         }
+
+-        if ((count($corporation) > 500)) {
++        /*if ((count($corporation) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $corporation when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['corporation'] = $corporation;
+
+         return $this;
+@@ -582,9 +582,9 @@
+             throw new \InvalidArgumentException('non-nullable faction cannot be null');
+         }
+
+-        if ((count($faction) > 500)) {
++        /*if ((count($faction) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $faction when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['faction'] = $faction;
+
+         return $this;
+@@ -613,9 +613,9 @@
+             throw new \InvalidArgumentException('non-nullable inventory_type cannot be null');
+         }
+
+-        if ((count($inventory_type) > 500)) {
++        /*if ((count($inventory_type) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $inventory_type when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['inventory_type'] = $inventory_type;
+
+         return $this;
+@@ -644,9 +644,9 @@
+             throw new \InvalidArgumentException('non-nullable region cannot be null');
+         }
+
+-        if ((count($region) > 500)) {
++        /*if ((count($region) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $region when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['region'] = $region;
+
+         return $this;
+@@ -675,9 +675,9 @@
+             throw new \InvalidArgumentException('non-nullable solar_system cannot be null');
+         }
+
+-        if ((count($solar_system) > 500)) {
++        /*if ((count($solar_system) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $solar_system when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['solar_system'] = $solar_system;
+
+         return $this;
+@@ -706,9 +706,9 @@
+             throw new \InvalidArgumentException('non-nullable station cannot be null');
+         }
+
+-        if ((count($station) > 500)) {
++        /*if ((count($station) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $station when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['station'] = $station;
+
+         return $this;
+@@ -737,9 +737,9 @@
+             throw new \InvalidArgumentException('non-nullable structure cannot be null');
+         }
+
+-        if ((count($structure) > 500)) {
++        /*if ((count($structure) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $structure when calling GetCharactersCharacterIdSearchOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['structure'] = $structure;
+
+         return $this;
+Index: lib/Model/GetCharactersCharacterIdSkillsOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCharactersCharacterIdSkillsOk.php b/lib/Model/GetCharactersCharacterIdSkillsOk.php
+--- a/lib/Model/GetCharactersCharacterIdSkillsOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCharactersCharacterIdSkillsOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -337,9 +337,9 @@
+             throw new \InvalidArgumentException('non-nullable skills cannot be null');
+         }
+
+-        if ((count($skills) > 1000)) {
++        /*if ((count($skills) > 1000)) {
+             throw new \InvalidArgumentException('invalid value for $skills when calling GetCharactersCharacterIdSkillsOk., number of items must be less than or equal to 1000.');
+-        }
++        }*/
+         $this->container['skills'] = $skills;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdContacts200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdContacts200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -473,9 +473,9 @@
+             throw new \InvalidArgumentException('non-nullable label_ids cannot be null');
+         }
+
+-        if ((count($label_ids) > 63)) {
++        /*if ((count($label_ids) > 63)) {
+             throw new \InvalidArgumentException('invalid value for $label_ids when calling GetCorporationsCorporationIdContacts200Ok., number of items must be less than or equal to 63.');
+-        }
++        }*/
+         $this->container['label_ids'] = $label_ids;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdDivisionsOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdDivisionsOk.php b/lib/Model/GetCorporationsCorporationIdDivisionsOk.php
+--- a/lib/Model/GetCorporationsCorporationIdDivisionsOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdDivisionsOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -328,9 +328,9 @@
+             throw new \InvalidArgumentException('non-nullable hangar cannot be null');
+         }
+
+-        if ((count($hangar) > 7)) {
++        /*if ((count($hangar) > 7)) {
+             throw new \InvalidArgumentException('invalid value for $hangar when calling GetCorporationsCorporationIdDivisionsOk., number of items must be less than or equal to 7.');
+-        }
++        }*/
+         $this->container['hangar'] = $hangar;
+
+         return $this;
+@@ -359,9 +359,9 @@
+             throw new \InvalidArgumentException('non-nullable wallet cannot be null');
+         }
+
+-        if ((count($wallet) > 7)) {
++        /*if ((count($wallet) > 7)) {
+             throw new \InvalidArgumentException('invalid value for $wallet when calling GetCorporationsCorporationIdDivisionsOk., number of items must be less than or equal to 7.');
+-        }
++        }*/
+         $this->container['wallet'] = $wallet;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php b/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdMembersTitles200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -357,9 +357,9 @@
+             throw new \InvalidArgumentException('non-nullable titles cannot be null');
+         }
+
+-        if ((count($titles) > 16)) {
++        /*if ((count($titles) > 16)) {
+             throw new \InvalidArgumentException('invalid value for $titles when calling GetCorporationsCorporationIdMembersTitles200Ok., number of items must be less than or equal to 16.');
+-        }
++        }*/
+         $this->container['titles'] = $titles;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdRoles200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdRoles200Ok.php b/lib/Model/GetCorporationsCorporationIdRoles200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdRoles200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdRoles200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -1392,9 +1392,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles) > 100)) {
++        /*if ((count($grantable_roles) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['grantable_roles'] = $grantable_roles;
+
+         return $this;
+@@ -1432,9 +1432,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles_at_base) > 100)) {
++        /*if ((count($grantable_roles_at_base) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['grantable_roles_at_base'] = $grantable_roles_at_base;
+
+         return $this;
+@@ -1472,9 +1472,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles_at_hq) > 100)) {
++        /*if ((count($grantable_roles_at_hq) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['grantable_roles_at_hq'] = $grantable_roles_at_hq;
+
+         return $this;
+@@ -1512,9 +1512,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles_at_other) > 100)) {
++        /*if ((count($grantable_roles_at_other) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['grantable_roles_at_other'] = $grantable_roles_at_other;
+
+         return $this;
+@@ -1552,9 +1552,9 @@
+             );
+         }*/
+
+-        if ((count($roles) > 100)) {
++        /*if ((count($roles) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['roles'] = $roles;
+
+         return $this;
+@@ -1592,9 +1592,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_base) > 100)) {
++        /*if ((count($roles_at_base) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['roles_at_base'] = $roles_at_base;
+
+         return $this;
+@@ -1632,9 +1632,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_hq) > 100)) {
++        /*if ((count($roles_at_hq) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['roles_at_hq'] = $roles_at_hq;
+
+         return $this;
+@@ -1672,9 +1672,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_other) > 100)) {
++        /*if ((count($roles_at_other) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['roles_at_other'] = $roles_at_other;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdRolesHistory200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -738,9 +738,9 @@
+             );
+         }*/
+
+-        if ((count($new_roles) > 50)) {
++        /*if ((count($new_roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $new_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['new_roles'] = $new_roles;
+
+         return $this;
+@@ -778,9 +778,9 @@
+             );
+         }*/
+
+-        if ((count($old_roles) > 50)) {
++        /*if ((count($old_roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $old_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['old_roles'] = $old_roles;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php
+--- a/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdStarbasesStarbaseIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -882,9 +882,9 @@
+             throw new \InvalidArgumentException('non-nullable fuels cannot be null');
+         }
+
+-        if ((count($fuels) > 20)) {
++        /*if ((count($fuels) > 20)) {
+             throw new \InvalidArgumentException('invalid value for $fuels when calling GetCorporationsCorporationIdStarbasesStarbaseIdOk., number of items must be less than or equal to 20.');
+-        }
++        }*/
+         $this->container['fuels'] = $fuels;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdStructures200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdStructures200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -700,9 +700,9 @@
+             throw new \InvalidArgumentException('non-nullable services cannot be null');
+         }
+
+-        if ((count($services) > 10)) {
++        /*if ((count($services) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $services when calling GetCorporationsCorporationIdStructures200Ok., number of items must be less than or equal to 10.');
+-        }
++        }*/
+         $this->container['services'] = $services;
+
+         return $this;
+Index: lib/Model/GetCorporationsCorporationIdTitles200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetCorporationsCorporationIdTitles200Ok.php b/lib/Model/GetCorporationsCorporationIdTitles200Ok.php
+--- a/lib/Model/GetCorporationsCorporationIdTitles200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetCorporationsCorporationIdTitles200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -1369,9 +1369,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles) > 50)) {
++        /*if ((count($grantable_roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['grantable_roles'] = $grantable_roles;
+
+         return $this;
+@@ -1409,9 +1409,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles_at_base) > 50)) {
++        /*if ((count($grantable_roles_at_base) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['grantable_roles_at_base'] = $grantable_roles_at_base;
+
+         return $this;
+@@ -1449,9 +1449,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles_at_hq) > 50)) {
++        /*if ((count($grantable_roles_at_hq) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['grantable_roles_at_hq'] = $grantable_roles_at_hq;
+
+         return $this;
+@@ -1489,9 +1489,9 @@
+             );
+         }*/
+
+-        if ((count($grantable_roles_at_other) > 50)) {
++        /*if ((count($grantable_roles_at_other) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['grantable_roles_at_other'] = $grantable_roles_at_other;
+
+         return $this;
+@@ -1556,9 +1556,9 @@
+             );
+         }*/
+
+-        if ((count($roles) > 50)) {
++        /*if ((count($roles) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['roles'] = $roles;
+
+         return $this;
+@@ -1596,9 +1596,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_base) > 50)) {
++        /*if ((count($roles_at_base) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['roles_at_base'] = $roles_at_base;
+
+         return $this;
+@@ -1636,9 +1636,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_hq) > 50)) {
++        /*if ((count($roles_at_hq) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['roles_at_hq'] = $roles_at_hq;
+
+         return $this;
+@@ -1676,9 +1676,9 @@
+             );
+         }*/
+
+-        if ((count($roles_at_other) > 50)) {
++        /*if ((count($roles_at_other) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         $this->container['roles_at_other'] = $roles_at_other;
+
          return $this;
 Index: lib/Model/GetDogmaDynamicItemsTypeIdItemIdOk.php
 IDEA additional info:
@@ -1782,63 +882,355 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/lib/Model/GetDogmaDynamicItemsTypeIdItemIdOk.php b/lib/Model/GetDogmaDynamicItemsTypeIdItemIdOk.php
---- a/lib/Model/GetDogmaDynamicItemsTypeIdItemIdOk.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetDogmaDynamicItemsTypeIdItemIdOk.php	(date 1720983316622)
+--- a/lib/Model/GetDogmaDynamicItemsTypeIdItemIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetDogmaDynamicItemsTypeIdItemIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
 @@ -391,9 +391,9 @@
              throw new \InvalidArgumentException('non-nullable dogma_attributes cannot be null');
          }
- 
+
 -        if ((count($dogma_attributes) > 1000)) {
 +        /*if ((count($dogma_attributes) > 1000)) {
              throw new \InvalidArgumentException('invalid value for $dogma_attributes when calling GetDogmaDynamicItemsTypeIdItemIdOk., number of items must be less than or equal to 1000.');
 -        }
 +        }*/
          $this->container['dogma_attributes'] = $dogma_attributes;
- 
+
          return $this;
 @@ -422,9 +422,9 @@
              throw new \InvalidArgumentException('non-nullable dogma_effects cannot be null');
          }
- 
+
 -        if ((count($dogma_effects) > 1000)) {
 +        /*if ((count($dogma_effects) > 1000)) {
              throw new \InvalidArgumentException('invalid value for $dogma_effects when calling GetDogmaDynamicItemsTypeIdItemIdOk., number of items must be less than or equal to 1000.');
 -        }
 +        }*/
          $this->container['dogma_effects'] = $dogma_effects;
- 
+
          return $this;
-Index: lib/Model/GetUniverseSystemsSystemIdPlanet.php
+Index: lib/Model/GetDogmaEffectsEffectIdOk.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/lib/Model/GetUniverseSystemsSystemIdPlanet.php b/lib/Model/GetUniverseSystemsSystemIdPlanet.php
---- a/lib/Model/GetUniverseSystemsSystemIdPlanet.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetUniverseSystemsSystemIdPlanet.php	(date 1720983316754)
-@@ -338,9 +338,9 @@
-             throw new \InvalidArgumentException('non-nullable asteroid_belts cannot be null');
+diff --git a/lib/Model/GetDogmaEffectsEffectIdOk.php b/lib/Model/GetDogmaEffectsEffectIdOk.php
+--- a/lib/Model/GetDogmaEffectsEffectIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetDogmaEffectsEffectIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -811,9 +811,9 @@
+             throw new \InvalidArgumentException('non-nullable modifiers cannot be null');
          }
- 
--        if ((count($asteroid_belts) > 100)) {
-+        /*if ((count($asteroid_belts) > 100)) {
-             throw new \InvalidArgumentException('invalid value for $asteroid_belts when calling GetUniverseSystemsSystemIdPlanet., number of items must be less than or equal to 100.');
+
+-        if ((count($modifiers) > 100)) {
++        /*if ((count($modifiers) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $modifiers when calling GetDogmaEffectsEffectIdOk., number of items must be less than or equal to 100.');
 -        }
 +        }*/
-         $this->container['asteroid_belts'] = $asteroid_belts;
- 
+         $this->container['modifiers'] = $modifiers;
+
          return $this;
-@@ -369,9 +369,9 @@
-             throw new \InvalidArgumentException('non-nullable moons cannot be null');
+Index: lib/Model/GetFleetsFleetIdWings200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFleetsFleetIdWings200Ok.php b/lib/Model/GetFleetsFleetIdWings200Ok.php
+--- a/lib/Model/GetFleetsFleetIdWings200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetFleetsFleetIdWings200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -394,9 +394,9 @@
+             throw new \InvalidArgumentException('non-nullable squads cannot be null');
          }
- 
--        if ((count($moons) > 1000)) {
-+        /*if ((count($moons) > 1000)) {
-             throw new \InvalidArgumentException('invalid value for $moons when calling GetUniverseSystemsSystemIdPlanet., number of items must be less than or equal to 1000.');
+
+-        if ((count($squads) > 25)) {
++        /*if ((count($squads) > 25)) {
+             throw new \InvalidArgumentException('invalid value for $squads when calling GetFleetsFleetIdWings200Ok., number of items must be less than or equal to 25.');
 -        }
 +        }*/
-         $this->container['moons'] = $moons;
- 
+         $this->container['squads'] = $squads;
+
+         return $this;
+Index: lib/Model/GetFwLeaderboardsCharactersKills.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwLeaderboardsCharactersKills.php b/lib/Model/GetFwLeaderboardsCharactersKills.php
+--- a/lib/Model/GetFwLeaderboardsCharactersKills.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetFwLeaderboardsCharactersKills.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -348,9 +348,9 @@
+             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
+         }
+
+-        if ((count($active_total) > 100)) {
++        /*if ((count($active_total) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCharactersKills., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['active_total'] = $active_total;
+
+         return $this;
+@@ -379,9 +379,9 @@
+             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
+         }
+
+-        if ((count($last_week) > 100)) {
++        /*if ((count($last_week) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCharactersKills., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['last_week'] = $last_week;
+
+         return $this;
+@@ -410,9 +410,9 @@
+             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
+         }
+
+-        if ((count($yesterday) > 100)) {
++        /*if ((count($yesterday) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCharactersKills., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['yesterday'] = $yesterday;
+
+         return $this;
+Index: lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php b/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php
+--- a/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetFwLeaderboardsCharactersVictoryPoints.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -348,9 +348,9 @@
+             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
+         }
+
+-        if ((count($active_total) > 100)) {
++        /*if ((count($active_total) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['active_total'] = $active_total;
+
+         return $this;
+@@ -379,9 +379,9 @@
+             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
+         }
+
+-        if ((count($last_week) > 100)) {
++        /*if ((count($last_week) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['last_week'] = $last_week;
+
+         return $this;
+@@ -410,9 +410,9 @@
+             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
+         }
+
+-        if ((count($yesterday) > 100)) {
++        /*if ((count($yesterday) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCharactersVictoryPoints., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['yesterday'] = $yesterday;
+
+         return $this;
+Index: lib/Model/GetFwLeaderboardsCorporationsKills.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwLeaderboardsCorporationsKills.php b/lib/Model/GetFwLeaderboardsCorporationsKills.php
+--- a/lib/Model/GetFwLeaderboardsCorporationsKills.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetFwLeaderboardsCorporationsKills.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -348,9 +348,9 @@
+             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
+         }
+
+-        if ((count($active_total) > 10)) {
++        /*if ((count($active_total) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCorporationsKills., number of items must be less than or equal to 10.');
+-        }
++        }*/
+         $this->container['active_total'] = $active_total;
+
+         return $this;
+@@ -379,9 +379,9 @@
+             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
+         }
+
+-        if ((count($last_week) > 10)) {
++        /*if ((count($last_week) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCorporationsKills., number of items must be less than or equal to 10.');
+-        }
++        }*/
+         $this->container['last_week'] = $last_week;
+
+         return $this;
+@@ -410,9 +410,9 @@
+             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
+         }
+
+-        if ((count($yesterday) > 10)) {
++        /*if ((count($yesterday) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCorporationsKills., number of items must be less than or equal to 10.');
+-        }
++        }*/
+         $this->container['yesterday'] = $yesterday;
+
+         return $this;
+Index: lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php b/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php
+--- a/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetFwLeaderboardsCorporationsVictoryPoints.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -348,9 +348,9 @@
+             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
+         }
+
+-        if ((count($active_total) > 10)) {
++        /*if ((count($active_total) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsCorporationsVictoryPoints., number of items must be less than or equal to 10.');
+-        }
++        }*/
+         $this->container['active_total'] = $active_total;
+
+         return $this;
+@@ -379,9 +379,9 @@
+             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
+         }
+
+-        if ((count($last_week) > 10)) {
++        /*if ((count($last_week) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsCorporationsVictoryPoints., number of items must be less than or equal to 10.');
+-        }
++        }*/
+         $this->container['last_week'] = $last_week;
+
+         return $this;
+@@ -410,9 +410,9 @@
+             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
+         }
+
+-        if ((count($yesterday) > 10)) {
++        /*if ((count($yesterday) > 10)) {
+             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsCorporationsVictoryPoints., number of items must be less than or equal to 10.');
+-        }
++        }*/
+         $this->container['yesterday'] = $yesterday;
+
+         return $this;
+Index: lib/Model/GetFwLeaderboardsKills.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwLeaderboardsKills.php b/lib/Model/GetFwLeaderboardsKills.php
+--- a/lib/Model/GetFwLeaderboardsKills.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetFwLeaderboardsKills.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -348,9 +348,9 @@
+             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
+         }
+
+-        if ((count($active_total) > 4)) {
++        /*if ((count($active_total) > 4)) {
+             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsKills., number of items must be less than or equal to 4.');
+-        }
++        }*/
+         $this->container['active_total'] = $active_total;
+
+         return $this;
+@@ -379,9 +379,9 @@
+             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
+         }
+
+-        if ((count($last_week) > 4)) {
++        /*if ((count($last_week) > 4)) {
+             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsKills., number of items must be less than or equal to 4.');
+-        }
++        }*/
+         $this->container['last_week'] = $last_week;
+
+         return $this;
+@@ -410,9 +410,9 @@
+             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
+         }
+
+-        if ((count($yesterday) > 4)) {
++        /*if ((count($yesterday) > 4)) {
+             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsKills., number of items must be less than or equal to 4.');
+-        }
++        }*/
+         $this->container['yesterday'] = $yesterday;
+
+         return $this;
+Index: lib/Model/GetFwLeaderboardsVictoryPoints.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetFwLeaderboardsVictoryPoints.php b/lib/Model/GetFwLeaderboardsVictoryPoints.php
+--- a/lib/Model/GetFwLeaderboardsVictoryPoints.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetFwLeaderboardsVictoryPoints.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -348,9 +348,9 @@
+             throw new \InvalidArgumentException('non-nullable active_total cannot be null');
+         }
+
+-        if ((count($active_total) > 4)) {
++        /*if ((count($active_total) > 4)) {
+             throw new \InvalidArgumentException('invalid value for $active_total when calling GetFwLeaderboardsVictoryPoints., number of items must be less than or equal to 4.');
+-        }
++        }*/
+         $this->container['active_total'] = $active_total;
+
+         return $this;
+@@ -379,9 +379,9 @@
+             throw new \InvalidArgumentException('non-nullable last_week cannot be null');
+         }
+
+-        if ((count($last_week) > 4)) {
++        /*if ((count($last_week) > 4)) {
+             throw new \InvalidArgumentException('invalid value for $last_week when calling GetFwLeaderboardsVictoryPoints., number of items must be less than or equal to 4.');
+-        }
++        }*/
+         $this->container['last_week'] = $last_week;
+
+         return $this;
+@@ -410,9 +410,9 @@
+             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
+         }
+
+-        if ((count($yesterday) > 4)) {
++        /*if ((count($yesterday) > 4)) {
+             throw new \InvalidArgumentException('invalid value for $yesterday when calling GetFwLeaderboardsVictoryPoints., number of items must be less than or equal to 4.');
+-        }
++        }*/
+         $this->container['yesterday'] = $yesterday;
+
+         return $this;
+Index: lib/Model/GetIncursions200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetIncursions200Ok.php b/lib/Model/GetIncursions200Ok.php
+--- a/lib/Model/GetIncursions200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetIncursions200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -497,9 +497,9 @@
+             throw new \InvalidArgumentException('non-nullable infested_solar_systems cannot be null');
+         }
+
+-        if ((count($infested_solar_systems) > 100)) {
++        /*if ((count($infested_solar_systems) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $infested_solar_systems when calling GetIncursions200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['infested_solar_systems'] = $infested_solar_systems;
+
          return $this;
 Index: lib/Model/GetIndustrySystems200Ok.php
 IDEA additional info:
@@ -1846,17 +1238,593 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/lib/Model/GetIndustrySystems200Ok.php b/lib/Model/GetIndustrySystems200Ok.php
---- a/lib/Model/GetIndustrySystems200Ok.php	(revision 24a2480b79deb2019be8162f9114adb04ec91edf)
-+++ b/lib/Model/GetIndustrySystems200Ok.php	(date 1720983316798)
+--- a/lib/Model/GetIndustrySystems200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetIndustrySystems200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
 @@ -330,9 +330,9 @@
              throw new \InvalidArgumentException('non-nullable cost_indices cannot be null');
          }
- 
+
 -        if ((count($cost_indices) > 10)) {
 +        /*if ((count($cost_indices) > 10)) {
              throw new \InvalidArgumentException('invalid value for $cost_indices when calling GetIndustrySystems200Ok., number of items must be less than or equal to 10.');
 -        }
 +        }*/
          $this->container['cost_indices'] = $cost_indices;
- 
+
+         return $this;
+Index: lib/Model/GetInsurancePrices200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetInsurancePrices200Ok.php b/lib/Model/GetInsurancePrices200Ok.php
+--- a/lib/Model/GetInsurancePrices200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetInsurancePrices200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -330,9 +330,9 @@
+             throw new \InvalidArgumentException('non-nullable levels cannot be null');
+         }
+
+-        if ((count($levels) > 6)) {
++        /*if ((count($levels) > 6)) {
+             throw new \InvalidArgumentException('invalid value for $levels when calling GetInsurancePrices200Ok., number of items must be less than or equal to 6.');
+-        }
++        }*/
+         $this->container['levels'] = $levels;
+
+         return $this;
+Index: lib/Model/GetKillmailsKillmailIdKillmailHashItem.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php b/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php
+--- a/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetKillmailsKillmailIdKillmailHashItem.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -415,9 +415,9 @@
+             throw new \InvalidArgumentException('non-nullable items cannot be null');
+         }
+
+-        if ((count($items) > 10000)) {
++        /*if ((count($items) > 10000)) {
+             throw new \InvalidArgumentException('invalid value for $items when calling GetKillmailsKillmailIdKillmailHashItem., number of items must be less than or equal to 10000.');
+-        }
++        }*/
+         $this->container['items'] = $items;
+
+         return $this;
+Index: lib/Model/GetKillmailsKillmailIdKillmailHashOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php b/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php
+--- a/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetKillmailsKillmailIdKillmailHashOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -374,9 +374,9 @@
+             throw new \InvalidArgumentException('non-nullable attackers cannot be null');
+         }
+
+-        if ((count($attackers) > 10000)) {
++        /*if ((count($attackers) > 10000)) {
+             throw new \InvalidArgumentException('invalid value for $attackers when calling GetKillmailsKillmailIdKillmailHashOk., number of items must be less than or equal to 10000.');
+-        }
++        }*/
+         $this->container['attackers'] = $attackers;
+
+         return $this;
+Index: lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php b/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php
+--- a/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetKillmailsKillmailIdKillmailHashVictim.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -507,9 +507,9 @@
+             throw new \InvalidArgumentException('non-nullable items cannot be null');
+         }
+
+-        if ((count($items) > 10000)) {
++        /*if ((count($items) > 10000)) {
+             throw new \InvalidArgumentException('invalid value for $items when calling GetKillmailsKillmailIdKillmailHashVictim., number of items must be less than or equal to 10000.');
+-        }
++        }*/
+         $this->container['items'] = $items;
+
+         return $this;
+Index: lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php b/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php
+--- a/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetLoyaltyStoresCorporationIdOffers200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -512,9 +512,9 @@
+             throw new \InvalidArgumentException('non-nullable required_items cannot be null');
+         }
+
+-        if ((count($required_items) > 100)) {
++        /*if ((count($required_items) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $required_items when calling GetLoyaltyStoresCorporationIdOffers200Ok., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['required_items'] = $required_items;
+
+         return $this;
+Index: lib/Model/GetMarketsGroupsMarketGroupIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetMarketsGroupsMarketGroupIdOk.php b/lib/Model/GetMarketsGroupsMarketGroupIdOk.php
+--- a/lib/Model/GetMarketsGroupsMarketGroupIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetMarketsGroupsMarketGroupIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -465,9 +465,9 @@
+             throw new \InvalidArgumentException('non-nullable types cannot be null');
+         }
+
+-        if ((count($types) > 5000)) {
++        /*if ((count($types) > 5000)) {
+             throw new \InvalidArgumentException('invalid value for $types when calling GetMarketsGroupsMarketGroupIdOk., number of items must be less than or equal to 5000.');
+-        }
++        }*/
+         $this->container['types'] = $types;
+
+         return $this;
+Index: lib/Model/GetSovereigntyCampaigns200Ok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetSovereigntyCampaigns200Ok.php b/lib/Model/GetSovereigntyCampaigns200Ok.php
+--- a/lib/Model/GetSovereigntyCampaigns200Ok.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetSovereigntyCampaigns200Ok.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -598,9 +598,9 @@
+             throw new \InvalidArgumentException('non-nullable participants cannot be null');
+         }
+
+-        if ((count($participants) > 5000)) {
++        /*if ((count($participants) > 5000)) {
+             throw new \InvalidArgumentException('invalid value for $participants when calling GetSovereigntyCampaigns200Ok., number of items must be less than or equal to 5000.');
+-        }
++        }*/
+         $this->container['participants'] = $participants;
+
+         return $this;
+Index: lib/Model/GetUniverseCategoriesCategoryIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseCategoriesCategoryIdOk.php b/lib/Model/GetUniverseCategoriesCategoryIdOk.php
+--- a/lib/Model/GetUniverseCategoriesCategoryIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseCategoriesCategoryIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -377,9 +377,9 @@
+             throw new \InvalidArgumentException('non-nullable groups cannot be null');
+         }
+
+-        if ((count($groups) > 10000)) {
++        /*if ((count($groups) > 10000)) {
+             throw new \InvalidArgumentException('invalid value for $groups when calling GetUniverseCategoriesCategoryIdOk., number of items must be less than or equal to 10000.');
+-        }
++        }*/
+         $this->container['groups'] = $groups;
+
+         return $this;
+Index: lib/Model/GetUniverseConstellationsConstellationIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseConstellationsConstellationIdOk.php b/lib/Model/GetUniverseConstellationsConstellationIdOk.php
+--- a/lib/Model/GetUniverseConstellationsConstellationIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseConstellationsConstellationIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -468,9 +468,9 @@
+             throw new \InvalidArgumentException('non-nullable systems cannot be null');
+         }
+
+-        if ((count($systems) > 10000)) {
++        /*if ((count($systems) > 10000)) {
+             throw new \InvalidArgumentException('invalid value for $systems when calling GetUniverseConstellationsConstellationIdOk., number of items must be less than or equal to 10000.');
+-        }
++        }*/
+         $this->container['systems'] = $systems;
+
+         return $this;
+Index: lib/Model/GetUniverseGroupsGroupIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseGroupsGroupIdOk.php b/lib/Model/GetUniverseGroupsGroupIdOk.php
+--- a/lib/Model/GetUniverseGroupsGroupIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseGroupsGroupIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -468,9 +468,9 @@
+             throw new \InvalidArgumentException('non-nullable types cannot be null');
+         }
+
+-        if ((count($types) > 10000)) {
++        /*if ((count($types) > 10000)) {
+             throw new \InvalidArgumentException('invalid value for $types when calling GetUniverseGroupsGroupIdOk., number of items must be less than or equal to 10000.');
+-        }
++        }*/
+         $this->container['types'] = $types;
+
+         return $this;
+Index: lib/Model/GetUniverseRegionsRegionIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseRegionsRegionIdOk.php b/lib/Model/GetUniverseRegionsRegionIdOk.php
+--- a/lib/Model/GetUniverseRegionsRegionIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseRegionsRegionIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -347,9 +347,9 @@
+             throw new \InvalidArgumentException('non-nullable constellations cannot be null');
+         }
+
+-        if ((count($constellations) > 1000)) {
++        /*if ((count($constellations) > 1000)) {
+             throw new \InvalidArgumentException('invalid value for $constellations when calling GetUniverseRegionsRegionIdOk., number of items must be less than or equal to 1000.');
+-        }
++        }*/
+         $this->container['constellations'] = $constellations;
+
+         return $this;
+Index: lib/Model/GetUniverseStationsStationIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseStationsStationIdOk.php b/lib/Model/GetUniverseStationsStationIdOk.php
+--- a/lib/Model/GetUniverseStationsStationIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseStationsStationIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -714,9 +714,9 @@
+             );
+         }*/
+
+-        if ((count($services) > 30)) {
++        /*if ((count($services) > 30)) {
+             throw new \InvalidArgumentException('invalid value for $services when calling GetUniverseStationsStationIdOk., number of items must be less than or equal to 30.');
+-        }
++        }*/
+         $this->container['services'] = $services;
+
+         return $this;
+Index: lib/Model/GetUniverseSystemsSystemIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseSystemsSystemIdOk.php b/lib/Model/GetUniverseSystemsSystemIdOk.php
+--- a/lib/Model/GetUniverseSystemsSystemIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseSystemsSystemIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -457,9 +457,9 @@
+             throw new \InvalidArgumentException('non-nullable planets cannot be null');
+         }
+
+-        if ((count($planets) > 1000)) {
++        /*if ((count($planets) > 1000)) {
+             throw new \InvalidArgumentException('invalid value for $planets when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 1000.');
+-        }
++        }*/
+         $this->container['planets'] = $planets;
+
+         return $this;
+@@ -596,9 +596,9 @@
+             throw new \InvalidArgumentException('non-nullable stargates cannot be null');
+         }
+
+-        if ((count($stargates) > 25)) {
++        /*if ((count($stargates) > 25)) {
+             throw new \InvalidArgumentException('invalid value for $stargates when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 25.');
+-        }
++        }*/
+         $this->container['stargates'] = $stargates;
+
+         return $this;
+@@ -627,9 +627,9 @@
+             throw new \InvalidArgumentException('non-nullable stations cannot be null');
+         }
+
+-        if ((count($stations) > 25)) {
++        /*if ((count($stations) > 25)) {
+             throw new \InvalidArgumentException('invalid value for $stations when calling GetUniverseSystemsSystemIdOk., number of items must be less than or equal to 25.');
+-        }
++        }*/
+         $this->container['stations'] = $stations;
+
+         return $this;
+Index: lib/Model/GetUniverseSystemsSystemIdPlanet.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseSystemsSystemIdPlanet.php b/lib/Model/GetUniverseSystemsSystemIdPlanet.php
+--- a/lib/Model/GetUniverseSystemsSystemIdPlanet.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseSystemsSystemIdPlanet.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -338,9 +338,9 @@
+             throw new \InvalidArgumentException('non-nullable asteroid_belts cannot be null');
+         }
+
+-        if ((count($asteroid_belts) > 100)) {
++        /*if ((count($asteroid_belts) > 100)) {
+             throw new \InvalidArgumentException('invalid value for $asteroid_belts when calling GetUniverseSystemsSystemIdPlanet., number of items must be less than or equal to 100.');
+-        }
++        }*/
+         $this->container['asteroid_belts'] = $asteroid_belts;
+
+         return $this;
+@@ -369,9 +369,9 @@
+             throw new \InvalidArgumentException('non-nullable moons cannot be null');
+         }
+
+-        if ((count($moons) > 1000)) {
++        /*if ((count($moons) > 1000)) {
+             throw new \InvalidArgumentException('invalid value for $moons when calling GetUniverseSystemsSystemIdPlanet., number of items must be less than or equal to 1000.');
+-        }
++        }*/
+         $this->container['moons'] = $moons;
+
+         return $this;
+Index: lib/Model/GetUniverseTypesTypeIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetUniverseTypesTypeIdOk.php b/lib/Model/GetUniverseTypesTypeIdOk.php
+--- a/lib/Model/GetUniverseTypesTypeIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetUniverseTypesTypeIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -495,9 +495,9 @@
+             throw new \InvalidArgumentException('non-nullable dogma_attributes cannot be null');
+         }
+
+-        if ((count($dogma_attributes) > 1000)) {
++        /*if ((count($dogma_attributes) > 1000)) {
+             throw new \InvalidArgumentException('invalid value for $dogma_attributes when calling GetUniverseTypesTypeIdOk., number of items must be less than or equal to 1000.');
+-        }
++        }*/
+         $this->container['dogma_attributes'] = $dogma_attributes;
+
+         return $this;
+@@ -526,9 +526,9 @@
+             throw new \InvalidArgumentException('non-nullable dogma_effects cannot be null');
+         }
+
+-        if ((count($dogma_effects) > 1000)) {
++        /*if ((count($dogma_effects) > 1000)) {
+             throw new \InvalidArgumentException('invalid value for $dogma_effects when calling GetUniverseTypesTypeIdOk., number of items must be less than or equal to 1000.');
+-        }
++        }*/
+         $this->container['dogma_effects'] = $dogma_effects;
+
+         return $this;
+Index: lib/Model/GetWarsWarIdOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/GetWarsWarIdOk.php b/lib/Model/GetWarsWarIdOk.php
+--- a/lib/Model/GetWarsWarIdOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/GetWarsWarIdOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -425,9 +425,9 @@
+             throw new \InvalidArgumentException('non-nullable allies cannot be null');
+         }
+
+-        if ((count($allies) > 10000)) {
++        /*if ((count($allies) > 10000)) {
+             throw new \InvalidArgumentException('invalid value for $allies when calling GetWarsWarIdOk., number of items must be less than or equal to 10000.');
+-        }
++        }*/
+         $this->container['allies'] = $allies;
+
+         return $this;
+Index: lib/Model/PostCharactersCharacterIdFittingsFitting.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostCharactersCharacterIdFittingsFitting.php b/lib/Model/PostCharactersCharacterIdFittingsFitting.php
+--- a/lib/Model/PostCharactersCharacterIdFittingsFitting.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/PostCharactersCharacterIdFittingsFitting.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -404,9 +404,9 @@
+             throw new \InvalidArgumentException('non-nullable items cannot be null');
+         }
+
+-        if ((count($items) > 512)) {
++        /*if ((count($items) > 512)) {
+             throw new \InvalidArgumentException('invalid value for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be less than or equal to 512.');
+-        }
++        }*/
+         if ((count($items) < 1)) {
+             throw new \InvalidArgumentException('invalid length for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be greater than or equal to 1.');
+         }
+Index: lib/Model/PostCharactersCharacterIdMailMail.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostCharactersCharacterIdMailMail.php b/lib/Model/PostCharactersCharacterIdMailMail.php
+--- a/lib/Model/PostCharactersCharacterIdMailMail.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/PostCharactersCharacterIdMailMail.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -417,9 +417,9 @@
+             throw new \InvalidArgumentException('non-nullable recipients cannot be null');
+         }
+
+-        if ((count($recipients) > 50)) {
++        /*if ((count($recipients) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $recipients when calling PostCharactersCharacterIdMailMail., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         if ((count($recipients) < 1)) {
+             throw new \InvalidArgumentException('invalid length for $recipients when calling PostCharactersCharacterIdMailMail., number of items must be greater than or equal to 1.');
+         }
+Index: lib/Model/PostUiOpenwindowNewmailNewMail.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostUiOpenwindowNewmailNewMail.php b/lib/Model/PostUiOpenwindowNewmailNewMail.php
+--- a/lib/Model/PostUiOpenwindowNewmailNewMail.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/PostUiOpenwindowNewmailNewMail.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -397,9 +397,9 @@
+             throw new \InvalidArgumentException('non-nullable recipients cannot be null');
+         }
+
+-        if ((count($recipients) > 50)) {
++        /*if ((count($recipients) > 50)) {
+             throw new \InvalidArgumentException('invalid value for $recipients when calling PostUiOpenwindowNewmailNewMail., number of items must be less than or equal to 50.');
+-        }
++        }*/
+         if ((count($recipients) < 1)) {
+             throw new \InvalidArgumentException('invalid length for $recipients when calling PostUiOpenwindowNewmailNewMail., number of items must be greater than or equal to 1.');
+         }
+Index: lib/Model/PostUniverseIdsOk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PostUniverseIdsOk.php b/lib/Model/PostUniverseIdsOk.php
+--- a/lib/Model/PostUniverseIdsOk.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/PostUniverseIdsOk.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -416,9 +416,9 @@
+             throw new \InvalidArgumentException('non-nullable agents cannot be null');
+         }
+
+-        if ((count($agents) > 500)) {
++        /*if ((count($agents) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $agents when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['agents'] = $agents;
+
+         return $this;
+@@ -447,9 +447,9 @@
+             throw new \InvalidArgumentException('non-nullable alliances cannot be null');
+         }
+
+-        if ((count($alliances) > 500)) {
++        /*if ((count($alliances) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $alliances when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['alliances'] = $alliances;
+
+         return $this;
+@@ -478,9 +478,9 @@
+             throw new \InvalidArgumentException('non-nullable characters cannot be null');
+         }
+
+-        if ((count($characters) > 500)) {
++        /*if ((count($characters) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $characters when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['characters'] = $characters;
+
+         return $this;
+@@ -509,9 +509,9 @@
+             throw new \InvalidArgumentException('non-nullable constellations cannot be null');
+         }
+
+-        if ((count($constellations) > 500)) {
++        /*if ((count($constellations) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $constellations when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['constellations'] = $constellations;
+
+         return $this;
+@@ -540,9 +540,9 @@
+             throw new \InvalidArgumentException('non-nullable corporations cannot be null');
+         }
+
+-        if ((count($corporations) > 500)) {
++        /*if ((count($corporations) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $corporations when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['corporations'] = $corporations;
+
+         return $this;
+@@ -571,9 +571,9 @@
+             throw new \InvalidArgumentException('non-nullable factions cannot be null');
+         }
+
+-        if ((count($factions) > 500)) {
++        /*if ((count($factions) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $factions when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['factions'] = $factions;
+
+         return $this;
+@@ -602,9 +602,9 @@
+             throw new \InvalidArgumentException('non-nullable inventory_types cannot be null');
+         }
+
+-        if ((count($inventory_types) > 500)) {
++        /*if ((count($inventory_types) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $inventory_types when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['inventory_types'] = $inventory_types;
+
+         return $this;
+@@ -633,9 +633,9 @@
+             throw new \InvalidArgumentException('non-nullable regions cannot be null');
+         }
+
+-        if ((count($regions) > 500)) {
++        /*if ((count($regions) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $regions when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['regions'] = $regions;
+
+         return $this;
+@@ -664,9 +664,9 @@
+             throw new \InvalidArgumentException('non-nullable stations cannot be null');
+         }
+
+-        if ((count($stations) > 500)) {
++        /*if ((count($stations) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $stations when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['stations'] = $stations;
+
+         return $this;
+@@ -695,9 +695,9 @@
+             throw new \InvalidArgumentException('non-nullable systems cannot be null');
+         }
+
+-        if ((count($systems) > 500)) {
++        /*if ((count($systems) > 500)) {
+             throw new \InvalidArgumentException('invalid value for $systems when calling PostUniverseIdsOk., number of items must be less than or equal to 500.');
+-        }
++        }*/
+         $this->container['systems'] = $systems;
+
+         return $this;
+Index: lib/Model/PutCharactersCharacterIdMailMailIdContents.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/Model/PutCharactersCharacterIdMailMailIdContents.php b/lib/Model/PutCharactersCharacterIdMailMailIdContents.php
+--- a/lib/Model/PutCharactersCharacterIdMailMailIdContents.php	(revision 51b8803ed3ca80f87a789d7c4e694260cc1d551e)
++++ b/lib/Model/PutCharactersCharacterIdMailMailIdContents.php	(revision f44b697ccb880fe5e37d9ddc7a2dc84196eee81a)
+@@ -324,9 +324,9 @@
+             throw new \InvalidArgumentException('non-nullable labels cannot be null');
+         }
+
+-        if ((count($labels) > 25)) {
++        /*if ((count($labels) > 25)) {
+             throw new \InvalidArgumentException('invalid value for $labels when calling PutCharactersCharacterIdMailMailIdContents., number of items must be less than or equal to 25.');
+-        }
++        }*/
+         $this->container['labels'] = $labels;
+
          return $this;
