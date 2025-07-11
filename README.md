@@ -30,6 +30,7 @@ See https://github.com/OpenAPITools/openapi-generator/releases for generator lib
 10.4.0
 
 - Raised minimum PHP requirement to 8.1
+- All routes were changed from a version to "latest".
 
 10.3.0
 
