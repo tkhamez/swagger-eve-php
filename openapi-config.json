@@ -1,6 +1,7 @@
 {
     "invokerPackage" : "Swagger\\Client\\Eve",
     "gitUserId" : "tkhamez",
-    "gitRepoId" : "swagger-eve-php"
+    "gitRepoId" : "swagger-eve-php",
+    "disallowAdditionalPropertiesIfNotPresent" : false
 }
 
