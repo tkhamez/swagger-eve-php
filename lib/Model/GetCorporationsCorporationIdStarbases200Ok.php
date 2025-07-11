@@ -508,7 +508,7 @@ class GetCorporationsCorporationIdStarbases200Ok implements ModelInterface, Arra
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
         }
-        $allowedValues = $this->getStateAllowableValues();
+        /*$allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -517,7 +517,7 @@ class GetCorporationsCorporationIdStarbases200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['state'] = $state;
 
         return $this;

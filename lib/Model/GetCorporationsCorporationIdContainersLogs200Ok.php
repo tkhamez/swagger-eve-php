@@ -740,7 +740,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if (is_null($action)) {
             throw new \InvalidArgumentException('non-nullable action cannot be null');
         }
-        $allowedValues = $this->getActionAllowableValues();
+        /*$allowedValues = $this->getActionAllowableValues();
         if (!in_array($action, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -749,7 +749,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['action'] = $action;
 
         return $this;
@@ -858,7 +858,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
         }
-        $allowedValues = $this->getLocationFlagAllowableValues();
+        /*$allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -867,7 +867,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['location_flag'] = $location_flag;
 
         return $this;
@@ -1003,7 +1003,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if (is_null($password_type)) {
             throw new \InvalidArgumentException('non-nullable password_type cannot be null');
         }
-        $allowedValues = $this->getPasswordTypeAllowableValues();
+        /*$allowedValues = $this->getPasswordTypeAllowableValues();
         if (!in_array($password_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1012,7 +1012,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['password_type'] = $password_type;
 
         return $this;

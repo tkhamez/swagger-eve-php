@@ -623,7 +623,7 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
         }
-        $allowedValues = $this->getStatusAllowableValues();
+        /*$allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -632,7 +632,7 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['status'] = $status;
 
         return $this;

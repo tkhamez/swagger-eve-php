@@ -380,7 +380,7 @@ class GetCharactersCharacterIdMailRecipient implements ModelInterface, ArrayAcce
         if (is_null($recipient_type)) {
             throw new \InvalidArgumentException('non-nullable recipient_type cannot be null');
         }
-        $allowedValues = $this->getRecipientTypeAllowableValues();
+        /*$allowedValues = $this->getRecipientTypeAllowableValues();
         if (!in_array($recipient_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -389,7 +389,7 @@ class GetCharactersCharacterIdMailRecipient implements ModelInterface, ArrayAcce
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['recipient_type'] = $recipient_type;
 
         return $this;

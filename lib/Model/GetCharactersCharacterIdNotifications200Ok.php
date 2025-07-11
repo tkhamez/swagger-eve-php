@@ -992,7 +992,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if (is_null($sender_type)) {
             throw new \InvalidArgumentException('non-nullable sender_type cannot be null');
         }
-        $allowedValues = $this->getSenderTypeAllowableValues();
+        /*$allowedValues = $this->getSenderTypeAllowableValues();
         if (!in_array($sender_type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1001,7 +1001,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['sender_type'] = $sender_type;
 
         return $this;
@@ -1083,7 +1083,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
         }
-        $allowedValues = $this->getTypeAllowableValues();
+        /*$allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1092,7 +1092,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['type'] = $type;
 
         return $this;

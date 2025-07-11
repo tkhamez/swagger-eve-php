@@ -723,7 +723,7 @@ class GetCharactersCharacterIdOrders200Ok implements ModelInterface, ArrayAccess
         if (is_null($range)) {
             throw new \InvalidArgumentException('non-nullable range cannot be null');
         }
-        $allowedValues = $this->getRangeAllowableValues();
+        /*$allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -732,7 +732,7 @@ class GetCharactersCharacterIdOrders200Ok implements ModelInterface, ArrayAccess
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['range'] = $range;
 
         return $this;

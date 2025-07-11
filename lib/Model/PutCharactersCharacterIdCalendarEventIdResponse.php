@@ -341,7 +341,7 @@ class PutCharactersCharacterIdCalendarEventIdResponse implements ModelInterface,
         if (is_null($response)) {
             throw new \InvalidArgumentException('non-nullable response cannot be null');
         }
-        $allowedValues = $this->getResponseAllowableValues();
+        /*$allowedValues = $this->getResponseAllowableValues();
         if (!in_array($response, $allowedValues, true)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -350,7 +350,7 @@ class PutCharactersCharacterIdCalendarEventIdResponse implements ModelInterface,
                     implode("', '", $allowedValues)
                 )
             );
-        }
+        }*/
         $this->container['response'] = $response;
 
         return $this;
