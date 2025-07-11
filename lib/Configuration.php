@@ -93,7 +93,7 @@ class Configuration
      *
      * @var string
      */
-    protected $host = 'https://esi.evetech.net';
+    protected $host = 'https://esi.evetech.net/latest';
 
     /**
      * User agent of the HTTP request, set to "OpenAPI-Generator/{version}/PHP" by default
@@ -472,7 +472,7 @@ class Configuration
     {
         return [
             [
-                "url" => "https://esi.evetech.net",
+                "url" => "https://esi.evetech.net/latest",
                 "description" => "No description provided",
             ]
         ];

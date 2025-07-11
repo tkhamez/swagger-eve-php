@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\LocationApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdLocation()**](LocationApi.md#getCharactersCharacterIdLocation) | **GET** /v1/characters/{character_id}/location/ | Get character location |
-| [**getCharactersCharacterIdOnline()**](LocationApi.md#getCharactersCharacterIdOnline) | **GET** /v2/characters/{character_id}/online/ | Get character online |
-| [**getCharactersCharacterIdShip()**](LocationApi.md#getCharactersCharacterIdShip) | **GET** /v1/characters/{character_id}/ship/ | Get current ship |
+| [**getCharactersCharacterIdLocation()**](LocationApi.md#getCharactersCharacterIdLocation) | **GET** /characters/{character_id}/location/ | Get character location |
+| [**getCharactersCharacterIdOnline()**](LocationApi.md#getCharactersCharacterIdOnline) | **GET** /characters/{character_id}/online/ | Get character online |
+| [**getCharactersCharacterIdShip()**](LocationApi.md#getCharactersCharacterIdShip) | **GET** /characters/{character_id}/ship/ | Get current ship |
 
 
 ## `getCharactersCharacterIdLocation()`
@@ -17,7 +17,7 @@ getCharactersCharacterIdLocation($character_id, $datasource, $if_none_match, $to
 
 Get character location
 
-Information about the characters current location. Returns the current solar system id, and also the current station or structure ID if applicable  ---  This route is cached for up to 5 seconds
+Information about the characters current location. Returns the current solar system id, and also the current station or structure ID if applicable  --- Alternate route: `/dev/characters/{character_id}/location/`  Alternate route: `/legacy/characters/{character_id}/location/`  Alternate route: `/v1/characters/{character_id}/location/`  Alternate route: `/v2/characters/{character_id}/location/`  --- This route is cached for up to 5 seconds
 
 ### Example
 
@@ -83,7 +83,7 @@ getCharactersCharacterIdOnline($character_id, $datasource, $if_none_match, $toke
 
 Get character online
 
-Checks if the character is currently online  ---  This route is cached for up to 60 seconds
+Checks if the character is currently online  --- Alternate route: `/dev/characters/{character_id}/online/`  Alternate route: `/v2/characters/{character_id}/online/`  Alternate route: `/v3/characters/{character_id}/online/`  --- This route is cached for up to 60 seconds
 
 ### Example
 
@@ -149,7 +149,7 @@ getCharactersCharacterIdShip($character_id, $datasource, $if_none_match, $token)
 
 Get current ship
 
-Get the current ship type, name and id  ---  This route is cached for up to 5 seconds
+Get the current ship type, name and id  --- Alternate route: `/dev/characters/{character_id}/ship/`  Alternate route: `/legacy/characters/{character_id}/ship/`  Alternate route: `/v1/characters/{character_id}/ship/`  Alternate route: `/v2/characters/{character_id}/ship/`  --- This route is cached for up to 5 seconds
 
 ### Example
 

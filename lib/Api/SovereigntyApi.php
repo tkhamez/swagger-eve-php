@@ -397,7 +397,7 @@ class SovereigntyApi
 
 
 
-        $resourcePath = '/v1/sovereignty/campaigns/';
+        $resourcePath = '/sovereignty/campaigns/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -740,7 +740,7 @@ class SovereigntyApi
 
 
 
-        $resourcePath = '/v1/sovereignty/map/';
+        $resourcePath = '/sovereignty/map/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1083,7 +1083,7 @@ class SovereigntyApi
 
 
 
-        $resourcePath = '/v1/sovereignty/structures/';
+        $resourcePath = '/sovereignty/structures/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

@@ -403,7 +403,7 @@ class InsuranceApi
 
 
 
-        $resourcePath = '/v1/insurance/prices/';
+        $resourcePath = '/insurance/prices/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

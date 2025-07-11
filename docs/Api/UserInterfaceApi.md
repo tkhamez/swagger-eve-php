@@ -1,14 +1,14 @@
 # Swagger\Client\Eve\UserInterfaceApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**postUiAutopilotWaypoint()**](UserInterfaceApi.md#postUiAutopilotWaypoint) | **POST** /v2/ui/autopilot/waypoint/ | Set Autopilot Waypoint |
-| [**postUiOpenwindowContract()**](UserInterfaceApi.md#postUiOpenwindowContract) | **POST** /v1/ui/openwindow/contract/ | Open Contract Window |
-| [**postUiOpenwindowInformation()**](UserInterfaceApi.md#postUiOpenwindowInformation) | **POST** /v1/ui/openwindow/information/ | Open Information Window |
-| [**postUiOpenwindowMarketdetails()**](UserInterfaceApi.md#postUiOpenwindowMarketdetails) | **POST** /v1/ui/openwindow/marketdetails/ | Open Market Details |
-| [**postUiOpenwindowNewmail()**](UserInterfaceApi.md#postUiOpenwindowNewmail) | **POST** /v1/ui/openwindow/newmail/ | Open New Mail Window |
+| [**postUiAutopilotWaypoint()**](UserInterfaceApi.md#postUiAutopilotWaypoint) | **POST** /ui/autopilot/waypoint/ | Set Autopilot Waypoint |
+| [**postUiOpenwindowContract()**](UserInterfaceApi.md#postUiOpenwindowContract) | **POST** /ui/openwindow/contract/ | Open Contract Window |
+| [**postUiOpenwindowInformation()**](UserInterfaceApi.md#postUiOpenwindowInformation) | **POST** /ui/openwindow/information/ | Open Information Window |
+| [**postUiOpenwindowMarketdetails()**](UserInterfaceApi.md#postUiOpenwindowMarketdetails) | **POST** /ui/openwindow/marketdetails/ | Open Market Details |
+| [**postUiOpenwindowNewmail()**](UserInterfaceApi.md#postUiOpenwindowNewmail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window |
 
 
 ## `postUiAutopilotWaypoint()`
@@ -19,7 +19,7 @@ postUiAutopilotWaypoint($add_to_beginning, $clear_other_waypoints, $destination_
 
 Set Autopilot Waypoint
 
-Set a solar system as autopilot waypoint  ---
+Set a solar system as autopilot waypoint  --- Alternate route: `/dev/ui/autopilot/waypoint/`  Alternate route: `/legacy/ui/autopilot/waypoint/`  Alternate route: `/v2/ui/autopilot/waypoint/`
 
 ### Example
 
@@ -86,7 +86,7 @@ postUiOpenwindowContract($contract_id, $datasource, $token)
 
 Open Contract Window
 
-Open the contract window inside the client  ---
+Open the contract window inside the client  --- Alternate route: `/dev/ui/openwindow/contract/`  Alternate route: `/legacy/ui/openwindow/contract/`  Alternate route: `/v1/ui/openwindow/contract/`
 
 ### Example
 
@@ -149,7 +149,7 @@ postUiOpenwindowInformation($target_id, $datasource, $token)
 
 Open Information Window
 
-Open the information window for a character, corporation or alliance inside the client  ---
+Open the information window for a character, corporation or alliance inside the client  --- Alternate route: `/dev/ui/openwindow/information/`  Alternate route: `/legacy/ui/openwindow/information/`  Alternate route: `/v1/ui/openwindow/information/`
 
 ### Example
 
@@ -212,7 +212,7 @@ postUiOpenwindowMarketdetails($type_id, $datasource, $token)
 
 Open Market Details
 
-Open the market details window for a specific typeID inside the client  ---
+Open the market details window for a specific typeID inside the client  --- Alternate route: `/dev/ui/openwindow/marketdetails/`  Alternate route: `/legacy/ui/openwindow/marketdetails/`  Alternate route: `/v1/ui/openwindow/marketdetails/`
 
 ### Example
 
@@ -275,7 +275,7 @@ postUiOpenwindowNewmail($new_mail, $datasource, $token)
 
 Open New Mail Window
 
-Open the New Mail window, according to settings from the request if applicable  ---
+Open the New Mail window, according to settings from the request if applicable  --- Alternate route: `/dev/ui/openwindow/newmail/`  Alternate route: `/legacy/ui/openwindow/newmail/`  Alternate route: `/v1/ui/openwindow/newmail/`
 
 ### Example
 

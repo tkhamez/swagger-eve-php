@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\SearchApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdSearch()**](SearchApi.md#getCharactersCharacterIdSearch) | **GET** /v3/characters/{character_id}/search/ | Search on a string |
+| [**getCharactersCharacterIdSearch()**](SearchApi.md#getCharactersCharacterIdSearch) | **GET** /characters/{character_id}/search/ | Search on a string |
 
 
 ## `getCharactersCharacterIdSearch()`
@@ -15,7 +15,7 @@ getCharactersCharacterIdSearch($categories, $character_id, $search, $accept_lang
 
 Search on a string
 
-Search for entities that match a given sub-string.  ---  This route is cached for up to 3600 seconds
+Search for entities that match a given sub-string.  --- Alternate route: `/dev/characters/{character_id}/search/`  Alternate route: `/legacy/characters/{character_id}/search/`  Alternate route: `/v3/characters/{character_id}/search/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 

@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\FittingsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**deleteCharactersCharacterIdFittingsFittingId()**](FittingsApi.md#deleteCharactersCharacterIdFittingsFittingId) | **DELETE** /v1/characters/{character_id}/fittings/{fitting_id}/ | Delete fitting |
-| [**getCharactersCharacterIdFittings()**](FittingsApi.md#getCharactersCharacterIdFittings) | **GET** /v2/characters/{character_id}/fittings/ | Get fittings |
-| [**postCharactersCharacterIdFittings()**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /v1/characters/{character_id}/fittings/ | Create fitting |
+| [**deleteCharactersCharacterIdFittingsFittingId()**](FittingsApi.md#deleteCharactersCharacterIdFittingsFittingId) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting |
+| [**getCharactersCharacterIdFittings()**](FittingsApi.md#getCharactersCharacterIdFittings) | **GET** /characters/{character_id}/fittings/ | Get fittings |
+| [**postCharactersCharacterIdFittings()**](FittingsApi.md#postCharactersCharacterIdFittings) | **POST** /characters/{character_id}/fittings/ | Create fitting |
 
 
 ## `deleteCharactersCharacterIdFittingsFittingId()`
@@ -17,7 +17,7 @@ deleteCharactersCharacterIdFittingsFittingId($character_id, $fitting_id, $dataso
 
 Delete fitting
 
-Delete a fitting from a character  ---
+Delete a fitting from a character  --- Alternate route: `/dev/characters/{character_id}/fittings/{fitting_id}/`  Alternate route: `/legacy/characters/{character_id}/fittings/{fitting_id}/`  Alternate route: `/v1/characters/{character_id}/fittings/{fitting_id}/`
 
 ### Example
 
@@ -82,7 +82,7 @@ getCharactersCharacterIdFittings($character_id, $datasource, $if_none_match, $to
 
 Get fittings
 
-Return fittings of a character  ---  This route is cached for up to 300 seconds
+Return fittings of a character  --- Alternate route: `/dev/characters/{character_id}/fittings/`  Alternate route: `/v2/characters/{character_id}/fittings/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -148,7 +148,7 @@ postCharactersCharacterIdFittings($character_id, $fitting, $datasource, $token):
 
 Create fitting
 
-Save a new fitting for a character  ---
+Save a new fitting for a character  --- Alternate route: `/dev/characters/{character_id}/fittings/`  Alternate route: `/legacy/characters/{character_id}/fittings/`  Alternate route: `/v1/characters/{character_id}/fittings/`  Alternate route: `/v2/characters/{character_id}/fittings/`
 
 ### Example
 

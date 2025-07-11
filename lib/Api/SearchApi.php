@@ -491,7 +491,7 @@ class SearchApi
 
 
 
-        $resourcePath = '/v3/characters/{character_id}/search/';
+        $resourcePath = '/characters/{character_id}/search/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

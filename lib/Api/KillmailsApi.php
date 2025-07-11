@@ -455,7 +455,7 @@ class KillmailsApi
         
 
 
-        $resourcePath = '/v1/characters/{character_id}/killmails/recent/';
+        $resourcePath = '/characters/{character_id}/killmails/recent/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -886,7 +886,7 @@ class KillmailsApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/killmails/recent/';
+        $resourcePath = '/corporations/{corporation_id}/killmails/recent/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1297,7 +1297,7 @@ class KillmailsApi
 
 
 
-        $resourcePath = '/v1/killmails/{killmail_id}/{killmail_hash}/';
+        $resourcePath = '/killmails/{killmail_id}/{killmail_hash}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

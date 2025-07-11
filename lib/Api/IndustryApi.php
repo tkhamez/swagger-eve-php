@@ -467,7 +467,7 @@ class IndustryApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/industry/jobs/';
+        $resourcePath = '/characters/{character_id}/industry/jobs/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -898,7 +898,7 @@ class IndustryApi
         
 
 
-        $resourcePath = '/v1/characters/{character_id}/mining/';
+        $resourcePath = '/characters/{character_id}/mining/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1329,7 +1329,7 @@ class IndustryApi
         
 
 
-        $resourcePath = '/v1/corporation/{corporation_id}/mining/extractions/';
+        $resourcePath = '/corporation/{corporation_id}/mining/extractions/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1760,7 +1760,7 @@ class IndustryApi
         
 
 
-        $resourcePath = '/v1/corporation/{corporation_id}/mining/observers/';
+        $resourcePath = '/corporation/{corporation_id}/mining/observers/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2203,7 +2203,7 @@ class IndustryApi
         
 
 
-        $resourcePath = '/v1/corporation/{corporation_id}/mining/observers/{observer_id}/';
+        $resourcePath = '/corporation/{corporation_id}/mining/observers/{observer_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2648,7 +2648,7 @@ class IndustryApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/industry/jobs/';
+        $resourcePath = '/corporations/{corporation_id}/industry/jobs/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3030,7 +3030,7 @@ class IndustryApi
 
 
 
-        $resourcePath = '/v1/industry/facilities/';
+        $resourcePath = '/industry/facilities/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3373,7 +3373,7 @@ class IndustryApi
 
 
 
-        $resourcePath = '/v1/industry/systems/';
+        $resourcePath = '/industry/systems/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

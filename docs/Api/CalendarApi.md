@@ -1,13 +1,13 @@
 # Swagger\Client\Eve\CalendarApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdCalendar()**](CalendarApi.md#getCharactersCharacterIdCalendar) | **GET** /v1/characters/{character_id}/calendar/ | List calendar event summaries |
-| [**getCharactersCharacterIdCalendarEventId()**](CalendarApi.md#getCharactersCharacterIdCalendarEventId) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event |
-| [**getCharactersCharacterIdCalendarEventIdAttendees()**](CalendarApi.md#getCharactersCharacterIdCalendarEventIdAttendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees |
-| [**putCharactersCharacterIdCalendarEventId()**](CalendarApi.md#putCharactersCharacterIdCalendarEventId) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event |
+| [**getCharactersCharacterIdCalendar()**](CalendarApi.md#getCharactersCharacterIdCalendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries |
+| [**getCharactersCharacterIdCalendarEventId()**](CalendarApi.md#getCharactersCharacterIdCalendarEventId) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event |
+| [**getCharactersCharacterIdCalendarEventIdAttendees()**](CalendarApi.md#getCharactersCharacterIdCalendarEventIdAttendees) | **GET** /characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees |
+| [**putCharactersCharacterIdCalendarEventId()**](CalendarApi.md#putCharactersCharacterIdCalendarEventId) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event |
 
 
 ## `getCharactersCharacterIdCalendar()`
@@ -18,7 +18,7 @@ getCharactersCharacterIdCalendar($character_id, $datasource, $from_event, $if_no
 
 List calendar event summaries
 
-Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now. If a from_event ID is specified, it will return the next 50 chronological event summaries from after that event  ---  This route is cached for up to 5 seconds
+Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now. If a from_event ID is specified, it will return the next 50 chronological event summaries from after that event  --- Alternate route: `/dev/characters/{character_id}/calendar/`  Alternate route: `/legacy/characters/{character_id}/calendar/`  Alternate route: `/v1/characters/{character_id}/calendar/`  Alternate route: `/v2/characters/{character_id}/calendar/`  --- This route is cached for up to 5 seconds
 
 ### Example
 
@@ -86,7 +86,7 @@ getCharactersCharacterIdCalendarEventId($character_id, $event_id, $datasource, $
 
 Get an event
 
-Get all the information for a specific event  ---  This route is cached for up to 5 seconds
+Get all the information for a specific event  --- Alternate route: `/dev/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/legacy/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/v3/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/v4/characters/{character_id}/calendar/{event_id}/`  --- This route is cached for up to 5 seconds
 
 ### Example
 
@@ -154,7 +154,7 @@ getCharactersCharacterIdCalendarEventIdAttendees($character_id, $event_id, $data
 
 Get attendees
 
-Get all invited attendees for a given event  ---  This route is cached for up to 600 seconds
+Get all invited attendees for a given event  --- Alternate route: `/dev/characters/{character_id}/calendar/{event_id}/attendees/`  Alternate route: `/legacy/characters/{character_id}/calendar/{event_id}/attendees/`  Alternate route: `/v1/characters/{character_id}/calendar/{event_id}/attendees/`  Alternate route: `/v2/characters/{character_id}/calendar/{event_id}/attendees/`  --- This route is cached for up to 600 seconds
 
 ### Example
 
@@ -222,7 +222,7 @@ putCharactersCharacterIdCalendarEventId($character_id, $event_id, $response, $da
 
 Respond to an event
 
-Set your response status to an event  ---  This route is cached for up to 5 seconds
+Set your response status to an event  --- Alternate route: `/dev/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/legacy/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/v3/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/v4/characters/{character_id}/calendar/{event_id}/`  --- This route is cached for up to 5 seconds
 
 ### Example
 

@@ -403,7 +403,7 @@ class DogmaApi
 
 
 
-        $resourcePath = '/v1/dogma/attributes/';
+        $resourcePath = '/dogma/attributes/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -772,7 +772,7 @@ class DogmaApi
 
 
 
-        $resourcePath = '/v1/dogma/attributes/{attribute_id}/';
+        $resourcePath = '/dogma/attributes/{attribute_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1161,7 +1161,7 @@ class DogmaApi
 
 
 
-        $resourcePath = '/v1/dogma/dynamic/items/{type_id}/{item_id}/';
+        $resourcePath = '/dogma/dynamic/items/{type_id}/{item_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1520,7 +1520,7 @@ class DogmaApi
 
 
 
-        $resourcePath = '/v1/dogma/effects/';
+        $resourcePath = '/dogma/effects/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1889,7 +1889,7 @@ class DogmaApi
 
 
 
-        $resourcePath = '/v2/dogma/effects/{effect_id}/';
+        $resourcePath = '/dogma/effects/{effect_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

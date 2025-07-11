@@ -1,11 +1,11 @@
 # Swagger\Client\Eve\ClonesApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdClones()**](ClonesApi.md#getCharactersCharacterIdClones) | **GET** /v2/characters/{character_id}/clones/ | Get clones |
-| [**getCharactersCharacterIdImplants()**](ClonesApi.md#getCharactersCharacterIdImplants) | **GET** /v1/characters/{character_id}/implants/ | Get active implants |
+| [**getCharactersCharacterIdClones()**](ClonesApi.md#getCharactersCharacterIdClones) | **GET** /characters/{character_id}/clones/ | Get clones |
+| [**getCharactersCharacterIdImplants()**](ClonesApi.md#getCharactersCharacterIdImplants) | **GET** /characters/{character_id}/implants/ | Get active implants |
 
 
 ## `getCharactersCharacterIdClones()`
@@ -16,7 +16,7 @@ getCharactersCharacterIdClones($character_id, $datasource, $if_none_match, $toke
 
 Get clones
 
-A list of the character's clones  ---  This route is cached for up to 120 seconds
+A list of the character's clones  --- Alternate route: `/dev/characters/{character_id}/clones/`  Alternate route: `/legacy/characters/{character_id}/clones/`  Alternate route: `/v2/characters/{character_id}/clones/`  Alternate route: `/v3/characters/{character_id}/clones/`  Alternate route: `/v4/characters/{character_id}/clones/`  --- This route is cached for up to 120 seconds
 
 ### Example
 
@@ -82,7 +82,7 @@ getCharactersCharacterIdImplants($character_id, $datasource, $if_none_match, $to
 
 Get active implants
 
-Return implants on the active clone of a character  ---  This route is cached for up to 120 seconds
+Return implants on the active clone of a character  --- Alternate route: `/dev/characters/{character_id}/implants/`  Alternate route: `/legacy/characters/{character_id}/implants/`  Alternate route: `/v1/characters/{character_id}/implants/`  Alternate route: `/v2/characters/{character_id}/implants/`  --- This route is cached for up to 120 seconds
 
 ### Example
 

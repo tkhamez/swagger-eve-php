@@ -446,7 +446,7 @@ class SkillsApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/attributes/';
+        $resourcePath = '/characters/{character_id}/attributes/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -859,7 +859,7 @@ class SkillsApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/skillqueue/';
+        $resourcePath = '/characters/{character_id}/skillqueue/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1272,7 +1272,7 @@ class SkillsApi
 
 
 
-        $resourcePath = '/v4/characters/{character_id}/skills/';
+        $resourcePath = '/characters/{character_id}/skills/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

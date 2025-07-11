@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\InsuranceApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getInsurancePrices()**](InsuranceApi.md#getInsurancePrices) | **GET** /v1/insurance/prices/ | List insurance levels |
+| [**getInsurancePrices()**](InsuranceApi.md#getInsurancePrices) | **GET** /insurance/prices/ | List insurance levels |
 
 
 ## `getInsurancePrices()`
@@ -15,7 +15,7 @@ getInsurancePrices($accept_language, $datasource, $if_none_match, $language): \S
 
 List insurance levels
 
-Return available insurance levels for all ship types  ---  This route is cached for up to 3600 seconds
+Return available insurance levels for all ship types  --- Alternate route: `/dev/insurance/prices/`  Alternate route: `/legacy/insurance/prices/`  Alternate route: `/v1/insurance/prices/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 

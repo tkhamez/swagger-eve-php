@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\KillmailsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdKillmailsRecent()**](KillmailsApi.md#getCharactersCharacterIdKillmailsRecent) | **GET** /v1/characters/{character_id}/killmails/recent/ | Get a character&#39;s recent kills and losses |
-| [**getCorporationsCorporationIdKillmailsRecent()**](KillmailsApi.md#getCorporationsCorporationIdKillmailsRecent) | **GET** /v1/corporations/{corporation_id}/killmails/recent/ | Get a corporation&#39;s recent kills and losses |
-| [**getKillmailsKillmailIdKillmailHash()**](KillmailsApi.md#getKillmailsKillmailIdKillmailHash) | **GET** /v1/killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail |
+| [**getCharactersCharacterIdKillmailsRecent()**](KillmailsApi.md#getCharactersCharacterIdKillmailsRecent) | **GET** /characters/{character_id}/killmails/recent/ | Get a character&#39;s recent kills and losses |
+| [**getCorporationsCorporationIdKillmailsRecent()**](KillmailsApi.md#getCorporationsCorporationIdKillmailsRecent) | **GET** /corporations/{corporation_id}/killmails/recent/ | Get a corporation&#39;s recent kills and losses |
+| [**getKillmailsKillmailIdKillmailHash()**](KillmailsApi.md#getKillmailsKillmailIdKillmailHash) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail |
 
 
 ## `getCharactersCharacterIdKillmailsRecent()`
@@ -17,7 +17,7 @@ getCharactersCharacterIdKillmailsRecent($character_id, $datasource, $if_none_mat
 
 Get a character's recent kills and losses
 
-Return a list of a character's kills and losses going back 90 days  ---  This route is cached for up to 300 seconds
+Return a list of a character's kills and losses going back 90 days  --- Alternate route: `/dev/characters/{character_id}/killmails/recent/`  Alternate route: `/legacy/characters/{character_id}/killmails/recent/`  Alternate route: `/v1/characters/{character_id}/killmails/recent/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -85,7 +85,7 @@ getCorporationsCorporationIdKillmailsRecent($corporation_id, $datasource, $if_no
 
 Get a corporation's recent kills and losses
 
-Get a list of a corporation's kills and losses going back 90 days  ---  This route is cached for up to 300 seconds  --- Requires one of the following EVE corporation role(s): Director
+Get a list of a corporation's kills and losses going back 90 days  --- Alternate route: `/dev/corporations/{corporation_id}/killmails/recent/`  Alternate route: `/legacy/corporations/{corporation_id}/killmails/recent/`  Alternate route: `/v1/corporations/{corporation_id}/killmails/recent/`  --- This route is cached for up to 300 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 
@@ -153,7 +153,7 @@ getKillmailsKillmailIdKillmailHash($killmail_hash, $killmail_id, $datasource, $i
 
 Get a single killmail
 
-Return a single killmail from its ID and hash  ---  This route is cached for up to 30758400 seconds
+Return a single killmail from its ID and hash  --- Alternate route: `/dev/killmails/{killmail_id}/{killmail_hash}/`  Alternate route: `/legacy/killmails/{killmail_id}/{killmail_hash}/`  Alternate route: `/v1/killmails/{killmail_id}/{killmail_hash}/`  --- This route is cached for up to 30758400 seconds
 
 ### Example
 

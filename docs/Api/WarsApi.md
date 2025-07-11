@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\WarsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getWars()**](WarsApi.md#getWars) | **GET** /v1/wars/ | List wars |
-| [**getWarsWarId()**](WarsApi.md#getWarsWarId) | **GET** /v1/wars/{war_id}/ | Get war information |
-| [**getWarsWarIdKillmails()**](WarsApi.md#getWarsWarIdKillmails) | **GET** /v1/wars/{war_id}/killmails/ | List kills for a war |
+| [**getWars()**](WarsApi.md#getWars) | **GET** /wars/ | List wars |
+| [**getWarsWarId()**](WarsApi.md#getWarsWarId) | **GET** /wars/{war_id}/ | Get war information |
+| [**getWarsWarIdKillmails()**](WarsApi.md#getWarsWarIdKillmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war |
 
 
 ## `getWars()`
@@ -17,7 +17,7 @@ getWars($datasource, $if_none_match, $max_war_id): int[]
 
 List wars
 
-Return a list of wars  ---  This route is cached for up to 3600 seconds
+Return a list of wars  --- Alternate route: `/dev/wars/`  Alternate route: `/legacy/wars/`  Alternate route: `/v1/wars/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -77,7 +77,7 @@ getWarsWarId($war_id, $datasource, $if_none_match): \Swagger\Client\Eve\Model\Ge
 
 Get war information
 
-Return details about a war  ---  This route is cached for up to 3600 seconds
+Return details about a war  --- Alternate route: `/dev/wars/{war_id}/`  Alternate route: `/legacy/wars/{war_id}/`  Alternate route: `/v1/wars/{war_id}/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -137,7 +137,7 @@ getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page): \Swagger\Cli
 
 List kills for a war
 
-Return a list of kills related to a war  ---  This route is cached for up to 3600 seconds
+Return a list of kills related to a war  --- Alternate route: `/dev/wars/{war_id}/killmails/`  Alternate route: `/legacy/wars/{war_id}/killmails/`  Alternate route: `/v1/wars/{war_id}/killmails/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 

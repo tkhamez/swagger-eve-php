@@ -478,7 +478,7 @@ class AssetsApi
         
 
 
-        $resourcePath = '/v4/characters/{character_id}/assets/';
+        $resourcePath = '/characters/{character_id}/assets/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -909,7 +909,7 @@ class AssetsApi
         
 
 
-        $resourcePath = '/v4/corporations/{corporation_id}/assets/';
+        $resourcePath = '/corporations/{corporation_id}/assets/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1343,7 +1343,7 @@ class AssetsApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/assets/locations/';
+        $resourcePath = '/characters/{character_id}/assets/locations/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1771,7 +1771,7 @@ class AssetsApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/assets/names/';
+        $resourcePath = '/characters/{character_id}/assets/names/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2213,7 +2213,7 @@ class AssetsApi
 
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/assets/locations/';
+        $resourcePath = '/corporations/{corporation_id}/assets/locations/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2655,7 +2655,7 @@ class AssetsApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/assets/names/';
+        $resourcePath = '/corporations/{corporation_id}/assets/names/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

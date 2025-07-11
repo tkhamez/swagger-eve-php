@@ -1,23 +1,23 @@
 # Swagger\Client\Eve\CharacterApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterId()**](CharacterApi.md#getCharactersCharacterId) | **GET** /v5/characters/{character_id}/ | Get character&#39;s public information |
-| [**getCharactersCharacterIdAgentsResearch()**](CharacterApi.md#getCharactersCharacterIdAgentsResearch) | **GET** /v1/characters/{character_id}/agents_research/ | Get agents research |
-| [**getCharactersCharacterIdBlueprints()**](CharacterApi.md#getCharactersCharacterIdBlueprints) | **GET** /v2/characters/{character_id}/blueprints/ | Get blueprints |
-| [**getCharactersCharacterIdCorporationhistory()**](CharacterApi.md#getCharactersCharacterIdCorporationhistory) | **GET** /v1/characters/{character_id}/corporationhistory/ | Get corporation history |
-| [**getCharactersCharacterIdFatigue()**](CharacterApi.md#getCharactersCharacterIdFatigue) | **GET** /v1/characters/{character_id}/fatigue/ | Get jump fatigue |
-| [**getCharactersCharacterIdMedals()**](CharacterApi.md#getCharactersCharacterIdMedals) | **GET** /v1/characters/{character_id}/medals/ | Get medals |
-| [**getCharactersCharacterIdNotifications()**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /v4/characters/{character_id}/notifications/ | Get character notifications |
-| [**getCharactersCharacterIdNotificationsContacts()**](CharacterApi.md#getCharactersCharacterIdNotificationsContacts) | **GET** /v1/characters/{character_id}/notifications/contacts/ | Get new contact notifications |
-| [**getCharactersCharacterIdPortrait()**](CharacterApi.md#getCharactersCharacterIdPortrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits |
-| [**getCharactersCharacterIdRoles()**](CharacterApi.md#getCharactersCharacterIdRoles) | **GET** /v2/characters/{character_id}/roles/ | Get character corporation roles |
-| [**getCharactersCharacterIdStandings()**](CharacterApi.md#getCharactersCharacterIdStandings) | **GET** /v1/characters/{character_id}/standings/ | Get standings |
-| [**getCharactersCharacterIdTitles()**](CharacterApi.md#getCharactersCharacterIdTitles) | **GET** /v1/characters/{character_id}/titles/ | Get character corporation titles |
-| [**postCharactersAffiliation()**](CharacterApi.md#postCharactersAffiliation) | **POST** /v1/characters/affiliation/ | Character affiliation |
-| [**postCharactersCharacterIdCspa()**](CharacterApi.md#postCharactersCharacterIdCspa) | **POST** /v4/characters/{character_id}/cspa/ | Calculate a CSPA charge cost |
+| [**getCharactersCharacterId()**](CharacterApi.md#getCharactersCharacterId) | **GET** /characters/{character_id}/ | Get character&#39;s public information |
+| [**getCharactersCharacterIdAgentsResearch()**](CharacterApi.md#getCharactersCharacterIdAgentsResearch) | **GET** /characters/{character_id}/agents_research/ | Get agents research |
+| [**getCharactersCharacterIdBlueprints()**](CharacterApi.md#getCharactersCharacterIdBlueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints |
+| [**getCharactersCharacterIdCorporationhistory()**](CharacterApi.md#getCharactersCharacterIdCorporationhistory) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history |
+| [**getCharactersCharacterIdFatigue()**](CharacterApi.md#getCharactersCharacterIdFatigue) | **GET** /characters/{character_id}/fatigue/ | Get jump fatigue |
+| [**getCharactersCharacterIdMedals()**](CharacterApi.md#getCharactersCharacterIdMedals) | **GET** /characters/{character_id}/medals/ | Get medals |
+| [**getCharactersCharacterIdNotifications()**](CharacterApi.md#getCharactersCharacterIdNotifications) | **GET** /characters/{character_id}/notifications/ | Get character notifications |
+| [**getCharactersCharacterIdNotificationsContacts()**](CharacterApi.md#getCharactersCharacterIdNotificationsContacts) | **GET** /characters/{character_id}/notifications/contacts/ | Get new contact notifications |
+| [**getCharactersCharacterIdPortrait()**](CharacterApi.md#getCharactersCharacterIdPortrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits |
+| [**getCharactersCharacterIdRoles()**](CharacterApi.md#getCharactersCharacterIdRoles) | **GET** /characters/{character_id}/roles/ | Get character corporation roles |
+| [**getCharactersCharacterIdStandings()**](CharacterApi.md#getCharactersCharacterIdStandings) | **GET** /characters/{character_id}/standings/ | Get standings |
+| [**getCharactersCharacterIdTitles()**](CharacterApi.md#getCharactersCharacterIdTitles) | **GET** /characters/{character_id}/titles/ | Get character corporation titles |
+| [**postCharactersAffiliation()**](CharacterApi.md#postCharactersAffiliation) | **POST** /characters/affiliation/ | Character affiliation |
+| [**postCharactersCharacterIdCspa()**](CharacterApi.md#postCharactersCharacterIdCspa) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost |
 
 
 ## `getCharactersCharacterId()`
@@ -28,7 +28,7 @@ getCharactersCharacterId($character_id, $datasource, $if_none_match): \Swagger\C
 
 Get character's public information
 
-Public information about a character  ---  This route is cached for up to 604800 seconds
+Public information about a character  --- Alternate route: `/dev/characters/{character_id}/`  Alternate route: `/legacy/characters/{character_id}/`  Alternate route: `/v5/characters/{character_id}/`  --- This route is cached for up to 604800 seconds
 
 ### Example
 
@@ -88,7 +88,7 @@ getCharactersCharacterIdAgentsResearch($character_id, $datasource, $if_none_matc
 
 Get agents research
 
-Return a list of agents research information for a character. The formula for finding the current research points with an agent is: currentPoints = remainderPoints + pointsPerDay * days(currentTime - researchStartDate)  ---  This route is cached for up to 3600 seconds
+Return a list of agents research information for a character. The formula for finding the current research points with an agent is: currentPoints = remainderPoints + pointsPerDay * days(currentTime - researchStartDate)  --- Alternate route: `/dev/characters/{character_id}/agents_research/`  Alternate route: `/legacy/characters/{character_id}/agents_research/`  Alternate route: `/v1/characters/{character_id}/agents_research/`  Alternate route: `/v2/characters/{character_id}/agents_research/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -154,7 +154,7 @@ getCharactersCharacterIdBlueprints($character_id, $datasource, $if_none_match, $
 
 Get blueprints
 
-Return a list of blueprints the character owns  ---  This route is cached for up to 3600 seconds
+Return a list of blueprints the character owns  --- Alternate route: `/dev/characters/{character_id}/blueprints/`  Alternate route: `/legacy/characters/{character_id}/blueprints/`  Alternate route: `/v2/characters/{character_id}/blueprints/`  Alternate route: `/v3/characters/{character_id}/blueprints/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -222,7 +222,7 @@ getCharactersCharacterIdCorporationhistory($character_id, $datasource, $if_none_
 
 Get corporation history
 
-Get a list of all the corporations a character has been a member of  ---  This route is cached for up to 86400 seconds
+Get a list of all the corporations a character has been a member of  --- Alternate route: `/dev/characters/{character_id}/corporationhistory/`  Alternate route: `/legacy/characters/{character_id}/corporationhistory/`  Alternate route: `/v1/characters/{character_id}/corporationhistory/`  Alternate route: `/v2/characters/{character_id}/corporationhistory/`  --- This route is cached for up to 86400 seconds
 
 ### Example
 
@@ -282,7 +282,7 @@ getCharactersCharacterIdFatigue($character_id, $datasource, $if_none_match, $tok
 
 Get jump fatigue
 
-Return a character's jump activation and fatigue information  ---  This route is cached for up to 300 seconds
+Return a character's jump activation and fatigue information  --- Alternate route: `/dev/characters/{character_id}/fatigue/`  Alternate route: `/legacy/characters/{character_id}/fatigue/`  Alternate route: `/v1/characters/{character_id}/fatigue/`  Alternate route: `/v2/characters/{character_id}/fatigue/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -348,7 +348,7 @@ getCharactersCharacterIdMedals($character_id, $datasource, $if_none_match, $toke
 
 Get medals
 
-Return a list of medals the character has  ---  This route is cached for up to 3600 seconds
+Return a list of medals the character has  --- Alternate route: `/dev/characters/{character_id}/medals/`  Alternate route: `/legacy/characters/{character_id}/medals/`  Alternate route: `/v1/characters/{character_id}/medals/`  Alternate route: `/v2/characters/{character_id}/medals/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -414,7 +414,7 @@ getCharactersCharacterIdNotifications($character_id, $datasource, $if_none_match
 
 Get character notifications
 
-Return character notifications  ---  This route is cached for up to 600 seconds
+Return character notifications  --- Alternate route: `/dev/characters/{character_id}/notifications/`  Alternate route: `/legacy/characters/{character_id}/notifications/`  Alternate route: `/v4/characters/{character_id}/notifications/`  Alternate route: `/v5/characters/{character_id}/notifications/`  Alternate route: `/v6/characters/{character_id}/notifications/`  --- This route is cached for up to 600 seconds
 
 ### Example
 
@@ -480,7 +480,7 @@ getCharactersCharacterIdNotificationsContacts($character_id, $datasource, $if_no
 
 Get new contact notifications
 
-Return notifications about having been added to someone's contact list  ---  This route is cached for up to 600 seconds
+Return notifications about having been added to someone's contact list  --- Alternate route: `/dev/characters/{character_id}/notifications/contacts/`  Alternate route: `/legacy/characters/{character_id}/notifications/contacts/`  Alternate route: `/v1/characters/{character_id}/notifications/contacts/`  Alternate route: `/v2/characters/{character_id}/notifications/contacts/`  --- This route is cached for up to 600 seconds
 
 ### Example
 
@@ -546,7 +546,7 @@ getCharactersCharacterIdPortrait($character_id, $datasource, $if_none_match): \S
 
 Get character portraits
 
-Get portrait urls for a character  ---  This route expires daily at 11:05
+Get portrait urls for a character  --- Alternate route: `/dev/characters/{character_id}/portrait/`  Alternate route: `/v2/characters/{character_id}/portrait/`  Alternate route: `/v3/characters/{character_id}/portrait/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -606,7 +606,7 @@ getCharactersCharacterIdRoles($character_id, $datasource, $if_none_match, $token
 
 Get character corporation roles
 
-Returns a character's corporation roles  ---  This route is cached for up to 3600 seconds
+Returns a character's corporation roles  --- Alternate route: `/dev/characters/{character_id}/roles/`  Alternate route: `/legacy/characters/{character_id}/roles/`  Alternate route: `/v2/characters/{character_id}/roles/`  Alternate route: `/v3/characters/{character_id}/roles/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -672,7 +672,7 @@ getCharactersCharacterIdStandings($character_id, $datasource, $if_none_match, $t
 
 Get standings
 
-Return character standings from agents, NPC corporations, and factions  ---  This route is cached for up to 3600 seconds
+Return character standings from agents, NPC corporations, and factions  --- Alternate route: `/dev/characters/{character_id}/standings/`  Alternate route: `/legacy/characters/{character_id}/standings/`  Alternate route: `/v1/characters/{character_id}/standings/`  Alternate route: `/v2/characters/{character_id}/standings/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -738,7 +738,7 @@ getCharactersCharacterIdTitles($character_id, $datasource, $if_none_match, $toke
 
 Get character corporation titles
 
-Returns a character's titles  ---  This route is cached for up to 3600 seconds
+Returns a character's titles  --- Alternate route: `/dev/characters/{character_id}/titles/`  Alternate route: `/legacy/characters/{character_id}/titles/`  Alternate route: `/v1/characters/{character_id}/titles/`  Alternate route: `/v2/characters/{character_id}/titles/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -804,7 +804,7 @@ postCharactersAffiliation($characters, $datasource): \Swagger\Client\Eve\Model\P
 
 Character affiliation
 
-Bulk lookup of character IDs to corporation, alliance and faction  ---  This route is cached for up to 3600 seconds
+Bulk lookup of character IDs to corporation, alliance and faction  --- Alternate route: `/dev/characters/affiliation/`  Alternate route: `/legacy/characters/affiliation/`  Alternate route: `/v1/characters/affiliation/`  Alternate route: `/v2/characters/affiliation/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -862,7 +862,7 @@ postCharactersCharacterIdCspa($character_id, $characters, $datasource, $token): 
 
 Calculate a CSPA charge cost
 
-Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost  ---
+Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost  --- Alternate route: `/dev/characters/{character_id}/cspa/`  Alternate route: `/legacy/characters/{character_id}/cspa/`  Alternate route: `/v4/characters/{character_id}/cspa/`  Alternate route: `/v5/characters/{character_id}/cspa/`
 
 ### Example
 

@@ -384,7 +384,7 @@ class ContactsApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/contacts/';
+        $resourcePath = '/characters/{character_id}/contacts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -811,7 +811,7 @@ class ContactsApi
         
 
 
-        $resourcePath = '/v2/alliances/{alliance_id}/contacts/';
+        $resourcePath = '/alliances/{alliance_id}/contacts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1233,7 +1233,7 @@ class ContactsApi
 
 
 
-        $resourcePath = '/v1/alliances/{alliance_id}/contacts/labels/';
+        $resourcePath = '/alliances/{alliance_id}/contacts/labels/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1655,7 +1655,7 @@ class ContactsApi
         
 
 
-        $resourcePath = '/v2/characters/{character_id}/contacts/';
+        $resourcePath = '/characters/{character_id}/contacts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2077,7 +2077,7 @@ class ContactsApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/contacts/labels/';
+        $resourcePath = '/characters/{character_id}/contacts/labels/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2499,7 +2499,7 @@ class ContactsApi
         
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/contacts/';
+        $resourcePath = '/corporations/{corporation_id}/contacts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2921,7 +2921,7 @@ class ContactsApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/contacts/labels/';
+        $resourcePath = '/corporations/{corporation_id}/contacts/labels/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3393,7 +3393,7 @@ class ContactsApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/contacts/';
+        $resourcePath = '/characters/{character_id}/contacts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3789,7 +3789,7 @@ class ContactsApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/contacts/';
+        $resourcePath = '/characters/{character_id}/contacts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

@@ -1,18 +1,18 @@
 # Swagger\Client\Eve\ContactsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**deleteCharactersCharacterIdContacts()**](ContactsApi.md#deleteCharactersCharacterIdContacts) | **DELETE** /v1/characters/{character_id}/contacts/ | Delete contacts |
-| [**getAlliancesAllianceIdContacts()**](ContactsApi.md#getAlliancesAllianceIdContacts) | **GET** /v2/alliances/{alliance_id}/contacts/ | Get alliance contacts |
-| [**getAlliancesAllianceIdContactsLabels()**](ContactsApi.md#getAlliancesAllianceIdContactsLabels) | **GET** /v1/alliances/{alliance_id}/contacts/labels/ | Get alliance contact labels |
-| [**getCharactersCharacterIdContacts()**](ContactsApi.md#getCharactersCharacterIdContacts) | **GET** /v2/characters/{character_id}/contacts/ | Get contacts |
-| [**getCharactersCharacterIdContactsLabels()**](ContactsApi.md#getCharactersCharacterIdContactsLabels) | **GET** /v1/characters/{character_id}/contacts/labels/ | Get contact labels |
-| [**getCorporationsCorporationIdContacts()**](ContactsApi.md#getCorporationsCorporationIdContacts) | **GET** /v2/corporations/{corporation_id}/contacts/ | Get corporation contacts |
-| [**getCorporationsCorporationIdContactsLabels()**](ContactsApi.md#getCorporationsCorporationIdContactsLabels) | **GET** /v1/corporations/{corporation_id}/contacts/labels/ | Get corporation contact labels |
-| [**postCharactersCharacterIdContacts()**](ContactsApi.md#postCharactersCharacterIdContacts) | **POST** /v2/characters/{character_id}/contacts/ | Add contacts |
-| [**putCharactersCharacterIdContacts()**](ContactsApi.md#putCharactersCharacterIdContacts) | **PUT** /v2/characters/{character_id}/contacts/ | Edit contacts |
+| [**deleteCharactersCharacterIdContacts()**](ContactsApi.md#deleteCharactersCharacterIdContacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts |
+| [**getAlliancesAllianceIdContacts()**](ContactsApi.md#getAlliancesAllianceIdContacts) | **GET** /alliances/{alliance_id}/contacts/ | Get alliance contacts |
+| [**getAlliancesAllianceIdContactsLabels()**](ContactsApi.md#getAlliancesAllianceIdContactsLabels) | **GET** /alliances/{alliance_id}/contacts/labels/ | Get alliance contact labels |
+| [**getCharactersCharacterIdContacts()**](ContactsApi.md#getCharactersCharacterIdContacts) | **GET** /characters/{character_id}/contacts/ | Get contacts |
+| [**getCharactersCharacterIdContactsLabels()**](ContactsApi.md#getCharactersCharacterIdContactsLabels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels |
+| [**getCorporationsCorporationIdContacts()**](ContactsApi.md#getCorporationsCorporationIdContacts) | **GET** /corporations/{corporation_id}/contacts/ | Get corporation contacts |
+| [**getCorporationsCorporationIdContactsLabels()**](ContactsApi.md#getCorporationsCorporationIdContactsLabels) | **GET** /corporations/{corporation_id}/contacts/labels/ | Get corporation contact labels |
+| [**postCharactersCharacterIdContacts()**](ContactsApi.md#postCharactersCharacterIdContacts) | **POST** /characters/{character_id}/contacts/ | Add contacts |
+| [**putCharactersCharacterIdContacts()**](ContactsApi.md#putCharactersCharacterIdContacts) | **PUT** /characters/{character_id}/contacts/ | Edit contacts |
 
 
 ## `deleteCharactersCharacterIdContacts()`
@@ -23,7 +23,7 @@ deleteCharactersCharacterIdContacts($character_id, $contact_ids, $datasource, $t
 
 Delete contacts
 
-Bulk delete contacts  ---
+Bulk delete contacts  --- Alternate route: `/dev/characters/{character_id}/contacts/`  Alternate route: `/legacy/characters/{character_id}/contacts/`  Alternate route: `/v1/characters/{character_id}/contacts/`  Alternate route: `/v2/characters/{character_id}/contacts/`
 
 ### Example
 
@@ -88,7 +88,7 @@ getAlliancesAllianceIdContacts($alliance_id, $datasource, $if_none_match, $page,
 
 Get alliance contacts
 
-Return contacts of an alliance  ---  This route is cached for up to 300 seconds
+Return contacts of an alliance  --- Alternate route: `/dev/alliances/{alliance_id}/contacts/`  Alternate route: `/v2/alliances/{alliance_id}/contacts/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -156,7 +156,7 @@ getAlliancesAllianceIdContactsLabels($alliance_id, $datasource, $if_none_match, 
 
 Get alliance contact labels
 
-Return custom labels for an alliance's contacts  ---  This route is cached for up to 300 seconds
+Return custom labels for an alliance's contacts  --- Alternate route: `/dev/alliances/{alliance_id}/contacts/labels/`  Alternate route: `/legacy/alliances/{alliance_id}/contacts/labels/`  Alternate route: `/v1/alliances/{alliance_id}/contacts/labels/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -222,7 +222,7 @@ getCharactersCharacterIdContacts($character_id, $datasource, $if_none_match, $pa
 
 Get contacts
 
-Return contacts of a character  ---  This route is cached for up to 300 seconds
+Return contacts of a character  --- Alternate route: `/dev/characters/{character_id}/contacts/`  Alternate route: `/v2/characters/{character_id}/contacts/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -290,7 +290,7 @@ getCharactersCharacterIdContactsLabels($character_id, $datasource, $if_none_matc
 
 Get contact labels
 
-Return custom labels for a character's contacts  ---  This route is cached for up to 300 seconds
+Return custom labels for a character's contacts  --- Alternate route: `/dev/characters/{character_id}/contacts/labels/`  Alternate route: `/legacy/characters/{character_id}/contacts/labels/`  Alternate route: `/v1/characters/{character_id}/contacts/labels/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -356,7 +356,7 @@ getCorporationsCorporationIdContacts($corporation_id, $datasource, $if_none_matc
 
 Get corporation contacts
 
-Return contacts of a corporation  ---  This route is cached for up to 300 seconds
+Return contacts of a corporation  --- Alternate route: `/dev/corporations/{corporation_id}/contacts/`  Alternate route: `/v2/corporations/{corporation_id}/contacts/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -424,7 +424,7 @@ getCorporationsCorporationIdContactsLabels($corporation_id, $datasource, $if_non
 
 Get corporation contact labels
 
-Return custom labels for a corporation's contacts  ---  This route is cached for up to 300 seconds
+Return custom labels for a corporation's contacts  --- Alternate route: `/dev/corporations/{corporation_id}/contacts/labels/`  Alternate route: `/legacy/corporations/{corporation_id}/contacts/labels/`  Alternate route: `/v1/corporations/{corporation_id}/contacts/labels/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -490,7 +490,7 @@ postCharactersCharacterIdContacts($character_id, $standing, $contact_ids, $datas
 
 Add contacts
 
-Bulk add contacts with same settings  ---
+Bulk add contacts with same settings  --- Alternate route: `/dev/characters/{character_id}/contacts/`  Alternate route: `/v2/characters/{character_id}/contacts/`
 
 ### Example
 
@@ -562,7 +562,7 @@ putCharactersCharacterIdContacts($character_id, $standing, $contact_ids, $dataso
 
 Edit contacts
 
-Bulk edit contacts with same settings  ---
+Bulk edit contacts with same settings  --- Alternate route: `/dev/characters/{character_id}/contacts/`  Alternate route: `/v2/characters/{character_id}/contacts/`
 
 ### Example
 

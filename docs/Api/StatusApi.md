@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\StatusApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getStatus()**](StatusApi.md#getStatus) | **GET** /v1/status/ | Retrieve the uptime and player counts |
+| [**getStatus()**](StatusApi.md#getStatus) | **GET** /status/ | Retrieve the uptime and player counts |
 
 
 ## `getStatus()`
@@ -15,7 +15,7 @@ getStatus($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetStatusOk
 
 Retrieve the uptime and player counts
 
-EVE Server status  ---  This route is cached for up to 30 seconds
+EVE Server status  --- Alternate route: `/dev/status/`  Alternate route: `/legacy/status/`  Alternate route: `/v1/status/`  Alternate route: `/v2/status/`  --- This route is cached for up to 30 seconds
 
 ### Example
 

@@ -1,11 +1,11 @@
 # Swagger\Client\Eve\LoyaltyApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdLoyaltyPoints()**](LoyaltyApi.md#getCharactersCharacterIdLoyaltyPoints) | **GET** /v1/characters/{character_id}/loyalty/points/ | Get loyalty points |
-| [**getLoyaltyStoresCorporationIdOffers()**](LoyaltyApi.md#getLoyaltyStoresCorporationIdOffers) | **GET** /v1/loyalty/stores/{corporation_id}/offers/ | List loyalty store offers |
+| [**getCharactersCharacterIdLoyaltyPoints()**](LoyaltyApi.md#getCharactersCharacterIdLoyaltyPoints) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points |
+| [**getLoyaltyStoresCorporationIdOffers()**](LoyaltyApi.md#getLoyaltyStoresCorporationIdOffers) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers |
 
 
 ## `getCharactersCharacterIdLoyaltyPoints()`
@@ -16,7 +16,7 @@ getCharactersCharacterIdLoyaltyPoints($character_id, $datasource, $if_none_match
 
 Get loyalty points
 
-Return a list of loyalty points for all corporations the character has worked for  ---  This route is cached for up to 3600 seconds
+Return a list of loyalty points for all corporations the character has worked for  --- Alternate route: `/dev/characters/{character_id}/loyalty/points/`  Alternate route: `/legacy/characters/{character_id}/loyalty/points/`  Alternate route: `/v1/characters/{character_id}/loyalty/points/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -82,7 +82,7 @@ getLoyaltyStoresCorporationIdOffers($corporation_id, $datasource, $if_none_match
 
 List loyalty store offers
 
-Return a list of offers from a specific corporation's loyalty store  ---  This route expires daily at 11:05
+Return a list of offers from a specific corporation's loyalty store  --- Alternate route: `/dev/loyalty/stores/{corporation_id}/offers/`  Alternate route: `/legacy/loyalty/stores/{corporation_id}/offers/`  Alternate route: `/v1/loyalty/stores/{corporation_id}/offers/`  --- This route expires daily at 11:05
 
 ### Example
 

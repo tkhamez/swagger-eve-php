@@ -455,7 +455,7 @@ class WalletApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/wallet/';
+        $resourcePath = '/characters/{character_id}/wallet/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -877,7 +877,7 @@ class WalletApi
         
 
 
-        $resourcePath = '/v5/characters/{character_id}/wallet/journal/';
+        $resourcePath = '/characters/{character_id}/wallet/journal/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1305,7 +1305,7 @@ class WalletApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/wallet/transactions/';
+        $resourcePath = '/characters/{character_id}/wallet/transactions/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1727,7 +1727,7 @@ class WalletApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/wallets/';
+        $resourcePath = '/corporations/{corporation_id}/wallets/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2167,7 +2167,7 @@ class WalletApi
         
 
 
-        $resourcePath = '/v3/corporations/{corporation_id}/wallets/{division}/journal/';
+        $resourcePath = '/corporations/{corporation_id}/wallets/{division}/journal/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2621,7 +2621,7 @@ class WalletApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/wallets/{division}/transactions/';
+        $resourcePath = '/corporations/{corporation_id}/wallets/{division}/transactions/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

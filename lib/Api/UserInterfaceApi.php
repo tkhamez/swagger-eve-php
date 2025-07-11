@@ -375,7 +375,7 @@ class UserInterfaceApi
 
 
 
-        $resourcePath = '/v2/ui/autopilot/waypoint/';
+        $resourcePath = '/ui/autopilot/waypoint/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -702,7 +702,7 @@ class UserInterfaceApi
 
 
 
-        $resourcePath = '/v1/ui/openwindow/contract/';
+        $resourcePath = '/ui/openwindow/contract/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1011,7 +1011,7 @@ class UserInterfaceApi
 
 
 
-        $resourcePath = '/v1/ui/openwindow/information/';
+        $resourcePath = '/ui/openwindow/information/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1320,7 +1320,7 @@ class UserInterfaceApi
 
 
 
-        $resourcePath = '/v1/ui/openwindow/marketdetails/';
+        $resourcePath = '/ui/openwindow/marketdetails/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1637,7 +1637,7 @@ class UserInterfaceApi
 
 
 
-        $resourcePath = '/v1/ui/openwindow/newmail/';
+        $resourcePath = '/ui/openwindow/newmail/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

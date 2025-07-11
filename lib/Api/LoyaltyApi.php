@@ -443,7 +443,7 @@ class LoyaltyApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/loyalty/points/';
+        $resourcePath = '/characters/{character_id}/loyalty/points/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -836,7 +836,7 @@ class LoyaltyApi
 
 
 
-        $resourcePath = '/v1/loyalty/stores/{corporation_id}/offers/';
+        $resourcePath = '/loyalty/stores/{corporation_id}/offers/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

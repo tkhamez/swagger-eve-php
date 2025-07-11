@@ -391,7 +391,7 @@ class IncursionsApi
 
 
 
-        $resourcePath = '/v1/incursions/';
+        $resourcePath = '/incursions/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

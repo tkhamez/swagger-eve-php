@@ -473,7 +473,7 @@ class ContractsApi
         
 
 
-        $resourcePath = '/v1/characters/{character_id}/contracts/';
+        $resourcePath = '/characters/{character_id}/contracts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -921,7 +921,7 @@ class ContractsApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/contracts/{contract_id}/bids/';
+        $resourcePath = '/characters/{character_id}/contracts/{contract_id}/bids/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1368,7 +1368,7 @@ class ContractsApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/contracts/{contract_id}/items/';
+        $resourcePath = '/characters/{character_id}/contracts/{contract_id}/items/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1789,7 +1789,7 @@ class ContractsApi
         }
         
 
-        $resourcePath = '/v1/contracts/public/bids/{contract_id}/';
+        $resourcePath = '/contracts/public/bids/{contract_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2198,7 +2198,7 @@ class ContractsApi
         }
         
 
-        $resourcePath = '/v1/contracts/public/items/{contract_id}/';
+        $resourcePath = '/contracts/public/items/{contract_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2593,7 +2593,7 @@ class ContractsApi
         }
         
 
-        $resourcePath = '/v1/contracts/public/{region_id}/';
+        $resourcePath = '/contracts/public/{region_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3011,7 +3011,7 @@ class ContractsApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/contracts/';
+        $resourcePath = '/corporations/{corporation_id}/contracts/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3468,7 +3468,7 @@ class ContractsApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/contracts/{contract_id}/bids/';
+        $resourcePath = '/corporations/{corporation_id}/contracts/{contract_id}/bids/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3938,7 +3938,7 @@ class ContractsApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/contracts/{contract_id}/items/';
+        $resourcePath = '/corporations/{corporation_id}/contracts/{contract_id}/items/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

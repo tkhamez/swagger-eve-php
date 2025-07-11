@@ -391,7 +391,7 @@ class StatusApi
 
 
 
-        $resourcePath = '/v1/status/';
+        $resourcePath = '/status/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

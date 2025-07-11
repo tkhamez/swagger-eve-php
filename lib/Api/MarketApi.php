@@ -470,7 +470,7 @@ class MarketApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/orders/';
+        $resourcePath = '/characters/{character_id}/orders/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -892,7 +892,7 @@ class MarketApi
         
 
 
-        $resourcePath = '/v1/characters/{character_id}/orders/history/';
+        $resourcePath = '/characters/{character_id}/orders/history/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1323,7 +1323,7 @@ class MarketApi
         
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/orders/';
+        $resourcePath = '/corporations/{corporation_id}/orders/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1754,7 +1754,7 @@ class MarketApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/orders/history/';
+        $resourcePath = '/corporations/{corporation_id}/orders/history/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2127,7 +2127,7 @@ class MarketApi
 
 
 
-        $resourcePath = '/v1/markets/groups/';
+        $resourcePath = '/markets/groups/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2508,7 +2508,7 @@ class MarketApi
 
 
 
-        $resourcePath = '/v1/markets/groups/{market_group_id}/';
+        $resourcePath = '/markets/groups/{market_group_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2872,7 +2872,7 @@ class MarketApi
 
 
 
-        $resourcePath = '/v1/markets/prices/';
+        $resourcePath = '/markets/prices/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3281,7 +3281,7 @@ class MarketApi
 
 
 
-        $resourcePath = '/v1/markets/{region_id}/history/';
+        $resourcePath = '/markets/{region_id}/history/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3708,7 +3708,7 @@ class MarketApi
         
 
 
-        $resourcePath = '/v1/markets/{region_id}/orders/';
+        $resourcePath = '/markets/{region_id}/orders/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4121,7 +4121,7 @@ class MarketApi
         }
         
 
-        $resourcePath = '/v1/markets/{region_id}/types/';
+        $resourcePath = '/markets/{region_id}/types/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4536,7 +4536,7 @@ class MarketApi
         
 
 
-        $resourcePath = '/v1/markets/structures/{structure_id}/';
+        $resourcePath = '/markets/structures/{structure_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

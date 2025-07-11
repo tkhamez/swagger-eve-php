@@ -1,13 +1,13 @@
 # Swagger\Client\Eve\AllianceApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getAlliances()**](AllianceApi.md#getAlliances) | **GET** /v1/alliances/ | List all alliances |
-| [**getAlliancesAllianceId()**](AllianceApi.md#getAlliancesAllianceId) | **GET** /v3/alliances/{alliance_id}/ | Get alliance information |
-| [**getAlliancesAllianceIdCorporations()**](AllianceApi.md#getAlliancesAllianceIdCorporations) | **GET** /v1/alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations |
-| [**getAlliancesAllianceIdIcons()**](AllianceApi.md#getAlliancesAllianceIdIcons) | **GET** /v1/alliances/{alliance_id}/icons/ | Get alliance icon |
+| [**getAlliances()**](AllianceApi.md#getAlliances) | **GET** /alliances/ | List all alliances |
+| [**getAlliancesAllianceId()**](AllianceApi.md#getAlliancesAllianceId) | **GET** /alliances/{alliance_id}/ | Get alliance information |
+| [**getAlliancesAllianceIdCorporations()**](AllianceApi.md#getAlliancesAllianceIdCorporations) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations |
+| [**getAlliancesAllianceIdIcons()**](AllianceApi.md#getAlliancesAllianceIdIcons) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon |
 
 
 ## `getAlliances()`
@@ -18,7 +18,7 @@ getAlliances($datasource, $if_none_match): int[]
 
 List all alliances
 
-List all active player alliances  ---  This route is cached for up to 3600 seconds
+List all active player alliances  --- Alternate route: `/dev/alliances/`  Alternate route: `/legacy/alliances/`  Alternate route: `/v1/alliances/`  Alternate route: `/v2/alliances/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -76,7 +76,7 @@ getAlliancesAllianceId($alliance_id, $datasource, $if_none_match): \Swagger\Clie
 
 Get alliance information
 
-Public information about an alliance  ---  This route is cached for up to 3600 seconds
+Public information about an alliance  --- Alternate route: `/dev/alliances/{alliance_id}/`  Alternate route: `/legacy/alliances/{alliance_id}/`  Alternate route: `/v3/alliances/{alliance_id}/`  Alternate route: `/v4/alliances/{alliance_id}/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -136,7 +136,7 @@ getAlliancesAllianceIdCorporations($alliance_id, $datasource, $if_none_match): i
 
 List alliance's corporations
 
-List all current member corporations of an alliance  ---  This route is cached for up to 3600 seconds
+List all current member corporations of an alliance  --- Alternate route: `/dev/alliances/{alliance_id}/corporations/`  Alternate route: `/legacy/alliances/{alliance_id}/corporations/`  Alternate route: `/v1/alliances/{alliance_id}/corporations/`  Alternate route: `/v2/alliances/{alliance_id}/corporations/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -196,7 +196,7 @@ getAlliancesAllianceIdIcons($alliance_id, $datasource, $if_none_match): \Swagger
 
 Get alliance icon
 
-Get the icon urls for a alliance  ---  This route expires daily at 11:05
+Get the icon urls for a alliance  --- Alternate route: `/dev/alliances/{alliance_id}/icons/`  Alternate route: `/legacy/alliances/{alliance_id}/icons/`  Alternate route: `/v1/alliances/{alliance_id}/icons/`  Alternate route: `/v2/alliances/{alliance_id}/icons/`  --- This route expires daily at 11:05
 
 ### Example
 

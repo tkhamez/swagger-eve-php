@@ -455,7 +455,7 @@ class CalendarApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/calendar/';
+        $resourcePath = '/characters/{character_id}/calendar/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -903,7 +903,7 @@ class CalendarApi
 
 
 
-        $resourcePath = '/v3/characters/{character_id}/calendar/{event_id}/';
+        $resourcePath = '/characters/{character_id}/calendar/{event_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1350,7 +1350,7 @@ class CalendarApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/calendar/{event_id}/attendees/';
+        $resourcePath = '/characters/{character_id}/calendar/{event_id}/attendees/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1697,7 +1697,7 @@ class CalendarApi
 
 
 
-        $resourcePath = '/v3/characters/{character_id}/calendar/{event_id}/';
+        $resourcePath = '/characters/{character_id}/calendar/{event_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

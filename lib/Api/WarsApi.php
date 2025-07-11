@@ -403,7 +403,7 @@ class WarsApi
 
 
 
-        $resourcePath = '/v1/wars/';
+        $resourcePath = '/wars/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -784,7 +784,7 @@ class WarsApi
 
 
 
-        $resourcePath = '/v1/wars/{war_id}/';
+        $resourcePath = '/wars/{war_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1173,7 +1173,7 @@ class WarsApi
         }
         
 
-        $resourcePath = '/v1/wars/{war_id}/killmails/';
+        $resourcePath = '/wars/{war_id}/killmails/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

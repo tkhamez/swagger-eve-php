@@ -453,7 +453,7 @@ class RoutesApi
 
 
 
-        $resourcePath = '/v1/route/{origin}/{destination}/';
+        $resourcePath = '/route/{origin}/{destination}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

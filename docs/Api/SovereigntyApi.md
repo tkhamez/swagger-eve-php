@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\SovereigntyApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getSovereigntyCampaigns()**](SovereigntyApi.md#getSovereigntyCampaigns) | **GET** /v1/sovereignty/campaigns/ | List sovereignty campaigns |
-| [**getSovereigntyMap()**](SovereigntyApi.md#getSovereigntyMap) | **GET** /v1/sovereignty/map/ | List sovereignty of systems |
-| [**getSovereigntyStructures()**](SovereigntyApi.md#getSovereigntyStructures) | **GET** /v1/sovereignty/structures/ | List sovereignty structures |
+| [**getSovereigntyCampaigns()**](SovereigntyApi.md#getSovereigntyCampaigns) | **GET** /sovereignty/campaigns/ | List sovereignty campaigns |
+| [**getSovereigntyMap()**](SovereigntyApi.md#getSovereigntyMap) | **GET** /sovereignty/map/ | List sovereignty of systems |
+| [**getSovereigntyStructures()**](SovereigntyApi.md#getSovereigntyStructures) | **GET** /sovereignty/structures/ | List sovereignty structures |
 
 
 ## `getSovereigntyCampaigns()`
@@ -17,7 +17,7 @@ getSovereigntyCampaigns($datasource, $if_none_match): \Swagger\Client\Eve\Model\
 
 List sovereignty campaigns
 
-Shows sovereignty data for campaigns.  ---  This route is cached for up to 5 seconds
+Shows sovereignty data for campaigns.  --- Alternate route: `/dev/sovereignty/campaigns/`  Alternate route: `/legacy/sovereignty/campaigns/`  Alternate route: `/v1/sovereignty/campaigns/`  --- This route is cached for up to 5 seconds
 
 ### Example
 
@@ -75,7 +75,7 @@ getSovereigntyMap($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetSov
 
 List sovereignty of systems
 
-Shows sovereignty information for solar systems  ---  This route is cached for up to 3600 seconds
+Shows sovereignty information for solar systems  --- Alternate route: `/dev/sovereignty/map/`  Alternate route: `/legacy/sovereignty/map/`  Alternate route: `/v1/sovereignty/map/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -133,7 +133,7 @@ getSovereigntyStructures($datasource, $if_none_match): \Swagger\Client\Eve\Model
 
 List sovereignty structures
 
-Shows sovereignty data for structures.  ---  This route is cached for up to 120 seconds
+Shows sovereignty data for structures.  --- Alternate route: `/dev/sovereignty/structures/`  Alternate route: `/legacy/sovereignty/structures/`  Alternate route: `/v1/sovereignty/structures/`  --- This route is cached for up to 120 seconds
 
 ### Example
 

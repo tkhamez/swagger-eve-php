@@ -1,20 +1,20 @@
 # Swagger\Client\Eve\MarketApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdOrders()**](MarketApi.md#getCharactersCharacterIdOrders) | **GET** /v2/characters/{character_id}/orders/ | List open orders from a character |
-| [**getCharactersCharacterIdOrdersHistory()**](MarketApi.md#getCharactersCharacterIdOrdersHistory) | **GET** /v1/characters/{character_id}/orders/history/ | List historical orders by a character |
-| [**getCorporationsCorporationIdOrders()**](MarketApi.md#getCorporationsCorporationIdOrders) | **GET** /v2/corporations/{corporation_id}/orders/ | List open orders from a corporation |
-| [**getCorporationsCorporationIdOrdersHistory()**](MarketApi.md#getCorporationsCorporationIdOrdersHistory) | **GET** /v1/corporations/{corporation_id}/orders/history/ | List historical orders from a corporation |
-| [**getMarketsGroups()**](MarketApi.md#getMarketsGroups) | **GET** /v1/markets/groups/ | Get item groups |
-| [**getMarketsGroupsMarketGroupId()**](MarketApi.md#getMarketsGroupsMarketGroupId) | **GET** /v1/markets/groups/{market_group_id}/ | Get item group information |
-| [**getMarketsPrices()**](MarketApi.md#getMarketsPrices) | **GET** /v1/markets/prices/ | List market prices |
-| [**getMarketsRegionIdHistory()**](MarketApi.md#getMarketsRegionIdHistory) | **GET** /v1/markets/{region_id}/history/ | List historical market statistics in a region |
-| [**getMarketsRegionIdOrders()**](MarketApi.md#getMarketsRegionIdOrders) | **GET** /v1/markets/{region_id}/orders/ | List orders in a region |
-| [**getMarketsRegionIdTypes()**](MarketApi.md#getMarketsRegionIdTypes) | **GET** /v1/markets/{region_id}/types/ | List type IDs relevant to a market |
-| [**getMarketsStructuresStructureId()**](MarketApi.md#getMarketsStructuresStructureId) | **GET** /v1/markets/structures/{structure_id}/ | List orders in a structure |
+| [**getCharactersCharacterIdOrders()**](MarketApi.md#getCharactersCharacterIdOrders) | **GET** /characters/{character_id}/orders/ | List open orders from a character |
+| [**getCharactersCharacterIdOrdersHistory()**](MarketApi.md#getCharactersCharacterIdOrdersHistory) | **GET** /characters/{character_id}/orders/history/ | List historical orders by a character |
+| [**getCorporationsCorporationIdOrders()**](MarketApi.md#getCorporationsCorporationIdOrders) | **GET** /corporations/{corporation_id}/orders/ | List open orders from a corporation |
+| [**getCorporationsCorporationIdOrdersHistory()**](MarketApi.md#getCorporationsCorporationIdOrdersHistory) | **GET** /corporations/{corporation_id}/orders/history/ | List historical orders from a corporation |
+| [**getMarketsGroups()**](MarketApi.md#getMarketsGroups) | **GET** /markets/groups/ | Get item groups |
+| [**getMarketsGroupsMarketGroupId()**](MarketApi.md#getMarketsGroupsMarketGroupId) | **GET** /markets/groups/{market_group_id}/ | Get item group information |
+| [**getMarketsPrices()**](MarketApi.md#getMarketsPrices) | **GET** /markets/prices/ | List market prices |
+| [**getMarketsRegionIdHistory()**](MarketApi.md#getMarketsRegionIdHistory) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region |
+| [**getMarketsRegionIdOrders()**](MarketApi.md#getMarketsRegionIdOrders) | **GET** /markets/{region_id}/orders/ | List orders in a region |
+| [**getMarketsRegionIdTypes()**](MarketApi.md#getMarketsRegionIdTypes) | **GET** /markets/{region_id}/types/ | List type IDs relevant to a market |
+| [**getMarketsStructuresStructureId()**](MarketApi.md#getMarketsStructuresStructureId) | **GET** /markets/structures/{structure_id}/ | List orders in a structure |
 
 
 ## `getCharactersCharacterIdOrders()`
@@ -25,7 +25,7 @@ getCharactersCharacterIdOrders($character_id, $datasource, $if_none_match, $toke
 
 List open orders from a character
 
-List open market orders placed by a character  ---  This route is cached for up to 1200 seconds
+List open market orders placed by a character  --- Alternate route: `/dev/characters/{character_id}/orders/`  Alternate route: `/v2/characters/{character_id}/orders/`  --- This route is cached for up to 1200 seconds
 
 ### Example
 
@@ -91,7 +91,7 @@ getCharactersCharacterIdOrdersHistory($character_id, $datasource, $if_none_match
 
 List historical orders by a character
 
-List cancelled and expired market orders placed by a character up to 90 days in the past.  ---  This route is cached for up to 3600 seconds
+List cancelled and expired market orders placed by a character up to 90 days in the past.  --- Alternate route: `/dev/characters/{character_id}/orders/history/`  Alternate route: `/legacy/characters/{character_id}/orders/history/`  Alternate route: `/v1/characters/{character_id}/orders/history/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -159,7 +159,7 @@ getCorporationsCorporationIdOrders($corporation_id, $datasource, $if_none_match,
 
 List open orders from a corporation
 
-List open market orders placed on behalf of a corporation  ---  This route is cached for up to 1200 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
+List open market orders placed on behalf of a corporation  --- Alternate route: `/dev/corporations/{corporation_id}/orders/`  Alternate route: `/legacy/corporations/{corporation_id}/orders/`  Alternate route: `/v2/corporations/{corporation_id}/orders/`  Alternate route: `/v3/corporations/{corporation_id}/orders/`  --- This route is cached for up to 1200 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
 
 ### Example
 
@@ -227,7 +227,7 @@ getCorporationsCorporationIdOrdersHistory($corporation_id, $datasource, $if_none
 
 List historical orders from a corporation
 
-List cancelled and expired market orders placed on behalf of a corporation up to 90 days in the past.  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
+List cancelled and expired market orders placed on behalf of a corporation up to 90 days in the past.  --- Alternate route: `/dev/corporations/{corporation_id}/orders/history/`  Alternate route: `/legacy/corporations/{corporation_id}/orders/history/`  Alternate route: `/v1/corporations/{corporation_id}/orders/history/`  Alternate route: `/v2/corporations/{corporation_id}/orders/history/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Trader
 
 ### Example
 
@@ -295,7 +295,7 @@ getMarketsGroups($datasource, $if_none_match): int[]
 
 Get item groups
 
-Get a list of item groups  ---  This route expires daily at 11:05
+Get a list of item groups  --- Alternate route: `/dev/markets/groups/`  Alternate route: `/legacy/markets/groups/`  Alternate route: `/v1/markets/groups/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -353,7 +353,7 @@ getMarketsGroupsMarketGroupId($market_group_id, $accept_language, $datasource, $
 
 Get item group information
 
-Get information on an item group  ---  This route expires daily at 11:05
+Get information on an item group  --- Alternate route: `/dev/markets/groups/{market_group_id}/`  Alternate route: `/legacy/markets/groups/{market_group_id}/`  Alternate route: `/v1/markets/groups/{market_group_id}/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -417,7 +417,7 @@ getMarketsPrices($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetMark
 
 List market prices
 
-Return a list of prices  ---  This route is cached for up to 3600 seconds
+Return a list of prices  --- Alternate route: `/dev/markets/prices/`  Alternate route: `/legacy/markets/prices/`  Alternate route: `/v1/markets/prices/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -475,7 +475,7 @@ getMarketsRegionIdHistory($region_id, $type_id, $datasource, $if_none_match): \S
 
 List historical market statistics in a region
 
-Return a list of historical market statistics for the specified type in a region  ---  This route expires daily at 11:05
+Return a list of historical market statistics for the specified type in a region  --- Alternate route: `/dev/markets/{region_id}/history/`  Alternate route: `/legacy/markets/{region_id}/history/`  Alternate route: `/v1/markets/{region_id}/history/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -537,7 +537,7 @@ getMarketsRegionIdOrders($order_type, $region_id, $datasource, $if_none_match, $
 
 List orders in a region
 
-Return a list of orders in a region  ---  This route is cached for up to 300 seconds
+Return a list of orders in a region  --- Alternate route: `/dev/markets/{region_id}/orders/`  Alternate route: `/legacy/markets/{region_id}/orders/`  Alternate route: `/v1/markets/{region_id}/orders/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -603,7 +603,7 @@ getMarketsRegionIdTypes($region_id, $datasource, $if_none_match, $page): int[]
 
 List type IDs relevant to a market
 
-Return a list of type IDs that have active orders in the region, for efficient market indexing.  ---  This route is cached for up to 600 seconds
+Return a list of type IDs that have active orders in the region, for efficient market indexing.  --- Alternate route: `/dev/markets/{region_id}/types/`  Alternate route: `/legacy/markets/{region_id}/types/`  Alternate route: `/v1/markets/{region_id}/types/`  --- This route is cached for up to 600 seconds
 
 ### Example
 
@@ -665,7 +665,7 @@ getMarketsStructuresStructureId($structure_id, $datasource, $if_none_match, $pag
 
 List orders in a structure
 
-Return all orders in a structure  ---  This route is cached for up to 300 seconds
+Return all orders in a structure  --- Alternate route: `/dev/markets/structures/{structure_id}/`  Alternate route: `/legacy/markets/structures/{structure_id}/`  Alternate route: `/v1/markets/structures/{structure_id}/`  --- This route is cached for up to 300 seconds
 
 ### Example
 

@@ -1,12 +1,12 @@
 # Swagger\Client\Eve\SkillsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdAttributes()**](SkillsApi.md#getCharactersCharacterIdAttributes) | **GET** /v1/characters/{character_id}/attributes/ | Get character attributes |
-| [**getCharactersCharacterIdSkillqueue()**](SkillsApi.md#getCharactersCharacterIdSkillqueue) | **GET** /v2/characters/{character_id}/skillqueue/ | Get character&#39;s skill queue |
-| [**getCharactersCharacterIdSkills()**](SkillsApi.md#getCharactersCharacterIdSkills) | **GET** /v4/characters/{character_id}/skills/ | Get character skills |
+| [**getCharactersCharacterIdAttributes()**](SkillsApi.md#getCharactersCharacterIdAttributes) | **GET** /characters/{character_id}/attributes/ | Get character attributes |
+| [**getCharactersCharacterIdSkillqueue()**](SkillsApi.md#getCharactersCharacterIdSkillqueue) | **GET** /characters/{character_id}/skillqueue/ | Get character&#39;s skill queue |
+| [**getCharactersCharacterIdSkills()**](SkillsApi.md#getCharactersCharacterIdSkills) | **GET** /characters/{character_id}/skills/ | Get character skills |
 
 
 ## `getCharactersCharacterIdAttributes()`
@@ -17,7 +17,7 @@ getCharactersCharacterIdAttributes($character_id, $datasource, $if_none_match, $
 
 Get character attributes
 
-Return attributes of a character  ---  This route is cached for up to 120 seconds
+Return attributes of a character  --- Alternate route: `/dev/characters/{character_id}/attributes/`  Alternate route: `/legacy/characters/{character_id}/attributes/`  Alternate route: `/v1/characters/{character_id}/attributes/`  --- This route is cached for up to 120 seconds
 
 ### Example
 
@@ -83,7 +83,7 @@ getCharactersCharacterIdSkillqueue($character_id, $datasource, $if_none_match, $
 
 Get character's skill queue
 
-List the configured skill queue for the given character  ---  This route is cached for up to 120 seconds
+List the configured skill queue for the given character  --- Alternate route: `/dev/characters/{character_id}/skillqueue/`  Alternate route: `/legacy/characters/{character_id}/skillqueue/`  Alternate route: `/v2/characters/{character_id}/skillqueue/`  --- This route is cached for up to 120 seconds
 
 ### Example
 
@@ -149,7 +149,7 @@ getCharactersCharacterIdSkills($character_id, $datasource, $if_none_match, $toke
 
 Get character skills
 
-List all trained skills for the given character  ---  This route is cached for up to 120 seconds
+List all trained skills for the given character  --- Alternate route: `/dev/characters/{character_id}/skills/`  Alternate route: `/v4/characters/{character_id}/skills/`  --- This route is cached for up to 120 seconds
 
 ### Example
 

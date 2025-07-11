@@ -400,7 +400,7 @@ class AllianceApi
 
 
 
-        $resourcePath = '/v1/alliances/';
+        $resourcePath = '/alliances/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -772,7 +772,7 @@ class AllianceApi
 
 
 
-        $resourcePath = '/v3/alliances/{alliance_id}/';
+        $resourcePath = '/alliances/{alliance_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1138,7 +1138,7 @@ class AllianceApi
 
 
 
-        $resourcePath = '/v1/alliances/{alliance_id}/corporations/';
+        $resourcePath = '/alliances/{alliance_id}/corporations/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1518,7 +1518,7 @@ class AllianceApi
 
 
 
-        $resourcePath = '/v1/alliances/{alliance_id}/icons/';
+        $resourcePath = '/alliances/{alliance_id}/icons/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

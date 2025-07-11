@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\RoutesApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getRouteOriginDestination()**](RoutesApi.md#getRouteOriginDestination) | **GET** /v1/route/{origin}/{destination}/ | Get route |
+| [**getRouteOriginDestination()**](RoutesApi.md#getRouteOriginDestination) | **GET** /route/{origin}/{destination}/ | Get route |
 
 
 ## `getRouteOriginDestination()`
@@ -15,7 +15,7 @@ getRouteOriginDestination($destination, $origin, $avoid, $connections, $datasour
 
 Get route
 
-Get the systems between origin and destination  ---  This route is cached for up to 86400 seconds
+Get the systems between origin and destination  --- Alternate route: `/dev/route/{origin}/{destination}/`  Alternate route: `/legacy/route/{origin}/{destination}/`  Alternate route: `/v1/route/{origin}/{destination}/`  --- This route is cached for up to 86400 seconds
 
 ### Example
 

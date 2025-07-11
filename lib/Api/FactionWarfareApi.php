@@ -461,7 +461,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/fw/stats/';
+        $resourcePath = '/characters/{character_id}/fw/stats/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -874,7 +874,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/fw/stats/';
+        $resourcePath = '/corporations/{corporation_id}/fw/stats/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1238,7 +1238,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v1/fw/leaderboards/';
+        $resourcePath = '/fw/leaderboards/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1581,7 +1581,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v1/fw/leaderboards/characters/';
+        $resourcePath = '/fw/leaderboards/characters/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1924,7 +1924,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v1/fw/leaderboards/corporations/';
+        $resourcePath = '/fw/leaderboards/corporations/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2267,7 +2267,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v1/fw/stats/';
+        $resourcePath = '/fw/stats/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2610,7 +2610,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v2/fw/systems/';
+        $resourcePath = '/fw/systems/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2953,7 +2953,7 @@ class FactionWarfareApi
 
 
 
-        $resourcePath = '/v1/fw/wars/';
+        $resourcePath = '/fw/wars/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

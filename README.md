@@ -5,8 +5,8 @@
 
 An OpenAPI for EVE Online.
 
-This client is generated from the 
-"[underscore routes](https://developers.eveonline.com/blog/esi-best-practices-generating-code-with-underscore-routes)".
+This client is generated from the "latest" routes. Versioning is now done with an HTTP header, see
+https://developers.eveonline.com/blog/changing-versions-v42-was-getting-out-of-hand.
 
 It contains two patches that remove validation of enum attributes and max items. CCP stated that the 
 extension of enum attributes is no longer a breaking change, see 
@@ -135,205 +135,205 @@ try {
 
 ## API Endpoints
 
-All URIs are relative to *https://esi.evetech.net*
+All URIs are relative to *https://esi.evetech.net/latest*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AllianceApi* | [**getAlliances**](docs/Api/AllianceApi.md#getalliances) | **GET** /v1/alliances/ | List all alliances
-*AllianceApi* | [**getAlliancesAllianceId**](docs/Api/AllianceApi.md#getalliancesallianceid) | **GET** /v3/alliances/{alliance_id}/ | Get alliance information
-*AllianceApi* | [**getAlliancesAllianceIdCorporations**](docs/Api/AllianceApi.md#getalliancesallianceidcorporations) | **GET** /v1/alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
-*AllianceApi* | [**getAlliancesAllianceIdIcons**](docs/Api/AllianceApi.md#getalliancesallianceidicons) | **GET** /v1/alliances/{alliance_id}/icons/ | Get alliance icon
-*AssetsApi* | [**getCharactersCharacterIdAssets**](docs/Api/AssetsApi.md#getcharacterscharacteridassets) | **GET** /v4/characters/{character_id}/assets/ | Get character assets
-*AssetsApi* | [**getCorporationsCorporationIdAssets**](docs/Api/AssetsApi.md#getcorporationscorporationidassets) | **GET** /v4/corporations/{corporation_id}/assets/ | Get corporation assets
-*AssetsApi* | [**postCharactersCharacterIdAssetsLocations**](docs/Api/AssetsApi.md#postcharacterscharacteridassetslocations) | **POST** /v2/characters/{character_id}/assets/locations/ | Get character asset locations
-*AssetsApi* | [**postCharactersCharacterIdAssetsNames**](docs/Api/AssetsApi.md#postcharacterscharacteridassetsnames) | **POST** /v1/characters/{character_id}/assets/names/ | Get character asset names
-*AssetsApi* | [**postCorporationsCorporationIdAssetsLocations**](docs/Api/AssetsApi.md#postcorporationscorporationidassetslocations) | **POST** /v2/corporations/{corporation_id}/assets/locations/ | Get corporation asset locations
-*AssetsApi* | [**postCorporationsCorporationIdAssetsNames**](docs/Api/AssetsApi.md#postcorporationscorporationidassetsnames) | **POST** /v1/corporations/{corporation_id}/assets/names/ | Get corporation asset names
-*CalendarApi* | [**getCharactersCharacterIdCalendar**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendar) | **GET** /v1/characters/{character_id}/calendar/ | List calendar event summaries
-*CalendarApi* | [**getCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventid) | **GET** /v3/characters/{character_id}/calendar/{event_id}/ | Get an event
-*CalendarApi* | [**getCharactersCharacterIdCalendarEventIdAttendees**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventidattendees) | **GET** /v1/characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
-*CalendarApi* | [**putCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#putcharacterscharacteridcalendareventid) | **PUT** /v3/characters/{character_id}/calendar/{event_id}/ | Respond to an event
-*CharacterApi* | [**getCharactersCharacterId**](docs/Api/CharacterApi.md#getcharacterscharacterid) | **GET** /v5/characters/{character_id}/ | Get character&#39;s public information
-*CharacterApi* | [**getCharactersCharacterIdAgentsResearch**](docs/Api/CharacterApi.md#getcharacterscharacteridagentsresearch) | **GET** /v1/characters/{character_id}/agents_research/ | Get agents research
-*CharacterApi* | [**getCharactersCharacterIdBlueprints**](docs/Api/CharacterApi.md#getcharacterscharacteridblueprints) | **GET** /v2/characters/{character_id}/blueprints/ | Get blueprints
-*CharacterApi* | [**getCharactersCharacterIdCorporationhistory**](docs/Api/CharacterApi.md#getcharacterscharacteridcorporationhistory) | **GET** /v1/characters/{character_id}/corporationhistory/ | Get corporation history
-*CharacterApi* | [**getCharactersCharacterIdFatigue**](docs/Api/CharacterApi.md#getcharacterscharacteridfatigue) | **GET** /v1/characters/{character_id}/fatigue/ | Get jump fatigue
-*CharacterApi* | [**getCharactersCharacterIdMedals**](docs/Api/CharacterApi.md#getcharacterscharacteridmedals) | **GET** /v1/characters/{character_id}/medals/ | Get medals
-*CharacterApi* | [**getCharactersCharacterIdNotifications**](docs/Api/CharacterApi.md#getcharacterscharacteridnotifications) | **GET** /v4/characters/{character_id}/notifications/ | Get character notifications
-*CharacterApi* | [**getCharactersCharacterIdNotificationsContacts**](docs/Api/CharacterApi.md#getcharacterscharacteridnotificationscontacts) | **GET** /v1/characters/{character_id}/notifications/contacts/ | Get new contact notifications
-*CharacterApi* | [**getCharactersCharacterIdPortrait**](docs/Api/CharacterApi.md#getcharacterscharacteridportrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits
-*CharacterApi* | [**getCharactersCharacterIdRoles**](docs/Api/CharacterApi.md#getcharacterscharacteridroles) | **GET** /v2/characters/{character_id}/roles/ | Get character corporation roles
-*CharacterApi* | [**getCharactersCharacterIdStandings**](docs/Api/CharacterApi.md#getcharacterscharacteridstandings) | **GET** /v1/characters/{character_id}/standings/ | Get standings
-*CharacterApi* | [**getCharactersCharacterIdTitles**](docs/Api/CharacterApi.md#getcharacterscharacteridtitles) | **GET** /v1/characters/{character_id}/titles/ | Get character corporation titles
-*CharacterApi* | [**postCharactersAffiliation**](docs/Api/CharacterApi.md#postcharactersaffiliation) | **POST** /v1/characters/affiliation/ | Character affiliation
-*CharacterApi* | [**postCharactersCharacterIdCspa**](docs/Api/CharacterApi.md#postcharacterscharacteridcspa) | **POST** /v4/characters/{character_id}/cspa/ | Calculate a CSPA charge cost
-*ClonesApi* | [**getCharactersCharacterIdClones**](docs/Api/ClonesApi.md#getcharacterscharacteridclones) | **GET** /v2/characters/{character_id}/clones/ | Get clones
-*ClonesApi* | [**getCharactersCharacterIdImplants**](docs/Api/ClonesApi.md#getcharacterscharacteridimplants) | **GET** /v1/characters/{character_id}/implants/ | Get active implants
-*ContactsApi* | [**deleteCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#deletecharacterscharacteridcontacts) | **DELETE** /v1/characters/{character_id}/contacts/ | Delete contacts
-*ContactsApi* | [**getAlliancesAllianceIdContacts**](docs/Api/ContactsApi.md#getalliancesallianceidcontacts) | **GET** /v2/alliances/{alliance_id}/contacts/ | Get alliance contacts
-*ContactsApi* | [**getAlliancesAllianceIdContactsLabels**](docs/Api/ContactsApi.md#getalliancesallianceidcontactslabels) | **GET** /v1/alliances/{alliance_id}/contacts/labels/ | Get alliance contact labels
-*ContactsApi* | [**getCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#getcharacterscharacteridcontacts) | **GET** /v2/characters/{character_id}/contacts/ | Get contacts
-*ContactsApi* | [**getCharactersCharacterIdContactsLabels**](docs/Api/ContactsApi.md#getcharacterscharacteridcontactslabels) | **GET** /v1/characters/{character_id}/contacts/labels/ | Get contact labels
-*ContactsApi* | [**getCorporationsCorporationIdContacts**](docs/Api/ContactsApi.md#getcorporationscorporationidcontacts) | **GET** /v2/corporations/{corporation_id}/contacts/ | Get corporation contacts
-*ContactsApi* | [**getCorporationsCorporationIdContactsLabels**](docs/Api/ContactsApi.md#getcorporationscorporationidcontactslabels) | **GET** /v1/corporations/{corporation_id}/contacts/labels/ | Get corporation contact labels
-*ContactsApi* | [**postCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#postcharacterscharacteridcontacts) | **POST** /v2/characters/{character_id}/contacts/ | Add contacts
-*ContactsApi* | [**putCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#putcharacterscharacteridcontacts) | **PUT** /v2/characters/{character_id}/contacts/ | Edit contacts
-*ContractsApi* | [**getCharactersCharacterIdContracts**](docs/Api/ContractsApi.md#getcharacterscharacteridcontracts) | **GET** /v1/characters/{character_id}/contracts/ | Get contracts
-*ContractsApi* | [**getCharactersCharacterIdContractsContractIdBids**](docs/Api/ContractsApi.md#getcharacterscharacteridcontractscontractidbids) | **GET** /v1/characters/{character_id}/contracts/{contract_id}/bids/ | Get contract bids
-*ContractsApi* | [**getCharactersCharacterIdContractsContractIdItems**](docs/Api/ContractsApi.md#getcharacterscharacteridcontractscontractiditems) | **GET** /v1/characters/{character_id}/contracts/{contract_id}/items/ | Get contract items
-*ContractsApi* | [**getContractsPublicBidsContractId**](docs/Api/ContractsApi.md#getcontractspublicbidscontractid) | **GET** /v1/contracts/public/bids/{contract_id}/ | Get public contract bids
-*ContractsApi* | [**getContractsPublicItemsContractId**](docs/Api/ContractsApi.md#getcontractspublicitemscontractid) | **GET** /v1/contracts/public/items/{contract_id}/ | Get public contract items
-*ContractsApi* | [**getContractsPublicRegionId**](docs/Api/ContractsApi.md#getcontractspublicregionid) | **GET** /v1/contracts/public/{region_id}/ | Get public contracts
-*ContractsApi* | [**getCorporationsCorporationIdContracts**](docs/Api/ContractsApi.md#getcorporationscorporationidcontracts) | **GET** /v1/corporations/{corporation_id}/contracts/ | Get corporation contracts
-*ContractsApi* | [**getCorporationsCorporationIdContractsContractIdBids**](docs/Api/ContractsApi.md#getcorporationscorporationidcontractscontractidbids) | **GET** /v1/corporations/{corporation_id}/contracts/{contract_id}/bids/ | Get corporation contract bids
-*ContractsApi* | [**getCorporationsCorporationIdContractsContractIdItems**](docs/Api/ContractsApi.md#getcorporationscorporationidcontractscontractiditems) | **GET** /v1/corporations/{corporation_id}/contracts/{contract_id}/items/ | Get corporation contract items
-*CorporationApi* | [**getCorporationsCorporationId**](docs/Api/CorporationApi.md#getcorporationscorporationid) | **GET** /v4/corporations/{corporation_id}/ | Get corporation information
-*CorporationApi* | [**getCorporationsCorporationIdAlliancehistory**](docs/Api/CorporationApi.md#getcorporationscorporationidalliancehistory) | **GET** /v2/corporations/{corporation_id}/alliancehistory/ | Get alliance history
-*CorporationApi* | [**getCorporationsCorporationIdBlueprints**](docs/Api/CorporationApi.md#getcorporationscorporationidblueprints) | **GET** /v2/corporations/{corporation_id}/blueprints/ | Get corporation blueprints
-*CorporationApi* | [**getCorporationsCorporationIdContainersLogs**](docs/Api/CorporationApi.md#getcorporationscorporationidcontainerslogs) | **GET** /v2/corporations/{corporation_id}/containers/logs/ | Get all corporation ALSC logs
-*CorporationApi* | [**getCorporationsCorporationIdDivisions**](docs/Api/CorporationApi.md#getcorporationscorporationiddivisions) | **GET** /v1/corporations/{corporation_id}/divisions/ | Get corporation divisions
-*CorporationApi* | [**getCorporationsCorporationIdFacilities**](docs/Api/CorporationApi.md#getcorporationscorporationidfacilities) | **GET** /v1/corporations/{corporation_id}/facilities/ | Get corporation facilities
-*CorporationApi* | [**getCorporationsCorporationIdIcons**](docs/Api/CorporationApi.md#getcorporationscorporationidicons) | **GET** /v1/corporations/{corporation_id}/icons/ | Get corporation icon
-*CorporationApi* | [**getCorporationsCorporationIdMedals**](docs/Api/CorporationApi.md#getcorporationscorporationidmedals) | **GET** /v1/corporations/{corporation_id}/medals/ | Get corporation medals
-*CorporationApi* | [**getCorporationsCorporationIdMedalsIssued**](docs/Api/CorporationApi.md#getcorporationscorporationidmedalsissued) | **GET** /v1/corporations/{corporation_id}/medals/issued/ | Get corporation issued medals
-*CorporationApi* | [**getCorporationsCorporationIdMembers**](docs/Api/CorporationApi.md#getcorporationscorporationidmembers) | **GET** /v3/corporations/{corporation_id}/members/ | Get corporation members
-*CorporationApi* | [**getCorporationsCorporationIdMembersLimit**](docs/Api/CorporationApi.md#getcorporationscorporationidmemberslimit) | **GET** /v1/corporations/{corporation_id}/members/limit/ | Get corporation member limit
-*CorporationApi* | [**getCorporationsCorporationIdMembersTitles**](docs/Api/CorporationApi.md#getcorporationscorporationidmemberstitles) | **GET** /v1/corporations/{corporation_id}/members/titles/ | Get corporation&#39;s members&#39; titles
-*CorporationApi* | [**getCorporationsCorporationIdMembertracking**](docs/Api/CorporationApi.md#getcorporationscorporationidmembertracking) | **GET** /v1/corporations/{corporation_id}/membertracking/ | Track corporation members
-*CorporationApi* | [**getCorporationsCorporationIdRoles**](docs/Api/CorporationApi.md#getcorporationscorporationidroles) | **GET** /v1/corporations/{corporation_id}/roles/ | Get corporation member roles
-*CorporationApi* | [**getCorporationsCorporationIdRolesHistory**](docs/Api/CorporationApi.md#getcorporationscorporationidroleshistory) | **GET** /v1/corporations/{corporation_id}/roles/history/ | Get corporation member roles history
-*CorporationApi* | [**getCorporationsCorporationIdShareholders**](docs/Api/CorporationApi.md#getcorporationscorporationidshareholders) | **GET** /v1/corporations/{corporation_id}/shareholders/ | Get corporation shareholders
-*CorporationApi* | [**getCorporationsCorporationIdStandings**](docs/Api/CorporationApi.md#getcorporationscorporationidstandings) | **GET** /v1/corporations/{corporation_id}/standings/ | Get corporation standings
-*CorporationApi* | [**getCorporationsCorporationIdStarbases**](docs/Api/CorporationApi.md#getcorporationscorporationidstarbases) | **GET** /v1/corporations/{corporation_id}/starbases/ | Get corporation starbases (POSes)
-*CorporationApi* | [**getCorporationsCorporationIdStarbasesStarbaseId**](docs/Api/CorporationApi.md#getcorporationscorporationidstarbasesstarbaseid) | **GET** /v1/corporations/{corporation_id}/starbases/{starbase_id}/ | Get starbase (POS) detail
-*CorporationApi* | [**getCorporationsCorporationIdStructures**](docs/Api/CorporationApi.md#getcorporationscorporationidstructures) | **GET** /v4/corporations/{corporation_id}/structures/ | Get corporation structures
-*CorporationApi* | [**getCorporationsCorporationIdTitles**](docs/Api/CorporationApi.md#getcorporationscorporationidtitles) | **GET** /v1/corporations/{corporation_id}/titles/ | Get corporation titles
-*CorporationApi* | [**getCorporationsNpccorps**](docs/Api/CorporationApi.md#getcorporationsnpccorps) | **GET** /v1/corporations/npccorps/ | Get npc corporations
-*DogmaApi* | [**getDogmaAttributes**](docs/Api/DogmaApi.md#getdogmaattributes) | **GET** /v1/dogma/attributes/ | Get attributes
-*DogmaApi* | [**getDogmaAttributesAttributeId**](docs/Api/DogmaApi.md#getdogmaattributesattributeid) | **GET** /v1/dogma/attributes/{attribute_id}/ | Get attribute information
-*DogmaApi* | [**getDogmaDynamicItemsTypeIdItemId**](docs/Api/DogmaApi.md#getdogmadynamicitemstypeiditemid) | **GET** /v1/dogma/dynamic/items/{type_id}/{item_id}/ | Get dynamic item information
-*DogmaApi* | [**getDogmaEffects**](docs/Api/DogmaApi.md#getdogmaeffects) | **GET** /v1/dogma/effects/ | Get effects
-*DogmaApi* | [**getDogmaEffectsEffectId**](docs/Api/DogmaApi.md#getdogmaeffectseffectid) | **GET** /v2/dogma/effects/{effect_id}/ | Get effect information
-*FactionWarfareApi* | [**getCharactersCharacterIdFwStats**](docs/Api/FactionWarfareApi.md#getcharacterscharacteridfwstats) | **GET** /v1/characters/{character_id}/fw/stats/ | Overview of a character involved in faction warfare
-*FactionWarfareApi* | [**getCorporationsCorporationIdFwStats**](docs/Api/FactionWarfareApi.md#getcorporationscorporationidfwstats) | **GET** /v1/corporations/{corporation_id}/fw/stats/ | Overview of a corporation involved in faction warfare
-*FactionWarfareApi* | [**getFwLeaderboards**](docs/Api/FactionWarfareApi.md#getfwleaderboards) | **GET** /v1/fw/leaderboards/ | List of the top factions in faction warfare
-*FactionWarfareApi* | [**getFwLeaderboardsCharacters**](docs/Api/FactionWarfareApi.md#getfwleaderboardscharacters) | **GET** /v1/fw/leaderboards/characters/ | List of the top pilots in faction warfare
-*FactionWarfareApi* | [**getFwLeaderboardsCorporations**](docs/Api/FactionWarfareApi.md#getfwleaderboardscorporations) | **GET** /v1/fw/leaderboards/corporations/ | List of the top corporations in faction warfare
-*FactionWarfareApi* | [**getFwStats**](docs/Api/FactionWarfareApi.md#getfwstats) | **GET** /v1/fw/stats/ | An overview of statistics about factions involved in faction warfare
-*FactionWarfareApi* | [**getFwSystems**](docs/Api/FactionWarfareApi.md#getfwsystems) | **GET** /v2/fw/systems/ | Ownership of faction warfare systems
-*FactionWarfareApi* | [**getFwWars**](docs/Api/FactionWarfareApi.md#getfwwars) | **GET** /v1/fw/wars/ | Data about which NPC factions are at war
-*FittingsApi* | [**deleteCharactersCharacterIdFittingsFittingId**](docs/Api/FittingsApi.md#deletecharacterscharacteridfittingsfittingid) | **DELETE** /v1/characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
-*FittingsApi* | [**getCharactersCharacterIdFittings**](docs/Api/FittingsApi.md#getcharacterscharacteridfittings) | **GET** /v2/characters/{character_id}/fittings/ | Get fittings
-*FittingsApi* | [**postCharactersCharacterIdFittings**](docs/Api/FittingsApi.md#postcharacterscharacteridfittings) | **POST** /v1/characters/{character_id}/fittings/ | Create fitting
-*FleetsApi* | [**deleteFleetsFleetIdMembersMemberId**](docs/Api/FleetsApi.md#deletefleetsfleetidmembersmemberid) | **DELETE** /v1/fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
-*FleetsApi* | [**deleteFleetsFleetIdSquadsSquadId**](docs/Api/FleetsApi.md#deletefleetsfleetidsquadssquadid) | **DELETE** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
-*FleetsApi* | [**deleteFleetsFleetIdWingsWingId**](docs/Api/FleetsApi.md#deletefleetsfleetidwingswingid) | **DELETE** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
-*FleetsApi* | [**getCharactersCharacterIdFleet**](docs/Api/FleetsApi.md#getcharacterscharacteridfleet) | **GET** /v1/characters/{character_id}/fleet/ | Get character fleet info
-*FleetsApi* | [**getFleetsFleetId**](docs/Api/FleetsApi.md#getfleetsfleetid) | **GET** /v1/fleets/{fleet_id}/ | Get fleet information
-*FleetsApi* | [**getFleetsFleetIdMembers**](docs/Api/FleetsApi.md#getfleetsfleetidmembers) | **GET** /v1/fleets/{fleet_id}/members/ | Get fleet members
-*FleetsApi* | [**getFleetsFleetIdWings**](docs/Api/FleetsApi.md#getfleetsfleetidwings) | **GET** /v1/fleets/{fleet_id}/wings/ | Get fleet wings
-*FleetsApi* | [**postFleetsFleetIdMembers**](docs/Api/FleetsApi.md#postfleetsfleetidmembers) | **POST** /v1/fleets/{fleet_id}/members/ | Create fleet invitation
-*FleetsApi* | [**postFleetsFleetIdWings**](docs/Api/FleetsApi.md#postfleetsfleetidwings) | **POST** /v1/fleets/{fleet_id}/wings/ | Create fleet wing
-*FleetsApi* | [**postFleetsFleetIdWingsWingIdSquads**](docs/Api/FleetsApi.md#postfleetsfleetidwingswingidsquads) | **POST** /v1/fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
-*FleetsApi* | [**putFleetsFleetId**](docs/Api/FleetsApi.md#putfleetsfleetid) | **PUT** /v1/fleets/{fleet_id}/ | Update fleet
-*FleetsApi* | [**putFleetsFleetIdMembersMemberId**](docs/Api/FleetsApi.md#putfleetsfleetidmembersmemberid) | **PUT** /v1/fleets/{fleet_id}/members/{member_id}/ | Move fleet member
-*FleetsApi* | [**putFleetsFleetIdSquadsSquadId**](docs/Api/FleetsApi.md#putfleetsfleetidsquadssquadid) | **PUT** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
-*FleetsApi* | [**putFleetsFleetIdWingsWingId**](docs/Api/FleetsApi.md#putfleetsfleetidwingswingid) | **PUT** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
-*IncursionsApi* | [**getIncursions**](docs/Api/IncursionsApi.md#getincursions) | **GET** /v1/incursions/ | List incursions
-*IndustryApi* | [**getCharactersCharacterIdIndustryJobs**](docs/Api/IndustryApi.md#getcharacterscharacteridindustryjobs) | **GET** /v1/characters/{character_id}/industry/jobs/ | List character industry jobs
-*IndustryApi* | [**getCharactersCharacterIdMining**](docs/Api/IndustryApi.md#getcharacterscharacteridmining) | **GET** /v1/characters/{character_id}/mining/ | Character mining ledger
-*IndustryApi* | [**getCorporationCorporationIdMiningExtractions**](docs/Api/IndustryApi.md#getcorporationcorporationidminingextractions) | **GET** /v1/corporation/{corporation_id}/mining/extractions/ | Moon extraction timers
-*IndustryApi* | [**getCorporationCorporationIdMiningObservers**](docs/Api/IndustryApi.md#getcorporationcorporationidminingobservers) | **GET** /v1/corporation/{corporation_id}/mining/observers/ | Corporation mining observers
-*IndustryApi* | [**getCorporationCorporationIdMiningObserversObserverId**](docs/Api/IndustryApi.md#getcorporationcorporationidminingobserversobserverid) | **GET** /v1/corporation/{corporation_id}/mining/observers/{observer_id}/ | Observed corporation mining
-*IndustryApi* | [**getCorporationsCorporationIdIndustryJobs**](docs/Api/IndustryApi.md#getcorporationscorporationidindustryjobs) | **GET** /v1/corporations/{corporation_id}/industry/jobs/ | List corporation industry jobs
-*IndustryApi* | [**getIndustryFacilities**](docs/Api/IndustryApi.md#getindustryfacilities) | **GET** /v1/industry/facilities/ | List industry facilities
-*IndustryApi* | [**getIndustrySystems**](docs/Api/IndustryApi.md#getindustrysystems) | **GET** /v1/industry/systems/ | List solar system cost indices
-*InsuranceApi* | [**getInsurancePrices**](docs/Api/InsuranceApi.md#getinsuranceprices) | **GET** /v1/insurance/prices/ | List insurance levels
-*KillmailsApi* | [**getCharactersCharacterIdKillmailsRecent**](docs/Api/KillmailsApi.md#getcharacterscharacteridkillmailsrecent) | **GET** /v1/characters/{character_id}/killmails/recent/ | Get a character&#39;s recent kills and losses
-*KillmailsApi* | [**getCorporationsCorporationIdKillmailsRecent**](docs/Api/KillmailsApi.md#getcorporationscorporationidkillmailsrecent) | **GET** /v1/corporations/{corporation_id}/killmails/recent/ | Get a corporation&#39;s recent kills and losses
-*KillmailsApi* | [**getKillmailsKillmailIdKillmailHash**](docs/Api/KillmailsApi.md#getkillmailskillmailidkillmailhash) | **GET** /v1/killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
-*LocationApi* | [**getCharactersCharacterIdLocation**](docs/Api/LocationApi.md#getcharacterscharacteridlocation) | **GET** /v1/characters/{character_id}/location/ | Get character location
-*LocationApi* | [**getCharactersCharacterIdOnline**](docs/Api/LocationApi.md#getcharacterscharacteridonline) | **GET** /v2/characters/{character_id}/online/ | Get character online
-*LocationApi* | [**getCharactersCharacterIdShip**](docs/Api/LocationApi.md#getcharacterscharacteridship) | **GET** /v1/characters/{character_id}/ship/ | Get current ship
-*LoyaltyApi* | [**getCharactersCharacterIdLoyaltyPoints**](docs/Api/LoyaltyApi.md#getcharacterscharacteridloyaltypoints) | **GET** /v1/characters/{character_id}/loyalty/points/ | Get loyalty points
-*LoyaltyApi* | [**getLoyaltyStoresCorporationIdOffers**](docs/Api/LoyaltyApi.md#getloyaltystorescorporationidoffers) | **GET** /v1/loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
-*MailApi* | [**deleteCharactersCharacterIdMailLabelsLabelId**](docs/Api/MailApi.md#deletecharacterscharacteridmaillabelslabelid) | **DELETE** /v1/characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
-*MailApi* | [**deleteCharactersCharacterIdMailMailId**](docs/Api/MailApi.md#deletecharacterscharacteridmailmailid) | **DELETE** /v1/characters/{character_id}/mail/{mail_id}/ | Delete a mail
-*MailApi* | [**getCharactersCharacterIdMail**](docs/Api/MailApi.md#getcharacterscharacteridmail) | **GET** /v1/characters/{character_id}/mail/ | Return mail headers
-*MailApi* | [**getCharactersCharacterIdMailLabels**](docs/Api/MailApi.md#getcharacterscharacteridmaillabels) | **GET** /v3/characters/{character_id}/mail/labels/ | Get mail labels and unread counts
-*MailApi* | [**getCharactersCharacterIdMailLists**](docs/Api/MailApi.md#getcharacterscharacteridmaillists) | **GET** /v1/characters/{character_id}/mail/lists/ | Return mailing list subscriptions
-*MailApi* | [**getCharactersCharacterIdMailMailId**](docs/Api/MailApi.md#getcharacterscharacteridmailmailid) | **GET** /v1/characters/{character_id}/mail/{mail_id}/ | Return a mail
-*MailApi* | [**postCharactersCharacterIdMail**](docs/Api/MailApi.md#postcharacterscharacteridmail) | **POST** /v1/characters/{character_id}/mail/ | Send a new mail
-*MailApi* | [**postCharactersCharacterIdMailLabels**](docs/Api/MailApi.md#postcharacterscharacteridmaillabels) | **POST** /v2/characters/{character_id}/mail/labels/ | Create a mail label
-*MailApi* | [**putCharactersCharacterIdMailMailId**](docs/Api/MailApi.md#putcharacterscharacteridmailmailid) | **PUT** /v1/characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
-*MarketApi* | [**getCharactersCharacterIdOrders**](docs/Api/MarketApi.md#getcharacterscharacteridorders) | **GET** /v2/characters/{character_id}/orders/ | List open orders from a character
-*MarketApi* | [**getCharactersCharacterIdOrdersHistory**](docs/Api/MarketApi.md#getcharacterscharacteridordershistory) | **GET** /v1/characters/{character_id}/orders/history/ | List historical orders by a character
-*MarketApi* | [**getCorporationsCorporationIdOrders**](docs/Api/MarketApi.md#getcorporationscorporationidorders) | **GET** /v2/corporations/{corporation_id}/orders/ | List open orders from a corporation
-*MarketApi* | [**getCorporationsCorporationIdOrdersHistory**](docs/Api/MarketApi.md#getcorporationscorporationidordershistory) | **GET** /v1/corporations/{corporation_id}/orders/history/ | List historical orders from a corporation
-*MarketApi* | [**getMarketsGroups**](docs/Api/MarketApi.md#getmarketsgroups) | **GET** /v1/markets/groups/ | Get item groups
-*MarketApi* | [**getMarketsGroupsMarketGroupId**](docs/Api/MarketApi.md#getmarketsgroupsmarketgroupid) | **GET** /v1/markets/groups/{market_group_id}/ | Get item group information
-*MarketApi* | [**getMarketsPrices**](docs/Api/MarketApi.md#getmarketsprices) | **GET** /v1/markets/prices/ | List market prices
-*MarketApi* | [**getMarketsRegionIdHistory**](docs/Api/MarketApi.md#getmarketsregionidhistory) | **GET** /v1/markets/{region_id}/history/ | List historical market statistics in a region
-*MarketApi* | [**getMarketsRegionIdOrders**](docs/Api/MarketApi.md#getmarketsregionidorders) | **GET** /v1/markets/{region_id}/orders/ | List orders in a region
-*MarketApi* | [**getMarketsRegionIdTypes**](docs/Api/MarketApi.md#getmarketsregionidtypes) | **GET** /v1/markets/{region_id}/types/ | List type IDs relevant to a market
-*MarketApi* | [**getMarketsStructuresStructureId**](docs/Api/MarketApi.md#getmarketsstructuresstructureid) | **GET** /v1/markets/structures/{structure_id}/ | List orders in a structure
-*PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanets**](docs/Api/PlanetaryInteractionApi.md#getcharacterscharacteridplanets) | **GET** /v1/characters/{character_id}/planets/ | Get colonies
-*PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanetsPlanetId**](docs/Api/PlanetaryInteractionApi.md#getcharacterscharacteridplanetsplanetid) | **GET** /v3/characters/{character_id}/planets/{planet_id}/ | Get colony layout
-*PlanetaryInteractionApi* | [**getCorporationsCorporationIdCustomsOffices**](docs/Api/PlanetaryInteractionApi.md#getcorporationscorporationidcustomsoffices) | **GET** /v1/corporations/{corporation_id}/customs_offices/ | List corporation customs offices
-*PlanetaryInteractionApi* | [**getUniverseSchematicsSchematicId**](docs/Api/PlanetaryInteractionApi.md#getuniverseschematicsschematicid) | **GET** /v1/universe/schematics/{schematic_id}/ | Get schematic information
-*RoutesApi* | [**getRouteOriginDestination**](docs/Api/RoutesApi.md#getrouteorigindestination) | **GET** /v1/route/{origin}/{destination}/ | Get route
-*SearchApi* | [**getCharactersCharacterIdSearch**](docs/Api/SearchApi.md#getcharacterscharacteridsearch) | **GET** /v3/characters/{character_id}/search/ | Search on a string
-*SkillsApi* | [**getCharactersCharacterIdAttributes**](docs/Api/SkillsApi.md#getcharacterscharacteridattributes) | **GET** /v1/characters/{character_id}/attributes/ | Get character attributes
-*SkillsApi* | [**getCharactersCharacterIdSkillqueue**](docs/Api/SkillsApi.md#getcharacterscharacteridskillqueue) | **GET** /v2/characters/{character_id}/skillqueue/ | Get character&#39;s skill queue
-*SkillsApi* | [**getCharactersCharacterIdSkills**](docs/Api/SkillsApi.md#getcharacterscharacteridskills) | **GET** /v4/characters/{character_id}/skills/ | Get character skills
-*SovereigntyApi* | [**getSovereigntyCampaigns**](docs/Api/SovereigntyApi.md#getsovereigntycampaigns) | **GET** /v1/sovereignty/campaigns/ | List sovereignty campaigns
-*SovereigntyApi* | [**getSovereigntyMap**](docs/Api/SovereigntyApi.md#getsovereigntymap) | **GET** /v1/sovereignty/map/ | List sovereignty of systems
-*SovereigntyApi* | [**getSovereigntyStructures**](docs/Api/SovereigntyApi.md#getsovereigntystructures) | **GET** /v1/sovereignty/structures/ | List sovereignty structures
-*StatusApi* | [**getStatus**](docs/Api/StatusApi.md#getstatus) | **GET** /v1/status/ | Retrieve the uptime and player counts
-*UniverseApi* | [**getUniverseAncestries**](docs/Api/UniverseApi.md#getuniverseancestries) | **GET** /v1/universe/ancestries/ | Get ancestries
-*UniverseApi* | [**getUniverseAsteroidBeltsAsteroidBeltId**](docs/Api/UniverseApi.md#getuniverseasteroidbeltsasteroidbeltid) | **GET** /v1/universe/asteroid_belts/{asteroid_belt_id}/ | Get asteroid belt information
-*UniverseApi* | [**getUniverseBloodlines**](docs/Api/UniverseApi.md#getuniversebloodlines) | **GET** /v1/universe/bloodlines/ | Get bloodlines
-*UniverseApi* | [**getUniverseCategories**](docs/Api/UniverseApi.md#getuniversecategories) | **GET** /v1/universe/categories/ | Get item categories
-*UniverseApi* | [**getUniverseCategoriesCategoryId**](docs/Api/UniverseApi.md#getuniversecategoriescategoryid) | **GET** /v1/universe/categories/{category_id}/ | Get item category information
-*UniverseApi* | [**getUniverseConstellations**](docs/Api/UniverseApi.md#getuniverseconstellations) | **GET** /v1/universe/constellations/ | Get constellations
-*UniverseApi* | [**getUniverseConstellationsConstellationId**](docs/Api/UniverseApi.md#getuniverseconstellationsconstellationid) | **GET** /v1/universe/constellations/{constellation_id}/ | Get constellation information
-*UniverseApi* | [**getUniverseFactions**](docs/Api/UniverseApi.md#getuniversefactions) | **GET** /v2/universe/factions/ | Get factions
-*UniverseApi* | [**getUniverseGraphics**](docs/Api/UniverseApi.md#getuniversegraphics) | **GET** /v1/universe/graphics/ | Get graphics
-*UniverseApi* | [**getUniverseGraphicsGraphicId**](docs/Api/UniverseApi.md#getuniversegraphicsgraphicid) | **GET** /v1/universe/graphics/{graphic_id}/ | Get graphic information
-*UniverseApi* | [**getUniverseGroups**](docs/Api/UniverseApi.md#getuniversegroups) | **GET** /v1/universe/groups/ | Get item groups
-*UniverseApi* | [**getUniverseGroupsGroupId**](docs/Api/UniverseApi.md#getuniversegroupsgroupid) | **GET** /v1/universe/groups/{group_id}/ | Get item group information
-*UniverseApi* | [**getUniverseMoonsMoonId**](docs/Api/UniverseApi.md#getuniversemoonsmoonid) | **GET** /v1/universe/moons/{moon_id}/ | Get moon information
-*UniverseApi* | [**getUniversePlanetsPlanetId**](docs/Api/UniverseApi.md#getuniverseplanetsplanetid) | **GET** /v1/universe/planets/{planet_id}/ | Get planet information
-*UniverseApi* | [**getUniverseRaces**](docs/Api/UniverseApi.md#getuniverseraces) | **GET** /v1/universe/races/ | Get character races
-*UniverseApi* | [**getUniverseRegions**](docs/Api/UniverseApi.md#getuniverseregions) | **GET** /v1/universe/regions/ | Get regions
-*UniverseApi* | [**getUniverseRegionsRegionId**](docs/Api/UniverseApi.md#getuniverseregionsregionid) | **GET** /v1/universe/regions/{region_id}/ | Get region information
-*UniverseApi* | [**getUniverseStargatesStargateId**](docs/Api/UniverseApi.md#getuniversestargatesstargateid) | **GET** /v1/universe/stargates/{stargate_id}/ | Get stargate information
-*UniverseApi* | [**getUniverseStarsStarId**](docs/Api/UniverseApi.md#getuniversestarsstarid) | **GET** /v1/universe/stars/{star_id}/ | Get star information
-*UniverseApi* | [**getUniverseStationsStationId**](docs/Api/UniverseApi.md#getuniversestationsstationid) | **GET** /v2/universe/stations/{station_id}/ | Get station information
-*UniverseApi* | [**getUniverseStructures**](docs/Api/UniverseApi.md#getuniversestructures) | **GET** /v1/universe/structures/ | List all public structures
-*UniverseApi* | [**getUniverseStructuresStructureId**](docs/Api/UniverseApi.md#getuniversestructuresstructureid) | **GET** /v1/universe/structures/{structure_id}/ | Get structure information
-*UniverseApi* | [**getUniverseSystemJumps**](docs/Api/UniverseApi.md#getuniversesystemjumps) | **GET** /v1/universe/system_jumps/ | Get system jumps
-*UniverseApi* | [**getUniverseSystemKills**](docs/Api/UniverseApi.md#getuniversesystemkills) | **GET** /v2/universe/system_kills/ | Get system kills
-*UniverseApi* | [**getUniverseSystems**](docs/Api/UniverseApi.md#getuniversesystems) | **GET** /v1/universe/systems/ | Get solar systems
-*UniverseApi* | [**getUniverseSystemsSystemId**](docs/Api/UniverseApi.md#getuniversesystemssystemid) | **GET** /v4/universe/systems/{system_id}/ | Get solar system information
-*UniverseApi* | [**getUniverseTypes**](docs/Api/UniverseApi.md#getuniversetypes) | **GET** /v1/universe/types/ | Get types
-*UniverseApi* | [**getUniverseTypesTypeId**](docs/Api/UniverseApi.md#getuniversetypestypeid) | **GET** /v2/universe/types/{type_id}/ | Get type information
-*UniverseApi* | [**postUniverseIds**](docs/Api/UniverseApi.md#postuniverseids) | **POST** /v1/universe/ids/ | Bulk names to IDs
-*UniverseApi* | [**postUniverseNames**](docs/Api/UniverseApi.md#postuniversenames) | **POST** /v2/universe/names/ | Get names and categories for a set of IDs
-*UserInterfaceApi* | [**postUiAutopilotWaypoint**](docs/Api/UserInterfaceApi.md#postuiautopilotwaypoint) | **POST** /v2/ui/autopilot/waypoint/ | Set Autopilot Waypoint
-*UserInterfaceApi* | [**postUiOpenwindowContract**](docs/Api/UserInterfaceApi.md#postuiopenwindowcontract) | **POST** /v1/ui/openwindow/contract/ | Open Contract Window
-*UserInterfaceApi* | [**postUiOpenwindowInformation**](docs/Api/UserInterfaceApi.md#postuiopenwindowinformation) | **POST** /v1/ui/openwindow/information/ | Open Information Window
-*UserInterfaceApi* | [**postUiOpenwindowMarketdetails**](docs/Api/UserInterfaceApi.md#postuiopenwindowmarketdetails) | **POST** /v1/ui/openwindow/marketdetails/ | Open Market Details
-*UserInterfaceApi* | [**postUiOpenwindowNewmail**](docs/Api/UserInterfaceApi.md#postuiopenwindownewmail) | **POST** /v1/ui/openwindow/newmail/ | Open New Mail Window
-*WalletApi* | [**getCharactersCharacterIdWallet**](docs/Api/WalletApi.md#getcharacterscharacteridwallet) | **GET** /v1/characters/{character_id}/wallet/ | Get a character&#39;s wallet balance
-*WalletApi* | [**getCharactersCharacterIdWalletJournal**](docs/Api/WalletApi.md#getcharacterscharacteridwalletjournal) | **GET** /v5/characters/{character_id}/wallet/journal/ | Get character wallet journal
-*WalletApi* | [**getCharactersCharacterIdWalletTransactions**](docs/Api/WalletApi.md#getcharacterscharacteridwallettransactions) | **GET** /v1/characters/{character_id}/wallet/transactions/ | Get wallet transactions
-*WalletApi* | [**getCorporationsCorporationIdWallets**](docs/Api/WalletApi.md#getcorporationscorporationidwallets) | **GET** /v1/corporations/{corporation_id}/wallets/ | Returns a corporation&#39;s wallet balance
-*WalletApi* | [**getCorporationsCorporationIdWalletsDivisionJournal**](docs/Api/WalletApi.md#getcorporationscorporationidwalletsdivisionjournal) | **GET** /v3/corporations/{corporation_id}/wallets/{division}/journal/ | Get corporation wallet journal
-*WalletApi* | [**getCorporationsCorporationIdWalletsDivisionTransactions**](docs/Api/WalletApi.md#getcorporationscorporationidwalletsdivisiontransactions) | **GET** /v1/corporations/{corporation_id}/wallets/{division}/transactions/ | Get corporation wallet transactions
-*WarsApi* | [**getWars**](docs/Api/WarsApi.md#getwars) | **GET** /v1/wars/ | List wars
-*WarsApi* | [**getWarsWarId**](docs/Api/WarsApi.md#getwarswarid) | **GET** /v1/wars/{war_id}/ | Get war information
-*WarsApi* | [**getWarsWarIdKillmails**](docs/Api/WarsApi.md#getwarswaridkillmails) | **GET** /v1/wars/{war_id}/killmails/ | List kills for a war
+*AllianceApi* | [**getAlliances**](docs/Api/AllianceApi.md#getalliances) | **GET** /alliances/ | List all alliances
+*AllianceApi* | [**getAlliancesAllianceId**](docs/Api/AllianceApi.md#getalliancesallianceid) | **GET** /alliances/{alliance_id}/ | Get alliance information
+*AllianceApi* | [**getAlliancesAllianceIdCorporations**](docs/Api/AllianceApi.md#getalliancesallianceidcorporations) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
+*AllianceApi* | [**getAlliancesAllianceIdIcons**](docs/Api/AllianceApi.md#getalliancesallianceidicons) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
+*AssetsApi* | [**getCharactersCharacterIdAssets**](docs/Api/AssetsApi.md#getcharacterscharacteridassets) | **GET** /characters/{character_id}/assets/ | Get character assets
+*AssetsApi* | [**getCorporationsCorporationIdAssets**](docs/Api/AssetsApi.md#getcorporationscorporationidassets) | **GET** /corporations/{corporation_id}/assets/ | Get corporation assets
+*AssetsApi* | [**postCharactersCharacterIdAssetsLocations**](docs/Api/AssetsApi.md#postcharacterscharacteridassetslocations) | **POST** /characters/{character_id}/assets/locations/ | Get character asset locations
+*AssetsApi* | [**postCharactersCharacterIdAssetsNames**](docs/Api/AssetsApi.md#postcharacterscharacteridassetsnames) | **POST** /characters/{character_id}/assets/names/ | Get character asset names
+*AssetsApi* | [**postCorporationsCorporationIdAssetsLocations**](docs/Api/AssetsApi.md#postcorporationscorporationidassetslocations) | **POST** /corporations/{corporation_id}/assets/locations/ | Get corporation asset locations
+*AssetsApi* | [**postCorporationsCorporationIdAssetsNames**](docs/Api/AssetsApi.md#postcorporationscorporationidassetsnames) | **POST** /corporations/{corporation_id}/assets/names/ | Get corporation asset names
+*CalendarApi* | [**getCharactersCharacterIdCalendar**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
+*CalendarApi* | [**getCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventid) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
+*CalendarApi* | [**getCharactersCharacterIdCalendarEventIdAttendees**](docs/Api/CalendarApi.md#getcharacterscharacteridcalendareventidattendees) | **GET** /characters/{character_id}/calendar/{event_id}/attendees/ | Get attendees
+*CalendarApi* | [**putCharactersCharacterIdCalendarEventId**](docs/Api/CalendarApi.md#putcharacterscharacteridcalendareventid) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
+*CharacterApi* | [**getCharactersCharacterId**](docs/Api/CharacterApi.md#getcharacterscharacterid) | **GET** /characters/{character_id}/ | Get character&#39;s public information
+*CharacterApi* | [**getCharactersCharacterIdAgentsResearch**](docs/Api/CharacterApi.md#getcharacterscharacteridagentsresearch) | **GET** /characters/{character_id}/agents_research/ | Get agents research
+*CharacterApi* | [**getCharactersCharacterIdBlueprints**](docs/Api/CharacterApi.md#getcharacterscharacteridblueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
+*CharacterApi* | [**getCharactersCharacterIdCorporationhistory**](docs/Api/CharacterApi.md#getcharacterscharacteridcorporationhistory) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
+*CharacterApi* | [**getCharactersCharacterIdFatigue**](docs/Api/CharacterApi.md#getcharacterscharacteridfatigue) | **GET** /characters/{character_id}/fatigue/ | Get jump fatigue
+*CharacterApi* | [**getCharactersCharacterIdMedals**](docs/Api/CharacterApi.md#getcharacterscharacteridmedals) | **GET** /characters/{character_id}/medals/ | Get medals
+*CharacterApi* | [**getCharactersCharacterIdNotifications**](docs/Api/CharacterApi.md#getcharacterscharacteridnotifications) | **GET** /characters/{character_id}/notifications/ | Get character notifications
+*CharacterApi* | [**getCharactersCharacterIdNotificationsContacts**](docs/Api/CharacterApi.md#getcharacterscharacteridnotificationscontacts) | **GET** /characters/{character_id}/notifications/contacts/ | Get new contact notifications
+*CharacterApi* | [**getCharactersCharacterIdPortrait**](docs/Api/CharacterApi.md#getcharacterscharacteridportrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
+*CharacterApi* | [**getCharactersCharacterIdRoles**](docs/Api/CharacterApi.md#getcharacterscharacteridroles) | **GET** /characters/{character_id}/roles/ | Get character corporation roles
+*CharacterApi* | [**getCharactersCharacterIdStandings**](docs/Api/CharacterApi.md#getcharacterscharacteridstandings) | **GET** /characters/{character_id}/standings/ | Get standings
+*CharacterApi* | [**getCharactersCharacterIdTitles**](docs/Api/CharacterApi.md#getcharacterscharacteridtitles) | **GET** /characters/{character_id}/titles/ | Get character corporation titles
+*CharacterApi* | [**postCharactersAffiliation**](docs/Api/CharacterApi.md#postcharactersaffiliation) | **POST** /characters/affiliation/ | Character affiliation
+*CharacterApi* | [**postCharactersCharacterIdCspa**](docs/Api/CharacterApi.md#postcharacterscharacteridcspa) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
+*ClonesApi* | [**getCharactersCharacterIdClones**](docs/Api/ClonesApi.md#getcharacterscharacteridclones) | **GET** /characters/{character_id}/clones/ | Get clones
+*ClonesApi* | [**getCharactersCharacterIdImplants**](docs/Api/ClonesApi.md#getcharacterscharacteridimplants) | **GET** /characters/{character_id}/implants/ | Get active implants
+*ContactsApi* | [**deleteCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#deletecharacterscharacteridcontacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts
+*ContactsApi* | [**getAlliancesAllianceIdContacts**](docs/Api/ContactsApi.md#getalliancesallianceidcontacts) | **GET** /alliances/{alliance_id}/contacts/ | Get alliance contacts
+*ContactsApi* | [**getAlliancesAllianceIdContactsLabels**](docs/Api/ContactsApi.md#getalliancesallianceidcontactslabels) | **GET** /alliances/{alliance_id}/contacts/labels/ | Get alliance contact labels
+*ContactsApi* | [**getCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#getcharacterscharacteridcontacts) | **GET** /characters/{character_id}/contacts/ | Get contacts
+*ContactsApi* | [**getCharactersCharacterIdContactsLabels**](docs/Api/ContactsApi.md#getcharacterscharacteridcontactslabels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels
+*ContactsApi* | [**getCorporationsCorporationIdContacts**](docs/Api/ContactsApi.md#getcorporationscorporationidcontacts) | **GET** /corporations/{corporation_id}/contacts/ | Get corporation contacts
+*ContactsApi* | [**getCorporationsCorporationIdContactsLabels**](docs/Api/ContactsApi.md#getcorporationscorporationidcontactslabels) | **GET** /corporations/{corporation_id}/contacts/labels/ | Get corporation contact labels
+*ContactsApi* | [**postCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#postcharacterscharacteridcontacts) | **POST** /characters/{character_id}/contacts/ | Add contacts
+*ContactsApi* | [**putCharactersCharacterIdContacts**](docs/Api/ContactsApi.md#putcharacterscharacteridcontacts) | **PUT** /characters/{character_id}/contacts/ | Edit contacts
+*ContractsApi* | [**getCharactersCharacterIdContracts**](docs/Api/ContractsApi.md#getcharacterscharacteridcontracts) | **GET** /characters/{character_id}/contracts/ | Get contracts
+*ContractsApi* | [**getCharactersCharacterIdContractsContractIdBids**](docs/Api/ContractsApi.md#getcharacterscharacteridcontractscontractidbids) | **GET** /characters/{character_id}/contracts/{contract_id}/bids/ | Get contract bids
+*ContractsApi* | [**getCharactersCharacterIdContractsContractIdItems**](docs/Api/ContractsApi.md#getcharacterscharacteridcontractscontractiditems) | **GET** /characters/{character_id}/contracts/{contract_id}/items/ | Get contract items
+*ContractsApi* | [**getContractsPublicBidsContractId**](docs/Api/ContractsApi.md#getcontractspublicbidscontractid) | **GET** /contracts/public/bids/{contract_id}/ | Get public contract bids
+*ContractsApi* | [**getContractsPublicItemsContractId**](docs/Api/ContractsApi.md#getcontractspublicitemscontractid) | **GET** /contracts/public/items/{contract_id}/ | Get public contract items
+*ContractsApi* | [**getContractsPublicRegionId**](docs/Api/ContractsApi.md#getcontractspublicregionid) | **GET** /contracts/public/{region_id}/ | Get public contracts
+*ContractsApi* | [**getCorporationsCorporationIdContracts**](docs/Api/ContractsApi.md#getcorporationscorporationidcontracts) | **GET** /corporations/{corporation_id}/contracts/ | Get corporation contracts
+*ContractsApi* | [**getCorporationsCorporationIdContractsContractIdBids**](docs/Api/ContractsApi.md#getcorporationscorporationidcontractscontractidbids) | **GET** /corporations/{corporation_id}/contracts/{contract_id}/bids/ | Get corporation contract bids
+*ContractsApi* | [**getCorporationsCorporationIdContractsContractIdItems**](docs/Api/ContractsApi.md#getcorporationscorporationidcontractscontractiditems) | **GET** /corporations/{corporation_id}/contracts/{contract_id}/items/ | Get corporation contract items
+*CorporationApi* | [**getCorporationsCorporationId**](docs/Api/CorporationApi.md#getcorporationscorporationid) | **GET** /corporations/{corporation_id}/ | Get corporation information
+*CorporationApi* | [**getCorporationsCorporationIdAlliancehistory**](docs/Api/CorporationApi.md#getcorporationscorporationidalliancehistory) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
+*CorporationApi* | [**getCorporationsCorporationIdBlueprints**](docs/Api/CorporationApi.md#getcorporationscorporationidblueprints) | **GET** /corporations/{corporation_id}/blueprints/ | Get corporation blueprints
+*CorporationApi* | [**getCorporationsCorporationIdContainersLogs**](docs/Api/CorporationApi.md#getcorporationscorporationidcontainerslogs) | **GET** /corporations/{corporation_id}/containers/logs/ | Get all corporation ALSC logs
+*CorporationApi* | [**getCorporationsCorporationIdDivisions**](docs/Api/CorporationApi.md#getcorporationscorporationiddivisions) | **GET** /corporations/{corporation_id}/divisions/ | Get corporation divisions
+*CorporationApi* | [**getCorporationsCorporationIdFacilities**](docs/Api/CorporationApi.md#getcorporationscorporationidfacilities) | **GET** /corporations/{corporation_id}/facilities/ | Get corporation facilities
+*CorporationApi* | [**getCorporationsCorporationIdIcons**](docs/Api/CorporationApi.md#getcorporationscorporationidicons) | **GET** /corporations/{corporation_id}/icons/ | Get corporation icon
+*CorporationApi* | [**getCorporationsCorporationIdMedals**](docs/Api/CorporationApi.md#getcorporationscorporationidmedals) | **GET** /corporations/{corporation_id}/medals/ | Get corporation medals
+*CorporationApi* | [**getCorporationsCorporationIdMedalsIssued**](docs/Api/CorporationApi.md#getcorporationscorporationidmedalsissued) | **GET** /corporations/{corporation_id}/medals/issued/ | Get corporation issued medals
+*CorporationApi* | [**getCorporationsCorporationIdMembers**](docs/Api/CorporationApi.md#getcorporationscorporationidmembers) | **GET** /corporations/{corporation_id}/members/ | Get corporation members
+*CorporationApi* | [**getCorporationsCorporationIdMembersLimit**](docs/Api/CorporationApi.md#getcorporationscorporationidmemberslimit) | **GET** /corporations/{corporation_id}/members/limit/ | Get corporation member limit
+*CorporationApi* | [**getCorporationsCorporationIdMembersTitles**](docs/Api/CorporationApi.md#getcorporationscorporationidmemberstitles) | **GET** /corporations/{corporation_id}/members/titles/ | Get corporation&#39;s members&#39; titles
+*CorporationApi* | [**getCorporationsCorporationIdMembertracking**](docs/Api/CorporationApi.md#getcorporationscorporationidmembertracking) | **GET** /corporations/{corporation_id}/membertracking/ | Track corporation members
+*CorporationApi* | [**getCorporationsCorporationIdRoles**](docs/Api/CorporationApi.md#getcorporationscorporationidroles) | **GET** /corporations/{corporation_id}/roles/ | Get corporation member roles
+*CorporationApi* | [**getCorporationsCorporationIdRolesHistory**](docs/Api/CorporationApi.md#getcorporationscorporationidroleshistory) | **GET** /corporations/{corporation_id}/roles/history/ | Get corporation member roles history
+*CorporationApi* | [**getCorporationsCorporationIdShareholders**](docs/Api/CorporationApi.md#getcorporationscorporationidshareholders) | **GET** /corporations/{corporation_id}/shareholders/ | Get corporation shareholders
+*CorporationApi* | [**getCorporationsCorporationIdStandings**](docs/Api/CorporationApi.md#getcorporationscorporationidstandings) | **GET** /corporations/{corporation_id}/standings/ | Get corporation standings
+*CorporationApi* | [**getCorporationsCorporationIdStarbases**](docs/Api/CorporationApi.md#getcorporationscorporationidstarbases) | **GET** /corporations/{corporation_id}/starbases/ | Get corporation starbases (POSes)
+*CorporationApi* | [**getCorporationsCorporationIdStarbasesStarbaseId**](docs/Api/CorporationApi.md#getcorporationscorporationidstarbasesstarbaseid) | **GET** /corporations/{corporation_id}/starbases/{starbase_id}/ | Get starbase (POS) detail
+*CorporationApi* | [**getCorporationsCorporationIdStructures**](docs/Api/CorporationApi.md#getcorporationscorporationidstructures) | **GET** /corporations/{corporation_id}/structures/ | Get corporation structures
+*CorporationApi* | [**getCorporationsCorporationIdTitles**](docs/Api/CorporationApi.md#getcorporationscorporationidtitles) | **GET** /corporations/{corporation_id}/titles/ | Get corporation titles
+*CorporationApi* | [**getCorporationsNpccorps**](docs/Api/CorporationApi.md#getcorporationsnpccorps) | **GET** /corporations/npccorps/ | Get npc corporations
+*DogmaApi* | [**getDogmaAttributes**](docs/Api/DogmaApi.md#getdogmaattributes) | **GET** /dogma/attributes/ | Get attributes
+*DogmaApi* | [**getDogmaAttributesAttributeId**](docs/Api/DogmaApi.md#getdogmaattributesattributeid) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
+*DogmaApi* | [**getDogmaDynamicItemsTypeIdItemId**](docs/Api/DogmaApi.md#getdogmadynamicitemstypeiditemid) | **GET** /dogma/dynamic/items/{type_id}/{item_id}/ | Get dynamic item information
+*DogmaApi* | [**getDogmaEffects**](docs/Api/DogmaApi.md#getdogmaeffects) | **GET** /dogma/effects/ | Get effects
+*DogmaApi* | [**getDogmaEffectsEffectId**](docs/Api/DogmaApi.md#getdogmaeffectseffectid) | **GET** /dogma/effects/{effect_id}/ | Get effect information
+*FactionWarfareApi* | [**getCharactersCharacterIdFwStats**](docs/Api/FactionWarfareApi.md#getcharacterscharacteridfwstats) | **GET** /characters/{character_id}/fw/stats/ | Overview of a character involved in faction warfare
+*FactionWarfareApi* | [**getCorporationsCorporationIdFwStats**](docs/Api/FactionWarfareApi.md#getcorporationscorporationidfwstats) | **GET** /corporations/{corporation_id}/fw/stats/ | Overview of a corporation involved in faction warfare
+*FactionWarfareApi* | [**getFwLeaderboards**](docs/Api/FactionWarfareApi.md#getfwleaderboards) | **GET** /fw/leaderboards/ | List of the top factions in faction warfare
+*FactionWarfareApi* | [**getFwLeaderboardsCharacters**](docs/Api/FactionWarfareApi.md#getfwleaderboardscharacters) | **GET** /fw/leaderboards/characters/ | List of the top pilots in faction warfare
+*FactionWarfareApi* | [**getFwLeaderboardsCorporations**](docs/Api/FactionWarfareApi.md#getfwleaderboardscorporations) | **GET** /fw/leaderboards/corporations/ | List of the top corporations in faction warfare
+*FactionWarfareApi* | [**getFwStats**](docs/Api/FactionWarfareApi.md#getfwstats) | **GET** /fw/stats/ | An overview of statistics about factions involved in faction warfare
+*FactionWarfareApi* | [**getFwSystems**](docs/Api/FactionWarfareApi.md#getfwsystems) | **GET** /fw/systems/ | Ownership of faction warfare systems
+*FactionWarfareApi* | [**getFwWars**](docs/Api/FactionWarfareApi.md#getfwwars) | **GET** /fw/wars/ | Data about which NPC factions are at war
+*FittingsApi* | [**deleteCharactersCharacterIdFittingsFittingId**](docs/Api/FittingsApi.md#deletecharacterscharacteridfittingsfittingid) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
+*FittingsApi* | [**getCharactersCharacterIdFittings**](docs/Api/FittingsApi.md#getcharacterscharacteridfittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
+*FittingsApi* | [**postCharactersCharacterIdFittings**](docs/Api/FittingsApi.md#postcharacterscharacteridfittings) | **POST** /characters/{character_id}/fittings/ | Create fitting
+*FleetsApi* | [**deleteFleetsFleetIdMembersMemberId**](docs/Api/FleetsApi.md#deletefleetsfleetidmembersmemberid) | **DELETE** /fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
+*FleetsApi* | [**deleteFleetsFleetIdSquadsSquadId**](docs/Api/FleetsApi.md#deletefleetsfleetidsquadssquadid) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
+*FleetsApi* | [**deleteFleetsFleetIdWingsWingId**](docs/Api/FleetsApi.md#deletefleetsfleetidwingswingid) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
+*FleetsApi* | [**getCharactersCharacterIdFleet**](docs/Api/FleetsApi.md#getcharacterscharacteridfleet) | **GET** /characters/{character_id}/fleet/ | Get character fleet info
+*FleetsApi* | [**getFleetsFleetId**](docs/Api/FleetsApi.md#getfleetsfleetid) | **GET** /fleets/{fleet_id}/ | Get fleet information
+*FleetsApi* | [**getFleetsFleetIdMembers**](docs/Api/FleetsApi.md#getfleetsfleetidmembers) | **GET** /fleets/{fleet_id}/members/ | Get fleet members
+*FleetsApi* | [**getFleetsFleetIdWings**](docs/Api/FleetsApi.md#getfleetsfleetidwings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings
+*FleetsApi* | [**postFleetsFleetIdMembers**](docs/Api/FleetsApi.md#postfleetsfleetidmembers) | **POST** /fleets/{fleet_id}/members/ | Create fleet invitation
+*FleetsApi* | [**postFleetsFleetIdWings**](docs/Api/FleetsApi.md#postfleetsfleetidwings) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing
+*FleetsApi* | [**postFleetsFleetIdWingsWingIdSquads**](docs/Api/FleetsApi.md#postfleetsfleetidwingswingidsquads) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
+*FleetsApi* | [**putFleetsFleetId**](docs/Api/FleetsApi.md#putfleetsfleetid) | **PUT** /fleets/{fleet_id}/ | Update fleet
+*FleetsApi* | [**putFleetsFleetIdMembersMemberId**](docs/Api/FleetsApi.md#putfleetsfleetidmembersmemberid) | **PUT** /fleets/{fleet_id}/members/{member_id}/ | Move fleet member
+*FleetsApi* | [**putFleetsFleetIdSquadsSquadId**](docs/Api/FleetsApi.md#putfleetsfleetidsquadssquadid) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
+*FleetsApi* | [**putFleetsFleetIdWingsWingId**](docs/Api/FleetsApi.md#putfleetsfleetidwingswingid) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
+*IncursionsApi* | [**getIncursions**](docs/Api/IncursionsApi.md#getincursions) | **GET** /incursions/ | List incursions
+*IndustryApi* | [**getCharactersCharacterIdIndustryJobs**](docs/Api/IndustryApi.md#getcharacterscharacteridindustryjobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
+*IndustryApi* | [**getCharactersCharacterIdMining**](docs/Api/IndustryApi.md#getcharacterscharacteridmining) | **GET** /characters/{character_id}/mining/ | Character mining ledger
+*IndustryApi* | [**getCorporationCorporationIdMiningExtractions**](docs/Api/IndustryApi.md#getcorporationcorporationidminingextractions) | **GET** /corporation/{corporation_id}/mining/extractions/ | Moon extraction timers
+*IndustryApi* | [**getCorporationCorporationIdMiningObservers**](docs/Api/IndustryApi.md#getcorporationcorporationidminingobservers) | **GET** /corporation/{corporation_id}/mining/observers/ | Corporation mining observers
+*IndustryApi* | [**getCorporationCorporationIdMiningObserversObserverId**](docs/Api/IndustryApi.md#getcorporationcorporationidminingobserversobserverid) | **GET** /corporation/{corporation_id}/mining/observers/{observer_id}/ | Observed corporation mining
+*IndustryApi* | [**getCorporationsCorporationIdIndustryJobs**](docs/Api/IndustryApi.md#getcorporationscorporationidindustryjobs) | **GET** /corporations/{corporation_id}/industry/jobs/ | List corporation industry jobs
+*IndustryApi* | [**getIndustryFacilities**](docs/Api/IndustryApi.md#getindustryfacilities) | **GET** /industry/facilities/ | List industry facilities
+*IndustryApi* | [**getIndustrySystems**](docs/Api/IndustryApi.md#getindustrysystems) | **GET** /industry/systems/ | List solar system cost indices
+*InsuranceApi* | [**getInsurancePrices**](docs/Api/InsuranceApi.md#getinsuranceprices) | **GET** /insurance/prices/ | List insurance levels
+*KillmailsApi* | [**getCharactersCharacterIdKillmailsRecent**](docs/Api/KillmailsApi.md#getcharacterscharacteridkillmailsrecent) | **GET** /characters/{character_id}/killmails/recent/ | Get a character&#39;s recent kills and losses
+*KillmailsApi* | [**getCorporationsCorporationIdKillmailsRecent**](docs/Api/KillmailsApi.md#getcorporationscorporationidkillmailsrecent) | **GET** /corporations/{corporation_id}/killmails/recent/ | Get a corporation&#39;s recent kills and losses
+*KillmailsApi* | [**getKillmailsKillmailIdKillmailHash**](docs/Api/KillmailsApi.md#getkillmailskillmailidkillmailhash) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
+*LocationApi* | [**getCharactersCharacterIdLocation**](docs/Api/LocationApi.md#getcharacterscharacteridlocation) | **GET** /characters/{character_id}/location/ | Get character location
+*LocationApi* | [**getCharactersCharacterIdOnline**](docs/Api/LocationApi.md#getcharacterscharacteridonline) | **GET** /characters/{character_id}/online/ | Get character online
+*LocationApi* | [**getCharactersCharacterIdShip**](docs/Api/LocationApi.md#getcharacterscharacteridship) | **GET** /characters/{character_id}/ship/ | Get current ship
+*LoyaltyApi* | [**getCharactersCharacterIdLoyaltyPoints**](docs/Api/LoyaltyApi.md#getcharacterscharacteridloyaltypoints) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points
+*LoyaltyApi* | [**getLoyaltyStoresCorporationIdOffers**](docs/Api/LoyaltyApi.md#getloyaltystorescorporationidoffers) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
+*MailApi* | [**deleteCharactersCharacterIdMailLabelsLabelId**](docs/Api/MailApi.md#deletecharacterscharacteridmaillabelslabelid) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
+*MailApi* | [**deleteCharactersCharacterIdMailMailId**](docs/Api/MailApi.md#deletecharacterscharacteridmailmailid) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
+*MailApi* | [**getCharactersCharacterIdMail**](docs/Api/MailApi.md#getcharacterscharacteridmail) | **GET** /characters/{character_id}/mail/ | Return mail headers
+*MailApi* | [**getCharactersCharacterIdMailLabels**](docs/Api/MailApi.md#getcharacterscharacteridmaillabels) | **GET** /characters/{character_id}/mail/labels/ | Get mail labels and unread counts
+*MailApi* | [**getCharactersCharacterIdMailLists**](docs/Api/MailApi.md#getcharacterscharacteridmaillists) | **GET** /characters/{character_id}/mail/lists/ | Return mailing list subscriptions
+*MailApi* | [**getCharactersCharacterIdMailMailId**](docs/Api/MailApi.md#getcharacterscharacteridmailmailid) | **GET** /characters/{character_id}/mail/{mail_id}/ | Return a mail
+*MailApi* | [**postCharactersCharacterIdMail**](docs/Api/MailApi.md#postcharacterscharacteridmail) | **POST** /characters/{character_id}/mail/ | Send a new mail
+*MailApi* | [**postCharactersCharacterIdMailLabels**](docs/Api/MailApi.md#postcharacterscharacteridmaillabels) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
+*MailApi* | [**putCharactersCharacterIdMailMailId**](docs/Api/MailApi.md#putcharacterscharacteridmailmailid) | **PUT** /characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
+*MarketApi* | [**getCharactersCharacterIdOrders**](docs/Api/MarketApi.md#getcharacterscharacteridorders) | **GET** /characters/{character_id}/orders/ | List open orders from a character
+*MarketApi* | [**getCharactersCharacterIdOrdersHistory**](docs/Api/MarketApi.md#getcharacterscharacteridordershistory) | **GET** /characters/{character_id}/orders/history/ | List historical orders by a character
+*MarketApi* | [**getCorporationsCorporationIdOrders**](docs/Api/MarketApi.md#getcorporationscorporationidorders) | **GET** /corporations/{corporation_id}/orders/ | List open orders from a corporation
+*MarketApi* | [**getCorporationsCorporationIdOrdersHistory**](docs/Api/MarketApi.md#getcorporationscorporationidordershistory) | **GET** /corporations/{corporation_id}/orders/history/ | List historical orders from a corporation
+*MarketApi* | [**getMarketsGroups**](docs/Api/MarketApi.md#getmarketsgroups) | **GET** /markets/groups/ | Get item groups
+*MarketApi* | [**getMarketsGroupsMarketGroupId**](docs/Api/MarketApi.md#getmarketsgroupsmarketgroupid) | **GET** /markets/groups/{market_group_id}/ | Get item group information
+*MarketApi* | [**getMarketsPrices**](docs/Api/MarketApi.md#getmarketsprices) | **GET** /markets/prices/ | List market prices
+*MarketApi* | [**getMarketsRegionIdHistory**](docs/Api/MarketApi.md#getmarketsregionidhistory) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
+*MarketApi* | [**getMarketsRegionIdOrders**](docs/Api/MarketApi.md#getmarketsregionidorders) | **GET** /markets/{region_id}/orders/ | List orders in a region
+*MarketApi* | [**getMarketsRegionIdTypes**](docs/Api/MarketApi.md#getmarketsregionidtypes) | **GET** /markets/{region_id}/types/ | List type IDs relevant to a market
+*MarketApi* | [**getMarketsStructuresStructureId**](docs/Api/MarketApi.md#getmarketsstructuresstructureid) | **GET** /markets/structures/{structure_id}/ | List orders in a structure
+*PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanets**](docs/Api/PlanetaryInteractionApi.md#getcharacterscharacteridplanets) | **GET** /characters/{character_id}/planets/ | Get colonies
+*PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanetsPlanetId**](docs/Api/PlanetaryInteractionApi.md#getcharacterscharacteridplanetsplanetid) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
+*PlanetaryInteractionApi* | [**getCorporationsCorporationIdCustomsOffices**](docs/Api/PlanetaryInteractionApi.md#getcorporationscorporationidcustomsoffices) | **GET** /corporations/{corporation_id}/customs_offices/ | List corporation customs offices
+*PlanetaryInteractionApi* | [**getUniverseSchematicsSchematicId**](docs/Api/PlanetaryInteractionApi.md#getuniverseschematicsschematicid) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
+*RoutesApi* | [**getRouteOriginDestination**](docs/Api/RoutesApi.md#getrouteorigindestination) | **GET** /route/{origin}/{destination}/ | Get route
+*SearchApi* | [**getCharactersCharacterIdSearch**](docs/Api/SearchApi.md#getcharacterscharacteridsearch) | **GET** /characters/{character_id}/search/ | Search on a string
+*SkillsApi* | [**getCharactersCharacterIdAttributes**](docs/Api/SkillsApi.md#getcharacterscharacteridattributes) | **GET** /characters/{character_id}/attributes/ | Get character attributes
+*SkillsApi* | [**getCharactersCharacterIdSkillqueue**](docs/Api/SkillsApi.md#getcharacterscharacteridskillqueue) | **GET** /characters/{character_id}/skillqueue/ | Get character&#39;s skill queue
+*SkillsApi* | [**getCharactersCharacterIdSkills**](docs/Api/SkillsApi.md#getcharacterscharacteridskills) | **GET** /characters/{character_id}/skills/ | Get character skills
+*SovereigntyApi* | [**getSovereigntyCampaigns**](docs/Api/SovereigntyApi.md#getsovereigntycampaigns) | **GET** /sovereignty/campaigns/ | List sovereignty campaigns
+*SovereigntyApi* | [**getSovereigntyMap**](docs/Api/SovereigntyApi.md#getsovereigntymap) | **GET** /sovereignty/map/ | List sovereignty of systems
+*SovereigntyApi* | [**getSovereigntyStructures**](docs/Api/SovereigntyApi.md#getsovereigntystructures) | **GET** /sovereignty/structures/ | List sovereignty structures
+*StatusApi* | [**getStatus**](docs/Api/StatusApi.md#getstatus) | **GET** /status/ | Retrieve the uptime and player counts
+*UniverseApi* | [**getUniverseAncestries**](docs/Api/UniverseApi.md#getuniverseancestries) | **GET** /universe/ancestries/ | Get ancestries
+*UniverseApi* | [**getUniverseAsteroidBeltsAsteroidBeltId**](docs/Api/UniverseApi.md#getuniverseasteroidbeltsasteroidbeltid) | **GET** /universe/asteroid_belts/{asteroid_belt_id}/ | Get asteroid belt information
+*UniverseApi* | [**getUniverseBloodlines**](docs/Api/UniverseApi.md#getuniversebloodlines) | **GET** /universe/bloodlines/ | Get bloodlines
+*UniverseApi* | [**getUniverseCategories**](docs/Api/UniverseApi.md#getuniversecategories) | **GET** /universe/categories/ | Get item categories
+*UniverseApi* | [**getUniverseCategoriesCategoryId**](docs/Api/UniverseApi.md#getuniversecategoriescategoryid) | **GET** /universe/categories/{category_id}/ | Get item category information
+*UniverseApi* | [**getUniverseConstellations**](docs/Api/UniverseApi.md#getuniverseconstellations) | **GET** /universe/constellations/ | Get constellations
+*UniverseApi* | [**getUniverseConstellationsConstellationId**](docs/Api/UniverseApi.md#getuniverseconstellationsconstellationid) | **GET** /universe/constellations/{constellation_id}/ | Get constellation information
+*UniverseApi* | [**getUniverseFactions**](docs/Api/UniverseApi.md#getuniversefactions) | **GET** /universe/factions/ | Get factions
+*UniverseApi* | [**getUniverseGraphics**](docs/Api/UniverseApi.md#getuniversegraphics) | **GET** /universe/graphics/ | Get graphics
+*UniverseApi* | [**getUniverseGraphicsGraphicId**](docs/Api/UniverseApi.md#getuniversegraphicsgraphicid) | **GET** /universe/graphics/{graphic_id}/ | Get graphic information
+*UniverseApi* | [**getUniverseGroups**](docs/Api/UniverseApi.md#getuniversegroups) | **GET** /universe/groups/ | Get item groups
+*UniverseApi* | [**getUniverseGroupsGroupId**](docs/Api/UniverseApi.md#getuniversegroupsgroupid) | **GET** /universe/groups/{group_id}/ | Get item group information
+*UniverseApi* | [**getUniverseMoonsMoonId**](docs/Api/UniverseApi.md#getuniversemoonsmoonid) | **GET** /universe/moons/{moon_id}/ | Get moon information
+*UniverseApi* | [**getUniversePlanetsPlanetId**](docs/Api/UniverseApi.md#getuniverseplanetsplanetid) | **GET** /universe/planets/{planet_id}/ | Get planet information
+*UniverseApi* | [**getUniverseRaces**](docs/Api/UniverseApi.md#getuniverseraces) | **GET** /universe/races/ | Get character races
+*UniverseApi* | [**getUniverseRegions**](docs/Api/UniverseApi.md#getuniverseregions) | **GET** /universe/regions/ | Get regions
+*UniverseApi* | [**getUniverseRegionsRegionId**](docs/Api/UniverseApi.md#getuniverseregionsregionid) | **GET** /universe/regions/{region_id}/ | Get region information
+*UniverseApi* | [**getUniverseStargatesStargateId**](docs/Api/UniverseApi.md#getuniversestargatesstargateid) | **GET** /universe/stargates/{stargate_id}/ | Get stargate information
+*UniverseApi* | [**getUniverseStarsStarId**](docs/Api/UniverseApi.md#getuniversestarsstarid) | **GET** /universe/stars/{star_id}/ | Get star information
+*UniverseApi* | [**getUniverseStationsStationId**](docs/Api/UniverseApi.md#getuniversestationsstationid) | **GET** /universe/stations/{station_id}/ | Get station information
+*UniverseApi* | [**getUniverseStructures**](docs/Api/UniverseApi.md#getuniversestructures) | **GET** /universe/structures/ | List all public structures
+*UniverseApi* | [**getUniverseStructuresStructureId**](docs/Api/UniverseApi.md#getuniversestructuresstructureid) | **GET** /universe/structures/{structure_id}/ | Get structure information
+*UniverseApi* | [**getUniverseSystemJumps**](docs/Api/UniverseApi.md#getuniversesystemjumps) | **GET** /universe/system_jumps/ | Get system jumps
+*UniverseApi* | [**getUniverseSystemKills**](docs/Api/UniverseApi.md#getuniversesystemkills) | **GET** /universe/system_kills/ | Get system kills
+*UniverseApi* | [**getUniverseSystems**](docs/Api/UniverseApi.md#getuniversesystems) | **GET** /universe/systems/ | Get solar systems
+*UniverseApi* | [**getUniverseSystemsSystemId**](docs/Api/UniverseApi.md#getuniversesystemssystemid) | **GET** /universe/systems/{system_id}/ | Get solar system information
+*UniverseApi* | [**getUniverseTypes**](docs/Api/UniverseApi.md#getuniversetypes) | **GET** /universe/types/ | Get types
+*UniverseApi* | [**getUniverseTypesTypeId**](docs/Api/UniverseApi.md#getuniversetypestypeid) | **GET** /universe/types/{type_id}/ | Get type information
+*UniverseApi* | [**postUniverseIds**](docs/Api/UniverseApi.md#postuniverseids) | **POST** /universe/ids/ | Bulk names to IDs
+*UniverseApi* | [**postUniverseNames**](docs/Api/UniverseApi.md#postuniversenames) | **POST** /universe/names/ | Get names and categories for a set of IDs
+*UserInterfaceApi* | [**postUiAutopilotWaypoint**](docs/Api/UserInterfaceApi.md#postuiautopilotwaypoint) | **POST** /ui/autopilot/waypoint/ | Set Autopilot Waypoint
+*UserInterfaceApi* | [**postUiOpenwindowContract**](docs/Api/UserInterfaceApi.md#postuiopenwindowcontract) | **POST** /ui/openwindow/contract/ | Open Contract Window
+*UserInterfaceApi* | [**postUiOpenwindowInformation**](docs/Api/UserInterfaceApi.md#postuiopenwindowinformation) | **POST** /ui/openwindow/information/ | Open Information Window
+*UserInterfaceApi* | [**postUiOpenwindowMarketdetails**](docs/Api/UserInterfaceApi.md#postuiopenwindowmarketdetails) | **POST** /ui/openwindow/marketdetails/ | Open Market Details
+*UserInterfaceApi* | [**postUiOpenwindowNewmail**](docs/Api/UserInterfaceApi.md#postuiopenwindownewmail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
+*WalletApi* | [**getCharactersCharacterIdWallet**](docs/Api/WalletApi.md#getcharacterscharacteridwallet) | **GET** /characters/{character_id}/wallet/ | Get a character&#39;s wallet balance
+*WalletApi* | [**getCharactersCharacterIdWalletJournal**](docs/Api/WalletApi.md#getcharacterscharacteridwalletjournal) | **GET** /characters/{character_id}/wallet/journal/ | Get character wallet journal
+*WalletApi* | [**getCharactersCharacterIdWalletTransactions**](docs/Api/WalletApi.md#getcharacterscharacteridwallettransactions) | **GET** /characters/{character_id}/wallet/transactions/ | Get wallet transactions
+*WalletApi* | [**getCorporationsCorporationIdWallets**](docs/Api/WalletApi.md#getcorporationscorporationidwallets) | **GET** /corporations/{corporation_id}/wallets/ | Returns a corporation&#39;s wallet balance
+*WalletApi* | [**getCorporationsCorporationIdWalletsDivisionJournal**](docs/Api/WalletApi.md#getcorporationscorporationidwalletsdivisionjournal) | **GET** /corporations/{corporation_id}/wallets/{division}/journal/ | Get corporation wallet journal
+*WalletApi* | [**getCorporationsCorporationIdWalletsDivisionTransactions**](docs/Api/WalletApi.md#getcorporationscorporationidwalletsdivisiontransactions) | **GET** /corporations/{corporation_id}/wallets/{division}/transactions/ | Get corporation wallet transactions
+*WarsApi* | [**getWars**](docs/Api/WarsApi.md#getwars) | **GET** /wars/ | List wars
+*WarsApi* | [**getWarsWarId**](docs/Api/WarsApi.md#getwarswarid) | **GET** /wars/{war_id}/ | Get war information
+*WarsApi* | [**getWarsWarIdKillmails**](docs/Api/WarsApi.md#getwarswaridkillmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war
 
 ## Models
 

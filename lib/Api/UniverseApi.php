@@ -490,7 +490,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/ancestries/';
+        $resourcePath = '/universe/ancestries/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -872,7 +872,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/asteroid_belts/{asteroid_belt_id}/';
+        $resourcePath = '/universe/asteroid_belts/{asteroid_belt_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1235,7 +1235,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/bloodlines/';
+        $resourcePath = '/universe/bloodlines/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1591,7 +1591,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/categories/';
+        $resourcePath = '/universe/categories/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1972,7 +1972,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/categories/{category_id}/';
+        $resourcePath = '/universe/categories/{category_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2336,7 +2336,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/constellations/';
+        $resourcePath = '/universe/constellations/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2717,7 +2717,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/constellations/{constellation_id}/';
+        $resourcePath = '/universe/constellations/{constellation_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3093,7 +3093,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v2/universe/factions/';
+        $resourcePath = '/universe/factions/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3449,7 +3449,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/graphics/';
+        $resourcePath = '/universe/graphics/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3818,7 +3818,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/graphics/{graphic_id}/';
+        $resourcePath = '/universe/graphics/{graphic_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4178,7 +4178,7 @@ class UniverseApi
         }
         
 
-        $resourcePath = '/v1/universe/groups/';
+        $resourcePath = '/universe/groups/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4568,7 +4568,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/groups/{group_id}/';
+        $resourcePath = '/universe/groups/{group_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4958,7 +4958,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/moons/{moon_id}/';
+        $resourcePath = '/universe/moons/{moon_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -5335,7 +5335,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/planets/{planet_id}/';
+        $resourcePath = '/universe/planets/{planet_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -5698,7 +5698,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/races/';
+        $resourcePath = '/universe/races/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -6054,7 +6054,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/regions/';
+        $resourcePath = '/universe/regions/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -6435,7 +6435,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/regions/{region_id}/';
+        $resourcePath = '/universe/regions/{region_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -6825,7 +6825,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/stargates/{stargate_id}/';
+        $resourcePath = '/universe/stargates/{stargate_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -7188,7 +7188,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/stars/{star_id}/';
+        $resourcePath = '/universe/stars/{star_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -7565,7 +7565,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v2/universe/stations/{station_id}/';
+        $resourcePath = '/universe/stations/{station_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -7922,7 +7922,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/structures/';
+        $resourcePath = '/universe/structures/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -8334,7 +8334,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/structures/{structure_id}/';
+        $resourcePath = '/universe/structures/{structure_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -8698,7 +8698,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/system_jumps/';
+        $resourcePath = '/universe/system_jumps/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -9041,7 +9041,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v2/universe/system_kills/';
+        $resourcePath = '/universe/system_kills/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -9384,7 +9384,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/systems/';
+        $resourcePath = '/universe/systems/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -9765,7 +9765,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v4/universe/systems/{system_id}/';
+        $resourcePath = '/universe/systems/{system_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -10138,7 +10138,7 @@ class UniverseApi
         }
         
 
-        $resourcePath = '/v1/universe/types/';
+        $resourcePath = '/universe/types/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -10528,7 +10528,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v2/universe/types/{type_id}/';
+        $resourcePath = '/universe/types/{type_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -10916,7 +10916,7 @@ class UniverseApi
 
 
 
-        $resourcePath = '/v1/universe/ids/';
+        $resourcePath = '/universe/ids/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -11301,7 +11301,7 @@ class UniverseApi
         
 
 
-        $resourcePath = '/v2/universe/names/';
+        $resourcePath = '/universe/names/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

@@ -1,23 +1,23 @@
 # Swagger\Client\Eve\FleetsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**deleteFleetsFleetIdMembersMemberId()**](FleetsApi.md#deleteFleetsFleetIdMembersMemberId) | **DELETE** /v1/fleets/{fleet_id}/members/{member_id}/ | Kick fleet member |
-| [**deleteFleetsFleetIdSquadsSquadId()**](FleetsApi.md#deleteFleetsFleetIdSquadsSquadId) | **DELETE** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad |
-| [**deleteFleetsFleetIdWingsWingId()**](FleetsApi.md#deleteFleetsFleetIdWingsWingId) | **DELETE** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing |
-| [**getCharactersCharacterIdFleet()**](FleetsApi.md#getCharactersCharacterIdFleet) | **GET** /v1/characters/{character_id}/fleet/ | Get character fleet info |
-| [**getFleetsFleetId()**](FleetsApi.md#getFleetsFleetId) | **GET** /v1/fleets/{fleet_id}/ | Get fleet information |
-| [**getFleetsFleetIdMembers()**](FleetsApi.md#getFleetsFleetIdMembers) | **GET** /v1/fleets/{fleet_id}/members/ | Get fleet members |
-| [**getFleetsFleetIdWings()**](FleetsApi.md#getFleetsFleetIdWings) | **GET** /v1/fleets/{fleet_id}/wings/ | Get fleet wings |
-| [**postFleetsFleetIdMembers()**](FleetsApi.md#postFleetsFleetIdMembers) | **POST** /v1/fleets/{fleet_id}/members/ | Create fleet invitation |
-| [**postFleetsFleetIdWings()**](FleetsApi.md#postFleetsFleetIdWings) | **POST** /v1/fleets/{fleet_id}/wings/ | Create fleet wing |
-| [**postFleetsFleetIdWingsWingIdSquads()**](FleetsApi.md#postFleetsFleetIdWingsWingIdSquads) | **POST** /v1/fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad |
-| [**putFleetsFleetId()**](FleetsApi.md#putFleetsFleetId) | **PUT** /v1/fleets/{fleet_id}/ | Update fleet |
-| [**putFleetsFleetIdMembersMemberId()**](FleetsApi.md#putFleetsFleetIdMembersMemberId) | **PUT** /v1/fleets/{fleet_id}/members/{member_id}/ | Move fleet member |
-| [**putFleetsFleetIdSquadsSquadId()**](FleetsApi.md#putFleetsFleetIdSquadsSquadId) | **PUT** /v1/fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad |
-| [**putFleetsFleetIdWingsWingId()**](FleetsApi.md#putFleetsFleetIdWingsWingId) | **PUT** /v1/fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing |
+| [**deleteFleetsFleetIdMembersMemberId()**](FleetsApi.md#deleteFleetsFleetIdMembersMemberId) | **DELETE** /fleets/{fleet_id}/members/{member_id}/ | Kick fleet member |
+| [**deleteFleetsFleetIdSquadsSquadId()**](FleetsApi.md#deleteFleetsFleetIdSquadsSquadId) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad |
+| [**deleteFleetsFleetIdWingsWingId()**](FleetsApi.md#deleteFleetsFleetIdWingsWingId) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing |
+| [**getCharactersCharacterIdFleet()**](FleetsApi.md#getCharactersCharacterIdFleet) | **GET** /characters/{character_id}/fleet/ | Get character fleet info |
+| [**getFleetsFleetId()**](FleetsApi.md#getFleetsFleetId) | **GET** /fleets/{fleet_id}/ | Get fleet information |
+| [**getFleetsFleetIdMembers()**](FleetsApi.md#getFleetsFleetIdMembers) | **GET** /fleets/{fleet_id}/members/ | Get fleet members |
+| [**getFleetsFleetIdWings()**](FleetsApi.md#getFleetsFleetIdWings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings |
+| [**postFleetsFleetIdMembers()**](FleetsApi.md#postFleetsFleetIdMembers) | **POST** /fleets/{fleet_id}/members/ | Create fleet invitation |
+| [**postFleetsFleetIdWings()**](FleetsApi.md#postFleetsFleetIdWings) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing |
+| [**postFleetsFleetIdWingsWingIdSquads()**](FleetsApi.md#postFleetsFleetIdWingsWingIdSquads) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad |
+| [**putFleetsFleetId()**](FleetsApi.md#putFleetsFleetId) | **PUT** /fleets/{fleet_id}/ | Update fleet |
+| [**putFleetsFleetIdMembersMemberId()**](FleetsApi.md#putFleetsFleetIdMembersMemberId) | **PUT** /fleets/{fleet_id}/members/{member_id}/ | Move fleet member |
+| [**putFleetsFleetIdSquadsSquadId()**](FleetsApi.md#putFleetsFleetIdSquadsSquadId) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad |
+| [**putFleetsFleetIdWingsWingId()**](FleetsApi.md#putFleetsFleetIdWingsWingId) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing |
 
 
 ## `deleteFleetsFleetIdMembersMemberId()`
@@ -28,7 +28,7 @@ deleteFleetsFleetIdMembersMemberId($fleet_id, $member_id, $datasource, $token)
 
 Kick fleet member
 
-Kick a fleet member  ---
+Kick a fleet member  --- Alternate route: `/dev/fleets/{fleet_id}/members/{member_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/members/{member_id}/`  Alternate route: `/v1/fleets/{fleet_id}/members/{member_id}/`
 
 ### Example
 
@@ -93,7 +93,7 @@ deleteFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $datasource, $token)
 
 Delete fleet squad
 
-Delete a fleet squad, only empty squads can be deleted  ---
+Delete a fleet squad, only empty squads can be deleted  --- Alternate route: `/dev/fleets/{fleet_id}/squads/{squad_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/squads/{squad_id}/`  Alternate route: `/v1/fleets/{fleet_id}/squads/{squad_id}/`
 
 ### Example
 
@@ -158,7 +158,7 @@ deleteFleetsFleetIdWingsWingId($fleet_id, $wing_id, $datasource, $token)
 
 Delete fleet wing
 
-Delete a fleet wing, only empty wings can be deleted. The wing may contain squads, but the squads must be empty  ---
+Delete a fleet wing, only empty wings can be deleted. The wing may contain squads, but the squads must be empty  --- Alternate route: `/dev/fleets/{fleet_id}/wings/{wing_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/wings/{wing_id}/`  Alternate route: `/v1/fleets/{fleet_id}/wings/{wing_id}/`
 
 ### Example
 
@@ -223,7 +223,7 @@ getCharactersCharacterIdFleet($character_id, $datasource, $if_none_match, $token
 
 Get character fleet info
 
-Return the fleet ID the character is in, if any.  ---  This route is cached for up to 60 seconds
+Return the fleet ID the character is in, if any.  --- Alternate route: `/dev/characters/{character_id}/fleet/`  Alternate route: `/legacy/characters/{character_id}/fleet/`  Alternate route: `/v1/characters/{character_id}/fleet/`  Alternate route: `/v2/characters/{character_id}/fleet/`  --- This route is cached for up to 60 seconds
 
 ### Example
 
@@ -289,7 +289,7 @@ getFleetsFleetId($fleet_id, $datasource, $if_none_match, $token): \Swagger\Clien
 
 Get fleet information
 
-Return details about a fleet  ---  This route is cached for up to 5 seconds
+Return details about a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/`  Alternate route: `/v1/fleets/{fleet_id}/`  --- This route is cached for up to 5 seconds
 
 ### Example
 
@@ -355,7 +355,7 @@ getFleetsFleetIdMembers($fleet_id, $accept_language, $datasource, $if_none_match
 
 Get fleet members
 
-Return information about fleet members  ---  This route is cached for up to 5 seconds
+Return information about fleet members  --- Alternate route: `/dev/fleets/{fleet_id}/members/`  Alternate route: `/legacy/fleets/{fleet_id}/members/`  Alternate route: `/v1/fleets/{fleet_id}/members/`  --- This route is cached for up to 5 seconds
 
 ### Example
 
@@ -425,7 +425,7 @@ getFleetsFleetIdWings($fleet_id, $accept_language, $datasource, $if_none_match, 
 
 Get fleet wings
 
-Return information about wings in a fleet  ---  This route is cached for up to 5 seconds
+Return information about wings in a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/wings/`  Alternate route: `/legacy/fleets/{fleet_id}/wings/`  Alternate route: `/v1/fleets/{fleet_id}/wings/`  --- This route is cached for up to 5 seconds
 
 ### Example
 
@@ -495,7 +495,7 @@ postFleetsFleetIdMembers($fleet_id, $invitation, $datasource, $token)
 
 Create fleet invitation
 
-Invite a character into the fleet. If a character has a CSPA charge set it is not possible to invite them to the fleet using ESI  ---
+Invite a character into the fleet. If a character has a CSPA charge set it is not possible to invite them to the fleet using ESI  --- Alternate route: `/dev/fleets/{fleet_id}/members/`  Alternate route: `/legacy/fleets/{fleet_id}/members/`  Alternate route: `/v1/fleets/{fleet_id}/members/`
 
 ### Example
 
@@ -560,7 +560,7 @@ postFleetsFleetIdWings($fleet_id, $datasource, $token): \Swagger\Client\Eve\Mode
 
 Create fleet wing
 
-Create a new wing in a fleet  ---
+Create a new wing in a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/wings/`  Alternate route: `/legacy/fleets/{fleet_id}/wings/`  Alternate route: `/v1/fleets/{fleet_id}/wings/`
 
 ### Example
 
@@ -624,7 +624,7 @@ postFleetsFleetIdWingsWingIdSquads($fleet_id, $wing_id, $datasource, $token): \S
 
 Create fleet squad
 
-Create a new squad in a fleet  ---
+Create a new squad in a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/wings/{wing_id}/squads/`  Alternate route: `/legacy/fleets/{fleet_id}/wings/{wing_id}/squads/`  Alternate route: `/v1/fleets/{fleet_id}/wings/{wing_id}/squads/`
 
 ### Example
 
@@ -690,7 +690,7 @@ putFleetsFleetId($fleet_id, $new_settings, $datasource, $token)
 
 Update fleet
 
-Update settings about a fleet  ---
+Update settings about a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/`  Alternate route: `/v1/fleets/{fleet_id}/`
 
 ### Example
 
@@ -755,7 +755,7 @@ putFleetsFleetIdMembersMemberId($fleet_id, $member_id, $movement, $datasource, $
 
 Move fleet member
 
-Move a fleet member around  ---
+Move a fleet member around  --- Alternate route: `/dev/fleets/{fleet_id}/members/{member_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/members/{member_id}/`  Alternate route: `/v1/fleets/{fleet_id}/members/{member_id}/`
 
 ### Example
 
@@ -822,7 +822,7 @@ putFleetsFleetIdSquadsSquadId($fleet_id, $squad_id, $naming, $datasource, $token
 
 Rename fleet squad
 
-Rename a fleet squad  ---
+Rename a fleet squad  --- Alternate route: `/dev/fleets/{fleet_id}/squads/{squad_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/squads/{squad_id}/`  Alternate route: `/v1/fleets/{fleet_id}/squads/{squad_id}/`
 
 ### Example
 
@@ -889,7 +889,7 @@ putFleetsFleetIdWingsWingId($fleet_id, $wing_id, $naming, $datasource, $token)
 
 Rename fleet wing
 
-Rename a fleet wing  ---
+Rename a fleet wing  --- Alternate route: `/dev/fleets/{fleet_id}/wings/{wing_id}/`  Alternate route: `/legacy/fleets/{fleet_id}/wings/{wing_id}/`  Alternate route: `/v1/fleets/{fleet_id}/wings/{wing_id}/`
 
 ### Example
 

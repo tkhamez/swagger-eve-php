@@ -1,14 +1,14 @@
 # Swagger\Client\Eve\DogmaApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getDogmaAttributes()**](DogmaApi.md#getDogmaAttributes) | **GET** /v1/dogma/attributes/ | Get attributes |
-| [**getDogmaAttributesAttributeId()**](DogmaApi.md#getDogmaAttributesAttributeId) | **GET** /v1/dogma/attributes/{attribute_id}/ | Get attribute information |
-| [**getDogmaDynamicItemsTypeIdItemId()**](DogmaApi.md#getDogmaDynamicItemsTypeIdItemId) | **GET** /v1/dogma/dynamic/items/{type_id}/{item_id}/ | Get dynamic item information |
-| [**getDogmaEffects()**](DogmaApi.md#getDogmaEffects) | **GET** /v1/dogma/effects/ | Get effects |
-| [**getDogmaEffectsEffectId()**](DogmaApi.md#getDogmaEffectsEffectId) | **GET** /v2/dogma/effects/{effect_id}/ | Get effect information |
+| [**getDogmaAttributes()**](DogmaApi.md#getDogmaAttributes) | **GET** /dogma/attributes/ | Get attributes |
+| [**getDogmaAttributesAttributeId()**](DogmaApi.md#getDogmaAttributesAttributeId) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information |
+| [**getDogmaDynamicItemsTypeIdItemId()**](DogmaApi.md#getDogmaDynamicItemsTypeIdItemId) | **GET** /dogma/dynamic/items/{type_id}/{item_id}/ | Get dynamic item information |
+| [**getDogmaEffects()**](DogmaApi.md#getDogmaEffects) | **GET** /dogma/effects/ | Get effects |
+| [**getDogmaEffectsEffectId()**](DogmaApi.md#getDogmaEffectsEffectId) | **GET** /dogma/effects/{effect_id}/ | Get effect information |
 
 
 ## `getDogmaAttributes()`
@@ -19,7 +19,7 @@ getDogmaAttributes($datasource, $if_none_match): int[]
 
 Get attributes
 
-Get a list of dogma attribute ids  ---  This route expires daily at 11:05
+Get a list of dogma attribute ids  --- Alternate route: `/dev/dogma/attributes/`  Alternate route: `/legacy/dogma/attributes/`  Alternate route: `/v1/dogma/attributes/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -77,7 +77,7 @@ getDogmaAttributesAttributeId($attribute_id, $datasource, $if_none_match): \Swag
 
 Get attribute information
 
-Get information on a dogma attribute  ---  This route expires daily at 11:05
+Get information on a dogma attribute  --- Alternate route: `/dev/dogma/attributes/{attribute_id}/`  Alternate route: `/legacy/dogma/attributes/{attribute_id}/`  Alternate route: `/v1/dogma/attributes/{attribute_id}/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -137,7 +137,7 @@ getDogmaDynamicItemsTypeIdItemId($item_id, $type_id, $datasource, $if_none_match
 
 Get dynamic item information
 
-Returns info about a dynamic item resulting from mutation with a mutaplasmid.  ---  This route expires daily at 11:05
+Returns info about a dynamic item resulting from mutation with a mutaplasmid.  --- Alternate route: `/dev/dogma/dynamic/items/{type_id}/{item_id}/`  Alternate route: `/legacy/dogma/dynamic/items/{type_id}/{item_id}/`  Alternate route: `/v1/dogma/dynamic/items/{type_id}/{item_id}/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -199,7 +199,7 @@ getDogmaEffects($datasource, $if_none_match): int[]
 
 Get effects
 
-Get a list of dogma effect ids  ---  This route expires daily at 11:05
+Get a list of dogma effect ids  --- Alternate route: `/dev/dogma/effects/`  Alternate route: `/legacy/dogma/effects/`  Alternate route: `/v1/dogma/effects/`  --- This route expires daily at 11:05
 
 ### Example
 
@@ -257,7 +257,7 @@ getDogmaEffectsEffectId($effect_id, $datasource, $if_none_match): \Swagger\Clien
 
 Get effect information
 
-Get information on a dogma effect  ---  This route expires daily at 11:05
+Get information on a dogma effect  --- Alternate route: `/dev/dogma/effects/{effect_id}/`  Alternate route: `/v2/dogma/effects/{effect_id}/`  --- This route expires daily at 11:05
 
 ### Example
 

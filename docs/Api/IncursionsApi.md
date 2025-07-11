@@ -1,10 +1,10 @@
 # Swagger\Client\Eve\IncursionsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getIncursions()**](IncursionsApi.md#getIncursions) | **GET** /v1/incursions/ | List incursions |
+| [**getIncursions()**](IncursionsApi.md#getIncursions) | **GET** /incursions/ | List incursions |
 
 
 ## `getIncursions()`
@@ -15,7 +15,7 @@ getIncursions($datasource, $if_none_match): \Swagger\Client\Eve\Model\GetIncursi
 
 List incursions
 
-Return a list of current incursions  ---  This route is cached for up to 300 seconds
+Return a list of current incursions  --- Alternate route: `/dev/incursions/`  Alternate route: `/legacy/incursions/`  Alternate route: `/v1/incursions/`  --- This route is cached for up to 300 seconds
 
 ### Example
 

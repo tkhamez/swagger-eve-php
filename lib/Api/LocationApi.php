@@ -446,7 +446,7 @@ class LocationApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/location/';
+        $resourcePath = '/characters/{character_id}/location/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -859,7 +859,7 @@ class LocationApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/online/';
+        $resourcePath = '/characters/{character_id}/online/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1272,7 +1272,7 @@ class LocationApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/ship/';
+        $resourcePath = '/characters/{character_id}/ship/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

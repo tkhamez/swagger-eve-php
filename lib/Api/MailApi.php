@@ -386,7 +386,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/mail/labels/{label_id}/';
+        $resourcePath = '/characters/{character_id}/mail/labels/{label_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -717,7 +717,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/mail/{mail_id}/';
+        $resourcePath = '/characters/{character_id}/mail/{mail_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1152,7 +1152,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/mail/';
+        $resourcePath = '/characters/{character_id}/mail/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1583,7 +1583,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v3/characters/{character_id}/mail/labels/';
+        $resourcePath = '/characters/{character_id}/mail/labels/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1996,7 +1996,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/mail/lists/';
+        $resourcePath = '/characters/{character_id}/mail/lists/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2435,7 +2435,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/mail/{mail_id}/';
+        $resourcePath = '/characters/{character_id}/mail/{mail_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2876,7 +2876,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/mail/';
+        $resourcePath = '/characters/{character_id}/mail/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3298,7 +3298,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v2/characters/{character_id}/mail/labels/';
+        $resourcePath = '/characters/{character_id}/mail/labels/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3640,7 +3640,7 @@ class MailApi
 
 
 
-        $resourcePath = '/v1/characters/{character_id}/mail/{mail_id}/';
+        $resourcePath = '/characters/{character_id}/mail/{mail_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

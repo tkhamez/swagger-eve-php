@@ -1,18 +1,18 @@
 # Swagger\Client\Eve\ContractsApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdContracts()**](ContractsApi.md#getCharactersCharacterIdContracts) | **GET** /v1/characters/{character_id}/contracts/ | Get contracts |
-| [**getCharactersCharacterIdContractsContractIdBids()**](ContractsApi.md#getCharactersCharacterIdContractsContractIdBids) | **GET** /v1/characters/{character_id}/contracts/{contract_id}/bids/ | Get contract bids |
-| [**getCharactersCharacterIdContractsContractIdItems()**](ContractsApi.md#getCharactersCharacterIdContractsContractIdItems) | **GET** /v1/characters/{character_id}/contracts/{contract_id}/items/ | Get contract items |
-| [**getContractsPublicBidsContractId()**](ContractsApi.md#getContractsPublicBidsContractId) | **GET** /v1/contracts/public/bids/{contract_id}/ | Get public contract bids |
-| [**getContractsPublicItemsContractId()**](ContractsApi.md#getContractsPublicItemsContractId) | **GET** /v1/contracts/public/items/{contract_id}/ | Get public contract items |
-| [**getContractsPublicRegionId()**](ContractsApi.md#getContractsPublicRegionId) | **GET** /v1/contracts/public/{region_id}/ | Get public contracts |
-| [**getCorporationsCorporationIdContracts()**](ContractsApi.md#getCorporationsCorporationIdContracts) | **GET** /v1/corporations/{corporation_id}/contracts/ | Get corporation contracts |
-| [**getCorporationsCorporationIdContractsContractIdBids()**](ContractsApi.md#getCorporationsCorporationIdContractsContractIdBids) | **GET** /v1/corporations/{corporation_id}/contracts/{contract_id}/bids/ | Get corporation contract bids |
-| [**getCorporationsCorporationIdContractsContractIdItems()**](ContractsApi.md#getCorporationsCorporationIdContractsContractIdItems) | **GET** /v1/corporations/{corporation_id}/contracts/{contract_id}/items/ | Get corporation contract items |
+| [**getCharactersCharacterIdContracts()**](ContractsApi.md#getCharactersCharacterIdContracts) | **GET** /characters/{character_id}/contracts/ | Get contracts |
+| [**getCharactersCharacterIdContractsContractIdBids()**](ContractsApi.md#getCharactersCharacterIdContractsContractIdBids) | **GET** /characters/{character_id}/contracts/{contract_id}/bids/ | Get contract bids |
+| [**getCharactersCharacterIdContractsContractIdItems()**](ContractsApi.md#getCharactersCharacterIdContractsContractIdItems) | **GET** /characters/{character_id}/contracts/{contract_id}/items/ | Get contract items |
+| [**getContractsPublicBidsContractId()**](ContractsApi.md#getContractsPublicBidsContractId) | **GET** /contracts/public/bids/{contract_id}/ | Get public contract bids |
+| [**getContractsPublicItemsContractId()**](ContractsApi.md#getContractsPublicItemsContractId) | **GET** /contracts/public/items/{contract_id}/ | Get public contract items |
+| [**getContractsPublicRegionId()**](ContractsApi.md#getContractsPublicRegionId) | **GET** /contracts/public/{region_id}/ | Get public contracts |
+| [**getCorporationsCorporationIdContracts()**](ContractsApi.md#getCorporationsCorporationIdContracts) | **GET** /corporations/{corporation_id}/contracts/ | Get corporation contracts |
+| [**getCorporationsCorporationIdContractsContractIdBids()**](ContractsApi.md#getCorporationsCorporationIdContractsContractIdBids) | **GET** /corporations/{corporation_id}/contracts/{contract_id}/bids/ | Get corporation contract bids |
+| [**getCorporationsCorporationIdContractsContractIdItems()**](ContractsApi.md#getCorporationsCorporationIdContractsContractIdItems) | **GET** /corporations/{corporation_id}/contracts/{contract_id}/items/ | Get corporation contract items |
 
 
 ## `getCharactersCharacterIdContracts()`
@@ -23,7 +23,7 @@ getCharactersCharacterIdContracts($character_id, $datasource, $if_none_match, $p
 
 Get contracts
 
-Returns contracts available to a character, only if the character is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is \"in_progress\".  ---  This route is cached for up to 300 seconds
+Returns contracts available to a character, only if the character is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is \"in_progress\".  --- Alternate route: `/dev/characters/{character_id}/contracts/`  Alternate route: `/legacy/characters/{character_id}/contracts/`  Alternate route: `/v1/characters/{character_id}/contracts/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -91,7 +91,7 @@ getCharactersCharacterIdContractsContractIdBids($character_id, $contract_id, $da
 
 Get contract bids
 
-Lists bids on a particular auction contract  ---  This route is cached for up to 300 seconds
+Lists bids on a particular auction contract  --- Alternate route: `/dev/characters/{character_id}/contracts/{contract_id}/bids/`  Alternate route: `/legacy/characters/{character_id}/contracts/{contract_id}/bids/`  Alternate route: `/v1/characters/{character_id}/contracts/{contract_id}/bids/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -159,7 +159,7 @@ getCharactersCharacterIdContractsContractIdItems($character_id, $contract_id, $d
 
 Get contract items
 
-Lists items of a particular contract  ---  This route is cached for up to 3600 seconds
+Lists items of a particular contract  --- Alternate route: `/dev/characters/{character_id}/contracts/{contract_id}/items/`  Alternate route: `/legacy/characters/{character_id}/contracts/{contract_id}/items/`  Alternate route: `/v1/characters/{character_id}/contracts/{contract_id}/items/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -227,7 +227,7 @@ getContractsPublicBidsContractId($contract_id, $datasource, $if_none_match, $pag
 
 Get public contract bids
 
-Lists bids on a public auction contract  ---  This route is cached for up to 300 seconds
+Lists bids on a public auction contract  --- Alternate route: `/dev/contracts/public/bids/{contract_id}/`  Alternate route: `/legacy/contracts/public/bids/{contract_id}/`  Alternate route: `/v1/contracts/public/bids/{contract_id}/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -289,7 +289,7 @@ getContractsPublicItemsContractId($contract_id, $datasource, $if_none_match, $pa
 
 Get public contract items
 
-Lists items of a public contract  ---  This route is cached for up to 3600 seconds
+Lists items of a public contract  --- Alternate route: `/dev/contracts/public/items/{contract_id}/`  Alternate route: `/legacy/contracts/public/items/{contract_id}/`  Alternate route: `/v1/contracts/public/items/{contract_id}/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -351,7 +351,7 @@ getContractsPublicRegionId($region_id, $datasource, $if_none_match, $page): \Swa
 
 Get public contracts
 
-Returns a paginated list of all public contracts in the given region  ---  This route is cached for up to 1800 seconds
+Returns a paginated list of all public contracts in the given region  --- Alternate route: `/dev/contracts/public/{region_id}/`  Alternate route: `/legacy/contracts/public/{region_id}/`  Alternate route: `/v1/contracts/public/{region_id}/`  --- This route is cached for up to 1800 seconds
 
 ### Example
 
@@ -413,7 +413,7 @@ getCorporationsCorporationIdContracts($corporation_id, $datasource, $if_none_mat
 
 Get corporation contracts
 
-Returns contracts available to a corporation, only if the corporation is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is \"in_progress\".  ---  This route is cached for up to 300 seconds
+Returns contracts available to a corporation, only if the corporation is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is \"in_progress\".  --- Alternate route: `/dev/corporations/{corporation_id}/contracts/`  Alternate route: `/legacy/corporations/{corporation_id}/contracts/`  Alternate route: `/v1/corporations/{corporation_id}/contracts/`  --- This route is cached for up to 300 seconds
 
 ### Example
 
@@ -481,7 +481,7 @@ getCorporationsCorporationIdContractsContractIdBids($contract_id, $corporation_i
 
 Get corporation contract bids
 
-Lists bids on a particular auction contract  ---  This route is cached for up to 3600 seconds
+Lists bids on a particular auction contract  --- Alternate route: `/dev/corporations/{corporation_id}/contracts/{contract_id}/bids/`  Alternate route: `/legacy/corporations/{corporation_id}/contracts/{contract_id}/bids/`  Alternate route: `/v1/corporations/{corporation_id}/contracts/{contract_id}/bids/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
@@ -551,7 +551,7 @@ getCorporationsCorporationIdContractsContractIdItems($contract_id, $corporation_
 
 Get corporation contract items
 
-Lists items of a particular contract  ---  This route is cached for up to 3600 seconds
+Lists items of a particular contract  --- Alternate route: `/dev/corporations/{corporation_id}/contracts/{contract_id}/items/`  Alternate route: `/legacy/corporations/{corporation_id}/contracts/{contract_id}/items/`  Alternate route: `/v1/corporations/{corporation_id}/contracts/{contract_id}/items/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 

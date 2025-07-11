@@ -483,7 +483,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v4/corporations/{corporation_id}/';
+        $resourcePath = '/corporations/{corporation_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -849,7 +849,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/alliancehistory/';
+        $resourcePath = '/corporations/{corporation_id}/alliancehistory/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1258,7 +1258,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/blueprints/';
+        $resourcePath = '/corporations/{corporation_id}/blueprints/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1689,7 +1689,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v2/corporations/{corporation_id}/containers/logs/';
+        $resourcePath = '/corporations/{corporation_id}/containers/logs/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2111,7 +2111,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/divisions/';
+        $resourcePath = '/corporations/{corporation_id}/divisions/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2524,7 +2524,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/facilities/';
+        $resourcePath = '/corporations/{corporation_id}/facilities/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2917,7 +2917,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/icons/';
+        $resourcePath = '/corporations/{corporation_id}/icons/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3326,7 +3326,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/medals/';
+        $resourcePath = '/corporations/{corporation_id}/medals/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -3757,7 +3757,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/medals/issued/';
+        $resourcePath = '/corporations/{corporation_id}/medals/issued/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4179,7 +4179,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v3/corporations/{corporation_id}/members/';
+        $resourcePath = '/corporations/{corporation_id}/members/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -4592,7 +4592,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/members/limit/';
+        $resourcePath = '/corporations/{corporation_id}/members/limit/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -5005,7 +5005,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/members/titles/';
+        $resourcePath = '/corporations/{corporation_id}/members/titles/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -5418,7 +5418,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/membertracking/';
+        $resourcePath = '/corporations/{corporation_id}/membertracking/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -5831,7 +5831,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/roles/';
+        $resourcePath = '/corporations/{corporation_id}/roles/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -6253,7 +6253,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/roles/history/';
+        $resourcePath = '/corporations/{corporation_id}/roles/history/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -6684,7 +6684,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/shareholders/';
+        $resourcePath = '/corporations/{corporation_id}/shareholders/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -7115,7 +7115,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/standings/';
+        $resourcePath = '/corporations/{corporation_id}/standings/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -7546,7 +7546,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/starbases/';
+        $resourcePath = '/corporations/{corporation_id}/starbases/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -7992,7 +7992,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/starbases/{starbase_id}/';
+        $resourcePath = '/corporations/{corporation_id}/starbases/{starbase_id}/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -8443,7 +8443,7 @@ class CorporationApi
         
 
 
-        $resourcePath = '/v4/corporations/{corporation_id}/structures/';
+        $resourcePath = '/corporations/{corporation_id}/structures/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -8878,7 +8878,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/{corporation_id}/titles/';
+        $resourcePath = '/corporations/{corporation_id}/titles/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -9242,7 +9242,7 @@ class CorporationApi
 
 
 
-        $resourcePath = '/v1/corporations/npccorps/';
+        $resourcePath = '/corporations/npccorps/';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

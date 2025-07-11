@@ -1,13 +1,13 @@
 # Swagger\Client\Eve\PlanetaryInteractionApi
 
-All URIs are relative to https://esi.evetech.net, except if the operation defines another base path.
+All URIs are relative to https://esi.evetech.net/latest, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**getCharactersCharacterIdPlanets()**](PlanetaryInteractionApi.md#getCharactersCharacterIdPlanets) | **GET** /v1/characters/{character_id}/planets/ | Get colonies |
-| [**getCharactersCharacterIdPlanetsPlanetId()**](PlanetaryInteractionApi.md#getCharactersCharacterIdPlanetsPlanetId) | **GET** /v3/characters/{character_id}/planets/{planet_id}/ | Get colony layout |
-| [**getCorporationsCorporationIdCustomsOffices()**](PlanetaryInteractionApi.md#getCorporationsCorporationIdCustomsOffices) | **GET** /v1/corporations/{corporation_id}/customs_offices/ | List corporation customs offices |
-| [**getUniverseSchematicsSchematicId()**](PlanetaryInteractionApi.md#getUniverseSchematicsSchematicId) | **GET** /v1/universe/schematics/{schematic_id}/ | Get schematic information |
+| [**getCharactersCharacterIdPlanets()**](PlanetaryInteractionApi.md#getCharactersCharacterIdPlanets) | **GET** /characters/{character_id}/planets/ | Get colonies |
+| [**getCharactersCharacterIdPlanetsPlanetId()**](PlanetaryInteractionApi.md#getCharactersCharacterIdPlanetsPlanetId) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout |
+| [**getCorporationsCorporationIdCustomsOffices()**](PlanetaryInteractionApi.md#getCorporationsCorporationIdCustomsOffices) | **GET** /corporations/{corporation_id}/customs_offices/ | List corporation customs offices |
+| [**getUniverseSchematicsSchematicId()**](PlanetaryInteractionApi.md#getUniverseSchematicsSchematicId) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information |
 
 
 ## `getCharactersCharacterIdPlanets()`
@@ -18,7 +18,7 @@ getCharactersCharacterIdPlanets($character_id, $datasource, $if_none_match, $tok
 
 Get colonies
 
-Returns a list of all planetary colonies owned by a character.  ---  This route is cached for up to 600 seconds
+Returns a list of all planetary colonies owned by a character.  --- Alternate route: `/dev/characters/{character_id}/planets/`  Alternate route: `/legacy/characters/{character_id}/planets/`  Alternate route: `/v1/characters/{character_id}/planets/`  --- This route is cached for up to 600 seconds
 
 ### Example
 
@@ -84,7 +84,7 @@ getCharactersCharacterIdPlanetsPlanetId($character_id, $planet_id, $datasource, 
 
 Get colony layout
 
-Returns full details on the layout of a single planetary colony, including links, pins and routes. Note: Planetary information is only recalculated when the colony is viewed through the client. Information will not update until this criteria is met.  ---
+Returns full details on the layout of a single planetary colony, including links, pins and routes. Note: Planetary information is only recalculated when the colony is viewed through the client. Information will not update until this criteria is met.  --- Alternate route: `/dev/characters/{character_id}/planets/{planet_id}/`  Alternate route: `/v3/characters/{character_id}/planets/{planet_id}/`
 
 ### Example
 
@@ -150,7 +150,7 @@ getCorporationsCorporationIdCustomsOffices($corporation_id, $datasource, $if_non
 
 List corporation customs offices
 
-List customs offices owned by a corporation  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
+List customs offices owned by a corporation  --- Alternate route: `/dev/corporations/{corporation_id}/customs_offices/`  Alternate route: `/legacy/corporations/{corporation_id}/customs_offices/`  Alternate route: `/v1/corporations/{corporation_id}/customs_offices/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 
@@ -218,7 +218,7 @@ getUniverseSchematicsSchematicId($schematic_id, $datasource, $if_none_match): \S
 
 Get schematic information
 
-Get information on a planetary factory schematic  ---  This route is cached for up to 3600 seconds
+Get information on a planetary factory schematic  --- Alternate route: `/dev/universe/schematics/{schematic_id}/`  Alternate route: `/legacy/universe/schematics/{schematic_id}/`  Alternate route: `/v1/universe/schematics/{schematic_id}/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 
