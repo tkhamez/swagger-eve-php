@@ -738,9 +738,9 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
             );
         }*/
 
-        if ((count($new_roles) > 50)) {
+        /*if ((count($new_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $new_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['new_roles'] = $new_roles;
 
         return $this;
@@ -778,9 +778,9 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
             );
         }*/
 
-        if ((count($old_roles) > 50)) {
+        /*if ((count($old_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $old_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['old_roles'] = $old_roles;
 
         return $this;

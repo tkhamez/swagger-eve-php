@@ -700,9 +700,9 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
             throw new \InvalidArgumentException('non-nullable services cannot be null');
         }
 
-        if ((count($services) > 10)) {
+        /*if ((count($services) > 10)) {
             throw new \InvalidArgumentException('invalid value for $services when calling GetCorporationsCorporationIdStructures200Ok., number of items must be less than or equal to 10.');
-        }
+        }*/
         $this->container['services'] = $services;
 
         return $this;

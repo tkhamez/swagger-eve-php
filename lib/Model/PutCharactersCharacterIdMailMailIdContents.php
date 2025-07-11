@@ -324,9 +324,9 @@ class PutCharactersCharacterIdMailMailIdContents implements ModelInterface, Arra
             throw new \InvalidArgumentException('non-nullable labels cannot be null');
         }
 
-        if ((count($labels) > 25)) {
+        /*if ((count($labels) > 25)) {
             throw new \InvalidArgumentException('invalid value for $labels when calling PutCharactersCharacterIdMailMailIdContents., number of items must be less than or equal to 25.');
-        }
+        }*/
         $this->container['labels'] = $labels;
 
         return $this;

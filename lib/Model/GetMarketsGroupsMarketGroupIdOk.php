@@ -465,9 +465,9 @@ class GetMarketsGroupsMarketGroupIdOk implements ModelInterface, ArrayAccess, \J
             throw new \InvalidArgumentException('non-nullable types cannot be null');
         }
 
-        if ((count($types) > 5000)) {
+        /*if ((count($types) > 5000)) {
             throw new \InvalidArgumentException('invalid value for $types when calling GetMarketsGroupsMarketGroupIdOk., number of items must be less than or equal to 5000.');
-        }
+        }*/
         $this->container['types'] = $types;
 
         return $this;

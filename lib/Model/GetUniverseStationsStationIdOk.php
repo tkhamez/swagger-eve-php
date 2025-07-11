@@ -714,9 +714,9 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess, \Js
             );
         }*/
 
-        if ((count($services) > 30)) {
+        /*if ((count($services) > 30)) {
             throw new \InvalidArgumentException('invalid value for $services when calling GetUniverseStationsStationIdOk., number of items must be less than or equal to 30.');
-        }
+        }*/
         $this->container['services'] = $services;
 
         return $this;
