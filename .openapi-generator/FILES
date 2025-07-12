@@ -735,4 +735,3 @@ lib/Model/ServiceUnavailable.php
 lib/Model/Unauthorized.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/CharacterApiTest.php
