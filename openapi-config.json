@@ -3,5 +3,6 @@
     "gitUserId" : "tkhamez",
     "gitRepoId" : "swagger-eve-php",
     "disallowAdditionalPropertiesIfNotPresent" : false,
-    "enumUnknownDefaultCase" : true
+    "enumUnknownDefaultCase" : true,
+    "licenseName" : "MIT"
 }
