@@ -469,9 +469,9 @@ class GetCorporationsCorporationIdContacts200Ok implements ModelInterface, Array
             throw new \InvalidArgumentException('non-nullable label_ids cannot be null');
         }
 
-        if ((count($label_ids) > 63)) {
+        /*if ((count($label_ids) > 63)) {
             throw new \InvalidArgumentException('invalid value for $label_ids when calling GetCorporationsCorporationIdContacts200Ok., number of items must be less than or equal to 63.');
-        }
+        }*/
         $this->container['label_ids'] = $label_ids;
 
         return $this;

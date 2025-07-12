@@ -1385,9 +1385,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($grantable_roles) > 50)) {
+        /*if ((count($grantable_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['grantable_roles'] = $grantable_roles;
 
         return $this;
@@ -1425,9 +1425,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($grantable_roles_at_base) > 50)) {
+        /*if ((count($grantable_roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['grantable_roles_at_base'] = $grantable_roles_at_base;
 
         return $this;
@@ -1465,9 +1465,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($grantable_roles_at_hq) > 50)) {
+        /*if ((count($grantable_roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['grantable_roles_at_hq'] = $grantable_roles_at_hq;
 
         return $this;
@@ -1505,9 +1505,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($grantable_roles_at_other) > 50)) {
+        /*if ((count($grantable_roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['grantable_roles_at_other'] = $grantable_roles_at_other;
 
         return $this;
@@ -1572,9 +1572,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($roles) > 50)) {
+        /*if ((count($roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['roles'] = $roles;
 
         return $this;
@@ -1612,9 +1612,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($roles_at_base) > 50)) {
+        /*if ((count($roles_at_base) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['roles_at_base'] = $roles_at_base;
 
         return $this;
@@ -1652,9 +1652,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($roles_at_hq) > 50)) {
+        /*if ((count($roles_at_hq) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['roles_at_hq'] = $roles_at_hq;
 
         return $this;
@@ -1692,9 +1692,9 @@ class GetCorporationsCorporationIdTitles200Ok implements ModelInterface, ArrayAc
             );
         }
 
-        if ((count($roles_at_other) > 50)) {
+        /*if ((count($roles_at_other) > 50)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdTitles200Ok., number of items must be less than or equal to 50.');
-        }
+        }*/
         $this->container['roles_at_other'] = $roles_at_other;
 
         return $this;

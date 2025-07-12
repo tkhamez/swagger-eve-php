@@ -1408,9 +1408,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($grantable_roles) > 100)) {
+        /*if ((count($grantable_roles) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['grantable_roles'] = $grantable_roles;
 
         return $this;
@@ -1448,9 +1448,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($grantable_roles_at_base) > 100)) {
+        /*if ((count($grantable_roles_at_base) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['grantable_roles_at_base'] = $grantable_roles_at_base;
 
         return $this;
@@ -1488,9 +1488,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($grantable_roles_at_hq) > 100)) {
+        /*if ((count($grantable_roles_at_hq) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['grantable_roles_at_hq'] = $grantable_roles_at_hq;
 
         return $this;
@@ -1528,9 +1528,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($grantable_roles_at_other) > 100)) {
+        /*if ((count($grantable_roles_at_other) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['grantable_roles_at_other'] = $grantable_roles_at_other;
 
         return $this;
@@ -1568,9 +1568,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($roles) > 100)) {
+        /*if ((count($roles) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles'] = $roles;
 
         return $this;
@@ -1608,9 +1608,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($roles_at_base) > 100)) {
+        /*if ((count($roles_at_base) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles_at_base'] = $roles_at_base;
 
         return $this;
@@ -1648,9 +1648,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($roles_at_hq) > 100)) {
+        /*if ((count($roles_at_hq) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles_at_hq'] = $roles_at_hq;
 
         return $this;
@@ -1688,9 +1688,9 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             );
         }
 
-        if ((count($roles_at_other) > 100)) {
+        /*if ((count($roles_at_other) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles_at_other'] = $roles_at_other;
 
         return $this;

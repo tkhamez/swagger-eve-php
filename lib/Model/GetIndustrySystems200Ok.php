@@ -330,9 +330,9 @@ class GetIndustrySystems200Ok implements ModelInterface, ArrayAccess, \JsonSeria
             throw new \InvalidArgumentException('non-nullable cost_indices cannot be null');
         }
 
-        if ((count($cost_indices) > 10)) {
+        /*if ((count($cost_indices) > 10)) {
             throw new \InvalidArgumentException('invalid value for $cost_indices when calling GetIndustrySystems200Ok., number of items must be less than or equal to 10.');
-        }
+        }*/
         $this->container['cost_indices'] = $cost_indices;
 
         return $this;

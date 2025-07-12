@@ -414,9 +414,9 @@ class GetCharactersCharacterIdFittings200Ok implements ModelInterface, ArrayAcce
             throw new \InvalidArgumentException('non-nullable items cannot be null');
         }
 
-        if ((count($items) > 512)) {
+        /*if ((count($items) > 512)) {
             throw new \InvalidArgumentException('invalid value for $items when calling GetCharactersCharacterIdFittings200Ok., number of items must be less than or equal to 512.');
-        }
+        }*/
         $this->container['items'] = $items;
 
         return $this;

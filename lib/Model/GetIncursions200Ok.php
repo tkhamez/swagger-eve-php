@@ -499,9 +499,9 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
             throw new \InvalidArgumentException('non-nullable infested_solar_systems cannot be null');
         }
 
-        if ((count($infested_solar_systems) > 100)) {
+        /*if ((count($infested_solar_systems) > 100)) {
             throw new \InvalidArgumentException('invalid value for $infested_solar_systems when calling GetIncursions200Ok., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['infested_solar_systems'] = $infested_solar_systems;
 
         return $this;

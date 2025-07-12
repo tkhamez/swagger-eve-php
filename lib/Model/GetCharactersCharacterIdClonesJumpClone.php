@@ -383,9 +383,9 @@ class GetCharactersCharacterIdClonesJumpClone implements ModelInterface, ArrayAc
             throw new \InvalidArgumentException('non-nullable implants cannot be null');
         }
 
-        if ((count($implants) > 64)) {
+        /*if ((count($implants) > 64)) {
             throw new \InvalidArgumentException('invalid value for $implants when calling GetCharactersCharacterIdClonesJumpClone., number of items must be less than or equal to 64.');
-        }
+        }*/
         $this->container['implants'] = $implants;
 
         return $this;

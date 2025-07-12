@@ -843,9 +843,9 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
             );
         }
 
-        if ((count($roles) > 100)) {
+        /*if ((count($roles) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles'] = $roles;
 
         return $this;
@@ -883,9 +883,9 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
             );
         }
 
-        if ((count($roles_at_base) > 100)) {
+        /*if ((count($roles_at_base) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles_at_base'] = $roles_at_base;
 
         return $this;
@@ -923,9 +923,9 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
             );
         }
 
-        if ((count($roles_at_hq) > 100)) {
+        /*if ((count($roles_at_hq) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles_at_hq'] = $roles_at_hq;
 
         return $this;
@@ -963,9 +963,9 @@ class GetCharactersCharacterIdRolesOk implements ModelInterface, ArrayAccess, \J
             );
         }
 
-        if ((count($roles_at_other) > 100)) {
+        /*if ((count($roles_at_other) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCharactersCharacterIdRolesOk., number of items must be less than or equal to 100.');
-        }
+        }*/
         $this->container['roles_at_other'] = $roles_at_other;
 
         return $this;
