@@ -15,7 +15,7 @@ and they also change max items without increasing the endpoint version number.
 
 ##### Versioning scheme since 1.0.0
 
-* Patch: Generated client from a new [swagger.json](https://esi.evetech.net/_latest/swagger.json) file,
+* Patch: Generated a client from a new [swagger.json](https://esi.evetech.net/latest/swagger.json) file,
   refer to [esi-issues/changelog.md](https://github.com/esi/esi-issues/blob/master/changelog.md)
   (note, however, that the date is not always correct there) and/or generated with a new patch version
   of the generator library.
