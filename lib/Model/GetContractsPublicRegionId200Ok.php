@@ -324,6 +324,7 @@ class GetContractsPublicRegionId200Ok implements ModelInterface, ArrayAccess, \J
     public const TYPE_AUCTION = 'auction';
     public const TYPE_COURIER = 'courier';
     public const TYPE_LOAN = 'loan';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -338,6 +339,7 @@ class GetContractsPublicRegionId200Ok implements ModelInterface, ArrayAccess, \J
             self::TYPE_AUCTION,
             self::TYPE_COURIER,
             self::TYPE_LOAN,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -843,16 +845,10 @@ class GetContractsPublicRegionId200Ok implements ModelInterface, ArrayAccess, \J
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
         }
-        /*$allowedValues = $this->getTypeAllowableValues();
+        $allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $type = self::TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['type'] = $type;
 
         return $this;

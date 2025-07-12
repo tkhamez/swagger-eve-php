@@ -242,6 +242,7 @@ class GetCorporationCorporationIdMiningObservers200Ok implements ModelInterface,
     }
 
     public const OBSERVER_TYPE_STRUCTURE = 'structure';
+    public const OBSERVER_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -252,6 +253,7 @@ class GetCorporationCorporationIdMiningObservers200Ok implements ModelInterface,
     {
         return [
             self::OBSERVER_TYPE_STRUCTURE,
+            self::OBSERVER_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -411,16 +413,10 @@ class GetCorporationCorporationIdMiningObservers200Ok implements ModelInterface,
         if (is_null($observer_type)) {
             throw new \InvalidArgumentException('non-nullable observer_type cannot be null');
         }
-        /*$allowedValues = $this->getObserverTypeAllowableValues();
+        $allowedValues = $this->getObserverTypeAllowableValues();
         if (!in_array($observer_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'observer_type', must be one of '%s'",
-                    $observer_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $observer_type = self::OBSERVER_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['observer_type'] = $observer_type;
 
         return $this;

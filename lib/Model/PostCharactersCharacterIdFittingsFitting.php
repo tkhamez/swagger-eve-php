@@ -404,9 +404,9 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
             throw new \InvalidArgumentException('non-nullable items cannot be null');
         }
 
-        /*if ((count($items) > 512)) {
+        if ((count($items) > 512)) {
             throw new \InvalidArgumentException('invalid value for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be less than or equal to 512.');
-        }*/
+        }
         if ((count($items) < 1)) {
             throw new \InvalidArgumentException('invalid length for $items when calling PostCharactersCharacterIdFittingsFitting., number of items must be greater than or equal to 1.');
         }

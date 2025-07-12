@@ -330,9 +330,9 @@ class GetInsurancePrices200Ok implements ModelInterface, ArrayAccess, \JsonSeria
             throw new \InvalidArgumentException('non-nullable levels cannot be null');
         }
 
-        /*if ((count($levels) > 6)) {
+        if ((count($levels) > 6)) {
             throw new \InvalidArgumentException('invalid value for $levels when calling GetInsurancePrices200Ok., number of items must be less than or equal to 6.');
-        }*/
+        }
         $this->container['levels'] = $levels;
 
         return $this;

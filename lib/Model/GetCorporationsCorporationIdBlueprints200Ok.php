@@ -394,6 +394,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
     public const LOCATION_FLAG_UNLOCKED = 'Unlocked';
     public const LOCATION_FLAG_WALLET = 'Wallet';
     public const LOCATION_FLAG_WARDROBE = 'Wardrobe';
+    public const LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -526,6 +527,7 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
             self::LOCATION_FLAG_UNLOCKED,
             self::LOCATION_FLAG_WALLET,
             self::LOCATION_FLAG_WARDROBE,
+            self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -702,16 +704,10 @@ class GetCorporationsCorporationIdBlueprints200Ok implements ModelInterface, Arr
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
         }
-        /*$allowedValues = $this->getLocationFlagAllowableValues();
+        $allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'location_flag', must be one of '%s'",
-                    $location_flag,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $location_flag = self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['location_flag'] = $location_flag;
 
         return $this;

@@ -239,6 +239,7 @@ class PostCharactersCharacterIdMailRecipient implements ModelInterface, ArrayAcc
     public const RECIPIENT_TYPE_CHARACTER = 'character';
     public const RECIPIENT_TYPE_CORPORATION = 'corporation';
     public const RECIPIENT_TYPE_MAILING_LIST = 'mailing_list';
+    public const RECIPIENT_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -252,6 +253,7 @@ class PostCharactersCharacterIdMailRecipient implements ModelInterface, ArrayAcc
             self::RECIPIENT_TYPE_CHARACTER,
             self::RECIPIENT_TYPE_CORPORATION,
             self::RECIPIENT_TYPE_MAILING_LIST,
+            self::RECIPIENT_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -380,16 +382,10 @@ class PostCharactersCharacterIdMailRecipient implements ModelInterface, ArrayAcc
         if (is_null($recipient_type)) {
             throw new \InvalidArgumentException('non-nullable recipient_type cannot be null');
         }
-        /*$allowedValues = $this->getRecipientTypeAllowableValues();
+        $allowedValues = $this->getRecipientTypeAllowableValues();
         if (!in_array($recipient_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'recipient_type', must be one of '%s'",
-                    $recipient_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $recipient_type = self::RECIPIENT_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['recipient_type'] = $recipient_type;
 
         return $this;

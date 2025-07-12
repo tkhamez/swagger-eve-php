@@ -313,6 +313,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
     public const CONTEXT_ID_TYPE_PLANET_ID = 'planet_id';
     public const CONTEXT_ID_TYPE_SYSTEM_ID = 'system_id';
     public const CONTEXT_ID_TYPE_TYPE_ID = 'type_id';
+    public const CONTEXT_ID_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const REF_TYPE_ACCELERATION_GATE_FEE = 'acceleration_gate_fee';
     public const REF_TYPE_ADVERTISEMENT_LISTING_FEE = 'advertisement_listing_fee';
     public const REF_TYPE_AGENT_DONATION = 'agent_donation';
@@ -459,6 +460,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
     public const REF_TYPE_WAR_ALLY_CONTRACT = 'war_ally_contract';
     public const REF_TYPE_WAR_FEE = 'war_fee';
     public const REF_TYPE_WAR_FEE_SURRENDER = 'war_fee_surrender';
+    public const REF_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -480,6 +482,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
             self::CONTEXT_ID_TYPE_PLANET_ID,
             self::CONTEXT_ID_TYPE_SYSTEM_ID,
             self::CONTEXT_ID_TYPE_TYPE_ID,
+            self::CONTEXT_ID_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -637,6 +640,7 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
             self::REF_TYPE_WAR_ALLY_CONTRACT,
             self::REF_TYPE_WAR_FEE,
             self::REF_TYPE_WAR_FEE_SURRENDER,
+            self::REF_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -845,16 +849,10 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
         if (is_null($context_id_type)) {
             throw new \InvalidArgumentException('non-nullable context_id_type cannot be null');
         }
-        /*$allowedValues = $this->getContextIdTypeAllowableValues();
+        $allowedValues = $this->getContextIdTypeAllowableValues();
         if (!in_array($context_id_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'context_id_type', must be one of '%s'",
-                    $context_id_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $context_id_type = self::CONTEXT_ID_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['context_id_type'] = $context_id_type;
 
         return $this;
@@ -1017,16 +1015,10 @@ class GetCorporationsCorporationIdWalletsDivisionJournal200Ok implements ModelIn
         if (is_null($ref_type)) {
             throw new \InvalidArgumentException('non-nullable ref_type cannot be null');
         }
-        /*$allowedValues = $this->getRefTypeAllowableValues();
+        $allowedValues = $this->getRefTypeAllowableValues();
         if (!in_array($ref_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'ref_type', must be one of '%s'",
-                    $ref_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $ref_type = self::REF_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['ref_type'] = $ref_type;
 
         return $this;

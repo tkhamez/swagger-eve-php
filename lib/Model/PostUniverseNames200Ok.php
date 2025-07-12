@@ -250,6 +250,7 @@ class PostUniverseNames200Ok implements ModelInterface, ArrayAccess, \JsonSerial
     public const CATEGORY_SOLAR_SYSTEM = 'solar_system';
     public const CATEGORY_STATION = 'station';
     public const CATEGORY_FACTION = 'faction';
+    public const CATEGORY_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -268,6 +269,7 @@ class PostUniverseNames200Ok implements ModelInterface, ArrayAccess, \JsonSerial
             self::CATEGORY_SOLAR_SYSTEM,
             self::CATEGORY_STATION,
             self::CATEGORY_FACTION,
+            self::CATEGORY_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -373,16 +375,10 @@ class PostUniverseNames200Ok implements ModelInterface, ArrayAccess, \JsonSerial
         if (is_null($category)) {
             throw new \InvalidArgumentException('non-nullable category cannot be null');
         }
-        /*$allowedValues = $this->getCategoryAllowableValues();
+        $allowedValues = $this->getCategoryAllowableValues();
         if (!in_array($category, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'category', must be one of '%s'",
-                    $category,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $category = self::CATEGORY_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['category'] = $category;
 
         return $this;

@@ -255,6 +255,7 @@ class GetCharactersCharacterIdClonesJumpClone implements ModelInterface, ArrayAc
 
     public const LOCATION_TYPE_STATION = 'station';
     public const LOCATION_TYPE_STRUCTURE = 'structure';
+    public const LOCATION_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -266,6 +267,7 @@ class GetCharactersCharacterIdClonesJumpClone implements ModelInterface, ArrayAc
         return [
             self::LOCATION_TYPE_STATION,
             self::LOCATION_TYPE_STRUCTURE,
+            self::LOCATION_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -381,9 +383,9 @@ class GetCharactersCharacterIdClonesJumpClone implements ModelInterface, ArrayAc
             throw new \InvalidArgumentException('non-nullable implants cannot be null');
         }
 
-        /*if ((count($implants) > 64)) {
+        if ((count($implants) > 64)) {
             throw new \InvalidArgumentException('invalid value for $implants when calling GetCharactersCharacterIdClonesJumpClone., number of items must be less than or equal to 64.');
-        }*/
+        }
         $this->container['implants'] = $implants;
 
         return $this;
@@ -465,16 +467,10 @@ class GetCharactersCharacterIdClonesJumpClone implements ModelInterface, ArrayAc
         if (is_null($location_type)) {
             throw new \InvalidArgumentException('non-nullable location_type cannot be null');
         }
-        /*$allowedValues = $this->getLocationTypeAllowableValues();
+        $allowedValues = $this->getLocationTypeAllowableValues();
         if (!in_array($location_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'location_type', must be one of '%s'",
-                    $location_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $location_type = self::LOCATION_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['location_type'] = $location_type;
 
         return $this;

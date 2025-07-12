@@ -347,6 +347,7 @@ class GetCharactersCharacterIdBlueprints200Ok implements ModelInterface, ArrayAc
     public const LOCATION_FLAG_FIGHTER_TUBE3 = 'FighterTube3';
     public const LOCATION_FLAG_FIGHTER_TUBE4 = 'FighterTube4';
     public const LOCATION_FLAG_MODULE = 'Module';
+    public const LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -432,6 +433,7 @@ class GetCharactersCharacterIdBlueprints200Ok implements ModelInterface, ArrayAc
             self::LOCATION_FLAG_FIGHTER_TUBE3,
             self::LOCATION_FLAG_FIGHTER_TUBE4,
             self::LOCATION_FLAG_MODULE,
+            self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -608,16 +610,10 @@ class GetCharactersCharacterIdBlueprints200Ok implements ModelInterface, ArrayAc
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
         }
-        /*$allowedValues = $this->getLocationFlagAllowableValues();
+        $allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'location_flag', must be one of '%s'",
-                    $location_flag,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $location_flag = self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['location_flag'] = $location_flag;
 
         return $this;

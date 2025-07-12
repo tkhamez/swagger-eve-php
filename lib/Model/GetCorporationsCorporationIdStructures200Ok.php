@@ -326,6 +326,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     public const STATE_SHIELD_VULNERABLE = 'shield_vulnerable';
     public const STATE_UNANCHORED = 'unanchored';
     public const STATE_UNKNOWN = 'unknown';
+    public const STATE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -348,6 +349,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
             self::STATE_SHIELD_VULNERABLE,
             self::STATE_UNANCHORED,
             self::STATE_UNKNOWN,
+            self::STATE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -700,9 +702,9 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
             throw new \InvalidArgumentException('non-nullable services cannot be null');
         }
 
-        /*if ((count($services) > 10)) {
+        if ((count($services) > 10)) {
             throw new \InvalidArgumentException('invalid value for $services when calling GetCorporationsCorporationIdStructures200Ok., number of items must be less than or equal to 10.');
-        }*/
+        }
         $this->container['services'] = $services;
 
         return $this;
@@ -730,16 +732,10 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
         }
-        /*$allowedValues = $this->getStateAllowableValues();
+        $allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'state', must be one of '%s'",
-                    $state,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $state = self::STATE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['state'] = $state;
 
         return $this;

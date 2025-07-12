@@ -261,6 +261,7 @@ class GetCorporationsCorporationIdMedalsIssued200Ok implements ModelInterface, A
 
     public const STATUS__PRIVATE = 'private';
     public const STATUS__PUBLIC = 'public';
+    public const STATUS_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -272,6 +273,7 @@ class GetCorporationsCorporationIdMedalsIssued200Ok implements ModelInterface, A
         return [
             self::STATUS__PRIVATE,
             self::STATUS__PUBLIC,
+            self::STATUS_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -532,16 +534,10 @@ class GetCorporationsCorporationIdMedalsIssued200Ok implements ModelInterface, A
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
         }
-        /*$allowedValues = $this->getStatusAllowableValues();
+        $allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'status', must be one of '%s'",
-                    $status,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $status = self::STATUS_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['status'] = $status;
 
         return $this;

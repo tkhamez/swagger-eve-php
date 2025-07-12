@@ -359,6 +359,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
     public const AVAILABILITY_PERSONAL = 'personal';
     public const AVAILABILITY_CORPORATION = 'corporation';
     public const AVAILABILITY_ALLIANCE = 'alliance';
+    public const AVAILABILITY_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const STATUS_OUTSTANDING = 'outstanding';
     public const STATUS_IN_PROGRESS = 'in_progress';
     public const STATUS_FINISHED_ISSUER = 'finished_issuer';
@@ -369,11 +370,13 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
     public const STATUS_FAILED = 'failed';
     public const STATUS_DELETED = 'deleted';
     public const STATUS_REVERSED = 'reversed';
+    public const STATUS_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const TYPE_UNKNOWN = 'unknown';
     public const TYPE_ITEM_EXCHANGE = 'item_exchange';
     public const TYPE_AUCTION = 'auction';
     public const TYPE_COURIER = 'courier';
     public const TYPE_LOAN = 'loan';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -387,6 +390,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
             self::AVAILABILITY_PERSONAL,
             self::AVAILABILITY_CORPORATION,
             self::AVAILABILITY_ALLIANCE,
+            self::AVAILABILITY_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -408,6 +412,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
             self::STATUS_FAILED,
             self::STATUS_DELETED,
             self::STATUS_REVERSED,
+            self::STATUS_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -424,6 +429,7 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
             self::TYPE_AUCTION,
             self::TYPE_COURIER,
             self::TYPE_LOAN,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -644,16 +650,10 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
         if (is_null($availability)) {
             throw new \InvalidArgumentException('non-nullable availability cannot be null');
         }
-        /*$allowedValues = $this->getAvailabilityAllowableValues();
+        $allowedValues = $this->getAvailabilityAllowableValues();
         if (!in_array($availability, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'availability', must be one of '%s'",
-                    $availability,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $availability = self::AVAILABILITY_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['availability'] = $availability;
 
         return $this;
@@ -1086,16 +1086,10 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
         }
-        /*$allowedValues = $this->getStatusAllowableValues();
+        $allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'status', must be one of '%s'",
-                    $status,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $status = self::STATUS_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['status'] = $status;
 
         return $this;
@@ -1150,16 +1144,10 @@ class GetCharactersCharacterIdContracts200Ok implements ModelInterface, ArrayAcc
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
         }
-        /*$allowedValues = $this->getTypeAllowableValues();
+        $allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $type = self::TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['type'] = $type;
 
         return $this;

@@ -331,8 +331,10 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
     public const RANGE_REGION = 'region';
     public const RANGE_SOLARSYSTEM = 'solarsystem';
     public const RANGE_STATION = 'station';
+    public const RANGE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const STATE_CANCELLED = 'cancelled';
     public const STATE_EXPIRED = 'expired';
+    public const STATE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -354,6 +356,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
             self::RANGE_REGION,
             self::RANGE_SOLARSYSTEM,
             self::RANGE_STATION,
+            self::RANGE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -367,6 +370,7 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
         return [
             self::STATE_CANCELLED,
             self::STATE_EXPIRED,
+            self::STATE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -772,16 +776,10 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
         if (is_null($range)) {
             throw new \InvalidArgumentException('non-nullable range cannot be null');
         }
-        /*$allowedValues = $this->getRangeAllowableValues();
+        $allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'range', must be one of '%s'",
-                    $range,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $range = self::RANGE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['range'] = $range;
 
         return $this;
@@ -836,16 +834,10 @@ class GetCorporationsCorporationIdOrdersHistory200Ok implements ModelInterface, 
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
         }
-        /*$allowedValues = $this->getStateAllowableValues();
+        $allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'state', must be one of '%s'",
-                    $state,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $state = self::STATE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['state'] = $state;
 
         return $this;

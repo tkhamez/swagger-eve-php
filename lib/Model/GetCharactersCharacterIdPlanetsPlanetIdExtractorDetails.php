@@ -402,9 +402,9 @@ class GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails implements ModelIn
             throw new \InvalidArgumentException('non-nullable heads cannot be null');
         }
 
-        /*if ((count($heads) > 10)) {
+        if ((count($heads) > 10)) {
             throw new \InvalidArgumentException('invalid value for $heads when calling GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails., number of items must be less than or equal to 10.');
-        }*/
+        }
         $this->container['heads'] = $heads;
 
         return $this;

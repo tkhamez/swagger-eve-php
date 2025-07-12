@@ -276,6 +276,7 @@ class GetCorporationsCorporationIdStarbases200Ok implements ModelInterface, Arra
     public const STATE_ONLINING = 'onlining';
     public const STATE_REINFORCED = 'reinforced';
     public const STATE_UNANCHORING = 'unanchoring';
+    public const STATE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -290,6 +291,7 @@ class GetCorporationsCorporationIdStarbases200Ok implements ModelInterface, Arra
             self::STATE_ONLINING,
             self::STATE_REINFORCED,
             self::STATE_UNANCHORING,
+            self::STATE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -508,16 +510,10 @@ class GetCorporationsCorporationIdStarbases200Ok implements ModelInterface, Arra
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
         }
-        /*$allowedValues = $this->getStateAllowableValues();
+        $allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'state', must be one of '%s'",
-                    $state,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $state = self::STATE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['state'] = $state;
 
         return $this;

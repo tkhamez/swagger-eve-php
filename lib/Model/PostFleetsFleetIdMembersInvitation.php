@@ -251,6 +251,7 @@ class PostFleetsFleetIdMembersInvitation implements ModelInterface, ArrayAccess,
     public const ROLE_WING_COMMANDER = 'wing_commander';
     public const ROLE_SQUAD_COMMANDER = 'squad_commander';
     public const ROLE_SQUAD_MEMBER = 'squad_member';
+    public const ROLE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -264,6 +265,7 @@ class PostFleetsFleetIdMembersInvitation implements ModelInterface, ArrayAccess,
             self::ROLE_WING_COMMANDER,
             self::ROLE_SQUAD_COMMANDER,
             self::ROLE_SQUAD_MEMBER,
+            self::ROLE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -402,16 +404,10 @@ class PostFleetsFleetIdMembersInvitation implements ModelInterface, ArrayAccess,
         if (is_null($role)) {
             throw new \InvalidArgumentException('non-nullable role cannot be null');
         }
-        /*$allowedValues = $this->getRoleAllowableValues();
+        $allowedValues = $this->getRoleAllowableValues();
         if (!in_array($role, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'role', must be one of '%s'",
-                    $role,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $role = self::ROLE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['role'] = $role;
 
         return $this;

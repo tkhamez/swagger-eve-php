@@ -287,6 +287,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
     public const EVENT_TYPE_IHUB_DEFENSE = 'ihub_defense';
     public const EVENT_TYPE_STATION_DEFENSE = 'station_defense';
     public const EVENT_TYPE_STATION_FREEPORT = 'station_freeport';
+    public const EVENT_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -300,6 +301,7 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
             self::EVENT_TYPE_IHUB_DEFENSE,
             self::EVENT_TYPE_STATION_DEFENSE,
             self::EVENT_TYPE_STATION_FREEPORT,
+            self::EVENT_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -560,16 +562,10 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
         if (is_null($event_type)) {
             throw new \InvalidArgumentException('non-nullable event_type cannot be null');
         }
-        /*$allowedValues = $this->getEventTypeAllowableValues();
+        $allowedValues = $this->getEventTypeAllowableValues();
         if (!in_array($event_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'event_type', must be one of '%s'",
-                    $event_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $event_type = self::EVENT_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['event_type'] = $event_type;
 
         return $this;
@@ -598,9 +594,9 @@ class GetSovereigntyCampaigns200Ok implements ModelInterface, ArrayAccess, \Json
             throw new \InvalidArgumentException('non-nullable participants cannot be null');
         }
 
-        /*if ((count($participants) > 5000)) {
+        if ((count($participants) > 5000)) {
             throw new \InvalidArgumentException('invalid value for $participants when calling GetSovereigntyCampaigns200Ok., number of items must be less than or equal to 5000.');
-        }*/
+        }
         $this->container['participants'] = $participants;
 
         return $this;

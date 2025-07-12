@@ -307,6 +307,7 @@ class GetMarketsRegionIdOrders200Ok implements ModelInterface, ArrayAccess, \Jso
     public const RANGE__20 = '20';
     public const RANGE__30 = '30';
     public const RANGE__40 = '40';
+    public const RANGE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -328,6 +329,7 @@ class GetMarketsRegionIdOrders200Ok implements ModelInterface, ArrayAccess, \Jso
             self::RANGE__20,
             self::RANGE__30,
             self::RANGE__40,
+            self::RANGE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -658,16 +660,10 @@ class GetMarketsRegionIdOrders200Ok implements ModelInterface, ArrayAccess, \Jso
         if (is_null($range)) {
             throw new \InvalidArgumentException('non-nullable range cannot be null');
         }
-        /*$allowedValues = $this->getRangeAllowableValues();
+        $allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'range', must be one of '%s'",
-                    $range,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $range = self::RANGE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['range'] = $range;
 
         return $this;

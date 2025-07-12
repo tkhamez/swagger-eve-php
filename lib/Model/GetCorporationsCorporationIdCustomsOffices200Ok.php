@@ -312,6 +312,7 @@ class GetCorporationsCorporationIdCustomsOffices200Ok implements ModelInterface,
     public const STANDING_LEVEL_GOOD = 'good';
     public const STANDING_LEVEL_NEUTRAL = 'neutral';
     public const STANDING_LEVEL_TERRIBLE = 'terrible';
+    public const STANDING_LEVEL_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -326,6 +327,7 @@ class GetCorporationsCorporationIdCustomsOffices200Ok implements ModelInterface,
             self::STANDING_LEVEL_GOOD,
             self::STANDING_LEVEL_NEUTRAL,
             self::STANDING_LEVEL_TERRIBLE,
+            self::STANDING_LEVEL_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -780,16 +782,10 @@ class GetCorporationsCorporationIdCustomsOffices200Ok implements ModelInterface,
         if (is_null($standing_level)) {
             throw new \InvalidArgumentException('non-nullable standing_level cannot be null');
         }
-        /*$allowedValues = $this->getStandingLevelAllowableValues();
+        $allowedValues = $this->getStandingLevelAllowableValues();
         if (!in_array($standing_level, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'standing_level', must be one of '%s'",
-                    $standing_level,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $standing_level = self::STANDING_LEVEL_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['standing_level'] = $standing_level;
 
         return $this;

@@ -245,6 +245,7 @@ class GetIndustrySystemsCostIndice implements ModelInterface, ArrayAccess, \Json
     public const ACTIVITY_RESEARCHING_TECHNOLOGY = 'researching_technology';
     public const ACTIVITY_RESEARCHING_TIME_EFFICIENCY = 'researching_time_efficiency';
     public const ACTIVITY_REVERSE_ENGINEERING = 'reverse_engineering';
+    public const ACTIVITY_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -264,6 +265,7 @@ class GetIndustrySystemsCostIndice implements ModelInterface, ArrayAccess, \Json
             self::ACTIVITY_RESEARCHING_TECHNOLOGY,
             self::ACTIVITY_RESEARCHING_TIME_EFFICIENCY,
             self::ACTIVITY_REVERSE_ENGINEERING,
+            self::ACTIVITY_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -365,16 +367,10 @@ class GetIndustrySystemsCostIndice implements ModelInterface, ArrayAccess, \Json
         if (is_null($activity)) {
             throw new \InvalidArgumentException('non-nullable activity cannot be null');
         }
-        /*$allowedValues = $this->getActivityAllowableValues();
+        $allowedValues = $this->getActivityAllowableValues();
         if (!in_array($activity, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'activity', must be one of '%s'",
-                    $activity,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $activity = self::ACTIVITY_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['activity'] = $activity;
 
         return $this;

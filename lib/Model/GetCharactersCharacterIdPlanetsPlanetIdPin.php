@@ -399,9 +399,9 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
             throw new \InvalidArgumentException('non-nullable contents cannot be null');
         }
 
-        /*if ((count($contents) > 90)) {
+        if ((count($contents) > 90)) {
             throw new \InvalidArgumentException('invalid value for $contents when calling GetCharactersCharacterIdPlanetsPlanetIdPin., number of items must be less than or equal to 90.');
-        }*/
+        }
         $this->container['contents'] = $contents;
 
         return $this;

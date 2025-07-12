@@ -274,6 +274,7 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
     public const STATE_WITHDRAWING = 'withdrawing';
     public const STATE_MOBILIZING = 'mobilizing';
     public const STATE_ESTABLISHED = 'established';
+    public const STATE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -286,6 +287,7 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
             self::STATE_WITHDRAWING,
             self::STATE_MOBILIZING,
             self::STATE_ESTABLISHED,
+            self::STATE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -497,9 +499,9 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
             throw new \InvalidArgumentException('non-nullable infested_solar_systems cannot be null');
         }
 
-        /*if ((count($infested_solar_systems) > 100)) {
+        if ((count($infested_solar_systems) > 100)) {
             throw new \InvalidArgumentException('invalid value for $infested_solar_systems when calling GetIncursions200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['infested_solar_systems'] = $infested_solar_systems;
 
         return $this;
@@ -581,16 +583,10 @@ class GetIncursions200Ok implements ModelInterface, ArrayAccess, \JsonSerializab
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
         }
-        /*$allowedValues = $this->getStateAllowableValues();
+        $allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'state', must be one of '%s'",
-                    $state,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $state = self::STATE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['state'] = $state;
 
         return $this;

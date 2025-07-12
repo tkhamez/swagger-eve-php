@@ -361,6 +361,7 @@ class GetCorporationsCorporationIdIndustryJobs200Ok implements ModelInterface, A
     public const STATUS_PAUSED = 'paused';
     public const STATUS_READY = 'ready';
     public const STATUS_REVERTED = 'reverted';
+    public const STATUS_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -376,6 +377,7 @@ class GetCorporationsCorporationIdIndustryJobs200Ok implements ModelInterface, A
             self::STATUS_PAUSED,
             self::STATUS_READY,
             self::STATUS_REVERTED,
+            self::STATUS_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -1073,16 +1075,10 @@ class GetCorporationsCorporationIdIndustryJobs200Ok implements ModelInterface, A
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
         }
-        /*$allowedValues = $this->getStatusAllowableValues();
+        $allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'status', must be one of '%s'",
-                    $status,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $status = self::STATUS_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['status'] = $status;
 
         return $this;

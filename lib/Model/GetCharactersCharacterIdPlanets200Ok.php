@@ -273,6 +273,7 @@ class GetCharactersCharacterIdPlanets200Ok implements ModelInterface, ArrayAcces
     public const PLANET_TYPE_LAVA = 'lava';
     public const PLANET_TYPE_STORM = 'storm';
     public const PLANET_TYPE_PLASMA = 'plasma';
+    public const PLANET_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -290,6 +291,7 @@ class GetCharactersCharacterIdPlanets200Ok implements ModelInterface, ArrayAcces
             self::PLANET_TYPE_LAVA,
             self::PLANET_TYPE_STORM,
             self::PLANET_TYPE_PLASMA,
+            self::PLANET_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -536,16 +538,10 @@ class GetCharactersCharacterIdPlanets200Ok implements ModelInterface, ArrayAcces
         if (is_null($planet_type)) {
             throw new \InvalidArgumentException('non-nullable planet_type cannot be null');
         }
-        /*$allowedValues = $this->getPlanetTypeAllowableValues();
+        $allowedValues = $this->getPlanetTypeAllowableValues();
         if (!in_array($planet_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'planet_type', must be one of '%s'",
-                    $planet_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $planet_type = self::PLANET_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['planet_type'] = $planet_type;
 
         return $this;

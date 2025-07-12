@@ -2,6 +2,6 @@
     "invokerPackage" : "Swagger\\Client\\Eve",
     "gitUserId" : "tkhamez",
     "gitRepoId" : "swagger-eve-php",
-    "disallowAdditionalPropertiesIfNotPresent" : false
+    "disallowAdditionalPropertiesIfNotPresent" : false,
+    "enumUnknownDefaultCase" : true
 }
-

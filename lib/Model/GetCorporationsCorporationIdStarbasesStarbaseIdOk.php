@@ -311,26 +311,32 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
     public const ANCHOR_CONFIG_STARBASE_EQUIPMENT_ROLE = 'config_starbase_equipment_role';
     public const ANCHOR_CORPORATION_MEMBER = 'corporation_member';
     public const ANCHOR_STARBASE_FUEL_TECHNICIAN_ROLE = 'starbase_fuel_technician_role';
+    public const ANCHOR_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const FUEL_BAY_TAKE_ALLIANCE_MEMBER = 'alliance_member';
     public const FUEL_BAY_TAKE_CONFIG_STARBASE_EQUIPMENT_ROLE = 'config_starbase_equipment_role';
     public const FUEL_BAY_TAKE_CORPORATION_MEMBER = 'corporation_member';
     public const FUEL_BAY_TAKE_STARBASE_FUEL_TECHNICIAN_ROLE = 'starbase_fuel_technician_role';
+    public const FUEL_BAY_TAKE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const FUEL_BAY_VIEW_ALLIANCE_MEMBER = 'alliance_member';
     public const FUEL_BAY_VIEW_CONFIG_STARBASE_EQUIPMENT_ROLE = 'config_starbase_equipment_role';
     public const FUEL_BAY_VIEW_CORPORATION_MEMBER = 'corporation_member';
     public const FUEL_BAY_VIEW_STARBASE_FUEL_TECHNICIAN_ROLE = 'starbase_fuel_technician_role';
+    public const FUEL_BAY_VIEW_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const OFFLINE_ALLIANCE_MEMBER = 'alliance_member';
     public const OFFLINE_CONFIG_STARBASE_EQUIPMENT_ROLE = 'config_starbase_equipment_role';
     public const OFFLINE_CORPORATION_MEMBER = 'corporation_member';
     public const OFFLINE_STARBASE_FUEL_TECHNICIAN_ROLE = 'starbase_fuel_technician_role';
+    public const OFFLINE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ONLINE_ALLIANCE_MEMBER = 'alliance_member';
     public const ONLINE_CONFIG_STARBASE_EQUIPMENT_ROLE = 'config_starbase_equipment_role';
     public const ONLINE_CORPORATION_MEMBER = 'corporation_member';
     public const ONLINE_STARBASE_FUEL_TECHNICIAN_ROLE = 'starbase_fuel_technician_role';
+    public const ONLINE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const UNANCHOR_ALLIANCE_MEMBER = 'alliance_member';
     public const UNANCHOR_CONFIG_STARBASE_EQUIPMENT_ROLE = 'config_starbase_equipment_role';
     public const UNANCHOR_CORPORATION_MEMBER = 'corporation_member';
     public const UNANCHOR_STARBASE_FUEL_TECHNICIAN_ROLE = 'starbase_fuel_technician_role';
+    public const UNANCHOR_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -344,6 +350,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             self::ANCHOR_CONFIG_STARBASE_EQUIPMENT_ROLE,
             self::ANCHOR_CORPORATION_MEMBER,
             self::ANCHOR_STARBASE_FUEL_TECHNICIAN_ROLE,
+            self::ANCHOR_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -359,6 +366,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             self::FUEL_BAY_TAKE_CONFIG_STARBASE_EQUIPMENT_ROLE,
             self::FUEL_BAY_TAKE_CORPORATION_MEMBER,
             self::FUEL_BAY_TAKE_STARBASE_FUEL_TECHNICIAN_ROLE,
+            self::FUEL_BAY_TAKE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -374,6 +382,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             self::FUEL_BAY_VIEW_CONFIG_STARBASE_EQUIPMENT_ROLE,
             self::FUEL_BAY_VIEW_CORPORATION_MEMBER,
             self::FUEL_BAY_VIEW_STARBASE_FUEL_TECHNICIAN_ROLE,
+            self::FUEL_BAY_VIEW_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -389,6 +398,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             self::OFFLINE_CONFIG_STARBASE_EQUIPMENT_ROLE,
             self::OFFLINE_CORPORATION_MEMBER,
             self::OFFLINE_STARBASE_FUEL_TECHNICIAN_ROLE,
+            self::OFFLINE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -404,6 +414,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             self::ONLINE_CONFIG_STARBASE_EQUIPMENT_ROLE,
             self::ONLINE_CORPORATION_MEMBER,
             self::ONLINE_STARBASE_FUEL_TECHNICIAN_ROLE,
+            self::ONLINE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -419,6 +430,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             self::UNANCHOR_CONFIG_STARBASE_EQUIPMENT_ROLE,
             self::UNANCHOR_CORPORATION_MEMBER,
             self::UNANCHOR_STARBASE_FUEL_TECHNICIAN_ROLE,
+            self::UNANCHOR_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -662,16 +674,10 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         if (is_null($anchor)) {
             throw new \InvalidArgumentException('non-nullable anchor cannot be null');
         }
-        /*$allowedValues = $this->getAnchorAllowableValues();
+        $allowedValues = $this->getAnchorAllowableValues();
         if (!in_array($anchor, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'anchor', must be one of '%s'",
-                    $anchor,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $anchor = self::ANCHOR_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['anchor'] = $anchor;
 
         return $this;
@@ -807,16 +813,10 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         if (is_null($fuel_bay_take)) {
             throw new \InvalidArgumentException('non-nullable fuel_bay_take cannot be null');
         }
-        /*$allowedValues = $this->getFuelBayTakeAllowableValues();
+        $allowedValues = $this->getFuelBayTakeAllowableValues();
         if (!in_array($fuel_bay_take, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'fuel_bay_take', must be one of '%s'",
-                    $fuel_bay_take,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $fuel_bay_take = self::FUEL_BAY_TAKE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['fuel_bay_take'] = $fuel_bay_take;
 
         return $this;
@@ -844,16 +844,10 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         if (is_null($fuel_bay_view)) {
             throw new \InvalidArgumentException('non-nullable fuel_bay_view cannot be null');
         }
-        /*$allowedValues = $this->getFuelBayViewAllowableValues();
+        $allowedValues = $this->getFuelBayViewAllowableValues();
         if (!in_array($fuel_bay_view, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'fuel_bay_view', must be one of '%s'",
-                    $fuel_bay_view,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $fuel_bay_view = self::FUEL_BAY_VIEW_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['fuel_bay_view'] = $fuel_bay_view;
 
         return $this;
@@ -882,9 +876,9 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
             throw new \InvalidArgumentException('non-nullable fuels cannot be null');
         }
 
-        /*if ((count($fuels) > 20)) {
+        if ((count($fuels) > 20)) {
             throw new \InvalidArgumentException('invalid value for $fuels when calling GetCorporationsCorporationIdStarbasesStarbaseIdOk., number of items must be less than or equal to 20.');
-        }*/
+        }
         $this->container['fuels'] = $fuels;
 
         return $this;
@@ -912,16 +906,10 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         if (is_null($offline)) {
             throw new \InvalidArgumentException('non-nullable offline cannot be null');
         }
-        /*$allowedValues = $this->getOfflineAllowableValues();
+        $allowedValues = $this->getOfflineAllowableValues();
         if (!in_array($offline, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'offline', must be one of '%s'",
-                    $offline,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $offline = self::OFFLINE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['offline'] = $offline;
 
         return $this;
@@ -949,16 +937,10 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         if (is_null($online)) {
             throw new \InvalidArgumentException('non-nullable online cannot be null');
         }
-        /*$allowedValues = $this->getOnlineAllowableValues();
+        $allowedValues = $this->getOnlineAllowableValues();
         if (!in_array($online, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'online', must be one of '%s'",
-                    $online,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $online = self::ONLINE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['online'] = $online;
 
         return $this;
@@ -986,16 +968,10 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         if (is_null($unanchor)) {
             throw new \InvalidArgumentException('non-nullable unanchor cannot be null');
         }
-        /*$allowedValues = $this->getUnanchorAllowableValues();
+        $allowedValues = $this->getUnanchorAllowableValues();
         if (!in_array($unanchor, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'unanchor', must be one of '%s'",
-                    $unanchor,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $unanchor = self::UNANCHOR_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['unanchor'] = $unanchor;
 
         return $this;

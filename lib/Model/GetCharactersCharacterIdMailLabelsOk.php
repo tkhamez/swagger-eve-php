@@ -328,9 +328,9 @@ class GetCharactersCharacterIdMailLabelsOk implements ModelInterface, ArrayAcces
             throw new \InvalidArgumentException('non-nullable labels cannot be null');
         }
 
-        /*if ((count($labels) > 30)) {
+        if ((count($labels) > 30)) {
             throw new \InvalidArgumentException('invalid value for $labels when calling GetCharactersCharacterIdMailLabelsOk., number of items must be less than or equal to 30.');
-        }*/
+        }
         $this->container['labels'] = $labels;
 
         return $this;

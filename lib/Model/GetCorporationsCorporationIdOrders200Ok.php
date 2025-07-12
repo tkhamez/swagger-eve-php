@@ -325,6 +325,7 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
     public const RANGE_REGION = 'region';
     public const RANGE_SOLARSYSTEM = 'solarsystem';
     public const RANGE_STATION = 'station';
+    public const RANGE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -346,6 +347,7 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
             self::RANGE_REGION,
             self::RANGE_SOLARSYSTEM,
             self::RANGE_STATION,
+            self::RANGE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -741,16 +743,10 @@ class GetCorporationsCorporationIdOrders200Ok implements ModelInterface, ArrayAc
         if (is_null($range)) {
             throw new \InvalidArgumentException('non-nullable range cannot be null');
         }
-        /*$allowedValues = $this->getRangeAllowableValues();
+        $allowedValues = $this->getRangeAllowableValues();
         if (!in_array($range, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'range', must be one of '%s'",
-                    $range,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $range = self::RANGE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['range'] = $range;
 
         return $this;

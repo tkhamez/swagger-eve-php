@@ -502,9 +502,9 @@ class GetCharactersCharacterIdPlanetsPlanetIdRoute implements ModelInterface, Ar
             throw new \InvalidArgumentException('non-nullable waypoints cannot be null');
         }
 
-        /*if ((count($waypoints) > 5)) {
+        if ((count($waypoints) > 5)) {
             throw new \InvalidArgumentException('invalid value for $waypoints when calling GetCharactersCharacterIdPlanetsPlanetIdRoute., number of items must be less than or equal to 5.');
-        }*/
+        }
         $this->container['waypoints'] = $waypoints;
 
         return $this;

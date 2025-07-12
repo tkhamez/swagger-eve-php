@@ -244,6 +244,7 @@ class GetCharactersCharacterIdStandings200Ok implements ModelInterface, ArrayAcc
     public const FROM_TYPE_AGENT = 'agent';
     public const FROM_TYPE_NPC_CORP = 'npc_corp';
     public const FROM_TYPE_FACTION = 'faction';
+    public const FROM_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -256,6 +257,7 @@ class GetCharactersCharacterIdStandings200Ok implements ModelInterface, ArrayAcc
             self::FROM_TYPE_AGENT,
             self::FROM_TYPE_NPC_CORP,
             self::FROM_TYPE_FACTION,
+            self::FROM_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -388,16 +390,10 @@ class GetCharactersCharacterIdStandings200Ok implements ModelInterface, ArrayAcc
         if (is_null($from_type)) {
             throw new \InvalidArgumentException('non-nullable from_type cannot be null');
         }
-        /*$allowedValues = $this->getFromTypeAllowableValues();
+        $allowedValues = $this->getFromTypeAllowableValues();
         if (!in_array($from_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'from_type', must be one of '%s'",
-                    $from_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $from_type = self::FROM_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['from_type'] = $from_type;
 
         return $this;

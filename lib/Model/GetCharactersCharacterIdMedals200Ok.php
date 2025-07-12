@@ -279,6 +279,7 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
 
     public const STATUS__PUBLIC = 'public';
     public const STATUS__PRIVATE = 'private';
+    public const STATUS_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -290,6 +291,7 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
         return [
             self::STATUS__PUBLIC,
             self::STATUS__PRIVATE,
+            self::STATUS_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -509,9 +511,9 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
             throw new \InvalidArgumentException('non-nullable graphics cannot be null');
         }
 
-        /*if ((count($graphics) > 9)) {
+        if ((count($graphics) > 9)) {
             throw new \InvalidArgumentException('invalid value for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be less than or equal to 9.');
-        }*/
+        }
         if ((count($graphics) < 3)) {
             throw new \InvalidArgumentException('invalid length for $graphics when calling GetCharactersCharacterIdMedals200Ok., number of items must be greater than or equal to 3.');
         }
@@ -623,16 +625,10 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
         }
-        /*$allowedValues = $this->getStatusAllowableValues();
+        $allowedValues = $this->getStatusAllowableValues();
         if (!in_array($status, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'status', must be one of '%s'",
-                    $status,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $status = self::STATUS_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['status'] = $status;
 
         return $this;

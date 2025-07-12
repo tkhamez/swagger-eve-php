@@ -468,9 +468,9 @@ class GetUniverseConstellationsConstellationIdOk implements ModelInterface, Arra
             throw new \InvalidArgumentException('non-nullable systems cannot be null');
         }
 
-        /*if ((count($systems) > 10000)) {
+        if ((count($systems) > 10000)) {
             throw new \InvalidArgumentException('invalid value for $systems when calling GetUniverseConstellationsConstellationIdOk., number of items must be less than or equal to 10000.');
-        }*/
+        }
         $this->container['systems'] = $systems;
 
         return $this;

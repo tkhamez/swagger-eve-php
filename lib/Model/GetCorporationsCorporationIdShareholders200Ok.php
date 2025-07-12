@@ -243,6 +243,7 @@ class GetCorporationsCorporationIdShareholders200Ok implements ModelInterface, A
 
     public const SHAREHOLDER_TYPE_CHARACTER = 'character';
     public const SHAREHOLDER_TYPE_CORPORATION = 'corporation';
+    public const SHAREHOLDER_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -254,6 +255,7 @@ class GetCorporationsCorporationIdShareholders200Ok implements ModelInterface, A
         return [
             self::SHAREHOLDER_TYPE_CHARACTER,
             self::SHAREHOLDER_TYPE_CORPORATION,
+            self::SHAREHOLDER_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -413,16 +415,10 @@ class GetCorporationsCorporationIdShareholders200Ok implements ModelInterface, A
         if (is_null($shareholder_type)) {
             throw new \InvalidArgumentException('non-nullable shareholder_type cannot be null');
         }
-        /*$allowedValues = $this->getShareholderTypeAllowableValues();
+        $allowedValues = $this->getShareholderTypeAllowableValues();
         if (!in_array($shareholder_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'shareholder_type', must be one of '%s'",
-                    $shareholder_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $shareholder_type = self::SHAREHOLDER_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['shareholder_type'] = $shareholder_type;
 
         return $this;

@@ -360,6 +360,7 @@ class GetUniverseStarsStarIdOk implements ModelInterface, ArrayAccess, \JsonSeri
     public const SPECTRAL_CLASS_A0 = 'A0';
     public const SPECTRAL_CLASS_A0_IV = 'A0IV';
     public const SPECTRAL_CLASS_A0_IV2 = 'A0IV2';
+    public const SPECTRAL_CLASS_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -458,6 +459,7 @@ class GetUniverseStarsStarIdOk implements ModelInterface, ArrayAccess, \JsonSeri
             self::SPECTRAL_CLASS_A0,
             self::SPECTRAL_CLASS_A0_IV,
             self::SPECTRAL_CLASS_A0_IV2,
+            self::SPECTRAL_CLASS_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -718,16 +720,10 @@ class GetUniverseStarsStarIdOk implements ModelInterface, ArrayAccess, \JsonSeri
         if (is_null($spectral_class)) {
             throw new \InvalidArgumentException('non-nullable spectral_class cannot be null');
         }
-        /*$allowedValues = $this->getSpectralClassAllowableValues();
+        $allowedValues = $this->getSpectralClassAllowableValues();
         if (!in_array($spectral_class, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'spectral_class', must be one of '%s'",
-                    $spectral_class,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $spectral_class = self::SPECTRAL_CLASS_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['spectral_class'] = $spectral_class;
 
         return $this;

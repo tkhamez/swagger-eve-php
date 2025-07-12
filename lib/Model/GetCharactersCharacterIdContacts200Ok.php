@@ -263,6 +263,7 @@ class GetCharactersCharacterIdContacts200Ok implements ModelInterface, ArrayAcce
     public const CONTACT_TYPE_CORPORATION = 'corporation';
     public const CONTACT_TYPE_ALLIANCE = 'alliance';
     public const CONTACT_TYPE_FACTION = 'faction';
+    public const CONTACT_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -276,6 +277,7 @@ class GetCharactersCharacterIdContacts200Ok implements ModelInterface, ArrayAcce
             self::CONTACT_TYPE_CORPORATION,
             self::CONTACT_TYPE_ALLIANCE,
             self::CONTACT_TYPE_FACTION,
+            self::CONTACT_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -415,16 +417,10 @@ class GetCharactersCharacterIdContacts200Ok implements ModelInterface, ArrayAcce
         if (is_null($contact_type)) {
             throw new \InvalidArgumentException('non-nullable contact_type cannot be null');
         }
-        /*$allowedValues = $this->getContactTypeAllowableValues();
+        $allowedValues = $this->getContactTypeAllowableValues();
         if (!in_array($contact_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'contact_type', must be one of '%s'",
-                    $contact_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $contact_type = self::CONTACT_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['contact_type'] = $contact_type;
 
         return $this;
@@ -507,9 +503,9 @@ class GetCharactersCharacterIdContacts200Ok implements ModelInterface, ArrayAcce
             throw new \InvalidArgumentException('non-nullable label_ids cannot be null');
         }
 
-        /*if ((count($label_ids) > 63)) {
+        if ((count($label_ids) > 63)) {
             throw new \InvalidArgumentException('invalid value for $label_ids when calling GetCharactersCharacterIdContacts200Ok., number of items must be less than or equal to 63.');
-        }*/
+        }
         $this->container['label_ids'] = $label_ids;
 
         return $this;

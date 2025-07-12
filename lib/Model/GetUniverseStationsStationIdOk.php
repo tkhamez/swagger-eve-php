@@ -322,6 +322,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess, \Js
     public const SERVICES_LOYALTY_POINT_STORE = 'loyalty-point-store';
     public const SERVICES_NAVY_OFFICES = 'navy-offices';
     public const SERVICES_SECURITY_OFFICES = 'security-offices';
+    public const SERVICES_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -358,6 +359,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess, \Js
             self::SERVICES_LOYALTY_POINT_STORE,
             self::SERVICES_NAVY_OFFICES,
             self::SERVICES_SECURITY_OFFICES,
+            self::SERVICES_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -704,7 +706,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess, \Js
         if (is_null($services)) {
             throw new \InvalidArgumentException('non-nullable services cannot be null');
         }
-        /*$allowedValues = $this->getServicesAllowableValues();
+        $allowedValues = $this->getServicesAllowableValues();
         if (array_diff($services, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -712,11 +714,11 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess, \Js
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($services) > 30)) {
+        if ((count($services) > 30)) {
             throw new \InvalidArgumentException('invalid value for $services when calling GetUniverseStationsStationIdOk., number of items must be less than or equal to 30.');
-        }*/
+        }
         $this->container['services'] = $services;
 
         return $this;

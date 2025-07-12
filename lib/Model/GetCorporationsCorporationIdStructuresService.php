@@ -238,6 +238,7 @@ class GetCorporationsCorporationIdStructuresService implements ModelInterface, A
     public const STATE_ONLINE = 'online';
     public const STATE_OFFLINE = 'offline';
     public const STATE_CLEANUP = 'cleanup';
+    public const STATE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -250,6 +251,7 @@ class GetCorporationsCorporationIdStructuresService implements ModelInterface, A
             self::STATE_ONLINE,
             self::STATE_OFFLINE,
             self::STATE_CLEANUP,
+            self::STATE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -378,16 +380,10 @@ class GetCorporationsCorporationIdStructuresService implements ModelInterface, A
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
         }
-        /*$allowedValues = $this->getStateAllowableValues();
+        $allowedValues = $this->getStateAllowableValues();
         if (!in_array($state, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'state', must be one of '%s'",
-                    $state,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $state = self::STATE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['state'] = $state;
 
         return $this;

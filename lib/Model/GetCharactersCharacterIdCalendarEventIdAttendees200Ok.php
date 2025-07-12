@@ -239,6 +239,7 @@ class GetCharactersCharacterIdCalendarEventIdAttendees200Ok implements ModelInte
     public const EVENT_RESPONSE_NOT_RESPONDED = 'not_responded';
     public const EVENT_RESPONSE_ACCEPTED = 'accepted';
     public const EVENT_RESPONSE_TENTATIVE = 'tentative';
+    public const EVENT_RESPONSE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -252,6 +253,7 @@ class GetCharactersCharacterIdCalendarEventIdAttendees200Ok implements ModelInte
             self::EVENT_RESPONSE_NOT_RESPONDED,
             self::EVENT_RESPONSE_ACCEPTED,
             self::EVENT_RESPONSE_TENTATIVE,
+            self::EVENT_RESPONSE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -374,16 +376,10 @@ class GetCharactersCharacterIdCalendarEventIdAttendees200Ok implements ModelInte
         if (is_null($event_response)) {
             throw new \InvalidArgumentException('non-nullable event_response cannot be null');
         }
-        /*$allowedValues = $this->getEventResponseAllowableValues();
+        $allowedValues = $this->getEventResponseAllowableValues();
         if (!in_array($event_response, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'event_response', must be one of '%s'",
-                    $event_response,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $event_response = self::EVENT_RESPONSE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['event_response'] = $event_response;
 
         return $this;

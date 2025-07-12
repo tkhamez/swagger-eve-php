@@ -263,6 +263,7 @@ class GetFwSystems200Ok implements ModelInterface, ArrayAccess, \JsonSerializabl
     public const CONTESTED_CONTESTED = 'contested';
     public const CONTESTED_UNCONTESTED = 'uncontested';
     public const CONTESTED_VULNERABLE = 'vulnerable';
+    public const CONTESTED_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -276,6 +277,7 @@ class GetFwSystems200Ok implements ModelInterface, ArrayAccess, \JsonSerializabl
             self::CONTESTED_CONTESTED,
             self::CONTESTED_UNCONTESTED,
             self::CONTESTED_VULNERABLE,
+            self::CONTESTED_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -393,16 +395,10 @@ class GetFwSystems200Ok implements ModelInterface, ArrayAccess, \JsonSerializabl
         if (is_null($contested)) {
             throw new \InvalidArgumentException('non-nullable contested cannot be null');
         }
-        /*$allowedValues = $this->getContestedAllowableValues();
+        $allowedValues = $this->getContestedAllowableValues();
         if (!in_array($contested, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'contested', must be one of '%s'",
-                    $contested,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $contested = self::CONTESTED_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['contested'] = $contested;
 
         return $this;

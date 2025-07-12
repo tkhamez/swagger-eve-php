@@ -270,6 +270,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     public const SENDER_TYPE_ALLIANCE = 'alliance';
     public const SENDER_TYPE_FACTION = 'faction';
     public const SENDER_TYPE_OTHER = 'other';
+    public const SENDER_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const TYPE_ACCEPTED_ALLY = 'AcceptedAlly';
     public const TYPE_ACCEPTED_SURRENDER = 'AcceptedSurrender';
     public const TYPE_AGENT_RETIRED_TRIGRAVIAN = 'AgentRetiredTrigravian';
@@ -516,6 +517,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
     public const TYPE_WAR_RETRACTED_BY_CONCORD = 'WarRetractedByConcord';
     public const TYPE_WAR_SURRENDER_DECLINED_MSG = 'WarSurrenderDeclinedMsg';
     public const TYPE_WAR_SURRENDER_OFFER_MSG = 'WarSurrenderOfferMsg';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -530,6 +532,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::SENDER_TYPE_ALLIANCE,
             self::SENDER_TYPE_FACTION,
             self::SENDER_TYPE_OTHER,
+            self::SENDER_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -787,6 +790,7 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
             self::TYPE_WAR_RETRACTED_BY_CONCORD,
             self::TYPE_WAR_SURRENDER_DECLINED_MSG,
             self::TYPE_WAR_SURRENDER_OFFER_MSG,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -992,16 +996,10 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if (is_null($sender_type)) {
             throw new \InvalidArgumentException('non-nullable sender_type cannot be null');
         }
-        /*$allowedValues = $this->getSenderTypeAllowableValues();
+        $allowedValues = $this->getSenderTypeAllowableValues();
         if (!in_array($sender_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'sender_type', must be one of '%s'",
-                    $sender_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $sender_type = self::SENDER_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['sender_type'] = $sender_type;
 
         return $this;
@@ -1083,16 +1081,10 @@ class GetCharactersCharacterIdNotifications200Ok implements ModelInterface, Arra
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
         }
-        /*$allowedValues = $this->getTypeAllowableValues();
+        $allowedValues = $this->getTypeAllowableValues();
         if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $type = self::TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['type'] = $type;
 
         return $this;

@@ -358,10 +358,12 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
     public const LOCATION_FLAG_SUB_SYSTEM_SLOT7 = 'SubSystemSlot7';
     public const LOCATION_FLAG_UNLOCKED = 'Unlocked';
     public const LOCATION_FLAG_WARDROBE = 'Wardrobe';
+    public const LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const LOCATION_TYPE_STATION = 'station';
     public const LOCATION_TYPE_SOLAR_SYSTEM = 'solar_system';
     public const LOCATION_TYPE_ITEM = 'item';
     public const LOCATION_TYPE_OTHER = 'other';
+    public const LOCATION_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -458,6 +460,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
             self::LOCATION_FLAG_SUB_SYSTEM_SLOT7,
             self::LOCATION_FLAG_UNLOCKED,
             self::LOCATION_FLAG_WARDROBE,
+            self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -473,6 +476,7 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
             self::LOCATION_TYPE_SOLAR_SYSTEM,
             self::LOCATION_TYPE_ITEM,
             self::LOCATION_TYPE_OTHER,
+            self::LOCATION_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -685,16 +689,10 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
         }
-        /*$allowedValues = $this->getLocationFlagAllowableValues();
+        $allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'location_flag', must be one of '%s'",
-                    $location_flag,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $location_flag = self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['location_flag'] = $location_flag;
 
         return $this;
@@ -749,16 +747,10 @@ class GetCharactersCharacterIdAssets200Ok implements ModelInterface, ArrayAccess
         if (is_null($location_type)) {
             throw new \InvalidArgumentException('non-nullable location_type cannot be null');
         }
-        /*$allowedValues = $this->getLocationTypeAllowableValues();
+        $allowedValues = $this->getLocationTypeAllowableValues();
         if (!in_array($location_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'location_type', must be one of '%s'",
-                    $location_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $location_type = self::LOCATION_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['location_type'] = $location_type;
 
         return $this;

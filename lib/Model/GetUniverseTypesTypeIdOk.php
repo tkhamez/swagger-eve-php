@@ -495,9 +495,9 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess, \JsonSeri
             throw new \InvalidArgumentException('non-nullable dogma_attributes cannot be null');
         }
 
-        /*if ((count($dogma_attributes) > 1000)) {
+        if ((count($dogma_attributes) > 1000)) {
             throw new \InvalidArgumentException('invalid value for $dogma_attributes when calling GetUniverseTypesTypeIdOk., number of items must be less than or equal to 1000.');
-        }*/
+        }
         $this->container['dogma_attributes'] = $dogma_attributes;
 
         return $this;
@@ -526,9 +526,9 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess, \JsonSeri
             throw new \InvalidArgumentException('non-nullable dogma_effects cannot be null');
         }
 
-        /*if ((count($dogma_effects) > 1000)) {
+        if ((count($dogma_effects) > 1000)) {
             throw new \InvalidArgumentException('invalid value for $dogma_effects when calling GetUniverseTypesTypeIdOk., number of items must be less than or equal to 1000.');
-        }*/
+        }
         $this->container['dogma_effects'] = $dogma_effects;
 
         return $this;

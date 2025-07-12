@@ -253,6 +253,7 @@ class PostCharactersCharacterIdMailLabelsLabel implements ModelInterface, ArrayA
     public const COLOR_FFFF01 = '#ffff01';
     public const COLOR_FFFFCD = '#ffffcd';
     public const COLOR_FFFFFF = '#ffffff';
+    public const COLOR_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -280,6 +281,7 @@ class PostCharactersCharacterIdMailLabelsLabel implements ModelInterface, ArrayA
             self::COLOR_FFFF01,
             self::COLOR_FFFFCD,
             self::COLOR_FFFFFF,
+            self::COLOR_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -386,16 +388,10 @@ class PostCharactersCharacterIdMailLabelsLabel implements ModelInterface, ArrayA
         if (is_null($color)) {
             throw new \InvalidArgumentException('non-nullable color cannot be null');
         }
-        /*$allowedValues = $this->getColorAllowableValues();
+        $allowedValues = $this->getColorAllowableValues();
         if (!in_array($color, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'color', must be one of '%s'",
-                    $color,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $color = self::COLOR_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['color'] = $color;
 
         return $this;

@@ -288,6 +288,7 @@ class GetCharactersCharacterIdCalendarEventIdOk implements ModelInterface, Array
     public const OWNER_TYPE_FACTION = 'faction';
     public const OWNER_TYPE_CHARACTER = 'character';
     public const OWNER_TYPE_ALLIANCE = 'alliance';
+    public const OWNER_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -302,6 +303,7 @@ class GetCharactersCharacterIdCalendarEventIdOk implements ModelInterface, Array
             self::OWNER_TYPE_FACTION,
             self::OWNER_TYPE_CHARACTER,
             self::OWNER_TYPE_ALLIANCE,
+            self::OWNER_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -597,16 +599,10 @@ class GetCharactersCharacterIdCalendarEventIdOk implements ModelInterface, Array
         if (is_null($owner_type)) {
             throw new \InvalidArgumentException('non-nullable owner_type cannot be null');
         }
-        /*$allowedValues = $this->getOwnerTypeAllowableValues();
+        $allowedValues = $this->getOwnerTypeAllowableValues();
         if (!in_array($owner_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'owner_type', must be one of '%s'",
-                    $owner_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $owner_type = self::OWNER_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['owner_type'] = $owner_type;
 
         return $this;

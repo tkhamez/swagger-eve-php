@@ -313,6 +313,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
     public const NEW_ROLES_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const NEW_ROLES_STATION_MANAGER = 'Station_Manager';
     public const NEW_ROLES_TRADER = 'Trader';
+    public const NEW_ROLES_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const OLD_ROLES_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const OLD_ROLES_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const OLD_ROLES_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -367,6 +368,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
     public const OLD_ROLES_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const OLD_ROLES_STATION_MANAGER = 'Station_Manager';
     public const OLD_ROLES_TRADER = 'Trader';
+    public const OLD_ROLES_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ROLE_TYPE_GRANTABLE_ROLES = 'grantable_roles';
     public const ROLE_TYPE_GRANTABLE_ROLES_AT_BASE = 'grantable_roles_at_base';
     public const ROLE_TYPE_GRANTABLE_ROLES_AT_HQ = 'grantable_roles_at_hq';
@@ -375,6 +377,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
     public const ROLE_TYPE_ROLES_AT_BASE = 'roles_at_base';
     public const ROLE_TYPE_ROLES_AT_HQ = 'roles_at_hq';
     public const ROLE_TYPE_ROLES_AT_OTHER = 'roles_at_other';
+    public const ROLE_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -438,6 +441,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
             self::NEW_ROLES_STARBASE_FUEL_TECHNICIAN,
             self::NEW_ROLES_STATION_MANAGER,
             self::NEW_ROLES_TRADER,
+            self::NEW_ROLES_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -503,6 +507,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
             self::OLD_ROLES_STARBASE_FUEL_TECHNICIAN,
             self::OLD_ROLES_STATION_MANAGER,
             self::OLD_ROLES_TRADER,
+            self::OLD_ROLES_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -522,6 +527,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
             self::ROLE_TYPE_ROLES_AT_BASE,
             self::ROLE_TYPE_ROLES_AT_HQ,
             self::ROLE_TYPE_ROLES_AT_OTHER,
+            self::ROLE_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -728,7 +734,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
         if (is_null($new_roles)) {
             throw new \InvalidArgumentException('non-nullable new_roles cannot be null');
         }
-        /*$allowedValues = $this->getNewRolesAllowableValues();
+        $allowedValues = $this->getNewRolesAllowableValues();
         if (array_diff($new_roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -736,11 +742,11 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($new_roles) > 50)) {
+        if ((count($new_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $new_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
-        }*/
+        }
         $this->container['new_roles'] = $new_roles;
 
         return $this;
@@ -768,7 +774,7 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
         if (is_null($old_roles)) {
             throw new \InvalidArgumentException('non-nullable old_roles cannot be null');
         }
-        /*$allowedValues = $this->getOldRolesAllowableValues();
+        $allowedValues = $this->getOldRolesAllowableValues();
         if (array_diff($old_roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -776,11 +782,11 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($old_roles) > 50)) {
+        if ((count($old_roles) > 50)) {
             throw new \InvalidArgumentException('invalid value for $old_roles when calling GetCorporationsCorporationIdRolesHistory200Ok., number of items must be less than or equal to 50.');
-        }*/
+        }
         $this->container['old_roles'] = $old_roles;
 
         return $this;
@@ -808,16 +814,10 @@ class GetCorporationsCorporationIdRolesHistory200Ok implements ModelInterface, A
         if (is_null($role_type)) {
             throw new \InvalidArgumentException('non-nullable role_type cannot be null');
         }
-        /*$allowedValues = $this->getRoleTypeAllowableValues();
+        $allowedValues = $this->getRoleTypeAllowableValues();
         if (!in_array($role_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'role_type', must be one of '%s'",
-                    $role_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $role_type = self::ROLE_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['role_type'] = $role_type;
 
         return $this;

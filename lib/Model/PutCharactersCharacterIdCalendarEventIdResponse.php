@@ -232,6 +232,7 @@ class PutCharactersCharacterIdCalendarEventIdResponse implements ModelInterface,
     public const RESPONSE_ACCEPTED = 'accepted';
     public const RESPONSE_DECLINED = 'declined';
     public const RESPONSE_TENTATIVE = 'tentative';
+    public const RESPONSE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -244,6 +245,7 @@ class PutCharactersCharacterIdCalendarEventIdResponse implements ModelInterface,
             self::RESPONSE_ACCEPTED,
             self::RESPONSE_DECLINED,
             self::RESPONSE_TENTATIVE,
+            self::RESPONSE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -341,16 +343,10 @@ class PutCharactersCharacterIdCalendarEventIdResponse implements ModelInterface,
         if (is_null($response)) {
             throw new \InvalidArgumentException('non-nullable response cannot be null');
         }
-        /*$allowedValues = $this->getResponseAllowableValues();
+        $allowedValues = $this->getResponseAllowableValues();
         if (!in_array($response, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'response', must be one of '%s'",
-                    $response,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $response = self::RESPONSE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['response'] = $response;
 
         return $this;

@@ -331,6 +331,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const GRANTABLE_ROLES_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const GRANTABLE_ROLES_STATION_MANAGER = 'Station_Manager';
     public const GRANTABLE_ROLES_TRADER = 'Trader';
+    public const GRANTABLE_ROLES_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const GRANTABLE_ROLES_AT_BASE_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const GRANTABLE_ROLES_AT_BASE_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const GRANTABLE_ROLES_AT_BASE_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -385,6 +386,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const GRANTABLE_ROLES_AT_BASE_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const GRANTABLE_ROLES_AT_BASE_STATION_MANAGER = 'Station_Manager';
     public const GRANTABLE_ROLES_AT_BASE_TRADER = 'Trader';
+    public const GRANTABLE_ROLES_AT_BASE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const GRANTABLE_ROLES_AT_HQ_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const GRANTABLE_ROLES_AT_HQ_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const GRANTABLE_ROLES_AT_HQ_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -439,6 +441,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const GRANTABLE_ROLES_AT_HQ_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const GRANTABLE_ROLES_AT_HQ_STATION_MANAGER = 'Station_Manager';
     public const GRANTABLE_ROLES_AT_HQ_TRADER = 'Trader';
+    public const GRANTABLE_ROLES_AT_HQ_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const GRANTABLE_ROLES_AT_OTHER_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const GRANTABLE_ROLES_AT_OTHER_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const GRANTABLE_ROLES_AT_OTHER_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -493,6 +496,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const GRANTABLE_ROLES_AT_OTHER_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const GRANTABLE_ROLES_AT_OTHER_STATION_MANAGER = 'Station_Manager';
     public const GRANTABLE_ROLES_AT_OTHER_TRADER = 'Trader';
+    public const GRANTABLE_ROLES_AT_OTHER_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ROLES_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const ROLES_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const ROLES_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -547,6 +551,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const ROLES_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const ROLES_STATION_MANAGER = 'Station_Manager';
     public const ROLES_TRADER = 'Trader';
+    public const ROLES_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ROLES_AT_BASE_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const ROLES_AT_BASE_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const ROLES_AT_BASE_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -601,6 +606,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const ROLES_AT_BASE_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const ROLES_AT_BASE_STATION_MANAGER = 'Station_Manager';
     public const ROLES_AT_BASE_TRADER = 'Trader';
+    public const ROLES_AT_BASE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ROLES_AT_HQ_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const ROLES_AT_HQ_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const ROLES_AT_HQ_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -655,6 +661,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const ROLES_AT_HQ_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const ROLES_AT_HQ_STATION_MANAGER = 'Station_Manager';
     public const ROLES_AT_HQ_TRADER = 'Trader';
+    public const ROLES_AT_HQ_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ROLES_AT_OTHER_ACCOUNT_TAKE_1 = 'Account_Take_1';
     public const ROLES_AT_OTHER_ACCOUNT_TAKE_2 = 'Account_Take_2';
     public const ROLES_AT_OTHER_ACCOUNT_TAKE_3 = 'Account_Take_3';
@@ -709,6 +716,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
     public const ROLES_AT_OTHER_STARBASE_FUEL_TECHNICIAN = 'Starbase_Fuel_Technician';
     public const ROLES_AT_OTHER_STATION_MANAGER = 'Station_Manager';
     public const ROLES_AT_OTHER_TRADER = 'Trader';
+    public const ROLES_AT_OTHER_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -772,6 +780,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::GRANTABLE_ROLES_STARBASE_FUEL_TECHNICIAN,
             self::GRANTABLE_ROLES_STATION_MANAGER,
             self::GRANTABLE_ROLES_TRADER,
+            self::GRANTABLE_ROLES_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -837,6 +846,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::GRANTABLE_ROLES_AT_BASE_STARBASE_FUEL_TECHNICIAN,
             self::GRANTABLE_ROLES_AT_BASE_STATION_MANAGER,
             self::GRANTABLE_ROLES_AT_BASE_TRADER,
+            self::GRANTABLE_ROLES_AT_BASE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -902,6 +912,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::GRANTABLE_ROLES_AT_HQ_STARBASE_FUEL_TECHNICIAN,
             self::GRANTABLE_ROLES_AT_HQ_STATION_MANAGER,
             self::GRANTABLE_ROLES_AT_HQ_TRADER,
+            self::GRANTABLE_ROLES_AT_HQ_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -967,6 +978,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::GRANTABLE_ROLES_AT_OTHER_STARBASE_FUEL_TECHNICIAN,
             self::GRANTABLE_ROLES_AT_OTHER_STATION_MANAGER,
             self::GRANTABLE_ROLES_AT_OTHER_TRADER,
+            self::GRANTABLE_ROLES_AT_OTHER_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -1032,6 +1044,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::ROLES_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_STATION_MANAGER,
             self::ROLES_TRADER,
+            self::ROLES_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -1097,6 +1110,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::ROLES_AT_BASE_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_AT_BASE_STATION_MANAGER,
             self::ROLES_AT_BASE_TRADER,
+            self::ROLES_AT_BASE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -1162,6 +1176,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::ROLES_AT_HQ_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_AT_HQ_STATION_MANAGER,
             self::ROLES_AT_HQ_TRADER,
+            self::ROLES_AT_HQ_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -1227,6 +1242,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
             self::ROLES_AT_OTHER_STARBASE_FUEL_TECHNICIAN,
             self::ROLES_AT_OTHER_STATION_MANAGER,
             self::ROLES_AT_OTHER_TRADER,
+            self::ROLES_AT_OTHER_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -1382,7 +1398,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($grantable_roles)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles cannot be null');
         }
-        /*$allowedValues = $this->getGrantableRolesAllowableValues();
+        $allowedValues = $this->getGrantableRolesAllowableValues();
         if (array_diff($grantable_roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1390,11 +1406,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($grantable_roles) > 100)) {
+        if ((count($grantable_roles) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['grantable_roles'] = $grantable_roles;
 
         return $this;
@@ -1422,7 +1438,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($grantable_roles_at_base)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles_at_base cannot be null');
         }
-        /*$allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
+        $allowedValues = $this->getGrantableRolesAtBaseAllowableValues();
         if (array_diff($grantable_roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1430,11 +1446,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($grantable_roles_at_base) > 100)) {
+        if ((count($grantable_roles_at_base) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['grantable_roles_at_base'] = $grantable_roles_at_base;
 
         return $this;
@@ -1462,7 +1478,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($grantable_roles_at_hq)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles_at_hq cannot be null');
         }
-        /*$allowedValues = $this->getGrantableRolesAtHqAllowableValues();
+        $allowedValues = $this->getGrantableRolesAtHqAllowableValues();
         if (array_diff($grantable_roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1470,11 +1486,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($grantable_roles_at_hq) > 100)) {
+        if ((count($grantable_roles_at_hq) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['grantable_roles_at_hq'] = $grantable_roles_at_hq;
 
         return $this;
@@ -1502,7 +1518,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($grantable_roles_at_other)) {
             throw new \InvalidArgumentException('non-nullable grantable_roles_at_other cannot be null');
         }
-        /*$allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
+        $allowedValues = $this->getGrantableRolesAtOtherAllowableValues();
         if (array_diff($grantable_roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1510,11 +1526,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($grantable_roles_at_other) > 100)) {
+        if ((count($grantable_roles_at_other) > 100)) {
             throw new \InvalidArgumentException('invalid value for $grantable_roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['grantable_roles_at_other'] = $grantable_roles_at_other;
 
         return $this;
@@ -1542,7 +1558,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
         }
-        /*$allowedValues = $this->getRolesAllowableValues();
+        $allowedValues = $this->getRolesAllowableValues();
         if (array_diff($roles, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1550,11 +1566,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($roles) > 100)) {
+        if ((count($roles) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['roles'] = $roles;
 
         return $this;
@@ -1582,7 +1598,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($roles_at_base)) {
             throw new \InvalidArgumentException('non-nullable roles_at_base cannot be null');
         }
-        /*$allowedValues = $this->getRolesAtBaseAllowableValues();
+        $allowedValues = $this->getRolesAtBaseAllowableValues();
         if (array_diff($roles_at_base, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1590,11 +1606,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($roles_at_base) > 100)) {
+        if ((count($roles_at_base) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_base when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['roles_at_base'] = $roles_at_base;
 
         return $this;
@@ -1622,7 +1638,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($roles_at_hq)) {
             throw new \InvalidArgumentException('non-nullable roles_at_hq cannot be null');
         }
-        /*$allowedValues = $this->getRolesAtHqAllowableValues();
+        $allowedValues = $this->getRolesAtHqAllowableValues();
         if (array_diff($roles_at_hq, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1630,11 +1646,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($roles_at_hq) > 100)) {
+        if ((count($roles_at_hq) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_hq when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['roles_at_hq'] = $roles_at_hq;
 
         return $this;
@@ -1662,7 +1678,7 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
         if (is_null($roles_at_other)) {
             throw new \InvalidArgumentException('non-nullable roles_at_other cannot be null');
         }
-        /*$allowedValues = $this->getRolesAtOtherAllowableValues();
+        $allowedValues = $this->getRolesAtOtherAllowableValues();
         if (array_diff($roles_at_other, $allowedValues)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -1670,11 +1686,11 @@ class GetCorporationsCorporationIdRoles200Ok implements ModelInterface, ArrayAcc
                     implode("', '", $allowedValues)
                 )
             );
-        }*/
+        }
 
-        /*if ((count($roles_at_other) > 100)) {
+        if ((count($roles_at_other) > 100)) {
             throw new \InvalidArgumentException('invalid value for $roles_at_other when calling GetCorporationsCorporationIdRoles200Ok., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['roles_at_other'] = $roles_at_other;
 
         return $this;

@@ -284,6 +284,7 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
     public const FLAG_SUB_SYSTEM_SLOT1 = 'SubSystemSlot1';
     public const FLAG_SUB_SYSTEM_SLOT2 = 'SubSystemSlot2';
     public const FLAG_SUB_SYSTEM_SLOT3 = 'SubSystemSlot3';
+    public const FLAG_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -336,6 +337,7 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
             self::FLAG_SUB_SYSTEM_SLOT1,
             self::FLAG_SUB_SYSTEM_SLOT2,
             self::FLAG_SUB_SYSTEM_SLOT3,
+            self::FLAG_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -441,16 +443,10 @@ class PostCharactersCharacterIdFittingsItem implements ModelInterface, ArrayAcce
         if (is_null($flag)) {
             throw new \InvalidArgumentException('non-nullable flag cannot be null');
         }
-        /*$allowedValues = $this->getFlagAllowableValues();
+        $allowedValues = $this->getFlagAllowableValues();
         if (!in_array($flag, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'flag', must be one of '%s'",
-                    $flag,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $flag = self::FLAG_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['flag'] = $flag;
 
         return $this;

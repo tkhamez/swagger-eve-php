@@ -305,6 +305,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     public const ACTION_SET_NAME = 'set_name';
     public const ACTION_SET_PASSWORD = 'set_password';
     public const ACTION_UNLOCK = 'unlock';
+    public const ACTION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const LOCATION_FLAG_ASSET_SAFETY = 'AssetSafety';
     public const LOCATION_FLAG_AUTO_FIT = 'AutoFit';
     public const LOCATION_FLAG_BONUS = 'Bonus';
@@ -428,8 +429,10 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
     public const LOCATION_FLAG_UNLOCKED = 'Unlocked';
     public const LOCATION_FLAG_WALLET = 'Wallet';
     public const LOCATION_FLAG_WARDROBE = 'Wardrobe';
+    public const LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const PASSWORD_TYPE_CONFIG = 'config';
     public const PASSWORD_TYPE_GENERAL = 'general';
+    public const PASSWORD_TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -449,6 +452,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
             self::ACTION_SET_NAME,
             self::ACTION_SET_PASSWORD,
             self::ACTION_UNLOCK,
+            self::ACTION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -583,6 +587,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
             self::LOCATION_FLAG_UNLOCKED,
             self::LOCATION_FLAG_WALLET,
             self::LOCATION_FLAG_WARDROBE,
+            self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -596,6 +601,7 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         return [
             self::PASSWORD_TYPE_CONFIG,
             self::PASSWORD_TYPE_GENERAL,
+            self::PASSWORD_TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -740,16 +746,10 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if (is_null($action)) {
             throw new \InvalidArgumentException('non-nullable action cannot be null');
         }
-        /*$allowedValues = $this->getActionAllowableValues();
+        $allowedValues = $this->getActionAllowableValues();
         if (!in_array($action, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'action', must be one of '%s'",
-                    $action,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $action = self::ACTION_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['action'] = $action;
 
         return $this;
@@ -858,16 +858,10 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if (is_null($location_flag)) {
             throw new \InvalidArgumentException('non-nullable location_flag cannot be null');
         }
-        /*$allowedValues = $this->getLocationFlagAllowableValues();
+        $allowedValues = $this->getLocationFlagAllowableValues();
         if (!in_array($location_flag, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'location_flag', must be one of '%s'",
-                    $location_flag,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $location_flag = self::LOCATION_FLAG_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['location_flag'] = $location_flag;
 
         return $this;
@@ -1003,16 +997,10 @@ class GetCorporationsCorporationIdContainersLogs200Ok implements ModelInterface,
         if (is_null($password_type)) {
             throw new \InvalidArgumentException('non-nullable password_type cannot be null');
         }
-        /*$allowedValues = $this->getPasswordTypeAllowableValues();
+        $allowedValues = $this->getPasswordTypeAllowableValues();
         if (!in_array($password_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'password_type', must be one of '%s'",
-                    $password_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $password_type = self::PASSWORD_TYPE_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['password_type'] = $password_type;
 
         return $this;

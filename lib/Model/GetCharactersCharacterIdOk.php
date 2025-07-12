@@ -291,6 +291,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
 
     public const GENDER_FEMALE = 'female';
     public const GENDER_MALE = 'male';
+    public const GENDER_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -302,6 +303,7 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
         return [
             self::GENDER_FEMALE,
             self::GENDER_MALE,
+            self::GENDER_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -594,16 +596,10 @@ class GetCharactersCharacterIdOk implements ModelInterface, ArrayAccess, \JsonSe
         if (is_null($gender)) {
             throw new \InvalidArgumentException('non-nullable gender cannot be null');
         }
-        /*$allowedValues = $this->getGenderAllowableValues();
+        $allowedValues = $this->getGenderAllowableValues();
         if (!in_array($gender, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'gender', must be one of '%s'",
-                    $gender,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }*/
+            $gender = self::GENDER_UNKNOWN_DEFAULT_OPEN_API;
+        }
         $this->container['gender'] = $gender;
 
         return $this;

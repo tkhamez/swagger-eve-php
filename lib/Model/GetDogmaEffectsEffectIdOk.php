@@ -811,9 +811,9 @@ class GetDogmaEffectsEffectIdOk implements ModelInterface, ArrayAccess, \JsonSer
             throw new \InvalidArgumentException('non-nullable modifiers cannot be null');
         }
 
-        /*if ((count($modifiers) > 100)) {
+        if ((count($modifiers) > 100)) {
             throw new \InvalidArgumentException('invalid value for $modifiers when calling GetDogmaEffectsEffectIdOk., number of items must be less than or equal to 100.');
-        }*/
+        }
         $this->container['modifiers'] = $modifiers;
 
         return $this;

@@ -8,10 +8,8 @@ An OpenAPI for EVE Online.
 This client is generated from the "latest" routes. Versioning is now done with an HTTP header, see
 https://developers.eveonline.com/blog/changing-versions-v42-was-getting-out-of-hand.
 
-It contains two patches that remove validation of enum attributes and max items. CCP stated that the 
-extension of enum attributes is no longer a breaking change, see 
-[ESI changelog](https://github.com/esi/esi-issues/blob/master/changelog.md#2020-05-01),
-and they also change max items without increasing the endpoint version number. 
+It contains a patch that removes the validation of max items because CCP sometimes increases
+this value without increasing the endpoint version/compatibility date.
 
 ##### Versioning scheme since 1.0.0
 
@@ -26,6 +24,11 @@ and they also change max items without increasing the endpoint version number.
 See https://github.com/OpenAPITools/openapi-generator/releases for generator library changes.
 
 ##### Notable changes other than API updates
+
+11.0.0
+
+- The patch that removed the validation of enum attributes has been removed. Instead, a default 
+  value is now returned if the value from the API is unknown. Previously the unknown value was returned.
 
 10.4.0
 
@@ -90,7 +93,7 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
 ```json
 {
   "require": {
-    "tkhamez/swagger-eve-php": "~10.4.0"
+    "tkhamez/swagger-eve-php": "~11.0.0"
   }
 }
 ```
