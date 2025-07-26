@@ -1,6 +1,7 @@
 {
     "name": "tkhamez/swagger-eve-php",
     "description": "An OpenAPI Client Library for EVE Online (ESI)",
+    "abandoned": "tkhamez/eve-api",
     "keywords": [
         "openapitools",
         "openapi-generator",
